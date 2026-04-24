@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const studies = (await getCollection('case-studies'))
+  .filter((s) => !s.data.pubDate || s.data.pubDate.getTime() <= Date.now())
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+function fmtDate(d: Date) {
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+---
+
+<BaseLayout
+  title="Results | Decisive Finance"
+  description="Named engagements. Real Three-Path decisions. The $22,500 to $30,000 forward-reallocation pattern in the wild."
+>
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Results</span>
+      <h1>Named engagements. Real Three-Path decisions.</h1>
+      <p class="hero-subhead">
+        The forward-reallocation pattern in the wild. What got surfaced, what got decided, what the board saw next quarter.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="results-grid">
+        {studies.map((study) => (
+          <a class="result-card" href={`/results/${study.slug}/`}>
+            <div class="result-meta">
+              {study.data.clientStage && <span>{study.data.clientStage}</span>}
+              {study.data.clientSize && <span>&middot; {study.data.clientSize}</span>}
+              <span>&middot; {fmtDate(study.data.pubDate)}</span>
+            </div>
+            <h3>{study.data.title}</h3>
+            {study.data.outcome && <p>{study.data.outcome}</p>}
+            <span class="result-cta">Read the case &rarr;</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 22px;
+    margin-top: 40px;
+  }
+  .result-card {
+    background: var(--white);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 32px 28px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
+  }
+  .result-card:hover {
+    border-color: var(--green);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px #18222812;
+    opacity: 1;
+  }
+  .result-meta {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 14px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .result-card h3 {
+    font-size: 22px;
+    margin: 0 0 14px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .result-card p {
+    color: var(--muted);
+    margin: 0 0 22px;
+    line-height: 1.55;
+  }
+  .result-cta {
+    color: var(--orange);
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+  }
+</style>

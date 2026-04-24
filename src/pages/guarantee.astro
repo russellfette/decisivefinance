@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+
+const title = 'The Decision Diagnostic guarantee | Decisive Finance';
+const description =
+  'Our 14-day Decision Diagnostic surfaces $22,500 to $30,000 of forward-reallocation potential, or 100% refund. The 3x guarantee, in writing.';
+
+const resolutions = [
+  {
+    heading: 'The dollar path',
+    body: 'At least 3x the Diagnostic fee in dollarized forward-reallocation potential, with CEO-accepted capture paths named in writing. This is the path most Diagnostics hit.',
+  },
+  {
+    heading: 'The strategic finding',
+    body: 'If no dollar path exists at the required scale, a strategic finding of equivalent materiality confirmed in writing by the CEO may substitute. Pricing architecture change, product-line exit with board commitment, or capital-structure change that moves next-round valuation math.',
+  },
+  {
+    heading: 'Full refund',
+    body: 'If neither of the above is true at Day 14, 100% of the Diagnostic fee is refunded. No argument, no conditions, no second look.',
+  },
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Guarantee</span>
+      <h1>The Decision Diagnostic guarantee.</h1>
+      <p class="hero-subhead">
+        The decisions behind the stalled round weren&rsquo;t wrong. They were right for a context that no longer exists. We run a 14-day Decision Diagnostic for a fixed fee. By Day 14, one of three things is true, measured on the Day 14 readout, not on a later date.
+      </p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Three resolutions</span>
+        <h2>Three ways the guarantee resolves.</h2>
+        <ol class="engine-list">
+          {resolutions.map((r) => (
+            <li class="engine-item">
+              <div>
+                <strong>{r.heading}.</strong>
+                <p>{r.body}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Definition</span>
+        <h2>What &ldquo;forward-reallocation potential&rdquo; means.</h2>
+        <p class="lede">
+          Forward-reallocation potential is not recovered cash. It is dollarized capital the company is currently deploying against a context that has changed, with a CEO-accepted path to redeploy it against the context that exists today. Naming the number and the paths is what the Diagnostic is paid for. Capturing the number is what the 90-Day Decision Resolution is paid for. The Diagnostic guarantee measures the naming, not the capturing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Fit</span>
+        <h2>Who the guarantee fits.</h2>
+        <p class="lede">
+          Venture-backed tech, $1M to $8M ARR, 18 or more months since the last raise, burn multiple above 3x. Growth has flattened. The founder is making the hardest forward-capital calls of their career without the infrastructure to defend them. If the company is earlier or later than that band, the Diagnostic may still work, but the guarantee math will not. We will say so on the first call.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Engagement letter</span>
+        <h2>What is in the engagement letter.</h2>
+        <p class="lede">
+          Every term on this page is in the engagement letter, signed both sides before work begins. Not stop-work. The CEO keeps every artifact produced through the Diagnostic regardless of which of the three guarantee paths the engagement resolves to. The guarantee measures against the Day 14 readout, not a follow-up period.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="close-section">
+    <div class="container">
+      <div class="container-narrow">
+        <h2>Book a 30-minute call.</h2>
+        <p class="lede">No pitch. You leave with at least one action.</p>
+        <a href={CALENDLY} class="btn btn-primary">Book a 30-minute call</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

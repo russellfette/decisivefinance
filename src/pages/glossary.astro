@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
+
+const entry = await getEntry('site', 'glossary');
+const { Content } = entry ? await entry.render() : { Content: null };
+---
+
+<BaseLayout
+  title="Glossary | Decisive Finance"
+  description="Definitions for the ten canonical terms on this site: walking dead portco, Six Trap Diagnostic, Three-Path Model, Financial Rhythms, and more."
+>
+  <section class="post-hero">
+    <div class="post-hero-inner">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.85); background: transparent; border-color: rgba(255,255,255,0.2);">Reference</span>
+      <h1 class="post-title">Glossary.</h1>
+      <p class="post-lede">The ten canonical terms used across Decisive Finance writing.</p>
+    </div>
+  </section>
+
+  <section class="post-body-section">
+    <div class="post-body glossary-body">
+      {Content && <Content />}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .post-hero {
+    background: var(--ink);
+    color: var(--white);
+    padding: 96px 32px 64px;
+  }
+  .post-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .post-title {
+    font-family: Inter, sans-serif;
+    font-size: clamp(34px, 5vw, 60px);
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin: 24px 0;
+  }
+  .post-lede {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.82);
+    margin: 0;
+  }
+  .post-body-section {
+    padding: 72px 32px;
+    background: var(--white);
+  }
+  .post-body {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  .glossary-body :global(h1) {
+    display: none;
+  }
+  .glossary-body :global(h2) {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .glossary-body :global(hr) {
+    border: none;
+    border-top: 1px solid var(--hairline);
+    margin: 32px 0;
+  }
+  .glossary-body :global(p) {
+    margin-bottom: 1em;
+    color: var(--ink);
+  }
+  .glossary-body :global(a) {
+    color: var(--orange);
+    border-bottom: 1px solid rgba(227, 99, 43, 0.3);
+  }
+  .glossary-body :global(strong) {
+    color: var(--ink);
+  }
+  .glossary-body :global(em) {
+    color: var(--green);
+  }
+</style>

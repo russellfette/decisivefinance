@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const lastUpdated = '2026-04-24';
+---
+
+<BaseLayout
+  title="Terms of service | Decisive Finance"
+  description="The terms that govern use of decisive.finance."
+>
+  <section class="post-hero">
+    <div class="post-hero-inner">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.85); background: transparent; border-color: rgba(255,255,255,0.2);">Terms</span>
+      <h1 class="post-title">Terms of service</h1>
+      <p class="post-lede">Last updated: {lastUpdated}</p>
+    </div>
+  </section>
+
+  <section class="post-body-section">
+    <div class="post-body">
+      <p>These terms govern your use of decisive.finance (the "site"). By using the site, you agree to them.</p>
+
+      <h2>About the site</h2>
+      <p>Decisive Finance publishes field notes, methodology documents, and engagement information for venture-backed tech companies between Series A and Series B. The site is informational. It is not investment advice, legal advice, tax advice, or accounting advice.</p>
+
+      <h2>Engagements</h2>
+      <p>If you book a call and enter an engagement with Decisive Finance, the engagement is governed by a separate, signed engagement letter that supersedes these terms for that relationship. The guarantees described on <a href="/guarantee">the guarantee page</a> are honored only when they are restated in the engagement letter you sign.</p>
+
+      <h2>No warranty</h2>
+      <p>Content on the site is provided as-is. We make no warranty that any approach described here will produce a specific result for your company. Every engagement is scoped to the company in front of us.</p>
+
+      <h2>Links to third parties</h2>
+      <p>The site links to third-party tools (Calendly, Beehiiv). We are not responsible for their content or policies. Your use of them is governed by their own terms.</p>
+
+      <h2>Intellectual property</h2>
+      <p>All content is © Decisive Finance unless otherwise noted. You may share and cite it with attribution. You may not republish it in full without permission.</p>
+
+      <h2>Changes</h2>
+      <p>We may update these terms. The "last updated" date above reflects the most recent change.</p>
+
+      <h2>Contact</h2>
+      <p><a href="mailto:contact@decisive.finance">contact@decisive.finance</a></p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .post-hero {
+    background: var(--ink);
+    color: var(--white);
+    padding: 96px 32px 64px;
+  }
+  .post-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .post-title {
+    font-family: Inter, sans-serif;
+    font-size: clamp(34px, 5vw, 60px);
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin: 24px 0;
+  }
+  .post-lede {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+  }
+  .post-body-section {
+    padding: 72px 32px;
+    background: var(--white);
+  }
+  .post-body {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  .post-body h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 14px;
+    font-weight: 700;
+  }
+  .post-body p {
+    margin-bottom: 1.2em;
+  }
+  .post-body a {
+    color: var(--orange);
+    border-bottom: 1px solid rgba(227, 99, 43, 0.3);
+  }
+  .post-body a:hover {
+    opacity: 1;
+  }
+</style>

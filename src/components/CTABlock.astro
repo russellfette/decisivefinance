@@ -1,0 +1,98 @@
+---
+interface Props {
+  variant?: 'fit-call' | 'diagnostic' | 'founding-cohort' | 'lead-magnet';
+  headline?: string;
+  button?: string;
+  href?: string;
+  microcopy?: string;
+  tone?: 'dark' | 'light';
+}
+
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+
+const presets = {
+  'fit-call': {
+    headline: 'Not sure if we are a fit?',
+    button: 'Book a fit call',
+    href: CALENDLY,
+    microcopy: '30 min with Russ. No pitch. Two questions and a number.',
+  },
+  diagnostic: {
+    headline: '$22,500 to $30,000 of forward-reallocation potential in 14 days. Guaranteed.',
+    button: 'Start the Diagnostic',
+    href: CALENDLY,
+    microcopy: 'Tier 1 engagement. 14 days. 3x your fee back if we miss.',
+  },
+  'founding-cohort': {
+    headline: 'Three founding spots. Closes June 30, 2026.',
+    button: 'Claim a spot',
+    href: CALENDLY,
+    microcopy: 'Founding rate: $18,000 flat. Held for 12 months.',
+  },
+  'lead-magnet': {
+    headline: '',
+    button: '',
+    href: '',
+    microcopy: '',
+  },
+};
+
+const {
+  variant = 'fit-call',
+  tone = 'dark',
+  headline = presets[variant].headline,
+  button = presets[variant].button,
+  href = presets[variant].href,
+  microcopy = presets[variant].microcopy,
+} = Astro.props;
+---
+
+<section class={`cta-block cta-${tone}`}>
+  <div class="container-narrow">
+    {headline && <h3>{headline}</h3>}
+    <div class="cta-action">
+      <a href={href} class={tone === 'dark' ? 'btn btn-primary' : 'btn btn-primary'}>{button}</a>
+      {microcopy && <p class="microcopy">{microcopy}</p>}
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-block {
+    padding: 80px 32px;
+    text-align: center;
+  }
+  .cta-block.cta-dark {
+    background: var(--ink);
+    color: var(--white);
+  }
+  .cta-block.cta-dark h3 {
+    color: var(--white);
+  }
+  .cta-block.cta-light {
+    background: var(--paper);
+  }
+  .cta-block h3 {
+    font-size: clamp(26px, 3.4vw, 38px);
+    max-width: 820px;
+    margin: 0 auto 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+  .cta-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .microcopy {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    max-width: 480px;
+  }
+  .cta-light .microcopy {
+    color: var(--muted);
+  }
+</style>

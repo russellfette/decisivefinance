@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="g1" cx="85%" cy="10%" r="55%">
+      <stop offset="0%" stop-color="#e3632b" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e3632b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="10%" cy="100%" r="65%">
+      <stop offset="0%" stop-color="#214c52" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#214c52" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#182228"/>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <g transform="translate(80, 80)">
+    <rect width="56" height="56" rx="10" fill="#ffffff" fill-opacity="0.12"/>
+    <circle cx="28" cy="28" r="10" fill="#e3632b"/>
+  </g>
+  <text x="152" y="118" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="28" fill="#ffffff">Decisive Finance</text>
+  <text x="80" y="300" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="68" fill="#ffffff" letter-spacing="-2">The raise stalled.</text>
+  <text x="80" y="380" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="68" fill="#ffffff" letter-spacing="-2">The decisions didn&apos;t.</text>
+  <text x="80" y="490" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="500" font-size="26" fill="#ffffff" fill-opacity="0.75">Decision-first finance for stalled Series A and B tech.</text>
+  <text x="80" y="530" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="26" fill="#e3632b">$22,500 to $30,000 in 14 days. Guaranteed.</text>
+</svg>

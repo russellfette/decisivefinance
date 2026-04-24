@@ -1,0 +1,142 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <p>
+        Decisive Finance is the offer brand. Financial Rhythms™ is the methodology.
+      </p>
+      <p class="muted">
+        Based in the Pacific Northwest, working with post-Series A and Series B tech companies nationwide.
+      </p>
+      <p class="muted">
+        <a href="mailto:contact@decisive.finance">contact@decisive.finance</a>
+      </p>
+    </div>
+
+    <div class="footer-cols">
+      <div>
+        <h4>Offer</h4>
+        <ul>
+          <li><a href="/#tiers">Decision Diagnostic</a></li>
+          <li><a href="/#tiers">90-Day Decision Resolution</a></li>
+          <li><a href="/#tiers">Decision Partnership</a></li>
+          <li><a href="/guarantee">Guarantee</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Field guide</h4>
+        <ul>
+          <li><a href="/blog/walking-dead-portco">Walking dead portco</a></li>
+          <li><a href="/blog/decision-first-finance">Decision-first finance</a></li>
+          <li><a href="/blog/stalled-portco-field-guide-for-investors">For investors</a></li>
+          <li><a href="/blog">All posts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/assessment/walking-dead">Self-assessment</a></li>
+          <li><a href="/resources/recovery-checklist">Recovery checklist</a></li>
+          <li><a href="/glossary">Glossary</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">
+    © {year} Decisive Finance. All rights reserved.
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--ink);
+    color: rgba(255, 255, 255, 0.75);
+    padding: 64px 32px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .footer-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 64px;
+  }
+  .footer-brand p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 10px;
+    max-width: 320px;
+  }
+  .footer-brand .muted {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 14px;
+  }
+  .footer-brand a {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .footer-brand a:hover {
+    color: var(--orange);
+    opacity: 1;
+  }
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .footer-cols h4 {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--orange);
+    margin-bottom: 14px;
+  }
+  .footer-cols ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-cols li {
+    margin-bottom: 8px;
+  }
+  .footer-cols a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+  }
+  .footer-cols a:hover {
+    color: var(--orange);
+    opacity: 1;
+  }
+  .footer-copy {
+    max-width: 1180px;
+    margin: 48px auto 0;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  @media (max-width: 900px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .footer-cols {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+  }
+</style>

@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+
+const team = [
+  {
+    name: 'Russell Fette',
+    title: 'Founder, Chief Financial Officer',
+    body: 'Russell built his career solving the one problem that keeps founders awake at 2 a.m.: getting ambushed by the numbers. Two decades of finance leadership across Microsoft, JPMorgan Chase, and high-growth SaaS, then five years inside venture-backed companies watching the same pattern repeat. Round closes, decisions get made fast in a context that no longer exists, and eighteen months later the P&L is carrying the cost of every one of them. At Pathwright he drove 40% year-over-year growth and quadrupled net income margin without outside capital. That is where Decision-First Finance took shape. He then built Financial Rhythms™, the operating system that installs the Diagnostic as a repeatable engine after the engagement ends. BA in Economics from Whitman College (Phi Beta Kappa).',
+  },
+  {
+    name: 'Christopher Koo',
+    title: 'Director of Finance',
+    body: 'Christopher architects the financial systems that turn a Diagnostic into execution. Senior finance across JPMorgan, Citi, Imprint, and Synchrony before this; credit-portfolio decisions compressed from weeks to days, reporting lag on a $76B banking portfolio cut in half, product, capital, and pricing strategies aligned to recover millions in partnership value. He turns finance from a rearview mirror into a forward system. BA in Financial Mathematics, Lehigh University. Inside a Decisive Finance engagement, Christopher owns the Unit Economics Dashboard, the Product Line P&Ls, and the Scenario Forecast.',
+  },
+  {
+    name: 'Payal Halani',
+    title: 'Finance Analyst',
+    body: 'Payal runs the financial analysis layer of every Decisive Finance engagement. Inside a Diagnostic, she turns a messy general ledger into a dollarized, ranked inventory of decisions. Inside a Resolution, she maintains the Decision Revalidation Register, the weekly actuals-vs-prediction reconciliation, and the cross-subsidy map that almost no one on the cap table has ever seen. She is the operational constant between Day 1 and Day 90.',
+  },
+];
+---
+
+<BaseLayout
+  title="About Decisive Finance | The team behind Decision-First Finance"
+  description="The team behind Decisive Finance. Two decades of funded-tech finance leadership, now focused on resolving the decisions that got stale post-raise."
+>
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">About</span>
+      <h1>The team behind the Diagnostic.</h1>
+      <p class="hero-subhead">
+        Decisive Finance is a small, senior team built for one job: finding the decisions a stalled funded-tech company is running on, resolving them with a Three-Path Model, and installing the engine that keeps doing it. Most Diagnostics surface <span class="dollar">$22,500 to $30,000</span> of forward-reallocation potential in 14 days. Guaranteed.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <span class="section-eyebrow">The team</span>
+      <h2>Three people. One job.</h2>
+      <div class="team-grid">
+        {team.map((member) => (
+          <article class="team-card">
+            <h3>{member.name}</h3>
+            <p class="team-title">{member.title}</p>
+            <p>{member.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Three pillars. One system.</span>
+        <h2>This is not a roster of consultants. It is a synchronized team running one playbook.</h2>
+        <p class="lede">Each of us owns a named layer of the Decision Loop.</p>
+        <ul class="pillars">
+          <li><strong>Russell</strong> runs diagnosis and the Three-Path recommendation. He is in every Diagnostic from the Forward Capital Report forward.</li>
+          <li><strong>Christopher</strong> runs the forecast and the Decision Package. He owns the output the CEO walks into the board meeting with.</li>
+          <li><strong>Payal</strong> runs the dollarization, the reconciliation, and the register. She is the reason the numbers hold up when the board pushes on them.</li>
+        </ul>
+        <p>Together we install the engine the Decisive Finance guarantee measures against. Tier 1 delivers by Day 14 or refunds the fee. Tier 2 delivers the installed engine by Day 90 or refunds everything paid to date. Tier 3 runs the engine on rhythm and certifies Realized Value quarterly.</p>
+        <p><em>The category belongs to the market. We are one operator inside it.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="close-section">
+    <div class="container">
+      <div class="container-narrow">
+        <h2>Start with a 30-minute call.</h2>
+        <p class="lede" style="color: rgba(255,255,255,0.8);">No pitch. You leave with at least one action.</p>
+        <a href={CALENDLY} class="btn btn-primary">Book a 30-minute call</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .team-card {
+    background: var(--white);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 32px 28px;
+  }
+  .team-card h3 {
+    font-size: 22px;
+    margin: 0 0 6px;
+    font-weight: 700;
+  }
+  .team-title {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    margin-bottom: 22px;
+  }
+  .team-card p {
+    color: var(--muted);
+    line-height: 1.65;
+    font-size: 15px;
+    margin: 0;
+  }
+  .pillars {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 24px;
+  }
+  .pillars li {
+    padding: 14px 0;
+    border-top: 1px solid var(--hairline);
+  }
+  .pillars li:last-child {
+    border-bottom: 1px solid var(--hairline);
+  }
+  .dollar {
+    color: var(--orange);
+    font-weight: 700;
+  }
+</style>

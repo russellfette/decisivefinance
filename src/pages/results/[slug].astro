@@ -1,0 +1,176 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const studies = await getCollection('case-studies');
+  return studies.map((study) => ({
+    params: { slug: study.slug },
+    props: { study },
+  }));
+}
+
+interface Props {
+  study: CollectionEntry<'case-studies'>;
+}
+
+const { study } = Astro.props;
+const { Content } = await study.render();
+
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+
+function fmtDate(d: Date) {
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+---
+
+<BaseLayout
+  title={`${study.data.title} | Decisive Finance`}
+  description={study.data.outcome || study.data.title}
+  ogType="article"
+>
+  <article>
+    <section class="post-hero">
+      <div class="post-hero-inner">
+        <a href="/results" class="post-hero-back">&larr; Results</a>
+        <div class="post-hero-meta">
+          <span>{fmtDate(study.data.pubDate)}</span>
+          {study.data.clientStage && (
+            <>
+              <span class="dot">&middot;</span>
+              <span>{study.data.clientStage}</span>
+            </>
+          )}
+          {study.data.engagementType && (
+            <>
+              <span class="dot">&middot;</span>
+              <span>{study.data.engagementType}</span>
+            </>
+          )}
+        </div>
+        <h1 class="post-title">{study.data.title}</h1>
+        {study.data.outcome && <p class="post-lede">{study.data.outcome}</p>}
+      </div>
+    </section>
+
+    <section class="post-body-section">
+      <div class="post-body">
+        <Content />
+      </div>
+    </section>
+
+    <section class="close-section">
+      <div class="container">
+        <div class="container-narrow">
+          <h2>Your pattern is probably close to this one.</h2>
+          <p class="lede" style="color: rgba(255,255,255,0.8);">
+            Book 30 min. We read the pattern, and if the engagement fits, we scope it on the call.
+          </p>
+          <div class="hero-cta-row">
+            <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
+            <a href={CALENDLY} class="btn btn-primary">Book a 30-minute call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .post-hero {
+    background: var(--ink);
+    color: var(--white);
+    padding: 96px 32px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .post-hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(227, 99, 43, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .post-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .post-hero-back {
+    display: inline-block;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 36px;
+  }
+  .post-hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 22px;
+  }
+  .post-hero-meta .dot {
+    opacity: 0.4;
+  }
+  .post-title {
+    font-family: Inter, sans-serif;
+    font-size: clamp(34px, 5vw, 60px);
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin: 0 0 24px;
+    max-width: 920px;
+  }
+  .post-lede {
+    font-family: Inter, sans-serif;
+    font-size: clamp(18px, 1.8vw, 22px);
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.5;
+    margin: 0;
+    max-width: 760px;
+  }
+  .post-body-section {
+    padding: 72px 32px;
+    background: var(--white);
+  }
+  .post-body {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  .post-body :global(h2) {
+    font-size: clamp(28px, 3.2vw, 36px);
+    margin-top: 56px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .post-body :global(h3) {
+    font-size: clamp(22px, 2.4vw, 26px);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  .post-body :global(h2:first-child) {
+    margin-top: 0;
+  }
+  .post-body :global(p) {
+    margin-bottom: 1.2em;
+  }
+  .post-body :global(ul) {
+    margin: 0 0 1.4em 1.6em;
+  }
+  .post-body :global(li) {
+    margin-bottom: 0.6em;
+  }
+</style>

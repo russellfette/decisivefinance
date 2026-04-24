@@ -1,0 +1,20 @@
+# Canon v2 route renames (from Recovery Engine / Fractional CFO)
+/recovery-engine           /#tiers        301
+/recovery-engine/*         /#tiers        301
+/fractional-cfo            /#tiers        301
+/fractional-cfo/*          /#tiers        301
+
+# Legacy offers routes → homepage tier section
+/offers                    /#tiers        301
+/offers/                   /#tiers        301
+/offers/decision-diagnostic    /#tiers    301
+/offers/decision-resolution    /#tiers    301
+/offers/decision-partnership   /#tiers    301
+
+# How it works → home methodology
+/how-it-works              /#traps        301
+/how-it-works/             /#traps        301
+
+# Legacy Financial Rhythms → home
+/financial-rhythms         /              301
+/financial-rhythms/*       /              301

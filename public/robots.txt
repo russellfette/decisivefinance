@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://decisive.finance/sitemap-index.xml

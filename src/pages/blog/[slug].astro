@@ -1,0 +1,245 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+
+function fmtDate(d: Date) {
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+const ogImage = post.data.ogImage || '/og/default.png';
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  ogImage={ogImage}
+  ogType="article"
+>
+  <article>
+    <section class="post-hero">
+      <div class="post-hero-inner">
+        <a href="/blog" class="post-hero-back">&larr; Field notes</a>
+        <div class="post-hero-meta">
+          <span>{fmtDate(post.data.pubDate)}</span>
+          {post.data.readingTime && (
+            <>
+              <span class="dot">&middot;</span>
+              <span>{post.data.readingTime} min read</span>
+            </>
+          )}
+        </div>
+        <h1 class="post-title">{post.data.title}</h1>
+        <p class="post-lede">{post.data.description}</p>
+      </div>
+    </section>
+
+    <section class="post-body-section">
+      <div class="post-body">
+        <Content />
+      </div>
+    </section>
+
+    <section class="close-section">
+      <div class="container">
+        <div class="container-narrow">
+          <h2>Read the guarantee, then book the call.</h2>
+          <p class="lede" style="color: rgba(255,255,255,0.8);">
+            30 min with Russ. No pitch. You leave with at least one action.
+          </p>
+          <div class="hero-cta-row">
+            <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
+            <a href={CALENDLY} class="btn btn-primary">Book a 30-minute call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .post-hero {
+    background: var(--ink);
+    color: var(--white);
+    padding: 96px 32px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .post-hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(227, 99, 43, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .post-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -280px;
+    left: -160px;
+    width: 680px;
+    height: 680px;
+    background: radial-gradient(circle, rgba(33, 76, 82, 0.42) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .post-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .post-hero-back {
+    display: inline-block;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    margin-bottom: 36px;
+    letter-spacing: 0.02em;
+    transition: color 0.15s ease;
+  }
+  .post-hero-back:hover {
+    color: var(--orange);
+    opacity: 1;
+  }
+  .post-hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 22px;
+  }
+  .post-hero-meta .dot {
+    opacity: 0.4;
+  }
+  .post-title {
+    font-family: Inter, sans-serif;
+    font-size: clamp(34px, 5vw, 60px);
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin: 0 0 24px;
+    max-width: 920px;
+  }
+  .post-lede {
+    font-family: Inter, sans-serif;
+    font-size: clamp(18px, 1.8vw, 22px);
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.5;
+    margin: 0 0 12px;
+    max-width: 760px;
+    font-weight: 400;
+  }
+
+  .post-body-section {
+    padding: 72px 32px;
+    background: var(--white);
+  }
+  .post-body {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+  .post-body :global(h2) {
+    font-size: clamp(28px, 3.2vw, 36px);
+    margin-top: 56px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+  .post-body :global(h3) {
+    font-size: clamp(22px, 2.4vw, 26px);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .post-body :global(h2:first-child),
+  .post-body :global(h3:first-child) {
+    margin-top: 0;
+  }
+  .post-body :global(p) {
+    margin-bottom: 1.2em;
+  }
+  .post-body :global(ul),
+  .post-body :global(ol) {
+    margin: 0 0 1.4em 1.6em;
+  }
+  .post-body :global(li) {
+    margin-bottom: 0.6em;
+  }
+  .post-body :global(strong) {
+    color: var(--ink);
+    font-weight: 700;
+  }
+  .post-body :global(em) {
+    color: var(--green);
+    font-style: italic;
+  }
+  .post-body :global(a) {
+    color: var(--orange);
+    border-bottom: 1px solid rgba(227, 99, 43, 0.3);
+  }
+  .post-body :global(a:hover) {
+    opacity: 1;
+    border-bottom-color: var(--orange);
+  }
+  .post-body :global(blockquote) {
+    border-left: 3px solid var(--orange);
+    padding: 6px 0 6px 24px;
+    margin: 28px 0;
+    color: var(--green);
+    font-style: italic;
+    font-size: 19px;
+  }
+  .post-body :global(hr) {
+    border: none;
+    border-top: 1px solid var(--hairline);
+    margin: 48px 0;
+  }
+  .post-body :global(code) {
+    background: var(--paper);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'SF Mono', Monaco, Menlo, Consolas, monospace;
+  }
+  @media (max-width: 900px) {
+    .post-hero {
+      padding: 72px 24px 56px;
+    }
+    .post-body-section {
+      padding: 56px 24px;
+    }
+    .post-body {
+      font-size: 17px;
+    }
+  }
+</style>

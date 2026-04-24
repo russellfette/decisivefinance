@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const lastUpdated = '2026-04-24';
+---
+
+<BaseLayout
+  title="Privacy policy | Decisive Finance"
+  description="How Decisive Finance collects and uses your information."
+>
+  <section class="post-hero">
+    <div class="post-hero-inner">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.85); background: transparent; border-color: rgba(255,255,255,0.2);">Policy</span>
+      <h1 class="post-title">Privacy policy</h1>
+      <p class="post-lede">Last updated: {lastUpdated}</p>
+    </div>
+  </section>
+
+  <section class="post-body-section">
+    <div class="post-body">
+      <p>This policy explains what Decisive Finance collects, how we use it, and your rights over it.</p>
+
+      <h2>What we collect</h2>
+      <p><strong>Email addresses.</strong> If you subscribe to the newsletter, download the Walking Dead Self-Assessment, or download the Recovery Checklist, we collect your email address. You provide it directly.</p>
+      <p><strong>Booking details.</strong> If you book a call through Calendly, Calendly provides us your name, email address, and any scheduling notes you include. Calendly is the processor; their privacy policy governs that handoff.</p>
+      <p><strong>Analytics.</strong> Cloudflare Web Analytics records aggregate traffic data (pages, referrers, devices). No cookies, no personal identifiers, no cross-site tracking.</p>
+      <p><strong>Server logs.</strong> Standard access logs (IP, user agent, URL) are retained by Cloudflare for a short period for security monitoring. Not used for advertising.</p>
+
+      <h2>What we do with it</h2>
+      <ul>
+        <li>Send you the content you signed up for (field notes, checklists, assessment follow-ups).</li>
+        <li>Respond when you contact us.</li>
+        <li>Coordinate booked calls.</li>
+        <li>Improve the site based on aggregate analytics.</li>
+      </ul>
+      <p>We do not sell your information. We do not share it with advertisers. We do not use it for targeted advertising.</p>
+
+      <h2>Who we share it with</h2>
+      <p>Processors only:</p>
+      <ul>
+        <li><strong>Email service provider (Beehiiv).</strong> Stores your email address and sends the newsletter and sequences.</li>
+        <li><strong>Calendly.</strong> Handles call scheduling.</li>
+        <li><strong>Cloudflare.</strong> Hosts the site and provides analytics.</li>
+      </ul>
+      <p>Each is contractually obligated to handle your data under this policy. We do not use any processor for advertising purposes.</p>
+
+      <h2>How long we keep it</h2>
+      <ul>
+        <li>Email addresses: as long as you remain subscribed. You can unsubscribe from any email. We honor unsubscribe requests immediately.</li>
+        <li>Booking details: as long as is needed to coordinate and follow up on the engagement, then archived in encrypted storage.</li>
+        <li>Analytics: aggregated indefinitely; no personal identifiers.</li>
+      </ul>
+
+      <h2>Your rights</h2>
+      <p>Regardless of where you live, you can:</p>
+      <ul>
+        <li>Ask us what we have on file for you.</li>
+        <li>Ask us to correct or delete it.</li>
+        <li>Unsubscribe from email at any time via the link in every email.</li>
+      </ul>
+      <p>If you are in California (CCPA) or the EU/UK (GDPR), you have additional rights including the right to data portability and the right to restrict processing. Exercise any of these by emailing <a href="mailto:contact@decisive.finance">contact@decisive.finance</a>.</p>
+
+      <h2>Children</h2>
+      <p>This site is not directed at children under 16 and we do not knowingly collect information from them.</p>
+
+      <h2>Changes</h2>
+      <p>If we change this policy materially, we will update the "last updated" date at the top and note the change.</p>
+
+      <h2>Contact</h2>
+      <p><a href="mailto:contact@decisive.finance">contact@decisive.finance</a></p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .post-hero {
+    background: var(--ink);
+    color: var(--white);
+    padding: 96px 32px 64px;
+  }
+  .post-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .post-title {
+    font-family: Inter, sans-serif;
+    font-size: clamp(34px, 5vw, 60px);
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin: 24px 0;
+  }
+  .post-lede {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+  }
+  .post-body-section {
+    padding: 72px 32px;
+    background: var(--white);
+  }
+  .post-body {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  .post-body h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 14px;
+    font-weight: 700;
+  }
+  .post-body p,
+  .post-body ul {
+    margin-bottom: 1.2em;
+  }
+  .post-body ul {
+    margin-left: 1.6em;
+  }
+  .post-body li {
+    margin-bottom: 0.5em;
+  }
+  .post-body a {
+    color: var(--orange);
+    border-bottom: 1px solid rgba(227, 99, 43, 0.3);
+  }
+  .post-body a:hover {
+    opacity: 1;
+  }
+</style>

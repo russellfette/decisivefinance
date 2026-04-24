@@ -1,0 +1,200 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+
+const title = 'Decisive Finance | Decision-First Finance for Stalled Post-Series A/B Tech';
+const description =
+  'Decision-first finance for stalled Series A and Series B tech. Diagnostics surface $22,500 to $30,000 of forward-reallocation potential in 14 days.';
+
+const traps = [
+  {
+    name: 'Sunk Cost',
+    body: 'The money already spent feels like it is voting. It is not. The next dollar is the only one that matters.',
+  },
+  {
+    name: 'Status Quo',
+    body: 'Doing nothing feels neutral. It is never neutral. Every week of unchanged allocation is an active capital decision.',
+  },
+  {
+    name: 'Mental Accounting',
+    body: 'The right total can hide the wrong allocation. A clean aggregate number can mask a customer-funded cost sitting in the wrong bucket.',
+  },
+  {
+    name: 'Anchoring',
+    body: 'The first number set becomes the number the conversation orbits. The price launched two years ago is rarely the price today\u2019s buyer responds to.',
+  },
+  {
+    name: 'Loss Aversion',
+    body: 'The pain of admitting a commitment is not paying off is roughly twice the pleasure of recovering the capital, the Kahneman coefficient at work. Most stalled companies sit under that coefficient without naming it.',
+  },
+  {
+    name: 'Certainty Illusion',
+    body: 'Polished reporting can feel like evidence when it is actually theater. Defending numbers with a story that quietly stopped being true is the most expensive habit a stalled company carries.',
+  },
+];
+
+const tiers = [
+  {
+    label: 'Tier 1',
+    name: 'Decision Diagnostic',
+    price: '$7,500 under $3M ARR · $10,000 from $3M to $8M ARR',
+    promise: '14 days. Fixed fee.',
+    body: 'A dollarized inventory of what your current capital is earning against today\u2019s context and what it is not, with CEO-accepted reallocation paths for every forward dollar.',
+    guarantee: '3x fee guarantee on accepted forward-reallocation potential, or full refund.',
+    featured: true,
+  },
+  {
+    label: 'Tier 2',
+    name: '90-Day Decision Resolution',
+    price: '$22,500 to $36,000 total · Founding Cohort: $18,000 flat',
+    promise: '90 days. Installs the forward decision engine and proves it in market.',
+    body: 'Five material decisions underwritten forward, two executed in market with measurement, a scenario forecast with a named path to profitability, Financial Rhythms™ installed as operating infrastructure.',
+    guarantee: 'Founding Cohort pricing for the first three signed engagements, closes June 30, 2026.',
+    featured: false,
+  },
+  {
+    label: 'Tier 3',
+    name: 'Decision Partnership',
+    price: '$7,500 per month plus 5% success fee on Realized Value',
+    promise: 'Ongoing. Runs forward capital allocation on rhythm.',
+    body: 'Weekly, monthly, quarterly cadence. Every new material decision hits the same loop. Realized Value certified quarterly against methodology, not opinion.',
+    guarantee: 'Optional. Runs only once Tier 2 has installed what it is paid to operate.',
+    featured: false,
+  },
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">For funded tech companies between Series A and Series B</span>
+      <h1>The raise stalled. The decisions didn&rsquo;t.</h1>
+      <p class="hero-subhead">
+        You are making the hardest capital-allocation decisions of your career right now. The decisions that got you here weren&rsquo;t wrong. They were right for a context that no longer exists. We underwrite your forward capital in 14 days. Most Diagnostics surface <span class="dollar">$22,500 to $30,000</span> of forward-reallocation potential, with CEO-accepted capture paths for every forward dollar. Guaranteed, or full refund.
+      </p>
+      <div class="hero-cta-row">
+        <a href={CALENDLY} class="btn btn-primary">Book a 30-minute call</a>
+        <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The pattern -->
+  <section id="stuck" class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">The pattern</span>
+        <h2>Nobody re-underwrites every commitment while growth is compounding.</h2>
+        <p class="lede">
+          Not because founders are lazy or unserious, because the human brain is built not to. Forty years of behavioral economics research names the six cognitive patterns that quietly keep capital deployed long after the context that justified the deployment has changed. The patterns are structural, not failures of the founder. No founder alone, however smart or diligent, can counteract all six while operating the business they created. That is exactly the work that pays off now, and it is the work we install.
+        </p>
+        <p>
+          <a href="/blog/walking-dead-portco">Read the field guide &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Six Trap Diagnostic -->
+  <section id="traps" class="traps">
+    <div class="container">
+      <span class="section-eyebrow">Method</span>
+      <h2>The Six Trap Diagnostic&trade;</h2>
+      <p class="lede" style="color: rgba(255,255,255,0.88);">
+        The traps below are structural patterns in human cognition, not failures of the founder. No founder alone, however smart or diligent, can counteract all six while operating the business they created. That is precisely why this work pays off right now, and why the first step of a Decisive Finance engagement is naming the stack quietly holding capital against a context that has changed.
+      </p>
+      <div class="trap-grid">
+        {traps.map((trap, i) => (
+          <div class="trap-card">
+            <div class="trap-num">Trap {String(i + 1).padStart(2, '0')}</div>
+            <div class="trap-name">{trap.name}</div>
+            <p>{trap.body}</p>
+          </div>
+        ))}
+      </div>
+      <p class="traps-footer">
+        Most stalled companies are running three or four of these at once. We name the stack, surface each trap in the numbers, and convert every forward decision into a Three-Path Model the board can follow. Financial Rhythms&trade; is the operating system that keeps the forward-decision loop running after the engagement ends.
+      </p>
+    </div>
+  </section>
+
+  <!-- Three tiers -->
+  <section id="tiers">
+    <div class="container">
+      <span class="section-eyebrow">Three tiers</span>
+      <h2>Three promises. Find. Install. Run.</h2>
+      <p class="lede">
+        Tier 1 underwrites your forward capital in 14 days. Tier 2 installs the forward decision engine and proves it in market across 90 days. Tier 3 runs forward capital allocation on rhythm. Most founders start with Tier 1 and move into Tier 2.
+      </p>
+      <div class="tier-grid">
+        {tiers.map((tier) => (
+          <div class={`tier${tier.featured ? ' featured' : ''}`}>
+            {tier.featured && <span class="featured-badge">Start here</span>}
+            <div class="tier-label">{tier.label}</div>
+            <h3>{tier.name}</h3>
+            <p class="tier-promise">{tier.promise}</p>
+            <div class="tier-meta">
+              <div class="tier-row"><span>Price</span><span>{tier.price}</span></div>
+            </div>
+            <p style="font-size:15px; line-height:1.55; margin-bottom:22px;">{tier.body}</p>
+            <div class="tier-guarantee">
+              <strong>Promise</strong>
+              {tier.guarantee}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Methodology</span>
+        <h2>The methodology is called decision-first finance.</h2>
+        <p class="lede">
+          We reorganize the finance function around the next five material forward decisions the company has to make, not the last five months of variance. Reporting is a byproduct of decision-first work, not its product. The close still closes. The board deck still ships. The center of gravity moves to the forward decision queue. We don&rsquo;t audit the past. We underwrite forward.
+        </p>
+        <p>
+          <a href="/blog/decision-first-finance">Read the methodology &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- For investors -->
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">For investors</span>
+        <h2>The forward-capital-allocation engine that installs in 90 days.</h2>
+        <p class="lede">
+          GPs, LPs, and independent directors bring us into portfolio companies where the stall pattern is live but a CEO change is the wrong first move. A Decision Diagnostic is 14 days, fixed fee, guaranteed. It is designed to install 90 days of operating space before anyone has to make a bigger call. After the first call you get a one-paragraph write-up so you stay in the loop without being in the room.
+        </p>
+        <p>
+          <a href="/blog/stalled-portco-field-guide-for-investors">Field guide for investors &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="close-section">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Next step</span>
+        <h2>Read the guarantee, then book the call.</h2>
+        <p class="lede">
+          We publish our methodology openly. The blog is the field guide. The guarantee is a page. The call is thirty minutes. No pitch deck, no follow-up sequence. We read the pattern, and if the engagement fits, we scope it on the call.
+        </p>
+        <div class="hero-cta-row">
+          <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
+          <a href={CALENDLY} class="btn btn-primary">Book a 30-minute call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
