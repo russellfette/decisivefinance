@@ -8,7 +8,7 @@ author: "Russell Fette"
 postType: "field-note"
 topicCluster: "board-question-shift"
 ctaVariant: "self-assessment"
-dominantClaim: "22500-30000-trapped-14-days"
+dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/board-question-shift.png"
 featured: false
 readingTime: 5

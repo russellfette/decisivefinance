@@ -8,7 +8,7 @@ author: "Russell Fette"
 postType: "framework"
 topicCluster: "recovery-sequence"
 ctaVariant: "diagnostic-cta"
-dominantClaim: "22500-30000-trapped-14-days"
+dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/walking-dead-recovery.png"
 featured: true
 readingTime: 9
@@ -17,7 +17,7 @@ readingTime: 9
 ## At a glance
 
 - Walking dead recovery is not a growth program. It is a decision program. The first ninety days are about restoring decision cadence, not chasing revenue.
-- Day 1 to 14: run the Diagnostic. Recover $22,500 to $30,000 of trapped capital. Restate the three ratios. Draft the first Three-Path Model.
+- Day 1 to 14: run the Diagnostic. Recover $22,500 to $30,000 of forward-reallocation potential. Restate the three ratios. Draft the first Three-Path Model.
 - Day 15 to 45: make the first decision. Day 46 to 90: cadence locks, second decision ships, board narrative resets. By day 90 the company is no longer drifting.
 
 A walking dead portco does not turn around by accelerating. It turns around by deciding. Our engagements run on a ninety-day sequence because that is how long it takes to break the drift, clear the cash, and re-anchor the operating rhythm. What follows is the sequence we run inside Diagnostic and 90-Day Decision Resolution engagements, compressed to a single post.

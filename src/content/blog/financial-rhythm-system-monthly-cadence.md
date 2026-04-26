@@ -8,7 +8,7 @@ author: "Russell Fette"
 postType: "framework"
 topicCluster: "financial-rhythm-system"
 ctaVariant: "diagnostic-cta"
-dominantClaim: "22500-30000-trapped-14-days"
+dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/financial-rhythm-system.png"
 featured: false
 readingTime: 7
@@ -67,7 +67,7 @@ The Signal Dashboard is the simplest of the three. Six rows, one per walking dea
 - CEO/investor fracture: presence of shared written definition, yes/no.
 - Stalled raise: months in process.
 - Retrospective CFO: Three-Path Models shipped this quarter.
-- Trapped capital: categories not yet scanned, count.
+- Forward-reallocation potential: categories not yet scanned, count.
 
 The Signal Dashboard is the instrument that keeps the recovery honest once the Diagnostic has ended. As long as four of Six Trap Diagnostic™ are green and the other two are yellow or better, the company is out of the pattern. When two signals flip red in the same month, the rhythm calls an operating review inside the week.
 

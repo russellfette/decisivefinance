@@ -8,7 +8,7 @@ author: "Russell Fette"
 postType: "field-note"
 topicCluster: "stalled-raise"
 ctaVariant: "self-assessment"
-dominantClaim: "22500-30000-trapped-14-days"
+dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/stalled-raise.png"
 featured: false
 readingTime: 7
@@ -70,7 +70,7 @@ The reversal has three moves.
 
 ## Where does cash recovery fit in?
 
-Inside a stalled raise, the cash recovery work is doing double duty. The $22,500 to $30,000 of trapped capital that surfaces in the first 14 days of a Diagnostic buys runway. More importantly, the act of finding it and cleaning it up demonstrates to existing investors that the CEO still has operating grip on the company. That matters in the bridge conversation more than any pitch page.
+Inside a stalled raise, the cash recovery work is doing double duty. The $22,500 to $30,000 of forward-reallocation potential that surfaces in the first 14 days of a Diagnostic buys runway. More importantly, the act of finding it and cleaning it up demonstrates to existing investors that the CEO still has operating grip on the company. That matters in the bridge conversation more than any pitch page.
 
 ## Where to go from here
 

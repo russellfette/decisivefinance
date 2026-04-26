@@ -8,7 +8,7 @@ author: "Russell Fette"
 postType: "framework"
 topicCluster: "gp-board-questions"
 ctaVariant: "investor-cta"
-dominantClaim: "22500-30000-trapped-14-days"
+dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/gp-board-questions.png"
 featured: false
 readingTime: 6
@@ -56,7 +56,7 @@ If the company offers to have the restated view for the next meeting, book the f
 
 *What is the company's trapped-capital position across the eight categories, and who owns the recovery?*
 
-This one tends to produce the longest silence in the room. Most CFOs have not been asked about trapped capital by name. The question forces an acknowledgement that cash recovery is a finance responsibility, not a procurement or operations side-project.
+This one tends to produce the longest silence in the room. Most CFOs have not been asked about forward-reallocation potential by name. The question forces an acknowledgement that cash recovery is a finance responsibility, not a procurement or operations side-project.
 
 **What a performing company answers:** *We scanned in Q2. SaaS and vendor terms produced $34K of recovery, cloud will close in August, R&D credit pre-read is underway with outside counsel. The controller owns the tracking.* The company has decision-cadence hygiene.
 

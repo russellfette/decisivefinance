@@ -8,7 +8,7 @@ author: "Russell Fette"
 postType: "framework"
 topicCluster: "decision-slide"
 ctaVariant: "diagnostic-cta"
-dominantClaim: "22500-30000-trapped-14-days"
+dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/decision-slide.png"
 featured: false
 readingTime: 5

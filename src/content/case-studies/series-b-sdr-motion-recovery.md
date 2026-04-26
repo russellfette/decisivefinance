@@ -14,7 +14,7 @@ featured: true
 ## At a glance
 
 - Series B SaaS company, $18M ARR, 140 employees, 16 months post-Series B, raise had been in process for 5 months.
-- Diagnostic surfaced $47,000 of trapped capital in 22 days across four of the eight categories: SaaS subscription audit ($18K), R&D tax credit filing ($14K), AR acceleration ($9K), and two vendor renegotiations ($6K).
+- Diagnostic surfaced $47,000 of forward-reallocation potential in 22 days across four of the eight categories: SaaS subscription audit ($18K), R&D tax credit filing ($14K), AR acceleration ($9K), and two vendor renegotiations ($6K).
 - Core decision unstuck: the SDR motion was running by default at a negative contribution margin. A Three-Path Model landed on Kill. Six FTEs redeployed to customer success. The raise narrative changed on the next board call.
 
 ## Situation
@@ -72,7 +72,7 @@ The CEO signed Kill. The board saw all three paths at the next meeting. The conv
 ## Outcome
 
 **By day 22:**
-- $47,000 of trapped capital confirmed in the bank and on the run-rate. (SaaS subscription cancellations booked: $18K. R&D credit filed, pending refund: $14K. AR accelerated through collections push: $9K. Vendor renegotiations signed: $6K.)
+- $47,000 of forward-reallocation potential confirmed in the bank and on the run-rate. (SaaS subscription cancellations booked: $18K. R&D credit filed, pending refund: $14K. AR accelerated through collections push: $9K. Vendor renegotiations signed: $6K.)
 - SDR motion decided. Six FTEs redeployed. Severance processed.
 - First Three-Path Model on file and signed.
 

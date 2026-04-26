@@ -8,7 +8,7 @@ author: "Russell Fette"
 postType: "field-note"
 topicCluster: "ceo-investor-fracture"
 ctaVariant: "self-assessment"
-dominantClaim: "22500-30000-trapped-14-days"
+dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/ceo-investor-fracture.png"
 featured: false
 readingTime: 6
