@@ -22,7 +22,7 @@ const traps = [
   },
   {
     name: 'Anchoring',
-    body: 'The first number set becomes the number the conversation orbits. The price launched two years ago is rarely the price today\u2019s buyer responds to.',
+    body: 'The first number set becomes the number the conversation orbits. The price launched two years ago is rarely the price today’s buyer responds to.',
   },
   {
     name: 'Loss Aversion',
@@ -40,7 +40,7 @@ const tiers = [
     name: 'Decision Diagnostic',
     price: '$7,500 under $3M ARR · $10,000 from $3M to $8M ARR',
     promise: '14 days. Fixed fee.',
-    body: 'A dollarized inventory of what your current capital is earning against today\u2019s context and what it is not, with CEO-accepted reallocation paths for every forward dollar.',
+    body: 'A dollarized inventory of what your current capital is earning against today’s context and what it is not, with CEO-accepted reallocation paths for every forward dollar.',
     guarantee: '3x fee guarantee on accepted forward-reallocation potential, or full refund.',
     featured: true,
   },
@@ -63,6 +63,111 @@ const tiers = [
     featured: false,
   },
 ];
+
+const engineTests = [
+  {
+    title: 'Five material decisions underwritten forward.',
+    body: 'Each with a Three-Path Model, a Six Trap stack naming the patterns that quietly held capital in place, the forward reallocation path, and a CEO-accepted recommendation on file.',
+  },
+  {
+    title: 'Two of those five executed in market with measurement.',
+    body: 'Not modeled. Live. A pricing change with at least one cycle of data, a product-line restructure booked, a cost or headcount change implemented with documented impact, or a growth experiment running with named go and no-go triggers.',
+  },
+  {
+    title: 'A scenario forecast with a named path to profitability.',
+    body: 'Eighteen-month base, upside, downside. Weekly actuals-vs-prediction reconciliation running. Not a hope. A specific sequence of forward decisions with named assumptions, triggers, and next-cycle hypotheses.',
+  },
+];
+
+const artifacts = [
+  {
+    name: 'Unit Economics Dashboard',
+    body: 'Live CAC, LTV, payback, gross and contribution margin, by segment, cohort, channel.',
+  },
+  {
+    name: 'Product Line P&Ls',
+    body: 'Contribution margin per product with full cost allocation and the cross-subsidy map nobody had.',
+  },
+  {
+    name: 'Forward Capital Register',
+    body: 'Every cost above $5,000 per month carries an explicit forward-underwriting status, an owner, and a standing review cadence.',
+  },
+  {
+    name: 'Three-Path Models',
+    body: 'Keep / Kill / Restructure on every material decision, with the cognitive stack that quietly held the capital in place and the forward reallocation path.',
+  },
+  {
+    name: 'Scenario Forecast',
+    body: 'Eighteen-month base, upside, downside, with named assumptions and weekly actuals-vs-prediction reconciliation.',
+  },
+  {
+    name: 'Pricing Architecture Revisit',
+    body: 'Forward repricing of existing offerings in existing channels. Not net-new products or channels.',
+  },
+  {
+    name: 'Growth Experiment Register',
+    body: 'The two in-market decisions with measurement protocol, go and no-go triggers.',
+  },
+  {
+    name: 'Bridge / Pivot / Raise Model',
+    body: 'Three financing paths including the capital plan the next round will be underwritten from.',
+  },
+  {
+    name: 'Board Decision Package',
+    body: 'Fully populated board deck the founder can walk through without hedging, plus a reusable template.',
+  },
+  {
+    name: 'Final Readout and Decision Playbook',
+    body: 'Ninety-day capstone and the forward playbook the CEO can execute without us.',
+  },
+];
+
+const proofs = [
+  {
+    name: 'Pathwright',
+    tag: 'SaaS / EdTech',
+    outcome: 'Valuation 3x. Net income 4x. LTV 2x to 5x.',
+    trap: 'Mental Accounting + Sunk Cost',
+    resolution:
+      '$600,000 per year of engineering was customer-funded development hidden in the departmental P&L, deployed against a context that assumed it was all forward product investment. Product Line P&L broke the cross-subsidy. The forward reallocation restructured the work to paid services at 2.5x margin.',
+    takeaway:
+      'Engineering-hidden-in-R&D is standard across funded SaaS, concentrated in 18-month-old hires whose original charter has since changed.',
+  },
+  {
+    name: 'SmartTab',
+    tag: 'Tech / POS',
+    outcome: 'Fourteen months cash stability. +19% valuation. Growth equity round secured.',
+    trap: 'Status Quo + Loss Aversion',
+    resolution:
+      'Hardware ops running on a 2022 strategic decision nobody had re-underwritten against the current context. Founder anchored to the legacy model. The forward reallocation made the emotion explicit and restructured to SaaS-led with partnered hardware. Zero cash crunches.',
+    takeaway:
+      'Post-raise strategic commitments never re-underwritten against the current context are the largest single bucket of trapped value in the average funded tech P&L.',
+  },
+  {
+    name: 'Orchestraight',
+    tag: 'AI SaaS',
+    outcome: '$12M pre-seed cap closed. Board-ready from Day 1.',
+    trap: 'Mental Accounting + Status Quo + Anchoring + Certainty Illusion',
+    resolution:
+      'Three revenue streams commingled. Pricing anchored to the wrong buyer. No scenario model for investors. Separated Enterprise / API / SMB economics forward, killed the money-losing $99 tier, sequenced API launch post-raise.',
+    takeaway:
+      'The investor-facing problem is identical. Commingled numbers, no downside case, no named assumption set. The raise is 18 months overdue, not next quarter.',
+  },
+];
+
+const fitYes = [
+  'Venture-backed tech, $1M to $8M ARR.',
+  'Eighteen or more months since the last raise.',
+  'Burn multiple above 3x. Growth has flattened.',
+  'A founder making the hardest forward-capital calls of their career without the infrastructure to defend them.',
+];
+
+const fitNo = [
+  'Under $1M ARR. Not enough cost structure for the math to work.',
+  'Raised in the last six months. Forward context has not shifted enough yet.',
+  'Already in active turnaround with another firm in the chair.',
+  'Bookkeeping so broken the work becomes archaeology, not analysis.',
+];
 ---
 
 <BaseLayout title={title} description={description}>
@@ -74,6 +179,11 @@ const tiers = [
       <p class="hero-subhead">
         You are making the hardest capital-allocation decisions of your career right now. The decisions that got you here weren&rsquo;t wrong. They were right for a context that no longer exists. We underwrite your forward capital in 14 days. Most Diagnostics surface <span class="dollar">$22,500 to $30,000</span> of forward-reallocation potential, with CEO-accepted capture paths for every forward dollar. Guaranteed, or full refund.
       </p>
+      <blockquote class="hero-quote">
+        &ldquo;You were the first person who made it feel like a solvable problem, not a permanent condition.&rdquo;
+        <cite>Founder, venture-backed SaaS, 22 months post-raise</cite>
+      </blockquote>
+      <div class="rally">UNSTICK. UNTANGLE. UNLOCK.</div>
       <div class="hero-cta-row">
         <a href={CALENDLY} class="btn btn-primary">Book a 30-minute call</a>
         <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
@@ -81,18 +191,37 @@ const tiers = [
     </div>
   </section>
 
-  <!-- The pattern -->
+  <!-- The Stuck Raise -->
   <section id="stuck" class="alt">
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow">The pattern</span>
-        <h2>Nobody re-underwrites every commitment while growth is compounding.</h2>
+        <span class="section-eyebrow">The stuck raise</span>
+        <h2>Roughly seven thousand founders are trapped between rounds right now.</h2>
         <p class="lede">
-          Not because founders are lazy or unserious, because the human brain is built not to. Forty years of behavioral economics research names the six cognitive patterns that quietly keep capital deployed long after the context that justified the deployment has changed. The patterns are structural, not failures of the founder. No founder alone, however smart or diligent, can counteract all six while operating the business they created. That is exactly the work that pays off now, and it is the work we install.
+          Growth flatlined. Portfolio CFOs have pulled back. Growth-stage fractional CFOs will not touch a stalled cap table. The hardest forward calls of the company (product-line direction, pricing architecture, headcount shape, the path to the next round) are getting made on instinct, because the financial infrastructure to defend them to a board or a new lead is not there.
         </p>
         <p>
-          <a href="/blog/walking-dead-portco">Read the field guide &rarr;</a>
+          From the investor seat, the view is the same from the other side. Capital is deployed. Context has changed. The portfolio company is in what one board member called &ldquo;narrative maintenance mode,&rdquo; reporting the same KPIs quarter after quarter. The unit economics are not clean enough to defend a follow-on, pass a reference check from a new lead, or walk into a board meeting with a story that holds up under pressure.
         </p>
+        <div class="category-pull">
+          The category belongs to the market. We are one operator inside it.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Not the Portfolio CFO -->
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Why not the portfolio CFO</span>
+        <h2>The portfolio CFO reports. Decisive Finance underwrites forward.</h2>
+        <p class="lede">
+          Different mandate, different output, no overlap. A portfolio CFO is paid to tell investors what happened last quarter. Decisive Finance is paid to decide what the next dollar does, defend the call with math, prove it in market, and install the engine that keeps doing it. The report can be clean and the forward allocation still undefended. When the raise story needs defending, the founder does not need better reporting. They need every material forward decision underwritten, executed, and proven in market.
+        </p>
+        <div class="delay-callout">
+          Every month the forward-allocation discipline is absent, more capital stays deployed against a context that has already changed, and the raise story gets harder to defend.
+        </div>
       </div>
     </div>
   </section>
@@ -103,7 +232,7 @@ const tiers = [
       <span class="section-eyebrow">Method</span>
       <h2>The Six Trap Diagnostic&trade;</h2>
       <p class="lede" style="color: rgba(255,255,255,0.88);">
-        The traps below are structural patterns in human cognition, not failures of the founder. No founder alone, however smart or diligent, can counteract all six while operating the business they created. That is precisely why this work pays off right now, and why the first step of a Decisive Finance engagement is naming the stack quietly holding capital against a context that has changed.
+        Nobody re-underwrites every commitment when growth is compounding. Not because they are lazy or unserious, because the human brain is built not to. The traps below are structural patterns in human cognition, not failures of the founder. No founder alone, however smart or diligent, can counteract all six while operating the business they created.
       </p>
       <div class="trap-grid">
         {traps.map((trap, i) => (
@@ -146,6 +275,159 @@ const tiers = [
           </div>
         ))}
       </div>
+
+      <!-- Tier 3 worked magnitude -->
+      <div class="worked">
+        <span class="label">Tier 3 worked magnitude</span>
+        <h4>Roughly $105,000 first year against quarterly-certified value.</h4>
+        <p>
+          Typical first year runs $90,000 in base fees ($7,500 &times; 12) plus a success fee on Realized Value. If a Tier 2 engagement produces $300,000 of Realized Value across year one (roughly one well-executed pricing change plus one capacity reallocation), the success fee adds $15,000. If Realized Value is zero, the success fee is zero.
+        </p>
+        <div class="calc">
+          <div><span class="k">Base fees, year 1</span><span class="v">$90,000</span></div>
+          <div><span class="k">Realized Value</span><span class="v">$300,000</span></div>
+          <div><span class="k">Success fee (5%)</span><span class="v accent">$15,000</span></div>
+          <div><span class="k">Year 1 total</span><span class="v">$105,000</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What "Engine Installed" Means at Day 90 -->
+  <section class="alt">
+    <div class="container">
+      <span class="section-eyebrow">Day 90 readout</span>
+      <h2>What &ldquo;engine installed&rdquo; means at Day 90.</h2>
+      <p class="lede">
+        Tier 2 is not a second pull on the trapped-value well. Tier 1 already did that. Tier 2 is paid to install the forward decision engine that underwrites new material calls into in-market-tested growth and compounds quarter over quarter. Three things have to be true on the Day 90 readout. If all three are not true, the engine is not installed. That is the test the guarantee measures against.
+      </p>
+      <div class="engine-list">
+        {engineTests.map((item) => (
+          <div class="engine-item">
+            <div>
+              <p><strong>{item.title}</strong></p>
+              <p style="margin-top: 8px; color: var(--muted);">{item.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Ten Artifacts catalog -->
+  <section id="artifacts" class="artifacts">
+    <div class="container">
+      <span class="section-eyebrow">Tier 2 artifacts</span>
+      <h2>Ten new artifacts. Fifteen cumulative.</h2>
+      <p class="lede">
+        Not advisory hours. A specified product with specified output. Tier 1 delivers five artifacts. Tier 2 adds ten more on top. Fifteen cumulative through Day 90.
+      </p>
+      <div class="artifact-grid">
+        {artifacts.map((art, i) => (
+          <div class="artifact">
+            <div class="num">{String(i + 1).padStart(2, '0')}.</div>
+            <div>
+              <h4>{art.name}</h4>
+              <p>{art.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <details class="scope">
+        <summary>What&rsquo;s out of scope</summary>
+        <div class="scope-body">
+          If it is not in the artifact catalog, it is a change order. Explicitly outside Tier 2: ad-hoc modeling of unrelated transactions (acquisition offers, side investments), bookkeeping cleanup beyond what the artifacts require, board-meeting facilitation, HR or legal consulting on specific RIF cases, fundraising introductions or pitch coaching, interim controller or FP&amp;A hiring, pricing architecture for net-new products or net-new channels, and growth experiments in channels the company is not already operating in. Any of those can be added as a change order with separate scope, separate price, and a fixed delivery date.
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- What That Does for the Raise -->
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">The raise story</span>
+        <h2>What that does for the raise.</h2>
+        <p class="lede">
+          By the end of 90 days the company has clean unit economics per revenue stream, a defended pricing architecture, a three-scenario forecast with a named path to profitability, two live experiments with measurement in market, a board package the founder can walk through without hedging, and a capital plan with explicit triggers. The raise story stops being last quarter&rsquo;s narrative retold. It becomes current-quarter reality, with math behind every forward call and an engine that keeps making the next one.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pattern Proof -->
+  <section id="proof" class="alt">
+    <div class="container">
+      <span class="section-eyebrow">Pattern proof</span>
+      <h2>Three mechanisms across funded tech.</h2>
+      <p class="lede">
+        The Decisive Finance mechanism works because the Six Trap Diagnostic&trade; reads the same way across funded tech contexts. These three engagements spanned SaaS, POS with hardware, and pre-seed AI. Stalled-tech Series A/B case studies are being built now through the Founding Cohort.
+      </p>
+      <div class="proof-grid">
+        {proofs.map((p) => (
+          <div class="proof-card">
+            <div class="proof-name">{p.name}</div>
+            <span class="proof-tag">{p.tag}</span>
+            <div class="proof-outcome">{p.outcome}</div>
+            <span class="proof-trap">{p.trap}</span>
+            <p class="resolution">{p.resolution}</p>
+            <div class="takeaway">What this means for stalled tech: {p.takeaway}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Founding Cohort -->
+  <section class="cohort">
+    <div class="container">
+      <span class="cohort-eyebrow">Founding cohort &middot; first three resolutions</span>
+      <h2>Be one of the first three stalled post-Series A/B engagements in the record.</h2>
+      <p style="color: #ffffffeb; font-size: 18px; line-height: 1.55; max-width: 760px;">
+        Decisive Finance is opening the first three Resolutions as the Founding Cohort. Same architecture, same guarantee, two differences below. Closes at three signed Resolution engagements or June 30, 2026, whichever comes first. Diagnostic runs at standard price.
+      </p>
+      <div class="cohort-grid">
+        <div class="cohort-block">
+          <strong>Founding pricing</strong>
+          <p>The 90-Day Decision Resolution at $18,000 flat, versus $22,500 to $36,000 standard.</p>
+        </div>
+        <div class="cohort-block">
+          <strong>Published mechanism</strong>
+          <p>In exchange for the concession, the CEO grants written permission to publish the trap stack, Three-Path outputs, and financial outcomes as a case study after Day 90. Named or anonymized at CEO discretion.</p>
+        </div>
+        <div class="cohort-block">
+          <strong>Eligibility filter</strong>
+          <p>By Day 21, the engagement must have a credible draft Pricing Architecture Revisit and Growth Experiment Register on track to produce at least one in-market decision by Day 60. Otherwise it runs at standard pricing.</p>
+        </div>
+      </div>
+      <a href={CALENDLY} class="btn btn-secondary">Book the 30-minute call</a>
+      <div class="cohort-status">Cohort open · seats remaining</div>
+    </div>
+  </section>
+
+  <!-- Who This Fits -->
+  <section>
+    <div class="container">
+      <span class="section-eyebrow">Who this fits</span>
+      <h2>Who this is for, and who it is not.</h2>
+      <p class="lede">
+        The Diagnostic and Resolution math is built for a specific cohort. If you are inside the band, the work fits. If you are outside, we will say so on the first call and you keep your time.
+      </p>
+      <div class="fit-grid">
+        <div class="fit-col yes">
+          <h4>Fits</h4>
+          <ul>
+            {fitYes.map((line) => <li>{line}</li>)}
+          </ul>
+        </div>
+        <div class="fit-col no">
+          <h4>Not a fit</h4>
+          <ul>
+            {fitNo.map((line) => <li>{line}</li>)}
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -181,18 +463,24 @@ const tiers = [
     </div>
   </section>
 
-  <!-- Closing CTA -->
+  <!-- Closing CTA · Start Here -->
   <section class="close-section">
     <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">Next step</span>
-        <h2>Read the guarantee, then book the call.</h2>
-        <p class="lede">
-          We publish our methodology openly. The blog is the field guide. The guarantee is a page. The call is thirty minutes. No pitch deck, no follow-up sequence. We read the pattern, and if the engagement fits, we scope it on the call.
-        </p>
-        <div class="hero-cta-row">
+      <span class="section-eyebrow">Start here</span>
+      <h2>Read the guarantee, then book the call.</h2>
+      <p class="lede">
+        The promise is the quote at the top of this page. The decisions behind the stalled round were right for a context that no longer exists. Nobody had the bandwidth, the framework, or the neutrality to install the forward discipline the company needs now. Decisive Finance does.
+      </p>
+      <div class="close-grid">
+        <div class="close-card">
+          <h3>For founders</h3>
+          <p>One 30-minute call. No pitch. If the fit is there, we book a 60-minute working session to run the Diagnostic. If it is not, both sides know inside the first call and we end clean.</p>
+          <a href={CALENDLY} class="btn btn-primary">Book the call</a>
+        </div>
+        <div class="close-card">
+          <h3>For investors</h3>
+          <p>If you are watching a portfolio company make hard forward calls without the infrastructure to defend them to you, this is what we install. Forward this page, or introduce directly. After the first call we send a one-paragraph fit/not-fit note so you stay in the loop.</p>
           <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
-          <a href={CALENDLY} class="btn btn-primary">Book a 30-minute call</a>
         </div>
       </div>
     </div>
