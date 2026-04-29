@@ -5,6 +5,9 @@ const year = new Date().getFullYear();
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
+      <a href="/" aria-label="Decisive Finance home">
+        <img src="/brand/wordmark-dark.svg" alt="Decisive" class="footer-wordmark" width="160" height="46" />
+      </a>
       <p>
         Decisive Finance is the offer brand. Financial Rhythms™ is the methodology.
       </p>
@@ -12,7 +15,7 @@ const year = new Date().getFullYear();
         Based in the Pacific Northwest, working with post-Series A and Series B tech companies nationwide.
       </p>
       <p class="muted">
-        <a href="mailto:contact@decisive.finance">contact@decisive.finance</a>
+        <a href="mailto:russell@decisive.finance">russell@decisive.finance</a>
       </p>
     </div>
 
@@ -72,6 +75,13 @@ const year = new Date().getFullYear();
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 64px;
+  }
+  .footer-wordmark {
+    display: block;
+    height: 32px;
+    width: auto;
+    margin-bottom: 24px;
+    opacity: 0.95;
   }
   .footer-brand p {
     color: rgba(255, 255, 255, 0.85);

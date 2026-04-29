@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-label="Decisive wordmark, light">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&amp;display=swap');
+    .wm { font-family: 'Inter', -apple-system, 'Helvetica Neue', sans-serif; font-weight: 800; font-size: 180px; letter-spacing: -5.4px; }
+  </style>
+  <text x="0" y="170" class="wm" fill="#182228">Decisive</text>
+  <circle id="tittle" cx="331" cy="40" r="12" fill="#e3632b"/>
+  <script type="application/ecmascript"><![CDATA[
+    (function () {
+      function calibrate() {
+        try {
+          var svg = document.currentScript ? document.currentScript.ownerSVGElement : document.rootElement;
+          if (!svg) return;
+          var text = svg.querySelector('text');
+          var tittle = svg.querySelector('#tittle');
+          if (!text || !tittle) return;
+          // Use getExtentOfChar to find the first "i" (index 3 in "Decisive").
+          var firstI = text.getExtentOfChar(3);
+          var secondI = text.getExtentOfChar(5);
+          var cx = firstI.x + firstI.width / 2;
+          // Tittle center y: use cap-height offset. Second i's extent top = cap-to-tittle top.
+          // We paint the orange at same y as would cover second i's tittle.
+          var cy = secondI.y + (secondI.height * 0.09); // approximates tittle center
+          tittle.setAttribute('cx', cx);
+          tittle.setAttribute('cy', cy);
+        } catch (e) { /* fall back to hardcoded */ }
+      }
+      if (document.readyState === 'complete') calibrate();
+      else window.addEventListener('load', calibrate);
+    })();
+  ]]></script>
+</svg>

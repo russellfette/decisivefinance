@@ -34,7 +34,7 @@ Nothing is touched without a clean access trail. Every pull is logged. The engag
 
 Day 2 and 3 are the eight-category inventory. One engineer on the team runs the cloud-billing scan and the SaaS-subscription pull. A second runs the R&D tax credit pre-read against the last three years of returns. A third runs AR aging and vendor terms. Finance runs headcount, contractor, and G&A extracts.
 
-By end of Day 3 the team has a one-page inventory for each of the eight categories. Nothing is acted on yet. The point of the inventory is to have a single view of where every dollar could be in one of the eight buckets, so the scan in Days 4-8 can be dollarized and prioritized.
+By end of Day 3 the team has a one-page inventory for each of the eight categories. Nothing is acted on yet. The point of the inventory is to have a single view of where every dollar could be in one of the eight buckets, so the scan in Days 4-8 can be in dollars and prioritized.
 
 ## What happens Day 4 to Day 8?
 

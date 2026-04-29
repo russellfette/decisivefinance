@@ -23,7 +23,7 @@
 Is your funded tech company walking dead?
 
 ### Subhead
-12 questions. Six minutes. A dollarized read on the pattern, and the specific first move if it fits.
+12 questions. Six minutes. A in dollars read on the pattern, and the specific first move if it fits.
 
 ### Body (2 sentences)
 Most stalled Series A and B portcos look alive on the cap table and dead in the forecast. The self-assessment names the pattern in finance language, and tells you whether to keep walking or pick up the phone.
@@ -168,7 +168,7 @@ If all three of those surface something real, schedule a conversation before nex
 
 You are showing three to five signals live. The most common stack at your score is [signal 1] + [signal 2] + [signal 3]. Left alone, the pattern tightens and the next raise stalls two quarters from now.
 
-The intervention is specific and time-boxed. A 14-day Diagnostic: structured interview, trap-stack mapping, trapped-capital scan across eight categories, Three-Path Models on the five decisions that matter most. Typical outcome: $22,500 to $30,000 of forward-reallocation potential surfaced and five decisions queued for resolution.
+The intervention is specific and time-boxed. A 14-day Diagnostic: structured interview, trap-stack mapping, trapped-capital scan across eight categories, Three-Path Models on the five decisions that matter most. Typical outcome: $22,500 to $30,000 of trapped value surfaced and five decisions queued for resolution.
 
 [Book a 30-minute diagnostic call: calendly.com/russell-decisive/30min]
 
@@ -177,7 +177,7 @@ The intervention is specific and time-boxed. A 14-day Diagnostic: structured int
 
 You're showing six or more signals. At this score, the raise is already stalled, already soft, or about to be. The decisions that unstick the company are almost always in the next five material calls you have not yet made.
 
-The move is not to rebuild the deck. It's a 14-day Diagnostic that names the trap stack, surfaces $22,500 to $30,000 of forward-reallocation potential, and queues the five decisions as Three-Path Models. The engagement is scoped, guaranteed, and designed to put the company on a different trajectory before the next board meeting.
+The move is not to rebuild the deck. It's a 14-day Diagnostic that names the trap stack, surfaces $22,500 to $30,000 of trapped value, and queues the five decisions as Three-Path Models. The engagement is scoped, guaranteed, and designed to put the company on a different trajectory before the next board meeting.
 
 [Book a diagnostic call today: calendly.com/russell-decisive/30min]
 

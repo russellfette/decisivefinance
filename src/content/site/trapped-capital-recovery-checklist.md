@@ -10,7 +10,7 @@
 ## Landing page copy
 
 ### Headline
-The 37 places we surface $22,500 to $30,000 of forward-reallocation potential in a funded tech company's first 14 days
+The 37 places we surface $22,500 to $30,000 of trapped value in a funded tech company's first 14 days
 
 ### Subhead
 Eight categories. Thirty-seven items. The order we run them, the dollar range we see, and the time-to-recovery on each. Printable, one page front and back.

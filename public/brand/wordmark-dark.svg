@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-label="Decisive wordmark, dark">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&amp;display=swap');
+    .wm { font-family: 'Inter', -apple-system, 'Helvetica Neue', sans-serif; font-weight: 800; font-size: 180px; letter-spacing: -5.4px; }
+  </style>
+  <text x="0" y="170" class="wm" fill="#ffffff">Decisive</text>
+  <circle id="tittle" cx="331" cy="40" r="12" fill="#e3632b"/>
+  <script type="application/ecmascript"><![CDATA[
+    (function () {
+      function calibrate() {
+        try {
+          var svg = document.currentScript ? document.currentScript.ownerSVGElement : document.rootElement;
+          if (!svg) return;
+          var text = svg.querySelector('text');
+          var tittle = svg.querySelector('#tittle');
+          if (!text || !tittle) return;
+          var firstI = text.getExtentOfChar(3);
+          var secondI = text.getExtentOfChar(5);
+          var cx = firstI.x + firstI.width / 2;
+          var cy = secondI.y + (secondI.height * 0.09);
+          tittle.setAttribute('cx', cx);
+          tittle.setAttribute('cy', cy);
+        } catch (e) {}
+      }
+      if (document.readyState === 'complete') calibrate();
+      else window.addEventListener('load', calibrate);
+    })();
+  ]]></script>
+</svg>

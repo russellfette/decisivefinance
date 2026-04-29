@@ -14,7 +14,7 @@ A post-Series A or Series B company that has stopped moving. Revenue holds or cr
 
 ## 2. Six-signal pattern
 
-The Six Trap Diagnostic™ that together define a walking dead portco. Three of six is enough to be in the category. The signals are: ratio mirage, board question shift, CEO/investor fracture, stalled raise, retrospective CFO, and forward-reallocation potential with no owner.
+The Six Trap Diagnostic™ that together define a walking dead portco. Three of six is enough to be in the category. The signals are: ratio mirage, board question shift, CEO/investor fracture, stalled raise, retrospective CFO, and trapped value with no owner.
 
 **See:** [The walking dead portco](/blog/walking-dead-portco)
 
@@ -54,9 +54,9 @@ A rolling 18-month cash view with three sensitivities (base, downside, upside), 
 
 **See:** [The Financial Rhythm System](/blog/financial-rhythm-system-monthly-cadence)
 
-## 9. forward-reallocation potential
+## 9. trapped value
 
-Recoverable cash sitting across one of eight categories in a funded technology company: SaaS overages, cloud infrastructure, R&D tax credits, AR aging, vendor terms, revenue leakage, headcount and contractor load, and G&A overhead. In a walking dead portco, $22,500 to $30,000 of forward-reallocation potential is the floor we have yet to miss in 14 days.
+Recoverable cash sitting across one of eight categories in a funded technology company: SaaS overages, cloud infrastructure, R&D tax credits, AR aging, vendor terms, revenue leakage, headcount and contractor load, and G&A overhead. In a walking dead portco, $22,500 to $30,000 of trapped value is the floor we have yet to miss in 14 days.
 
 **See:** [What the first 14 days actually look like](/blog/first-14-days-operational-scan) and [the guarantee](/guarantee)
 

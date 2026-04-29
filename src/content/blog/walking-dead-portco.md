@@ -1,7 +1,7 @@
 ---
 title: "The walking dead portco: what it is, how to spot it, how to come back"
 slug: walking-dead-portco
-description: "A walking dead portco looks alive on the cap table and dead in the forecast. Here are the Six Trap Diagnostic™, the three paths out, and the $22,500 to $30,000 of forward-reallocation potential most Diagnostics surface in 14 days."
+description: "A walking dead portco looks alive on the cap table and dead in the forecast. Here are the Six Trap Diagnostic™, the three paths out, and the $22,500 to $30,000 of trapped value most Diagnostics surface in 14 days."
 pubDate: 2026-02-10
 updatedDate: 2026-02-10
 author: "Russell Fette"
@@ -18,7 +18,7 @@ pillarHub: true
 ## At a glance
 
 - A walking dead portco is a post-Series A or Series B company that looks funded on the cap table and stalled in the forecast. The numbers are "fine." Nothing grows.
-- Six Trap Diagnostic™ tell you which one you are: ratios that stop tracking, a board that starts asking softer questions, a CEO/investor fracture, a raise that's "in progress" for four months, a CFO who defaults to retrospective reporting, and $22.5K to $30K of forward-reallocation potential nobody owns.
+- Six Trap Diagnostic™ tell you which one you are: ratios that stop tracking, a board that starts asking softer questions, a CEO/investor fracture, a raise that's "in progress" for four months, a CFO who defaults to retrospective reporting, and $22.5K to $30K of trapped value nobody owns.
 - The move out is never "grow faster." It's to recover cash, re-ground the unit economics, and make the next five material decisions three ways, not one.
 
 ## What a walking dead portco actually is
@@ -55,9 +55,9 @@ Not rejected. In progress. Partner meetings that go well but do not convert. IOI
 
 A CFO who is stuck produces clean retrospective decks. Variance explained. Bridges walked. Cash position restated. What they do not produce is a three-path model on the next material decision the company has to make. If every board deck is a rearview mirror with five tabs in Excel and no Keep/Kill/Restructure on the five decisions that matter this quarter, the finance function has gone defensive.
 
-### 6. There is $22.5K to $30K of forward-reallocation potential no one is chasing
+### 6. There is $22.5K to $30K of trapped value no one is chasing
 
-We have yet to open a Diagnostic on a walking dead portco and not surface at least $22,500 of forward-reallocation potential in the first 14 days. Most Diagnostics surface $22.5K to $30K. Some clear far more. Vendor overages on SaaS no one audited. R&D credits the bookkeeper never filed. AR that went 90 days because nobody made the call. Contract terms that auto-renewed past the point of need. In a walking dead portco, someone is always busy, and no one is running the recovery.
+We have yet to open a Diagnostic on a walking dead portco and not surface at least $22,500 of trapped value in the first 14 days. Most Diagnostics surface $22.5K to $30K. Some clear far more. Vendor overages on SaaS no one audited. R&D credits the bookkeeper never filed. AR that went 90 days because nobody made the call. Contract terms that auto-renewed past the point of need. In a walking dead portco, someone is always busy, and no one is running the recovery.
 
 If you nodded at three of those, the rest of this guide is for you.
 
@@ -91,18 +91,18 @@ Pick one. Model three paths. Decide. Move to the next. Inside 90 days, five of t
 
 ## What about the $22.5K to $30K?
 
-Most Diagnostics surface $22,500 to $30,000 of forward-reallocation potential in 14 days. Guaranteed. That recovery funds the Three-Path work that follows. This is not an accident. It is how we structured the firm. Inside the first 14 days of a Diagnostic, we run a scan across eight categories:
+Most Diagnostics surface $22,500 to $30,000 of trapped value in 14 days. Guaranteed. That recovery funds the Three-Path work that follows. This is not an accident. It is how we structured the firm. Inside the first 14 days of a Diagnostic, we run a scan across eight categories:
 
 SaaS audits. Cloud infrastructure. R&D tax credits. AR and cash acceleration. Vendor terms. Revenue leakage. Headcount and contractor review. G&A overhead.
 
-Not all eight hit in every engagement. Four to six always do. The 14-day number is what surfaces as forward-reallocation potential. The recovery follows: some items clear inside 30 days (AR, SaaS, contract cleanup), others file in month 2 or 3 (R&D credits). Either way, the number pays for the decision work that matters more, which is picking the five decisions that change the company's trajectory and running them three ways.
+Not all eight hit in every engagement. Four to six always do. The 14-day number is what surfaces as trapped value. The recovery follows: some items clear inside 30 days (AR, SaaS, contract cleanup), others file in month 2 or 3 (R&D credits). Either way, the number pays for the decision work that matters more, which is picking the five decisions that change the company's trajectory and running them three ways.
 
 ## Coming back
 
 A walking dead portco does not come back by growing faster. It comes back by:
 
 1. Naming the pattern out loud, in finance language, to the CEO and the board.
-2. Recovering the forward-reallocation potential so the company has 30 to 60 days of un-budgeted runway to make better decisions from.
+2. Recovering the trapped value so the company has 30 to 60 days of un-budgeted runway to make better decisions from.
 3. Re-grounding the unit economics on current, not historical, customer and pricing data.
 4. Running the next five material decisions as Three-Path Models with a Keep/Kill/Restructure recommendation.
 5. Installing a monthly rhythm that keeps the diagnostic running after the engagement ends.
