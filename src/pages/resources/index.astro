@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Resources | Decisive Finance';
+const description =
+  'Tools and references for stalled post-Series A/B founders. Walking Dead self-assessment, Recovery Checklist, glossary, and field-tested templates.';
+
+const resources = [
+  {
+    name: 'Walking Dead Self-Assessment',
+    tag: 'Six-minute scan',
+    body: 'Map the six signals of a stalled portco against your company. See which patterns are live before the next board meeting.',
+    href: '/assessment/walking-dead',
+    cta: 'Run the scan',
+  },
+  {
+    name: 'Recovery Checklist',
+    tag: 'Eight-category audit',
+    body: 'The same scan we run on every Diagnostic engagement. 37 line items across SaaS, cloud, R&D credits, AR, vendors, leakage, contractors, G&A. Walk it in 20 minutes.',
+    href: '/resources/recovery-checklist',
+    cta: 'Get the checklist',
+  },
+  {
+    name: 'Glossary',
+    tag: 'Vocabulary',
+    body: 'The ten canonical terms we use on this site: walking dead portco, Six Trap Diagnostic™, Three-Path Model, Trapped Value, Financial Rhythms™, and more.',
+    href: '/glossary',
+    cta: 'Browse the glossary',
+  },
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Resources</span>
+      <h1>Tools and references.</h1>
+      <p class="hero-subhead">
+        Self-assessments, audits, and the canonical vocabulary behind decision-first finance. Use them to read your own company before the first call.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="resource-grid">
+        {resources.map((r) => (
+          <a class="resource-card" href={r.href}>
+            <span class="resource-tag">{r.tag}</span>
+            <h3>{r.name}</h3>
+            <p>{r.body}</p>
+            <span class="resource-cta">{r.cta} &rarr;</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .resource-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 32px 30px;
+    color: var(--ink);
+    text-decoration: none;
+    transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+  }
+  .resource-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--green);
+    box-shadow: 0 14px 36px rgba(24, 34, 40, 0.08);
+    opacity: 1;
+  }
+  .resource-tag {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--orange);
+    margin-bottom: 14px;
+  }
+  .resource-card h3 {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0 0 14px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+  }
+  .resource-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 22px;
+    flex-grow: 1;
+  }
+  .resource-cta {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--orange);
+    margin-top: auto;
+  }
+  @media (max-width: 900px) {
+    .resource-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
