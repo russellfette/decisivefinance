@@ -24,7 +24,7 @@ readingTime: 6
 
 Most independent directors are brought onto a post-Series A or Series B board to add operating credibility: a former CEO in the same category, a former CFO with IPO experience, a sector specialist. They join for strategy, governance, and executive coaching. The role descriptions rarely talk about what happens when the portco starts to drift.
 
-But when a portco enters the walking dead pattern, the independent director has a seat with specific structural advantages.
+But when a portco enters the stalled-portco pattern, the independent director has a seat with specific structural advantages.
 
 1. They do not have fund-construction pressure on this specific name. Their return profile on the board seat is not existential the way a GP's is inside a three-fund portfolio.
 2. They are not subject to the partnership dynamics that cause a GP lead to soften their questions as a portco drifts.
@@ -80,6 +80,6 @@ Independent directors on drifting portcos who want to walk the full detection se
 
 Related reading:
 
-- [How GPs spot walking dead portcos early](https://decisive.finance/blog/how-gps-spot-walking-dead-early)
+- [How GPs spot stalled portcos early](https://decisive.finance/blog/how-gps-spot-stalled-early)
 - [What GPs should ask at the next board meeting](https://decisive.finance/blog/what-gps-should-ask-next-board-meeting)
 - [How to read a deck that is hiding the stall](https://decisive.finance/blog/how-to-read-a-deck-hiding-the-stall)

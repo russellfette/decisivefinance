@@ -10,17 +10,17 @@
 
 A post-Series A or Series B company that has stopped moving. Revenue holds or creeps. Burn is the thing that grows. The board deck still has up-and-to-the-right charts. The next round is six months overdue. Alive on the cap table. Dead in the forecast.
 
-**See:** [The walking dead portco](/blog/walking-dead-portco)
+**See:** [The stalled portco](/blog/walking-dead-portco)
 
 ## 2. Six-signal pattern
 
-The Six Trap Diagnostic™ that together define a walking dead portco. Three of six is enough to be in the category. The signals are: ratio mirage, board question shift, CEO/investor fracture, stalled raise, retrospective CFO, and trapped value with no owner.
+The Six Trap Diagnostic™ that together define a stalled portco. Three of six is enough to be in the category. The signals are: ratio mirage, board question shift, CEO/investor fracture, stalled raise, retrospective CFO, and trapped value with no owner.
 
-**See:** [The walking dead portco](/blog/walking-dead-portco)
+**See:** [The stalled portco](/blog/walking-dead-portco)
 
 ## 3. Ratio mirage
 
-When a company's headline ratios (gross margin, LTV/CAC, NRR) remain inside acceptable bands while the denominators drift out from under them. The numbers stay fine and stop meaning what they used to. A structural feature of walking dead portcos.
+When a company's headline ratios (gross margin, LTV/CAC, NRR) remain inside acceptable bands while the denominators drift out from under them. The numbers stay fine and stop meaning what they used to. A structural feature of stalled portcos.
 
 **See:** [The ratio mirage](/blog/ratio-mirage-when-metrics-stop-tracking)
 
@@ -56,7 +56,7 @@ A rolling 18-month cash view with three sensitivities (base, downside, upside), 
 
 ## 9. trapped value
 
-Recoverable cash sitting across one of eight categories in a funded technology company: SaaS overages, cloud infrastructure, R&D tax credits, AR aging, vendor terms, revenue leakage, headcount and contractor load, and G&A overhead. In a walking dead portco, $22,500 to $30,000 of trapped value is the floor we have yet to miss in 14 days.
+Recoverable cash sitting across one of eight categories in a funded technology company: SaaS overages, cloud infrastructure, R&D tax credits, AR aging, vendor terms, revenue leakage, headcount and contractor load, and G&A overhead. In a stalled portco, $22,500 to $30,000 of trapped value is the floor we have yet to miss in 14 days.
 
 **See:** [What the first 14 days actually look like](/blog/first-14-days-operational-scan) and [the guarantee](/guarantee)
 
@@ -70,6 +70,6 @@ The silent break that opens between the CEO and the lead investor around month t
 
 ## Implementation notes
 
-- Publish at `/glossary/` with an anchor id on each term (`#walking-dead-portco`, etc.) so posts can deep-link into the entry.
+- Publish at `/glossary/` with an anchor id on each term (`#stalled-portco`, etc.) so posts can deep-link into the entry.
 - On first use of a glossary term in any blog post, wrap as a link to the glossary entry. On second use, unlinked.
 - Keep the glossary to 10 entries. New canon terms require a Phrase Book update first; glossary follows the Phrase Book, not the other way around.

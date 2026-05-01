@@ -1,7 +1,7 @@
 ---
-title: "The walking dead portco: what it is, how to spot it, how to come back"
-slug: walking-dead-portco
-description: "A walking dead portco looks alive on the cap table and dead in the forecast. Here are the Six Trap Diagnostic™, the three paths out, and the $22,500 to $30,000 of trapped value most Diagnostics surface in 14 days."
+title: "The stalled portco: what it is, how to spot it, how to come back"
+slug: stalled-portco
+description: "A stalled portco looks alive on the cap table and dead in the forecast. Here are the Six Trap Diagnostic™, the three paths out, and the $22,500 to $30,000 of trapped value most Diagnostics surface in 14 days."
 pubDate: 2026-02-10
 updatedDate: 2026-02-10
 author: "Russell Fette"
@@ -17,13 +17,13 @@ pillarHub: true
 
 ## At a glance
 
-- A walking dead portco is a post-Series A or Series B company that looks funded on the cap table and stalled in the forecast. The numbers are "fine." Nothing grows.
+- A stalled portco is a post-Series A or Series B company that looks funded on the cap table and stalled in the forecast. The numbers are "fine." Nothing grows.
 - Six Trap Diagnostic™ tell you which one you are: ratios that stop tracking, a board that starts asking softer questions, a CEO/investor fracture, a raise that's "in progress" for four months, a CFO who defaults to retrospective reporting, and $22.5K to $30K of trapped value nobody owns.
 - The move out is never "grow faster." It's to recover cash, re-ground the unit economics, and make the next five material decisions three ways, not one.
 
-## What a walking dead portco actually is
+## What a stalled portco actually is
 
-A walking dead portco is a funded technology company, typically Series A or Series B, that has stopped moving. Not crashed. Not pivoting. Stopped. Revenue holds or creeps. Burn is the thing that grows. The board deck still has growth-story pages. The forecast slides still have up-and-to-the-right charts. The term sheet for the next round is six months overdue.
+A stalled portco is a funded technology company, typically Series A or Series B, that has stopped moving. Not crashed. Not pivoting. Stopped. Revenue holds or creeps. Burn is the thing that grows. The board deck still has growth-story pages. The forecast slides still have up-and-to-the-right charts. The term sheet for the next round is six months overdue.
 
 The company is alive on the cap table. Dead in the forecast.
 
@@ -31,7 +31,7 @@ We named it because the standard language does not work. "Struggling" is too sof
 
 Most founders in this state know something is wrong. They cannot name it, and they cannot find language that lets them bring it up without sounding like they are failing. The board senses it too, and chooses softer questions. The CFO, if there is one, produces cleaner versions of last quarter's deck. The cycle continues until the raise actually stalls, and then it looks like a fundraising problem. It was a decision problem six months earlier.
 
-## How do you know you're a walking dead portco?
+## How do you know you're a stalled portco?
 
 The diagnosis is not a single metric. Walking dead is a pattern. Six Trap Diagnostic™, and you only need three to be in the category.
 
@@ -57,7 +57,7 @@ A CFO who is stuck produces clean retrospective decks. Variance explained. Bridg
 
 ### 6. There is $22.5K to $30K of trapped value no one is chasing
 
-We have yet to open a Diagnostic on a walking dead portco and not surface at least $22,500 of trapped value in the first 14 days. Most Diagnostics surface $22.5K to $30K. Some clear far more. Vendor overages on SaaS no one audited. R&D credits the bookkeeper never filed. AR that went 90 days because nobody made the call. Contract terms that auto-renewed past the point of need. In a walking dead portco, someone is always busy, and no one is running the recovery.
+We have yet to open a Diagnostic on a stalled portco and not surface at least $22,500 of trapped value in the first 14 days. Most Diagnostics surface $22.5K to $30K. Some clear far more. Vendor overages on SaaS no one audited. R&D credits the bookkeeper never filed. AR that went 90 days because nobody made the call. Contract terms that auto-renewed past the point of need. In a stalled portco, someone is always busy, and no one is running the recovery.
 
 If you nodded at three of those, the rest of this guide is for you.
 
@@ -71,15 +71,15 @@ Walking dead is what decision drift looks like 14 to 20 months in.
 
 ## The three paths out
 
-There is a framework for this, and the framework is deliberately narrow. Every material decision a walking dead portco faces can be modeled three ways:
+There is a framework for this, and the framework is deliberately narrow. Every material decision a stalled portco faces can be modeled three ways:
 
 1. **Keep.** Continue the decision as it is. Pre-mortem the path: under what scenarios does this fail, and can we see them early?
 2. **Kill.** End the decision. Sunset the product line, drop the geography, close the channel, end the pricing tier. Quantify the recovered burn and the lost revenue.
 3. **Restructure.** Change the structural economics of the decision. Re-price, re-package, re-staff, re-geography, re-channel. Quantify the new unit economics before committing.
 
-Every decision gets a Three-Path Model. No material decision survives without one. This is the core of decision-first finance, and it's the only finance framework we have found that breaks the walking dead pattern reliably.
+Every decision gets a Three-Path Model. No material decision survives without one. This is the core of decision-first finance, and it's the only finance framework we have found that breaks the stalled-portco pattern reliably.
 
-A walking dead portco typically has five decisions running in the background that should be Three-Path Modeled this quarter:
+A stalled portco typically has five decisions running in the background that should be Three-Path Modeled this quarter:
 
 - The pricing architecture that was set at Series A launch and has never been revisited.
 - The geography or channel that was opportunistic and is now load-bearing.
@@ -99,7 +99,7 @@ Not all eight hit in every engagement. Four to six always do. The 14-day number 
 
 ## Coming back
 
-A walking dead portco does not come back by growing faster. It comes back by:
+A stalled portco does not come back by growing faster. It comes back by:
 
 1. Naming the pattern out loud, in finance language, to the CEO and the board.
 2. Recovering the trapped value so the company has 30 to 60 days of un-budgeted runway to make better decisions from.
@@ -117,7 +117,7 @@ If you read this and three of the Six Trap Diagnostic™ landed, the move is not
 
 We built a self-assessment for that. Twelve questions. Takes six minutes. You get a personalized PDF with your score, which of the Six Trap Diagnostic™ you're showing, and what the first move looks like for your specific pattern.
 
-**[Take the Walking Dead Self-Assessment](/assessment/walking-dead)**
+**[Take the Stalled Portco Self-Assessment](/assessment/walking-dead)**
 
 If the self-assessment comes back in the high range, the follow-up is a 30-minute diagnostic call with Russ. No deck, no pitch. A read of the pattern and a map of what the first 30 days would look like.
 
@@ -126,7 +126,7 @@ If the self-assessment comes back in the high range, the follow-up is a 30-minut
 ---
 
 *Further reading on this pillar:*
-- [What a walking dead portco actually is](/blog/what-walking-dead-portco-actually-is)
-- [Trapped value in walking dead portcos](/blog/trapped-value-walking-dead-portcos)
+- [What a stalled portco actually is](/blog/what-stalled-portco-actually-is)
+- [Trapped value in stalled portcos](/blog/trapped-value-stalled-portcos)
 - [Decision-first finance vs. fractional CFO](/blog/decision-first-finance-vs-fractional-cfo)
 - [The Six-Trap Diagnostic explained](/blog/six-trap-diagnostic-explained)

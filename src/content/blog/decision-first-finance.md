@@ -44,7 +44,7 @@ Before we can three-path anything, we need to know which cognitive and structura
 - **Loss aversion:** Keep looks safer than Kill because the numbers are symmetrical and the feeling is not.
 - **Uncertainty paralysis:** three scenarios turned into no decision because no one ranked the scenarios by likelihood.
 
-Every walking dead portco we have opened is running at least three of these six. Usually four. The diagnostic is a 90-minute structured interview that maps which traps are live, which decisions they are keeping alive, and which move out of each trap is the priority.
+Every stalled portco we have opened is running at least three of these six. Usually four. The diagnostic is a 90-minute structured interview that maps which traps are live, which decisions they are keeping alive, and which move out of each trap is the priority.
 
 ### 2. The Three-Path Model
 
@@ -126,7 +126,7 @@ Two practical consequences:
 
 - Post-Series A or Series B companies at $5M to $30M ARR.
 - Stalled growth or a raise that is four months past the target close.
-- A CEO who can name three of the six walking dead signals without flinching.
+- A CEO who can name three of the six stalled portco signals without flinching.
 - A willingness to run the monthly rhythm after the engagement ends.
 
 If that does not describe the company, decision-first finance is not the right engagement, and we will say so on the first call.

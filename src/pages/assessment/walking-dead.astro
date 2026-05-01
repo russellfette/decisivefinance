@@ -2,18 +2,18 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getEntry } from 'astro:content';
 
-const entry = await getEntry('site', 'walking-dead-self-assessment');
+const entry = await getEntry('site', 'stalled-self-assessment');
 const { Content } = entry ? await entry.render() : { Content: null };
 ---
 
 <BaseLayout
-  title="The walking dead self-assessment | Decisive Finance"
+  title="The stalled portco self-assessment | Decisive Finance"
   description="Six-minute assessment. Map the Six Trap Diagnostic against your company and see which patterns are live before the next board meeting."
 >
   <section class="post-hero">
     <div class="post-hero-inner">
       <span class="eyebrow" style="color: rgba(255,255,255,0.85); background: transparent; border-color: rgba(255,255,255,0.2);">Self-assessment</span>
-      <h1 class="post-title">The walking dead self-assessment.</h1>
+      <h1 class="post-title">The stalled portco self-assessment.</h1>
       <p class="post-lede">Six minutes. Map the Six Trap Diagnostic&trade; against your company. See which patterns are live before the next board meeting.</p>
     </div>
   </section>

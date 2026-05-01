@@ -32,7 +32,7 @@ Exactly five lines. Any more and it has softened into narrative.
 
 ## Why five lines and not fifteen?
 
-Because the board already has fifteen-line documents. They have the monthly report, the close deck, the KPI dashboard. What they do not have, and what every walking dead portco lacks, is an artifact that forces the company to state the decision it has been avoiding and take a stance on the paths out.
+Because the board already has fifteen-line documents. They have the monthly report, the close deck, the KPI dashboard. What they do not have, and what every stalled portco lacks, is an artifact that forces the company to state the decision it has been avoiding and take a stance on the paths out.
 
 Five lines is exactly enough to carry the decision. Every additional line softens the stance. If the recommendation is legitimately conditional on information that does not exist, the slide says so in the fourth line: *We recommend Restructure, conditional on the enterprise pipeline clearing $4M by July 15.* That is still one sentence and still a stance.
 

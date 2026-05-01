@@ -76,7 +76,7 @@ The three tells and the question results usually point to one of three states:
 
 1. **Healthy company with a cluttered deck.** The numbers are fine; the deck is badly sequenced. Fix is a deck rewrite, not a company intervention.
 2. **Early drift.** One or two tells, the question answer is slow but accurate. The independent-director playbook is appropriate: ask the decision question at the next meeting, underwrite a Diagnostic if needed.
-3. **Full walking dead pattern.** All three tells, the question answer has caveats and does not resolve to a single number. The Diagnostic is the next move, and it is usually welcomed by the CEO once the framing is operational rather than judgmental.
+3. **Full stalled-portco pattern.** All three tells, the question answer has caveats and does not resolve to a single number. The Diagnostic is the next move, and it is usually welcomed by the CEO once the framing is operational rather than judgmental.
 
 ## Where to go from here
 
@@ -86,6 +86,6 @@ Investors and directors who want the full detection sequence plus the board-leve
 
 Related reading:
 
-- [How GPs spot walking dead portcos early](https://decisive.finance/blog/how-gps-spot-walking-dead-early)
+- [How GPs spot stalled portcos early](https://decisive.finance/blog/how-gps-spot-stalled-early)
 - [The independent director's playbook for a drifting portco](https://decisive.finance/blog/independent-director-playbook)
 - [What GPs should ask at the next board meeting](https://decisive.finance/blog/what-gps-should-ask-next-board-meeting)

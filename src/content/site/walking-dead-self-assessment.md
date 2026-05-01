@@ -1,4 +1,4 @@
-# Walking Dead Self-Assessment
+# Stalled Portco Self-Assessment
 
 **Asset type:** Interactive web tool + personalized PDF report
 **Hosted at:** `decisive.finance/assessment/walking-dead`
@@ -20,7 +20,7 @@
 ## Landing copy
 
 ### Headline
-Is your funded tech company walking dead?
+Is your funded tech company stalled portco?
 
 ### Subhead
 12 questions. Six minutes. A in dollars read on the pattern, and the specific first move if it fits.
@@ -128,7 +128,7 @@ Each question carries a weight. Max score 100. Weights in brackets.
 
 Total score is the sum of weighted answers. Max 80 (actual; not 100; we round up for presentation).
 
-- **0 to 15: Clear.** Not walking dead. Numbers, board, raise, and finance function are all aligned. Monitor annually.
+- **0 to 15: Clear.** Not stalled portco. Numbers, board, raise, and finance function are all aligned. Monitor annually.
 - **16 to 30: Early warning.** One or two signals showing. Manageable with small adjustments. No engagement needed yet; revisit in a quarter.
 - **31 to 50: On the track.** Three to five signals live. The raise will stall two quarters out if nothing changes. Engagement recommended.
 - **51 to 80: Walking dead.** Six or more signals live. The raise is either already stalled or will not close at the current mark. Diagnostic engagement urgent.
@@ -138,7 +138,7 @@ Total score is the sum of weighted answers. Max 80 (actual; not 100; we round up
 ## Results screen copy
 
 ### Tier 1 (0 to 15): Clear
-**You're not walking dead.**
+**You're not stalled portco.**
 
 On the 12 signals that predict a stalled post-Series A or B portco, you are showing zero to one. Your finance function is doing its job, your board is asking sharp questions, and your trajectory looks intact.
 
@@ -151,7 +151,7 @@ What to do with this: monitor annually. If the assessment tier drops by the next
 ### Tier 2 (16 to 30): Early warning
 **You're showing one or two signals.**
 
-Not walking dead, but worth naming. The most common early pattern is [signal 1] plus [signal 2], where the numbers still read well but the board conversations have started to soften.
+Not stalled portco, but worth naming. The most common early pattern is [signal 1] plus [signal 2], where the numbers still read well but the board conversations have started to soften.
 
 Three things to do in the next 30 days:
 
@@ -164,7 +164,7 @@ If all three of those surface something real, schedule a conversation before nex
 [Get the Recovery Checklist] [Book a call: calendly.com/russell-decisive/30min]
 
 ### Tier 3 (31 to 50): On the track
-**You are on the walking dead track.**
+**You are on the stalled portco track.**
 
 You are showing three to five signals live. The most common stack at your score is [signal 1] + [signal 2] + [signal 3]. Left alone, the pattern tightens and the next raise stalls two quarters from now.
 
@@ -212,7 +212,7 @@ Email (single field. No name. No company. One button: "Send my PDF.")
 
 ## Distribution plan at launch
 
-- **Homepage:** primary hero CTA points here ("Is your company walking dead? Find out in 6 minutes.").
+- **Homepage:** primary hero CTA points here ("Is your company stalled portco? Find out in 6 minutes.").
 - **Pillar 1 hub:** primary CTA at close.
 - **Every Pillar 1 spoke post:** CTA variant = self-assessment.
 - **LinkedIn week 1:** lead magnet in the Thursday field note.

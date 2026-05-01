@@ -18,7 +18,7 @@ readingTime: 7
 
 - The Financial Rhythm System is three one-page instruments produced monthly: Decision Slide, Runway Spine, Signal Dashboard.
 - It runs before the close deck, not after. The close feeds the rhythm; the rhythm frames the close.
-- Most walking dead portcos install it in month two of a 90-Day Decision Resolution. The install time is four to six hours of real work and one standing meeting.
+- Most stalled portcos install it in month two of a 90-Day Decision Resolution. The install time is four to six hours of real work and one standing meeting.
 
 ## What is the Financial Rhythm System?
 
@@ -26,7 +26,7 @@ The Financial Rhythm System (FRS) is the monthly operating cadence that keeps de
 
 1. The **Decision Slide** names the one or two material decisions that have to be resolved this quarter and renders each one as a Keep, Kill, Restructure with dollars under each path.
 2. The **Runway Spine** is a rolling eighteen-month cash view with three sensitivities: base, downside, and upside. It shows when cash actually runs out under each scenario and which decision each scenario depends on.
-3. The **Signal Dashboard** reports the six walking dead signals as current readings, so the team sees which signals are softening or flaring month to month.
+3. The **Signal Dashboard** reports the six stalled portco signals as current readings, so the team sees which signals are softening or flaring month to month.
 
 The three instruments are produced together, in that order, and the output is always three pages. Never four. Never a deck.
 
@@ -60,7 +60,7 @@ The point of the Spine is to make cash legible in a single glance, with the depe
 
 ## How is the Signal Dashboard built?
 
-The Signal Dashboard is the simplest of the three. Six rows, one per walking dead signal, with a current reading and a change from last month. Green / yellow / red, not a score.
+The Signal Dashboard is the simplest of the three. Six rows, one per stalled portco signal, with a current reading and a change from last month. Green / yellow / red, not a score.
 
 - Ratio mirage (restated ratios vs. reported ratios): spread in percentage points.
 - Board question shift: qualitative read from last meeting.

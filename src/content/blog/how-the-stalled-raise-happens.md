@@ -80,6 +80,6 @@ If your raise has been in process for more than four months, the other signals a
 
 Related reading:
 
-- [The walking dead portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
 - [The CEO/investor fracture: the silent break in year two](https://decisive.finance/blog/ceo-investor-fracture)
 - [The down-round conversation: how to time it](https://decisive.finance/blog/down-round-conversation-timing)

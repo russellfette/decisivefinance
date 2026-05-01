@@ -1,7 +1,7 @@
 ---
 title: "Walking dead recovery: day 1 to day 90"
-slug: walking-dead-recovery-day-1-to-90
-description: "A ninety-day sequence to pull a stalled post-Series A or Series B company out of the walking dead pattern. Day-by-day, in dollars, with exactly who owns what."
+slug: stalled-recovery-day-1-to-90
+description: "A ninety-day sequence to pull a stalled post-Series A or Series B company out of the stalled-portco pattern. Day-by-day, in dollars, with exactly who owns what."
 pubDate: 2026-03-10
 updatedDate: 2026-03-10
 author: "Russell Fette"
@@ -20,7 +20,7 @@ readingTime: 9
 - Day 1 to 14: run the Diagnostic. Recover $22,500 to $30,000 of trapped value. Restate the three ratios. Draft the first Three-Path Model.
 - Day 15 to 45: make the first decision. Day 46 to 90: cadence locks, second decision ships, board narrative resets. By day 90 the company is no longer drifting.
 
-A walking dead portco does not turn around by accelerating. It turns around by deciding. Our engagements run on a ninety-day sequence because that is how long it takes to break the drift, clear the cash, and re-anchor the operating rhythm. What follows is the sequence we run inside Diagnostic and 90-Day Decision Resolution engagements, compressed to a single post.
+A stalled portco does not turn around by accelerating. It turns around by deciding. Our engagements run on a ninety-day sequence because that is how long it takes to break the drift, clear the cash, and re-anchor the operating rhythm. What follows is the sequence we run inside Diagnostic and 90-Day Decision Resolution engagements, compressed to a single post.
 
 ## Day 1 to 14: the Diagnostic window
 
@@ -34,17 +34,17 @@ By the end of day 14 the company has cash back in the account, numbers that mean
 
 ## Day 15 to 45: first decision, first cadence
 
-The middle thirty days are when walking dead portcos either re-enter operating posture or collapse back into drift. The whole window runs on three moves.
+The middle thirty days are when stalled portcos either re-enter operating posture or collapse back into drift. The whole window runs on three moves.
 
 ### Ship the first decision
 
-The board does not need to love the recommendation. They need to vote. A Keep decision is just as valuable as a Kill decision if it is made explicitly with the numbers on paper. What kills a walking dead portco is not bad decisions. It is undecisions that run by default.
+The board does not need to love the recommendation. They need to vote. A Keep decision is just as valuable as a Kill decision if it is made explicitly with the numbers on paper. What kills a stalled portco is not bad decisions. It is undecisions that run by default.
 
 The Three-Path Model from day 14 gets voted on in the next board meeting, no later than day 30. Whatever path wins gets a thirty-day execution plan and a named owner. If the winning path is Kill, the wind-down starts in the same week. If the winning path is Restructure, the specific restructuring moves get scheduled against a calendar.
 
 ### Stand up the Financial Rhythm System
 
-A one-page monthly operating rhythm that replaces the retrospective close-and-deck cycle. Three instruments: the Decision Slide (what are we deciding this month, three paths, recommendation), the Runway Spine (rolling 18-month cash view with sensitivity), and the Signal Dashboard (Six Trap Diagnostic™ of the walking dead pattern with a current reading).
+A one-page monthly operating rhythm that replaces the retrospective close-and-deck cycle. Three instruments: the Decision Slide (what are we deciding this month, three paths, recommendation), the Runway Spine (rolling 18-month cash view with sensitivity), and the Signal Dashboard (Six Trap Diagnostic™ of the stalled-portco pattern with a current reading).
 
 The rhythm does not replace the close or the board deck. It precedes them. The close feeds it. The board deck uses it. The point is that finance is no longer the department that explains the past. It is the department that frames the decisions.
 
@@ -58,7 +58,7 @@ The final forty-five days are less dramatic than the first two windows. The work
 
 ### Second decision ships
 
-The Financial Rhythm System produces a second Three-Path Model in month two and a third in month three. By the end of day 90, the company has voted on three material decisions in ninety days. That is more decision cadence than most walking dead portcos produce in a year.
+The Financial Rhythm System produces a second Three-Path Model in month two and a third in month three. By the end of day 90, the company has voted on three material decisions in ninety days. That is more decision cadence than most stalled portcos produce in a year.
 
 ### Cash recovery hardens
 
@@ -68,7 +68,7 @@ The $22,500 to $30,000 recovered in the Diagnostic window becomes a floor, not a
 
 By day 90 the board deck does not lead with a rearview variance walk. It leads with the Decision Slide. The operating conversations at the board meeting are sharper than they have been in two years. The lead investor's questions are operating questions again, not orientation questions.
 
-This is the single most reliable external signal that the walking dead pattern has broken. The board's questions tell you whether you are still inside the pattern or on the other side of it.
+This is the single most reliable external signal that the stalled-portco pattern has broken. The board's questions tell you whether you are still inside the pattern or on the other side of it.
 
 ## What this is not
 
@@ -85,6 +85,6 @@ A Diagnostic is the first fourteen days of this sequence. It costs a fixed fee, 
 
 Related reading:
 
-- [The walking dead portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
 - [Decision-first finance: the methodology](https://decisive.finance/blog/decision-first-finance)
 - [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/blog/financial-rhythm-system-monthly-cadence)

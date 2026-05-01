@@ -1,6 +1,6 @@
 ---
-title: "How GPs spot walking dead portcos early"
-slug: how-gps-spot-walking-dead-early
+title: "How GPs spot stalled portcos early"
+slug: how-gps-spot-stalled-early
 description: "The early tells are in the monthly update, the board deck, and the way the CEO answers a specific follow-up question. Here is the GP playbook for early detection."
 pubDate: 2026-03-24
 updatedDate: 2026-03-24
@@ -22,7 +22,7 @@ readingTime: 6
 
 ## Why do GPs miss it?
 
-The walking dead pattern is famously hard for GPs to spot early because the portcos in the pattern look the same as portcos in a normal rough patch. Revenue holds or creeps. Ratios stay in band. Close is clean. Nothing is broken loudly enough to trigger an intervention.
+The stalled-portco pattern is famously hard for GPs to spot early because the portcos in the pattern look the same as portcos in a normal rough patch. Revenue holds or creeps. Ratios stay in band. Close is clean. Nothing is broken loudly enough to trigger an intervention.
 
 GPs who catch the pattern early almost never do it from the numbers. They catch it from the artifacts. Three places to look.
 
@@ -36,7 +36,7 @@ Watch the same CEO's updates across six months. If the verb density moves from a
 
 ## Tell 2: The board deck has no Decision Slide
 
-A healthy post-Series A or Series B company has one to three material decisions alive at any given moment. If the board deck has no Decision Slide, one of two things is true. Either the company has no material decisions alive, which is usually not possible at this stage; or the finance function is not framing decisions, which is the walking dead pattern forming.
+A healthy post-Series A or Series B company has one to three material decisions alive at any given moment. If the board deck has no Decision Slide, one of two things is true. Either the company has no material decisions alive, which is usually not possible at this stage; or the finance function is not framing decisions, which is the stalled-portco pattern forming.
 
 GPs who want to test this quickly can ask the CFO directly before a board meeting: *what are the two material decisions you are recommending on this quarter, and what is your stance on each?* A performing finance leader will have a ready answer. A stalling finance leader will list uncertainties. The gap between the two answers is the diagnosis.
 
@@ -80,6 +80,6 @@ For GPs and directors who want the full detection sequence plus the recovery pla
 
 Related reading:
 
-- [The walking dead portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
 - [The independent director's playbook for a drifting portco](https://decisive.finance/blog/independent-director-playbook)
 - [What GPs should ask at the next board meeting](https://decisive.finance/blog/what-gps-should-ask-next-board-meeting)

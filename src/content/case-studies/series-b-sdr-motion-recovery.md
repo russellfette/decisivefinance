@@ -21,7 +21,7 @@ featured: true
 
 A Series B SaaS company in the developer-tools category was 16 months past close and five months into a Series C process that had gone quiet. The board deck was showing net revenue retention at 108% and gross margin at 78%. Both numbers were inside the band the lead investor wanted to see. Neither number was tracking what either party thought it was tracking.
 
-The CEO had stopped forwarding investor updates to the leadership team around month twelve. The lead investor had started citing narrative instead of numbers in the firm's partner meetings. Four of the six walking dead signals were live. The board had asked its first orientation question in the last meeting: *what did we learn this quarter?* The CEO answered without flinching; the question was not flagged in the minutes.
+The CEO had stopped forwarding investor updates to the leadership team around month twelve. The lead investor had started citing narrative instead of numbers in the firm's partner meetings. Four of the six stalled portco signals were live. The board had asked its first orientation question in the last meeting: *what did we learn this quarter?* The CEO answered without flinching; the question was not flagged in the minutes.
 
 The independent director opened the conversation that brought us in. Framed it as a two-week external scan with a cash recovery guarantee. The CEO accepted inside 48 hours.
 

@@ -36,7 +36,7 @@ Every one of those changes is correct on its own. The problem is that nobody upd
 
 ### Cohort mixing
 
-Cohorts are supposed to be the fix for this. In a walking dead portco they almost never are. The monthly board report shows a blended retention number. The cohort detail lives in a tab nobody pulls up. The tab was built two CFOs ago. The formulas reference sheets that have since been renamed. Nobody trusts it enough to cite it, so it does not get cited, so it does not get fixed.
+Cohorts are supposed to be the fix for this. In a stalled portco they almost never are. The monthly board report shows a blended retention number. The cohort detail lives in a tab nobody pulls up. The tab was built two CFOs ago. The formulas reference sheets that have since been renamed. Nobody trusts it enough to cite it, so it does not get cited, so it does not get fixed.
 
 What you get instead is a single-line ratio that averages a healthy early cohort against a struggling current cohort. The healthy early cohort is a survivor bias artifact; the current cohort is what predicts the next year. You cannot see the current cohort in the average. You can only see the average.
 
@@ -58,7 +58,7 @@ The fix is not a better dashboard. It is three deliberate acts of plumbing, done
 
 The ratio mirage is not a reporting problem. It is a decision problem. When the ratios look fine, nothing triggers a strategic review. The company keeps spending against a plan that was built on a denominator that no longer exists. Burn rises. Revenue creeps. Six months later the raise stalls and everyone is surprised.
 
-The companies we run the Diagnostic on are never surprised by their own numbers after the first 14 days. Most of them are surprised by how different the restated numbers look. That is the first, hardest step out of the walking dead pattern: being willing to see the numbers as they actually are.
+The companies we run the Diagnostic on are never surprised by their own numbers after the first 14 days. Most of them are surprised by how different the restated numbers look. That is the first, hardest step out of the stalled-portco pattern: being willing to see the numbers as they actually are.
 
 ## Where to go from here
 
@@ -68,6 +68,6 @@ If any of this tracks, the six-signal pattern is probably running somewhere in y
 
 Related reading:
 
-- [The walking dead portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
 - [Decision-first finance: the methodology](https://decisive.finance/blog/decision-first-finance)
 - [A field guide to spotting stalled portcos](https://decisive.finance/blog/stalled-portco-field-guide-for-investors)

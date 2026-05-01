@@ -67,7 +67,7 @@ The CEO/investor pairs that repair the fracture inside a stalled company almost 
 
 ## What this has to do with the rest of the pattern
 
-The CEO/investor fracture is one of the Six Trap Diagnostic™ that define a walking dead portco. When it is present, the board question shift is usually already there, the raise is usually already four months stale, and the CFO is usually producing increasingly retrospective decks. The fracture is the one that most accelerates the others, because it removes the grounding each one would otherwise have.
+The CEO/investor fracture is one of the Six Trap Diagnostic™ that define a stalled portco. When it is present, the board question shift is usually already there, the raise is usually already four months stale, and the CFO is usually producing increasingly retrospective decks. The fracture is the one that most accelerates the others, because it removes the grounding each one would otherwise have.
 
 ## Where to go from here
 
@@ -77,6 +77,6 @@ If this pattern is recognizable, the self-assessment takes six minutes and names
 
 Related reading:
 
-- [The walking dead portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
 - [The board question shift: when softer questions are the real signal](https://decisive.finance/blog/the-board-question-shift)
 - [How the stalled raise actually happens](https://decisive.finance/blog/how-the-stalled-raise-happens)

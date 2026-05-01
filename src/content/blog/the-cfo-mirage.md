@@ -1,7 +1,7 @@
 ---
 title: "The CFO mirage: when a competent hire is the wrong hire"
 slug: the-cfo-mirage
-description: "A competent CFO in a walking dead portco can look like a performing CFO for two quarters before the mismatch shows up. Here is how to spot the mirage and what to do about it."
+description: "A competent CFO in a stalled portco can look like a performing CFO for two quarters before the mismatch shows up. Here is how to spot the mirage and what to do about it."
 pubDate: 2026-02-03
 updatedDate: 2026-02-03
 author: "Russell Fette"
@@ -22,7 +22,7 @@ readingTime: 6
 
 ## What is the CFO mirage?
 
-The CFO mirage is one of the Six Trap Diagnostic™ that define a walking dead portco. It shows up when a competent finance leader, often with an impressive pedigree, operates the finance function at a level that was correct at their last company but is insufficient at the current one. They look like a performing CFO for two quarters. They are, in fact, doing the wrong job well.
+The CFO mirage is one of the Six Trap Diagnostic™ that define a stalled portco. It shows up when a competent finance leader, often with an impressive pedigree, operates the finance function at a level that was correct at their last company but is insufficient at the current one. They look like a performing CFO for two quarters. They are, in fact, doing the wrong job well.
 
 The company does not notice at first because the artifacts look right. The close lands on schedule. The deck is clean. The variance walk is professional. The board gets numbers it expects to see. Everything checks out at the level of finance hygiene.
 
@@ -74,12 +74,12 @@ The pairing of a good controller, a consulting or fractional decision-finance la
 
 ## Where to go from here
 
-The CFO mirage is one of the six walking dead signals. The self-assessment names which signals are live inside your company.
+The CFO mirage is one of the six stalled portco signals. The self-assessment names which signals are live inside your company.
 
 [Take the self-assessment](https://decisive.finance/assessment/walking-dead)
 
 Related reading:
 
-- [The walking dead portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
 - [Why retrospective finance fails growth-stage companies](https://decisive.finance/blog/why-retrospective-finance-fails-growth-stage)
 - [The one-page decision slide every board should see](https://decisive.finance/blog/one-page-decision-slide-for-boards)

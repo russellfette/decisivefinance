@@ -20,7 +20,7 @@ readingTime: 5
 - Three patterns to watch for: orientation questions instead of operating questions, forward prompts instead of backward interrogation, and reduced attendance from the lead partner.
 - The response is not to reassure. It is to pre-empt the next meeting with a Three-Path Model on the decision the board is softening around.
 
-Most walking dead portcos receive their diagnosis from the board before they receive it from themselves. The diagnosis rarely comes in words. It comes in the shape of the questions.
+Most stalled portcos receive their diagnosis from the board before they receive it from themselves. The diagnosis rarely comes in words. It comes in the shape of the questions.
 
 At the Series A a few quarters in, your lead investor asked: *What is driving the miss on net new ARR in Q2, and what's the plan for Q3?* Specific. Operating. Forward and backward at once. The expectation inside the question was a sharp answer with numbers.
 
@@ -30,7 +30,7 @@ Now, in the middle of Series B, the same investor asks: *Remind us how you're th
 
 It is not politeness. It is pattern-matching.
 
-Most lead investors have seen a handful of companies drift into the walking dead pattern. They have learned that sharp operating questions inside a stalled company produce defensive, reassuring answers from a CEO who is already working on narrative. They stop expecting sharp answers because the sharp answers are not available. They shift to orientation questions because orientation questions are easier for the CEO to answer without pain and easier for the investor to sit through without confronting what they already suspect.
+Most lead investors have seen a handful of companies drift into the stalled-portco pattern. They have learned that sharp operating questions inside a stalled company produce defensive, reassuring answers from a CEO who is already working on narrative. They stop expecting sharp answers because the sharp answers are not available. They shift to orientation questions because orientation questions are easier for the CEO to answer without pain and easier for the investor to sit through without confronting what they already suspect.
 
 The shift is not an act of kindness. It is an act of resignation. The board has privately moved the company from "fix" into "manage." Whether they would articulate it that way or not.
 
@@ -58,7 +58,7 @@ When the board sees a Three-Path Model at the top of the deck, the meeting rever
 
 ## What this has to do with the rest of the pattern
 
-The board question shift is one of Six Trap Diagnostic™ that define a walking dead portco. It rarely shows up alone. It tracks closely with the CEO/investor fracture, the raise that has been in progress for four months, and the retrospective-finance CFO. If the board's questions have softened, one or two of those other signals are live inside your company right now.
+The board question shift is one of Six Trap Diagnostic™ that define a stalled portco. It rarely shows up alone. It tracks closely with the CEO/investor fracture, the raise that has been in progress for four months, and the retrospective-finance CFO. If the board's questions have softened, one or two of those other signals are live inside your company right now.
 
 ## Where to go from here
 
@@ -68,6 +68,6 @@ If any of this is recognizable, the pattern is farther along than the reassuranc
 
 Related reading:
 
-- [The walking dead portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
 - [The CEO/investor fracture: the silent break in year two](https://decisive.finance/blog/ceo-investor-fracture)
 - [The one-page decision slide every board should see](https://decisive.finance/blog/one-page-decision-slide-for-boards)

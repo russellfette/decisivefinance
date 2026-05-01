@@ -1,7 +1,7 @@
 ---
 title: "A field guide to spotting stalled portcos before the next raise"
 slug: stalled-portco-field-guide-for-investors
-description: "For VC operators, LPs, and independent directors: the 12 signals that tell you a Series A or B portco is walking dead two quarters before the raise stalls, and what to demand when you see them."
+description: "For VC operators, LPs, and independent directors: the 12 signals that tell you a Series A or B portco is stalled portco two quarters before the raise stalls, and what to demand when you see them."
 pubDate: 2026-03-17
 updatedDate: 2026-03-17
 author: "Russell Fette"
@@ -18,7 +18,7 @@ pillarHub: true
 ## At a glance
 
 - Walking dead portcos are identifiable two quarters before their next raise stalls. The early signals are relational and structural, not purely financial.
-- Twelve signals matter, grouped into three buckets: deck drift, decision drift, and cash drift. Three or more live signals means the portco is on the walking dead track, whether the CEO has named it or not.
+- Twelve signals matter, grouped into three buckets: deck drift, decision drift, and cash drift. Three or more live signals means the portco is on the stalled portco track, whether the CEO has named it or not.
 - What to demand when you see it: a Three-Path Model on the next five material decisions, a rewritten board pack that leads with decisions rather than variance, and a 14-day Diagnostic that either surfaces $22.5K+ in trapped value or confirms the company is leaner than its peers.
 
 ## Who this is for
@@ -45,16 +45,16 @@ The goal is a shared field guide. If one of us sees the pattern, the other one s
 
 ### Cash drift (what the numbers show)
 
-9. **Burn multiple between 2.5 and 4.0, drifting up.** Below 2.5 means the capital is working. Above 4.0 means the company is a special case. In between, drifting up, is walking dead.
+9. **Burn multiple between 2.5 and 4.0, drifting up.** Below 2.5 means the capital is working. Above 4.0 means the company is a special case. In between, drifting up, is stalled portco.
 10. **Net revenue retention at 105 to 115%, with gross retention under 85%.** Good NRR with weak GRR means a small number of accounts are carrying the number and most new customers are churning.
 11. **DSO over 45 days on an annual-invoice customer base.** Working capital drifting. Cash conversion getting softer.
 12. **SaaS, cloud, and vendor spend growing faster than headcount for two quarters running.** Complexity creeping faster than the team can absorb.
 
 ## How to read the grid
 
-- **Zero or one signal:** the portco is not walking dead. Move on.
+- **Zero or one signal:** the portco is not stalled portco. Move on.
 - **Two signals:** early warning. Watch next quarter. Ask one sharp question at the next board meeting.
-- **Three to five signals:** walking dead track confirmed. The raise will stall two quarters out if nothing changes. Intervention appropriate.
+- **Three to five signals:** stalled portco track confirmed. The raise will stall two quarters out if nothing changes. Intervention appropriate.
 - **Six or more signals:** the raise will not close at the current mark. Decide now whether to push, write down, or recap.
 
 Every GP has a portfolio-review template. We built ours around this grid because it surfaces the track earlier than the post-miss review does.
@@ -69,7 +69,7 @@ Four asks that carry the intervention without the drama:
 
 Not a strategy slide. Not a planning session. A one-page document for each of the next five decisions, modeled as Keep, Kill, Restructure, with dollars attached to each path and a recommended path signed by the CEO. Request it. Set a date. Review it at the next board meeting.
 
-This is the single most effective intervention. CEOs who can produce five good Three-Path Models are not walking dead. CEOs who cannot are the ones who most need the exercise.
+This is the single most effective intervention. CEOs who can produce five good Three-Path Models are not stalled portco. CEOs who cannot are the ones who most need the exercise.
 
 ### 2. A board pack rewrite
 
@@ -92,11 +92,11 @@ Written by someone who is not the CFO. The format is specific: what are the thre
 
 That document goes in the board book at the next meeting. It is not a pitch. It is a diagnostic.
 
-## The Portfolio Walking Dead Scorecard
+## The Portfolio Stalled Portco Scorecard
 
-This is the tool we built for GPs and independent directors who want to run the 12-signal grid across the portfolio. It's a spreadsheet with one row per portco, the 12 signals as columns, a visual rollup tab, and notes on which portcos have moved into or out of the walking dead track over the last two quarters.
+This is the tool we built for GPs and independent directors who want to run the 12-signal grid across the portfolio. It's a spreadsheet with one row per portco, the 12 signals as columns, a visual rollup tab, and notes on which portcos have moved into or out of the stalled portco track over the last two quarters.
 
-**[Download the Portfolio Walking Dead Scorecard](/resources/portfolio-walking-dead-scorecard)**
+**[Download the Portfolio Stalled Portco Scorecard](/resources/portfolio-stalled-scorecard)**
 
 Scorecard is free. Email required so we can send updates when the signal list evolves.
 
@@ -121,7 +121,7 @@ What we will do on a call with a GP:
 ---
 
 *Further reading:*
-- [The walking dead portco: what it is](/blog/walking-dead-portco)
+- [The stalled portco: what it is](/blog/walking-dead-portco)
 - [Decision-first finance: the methodology](/blog/decision-first-finance)
 - [The guarantee: risk transfers to us on purpose](/guarantee)
 - [Burn multiple above 3: what to do](/blog/burn-multiple-above-three-what-to-do)

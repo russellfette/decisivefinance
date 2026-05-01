@@ -39,7 +39,8 @@ const tiers = [
     label: 'Tier 1',
     name: 'Decision Diagnostic',
     price: 'From $7,500',
-    promise: '14 days. Fixed fee.',
+    priceSecondary: '',
+    promise: '14 days. Fixed fee. Five named deliverables.',
     body: 'An itemized list, in dollars, of what your current capital is earning and what it is not, with a CEO-accepted plan for every dollar that has to move.',
     guarantee: '3x the fee in trapped value with CEO-accepted recovery plans, or full refund.',
     featured: true,
@@ -48,7 +49,8 @@ const tiers = [
     label: 'Tier 2',
     name: 'Decision Resolution',
     price: '$22,500 to $30,000',
-    promise: '90 days. Installs the rhythm that defends every next call.',
+    priceSecondary: '+ $18,000 Founding Cohort',
+    promise: '90 days. The rhythm installed in market.',
     body: 'Five decisions defended with math, two live in market with the data to score them, an 18-month forecast with a named path to profitability, Financial Rhythms™ running as the monthly cadence.',
     guarantee: 'Founding Cohort: $18,000 flat for the first three signed engagements. Closes at three or June 30, 2026.',
     featured: false,
@@ -56,8 +58,9 @@ const tiers = [
   {
     label: 'Tier 3',
     name: 'Decision Partnership',
-    price: '$7,500/mo + 5% success fee',
-    promise: 'Ongoing. Runs the rhythm on retainer.',
+    price: '$7,500 per month',
+    priceSecondary: '+ 5% success fee on Realized Value',
+    promise: 'Ongoing. The rhythm on retainer.',
     body: 'Weekly, monthly, quarterly cadence. Every new material decision hits the same loop. Realized Value certified quarterly against methodology, not opinion.',
     guarantee: 'Optional. Runs only once Tier 2 has installed what it is paid to operate.',
     featured: false,
@@ -179,15 +182,15 @@ const fitNo = [
       <p class="hero-subhead">
         You are making the hardest capital calls of your career right now. The decisions that got you here weren&rsquo;t wrong. They were right for a context that no longer exists. We name what your current capital is doing, in 14 days. Most Diagnostics surface <span class="dollar">$22,500 to $30,000</span> of trapped value, with a CEO-accepted plan to recover every dollar that has to move. Guaranteed, or full refund.
       </p>
+      <div class="hero-cta-row">
+        <a href={CALENDLY} class="btn btn-primary">Book the diagnostic</a>
+        <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
+      </div>
       <blockquote class="hero-quote">
         &ldquo;You were the first person who made it feel like a solvable problem, not a permanent condition.&rdquo;
         <cite>Founder, venture-backed SaaS, 22 months post-raise</cite>
       </blockquote>
       <div class="rally">FIND. INSTALL. RUN.</div>
-      <div class="hero-cta-row">
-        <a href={CALENDLY} class="btn btn-primary">Book the diagnostic</a>
-        <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
-      </div>
     </div>
   </section>
 
@@ -198,10 +201,7 @@ const fitNo = [
         <span class="section-eyebrow">The stuck raise</span>
         <h2>Roughly seven thousand founders are between rounds right now.</h2>
         <p class="lede">
-          Growth flatlined. Portfolio CFOs have pulled back. Growth-stage fractional CFOs will not touch a stalled cap table. The hardest calls of the company (which product line earns the next dollar, which pricing lever to pull, which path to the next round) are getting made on instinct, because the math to defend them to a board or a new lead is not there.
-        </p>
-        <p>
-          From the investor seat, the view is the same from the other side. Capital is deployed. Context has changed. The portfolio company is in what one board member called &ldquo;narrative maintenance mode,&rdquo; reporting the same KPIs quarter after quarter. The unit economics are not clean enough to defend a follow-on, pass a reference check from a new lead, or walk into a board meeting with a story that holds up under pressure.
+          Growth flatlined. Portfolio CFOs have pulled back. Growth-stage fractional CFOs will not touch a stalled cap table. The hardest calls of the company (which product line earns the next dollar, which pricing lever to pull, which path to the next round) are getting made on instinct, because the math to defend them to a board or a new lead is not there. The portfolio company drifts into what one board member called &ldquo;narrative maintenance mode,&rdquo; reporting the same KPIs quarter after quarter while the unit economics quietly stop holding up.
         </p>
       </div>
     </div>
@@ -262,7 +262,15 @@ const fitNo = [
             <h3>{tier.name}</h3>
             <p class="tier-promise">{tier.promise}</p>
             <div class="tier-meta">
-              <div class="tier-row"><span>Price</span><span>{tier.price}</span></div>
+              <div class="tier-row">
+                <span>Price</span>
+                <span>
+                  {tier.price}
+                  {tier.priceSecondary && (
+                    <span class="tier-fee-secondary">{tier.priceSecondary}</span>
+                  )}
+                </span>
+              </div>
             </div>
             <p style="font-size:15px; line-height:1.55; margin-bottom:22px;">{tier.body}</p>
             <div class="tier-guarantee">
@@ -476,7 +484,7 @@ const fitNo = [
         </div>
         <div class="close-card">
           <h3>For investors</h3>
-          <p>If you are watching a portfolio company make hard calls without the math to defend them to you, this is what we install. Forward this page, or introduce directly. After the first call we send a one-paragraph fit/not-fit note so you stay in the loop.</p>
+          <p>If you&rsquo;re watching a portfolio company make hard calls without the math to defend them, this is what we install. After the first call we send a one-paragraph fit/not-fit note so you stay in the loop.</p>
           <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
         </div>
       </div>

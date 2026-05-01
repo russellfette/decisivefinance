@@ -53,7 +53,7 @@ The most corrosive failure is the quietest one. A finance team running on retros
 
 Meanwhile, no decisions are moving. The senior hire who is not working has not been named in a Decision Slide. The product line that has missed three quarters has not been scoped into a Keep/Kill/Restructure. The raise has been in process for four months and the deck has not been rewritten to address the coherence problem.
 
-The finance function is busy and useful at the level it is operating at, but the level it is operating at is the wrong level for the stage of the company. That is the mismatch that kills walking dead portcos.
+The finance function is busy and useful at the level it is operating at, but the level it is operating at is the wrong level for the stage of the company. That is the mismatch that kills stalled portcos.
 
 ## Why does this happen?
 
@@ -69,7 +69,7 @@ Decision-first finance. Same close. Same variance. Same deck. Three additional o
 
 1. The **Decision Slide** on the one or two material decisions live this quarter.
 2. The **Runway Spine** for rolling 18 months of cash with scenarios.
-3. The **Signal Dashboard** on the six walking dead signals.
+3. The **Signal Dashboard** on the six stalled portco signals.
 
 This is the Financial Rhythm System. It is not a software install. It is three documents and one standing meeting. The work is four to six hours in month one of the installation. The resistance is usually in the CFO, and it usually breaks by the second month after the board meets a Decision Slide for the first time.
 

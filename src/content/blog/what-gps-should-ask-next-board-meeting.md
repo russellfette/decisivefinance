@@ -84,6 +84,6 @@ For the full detection and intervention sequence from the investor seat:
 
 Related reading:
 
-- [How GPs spot walking dead portcos early](https://decisive.finance/blog/how-gps-spot-walking-dead-early)
+- [How GPs spot stalled portcos early](https://decisive.finance/blog/how-gps-spot-stalled-early)
 - [The independent director's playbook for a drifting portco](https://decisive.finance/blog/independent-director-playbook)
 - [How to read a deck that is hiding the stall](https://decisive.finance/blog/how-to-read-a-deck-hiding-the-stall)
