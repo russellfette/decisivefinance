@@ -1,0 +1,149 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+
+const title = 'Decision-First Finance for M&A-Active Tech | Decisive Finance';
+const description =
+  'Find. Install. Run. The decision rhythm for funded tech in active M&A motion. Multi-entity close, deal desk, roll-up board package, capital strategy.';
+
+const triggers = [
+  {
+    heading: 'You are integrating an acquisition',
+    body: 'The deal closed. The rhythm has to absorb multi-entity reality before the next investor diligence team does.',
+  },
+  {
+    heading: 'You are planning the next deal',
+    body: 'A target is in the pipeline. The next deal moves at a different speed when target evaluation, diligence, and integration modeling run as a repeatable function.',
+  },
+  {
+    heading: 'You are positioning for an exit',
+    body: 'The next twelve to twenty-four months end in a sale or recap. The data has to hold under a buyer’s diligence team.',
+  },
+];
+
+const overlay = [
+  {
+    heading: 'Multi-entity close',
+    body: 'The close rhythm extends to consolidation that reconciles across acquired systems and survives diligence.',
+  },
+  {
+    heading: 'Deal desk',
+    body: 'Target evaluation, financial diligence, integration modeling, and post-deal tracking as a repeatable function. The next acquisition runs through the desk, not around it.',
+  },
+  {
+    heading: 'Roll-up board package',
+    body: 'Cohort, conversion, and capital efficiency reported by entity, by segment, and at platform level. Board prep falls from two weeks to two days.',
+  },
+  {
+    heading: 'Capital strategy',
+    body: 'Forward-looking 13-week and 24-month scenario modeling. Non-dilutive options sized and sequenced for the next deal and the next round.',
+  },
+];
+
+const tiers = [
+  {
+    label: 'Tier 1',
+    name: 'Decision Diagnostic',
+    promise: '14 days. Names what each deal is doing against today’s context.',
+  },
+  {
+    label: 'Tier 2',
+    name: '90-Day Decision Resolution',
+    promise: '90 days. Installs the decision rhythm, with the four M&A artifacts added to the catalog.',
+  },
+  {
+    label: 'Tier 3',
+    name: 'Decision Partnership',
+    promise: 'Ongoing. Every new acquisition runs through the same rhythm.',
+  },
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">For funded tech in active M&amp;A motion</span>
+      <h1>The deals closed. The rhythm has not caught up.</h1>
+      <p class="hero-subhead">
+        The data layer, the board package, and the unit economics underneath were sized for a single-entity company. They have not caught up to the platform thesis the deck is selling. <strong>Find. Install. Run.</strong>
+      </p>
+      <div class="hero-cta-row">
+        <a href={CALENDLY} class="btn btn-primary">Book a 30-minute call</a>
+        <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three triggers -->
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">When this applies</span>
+        <h2>Three triggers, one rhythm.</h2>
+        <ol class="engine-list">
+          {triggers.map((t) => (
+            <li class="engine-item">
+              <div>
+                <strong>{t.heading}.</strong>
+                <p>{t.body}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- The four artifacts the M&A engagement adds -->
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">What gets added</span>
+        <h2>Four artifacts the M&amp;A engagement adds to Tier 2.</h2>
+        <ol class="engine-list">
+          {overlay.map((item) => (
+            <li class="engine-item">
+              <div>
+                <strong>{item.heading}.</strong>
+                <p>{item.body}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three tiers, no pricing -->
+  <section id="tiers" class="alt">
+    <div class="container">
+      <span class="section-eyebrow">Three tiers · Find. Install. Run.</span>
+      <h2>The same three tiers. The work adapts to the deal.</h2>
+      <p class="lede">
+        The architecture is unchanged. The artifact catalog gets the four M&amp;A additions. Engagement size and price get scoped on the call against your deal pipeline and headcount.
+      </p>
+      <div class="tier-grid">
+        {tiers.map((tier) => (
+          <div class="tier">
+            <div class="tier-label">{tier.label}</div>
+            <h3>{tier.name}</h3>
+            <p class="tier-promise">{tier.promise}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="close-section">
+    <div class="container">
+      <div class="container-narrow">
+        <h2>Read the guarantee, then book the call.</h2>
+        <p class="lede">No pitch. We map your active deal situation against the rhythm, scope the engagement, and tell you whether the fit is there. You leave with at least one action either way.</p>
+        <a href={CALENDLY} class="btn btn-primary">Book a 30-minute call</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
