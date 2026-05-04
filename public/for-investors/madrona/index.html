@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operator Brief · Decisive Finance for Madrona Venture Group</title>
+<meta name="description" content="Operator brief for Madrona's platform team. Where Decisive Finance plugs into the portfolio support stack, what gets installed, what flows back to the firm on a referral.">
+<meta property="og:title" content="Operator Brief · Decisive Finance for Madrona">
+<meta property="og:description" content="Where Decisive Finance plugs into the portfolio support stack, and what flows back to the firm on a referral.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --orange: #ED5D2F;
+  --ink: #0D1418;
+  --ink-soft: #1F2A33;
+  --body: #2C3E50;
+  --muted: #6B7280;
+  --line: #D9D7CF;
+  --line-soft: #ECEAE3;
+  --bg: #FBFAF6;
+  --bg-paper: #FFFFFF;
+  --bg-dark: #0D1418;
+  --max: 760px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--body);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sheet {
+  max-width: var(--max);
+  margin: 0 auto;
+  background: var(--bg-paper);
+  padding: 56px 64px 72px;
+  border-left: 1px solid var(--line-soft);
+  border-right: 1px solid var(--line-soft);
+  min-height: 100vh;
+}
+
+/* Document header */
+.doc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 14px;
+  margin-bottom: 32px;
+}
+.doc-header-left { display: flex; align-items: baseline; gap: 14px; }
+.wordmark {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.wordmark span { font-weight: 400; color: var(--muted); margin-left: 3px; }
+.doc-type {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--orange);
+  text-transform: uppercase;
+}
+.doc-meta {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-align: right;
+  line-height: 1.5;
+}
+
+/* Title block */
+.title-block { margin-bottom: 40px; }
+.prepared-for {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.prepared-for strong { color: var(--ink); }
+h1 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.012em;
+  margin-bottom: 14px;
+}
+.subtitle {
+  font-size: 17px;
+  color: var(--ink-soft);
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 620px;
+}
+.subtitle em {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  color: var(--orange);
+  font-weight: 500;
+}
+
+/* Section */
+section {
+  margin: 36px 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--line-soft);
+}
+.section-num {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--orange);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.012em;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+p { margin-bottom: 12px; }
+p:last-child { margin-bottom: 0; }
+
+.lead {
+  font-size: 17px;
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+/* Tables / rows */
+.row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.row:last-child { border-bottom: none; }
+.row-label {
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.row-label small {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+  text-transform: none;
+}
+
+/* Tier table */
+.tier-table {
+  display: grid;
+  grid-template-columns: 110px 1fr 130px;
+  gap: 0;
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.tier-cell {
+  padding: 14px 16px 14px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+.tier-cell.head {
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 14px;
+}
+.tier-cell.head .tier-name {
+  font-size: 15.5px;
+  margin-bottom: 2px;
+}
+.tier-cell.head .tier-meta {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.tier-cell.price {
+  font-weight: 700;
+  color: var(--ink);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+}
+
+/* Pattern proof - tabular */
+.proof-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+.proof-row:last-child { border-bottom: none; }
+.proof-name {
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 14.5px;
+}
+.proof-name small {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  margin-top: 2px;
+  text-transform: none;
+}
+.proof-detail strong { color: var(--ink); font-weight: 600; }
+.proof-detail .traps {
+  display: block;
+  font-size: 12.5px;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+/* Sidenote */
+.sidenote {
+  border-left: 3px solid var(--orange);
+  padding: 4px 0 4px 18px;
+  margin: 24px 0;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  font-style: italic;
+  line-height: 1.55;
+}
+
+/* Operator bio block */
+.bio-block {
+  background: var(--bg);
+  border: 1px solid var(--line-soft);
+  padding: 24px 26px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+.bio-block h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.bio-block .role {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+.bio-block p { font-size: 14.5px; line-height: 1.6; }
+
+/* CTA - operator-style, not marketing */
+.cta-block {
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding: 28px 0;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.cta-option {
+  font-size: 14px;
+  line-height: 1.55;
+}
+.cta-option-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--orange);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.cta-option h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+.cta-option p {
+  font-size: 14px;
+  color: var(--body);
+  margin-bottom: 12px;
+}
+.cta-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 1px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.cta-link:hover { color: var(--orange); }
+
+/* Footer */
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line-soft);
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+footer a { color: var(--muted); text-decoration: none; }
+footer a:hover { color: var(--orange); }
+.fineprint {
+  margin-top: 14px;
+  font-style: italic;
+  font-size: 11px;
+  color: var(--muted);
+  width: 100%;
+  letter-spacing: 0.02em;
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  .sheet { padding: 32px 24px 48px; border-left: none; border-right: none; }
+  h1 { font-size: 30px; }
+  .subtitle { font-size: 15px; }
+  .doc-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .doc-meta { text-align: left; }
+  .row, .proof-row { grid-template-columns: 1fr; gap: 4px; }
+  .row-label { font-size: 12px; }
+  .tier-table { grid-template-columns: 1fr; }
+  .tier-cell { border-bottom: none; padding: 4px 0; }
+  .tier-cell.head { padding-top: 14px; border-top: 1px solid var(--line-soft); }
+  .tier-cell.price { text-align: left; padding-bottom: 14px; }
+  .cta-block { grid-template-columns: 1fr; gap: 20px; padding: 22px 0; }
+  footer { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+<!-- Document header -->
+<div class="doc-header">
+  <div class="doc-header-left">
+    <div class="wordmark">Decisive<span>Finance</span></div>
+    <div class="doc-type">Operator Brief</div>
+  </div>
+  <div class="doc-meta">
+    Confidential · Prepared May 2026<br>
+    Decisive Finance · Russell Fette
+  </div>
+</div>
+
+<!-- Title block -->
+<div class="title-block">
+  <div class="prepared-for">Prepared for <strong>Madrona Venture Group · Platform Operations</strong></div>
+  <h1>The seam between portfolio reporting and the next round.</h1>
+  <p class="subtitle">Where <em>Decisive Finance</em> plugs into the portfolio support stack, what we install, and what flows back to the firm on a referral. Six minutes, end to end.</p>
+</div>
+
+<!-- I. The seam -->
+<section>
+  <div class="section-num">I.</div>
+  <h2>The seam in the portfolio support stack</h2>
+  <p class="lead">Stalled post-Series A/B is the segment of the portfolio your existing operator bench can't reach.</p>
+  <p>The portfolio CFO's mandate is reporting. Different output, different cadence, no overlap with forward-decision work. Growth-stage fractional CFOs won't take a stalled cap table; the math doesn't pencil for them. Platform teams have neither the mandate nor the standing capacity to defend a founder's next dollar with math, week over week, for ninety days.</p>
+  <p>The companies sitting in that seam are running the hardest forward calls of their life on instinct: pricing architecture, headcount shape, product-line direction, the path to the next round. Capital is deployed against a context that has changed. The unit economics aren't clean enough to defend a follow-on, pass a reference check from a new lead, or hold up in a board meeting. Reporting can be clean and the forward allocation still undefended.</p>
+  <div class="sidenote">Decisive Finance is purpose-built for that seam. Not a portfolio CFO, not a turnaround firm, not a growth-stage fractional. A different mandate, by design.</div>
+</section>
+
+<!-- II. What gets installed -->
+<section>
+  <div class="section-num">II.</div>
+  <h2>What gets installed</h2>
+  <p>Three tiers. Founders typically enter at Tier 1 and graduate to Tier 2. Tier 3 runs only after Tier 2 has installed what it is paid to operate. Pricing fixed at engagement letter.</p>
+
+  <div class="tier-table">
+    <div class="tier-cell head"><div class="tier-name">Tier 1</div><div class="tier-meta">Decision Diagnostic · 14 days</div></div>
+    <div class="tier-cell">A dollar inventory of what current capital is earning against today's context, with a CEO-accepted plan for every dollar that has to move. Five named artifacts.</div>
+    <div class="tier-cell price">$7.5K – $10K</div>
+
+    <div class="tier-cell head"><div class="tier-name">Tier 2</div><div class="tier-meta">90-Day Resolution</div></div>
+    <div class="tier-cell">Five material decisions defended forward with math, two live in market with measurement, an 18-month forecast with a named path to profitability, Financial Rhythms™ running as the monthly cadence. Ten new artifacts on top of Tier 1.</div>
+    <div class="tier-cell price">$22.5K – $30K</div>
+
+    <div class="tier-cell head"><div class="tier-name">Tier 3</div><div class="tier-meta">Decision Partnership · ongoing</div></div>
+    <div class="tier-cell">Weekly, monthly, quarterly cadence. Every new material decision hits the same loop. Realized Value certified quarterly against methodology, not opinion.</div>
+    <div class="tier-cell price">$7.5K/mo + 5%</div>
+  </div>
+
+  <p style="margin-top:18px; font-size:14.5px;"><strong style="color:var(--ink);">Guarantees, in plain terms:</strong> Tier 1 returns 3x fee in trapped value with CEO-accepted recovery plans, an equivalent-materiality strategic finding, or 100% refund. Tier 2 ships the rhythm in market by Day 90, an equivalent-materiality strategic finding, or full refund of fees paid. Not stop-work. Tier 3 success fee is paid only on quarterly-certified Realized Value.</p>
+</section>
+
+<!-- III. What flows back to the firm -->
+<section>
+  <div class="section-num">III.</div>
+  <h2>What flows back to the firm on a referral</h2>
+  <p class="lead">Madrona's referral economics are designed up front, not negotiated after the fact.</p>
+
+  <div class="row">
+    <div class="row-label">Write-back<small>after first call</small></div>
+    <div>One-paragraph fit / no-fit note to the introducer within 24 hours of the founder's intro call. You stay in the loop without being in the room. No founder-side review required for fit notes; engagement specifics shared only with founder permission.</div>
+  </div>
+  <div class="row">
+    <div class="row-label">Engagement readouts<small>Day 14 + Day 90</small></div>
+    <div>Diagnostic outcome and Resolution outcome shared with the introducing partner with founder permission, redacted to the firm's preferred level. Includes the Six Trap stack diagnosed and the dollar value of forward reallocation surfaced.</div>
+  </div>
+  <div class="row">
+    <div class="row-label">Pattern intel<small>portfolio rollup</small></div>
+    <div>For firms with three or more engagements running, an anonymized rollup of trap stacks and forward-reallocation patterns across the portfolio. Useful as platform-team inputs for portfolio-wide playbooks. No individual company exposure.</div>
+  </div>
+  <div class="row">
+    <div class="row-label">Founding cohort hold<small>through June 30</small></div>
+    <div>The first three signed 90-Day Resolutions run at <strong style="color:var(--ink);">$18,000 flat</strong> versus $22,500 to $30,000 standard, in exchange for written permission to publish trap stack and outcomes as a case study. Closes at three signed or June 30, 2026, whichever comes first. Holds for Madrona referrals on a first-signed basis.</div>
+  </div>
+  <div class="row">
+    <div class="row-label">No firm-side cost</div>
+    <div>The firm pays nothing. No retainer, no platform contract, no minimum referral count. Engagement contracts are between Decisive Finance and the portfolio company directly.</div>
+  </div>
+</section>
+
+<!-- IV. Pattern proof -->
+<section>
+  <div class="section-num">IV.</div>
+  <h2>Pattern proof</h2>
+  <p>Three published mechanisms. Stalled-tech Series A/B case studies in build through the Founding Cohort.</p>
+
+  <div style="margin-top:8px;">
+    <div class="proof-row">
+      <div class="proof-name">Pathwright<small>SaaS · EdTech</small></div>
+      <div class="proof-detail">
+        <strong>3x valuation. 4x net income. LTV 2x to 5x.</strong>
+        Forward move: $600K/yr of customer-funded development hidden in the engineering P&amp;L; restructured to paid services at 2.5x margin.
+        <span class="traps">Trap stack: Mental Accounting + Sunk Cost.</span>
+      </div>
+    </div>
+    <div class="proof-row">
+      <div class="proof-name">SmartTab<small>Tech · POS + Hardware</small></div>
+      <div class="proof-detail">
+        <strong>+19% valuation. Growth equity round closed. 14 months cash stability.</strong>
+        Forward move: 2022 hardware-led strategic decision never re-decided against current context; restructured to SaaS-led with partnered hardware.
+        <span class="traps">Trap stack: Status Quo + Loss Aversion.</span>
+      </div>
+    </div>
+    <div class="proof-row">
+      <div class="proof-name">Orchestraight<small>AI SaaS · Pre-seed</small></div>
+      <div class="proof-detail">
+        <strong>$12M pre-seed cap closed. Board-ready from Day 1.</strong>
+        Forward move: separated Enterprise / API / SMB economics, killed money-losing $99 tier, sequenced API launch post-raise.
+        <span class="traps">Trap stack: Mental Accounting + Status Quo + Anchoring + Certainty Illusion.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidenote">The mechanism reads the same across funded tech contexts because the cognitive patterns are structural. Six Trap Diagnostic™ identifies which patterns are quietly holding capital in place. Financial Rhythms™ keeps the forward-decision loop running after the engagement ends.</div>
+</section>
+
+<!-- V. Operator -->
+<section>
+  <div class="section-num">V.</div>
+  <h2>Operator</h2>
+  <div class="bio-block">
+    <h3>Russell Fette</h3>
+    <div class="role">Founder · Decisive Finance · Seattle, WA</div>
+    <p>Twenty-five-plus years of finance leadership across funded SaaS, fintech, and operationally complex tech. Built Decisive Finance after watching too many post-raise companies stall in a seam no existing operator was designed to fill. Trademarked the methodology (Financial Rhythms™) and the diagnostic protocol (Six Trap Diagnostic™) in 2026. Active in the Seattle and PNW venture ecosystem; introduced into this conversation by Janis Machala.</p>
+  </div>
+  <p style="margin-top:14px; font-size:13.5px; color:var(--muted);">Full background available on request or at <a href="https://linkedin.com/in/russellfette" style="color:var(--muted); border-bottom:1px solid var(--line);">linkedin.com/in/russellfette</a>.</p>
+</section>
+
+<!-- VI. Engagement model -->
+<section>
+  <div class="section-num">VI.</div>
+  <h2>Engagement model</h2>
+  <div class="row">
+    <div class="row-label">Response SLA</div>
+    <div>First call within 5 business days of intro. Write-back to introducer within 24 hours of the call.</div>
+  </div>
+  <div class="row">
+    <div class="row-label">Confidentiality</div>
+    <div>Standard NDA on intake. Founder-side disclosure permission required before any engagement-specific information is shared with the referring firm.</div>
+  </div>
+  <div class="row">
+    <div class="row-label">Pricing transparency</div>
+    <div>Fixed at engagement letter. No hourly billing, no scope creep, no change orders without separate scope and price.</div>
+  </div>
+  <div class="row">
+    <div class="row-label">Out of scope</div>
+    <div>Bookkeeping cleanup, interim controller / FP&amp;A hires, fundraising introductions, pitch coaching, board-meeting facilitation, and HR/legal advisory on RIF cases. Available as change orders only.</div>
+  </div>
+</section>
+
+<!-- Two CTAs -->
+<div class="cta-block">
+  <div class="cta-option">
+    <div class="cta-option-label">Path A · Platform fit</div>
+    <h3>30-minute platform fit call</h3>
+    <p>Working conversation on portfolio fit and integration model. No pitch. Janis can intro by email when ready.</p>
+    <a href="https://calendly.com/russell-decisive/30min" class="cta-link">Book the call →</a>
+  </div>
+  <div class="cta-option">
+    <div class="cta-option-label">Path B · Direct referral</div>
+    <h3>Forward to a portfolio CEO</h3>
+    <p>The companion founder-facing page is built specifically for Madrona portfolio CEOs. Forward the link. Founder books the Diagnostic; firm gets the write-back inside 24 hours.</p>
+    <a href="/for-founders/madrona-portfolio/" class="cta-link">Founder-facing page →</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div>
+    Russell Fette · Decisive Finance<br>
+    <a href="mailto:russell@decisive.finance">russell@decisive.finance</a> ·
+    <a href="https://decisive.finance">decisive.finance</a>
+  </div>
+  <div>
+    Booking: <a href="https://calendly.com/russell-decisive/30min">calendly.com/russell-decisive/30min</a><br>
+    LinkedIn: <a href="https://linkedin.com/in/russellfette">linkedin.com/in/russellfette</a>
+  </div>
+  <div class="fineprint">
+    Decision-First Finance. Financial Rhythms™ and Six Trap Diagnostic™ are trademarks of Decisive Finance. The category belongs to the market. We are one operator inside it.
+  </div>
+</footer>
+
+</div>
+
+</body>
+</html>
