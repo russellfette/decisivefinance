@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trapped Value Report Preview | Decisive Finance</title>
+  <meta name="description" content="A 4-minute preview of the Trapped Value Report you'd receive on Day 14 of the Decisive Diagnostic. Five canon categories, real benchmarks, the Six Trap mapping. Most Diagnostics surface $22,500 to $30,000. Guaranteed." />
+  <link rel="canonical" href="https://decisive.finance/resources/recovery-checklist/" />
+
+  <meta property="og:site_name" content="Decisive Finance" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Preview your Trapped Value Report" />
+  <meta property="og:description" content="Three questions. The five Decisive canon categories. A dollarized preview of the Tier 1 Trapped Value Report." />
+  <meta property="og:url" content="https://decisive.finance/resources/recovery-checklist/" />
+  <meta property="og:image" content="https://decisive.finance/og-default.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Preview your Trapped Value Report" />
+  <meta name="twitter:description" content="Three questions. The five Decisive canon categories. A dollarized preview of the Tier 1 Trapped Value Report." />
+  <meta name="twitter:image" content="https://decisive.finance/og-default.png" />
+
+  <!--
+  ============================================================================
+  EMAIL BACKEND: Kit (formerly ConvertKit)
+  Form ID 9406590 = Decisive Finance lead-magnet form.
+  Submissions add the prospect as a Kit subscriber with custom fields
+  capturing all assessment data; Russ replies personally within 24 hours
+  per Path A. The PDF preview auto-downloads to the prospect's machine
+  on submit (Kit cannot accept file attachments; the PDF is generated
+  client-side via jsPDF). To change the form ID later, edit the
+  KIT_FORM_ID const near the top of the inline <script> block.
+  ============================================================================
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+
+  <style>
+    :root {
+      --ink:        #182228;
+      --white:      #ffffff;
+      --orange:     #e3632b;
+      --green:      #214c52;
+      --grey:       #f5f3ef;
+      --hairline:   #e5e1da;
+      --muted:      #5a6a72;
+
+      --tier-quick:     #2f7a4f;
+      --tier-medium:    #c08a2b;
+      --tier-strategic: #b3300d;
+
+      --width-prose:   760px;
+      --width-hero:    920px;
+      --width-content: 1180px;
+
+      --radius-card:   18px;
+      --radius-input:  12px;
+      --shadow-soft:   0 14px 36px rgba(24, 34, 40, 0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .prose-wrap   { max-width: var(--width-prose);   margin: 0 auto; padding: 0 24px; }
+    .hero-wrap    { max-width: var(--width-hero);    margin: 0 auto; padding: 0 24px; }
+    .content-wrap { max-width: var(--width-content); margin: 0 auto; padding: 0 24px; }
+
+    .hero {
+      background: var(--ink);
+      color: var(--white);
+      padding: 110px 24px 92px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: ""; position: absolute; top: -220px; right: -180px;
+      width: 620px; height: 620px;
+      background: radial-gradient(circle, rgba(227, 99, 43, 0.22) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: ""; position: absolute; bottom: -320px; left: -160px;
+      width: 720px; height: 720px;
+      background: radial-gradient(circle, rgba(33, 76, 82, 0.55) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero .hero-wrap { position: relative; z-index: 2; }
+    .eyebrow {
+      display: inline-block; font-size: 13px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.16em;
+      color: var(--orange); margin-bottom: 22px;
+    }
+    h1.headline {
+      font-size: clamp(40px, 5.4vw, 68px); font-weight: 800;
+      letter-spacing: -0.035em; line-height: 1.04;
+      margin: 0 0 24px; max-width: var(--width-hero);
+    }
+    .lede {
+      font-size: clamp(18px, 1.9vw, 22px); line-height: 1.5;
+      max-width: var(--width-prose); margin: 0 0 28px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .lede .dollar { color: var(--orange); font-weight: 600; white-space: nowrap; }
+    .hero-meta {
+      display: inline-flex; align-items: center; gap: 14px; flex-wrap: wrap;
+      font-size: 14px; color: rgba(255, 255, 255, 0.7);
+      padding: 10px 18px; border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+    }
+    .hero-meta strong { color: var(--white); font-weight: 600; }
+    .hero-meta .dot { opacity: 0.5; }
+
+    .panel { padding: 72px 24px 96px; background: var(--white); }
+    .panel.muted { background: var(--grey); }
+
+    .tool-grid {
+      max-width: var(--width-content); margin: 0 auto;
+      display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px;
+    }
+    @media (max-width: 980px) { .tool-grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: var(--white); border: 1px solid var(--hairline);
+      border-radius: var(--radius-card); padding: 44px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .gauge-col {
+      position: sticky; top: 24px; align-self: start;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    @media (max-width: 980px) { .gauge-col { position: static; } }
+
+    .live-gauge {
+      background: var(--white); border: 1px solid var(--hairline);
+      border-radius: var(--radius-card); padding: 22px 24px;
+    }
+    .live-gauge h4 {
+      font-size: 12px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.14em; color: var(--muted); margin: 0 0 8px;
+    }
+    .live-gauge .big {
+      font-size: 28px; font-weight: 800; letter-spacing: -0.02em;
+      color: var(--ink); margin: 0; line-height: 1.1;
+    }
+    .live-gauge .sub { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.4; }
+    .live-gauge.feature { background: var(--ink); color: var(--white); }
+    .live-gauge.feature h4 { color: rgba(255, 255, 255, 0.7); }
+    .live-gauge.feature .big { color: var(--orange); }
+    .live-gauge.feature .sub { color: rgba(255, 255, 255, 0.7); }
+
+    .progress-wrap { max-width: var(--width-content); margin: 0 auto 28px; padding: 0 24px; }
+    .progress-row {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 13px; color: var(--muted); margin-bottom: 10px;
+      letter-spacing: 0.02em;
+    }
+    .progress-bar {
+      width: 100%; height: 5px; background: var(--hairline);
+      border-radius: 999px; overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%; background: var(--orange); width: 0%;
+      transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .step { display: none; }
+    .step.active { display: block; animation: fadeUp 0.32s ease both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    .step-eyebrow {
+      font-size: 12px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.16em; color: var(--orange); margin-bottom: 14px;
+    }
+    .step h2 {
+      font-size: clamp(24px, 2.8vw, 32px); font-weight: 800;
+      letter-spacing: -0.025em; line-height: 1.18;
+      margin: 0 0 12px;
+    }
+    .step p.help {
+      color: var(--muted); font-size: 16px; line-height: 1.55;
+      margin: 0 0 28px; max-width: var(--width-prose);
+    }
+    .source-tag {
+      display: inline-block; font-size: 11px; color: var(--muted);
+      letter-spacing: 0.04em; margin-top: 12px; font-style: italic;
+    }
+
+    .choices {
+      display: grid; grid-template-columns: 1fr; gap: 10px;
+      margin-bottom: 32px;
+    }
+    .choice {
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 20px; border: 1.5px solid var(--hairline);
+      border-radius: var(--radius-input); background: var(--white);
+      cursor: pointer; font-size: 16px; font-weight: 500;
+      color: var(--ink); text-align: left; width: 100%;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .choice:hover { border-color: var(--ink); background: #fbfaf8; }
+    .choice.selected { border-color: var(--orange); background: #fff8f3; }
+    .choice .marker {
+      width: 22px; height: 22px; border-radius: 50%;
+      border: 1.5px solid var(--hairline); flex-shrink: 0;
+      display: inline-flex; align-items: center; justify-content: center;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .choice.selected .marker { border-color: var(--orange); background: var(--orange); }
+    .choice.selected .marker::after {
+      content: ""; width: 8px; height: 8px;
+      border-radius: 50%; background: var(--white);
+    }
+    .choice .label-text { flex: 1; }
+    .choice .label-tag {
+      font-size: 11px; font-weight: 600; color: var(--muted);
+      padding: 3px 8px; border-radius: 999px;
+      background: var(--grey); flex-shrink: 0;
+      letter-spacing: 0.04em;
+    }
+
+    .activity-section {
+      margin-bottom: 28px;
+      padding: 0 0 8px;
+      border-bottom: 1px solid var(--hairline);
+    }
+    .activity-section:last-child { border-bottom: none; }
+    .activity-section h3 {
+      font-size: 14px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.14em; color: var(--ink);
+      margin: 0 0 4px;
+    }
+    .activity-section .section-trap {
+      font-size: 12px; color: var(--muted); font-style: italic;
+      margin: 0 0 14px;
+    }
+    .check-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 12px 14px; border: 1.5px solid var(--hairline);
+      border-radius: var(--radius-input); background: var(--white);
+      cursor: pointer; font-size: 14.5px; font-weight: 500;
+      color: var(--ink); line-height: 1.4;
+      transition: border-color 0.15s, background 0.15s;
+      margin-bottom: 8px;
+    }
+    .check-item:hover { border-color: var(--ink); }
+    .check-item.checked { border-color: var(--green); background: #f3f7f6; }
+    .check-item .check-box {
+      width: 20px; height: 20px; border-radius: 5px;
+      border: 1.5px solid var(--hairline); flex-shrink: 0;
+      display: inline-flex; align-items: center; justify-content: center;
+      transition: border-color 0.15s, background 0.15s;
+      margin-top: 1px;
+    }
+    .check-item.checked .check-box { background: var(--green); border-color: var(--green); }
+    .check-item.checked .check-box::after {
+      content: ""; width: 5px; height: 9px;
+      border: solid var(--white); border-width: 0 2px 2px 0;
+      transform: rotate(45deg) translateY(-1px);
+    }
+
+    .step-nav {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 16px; margin-top: 18px;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 26px; font-family: inherit; font-size: 15px;
+      font-weight: 600; border-radius: 999px;
+      border: 1.5px solid transparent; cursor: pointer;
+      text-decoration: none; transition: background 0.15s, color 0.15s, border-color 0.15s, transform 0.1s;
+      white-space: nowrap;
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn-primary { background: var(--orange); color: var(--white); }
+    .btn-primary:hover { background: #c2531e; }
+    .btn-primary:disabled { background: var(--hairline); color: var(--muted); cursor: not-allowed; }
+    .btn-ghost { background: transparent; color: var(--ink); border-color: var(--hairline); }
+    .btn-ghost:hover { border-color: var(--ink); }
+    .btn-link {
+      background: transparent; color: var(--muted);
+      border: none; padding: 10px 4px; font-weight: 500;
+    }
+    .btn-link:hover { color: var(--ink); }
+    .btn .arrow { font-size: 18px; line-height: 1; transform: translateY(-1px); }
+
+    .field { display: block; margin-bottom: 18px; }
+    .field label {
+      display: block; font-size: 13px; font-weight: 600;
+      color: var(--ink); margin-bottom: 8px; letter-spacing: 0.02em;
+    }
+    .field input {
+      width: 100%; padding: 14px 16px; font-family: inherit;
+      font-size: 16px; color: var(--ink);
+      border: 1.5px solid var(--hairline); border-radius: var(--radius-input);
+      background: var(--white); transition: border-color 0.15s;
+    }
+    .field input:focus { outline: none; border-color: var(--orange); }
+    .field-error { color: var(--tier-strategic); font-size: 13px; margin-top: 6px; display: none; }
+    .field-error.show { display: block; }
+
+    /* DASHBOARD */
+    .dashboard { display: none; }
+    .dashboard.active { display: block; }
+
+    .dashboard-hero {
+      background: var(--ink); color: var(--white);
+      border-radius: var(--radius-card); padding: 48px;
+      margin-bottom: 28px; position: relative; overflow: hidden;
+    }
+    .dashboard-hero::after {
+      content: ""; position: absolute; top: -180px; right: -120px;
+      width: 480px; height: 480px;
+      background: radial-gradient(circle, rgba(227, 99, 43, 0.20) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .dashboard-hero > * { position: relative; z-index: 2; }
+    .dashboard-hero .preview-tag {
+      display: inline-block; font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.16em;
+      padding: 6px 14px; border-radius: 999px;
+      margin-bottom: 20px;
+      background: rgba(227, 99, 43, 0.20); color: #ffb88f;
+    }
+    .dashboard-hero h2 {
+      font-size: clamp(32px, 4.4vw, 52px); font-weight: 800;
+      letter-spacing: -0.03em; line-height: 1.05;
+      margin: 0 0 14px; color: var(--white);
+    }
+    .dashboard-hero .big-range { color: var(--orange); white-space: nowrap; }
+    .dashboard-hero p {
+      font-size: 18px; line-height: 1.55;
+      color: rgba(255, 255, 255, 0.82); max-width: 640px;
+      margin: 0 0 24px;
+    }
+    .dashboard-hero .pdf-row { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    /* Guarantee comparison strip */
+    .guarantee-strip {
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 720px) { .guarantee-strip { grid-template-columns: 1fr; } }
+    .guarantee-card {
+      background: var(--white); border: 1px solid var(--hairline);
+      border-radius: var(--radius-card); padding: 22px;
+    }
+    .guarantee-card h4 {
+      font-size: 11px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.14em; color: var(--muted); margin: 0 0 8px;
+    }
+    .guarantee-card .val {
+      font-size: 24px; font-weight: 800; letter-spacing: -0.02em;
+      color: var(--ink); margin: 0 0 6px; line-height: 1.1;
+    }
+    .guarantee-card .val.orange { color: var(--orange); }
+    .guarantee-card .bench { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+    /* Category cards */
+    .categories {
+      display: grid; grid-template-columns: 1fr; gap: 16px;
+      margin-bottom: 32px;
+    }
+    .cat-card {
+      background: var(--white); border: 1px solid var(--hairline);
+      border-radius: var(--radius-card); padding: 28px 32px;
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 24px; align-items: start;
+    }
+    @media (max-width: 720px) { .cat-card { grid-template-columns: 1fr; } }
+    .cat-head {
+      display: flex; align-items: baseline; gap: 14px;
+      margin-bottom: 8px; flex-wrap: wrap;
+    }
+    .cat-name {
+      font-size: 18px; font-weight: 700; color: var(--ink);
+    }
+    .cat-tier {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.12em; padding: 3px 10px; border-radius: 999px;
+    }
+    .cat-tier.quick     { background: rgba(47, 122, 79, 0.12); color: var(--tier-quick); }
+    .cat-tier.medium    { background: rgba(192, 138, 43, 0.16); color: var(--tier-medium); }
+    .cat-tier.strategic { background: rgba(179, 48, 13, 0.10); color: var(--tier-strategic); }
+    .cat-trap {
+      font-size: 13px; color: var(--muted); font-style: italic;
+      margin: 0 0 12px;
+    }
+    .cat-narrative {
+      font-size: 14.5px; color: var(--ink); line-height: 1.55;
+      margin: 0;
+    }
+    .cat-amount {
+      font-size: 22px; font-weight: 800; color: var(--orange);
+      letter-spacing: -0.02em; white-space: nowrap;
+      text-align: right; min-width: 130px;
+    }
+    @media (max-width: 720px) {
+      .cat-amount { text-align: left; min-width: auto; font-size: 26px; }
+    }
+    .cat-amount-sub {
+      display: block; font-size: 11px; color: var(--muted);
+      font-weight: 500; letter-spacing: 0.04em;
+      margin-top: 4px;
+    }
+
+    /* Total bar */
+    .total-bar {
+      background: var(--ink); color: var(--white);
+      border-radius: var(--radius-card); padding: 24px 32px;
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin-bottom: 28px; flex-wrap: wrap; gap: 12px;
+    }
+    .total-bar .label { font-size: 14px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255, 255, 255, 0.7); }
+    .total-bar .amount { font-size: 28px; font-weight: 800; color: var(--orange); letter-spacing: -0.02em; }
+
+    /* Email gate */
+    .gate-card {
+      background: var(--ink); color: var(--white);
+      border-radius: var(--radius-card); padding: 44px;
+      margin-bottom: 28px; position: relative; overflow: hidden;
+    }
+    .gate-card::after {
+      content: ""; position: absolute; bottom: -180px; left: -100px;
+      width: 460px; height: 460px;
+      background: radial-gradient(circle, rgba(33, 76, 82, 0.50) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .gate-card > * { position: relative; z-index: 2; }
+    .gate-card h3 {
+      font-size: clamp(22px, 2.6vw, 30px); font-weight: 800;
+      letter-spacing: -0.02em; margin: 0 0 12px; color: var(--white);
+    }
+    .gate-card p {
+      color: rgba(255, 255, 255, 0.82); font-size: 16px;
+      line-height: 1.55; max-width: 600px; margin: 0 0 24px;
+    }
+    .gate-card .field label { color: var(--white); }
+    .gate-card .field input {
+      background: rgba(255, 255, 255, 0.08); color: var(--white);
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+    .gate-card .field input:focus { border-color: var(--orange); }
+    .gate-card .privacy-note {
+      font-size: 12px; color: rgba(255, 255, 255, 0.55);
+      margin-top: 14px; line-height: 1.5;
+    }
+
+    .next-steps {
+      background: var(--white); border: 1px solid var(--hairline);
+      border-radius: var(--radius-card); padding: 44px;
+    }
+    .next-steps h3 {
+      font-size: clamp(24px, 2.8vw, 32px); font-weight: 800;
+      letter-spacing: -0.025em; line-height: 1.15;
+      margin: 0 0 14px; color: var(--ink);
+    }
+    .next-steps p {
+      color: var(--muted); font-size: 17px; line-height: 1.55;
+      max-width: 580px; margin: 0 0 26px;
+    }
+    .next-steps .guarantee-line { margin-top: 16px; font-size: 12px; color: var(--muted); }
+
+    footer.foot {
+      border-top: 1px solid var(--hairline);
+      padding: 36px 24px; font-size: 13px; color: var(--muted);
+    }
+    footer.foot .foot-inner {
+      max-width: var(--width-content); margin: 0 auto;
+      display: flex; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px;
+    }
+    footer.foot a { color: var(--muted); text-decoration: none; }
+    footer.foot a:hover { color: var(--ink); }
+
+    .spinner {
+      width: 18px; height: 18px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-top-color: var(--white);
+      border-radius: 50%; animation: spin 0.8s linear infinite;
+      display: none;
+    }
+    .submitting .spinner { display: inline-block; }
+    .submitting .btn-text { opacity: 0.6; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 720px) {
+      .card, .gate-card, .next-steps, .dashboard-hero { padding: 28px 22px; }
+      .cat-card { padding: 22px 20px; }
+      .hero { padding: 84px 24px 64px; }
+      .panel { padding: 48px 24px 64px; }
+      .step-nav { flex-direction: column-reverse; align-items: stretch; }
+      .step-nav .btn { width: 100%; justify-content: center; }
+    }
+
+    body.embedded .hero,
+    body.embedded footer.foot { display: none; }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-wrap">
+      <span class="eyebrow">Decisive Finance · 4-minute preview</span>
+      <h1 class="headline">Preview your Trapped Value Report.</h1>
+      <p class="lede">Most Diagnostics surface <span class="dollar">$22,500 to $30,000</span> of trapped value in 14 days. Guaranteed. Three questions tell you what the Tier 1 Trapped Value Report would likely show for a company your size, organized the way Decisive actually delivers it: five canon categories, the dominant Six Trap behind each, and an effort tier per finding.</p>
+      <span class="hero-meta">
+        <strong>3 questions</strong>
+        <span class="dot">·</span>
+        <span>About 4 minutes</span>
+        <span class="dot">·</span>
+        <span>Live dashboard plus a PDF preview to your inbox</span>
+      </span>
+    </div>
+  </section>
+
+  <section class="panel muted" id="tool">
+
+    <div class="progress-wrap" id="progress" hidden>
+      <div class="progress-row">
+        <span id="progressLabel">Step 1 of 3</span>
+        <span id="progressContext">Sizing</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+
+    <div class="tool-grid" id="quizGrid">
+
+      <div class="card" id="card">
+
+        <div class="step active" data-step="intro">
+          <span class="step-eyebrow">Before we start</span>
+          <h2>This is a preview, not the artifact itself.</h2>
+          <p class="help">Three questions sized to the $1M to $8M ARR ICP. The output mirrors the structure of the actual Trapped Value Report (Diagnostic Artifact 2), with the dollar range and dominant Six Trap per category. The real report ties each finding to a specific source decision in your business, names the trap stack, and prescribes the unlock move. That's the Diagnostic itself.</p>
+          <div class="step-nav">
+            <span></span>
+            <button class="btn btn-primary" data-action="next">Start the preview <span class="arrow">→</span></button>
+          </div>
+        </div>
+
+        <!-- Q1: ARR -->
+        <div class="step" data-step="q" data-question="arr">
+          <span class="step-eyebrow">Sizing · 1 of 2</span>
+          <h2>What's your current ARR?</h2>
+          <p class="help">Annualized run rate, GAAP or near-GAAP. We use this to scale category benchmarks against the ICP and to set your specific Diagnostic guarantee threshold.</p>
+          <div class="choices" data-choices></div>
+          <p class="source-tag">Decisive ICP: $1M to $8M ARR. Tier 1 priced at $7,500 under $3M, $10,000 from $3M to $8M. Source: Blueprint v1.8 Part 1.</p>
+          <div class="step-nav">
+            <button class="btn btn-link" data-action="prev">Back</button>
+            <button class="btn btn-primary" data-action="next" disabled>Continue <span class="arrow">→</span></button>
+          </div>
+        </div>
+
+        <!-- Q2: Burn -->
+        <div class="step" data-step="q" data-question="burn">
+          <span class="step-eyebrow">Sizing · 2 of 2</span>
+          <h2>What's your monthly cash burn?</h2>
+          <p class="help">Total cash out per month, not net. The opex denominator for category-level math (cost waste, vendor leakage, growth-spend allocation).</p>
+          <div class="choices" data-choices></div>
+          <p class="source-tag">Calibrated against ICONIQ Topline 2024 and KeyBanc SaaS Survey medians for Series A/B.</p>
+          <div class="step-nav">
+            <button class="btn btn-link" data-action="prev">Back</button>
+            <button class="btn btn-primary" data-action="next" disabled>Continue <span class="arrow">→</span></button>
+          </div>
+        </div>
+
+        <!-- Q3: Activity inventory -->
+        <div class="step" data-step="activities">
+          <span class="step-eyebrow">Recovery · 3 of 3 · Multi-select</span>
+          <h2>Which decision-discipline activities have happened in the last 12 months?</h2>
+          <p class="help">Check every box that's true. Each unchecked box is a category where the Diagnostic typically finds trapped value. Each checked box compresses the recovery estimate. Be honest. The categories below are the five Decisive uses inside the Decision Register and the Trapped Value Report.</p>
+          <div id="activitiesContainer"></div>
+          <div class="step-nav">
+            <button class="btn btn-link" data-action="prev">Back</button>
+            <button class="btn btn-primary" data-action="next">See your preview <span class="arrow">→</span></button>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="gauge-col">
+        <div class="live-gauge feature">
+          <h4>Estimated trapped value</h4>
+          <p class="big" id="liveTotal">$22.5K to $30K</p>
+          <p class="sub" id="liveSub">Floors at the Tier 1 guarantee. Updates as you answer.</p>
+        </div>
+        <div class="live-gauge">
+          <h4>Diagnostic fee at your size</h4>
+          <p class="big" id="liveFee">$7.5K to $10K</p>
+          <p class="sub">$7,500 under $3M ARR. $10,000 from $3M to $8M ARR.</p>
+        </div>
+        <div class="live-gauge">
+          <h4>3x guarantee floor</h4>
+          <p class="big" id="liveFloor">$22.5K to $30K</p>
+          <p class="sub">Diagnostic surfaces 3x fee or refund. Anything above is upside.</p>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="content-wrap dashboard" id="dashboard">
+
+      <div class="dashboard-hero">
+        <span class="preview-tag">Trapped Value Report Preview</span>
+        <h2>Your estimated trapped value: <span class="big-range" id="rangeText">$22,500 to $30,000</span></h2>
+        <p id="dashboardSub">Below is the category-level preview, organized exactly the way Decisive delivers the actual Tier 1 Trapped Value Report.</p>
+        <div class="pdf-row">
+          <button class="btn btn-primary" id="downloadPdfBtn">Download the PDF preview <span class="arrow">↓</span></button>
+        </div>
+      </div>
+
+      <div class="guarantee-strip">
+        <div class="guarantee-card">
+          <h4>Diagnostic fee</h4>
+          <p class="val" id="gFee">$10,000</p>
+          <p class="bench">Fixed at engagement letter. No hourly billing.</p>
+        </div>
+        <div class="guarantee-card">
+          <h4>3x guarantee floor</h4>
+          <p class="val" id="gFloor">$30,000</p>
+          <p class="bench">Surface this much in trapped value or the work is free.</p>
+        </div>
+        <div class="guarantee-card">
+          <h4>Your estimate vs. floor</h4>
+          <p class="val orange" id="gMultiple">2.5x to 5.0x</p>
+          <p class="bench">Where the math says you'd land relative to the guarantee.</p>
+        </div>
+      </div>
+
+      <div class="categories" id="categories"></div>
+
+      <div class="total-bar">
+        <span class="label">Total estimated trapped value</span>
+        <span class="amount" id="totalAmount">$22,500 to $30,000</span>
+      </div>
+
+      <div class="gate-card">
+        <h3>Want Russ's read on your numbers?</h3>
+        <p>Three fields. Russ replies personally within 24 hours (same-day during business hours) with the same PDF attached and a few sentences on what's specific to a company your size. We don't add you to a drip. If you don't reply, you don't hear from us again.</p>
+        <form id="leadForm" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <div class="field-error" data-error-for="name">Please add your name.</div>
+          </div>
+          <div class="field">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <div class="field-error" data-error-for="email">Please use a valid work email.</div>
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" required />
+            <div class="field-error" data-error-for="company">Please add your company.</div>
+          </div>
+          <div class="step-nav">
+            <span></span>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              <span class="btn-text">Send to Russ</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+          </div>
+          <p class="privacy-note">Your submission goes to contact@decisive.finance. Russ reads every one. No newsletter, no drip, no list. The report you downloaded is yours either way.</p>
+        </form>
+      </div>
+
+      <div class="next-steps">
+        <h3>The Diagnostic is the next move.</h3>
+        <p>Fourteen days. Five named artifacts. The actual Trapped Value Report ties each finding to a specific source decision in your business, names the trap stack keeping it running, and prescribes the unlock move. If we don't surface 3x the Diagnostic fee in trapped value, the work is free. Risk transfers to us on purpose.</p>
+        <a href="https://calendly.com/russell-decisive/30min" class="btn btn-primary" target="_blank" rel="noopener">Book the diagnostic <span class="arrow">→</span></a>
+        <a href="https://decisive.finance/offers/decision-diagnostic" class="btn btn-ghost" target="_blank" rel="noopener" style="margin-left: 12px;">See if you qualify</a>
+        <p class="guarantee-line">3x trapped-value floor or the work is free. The guarantee page has the math.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="foot">
+    <div class="foot-inner">
+      <span>&copy; <span id="year"></span> Decisive Finance. <a href="https://decisive.finance">decisive.finance</a></span>
+      <span><a href="https://decisive.finance/guarantee">Guarantee</a> · <a href="https://decisive.finance/offers">Offers</a> · <a href="mailto:contact@decisive.finance">contact@decisive.finance</a></span>
+    </div>
+  </footer>
+
+  <script>
+  /* =====================================================================
+     CONFIG
+     Kit (formerly ConvertKit) is the email backend. Form ID 9406590
+     is the Decisive Finance lead-magnet form created in Russ's Kit
+     account. Submissions add the prospect as a subscriber with
+     custom fields capturing all assessment data; Russ replies
+     personally per Path A.
+     ===================================================================== */
+  const KIT_FORM_ID = "9406590";
+  const KIT_SUBSCRIBE_URL = `https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`;
+
+  /* =====================================================================
+     QUESTIONS
+     ===================================================================== */
+  const QUESTIONS = {
+    arr: {
+      label: "ARR",
+      options: [
+        // Sub-$3M -> Tier 1 fee $7,500. $3M+ -> Tier 1 fee $10,000.
+        { label: "Under $1M",      tag: "below ICP",  mid:   500000, fee:  7500 },
+        { label: "$1M to $3M",     tag: "Series A",   mid:  2000000, fee:  7500 },
+        { label: "$3M to $5M",     tag: "Series A+",  mid:  4000000, fee: 10000 },
+        { label: "$5M to $8M",     tag: "Series B",   mid:  6500000, fee: 10000 },
+        { label: "Over $8M",       tag: "above ICP",  mid: 10000000, fee: 10000 }
+      ]
+    },
+    burn: {
+      label: "Monthly burn",
+      options: [
+        { label: "Under $150K",         tag: "lean",          mid:  100000 },
+        { label: "$150K to $350K",      tag: "Series A norm", mid:  250000 },
+        { label: "$350K to $600K",      tag: "Series A/B",    mid:  475000 },
+        { label: "$600K to $1M",        tag: "Series B norm", mid:  800000 },
+        { label: "Over $1M",            tag: "above norm",    mid: 1300000 }
+      ]
+    }
+  };
+
+  /* =====================================================================
+     CANON CATEGORIES (Blueprint v1.8 Part 3)
+     ===================================================================== */
+  const CATEGORIES = [
+    {
+      id: "cost",
+      name: "Cost",
+      trap: "Status Quo plus Sunk Cost",
+      trapNarrative: "Recurring costs that auto-renewed without re-approval, plus legacy line items kept alive because they were once justified.",
+      // Theoretical max trapped value as % of ARR (low to high)
+      lowPct:  0.008,
+      highPct: 0.020,
+      activities: [
+        { id: "cost-saas",   label: "Audit of every SaaS line over $5K/mo, with named owner per line" },
+        { id: "cost-vendor", label: "Top-10 vendor contracts re-approved on renewal, not auto-renewed" },
+        { id: "cost-cloud",  label: "Cloud cost work (RIs, savings plans, rightsizing) by a named owner" }
+      ],
+      narrative: "The Diagnostic surfaces every recurring cost over $5K/month traced back to its originating decision, with each line tagged Active Decision, Running by Default, or Abandoned. Typical findings: SaaS lines paid for but not seated, contracts auto-renewed at higher tiers than usage requires, software bought against a deprecated initiative.",
+      tier: "quick" // Quick / Medium / Strategic effort to capture
+    },
+    {
+      id: "pricing",
+      name: "Pricing",
+      trap: "Anchoring plus Status Quo",
+      trapNarrative: "List prices set at launch and never revisited. Enterprise quoting anchored to self-serve ARPU.",
+      lowPct:  0.015,
+      highPct: 0.040,
+      activities: [
+        { id: "pricing-review",   label: "Pricing list reviewed and adjusted in the last 12 months" },
+        { id: "pricing-leakage",  label: "Realized-vs-list discount leakage analysis completed" },
+        { id: "pricing-test",     label: "An in-market pricing test executed in the last 12 months" }
+      ],
+      narrative: "Pricing is where the typical Diagnostic surfaces the largest single finding. Common patterns include realized-vs-list discount leakage (5 to 15% of contracted ARR), pricing tiers that have not absorbed input-cost or buyer-mix shift since launch, and enterprise quoting anchored to self-serve ARPU. The Pricing Architecture Revisit (Resolution Artifact 9a) builds on this category.",
+      tier: "medium"
+    },
+    {
+      id: "growth",
+      name: "Growth Spend",
+      trap: "Sunk Cost plus Mental Accounting",
+      trapNarrative: "Channels receiving spend on the basis of what they produced 12 to 18 months ago. Marketing lumped into one line with no segment-level CAC.",
+      lowPct:  0.008,
+      highPct: 0.025,
+      activities: [
+        { id: "growth-cac",        label: "CAC tracked at the channel level" },
+        { id: "growth-segment",    label: "Segment-level CAC and contribution margin known" },
+        { id: "growth-experiment", label: "At least one growth experiment with go/no-go triggers running in market" }
+      ],
+      narrative: "Growth-spend trapped value usually surfaces as channels under-performing on current-context metrics but receiving spend on legacy attribution, and as segment-level CAC mix that mathematically guarantees blended CAC keeps drifting up. The Growth Experiment Register (Resolution Artifact 9b) extends this work.",
+      tier: "medium"
+    },
+    {
+      id: "product",
+      name: "Product Line",
+      trap: "Mental Accounting plus Sunk Cost",
+      trapNarrative: "Product Line P&Ls absent. Cross-subsidies invisible. Engineering time hidden inside R&D rather than allocated to lines.",
+      lowPct:  0.005,
+      highPct: 0.020,
+      activities: [
+        { id: "product-pl",       label: "Product Line P&Ls with allocated engineering and support cost" },
+        { id: "product-subsidy",  label: "Cross-subsidy map between product lines documented" },
+        { id: "product-decision", label: "A formal kill / keep / restructure call made on at least one line in the last 12 months" }
+      ],
+      narrative: "When Product Line P&Ls are absent, leakage is structurally invisible. Typical Diagnostic findings: a small line consuming 30% of engineering hours against 5% of revenue, an enterprise line subsidizing a self-serve line that's been treated as the strategic priority, services revenue priced at break-even without recognizing engineering pull. Product Line P&Ls (Resolution Artifact 7) is the deeper instrument here.",
+      tier: "strategic"
+    },
+    {
+      id: "capital",
+      name: "Capital Structure",
+      trap: "Loss Aversion plus Anchoring",
+      trapNarrative: "Multi-year commitments anchored to post-raise context that no longer exists. Lease, vendor, and partnership terms locked while context shifted.",
+      lowPct:  0.003,
+      highPct: 0.015,
+      activities: [
+        { id: "capital-vendor", label: "Multi-year vendor and partnership contracts reviewed against current context" },
+        { id: "capital-lease",  label: "Lease structure reviewed in the last 18 months" },
+        { id: "capital-bpr",    label: "A current Bridge / Pivot / Raise model exists" }
+      ],
+      narrative: "Capital-structure findings are smaller in count but larger in unit dollar value. Multi-year vendor commitments, lease structure, partnership agreements with margin-share implications. These take Strategic effort to capture (board-level commitment, multi-week negotiation) but a single finding here can equal the entire Cost category for the year.",
+      tier: "strategic"
+    }
+  ];
+
+  /* =====================================================================
+     STATE
+     ===================================================================== */
+  const STEP_ORDER = ["intro", "arr", "burn", "activities"];
+  const state = {
+    currentIndex: 0,
+    answers: {},
+    activities: new Set(),
+    metrics: null
+  };
+
+  /* =====================================================================
+     RENDER QUESTIONS
+     ===================================================================== */
+  function mountChoices() {
+    document.querySelectorAll('.step[data-step="q"]').forEach(stepEl => {
+      const qKey = stepEl.dataset.question;
+      const wrap = stepEl.querySelector('[data-choices]');
+      if (!wrap || !QUESTIONS[qKey]) return;
+      wrap.innerHTML = "";
+      QUESTIONS[qKey].options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'choice';
+        btn.innerHTML = `
+          <span class="marker"></span>
+          <span class="label-text">${opt.label}</span>
+          <span class="label-tag">${opt.tag}</span>
+        `;
+        btn.addEventListener('click', () => selectChoice(qKey, opt, btn, stepEl));
+        wrap.appendChild(btn);
+      });
+    });
+  }
+
+  function selectChoice(qKey, opt, btnEl, stepEl) {
+    stepEl.querySelectorAll('.choice').forEach(b => b.classList.remove('selected'));
+    btnEl.classList.add('selected');
+    state.answers[qKey] = { ...opt };
+    const continueBtn = stepEl.querySelector('[data-action="next"]');
+    if (continueBtn) continueBtn.disabled = false;
+    updateLiveGauges();
+  }
+
+  function mountActivities() {
+    const container = document.getElementById('activitiesContainer');
+    container.innerHTML = "";
+    CATEGORIES.forEach(cat => {
+      const section = document.createElement('div');
+      section.className = 'activity-section';
+      section.innerHTML = `
+        <h3>${cat.name}</h3>
+        <p class="section-trap">Dominant trap: ${cat.trap}</p>
+      `;
+      cat.activities.forEach(a => {
+        const item = document.createElement('button');
+        item.type = 'button';
+        item.className = 'check-item';
+        item.dataset.id = a.id;
+        item.innerHTML = `
+          <span class="check-box"></span>
+          <span>${a.label}</span>
+        `;
+        item.addEventListener('click', () => {
+          if (state.activities.has(a.id)) {
+            state.activities.delete(a.id);
+            item.classList.remove('checked');
+          } else {
+            state.activities.add(a.id);
+            item.classList.add('checked');
+          }
+          updateLiveGauges();
+        });
+        section.appendChild(item);
+      });
+      container.appendChild(section);
+    });
+  }
+
+  /* =====================================================================
+     NAVIGATION
+     ===================================================================== */
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-action]');
+    if (!btn) return;
+    const action = btn.dataset.action;
+    const stepKey = STEP_ORDER[state.currentIndex];
+
+    if (action === "next") {
+      if ((stepKey === "arr" || stepKey === "burn") && !state.answers[stepKey]) return;
+      if (state.currentIndex === STEP_ORDER.length - 1) {
+        renderDashboard();
+        return;
+      }
+      showStep(state.currentIndex + 1);
+    } else if (action === "prev") {
+      showStep(state.currentIndex - 1);
+    }
+  });
+
+  function showStep(index) {
+    state.currentIndex = Math.max(0, Math.min(STEP_ORDER.length - 1, index));
+    const stepKey = STEP_ORDER[state.currentIndex];
+    document.querySelectorAll('.step').forEach(el => el.classList.remove('active'));
+    let activeEl = document.querySelector(`.step[data-step="${stepKey}"]`)
+                || document.querySelector(`.step[data-question="${stepKey}"]`);
+    if (activeEl) activeEl.classList.add('active');
+    updateProgress(stepKey);
+    if (activeEl) activeEl.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function updateProgress(stepKey) {
+    const progressEl = document.getElementById('progress');
+    if (stepKey === "intro") { progressEl.hidden = true; return; }
+    progressEl.hidden = false;
+    const fill = document.getElementById('progressFill');
+    const label = document.getElementById('progressLabel');
+    const ctx = document.getElementById('progressContext');
+    const pos = STEP_ORDER.indexOf(stepKey);
+    const pct = Math.round((pos / 3) * 100);
+    fill.style.width = pct + "%";
+    label.textContent = `Question ${pos} of 3`;
+    ctx.textContent = (pos < 3) ? "Sizing" : "Activity inventory";
+  }
+
+  /* =====================================================================
+     MATH
+     Per category: trapped value = ARR × pct × activity-compression × realization
+     ===================================================================== */
+
+  function computeMetrics() {
+    const arr = state.answers.arr?.mid || 0;
+    const burn = state.answers.burn?.mid || 0;
+    const fee = state.answers.arr?.fee || 10000;
+    const guarantee = fee * 3;
+
+    // Realization factor: 14-day surfaceable fraction of theoretical max waste.
+    // Calibrated so ICP centroid (no activities) lands in $50K to $150K and
+    // floor cases land at the guaranteed range.
+    const REALIZATION = 0.50;
+
+    const categoryResults = CATEGORIES.map(cat => {
+      // Activity compression: each activity done compresses category leak by ~30%.
+      const totalActivities = cat.activities.length;
+      const doneCount = cat.activities.filter(a => state.activities.has(a.id)).length;
+      const compressionFactor = Math.pow(0.70, doneCount);
+
+      const lo = arr * cat.lowPct  * REALIZATION * compressionFactor;
+      const hi = arr * cat.highPct * REALIZATION * compressionFactor;
+      const mid = (lo + hi) / 2;
+
+      return {
+        ...cat,
+        lo,
+        hi,
+        mid,
+        doneCount,
+        totalActivities,
+        compressionFactor
+      };
+    });
+
+    // Sort by midpoint descending so largest categories appear first.
+    categoryResults.sort((a, b) => b.mid - a.mid);
+
+    let totalLo = categoryResults.reduce((acc, c) => acc + c.lo, 0);
+    let totalHi = categoryResults.reduce((acc, c) => acc + c.hi, 0);
+
+    // Floor at the user-specific guarantee threshold.
+    totalLo = Math.max(guarantee, totalLo);
+    totalHi = Math.max(guarantee + (guarantee * 0.33), totalHi); // Add 33% spread above floor for high end.
+    // Clean rounding.
+    totalLo = Math.round(totalLo / 2500) * 2500;
+    totalHi = Math.round(totalHi / 2500) * 2500;
+
+    const multipleLo = totalLo / fee;
+    const multipleHi = totalHi / fee;
+
+    return {
+      arr, burn, fee, guarantee,
+      categories: categoryResults,
+      totalLo, totalHi,
+      multipleLo, multipleHi,
+      activitiesDone: state.activities.size,
+      activitiesTotal: CATEGORIES.reduce((a, c) => a + c.activities.length, 0)
+    };
+  }
+
+  /* =====================================================================
+     LIVE GAUGES
+     ===================================================================== */
+  function updateLiveGauges() {
+    const m = computeMetrics();
+    document.getElementById('liveTotal').textContent = `${fmt$(m.totalLo)} to ${fmt$(m.totalHi)}`;
+    document.getElementById('liveSub').textContent = m.totalLo <= m.guarantee
+      ? "Floors at the Tier 1 guarantee. Updates as you check activities."
+      : `Above the ${fmt$(m.guarantee)} guarantee floor.`;
+    document.getElementById('liveFee').textContent = state.answers.arr ? fmt$(m.fee) : "$7.5K to $10K";
+    document.getElementById('liveFloor').textContent = state.answers.arr ? fmt$(m.guarantee) : "$22.5K to $30K";
+  }
+
+  /* =====================================================================
+     DASHBOARD
+     ===================================================================== */
+  function renderDashboard() {
+    state.metrics = computeMetrics();
+    const m = state.metrics;
+
+    document.getElementById('quizGrid').style.display = 'none';
+    document.getElementById('progress').hidden = true;
+    document.getElementById('dashboard').classList.add('active');
+    window.scrollTo({ top: document.getElementById('dashboard').offsetTop - 40, behavior: 'smooth' });
+
+    document.getElementById('rangeText').textContent = `${fmt$(m.totalLo)} to ${fmt$(m.totalHi)}`;
+
+    // Sub-headline based on size of estimate vs guarantee.
+    const subRatio = m.totalHi / m.guarantee;
+    let sub;
+    if (subRatio >= 4) {
+      sub = `That's ${m.multipleLo.toFixed(1)}x to ${m.multipleHi.toFixed(1)}x the Diagnostic fee. The math says yes, run it.`;
+    } else if (subRatio >= 2) {
+      sub = `That's ${m.multipleLo.toFixed(1)}x to ${m.multipleHi.toFixed(1)}x the Diagnostic fee. Above the guarantee floor with room.`;
+    } else {
+      sub = `Floors at the Tier 1 guarantee. The work is structured to either deliver this minimum or refund. The actual Diagnostic surfaces what this preview cannot see: the specific source decisions.`;
+    }
+    document.getElementById('dashboardSub').textContent = sub;
+
+    // Guarantee strip
+    document.getElementById('gFee').textContent   = fmt$(m.fee);
+    document.getElementById('gFloor').textContent = fmt$(m.guarantee);
+    document.getElementById('gMultiple').textContent = `${m.multipleLo.toFixed(1)}x to ${m.multipleHi.toFixed(1)}x`;
+
+    // Categories
+    const catsEl = document.getElementById('categories');
+    catsEl.innerHTML = "";
+    m.categories.forEach(cat => {
+      const tierLabel = cat.tier === "quick" ? "Quick (under 30 days)"
+                      : cat.tier === "medium" ? "Medium (30 to 90 days)"
+                      : "Strategic (board-level)";
+      const card = document.createElement('div');
+      card.className = "cat-card";
+      card.innerHTML = `
+        <div>
+          <div class="cat-head">
+            <span class="cat-name">${cat.name}</span>
+            <span class="cat-tier ${cat.tier}">${tierLabel}</span>
+          </div>
+          <p class="cat-trap"><strong>Dominant trap:</strong> ${cat.trap}. ${cat.trapNarrative}</p>
+          <p class="cat-narrative">${cat.narrative}</p>
+        </div>
+        <div class="cat-amount">
+          ${fmt$(cat.lo)} to ${fmt$(cat.hi)}
+          <span class="cat-amount-sub">${cat.doneCount} of ${cat.totalActivities} activities done</span>
+        </div>
+      `;
+      catsEl.appendChild(card);
+    });
+
+    document.getElementById('totalAmount').textContent = `${fmt$(m.totalLo)} to ${fmt$(m.totalHi)}`;
+
+    // Hook PDF download
+    document.getElementById('downloadPdfBtn').onclick = () => {
+      const pdf = generatePDF(state.metrics);
+      pdf.save(`Decisive-Trapped-Value-Preview-${slug(getCompanyOrDefault())}.pdf`);
+    };
+  }
+
+  /* =====================================================================
+     PDF
+     Mirrors the Trapped Value Report structure.
+     ===================================================================== */
+  function generatePDF(m) {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF({ unit: "pt", format: "letter" });
+    const W = doc.internal.pageSize.getWidth();
+    const H = doc.internal.pageSize.getHeight();
+    const M = 56;
+
+    const INK    = [24, 34, 40];
+    const ORANGE = [227, 99, 43];
+    const MUTED  = [90, 106, 114];
+    const HAIR   = [229, 225, 218];
+
+    // ===== PAGE 1: COVER =====
+    doc.setFillColor(...INK);
+    doc.rect(0, 0, W, H, "F");
+
+    doc.setFillColor(...ORANGE);
+    doc.circle(M, M + 6, 6, "F");
+
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor(255, 255, 255);
+    doc.setFontSize(11);
+    doc.text("DECISIVE FINANCE", M + 18, M + 10);
+
+    doc.setFontSize(10);
+    doc.setFont("helvetica", "normal");
+    doc.setTextColor(255, 255, 255, 0.6);
+    doc.text("Trapped Value Report Preview", M + 18, M + 26);
+
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(36);
+    doc.setTextColor(255, 255, 255);
+    doc.text("Your estimated", M, 200);
+    doc.text("trapped value", M, 240);
+
+    doc.setFontSize(48);
+    doc.setTextColor(...ORANGE);
+    doc.text(`${fmt$(m.totalLo)} to ${fmt$(m.totalHi)}`, M, 305);
+
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(11);
+    doc.setTextColor(255, 255, 255);
+    doc.text(`${m.multipleLo.toFixed(1)}x TO ${m.multipleHi.toFixed(1)}x THE DIAGNOSTIC FEE`, M, 335);
+
+    doc.setFontSize(10);
+    doc.setTextColor(255, 255, 255, 0.7);
+    doc.text("Prepared for:", M, 400);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(14);
+    doc.setTextColor(255, 255, 255);
+    doc.text(getNameOrDefault(), M, 420);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(12);
+    doc.setTextColor(255, 255, 255, 0.85);
+    doc.text(getCompanyOrDefault(), M, 438);
+    doc.setFontSize(10);
+    doc.setTextColor(255, 255, 255, 0.6);
+    doc.text(new Date().toLocaleDateString("en-US", { year:"numeric", month:"long", day:"numeric" }), M, 454);
+
+    doc.setFontSize(9);
+    doc.setTextColor(255, 255, 255, 0.55);
+    doc.text("decisive.finance · contact@decisive.finance · Preview of Diagnostic Artifact 2", M, H - M);
+
+    // ===== PAGE 2: SUMMARY =====
+    doc.addPage();
+    addSectionHeader(doc, "Summary", M);
+
+    let y = 130;
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10.5);
+    doc.setTextColor(...MUTED);
+    y = wrapText(doc, "This is a preview of the Trapped Value Report (Diagnostic Artifact 2), structured to mirror the actual Tier 1 deliverable. The real report ties every finding to a specific source decision in your business, names the trap stack, prescribes the unlock move, and includes a CEO time estimate per capture path. Source: Decisive Service Architecture Blueprint v1.8.", M, y, W - 2*M, 14) + 16;
+
+    // Sizing + guarantee summary table
+    addSubHeader(doc, "Your sizing and guarantee", M, y);
+    y += 18;
+    doc.autoTable({
+      startY: y,
+      body: [
+        ["ARR band",                  state.answers.arr?.label || ""],
+        ["Monthly burn",              state.answers.burn?.label || ""],
+        ["Diagnostic fee at your size", fmt$(m.fee)],
+        ["3x guarantee floor",        fmt$(m.guarantee)],
+        ["Activities done",           `${m.activitiesDone} of ${m.activitiesTotal}`],
+        ["Estimated trapped value",   `${fmt$(m.totalLo)} to ${fmt$(m.totalHi)}`],
+        ["Multiple of fee",           `${m.multipleLo.toFixed(1)}x to ${m.multipleHi.toFixed(1)}x`]
+      ],
+      margin: { left: M, right: M },
+      styles: { font: "helvetica", fontSize: 10, cellPadding: 8 },
+      columnStyles: {
+        0: { cellWidth: 200, fontStyle: "bold" },
+        1: { cellWidth: "auto" }
+      },
+      alternateRowStyles: { fillColor: [248, 246, 242] },
+      theme: "plain"
+    });
+
+    y = doc.lastAutoTable.finalY + 24;
+
+    // Total bar
+    doc.setFillColor(...INK);
+    doc.rect(M, y, W - 2*M, 56, "F");
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(11);
+    doc.setTextColor(255, 255, 255, 0.7);
+    doc.text("ESTIMATED TRAPPED VALUE", M + 16, y + 22);
+    doc.setFontSize(22);
+    doc.setTextColor(...ORANGE);
+    doc.text(`${fmt$(m.totalLo)} to ${fmt$(m.totalHi)}`, M + 16, y + 46);
+
+    addPageFooter(doc, 2, M);
+
+    // ===== PAGE 3+: PER-CATEGORY DETAIL =====
+    m.categories.forEach((cat, i) => {
+      doc.addPage();
+      addSectionHeader(doc, `Category: ${cat.name}`, M);
+
+      let yc = 130;
+
+      // Tier badge
+      const tierColor = cat.tier === "quick" ? [47,122,79] : cat.tier === "medium" ? [192,138,43] : [179,48,13];
+      const tierLabel = cat.tier === "quick" ? "QUICK (UNDER 30 DAYS)" : cat.tier === "medium" ? "MEDIUM (30 TO 90 DAYS)" : "STRATEGIC (BOARD-LEVEL)";
+      doc.setFillColor(...tierColor);
+      doc.roundedRect(M, yc - 16, 200, 22, 4, 4, "F");
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(9);
+      doc.setTextColor(255, 255, 255);
+      doc.text(tierLabel, M + 8, yc - 1);
+      yc += 16;
+
+      // Dollar range
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(28);
+      doc.setTextColor(...ORANGE);
+      doc.text(`${fmt$(cat.lo)} to ${fmt$(cat.hi)}`, M, yc + 14);
+      yc += 36;
+
+      // Trap line
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(10);
+      doc.setTextColor(...INK);
+      doc.text(`Dominant trap: ${cat.trap}`, M, yc);
+      yc += 14;
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(10);
+      doc.setTextColor(...MUTED);
+      yc = wrapText(doc, cat.trapNarrative, M, yc, W - 2*M, 14) + 12;
+
+      // Narrative
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(11);
+      doc.setTextColor(...INK);
+      doc.text("What the Diagnostic typically finds here", M, yc);
+      yc += 16;
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(10.5);
+      doc.setTextColor(...MUTED);
+      yc = wrapText(doc, cat.narrative, M, yc, W - 2*M, 14) + 16;
+
+      // Activities checklist
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(11);
+      doc.setTextColor(...INK);
+      doc.text("Activities you reported in this category", M, yc);
+      yc += 16;
+
+      cat.activities.forEach(a => {
+        const done = state.activities.has(a.id);
+        doc.setDrawColor(...HAIR);
+        doc.setLineWidth(0.8);
+        if (done) {
+          doc.setFillColor(33, 76, 82);
+          doc.rect(M, yc - 9, 10, 10, "F");
+          doc.setDrawColor(255, 255, 255);
+          doc.setLineWidth(1.2);
+          doc.line(M + 2.5, yc - 4, M + 4.5, yc - 1);
+          doc.line(M + 4.5, yc - 1, M + 8, yc - 7);
+        } else {
+          doc.rect(M, yc - 9, 10, 10, "S");
+        }
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(10);
+        doc.setTextColor(...MUTED);
+        const lines = doc.splitTextToSize(a.label, W - 2*M - 20);
+        lines.forEach((ln, j) => doc.text(ln, M + 18, yc + j * 13));
+        yc += Math.max(14, lines.length * 13);
+      });
+
+      yc += 14;
+
+      // Compression note
+      doc.setFont("helvetica", "italic");
+      doc.setFontSize(9.5);
+      doc.setTextColor(...MUTED);
+      const compressNote = cat.doneCount === 0
+        ? "No activities done in this category. Estimate reflects full theoretical range."
+        : cat.doneCount === cat.totalActivities
+        ? "All three activities done. Estimate compressed accordingly. Diagnostic typically still finds residual value."
+        : `${cat.doneCount} of ${cat.totalActivities} done. Estimate compressed proportionally.`;
+      yc = wrapText(doc, compressNote, M, yc, W - 2*M, 12) + 10;
+
+      addPageFooter(doc, 2 + i + 1, M);
+    });
+
+    // ===== PAGE: SIX TRAPS =====
+    doc.addPage();
+    addSectionHeader(doc, "The Six Traps", M);
+
+    let y2 = 130;
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10.5);
+    doc.setTextColor(...MUTED);
+    y2 = wrapText(doc, "Trapped value is structurally bound to cognitive patterns no founder can counteract while operating the business they created. Decisive isolates the pattern so the forward-allocation conversation happens on math, not instinct.", M, y2, W - 2*M, 14) + 16;
+
+    const traps = [
+      { t: "Sunk Cost",          d: "The money already spent feels like it is voting. It is not. Surfaces in cost (teams or product lines with negative contribution still receiving headcount), pricing (legacy tiers kept alive), and growth spend (channels on 12-to-18-month-old data)." },
+      { t: "Status Quo",         d: "Doing nothing feels neutral. It is never neutral. Surfaces in cost (auto-renewing contracts, recurring lines never re-approved), pricing (list prices set at launch, never revisited despite input-cost or buyer-mix shift), and growth (last year's channel mix repeated by default)." },
+      { t: "Mental Accounting",  d: "The right total can hide the wrong allocation. Cross-subsidies between product lines and segments stay invisible. Marketing spend lumped into one line. Self-serve pricing anchor used in enterprise deals." },
+      { t: "Anchoring",          d: "The first number set becomes the number the conversation orbits. Burn anchored to the post-raise plan. Enterprise pricing anchored to self-serve ARPU. Valuation expectations anchored to the last round." },
+      { t: "Loss Aversion",      d: "Admitting the loss costs roughly twice what recovering the capital is worth. The economically clear cut that has not happened, often six months overdue. Surfaces as language like 'can't let them go' or 'we built this.'" },
+      { t: "Certainty Illusion", d: "Polished reporting can feel like evidence when it is theater. Runway as a single number. No downside case. Growth plan asserted without active experiments testing key assumptions." }
+    ];
+
+    traps.forEach(t => {
+      if (y2 > H - M - 70) {
+        addPageFooter(doc, 2 + m.categories.length + 1, M);
+        doc.addPage();
+        addSectionHeader(doc, "The Six Traps (continued)", M);
+        y2 = 130;
+      }
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(11);
+      doc.setTextColor(...INK);
+      doc.text(t.t, M, y2);
+      y2 += 14;
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(10);
+      doc.setTextColor(...MUTED);
+      y2 = wrapText(doc, t.d, M, y2, W - 2*M, 13) + 12;
+    });
+
+    addPageFooter(doc, 2 + m.categories.length + 1, M);
+
+    // ===== PAGE: WHAT THE REPORT ADDS =====
+    doc.addPage();
+    addSectionHeader(doc, "What the actual Trapped Value Report adds", M);
+
+    let y3 = 130;
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10.5);
+    doc.setTextColor(...MUTED);
+    y3 = wrapText(doc, "This preview gives you the order of magnitude and the category structure. The Tier 1 Diagnostic produces the actual artifact. The differences:", M, y3, W - 2*M, 14) + 14;
+
+    const adds = [
+      { t: "Source decision tracing.", d: "Every dollar in the Trapped Value Report is traced back to the originating decision (when made, what was the rationale at the time, who is the current owner). Without that trace, capture is theoretical." },
+      { t: "Trap stack per finding.",  d: "Each line item names the two or three traps keeping that decision running, and the unlock move calibrated to the specific stack. A Pricing finding driven by Anchoring plus Status Quo calls for a different move than one driven by Loss Aversion." },
+      { t: "CEO-accepted capture paths.", d: "Each finding carries a capture-path narrative reviewed and accepted by the CEO at the Day 14 readout. The artifact is not a proposal handed over the wall; it's a register of decisions the CEO has agreed to underwrite forward." },
+      { t: "Effort-to-capture per item.",  d: "Quick (under 30 days, current team), Medium (30 to 90 days, may require Decisive in Tier 2), Strategic (board-level commitment). With a CEO-time estimate per item." },
+      { t: "Strategic-finding equivalents.", d: "If the dollarized findings don't clear the 3x threshold, a defined strategic finding (pricing architecture change, product-line exit with board commitment, capital structure change that moves next-round valuation math) confirms the guarantee. This preview cannot generate a strategic finding without the engagement data." },
+      { t: "Companion artifacts.", d: "The Trapped Value Report ships alongside the Decision Register v1, the Runway Truth Card, the Six Trap Scorecard, and the Prioritized Action Register. Five artifacts, 14 days, fixed fee." }
+    ];
+
+    adds.forEach(a => {
+      if (y3 > H - M - 60) {
+        addPageFooter(doc, 2 + m.categories.length + 2, M);
+        doc.addPage();
+        addSectionHeader(doc, "What the actual Trapped Value Report adds (continued)", M);
+        y3 = 130;
+      }
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(11);
+      doc.setTextColor(...INK);
+      doc.text(a.t, M, y3);
+      y3 += 14;
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(10);
+      doc.setTextColor(...MUTED);
+      y3 = wrapText(doc, a.d, M, y3, W - 2*M, 13) + 12;
+    });
+
+    addPageFooter(doc, 2 + m.categories.length + 2, M);
+
+    // ===== PAGE: NEXT MOVES =====
+    doc.addPage();
+    addSectionHeader(doc, "Next moves", M);
+
+    let y4 = 130;
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.setTextColor(...INK);
+    y4 = wrapText(doc, "Three options, by ascending commitment.", M, y4, W - 2*M, 16) + 14;
+
+    const moves = [
+      { t: "1. Run the categories internally.", d: "Take the five categories above and assign each to an owner with a return date. The framework is well-known; internal capacity, attention, and willingness to renegotiate are usually the binding constraints." },
+      { t: "2. Book the Decision Diagnostic.",  d: "Fourteen days. Five named artifacts. The actual Trapped Value Report ties every line to a source decision, names the trap stack, prescribes the unlock move. If the dollar findings don't clear 3x the fee with CEO-accepted capture paths, the work is free." },
+      { t: "3. Skip ahead to 90-Day Decision Resolution.", d: "Tier 2. Combines the Diagnostic with installation of the Forward Capital Register and execution of two material decisions in market with measurement, across 90 days. For founders who already know where the leakage is and want the engine running." }
+    ];
+
+    moves.forEach(mv => {
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(12);
+      doc.setTextColor(...INK);
+      doc.text(mv.t, M, y4);
+      y4 += 16;
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(10.5);
+      doc.setTextColor(...MUTED);
+      y4 = wrapText(doc, mv.d, M, y4, W - 2*M, 14) + 16;
+    });
+
+    y4 += 8;
+    doc.setFillColor(...INK);
+    doc.roundedRect(M, y4, W - 2*M, 110, 8, 8, "F");
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(14);
+    doc.setTextColor(255, 255, 255);
+    doc.text("Book the Diagnostic", M + 20, y4 + 28);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10.5);
+    doc.setTextColor(255, 255, 255, 0.85);
+    wrapText(doc, "30-minute conversation. We confirm fit, agree scope, and the 14-day clock starts the day we begin.", M + 20, y4 + 46, W - 2*M - 40, 14);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(11);
+    doc.setTextColor(...ORANGE);
+    doc.text("calendly.com/russell-decisive/30min", M + 20, y4 + 92);
+
+    addPageFooter(doc, 2 + m.categories.length + 3, M);
+
+    return doc;
+  }
+
+  function addSectionHeader(doc, label, M) {
+    doc.setFillColor(227, 99, 43);
+    doc.rect(M, 60, 24, 4, "F");
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(20);
+    doc.setTextColor(24, 34, 40);
+    doc.text(label, M, 96);
+  }
+
+  function addSubHeader(doc, label, x, y) {
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(11);
+    doc.setTextColor(90, 106, 114);
+    doc.text(label.toUpperCase(), x, y);
+  }
+
+  function addPageFooter(doc, pageNum, M) {
+    const W = doc.internal.pageSize.getWidth();
+    const H = doc.internal.pageSize.getHeight();
+    doc.setDrawColor(229, 225, 218);
+    doc.setLineWidth(0.5);
+    doc.line(M, H - M - 20, W - M, H - M - 20);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(8.5);
+    doc.setTextColor(90, 106, 114);
+    doc.text(`Decisive Finance · Trapped Value Preview · Page ${pageNum}`, M, H - M);
+    doc.text("decisive.finance", W - M, H - M, { align: "right" });
+  }
+
+  function wrapText(doc, text, x, y, maxW, lineH) {
+    const lines = doc.splitTextToSize(text, maxW);
+    lines.forEach((ln, i) => doc.text(ln, x, y + i * lineH));
+    return y + lines.length * lineH;
+  }
+
+  /* =====================================================================
+     SUBMIT
+     ===================================================================== */
+  document.getElementById('leadForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!validateForm()) return;
+    const submitBtn = document.getElementById('submitBtn');
+    submitBtn.classList.add('submitting');
+    submitBtn.disabled = true;
+
+    // Always trigger a local PDF download so the prospect ends up with the
+    // report regardless of Kit's response. Kit captures the lead + data;
+    // Russ replies personally with his own attached PDF.
+    const pdf = generatePDF(state.metrics);
+    pdf.save(`Decisive-Trapped-Value-Preview-${slug(getCompanyOrDefault())}.pdf`);
+
+    try {
+      await sendLead();
+      showSuccess(false);
+    } catch (err) {
+      console.warn("Kit submission failed:", err);
+      showSuccess(true);
+    } finally {
+      submitBtn.classList.remove('submitting');
+      submitBtn.disabled = false;
+    }
+  });
+
+  function validateForm() {
+    const inputs = ["name", "email", "company"].map(id => document.getElementById(id));
+    let ok = true;
+    inputs.forEach(input => {
+      const errEl = document.querySelector(`[data-error-for="${input.name}"]`);
+      let valid = !!input.value.trim();
+      if (input.type === "email") {
+        valid = valid && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim());
+      }
+      if (!valid) { errEl.classList.add('show'); input.style.borderColor = "#b3300d"; ok = false; }
+      else { errEl.classList.remove('show'); input.style.borderColor = ""; }
+    });
+    return ok;
+  }
+
+  async function sendLead() {
+    // PDF is generated and downloaded client-side. Kit captures the lead +
+    // all assessment data as custom fields. Russ regenerates the PDF on
+    // reply by re-entering the same answers (link in Kit notification or
+    // manually) and downloading from the dashboard.
+    const m = state.metrics;
+    const formData = new FormData();
+    formData.append("email_address", document.getElementById('email').value.trim());
+    formData.append("first_name", getNameOrDefault());
+    formData.append("fields[company]", getCompanyOrDefault());
+    formData.append("fields[lead_magnet]", "recovery-checklist");
+    formData.append("fields[source]", "decisive.finance Recovery Self-Check v3");
+    formData.append("fields[submitted_at]", new Date().toISOString());
+    formData.append("fields[arr_band]", state.answers.arr?.label || "");
+    formData.append("fields[burn_band]", state.answers.burn?.label || "");
+    formData.append("fields[diagnostic_fee]", m.fee);
+    formData.append("fields[guarantee_floor]", m.guarantee);
+    formData.append("fields[estimate_low]", m.totalLo);
+    formData.append("fields[estimate_high]", m.totalHi);
+    formData.append("fields[multiple_of_fee]", `${m.multipleLo.toFixed(1)}x to ${m.multipleHi.toFixed(1)}x`);
+    formData.append("fields[activities_done]", `${m.activitiesDone} of ${m.activitiesTotal}`);
+    m.categories.forEach(c => {
+      formData.append(`fields[cat_${c.id}]`, `${fmt$(c.lo)} to ${fmt$(c.hi)} (${c.doneCount}/${c.totalActivities} activities)`);
+    });
+    formData.append("fields[activities_checked]", Array.from(state.activities).join(", ") || "(none)");
+
+    const res = await fetch(KIT_SUBSCRIBE_URL, { method: "POST", body: formData });
+    if (!res.ok) throw new Error("Kit submission failed: HTTP " + res.status);
+    return res;
+  }
+
+  function showSuccess(localOnly = false) {
+    const gateCard = document.querySelector('.gate-card');
+    gateCard.innerHTML = `
+      <h3>${localOnly ? "Your PDF was downloaded." : "Got it. Russ will reply within 24 hours."}</h3>
+      <p>${localOnly
+        ? "We had trouble reaching the submission backend but the report is on your machine. Forward it to Russ at contact@decisive.finance if you want a read."
+        : "He'll reply with a short read on what your numbers actually mean for a company your size. Same-day replies during business hours. The PDF preview just downloaded to your machine, so you have a copy in hand. If you want to skip ahead, the Calendly link is below."}</p>
+      <a href="https://calendly.com/russell-decisive/30min" class="btn btn-primary" target="_blank" rel="noopener" style="background: var(--orange); color: var(--white);">Book the diagnostic <span class="arrow">→</span></a>
+    `;
+  }
+
+  /* =====================================================================
+     UTILS
+     ===================================================================== */
+  function fmt$(n) {
+    if (!isFinite(n) || n <= 0) return "$0";
+    if (n >= 1000000) return "$" + (n / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
+    if (n >= 1000) return "$" + Math.round(n / 1000) + "K";
+    return "$" + Math.round(n).toLocaleString("en-US");
+  }
+  function slug(s) {
+    return (s || "company").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40);
+  }
+  function getNameOrDefault()    { return document.getElementById('name')?.value.trim()    || "Founder"; }
+  function getCompanyOrDefault() { return document.getElementById('company')?.value.trim() || "Your company"; }
+
+  /* =====================================================================
+     INIT
+     ===================================================================== */
+  document.getElementById('year').textContent = new Date().getFullYear();
+  mountChoices();
+  mountActivities();
+  showStep(0);
+  updateLiveGauges();
+  </script>
+
+</body>
+</html>
