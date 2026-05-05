@@ -7,6 +7,7 @@ updatedDate: 2026-03-10
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "recovery-sequence"
+pillar: 1
 ctaVariant: "diagnostic-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/walking-dead-recovery.png"
@@ -85,6 +86,6 @@ A Diagnostic is the first fourteen days of this sequence. It costs a fixed fee, 
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
-- [Decision-first finance: the methodology](https://decisive.finance/blog/decision-first-finance)
-- [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/blog/financial-rhythm-system-monthly-cadence)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [Decision-first finance: the methodology](https://decisive.finance/perspectives/decision-first-finance)
+- [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/perspectives/financial-rhythm-system-monthly-cadence)

@@ -7,6 +7,7 @@ updatedDate: 2026-03-31
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "gp-board-questions"
+pillar: 3
 ctaVariant: "investor-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/gp-board-questions.png"
@@ -80,10 +81,10 @@ In our experience across portfolio engagements, boards that ask these three ques
 
 For the full detection and intervention sequence from the investor seat:
 
-[Read: A field guide to spotting stalled portcos](https://decisive.finance/blog/stalled-portco-field-guide-for-investors)
+[Read: A field guide to spotting stalled portcos](https://decisive.finance/perspectives/stalled-portco-field-guide-for-investors)
 
 Related reading:
 
-- [How GPs spot stalled portcos early](https://decisive.finance/blog/how-gps-spot-stalled-early)
-- [The independent director's playbook for a drifting portco](https://decisive.finance/blog/independent-director-playbook)
-- [How to read a deck that is hiding the stall](https://decisive.finance/blog/how-to-read-a-deck-hiding-the-stall)
+- [How GPs spot stalled portcos early](https://decisive.finance/perspectives/how-gps-spot-stalled-early)
+- [The independent director's playbook for a drifting portco](https://decisive.finance/perspectives/independent-director-playbook)
+- [How to read a deck that is hiding the stall](https://decisive.finance/perspectives/how-to-read-a-deck-hiding-the-stall)

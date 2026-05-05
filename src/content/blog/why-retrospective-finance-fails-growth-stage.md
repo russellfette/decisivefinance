@@ -7,6 +7,7 @@ updatedDate: 2026-01-06
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "retrospective-finance"
+pillar: 2
 ctaVariant: "diagnostic-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/retrospective-finance.png"
@@ -88,6 +89,6 @@ The Diagnostic installs decision-first finance in 14 days. The 90-Day Decision R
 
 Related reading:
 
-- [Decision-first finance: the methodology](https://decisive.finance/blog/decision-first-finance)
-- [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/blog/financial-rhythm-system-monthly-cadence)
-- [The CFO mirage: when a competent hire is the wrong hire](https://decisive.finance/blog/the-cfo-mirage)
+- [Decision-first finance: the methodology](https://decisive.finance/perspectives/decision-first-finance)
+- [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/perspectives/financial-rhythm-system-monthly-cadence)
+- [The CFO mirage: when a competent hire is the wrong hire](https://decisive.finance/perspectives/the-cfo-mirage)

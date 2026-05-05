@@ -7,6 +7,7 @@ updatedDate: 2026-04-21
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "down-round-timing"
+pillar: 1
 ctaVariant: "investor-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/down-round-timing.png"
@@ -86,6 +87,6 @@ If the raise has been in process for four months and the comps are compressing, 
 
 Related reading:
 
-- [How the stalled raise actually happens](https://decisive.finance/blog/how-the-stalled-raise-happens)
-- [The independent director's playbook for a drifting portco](https://decisive.finance/blog/independent-director-playbook)
-- [A field guide to spotting stalled portcos](https://decisive.finance/blog/stalled-portco-field-guide-for-investors)
+- [How the stalled raise actually happens](https://decisive.finance/perspectives/how-the-stalled-raise-happens)
+- [The independent director's playbook for a drifting portco](https://decisive.finance/perspectives/independent-director-playbook)
+- [A field guide to spotting stalled portcos](https://decisive.finance/perspectives/stalled-portco-field-guide-for-investors)

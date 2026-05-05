@@ -7,6 +7,7 @@ updatedDate: 2026-01-13
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "board-reporting"
+pillar: 2
 ctaVariant: "slide-template"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/decision-first-finance.png"
@@ -142,7 +143,7 @@ If you want the board-pack rewrite spec before you talk to us, the Board-Ready D
 ---
 
 *Further reading on this pillar:*
-- [The Six-Trap Diagnostic, explained](/blog/six-trap-diagnostic-explained)
-- [Three paths: how to use the Three-Path Model](/blog/three-path-model-how-to-use)
-- [Decision-first finance vs. fractional CFO](/blog/decision-first-finance-vs-fractional-cfo)
-- [Why we put money behind the guarantee](/blog/guarantee-why-we-put-money-behind-it)
+- [The Six-Trap Diagnostic, explained](/perspectives/six-trap-diagnostic-explained)
+- [Three paths: how to use the Three-Path Model](/perspectives/three-path-model-how-to-use)
+- [Decision-first finance vs. fractional CFO](/perspectives/decision-first-finance-vs-fractional-cfo)
+- [Why we put money behind the guarantee](/perspectives/guarantee-why-we-put-money-behind-it)

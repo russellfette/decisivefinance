@@ -7,6 +7,7 @@ updatedDate: 2026-02-17
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "board-question-shift"
+pillar: 3
 ctaVariant: "self-assessment"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/board-question-shift.png"
@@ -68,6 +69,6 @@ If any of this is recognizable, the pattern is farther along than the reassuranc
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
-- [The CEO/investor fracture: the silent break in year two](https://decisive.finance/blog/ceo-investor-fracture)
-- [The one-page decision slide every board should see](https://decisive.finance/blog/one-page-decision-slide-for-boards)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [The CEO/investor fracture: the silent break in year two](https://decisive.finance/perspectives/ceo-investor-fracture)
+- [The one-page decision slide every board should see](https://decisive.finance/perspectives/one-page-decision-slide-for-boards)

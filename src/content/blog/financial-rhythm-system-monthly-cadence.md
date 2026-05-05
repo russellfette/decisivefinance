@@ -7,6 +7,7 @@ updatedDate: 2026-01-20
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "financial-rhythm-system"
+pillar: 2
 ctaVariant: "diagnostic-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/financial-rhythm-system.png"
@@ -88,6 +89,6 @@ The FRS install is month two of a 90-Day Decision Resolution. The Diagnostic is 
 
 Related reading:
 
-- [Decision-first finance: the methodology](https://decisive.finance/blog/decision-first-finance)
-- [The one-page decision slide every board should see](https://decisive.finance/blog/one-page-decision-slide-for-boards)
-- [Why retrospective finance fails growth-stage companies](https://decisive.finance/blog/why-retrospective-finance-fails-growth-stage)
+- [Decision-first finance: the methodology](https://decisive.finance/perspectives/decision-first-finance)
+- [The one-page decision slide every board should see](https://decisive.finance/perspectives/one-page-decision-slide-for-boards)
+- [Why retrospective finance fails growth-stage companies](https://decisive.finance/perspectives/why-retrospective-finance-fails-growth-stage)

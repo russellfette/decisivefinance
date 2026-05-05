@@ -7,6 +7,7 @@ updatedDate: 2026-03-03
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "stalled-raise"
+pillar: 1
 ctaVariant: "self-assessment"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/stalled-raise.png"
@@ -80,6 +81,6 @@ If your raise has been in process for more than four months, the other signals a
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
-- [The CEO/investor fracture: the silent break in year two](https://decisive.finance/blog/ceo-investor-fracture)
-- [The down-round conversation: how to time it](https://decisive.finance/blog/down-round-conversation-timing)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [The CEO/investor fracture: the silent break in year two](https://decisive.finance/perspectives/ceo-investor-fracture)
+- [The down-round conversation: how to time it](https://decisive.finance/perspectives/down-round-conversation-timing)

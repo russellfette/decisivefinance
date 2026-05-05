@@ -7,6 +7,7 @@ updatedDate: 2026-02-03
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "cfo-mirage"
+pillar: 1
 ctaVariant: "diagnostic-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/cfo-mirage.png"
@@ -80,6 +81,6 @@ The CFO mirage is one of the six stalled portco signals. The self-assessment nam
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
-- [Why retrospective finance fails growth-stage companies](https://decisive.finance/blog/why-retrospective-finance-fails-growth-stage)
-- [The one-page decision slide every board should see](https://decisive.finance/blog/one-page-decision-slide-for-boards)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [Why retrospective finance fails growth-stage companies](https://decisive.finance/perspectives/why-retrospective-finance-fails-growth-stage)
+- [The one-page decision slide every board should see](https://decisive.finance/perspectives/one-page-decision-slide-for-boards)

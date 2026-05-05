@@ -7,6 +7,7 @@ updatedDate: 2026-04-14
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "independent-director-role"
+pillar: 3
 ctaVariant: "investor-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/independent-director-playbook.png"
@@ -76,10 +77,10 @@ Usually they do not. CEOs inside drifting portcos almost always sense the patter
 
 Independent directors on drifting portcos who want to walk the full detection sequence and the three-move intervention:
 
-[Read: A field guide to spotting stalled portcos](https://decisive.finance/blog/stalled-portco-field-guide-for-investors)
+[Read: A field guide to spotting stalled portcos](https://decisive.finance/perspectives/stalled-portco-field-guide-for-investors)
 
 Related reading:
 
-- [How GPs spot stalled portcos early](https://decisive.finance/blog/how-gps-spot-stalled-early)
-- [What GPs should ask at the next board meeting](https://decisive.finance/blog/what-gps-should-ask-next-board-meeting)
-- [How to read a deck that is hiding the stall](https://decisive.finance/blog/how-to-read-a-deck-hiding-the-stall)
+- [How GPs spot stalled portcos early](https://decisive.finance/perspectives/how-gps-spot-stalled-early)
+- [What GPs should ask at the next board meeting](https://decisive.finance/perspectives/what-gps-should-ask-next-board-meeting)
+- [How to read a deck that is hiding the stall](https://decisive.finance/perspectives/how-to-read-a-deck-hiding-the-stall)

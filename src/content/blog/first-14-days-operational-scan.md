@@ -7,6 +7,7 @@ updatedDate: 2026-01-27
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "diagnostic-operations"
+pillar: 2
 ctaVariant: "diagnostic-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/first-14-days.png"
@@ -98,6 +99,6 @@ The Diagnostic is a fixed-fee engagement with a guaranteed floor of $22,500 to $
 
 Related reading:
 
-- [Decision-first finance: the methodology](https://decisive.finance/blog/decision-first-finance)
-- [Walking dead recovery: day 1 to day 90](https://decisive.finance/blog/walking-dead-recovery-day-1-to-90)
-- [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/blog/financial-rhythm-system-monthly-cadence)
+- [Decision-first finance: the methodology](https://decisive.finance/perspectives/decision-first-finance)
+- [Walking dead recovery: day 1 to day 90](https://decisive.finance/perspectives/walking-dead-recovery-day-1-to-90)
+- [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/perspectives/financial-rhythm-system-monthly-cadence)

@@ -7,6 +7,7 @@ updatedDate: 2025-12-23
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "decision-slide"
+pillar: 2
 ctaVariant: "diagnostic-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/decision-slide.png"
@@ -73,6 +74,6 @@ The Decision Slide is a deliverable of every Diagnostic and is the central artif
 
 Related reading:
 
-- [Decision-first finance: the methodology](https://decisive.finance/blog/decision-first-finance)
-- [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/blog/financial-rhythm-system-monthly-cadence)
-- [Why retrospective finance fails growth-stage companies](https://decisive.finance/blog/why-retrospective-finance-fails-growth-stage)
+- [Decision-first finance: the methodology](https://decisive.finance/perspectives/decision-first-finance)
+- [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/perspectives/financial-rhythm-system-monthly-cadence)
+- [Why retrospective finance fails growth-stage companies](https://decisive.finance/perspectives/why-retrospective-finance-fails-growth-stage)

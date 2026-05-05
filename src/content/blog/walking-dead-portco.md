@@ -7,6 +7,7 @@ updatedDate: 2026-02-10
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "ratio-mirage"
+pillar: 1
 ctaVariant: "self-assessment"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/walking-dead-portco.png"
@@ -126,7 +127,7 @@ If the self-assessment comes back in the high range, the follow-up is a 30-minut
 ---
 
 *Further reading on this pillar:*
-- [What a stalled portco actually is](/blog/what-stalled-portco-actually-is)
-- [Trapped value in stalled portcos](/blog/trapped-value-stalled-portcos)
-- [Decision-first finance vs. fractional CFO](/blog/decision-first-finance-vs-fractional-cfo)
-- [The Six-Trap Diagnostic explained](/blog/six-trap-diagnostic-explained)
+- [What a stalled portco actually is](/perspectives/what-stalled-portco-actually-is)
+- [Trapped value in stalled portcos](/perspectives/trapped-value-stalled-portcos)
+- [Decision-first finance vs. fractional CFO](/perspectives/decision-first-finance-vs-fractional-cfo)
+- [The Six-Trap Diagnostic explained](/perspectives/six-trap-diagnostic-explained)

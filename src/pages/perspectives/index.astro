@@ -1,0 +1,395 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import PillarIcon from '../../components/PillarIcon.astro';
+
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+
+const posts = (await getCollection('blog'))
+  .filter((p) => !p.data.pubDate || p.data.pubDate.getTime() <= Date.now())
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+type Post = CollectionEntry<'blog'>;
+type Pillar = 1 | 2 | 3;
+
+function postsForPillar(n: Pillar): Post[] {
+  return posts
+    .filter((p) => p.data.pillar === n)
+    .sort((a, b) => {
+      if (a.data.pillarHub && !b.data.pillarHub) return -1;
+      if (!a.data.pillarHub && b.data.pillarHub) return 1;
+      return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+    });
+}
+
+const pillars = [
+  {
+    n: 1 as Pillar,
+    title: 'The stalled portco',
+    eyebrow: 'Pillar 01',
+    tagline: 'The pattern, the math, and the stall signal investors will not name.',
+    accent: 'orange',
+    iconKind: 'stalled' as const,
+    posts: postsForPillar(1),
+  },
+  {
+    n: 2 as Pillar,
+    title: 'Decision-first finance',
+    eyebrow: 'Pillar 02',
+    tagline: 'The method that replaces the forecast with a forward decision rhythm.',
+    accent: 'green',
+    iconKind: 'method' as const,
+    posts: postsForPillar(2),
+  },
+  {
+    n: 3 as Pillar,
+    title: 'Field guide for investors and boards',
+    eyebrow: 'Pillar 03',
+    tagline: 'For GPs, directors, and portfolio CFOs reading the room from the cap table.',
+    accent: 'ink',
+    iconKind: 'field-guide' as const,
+    posts: postsForPillar(3),
+  },
+];
+
+const totalPosts = posts.length;
+
+function fmtDate(d: Date) {
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+
+const title = 'Perspectives | Decisive Finance';
+const description =
+  'Field notes from inside stalled funded-tech engagements. Three pillars: the stalled portco pattern, decision-first finance, and a field guide for investors and boards.';
+---
+
+<BaseLayout title={title} description={description}>
+  <header class="perspectives-hero">
+    <div class="perspectives-hero-inner">
+      <span class="eyebrow">Perspectives</span>
+      <h1>Field notes from inside stalled funded-tech engagements.</h1>
+      <p class="perspectives-hero-sub">
+        Working theory, recovered dollars, and the operating rhythm that replaces the dashboard as the primary artifact.
+      </p>
+      <div class="perspectives-hero-meta">
+        <span><strong>Three pillars</strong></span>
+        <span class="dot">&middot;</span>
+        <span><strong>{totalPosts}</strong> {totalPosts === 1 ? 'piece' : 'pieces'} live</span>
+        <span class="dot">&middot;</span>
+        <span>New writing weekly</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="pillars-grid-section">
+    <div class="container">
+      <div class="pillars-grid">
+        {pillars.map((p) => {
+          const hub = p.posts.find((post) => post.data.pillarHub);
+          const spokes = p.posts.filter((post) => !post.data.pillarHub);
+          return (
+            <div class={`pillar-col pillar-col-${p.accent}`}>
+              <div class="pillar-col-header">
+                <div class="pillar-col-icon-row">
+                  <span class="pillar-col-icon"><PillarIcon kind={p.iconKind} size={28} /></span>
+                  <span class="pillar-col-eyebrow">{p.eyebrow}</span>
+                </div>
+                <h2 class="pillar-col-title">{p.title}</h2>
+                <p class="pillar-col-tagline">{p.tagline}</p>
+              </div>
+              {hub && (
+                <a class="hub-card" href={`/perspectives/${hub.slug}/`}>
+                  <span class="hub-card-pill">Hub piece</span>
+                  <h3 class="hub-card-title">{hub.data.title}</h3>
+                  <p class="hub-card-desc">{hub.data.description}</p>
+                  <div class="hub-card-meta">
+                    <span>{fmtDate(hub.data.pubDate)}</span>
+                    {hub.data.readingTime && (
+                      <>
+                        <span class="dot">&middot;</span>
+                        <span>{hub.data.readingTime} min read</span>
+                      </>
+                    )}
+                  </div>
+                </a>
+              )}
+              {spokes.length > 0 && (
+                <ul class="spoke-list">
+                  {spokes.map((s) => (
+                    <li>
+                      <a class="spoke" href={`/perspectives/${s.slug}/`}>
+                        <h4>{s.data.title}</h4>
+                        <div class="spoke-meta">
+                          <span>{fmtDate(s.data.pubDate)}</span>
+                          {s.data.readingTime && (
+                            <>
+                              <span class="dot">&middot;</span>
+                              <span>{s.data.readingTime} min</span>
+                            </>
+                          )}
+                        </div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="close-section">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow" style="color: var(--orange);">Stop reading. Start resolving.</span>
+        <h2>The writing is free. The Diagnostic pays for itself.</h2>
+        <p class="lede" style="color: rgba(255,255,255,0.8);">
+          Most Diagnostics surface $22,500 to $30,000 of trapped value in 14 days. Guaranteed. The founders who book usually started in the field notes.
+        </p>
+        <div class="hero-cta-row">
+          <a href={CALENDLY} class="btn btn-primary">Book Diagnostic</a>
+          <a href="/guarantee" class="btn btn-secondary">Read Guarantee</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Hero */
+  .perspectives-hero {
+    background: var(--ink);
+    color: var(--white);
+    padding: 96px 32px 72px;
+    position: relative;
+    overflow: hidden;
+  }
+  .perspectives-hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(227, 99, 43, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .perspectives-hero-inner {
+    max-width: 920px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .perspectives-hero h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin: 16px 0 22px;
+    max-width: 920px;
+  }
+  .perspectives-hero-sub {
+    font-family: Inter, sans-serif;
+    font-size: clamp(18px, 1.8vw, 22px);
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.5;
+    margin: 0 0 22px;
+    max-width: 760px;
+  }
+  .perspectives-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .perspectives-hero-meta strong {
+    color: var(--white);
+    font-weight: 600;
+  }
+  .perspectives-hero-meta .dot { opacity: 0.4; }
+
+  /* 3-column pillars grid */
+  .pillars-grid-section {
+    padding: 80px 32px 100px;
+    background: var(--white);
+  }
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .pillar-col {
+    --accent: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 28px 26px 22px;
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid var(--accent);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  .pillar-col-orange { --accent: var(--orange); }
+  .pillar-col-green  { --accent: var(--green); }
+  .pillar-col-ink    { --accent: var(--ink); }
+
+  .pillar-col-header {
+    margin-bottom: 22px;
+  }
+  .pillar-col-icon-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .pillar-col-icon {
+    color: var(--accent);
+    display: inline-flex;
+  }
+  .pillar-col-eyebrow {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .pillar-col-title {
+    font-family: Inter, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin: 0 0 10px;
+  }
+  .pillar-col-tagline {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  /* Hub piece card (large, distinguished) */
+  .hub-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    padding: 22px 22px 20px;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 22px;
+    position: relative;
+    transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .hub-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(24, 34, 40, 0.08);
+    opacity: 1;
+  }
+  .hub-card-pill {
+    align-self: flex-start;
+    background: var(--accent);
+    color: var(--white);
+    font-family: Inter, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+  .pillar-col-ink .hub-card-pill { background: var(--ink); }
+  .hub-card-title {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    margin: 0 0 10px;
+  }
+  .hub-card-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  .hub-card-meta {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+  }
+  .hub-card-meta .dot { opacity: 0.5; }
+
+  /* Spoke list (compact) */
+  .spoke-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--hairline);
+    flex-grow: 1;
+  }
+  .spoke-list li {
+    border-bottom: 1px solid var(--hairline);
+  }
+  .spoke {
+    display: block;
+    padding: 14px 0;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+  .spoke:hover {
+    opacity: 1;
+  }
+  .spoke:hover h4 {
+    color: var(--accent);
+  }
+  .spoke h4 {
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 0 0 4px;
+    transition: color 0.15s ease;
+  }
+  .spoke-meta {
+    font-family: Inter, sans-serif;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: flex;
+    gap: 6px;
+  }
+  .spoke-meta .dot { opacity: 0.5; }
+
+  @media (max-width: 1100px) {
+    .pillars-grid { grid-template-columns: 1fr; gap: 22px; }
+    .pillars-grid-section { padding: 56px 24px 72px; }
+  }
+  @media (max-width: 720px) {
+    .perspectives-hero { padding: 64px 24px 48px; }
+    .pillar-col { padding: 24px 22px 18px; }
+  }
+</style>

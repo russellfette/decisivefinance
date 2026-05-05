@@ -7,6 +7,7 @@ updatedDate: 2026-02-24
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "ceo-investor-fracture"
+pillar: 3
 ctaVariant: "self-assessment"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/ceo-investor-fracture.png"
@@ -77,6 +78,6 @@ If this pattern is recognizable, the self-assessment takes six minutes and names
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
-- [The board question shift: when softer questions are the real signal](https://decisive.finance/blog/the-board-question-shift)
-- [How the stalled raise actually happens](https://decisive.finance/blog/how-the-stalled-raise-happens)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [The board question shift: when softer questions are the real signal](https://decisive.finance/perspectives/the-board-question-shift)
+- [How the stalled raise actually happens](https://decisive.finance/perspectives/how-the-stalled-raise-happens)

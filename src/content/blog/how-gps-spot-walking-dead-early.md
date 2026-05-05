@@ -7,6 +7,7 @@ updatedDate: 2026-03-24
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "gp-detection"
+pillar: 3
 ctaVariant: "investor-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/gp-early-detection.png"
@@ -76,10 +77,10 @@ Three moves that consistently backfire.
 
 For GPs and directors who want the full detection sequence plus the recovery playbook:
 
-[Read: A field guide to spotting stalled portcos](https://decisive.finance/blog/stalled-portco-field-guide-for-investors)
+[Read: A field guide to spotting stalled portcos](https://decisive.finance/perspectives/stalled-portco-field-guide-for-investors)
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
-- [The independent director's playbook for a drifting portco](https://decisive.finance/blog/independent-director-playbook)
-- [What GPs should ask at the next board meeting](https://decisive.finance/blog/what-gps-should-ask-next-board-meeting)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [The independent director's playbook for a drifting portco](https://decisive.finance/perspectives/independent-director-playbook)
+- [What GPs should ask at the next board meeting](https://decisive.finance/perspectives/what-gps-should-ask-next-board-meeting)

@@ -7,6 +7,7 @@ updatedDate: 2026-03-17
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "board-reporting"
+pillar: 3
 ctaVariant: "scorecard"
 dominantClaim: "two-quarters-early"
 ogImage: "/og/for-investors-and-boards.png"
@@ -121,7 +122,7 @@ What we will do on a call with a GP:
 ---
 
 *Further reading:*
-- [The stalled portco: what it is](/blog/walking-dead-portco)
-- [Decision-first finance: the methodology](/blog/decision-first-finance)
+- [The stalled portco: what it is](/perspectives/walking-dead-portco)
+- [Decision-first finance: the methodology](/perspectives/decision-first-finance)
 - [The guarantee: risk transfers to us on purpose](/guarantee)
-- [Burn multiple above 3: what to do](/blog/burn-multiple-above-three-what-to-do)
+- [Burn multiple above 3: what to do](/perspectives/burn-multiple-above-three-what-to-do)

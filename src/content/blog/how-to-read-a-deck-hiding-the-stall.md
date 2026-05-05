@@ -7,6 +7,7 @@ updatedDate: 2026-04-07
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "deck-reading"
+pillar: 3
 ctaVariant: "investor-cta"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/reading-stalled-deck.png"
@@ -82,10 +83,10 @@ The three tells and the question results usually point to one of three states:
 
 Investors and directors who want the full detection sequence plus the board-level intervention playbook:
 
-[Read: A field guide to spotting stalled portcos](https://decisive.finance/blog/stalled-portco-field-guide-for-investors)
+[Read: A field guide to spotting stalled portcos](https://decisive.finance/perspectives/stalled-portco-field-guide-for-investors)
 
 Related reading:
 
-- [How GPs spot stalled portcos early](https://decisive.finance/blog/how-gps-spot-stalled-early)
-- [The independent director's playbook for a drifting portco](https://decisive.finance/blog/independent-director-playbook)
-- [What GPs should ask at the next board meeting](https://decisive.finance/blog/what-gps-should-ask-next-board-meeting)
+- [How GPs spot stalled portcos early](https://decisive.finance/perspectives/how-gps-spot-stalled-early)
+- [The independent director's playbook for a drifting portco](https://decisive.finance/perspectives/independent-director-playbook)
+- [What GPs should ask at the next board meeting](https://decisive.finance/perspectives/what-gps-should-ask-next-board-meeting)

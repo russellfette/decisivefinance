@@ -41,7 +41,7 @@ const CALENDLY = 'https://calendly.com/russell-decisive/30min';
         </div>
       </div>
 
-      <a href="/blog">Perspectives</a>
+      <a href="/perspectives">Perspectives</a>
       <a href="/resources">Resources</a>
       <a href="/about">About</a>
       <a href={CALENDLY} class="btn btn-primary">Book Diagnostic</a>
@@ -61,12 +61,18 @@ const CALENDLY = 'https://calendly.com/russell-decisive/30min';
     font: inherit;
     font-size: 14px;
     font-weight: 500;
-    color: inherit;
+    color: var(--ink);
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 6px;
     line-height: 1;
+  }
+  .nav-dark .nav-dropdown-toggle {
+    color: var(--white);
+  }
+  .nav-dropdown-toggle:hover {
+    color: var(--orange);
   }
   .nav-dropdown-caret {
     opacity: 0.7;

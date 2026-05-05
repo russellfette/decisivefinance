@@ -7,6 +7,7 @@ updatedDate: 2025-12-30
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "ratio-mirage"
+pillar: 1
 ctaVariant: "self-assessment"
 dominantClaim: "22500-30000-forward-reallocation-14-days"
 ogImage: "/og/ratio-mirage.png"
@@ -68,6 +69,6 @@ If any of this tracks, the six-signal pattern is probably running somewhere in y
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/blog/walking-dead-portco)
-- [Decision-first finance: the methodology](https://decisive.finance/blog/decision-first-finance)
-- [A field guide to spotting stalled portcos](https://decisive.finance/blog/stalled-portco-field-guide-for-investors)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [Decision-first finance: the methodology](https://decisive.finance/perspectives/decision-first-finance)
+- [A field guide to spotting stalled portcos](https://decisive.finance/perspectives/stalled-portco-field-guide-for-investors)
