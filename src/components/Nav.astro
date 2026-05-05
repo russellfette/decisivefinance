@@ -20,9 +20,27 @@ const CALENDLY = 'https://calendly.com/russell-decisive/30min';
     </button>
     <div class="nav-links" id="nav-menu">
       <a href="/how-it-works">How it works</a>
-      <a href="/#tiers">Pricing</a>
-      <a href="/m-and-a">M&amp;A</a>
-      <a href="/guarantee">Guarantee</a>
+
+      <div class="nav-dropdown">
+        <button
+          class="nav-dropdown-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="services-menu"
+          aria-haspopup="true"
+        >
+          Services
+          <svg class="nav-dropdown-caret" aria-hidden="true" width="10" height="6" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="nav-dropdown-menu" id="services-menu" role="menu">
+          <a href="/#tiers" role="menuitem">Pricing</a>
+          <a href="/m-and-a" role="menuitem">M&amp;A</a>
+          <a href="/guarantee" role="menuitem">Guarantee</a>
+        </div>
+      </div>
+
       <a href="/blog">Perspectives</a>
       <a href="/resources">Resources</a>
       <a href="/about">About</a>
@@ -30,6 +48,135 @@ const CALENDLY = 'https://calendly.com/russell-decisive/30min';
     </div>
   </div>
 </nav>
+
+<style>
+  /* Services dropdown */
+  .nav-dropdown {
+    position: relative;
+  }
+  .nav-dropdown-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 1;
+  }
+  .nav-dropdown-caret {
+    opacity: 0.7;
+    transition: transform 0.18s ease;
+  }
+  .nav-dropdown.is-open .nav-dropdown-caret {
+    transform: rotate(180deg);
+  }
+  .nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: -14px;
+    background: var(--white);
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    padding: 8px;
+    min-width: 180px;
+    display: none;
+    z-index: 110;
+    box-shadow: 0 12px 32px rgba(24, 34, 40, 0.12);
+  }
+  .nav-dropdown-menu a {
+    display: block;
+    padding: 10px 14px;
+    color: var(--ink);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  .nav-dropdown-menu a:hover {
+    background: var(--paper);
+    opacity: 1;
+  }
+
+  /* Hover open on devices that support hover (desktop) */
+  @media (hover: hover) {
+    .nav-dropdown:hover .nav-dropdown-menu {
+      display: block;
+    }
+    .nav-dropdown:hover .nav-dropdown-caret {
+      transform: rotate(180deg);
+    }
+  }
+
+  /* Click/keyboard open via aria state */
+  .nav-dropdown.is-open .nav-dropdown-menu {
+    display: block;
+  }
+
+  /* Dark nav variant */
+  .nav-dark .nav-dropdown-menu {
+    background: var(--ink);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  }
+  .nav-dark .nav-dropdown-menu a {
+    color: var(--white);
+  }
+  .nav-dark .nav-dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Mobile: inline expansion inside the hamburger panel */
+  @media (max-width: 1100px) {
+    .nav-dropdown {
+      width: 100%;
+    }
+    .nav-dropdown-toggle {
+      width: 100%;
+      justify-content: space-between;
+      padding: 14px 4px;
+      border-bottom: 1px solid var(--hairline);
+      font-size: 16px;
+    }
+    .nav-dark .nav-dropdown-toggle {
+      border-bottom-color: rgba(255, 255, 255, 0.08);
+    }
+    .nav-dropdown-menu {
+      position: static;
+      background: transparent;
+      border: none;
+      padding: 0;
+      box-shadow: none;
+      border-radius: 0;
+      display: none;
+    }
+    .nav-dropdown.is-open .nav-dropdown-menu {
+      display: block;
+    }
+    .nav-dropdown-menu a {
+      padding: 14px 4px 14px 24px;
+      border-bottom: 1px solid var(--hairline);
+      border-radius: 0;
+      font-size: 16px;
+    }
+    .nav-dark .nav-dropdown-menu a {
+      border-bottom-color: rgba(255, 255, 255, 0.08);
+    }
+    .nav-dropdown-menu a:hover {
+      background: transparent;
+    }
+    /* Disable hover-open on mobile so taps drive the toggle */
+    @media (hover: none) {
+      .nav-dropdown:hover .nav-dropdown-menu {
+        display: none;
+      }
+    }
+  }
+</style>
 
 <script>
   const toggle = document.querySelector<HTMLButtonElement>('.nav-toggle');
@@ -54,6 +201,31 @@ const CALENDLY = 'https://calendly.com/russell-decisive/30min';
         toggle.setAttribute('aria-expanded', 'false');
         toggle.setAttribute('aria-label', 'Open menu');
         toggle.focus();
+      }
+    });
+  }
+
+  // Services dropdown
+  const dropdown = document.querySelector<HTMLElement>('.nav-dropdown');
+  const dropdownToggle = document.querySelector<HTMLButtonElement>('.nav-dropdown-toggle');
+  if (dropdown && dropdownToggle) {
+    dropdownToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = dropdown.classList.toggle('is-open');
+      dropdownToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', (e) => {
+      const target = e.target as Node;
+      if (!dropdown.contains(target)) {
+        dropdown.classList.remove('is-open');
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && dropdown.classList.contains('is-open')) {
+        dropdown.classList.remove('is-open');
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+        dropdownToggle.focus();
       }
     });
   }
