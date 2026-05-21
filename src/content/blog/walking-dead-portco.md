@@ -1,7 +1,7 @@
 ---
 title: "The stalled portco: what it is, how to spot it, how to come back"
 slug: stalled-portco
-description: "A stalled portco looks alive on the cap table and dead in the forecast. Here are the Six Trap Diagnostic™, the three paths out, and the $22,500 to $30,000 of trapped value most Diagnostics surface in 14 days."
+description: "A funded-tech company 18 months past the raise looks alive on the cap table and stalled in the forecast. Here are the Six Trap Diagnostic™, the three paths out, and the 3x-fee trapped value the Diagnostic guarantees in 14 days."
 pubDate: 2026-02-10
 updatedDate: 2026-02-10
 author: "Russell Fette"
@@ -9,7 +9,7 @@ postType: "field-note"
 topicCluster: "ratio-mirage"
 pillar: 1
 ctaVariant: "self-assessment"
-dominantClaim: "22500-30000-forward-reallocation-14-days"
+dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/walking-dead-portco.png"
 featured: true
 readingTime: 11

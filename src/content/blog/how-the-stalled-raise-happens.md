@@ -9,7 +9,7 @@ postType: "field-note"
 topicCluster: "stalled-raise"
 pillar: 1
 ctaVariant: "self-assessment"
-dominantClaim: "22500-30000-forward-reallocation-14-days"
+dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/stalled-raise.png"
 featured: false
 readingTime: 7
