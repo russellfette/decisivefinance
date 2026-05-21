@@ -9,7 +9,7 @@ postType: "field-note"
 topicCluster: "board-question-shift"
 pillar: 3
 ctaVariant: "self-assessment"
-dominantClaim: "22500-30000-forward-reallocation-14-days"
+dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/board-question-shift.png"
 featured: false
 readingTime: 5

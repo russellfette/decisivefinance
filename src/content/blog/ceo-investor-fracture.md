@@ -9,7 +9,7 @@ postType: "field-note"
 topicCluster: "ceo-investor-fracture"
 pillar: 3
 ctaVariant: "self-assessment"
-dominantClaim: "22500-30000-forward-reallocation-14-days"
+dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/ceo-investor-fracture.png"
 featured: false
 readingTime: 6

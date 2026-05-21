@@ -7,9 +7,9 @@ export async function GET(context) {
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return rss({
-    title: 'Decisive Finance — Perspectives',
+    title: 'Decisive Finance: Perspectives',
     description:
-      'Field notes from inside stalled funded-tech engagements. The stalled-portco pattern, decision-first finance, and a field guide for investors and boards.',
+      'Field notes from inside venture-backed tech 18 months past the raise. The pattern, decision-first finance, and a field guide for investors and boards.',
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,

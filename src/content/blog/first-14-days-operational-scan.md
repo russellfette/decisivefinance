@@ -1,7 +1,7 @@
 ---
 title: "What the first 14 days of a Diagnostic actually look like"
 slug: first-14-days-operational-scan
-description: "Day-by-day, inside the $22,500 to $30,000 trapped-capital scan. What gets touched, what does not, and what the client actually sees by the end of week two."
+description: "Day-by-day, inside the 14-day Diagnostic scan that guarantees 3x your fee in trapped value. What gets touched, what does not, and what the client actually sees by the end of week two."
 pubDate: 2026-01-27
 updatedDate: 2026-01-27
 author: "Russell Fette"
@@ -9,7 +9,7 @@ postType: "framework"
 topicCluster: "diagnostic-operations"
 pillar: 2
 ctaVariant: "diagnostic-cta"
-dominantClaim: "22500-30000-forward-reallocation-14-days"
+dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/first-14-days.png"
 featured: false
 readingTime: 7
