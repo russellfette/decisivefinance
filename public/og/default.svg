@@ -17,8 +17,9 @@
     <circle cx="28" cy="28" r="10" fill="#e3632b"/>
   </g>
   <text x="152" y="118" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="28" fill="#ffffff">Decisive Finance</text>
-  <text x="80" y="280" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="60" fill="#ffffff" letter-spacing="-2">18 months in.</text>
-  <text x="80" y="350" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="60" fill="#ffffff" letter-spacing="-2">The next call is the one.</text>
-  <text x="80" y="450" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="500" font-size="24" fill="#ffffff" fill-opacity="0.75">Decision-First Finance for venture-backed tech 18 months past the raise.</text>
-  <text x="80" y="510" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="24" fill="#e3632b">3x your Diagnostic fee in trapped value, in 14 days. Guaranteed.</text>
+  <text x="80" y="240" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="52" fill="#ffffff" letter-spacing="-1.5">Your board wants growth.</text>
+  <text x="80" y="305" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="52" fill="#ffffff" letter-spacing="-1.5">Your bank wants runway.</text>
+  <text x="80" y="370" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="52" fill="#e3632b" letter-spacing="-1.5">Your future rides on the next call.</text>
+  <text x="80" y="470" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="500" font-size="22" fill="#ffffff" fill-opacity="0.75">Decision-First Finance for venture-backed tech 18 months past the raise.</text>
+  <text x="80" y="520" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="22" fill="#e3632b">Guaranteed 3x your Diagnostic fee in trapped value, in 14 days.</text>
 </svg>
