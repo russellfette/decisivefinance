@@ -1,0 +1,510 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Finance for EOS companies | Decisive Finance';
+const description =
+  'Your Scorecard is green and your cash is still a guess. We install the financial layer of the Data Component in one EOS quarter, on guarantee.';
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Do you replace our EOS Implementer?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Implementers install the operating system. We install the finance layer that runs inside it. The two never compete; most of what we build shows up as better numbers in the sessions your Implementer already runs.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Will you sit in our L10?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'During the 90-day install, yes, as needed to wire the measurables in. After Day 90 the rhythm runs without us. That is the point.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'We already have a controller. Do we need this?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Probably, and so do they. We are not a replacement for your finance seat. We install the system your controller runs, which is a different job from running it.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does this change our V/TO?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'It changes what sits underneath it. Your 1-year plan and 3-year picture keep their targets; they gain a cash model that says whether the targets are funded.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What happens after 90 days?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The rhythm keeps running, with or without us. Some companies graduate fully. Others keep us on a quarterly cadence aligned to their EOS quarterly sessions.',
+      },
+    },
+  ],
+};
+
+const pains = [
+  {
+    name: 'The Scorecard has revenue on it, and nothing else from finance',
+    body: "Bookings, calls, leads: weekly and owned. Cash, margin, AR: monthly, late, and nobody's measurable.",
+  },
+  {
+    name: 'The financials land on day 15 or day 20',
+    body: "By the time the P&L prints, the problem it describes is seven weeks old. EOS calls this the results-only blind spot. You're IDSing symptoms, not causes.",
+  },
+  {
+    name: "The numbers aren't solid, so the decisions aren't either",
+    body: 'Forecasts and targets get pulled out of thin air because there is nothing solid to base them on. The team senses it, and every call made on soft numbers is soft too.',
+  },
+  {
+    name: 'Rocks get done and cash gets tighter',
+    body: 'The growth Rock landed. Nobody modeled what it did to working capital. Growth is a torpedo to cash flow, and the 1-year plan has revenue targets with no cash plan underneath.',
+  },
+  {
+    name: 'The finance seat got outgrown',
+    body: 'The bookkeeper who was perfect at $3M is now managing the money at $20M. Run GWC on the seat for real: the capacity answer is different at this size. That is a seat problem nobody wants to name.',
+  },
+  {
+    name: 'Departments have no budgets',
+    body: "Either every pizza party needs the owner's sign-off, or nobody is watching spend at all. Same disease: no budget rhythm, no fiscal accountability below the leadership team.",
+  },
+  {
+    name: 'The AR over 90 column has six figures in it',
+    body: 'And nobody owns the phone call. Money already earned, sitting there, while the L10 debates spending cuts.',
+  },
+  {
+    name: 'The blank stare in the L10',
+    body: 'Someone asks what the margin was on last month’s biggest job. The room waits. The answer arrives Thursday, by email, with caveats.',
+  },
+];
+
+const mapping = [
+  ['Scorecard', 'Weekly, activity-based finance measurables with owners', '10-day close, daily cash position, weekly margin tracking', 'Days 1 to 30'],
+  ['Rocks and V/TO', 'A cash model behind every 90-day priority and 1-year target', '13-week cash forecast, scenario planning, profit-driven decision rules', 'Days 31 to 60'],
+  ['L10 and IDS', 'Answers in minutes, not Thursday by email', 'Real-time unit economics, automated reporting, per-job and per-client profitability', 'Days 61 to 90'],
+  ['8 Cash Flow Drivers', 'A dollar amount, an owner, and a deadline on every driver', 'Weekly margin and AR/AP rhythm that turns the drivers exercise into a standing system', 'Days 1 to 60'],
+];
+
+const installSteps = [
+  ['Days 1 to 7: diagnostic.', 'We map every system, spreadsheet, and choke point, and put real finance measurables on your Scorecard.'],
+  ['Days 8 to 14: close acceleration.', 'Close cycle cut by 50 to 75 percent. A 10-day close, not a 20-day fire drill.'],
+  ['Days 15 to 30: cash and margin visibility.', 'Daily cash position. Weekly margin tracking with named owners, L10-ready.'],
+  ['Days 31 to 45: the 13-week cash forecast.', 'Thirteen weeks of forward cash, refreshed weekly. The same horizon as your Rocks.'],
+  ['Days 46 to 60: scenario planning.', 'Every Rock candidate gets a cash model before it gets a vote at quarterly planning.'],
+  ['Days 61 to 75: unit economics.', 'Profit per job, client, product, or truck, tracked live.'],
+  ['Days 76 to 90: reporting automation and handoff.', 'Dashboards replace the month-end scramble. Your team runs the rhythm without us.'],
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} slot="head" />
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">For companies running on EOS&reg;</span>
+      <h1>
+        <span class="h1-line">Your Scorecard is green.</span>
+        <span class="h1-line h1-line-accent">Your cash is a guess.</span>
+      </h1>
+      <p class="hero-subhead">
+        EOS fixed your meetings, your Rocks, and your accountability chart. It did not fix your finance
+        function. The Financial Rhythm System installs the missing layer of your Data Component in one
+        EOS quarter: a 10-day close, daily cash visibility, and a 13-week forecast your L10 can actually act on.
+      </p>
+      <div class="hero-quote" style="font-style: normal;">
+        Most Diagnostics surface <strong style="color: var(--orange);">$22,500 to $30,000 of trapped value in 14 days. Guaranteed.</strong>
+      </div>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="#scorecard">Get the EOS Cash Scorecard</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="traps">
+    <div class="container">
+      <div class="section-eyebrow">The problem</div>
+      <h2>Where the Data Component breaks</h2>
+      <p class="lede" style="color: rgba(255,255,255,0.88);">
+        EOS itself says it: a weak Scorecard is full of P&amp;L-style numbers, a strong one is full of
+        activity-based numbers you can move this week. Most EOS companies got that memo for sales and ops.
+        Finance never made the transition.
+      </p>
+      <div class="trap-grid">
+        {pains.map((p) => (
+          <div class="trap-card">
+            <div class="trap-name" style="font-size: 18px;">{p.name}</div>
+            <p>{p.body}</p>
+          </div>
+        ))}
+      </div>
+      <div class="traps-footer">
+        If three or more of those landed, your Data Component is failing on finance. Not because EOS is
+        wrong. Because EOS gave you the meeting cadence and the Scorecard discipline, and assumed someone
+        would wire finance into them.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-eyebrow">The fit</div>
+      <h2>The Financial Rhythm System, mapped to EOS</h2>
+      <p class="lede">
+        We install finance the way EOS installs everything else: a simple, repeatable rhythm, in 90-day
+        blocks, run by your existing team. No hero CFO required. The install takes exactly one EOS quarter.
+      </p>
+      <div class="map-wrap">
+        <table class="map-table">
+          <thead>
+            <tr><th>EOS tool</th><th>What it needs from finance</th><th>What we install</th><th>When</th></tr>
+          </thead>
+          <tbody>
+            {mapping.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[3]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p style="max-width: 760px; margin-top: 36px;">
+        By Day 90, finance runs at the same cadence as the rest of your company. Weekly numbers in the
+        Scorecard. A cash forecast that updates before every L10. Quarterly planning with three modeled
+        paths instead of one hopeful one.
+      </p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-eyebrow">The install</div>
+      <h2>What gets installed in one EOS quarter</h2>
+      <div class="engine-list">
+        {installSteps.map((s) => (
+          <div class="engine-item">
+            <p><strong>{s[0]}</strong> {s[1]}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-eyebrow">Fit check</div>
+      <h2>Who this is not for</h2>
+      <div class="notfor">
+        <p>
+          We'd rather disqualify early. The Financial Rhythm System is not a fit if you want basic
+          bookkeeping, a turnaround specialist, or a band-aid before a sale. It requires about 3 hours a
+          week from your team during the install. And if your company is not actually running EOS (no L10,
+          no Scorecard, Rocks in name only), fix that with your Implementer first. The system we install
+          assumes the cadence EOS gives you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-eyebrow">How it starts</div>
+      <h2>One EOS quarter. Fixed monthly fee. In writing.</h2>
+      <p class="lede">
+        It starts with a 14-day diagnostic sprint inside the install: a read of what your current capital
+        is doing, findings in dollars, ranked by effort to capture. Then the rhythm goes in. Pricing is
+        monthly, fixed by annual revenue, visible without a form.
+      </p>
+      <div class="price-grid">
+        <div class="price-card">
+          <div class="price-band">Under $5M revenue</div>
+          <div class="price-fee">$7,500<span class="price-mo">/mo</span></div>
+          <div class="price-total">$22,500 for the quarter</div>
+        </div>
+        <div class="price-card">
+          <div class="price-band">$5M to $10M revenue</div>
+          <div class="price-fee">$10,000<span class="price-mo">/mo</span></div>
+          <div class="price-total">$30,000 for the quarter</div>
+        </div>
+        <div class="price-card">
+          <div class="price-band">$10M+ revenue</div>
+          <div class="price-fee">$15,000<span class="price-mo">/mo</span></div>
+          <div class="price-total">$45,000 for the quarter</div>
+        </div>
+      </div>
+      <div class="delay-callout">
+        <p style="margin: 0;">
+          The engagement self-funds. <strong style="color: var(--orange);">If the first 14 days don't
+          surface at least 3x the monthly fee, you don't pay.</strong> We have yet to meet another firm
+          that puts that in writing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="magnet" id="scorecard">
+    <div class="container">
+      <div class="cohort-eyebrow">Free tool</div>
+      <h2>The EOS Cash Scorecard</h2>
+      <p class="lede" style="color: rgba(255,255,255,0.92);">
+        Ten weekly finance measurables formatted for your Scorecard, each with a suggested owner, a
+        red/green target, and the 30-minute weekly routine to compile them. Plus the 13-week cash forecast
+        companion. Built to drop into your next L10, not into a someday folder.
+      </p>
+      <form class="magnet-form" id="scorecard-form" novalidate>
+        <input type="email" name="email_address" id="scorecard-email" placeholder="Work email" required aria-label="Work email" />
+        <button class="btn" type="submit" id="scorecard-submit">Get the EOS Cash Scorecard</button>
+      </form>
+      <p class="magnet-fine" id="scorecard-status">Instant delivery. No drip sequence you didn't ask for.</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-eyebrow">For Implementers</div>
+      <h2>If you're an Implementer</h2>
+      <div style="max-width: 760px;">
+        <p>
+          You teach the Scorecard, the 8 Cash Flow Drivers, and right person, right seat. We install the
+          finance layer that makes them stick between sessions: solid numbers your client's leadership team
+          can actually base decisions on, instead of targets pulled out of thin air.
+        </p>
+        <p>
+          When you send a client here, you're not recommending another fractional CFO from the pick-one
+          list. You're recommending the only one whose engagement self-funds on a written guarantee, and
+          whose entire install runs on your cadence: one quarter, measurables on the Scorecard,
+          accountability in the seats. Your sessions get easier because the numbers in the room stop being
+          arguable.
+        </p>
+        <p style="margin-bottom: 0;">
+          Forward this page, or send your client <a href="#scorecard">the EOS Cash Scorecard</a> and let
+          the tool make the introduction.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-eyebrow">Questions</div>
+      <h2>FAQ</h2>
+      <div class="faq-list">
+        <details class="faq">
+          <summary>Do you replace our EOS Implementer?</summary>
+          <p>No. Implementers install the operating system. We install the finance layer that runs inside it. The two never compete; most of what we build shows up as better numbers in the sessions your Implementer already runs.</p>
+        </details>
+        <details class="faq">
+          <summary>Will you sit in our L10?</summary>
+          <p>During the 90-day install, yes, as needed to wire the measurables in. After Day 90 the rhythm runs without us. That is the point.</p>
+        </details>
+        <details class="faq">
+          <summary>We already have a controller. Do we need this?</summary>
+          <p>Probably, and so do they. We are not a replacement for your finance seat. We install the system your controller runs, which is a different job from running it. Most controllers are too busy closing the books to build the machine that closes them faster.</p>
+        </details>
+        <details class="faq">
+          <summary>Does this change our V/TO?</summary>
+          <p>It changes what sits underneath it. Your 1-year plan and 3-year picture keep their targets; they gain a cash model that says whether the targets are funded.</p>
+        </details>
+        <details class="faq">
+          <summary>What happens after 90 days?</summary>
+          <p>The rhythm keeps running, with or without us. Some companies graduate fully. Others keep us on a quarterly cadence aligned to their EOS quarterly sessions.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="close-section">
+    <div class="container">
+      <h2>Put finance on the same operating system as everything else</h2>
+      <p class="lede">
+        Your next quarterly planning session is coming either way. Walk in with a 13-week cash forecast and
+        a modeled cost for every Rock on the list, or walk in the way you did last quarter.
+      </p>
+      <a class="btn btn-primary" href="https://calendly.com/russell-decisive/30min">Book the diagnostic</a>
+      <p style="margin-top: 48px; font-size: 12.5px; color: rgba(255,255,255,0.45); max-width: 760px;">
+        EOS&reg; and Level 10 Meeting&trade; are trademarks of EOS Worldwide, LLC. Decisive Finance is an
+        independent firm and is not affiliated with, endorsed by, or certified by EOS Worldwide.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .map-wrap {
+    overflow-x: auto;
+  }
+  .map-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 44px;
+    font-size: 15.5px;
+    min-width: 760px;
+  }
+  .map-table th {
+    text-align: left;
+    padding: 14px 18px;
+    border-bottom: 2px solid var(--ink);
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .map-table td {
+    padding: 18px;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .map-table td:first-child {
+    font-weight: 700;
+    color: var(--green);
+    white-space: nowrap;
+  }
+  .map-table td:last-child {
+    font-weight: 600;
+    color: var(--orange);
+    white-space: nowrap;
+  }
+  .notfor {
+    background: var(--grey);
+    border-radius: 16px;
+    padding: 38px 40px;
+    max-width: 920px;
+  }
+  .notfor p {
+    margin: 0;
+    font-size: 16.5px;
+    line-height: 1.65;
+  }
+  .price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 40px;
+  }
+  .price-card {
+    background: var(--white);
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    padding: 28px 26px;
+    transition: border-color 0.18s ease, transform 0.18s ease;
+  }
+  .price-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--green);
+  }
+  .price-band {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .price-fee {
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .price-mo {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .price-total {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  .magnet {
+    background: var(--orange);
+    color: var(--white);
+  }
+  .magnet h2 {
+    color: var(--white);
+  }
+  .magnet-form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    max-width: 560px;
+  }
+  .magnet-form input {
+    flex: 1;
+    min-width: 240px;
+    padding: 14px 20px;
+    border-radius: 999px;
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+  }
+  .magnet-form .btn {
+    background: var(--ink);
+    color: var(--white);
+  }
+  .magnet-form .btn:hover {
+    transform: translateY(-1px);
+  }
+  .magnet-fine {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.78);
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+</style>
+
+<script>
+  const KIT_FORM_ID = '9406590';
+  const KIT_SUBSCRIBE_URL = `https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`;
+  const PDF_PATH = '/resources/eos/eos-cash-scorecard.pdf';
+
+  const form = document.getElementById('scorecard-form');
+  const status = document.getElementById('scorecard-status');
+  const submitBtn = document.getElementById('scorecard-submit');
+
+  function triggerDownload() {
+    const a = document.createElement('a');
+    a.href = PDF_PATH;
+    a.download = 'EOS-Cash-Scorecard.pdf';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = (document.getElementById('scorecard-email') as HTMLInputElement)?.value?.trim();
+    if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      if (status) status.textContent = 'Enter a valid work email and try again.';
+      return;
+    }
+    if (submitBtn) (submitBtn as HTMLButtonElement).disabled = true;
+    if (status) status.textContent = 'Sending…';
+    try {
+      const body = new FormData();
+      body.append('email_address', email);
+      body.append('fields[source]', 'eos-landing');
+      const res = await fetch(KIT_SUBSCRIBE_URL, { method: 'POST', body });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      triggerDownload();
+      if (status) status.textContent = 'Done. The Scorecard just downloaded, and a copy is on its way to your inbox.';
+    } catch {
+      triggerDownload();
+      if (status)
+        status.textContent =
+          'The Scorecard downloaded to your machine. The email backend was unreachable, so forward any questions to russell@decisive.finance.';
+    } finally {
+      if (submitBtn) (submitBtn as HTMLButtonElement).disabled = false;
+    }
+  });
+</script>
