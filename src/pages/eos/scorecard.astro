@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The EOS Cash Scorecard | Decisive Finance</title>
+<meta name="description" content="Mark ten finance measurables green, amber, or red and get a scored verdict on where your Data Component is failing on finance. Free, instant.">
+<link rel="canonical" href="https://decisive.finance/eos/scorecard">
+<meta property="og:title" content="The EOS Cash Scorecard | Decisive Finance">
+<meta property="og:description" content="Mark ten finance measurables green, amber, or red and get a scored verdict on where your Data Component is failing on finance. Free, instant.">
+<meta property="og:url" content="https://decisive.finance/eos/scorecard">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://decisive.finance/og/default.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#182228;--ink2:#223038;--green:#214c52;--grey:#dde4e7;--orange:#e3632b;--white:#fff;--paper:#f7f9fa;--muted:#5a6a72;--hairline:rgba(24,34,40,.12);--ok:#1d9e75;--okbg:#e1f5ee;--okfg:#085041;--amber:#ef9f27;--amberbg:#faeeda;--amberfg:#633806;--bad:#e24b4a;--badbg:#fcebeb;--badfg:#791f1f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,-apple-system,sans-serif;background:var(--ink);color:var(--white);line-height:1.5;-webkit-font-smoothing:antialiased}
+.top{max-width:1180px;margin:0 auto;padding:28px 32px 0;display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--white)}
+.brand b{color:var(--orange)}
+.top a{color:rgba(255,255,255,.6);font-size:13px;text-decoration:none}
+.hero{max-width:1180px;margin:0 auto;padding:40px 32px 28px}
+.eyebrow{display:inline-block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--orange);border:1px solid rgba(227,99,43,.4);border-radius:999px;padding:5px 13px;margin-bottom:20px}
+h1{font-size:clamp(30px,4.4vw,52px);font-weight:800;letter-spacing:-.03em;line-height:1.05;max-width:920px}
+h1 span{color:var(--orange)}
+.sub{font-size:clamp(15px,1.6vw,18px);color:rgba(255,255,255,.78);max-width:680px;margin-top:14px}
+.legend{display:flex;gap:14px;margin-top:18px;flex-wrap:wrap;font-size:12px;color:rgba(255,255,255,.65)}
+.legend span{display:flex;align-items:center;gap:6px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.wrap{max-width:1180px;margin:0 auto;padding:18px 32px 90px;display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:24px;align-items:start}
+.rhythm{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:22px 22px 8px;margin-bottom:18px;transition:border-color .3s}
+.rhythm.done-ok{border-color:rgba(29,158,117,.55)}
+.rhythm.done-amber{border-color:rgba(239,159,39,.55)}
+.rhythm.done-bad{border-color:rgba(226,75,74,.55)}
+.rhythm-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.rhythm-name{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--orange)}
+.rhythm-sub{font-size:12.5px;color:rgba(255,255,255,.5)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 12px;margin:0 -12px;border-bottom:1px solid rgba(255,255,255,.08);flex-wrap:wrap;border-left:3px solid transparent;border-radius:4px;transition:background .25s,border-color .25s}
+.row:last-child{border-bottom-color:transparent}
+.row.is-g{background:rgba(29,158,117,.1);border-left-color:var(--ok)}
+.row.is-a{background:rgba(239,159,39,.1);border-left-color:var(--amber)}
+.row.is-r{background:rgba(226,75,74,.12);border-left-color:var(--bad)}
+.row-label{font-size:14.5px;font-weight:500;color:rgba(255,255,255,.92);display:flex;gap:9px;align-items:baseline}
+.row-mark{font-size:13px;font-weight:800;width:16px;flex-shrink:0;display:inline-block;transform:scale(0);transition:transform .25s cubic-bezier(.2,1.4,.4,1)}
+.row.is-g .row-mark{color:var(--ok);transform:scale(1.25)}
+.row.is-a .row-mark{color:var(--amber);transform:scale(1.25)}
+.row.is-r .row-mark{color:var(--bad);transform:scale(1.25)}
+.row-hint{display:block;font-size:12px;color:rgba(255,255,255,.45);font-weight:400;margin-top:2px}
+.toggles{display:flex;gap:6px;flex-shrink:0}
+.toggles button{font-family:inherit;font-size:11.5px;font-weight:600;padding:7px 12px;border-radius:999px;border:1.5px solid rgba(255,255,255,.18);background:transparent;color:rgba(255,255,255,.65);cursor:pointer;transition:all .12s ease}
+.toggles button:hover{border-color:rgba(255,255,255,.5);transform:translateY(-1px)}
+.toggles button.g{background:var(--ok);border-color:var(--ok);color:#fff}
+.toggles button.a{background:var(--amber);border-color:var(--amber);color:#3d2a05}
+.toggles button.r{background:var(--bad);border-color:var(--bad);color:#fff}
+.panel{position:sticky;top:20px;background:var(--white);color:var(--ink);border-radius:18px;padding:26px 26px 24px}
+.gauge-wrap{display:flex;justify-content:center;margin:4px 0 8px;position:relative}
+@keyframes pulse{0%{transform:scale(1)}40%{transform:scale(1.07)}100%{transform:scale(1)}}
+.gauge-wrap.bump svg{animation:pulse .4s ease}
+.progress{font-size:12.5px;color:var(--muted);text-align:center;margin-bottom:18px}
+.bars{margin:8px 0 4px}
+.bar-row{margin-bottom:12px}
+.bar-top{display:flex;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:5px}
+.bar-top .nm{color:var(--ink)}
+.bar-top .pc{color:var(--muted);font-variant-numeric:tabular-nums}
+.bar-track{height:8px;background:var(--grey);border-radius:999px;overflow:hidden}
+.bar-fill{height:100%;width:0;border-radius:999px;background:var(--ok);transition:width .5s cubic-bezier(.2,.8,.2,1),background .3s}
+@keyframes slidein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.verdict{margin-top:16px;padding:15px 16px;border-radius:12px;background:var(--paper);border-left:4px solid var(--grey);font-size:13.5px;line-height:1.5;color:var(--ink)}
+.verdict.anim{animation:slidein .35s ease}
+.verdict.bad{border-left-color:var(--bad);background:var(--badbg)}
+.verdict.amber{border-left-color:var(--amber);background:var(--amberbg)}
+.verdict.ok{border-left-color:var(--ok);background:var(--okbg)}
+.verdict b{display:block;font-size:15px;margin-bottom:3px}
+.fixfirst{margin-top:12px;padding:13px 16px;border-radius:12px;background:var(--ink);color:#fff;font-size:13px;line-height:1.5;display:none}
+.fixfirst.anim{animation:slidein .35s ease}
+.fixfirst b{color:var(--orange);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:4px}
+.gate{margin-top:18px;border-top:1px solid var(--hairline);padding-top:18px}
+.gate p{font-size:12.5px;color:var(--muted);margin-bottom:10px}
+.gate input{width:100%;padding:12px 16px;border-radius:999px;border:1.5px solid var(--grey);font-size:15px;font-family:inherit;margin-bottom:8px}
+.gate button{width:100%;padding:13px;border-radius:999px;border:none;background:var(--orange);color:#fff;font-weight:700;font-size:14.5px;font-family:inherit;cursor:pointer;transition:transform .12s ease}
+.gate button:hover{transform:translateY(-1px)}
+.gate .fine{font-size:11.5px;color:var(--muted);margin-top:8px;margin-bottom:0}
+.guarantee{margin-top:12px;padding:11px 14px;border-radius:10px;background:var(--okbg);border:1px solid rgba(29,158,117,.3);font-size:12px;line-height:1.5;color:var(--okfg)}
+.guarantee b{color:var(--okfg)}
+.implementer{font-size:11.5px;color:var(--muted);margin-top:12px;line-height:1.5}
+.implementer a{color:var(--orange);text-decoration:none}
+.stickybar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:var(--white);color:var(--ink);border-radius:999px;padding:11px 18px;box-shadow:0 8px 30px rgba(0,0,0,.35);font-size:13px;font-weight:600;justify-content:space-between;align-items:center;cursor:pointer;border-left:6px solid var(--grey)}
+.stickybar.bad{border-left-color:var(--bad)}
+.stickybar.amber{border-left-color:var(--amber)}
+.stickybar.ok{border-left-color:var(--ok)}
+.stickybar .go{color:var(--orange);font-weight:700}
+.foot{max-width:1180px;margin:0 auto;padding:0 32px 40px;font-size:11.5px;color:rgba(255,255,255,.4)}
+@media(max-width:980px){.wrap{grid-template-columns:1fr}.panel{position:static}.stickybar.show{display:flex}}
+@media(max-width:640px){.row{flex-direction:column;align-items:flex-start;gap:8px}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <span class="brand">Decisive<b>.</b></span>
+  <a href="https://decisive.finance/eos">decisive.finance/eos</a>
+</div>
+
+<div class="hero">
+  <span class="eyebrow">For companies running on EOS&reg;</span>
+  <h1>Score your finance function <span>in 90 seconds</span></h1>
+  <p class="sub">Ten measurables that belong on a weekly Scorecard, grouped by the three rhythms we install. Mark each one the way it stands today.</p>
+  <div class="legend">
+    <span><i class="dot" style="background:#1d9e75"></i>Green: weekly, at target</span>
+    <span><i class="dot" style="background:#ef9f27"></i>Amber: tracked, but monthly or off target</span>
+    <span><i class="dot" style="background:#e24b4a"></i>Red: not tracked. If you can't measure it, it's red</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div id="groups"></div>
+
+  <aside class="panel" id="panel">
+    <div class="gauge-wrap" id="gw">
+      <svg width="150" height="150" viewBox="0 0 150 150" role="img" aria-label="Score gauge">
+        <circle cx="75" cy="75" r="62" fill="none" stroke="#dde4e7" stroke-width="13"/>
+        <circle id="arc" cx="75" cy="75" r="62" fill="none" stroke="#1d9e75" stroke-width="13"
+          stroke-linecap="round" stroke-dasharray="389.6" stroke-dashoffset="389.6"
+          transform="rotate(-90 75 75)" style="transition:stroke-dashoffset .5s cubic-bezier(.2,.8,.2,1),stroke .3s"/>
+        <text id="gnum" x="75" y="73" text-anchor="middle" font-size="32" font-weight="800" fill="#182228" font-family="Inter,sans-serif">—</text>
+        <text x="75" y="93" text-anchor="middle" font-size="11" font-weight="600" fill="#5a6a72" font-family="Inter,sans-serif">CASH SCORE</text>
+      </svg>
+    </div>
+    <p class="progress" id="prog">0 of 10 marked</p>
+
+    <div class="bars" id="bars"></div>
+
+    <div class="verdict" id="verdict"><b>Mark your first row</b>The score updates live. Green earns full credit, amber half, red and unmeasured none.</div>
+    <div class="fixfirst" id="fixfirst"></div>
+
+    <div class="gate" id="gate">
+      <p>Get your score plus the full Scorecard PDF: owners, red/green targets, and the 30-minute Friday routine for every row.</p>
+      <input type="email" id="em" placeholder="Work email" aria-label="Work email">
+      <button id="go">Email me my score + the Scorecard</button>
+      <p class="fine" id="fine">Instant delivery. Your score and red rows travel with it, so the reply you get is specific.</p>
+      <div class="guarantee"><b>The install behind this self-funds.</b> If the first 14 days don't surface at least 3x the monthly fee, you don't pay.</div>
+      <p class="implementer">Implementer? Send this to a client before their next quarterly: <a href="https://decisive.finance/eos">decisive.finance/eos</a>. The results come back to you both.</p>
+    </div>
+  </aside>
+</div>
+
+<div class="stickybar" id="sbar" onclick="document.getElementById('panel').scrollIntoView({behavior:'smooth'})">
+  <span id="sbar-text">0 of 10 marked</span><span class="go">See score &darr;</span>
+</div>
+
+<p class="foot">EOS&reg; and Level 10 Meeting&trade; are trademarks of EOS Worldwide, LLC. Decisive Finance is an independent firm and is not affiliated with, endorsed by, or certified by EOS Worldwide. &copy; 2026 Decisive Finance &middot; russell@decisive.finance</p>
+
+<script is:inline>
+const KIT_URL = "https://app.kit.com/forms/9406590/subscriptions";
+const PDF = "https://decisive.finance/resources/eos/eos-cash-scorecard.pdf";
+const EVENTS_URL = "";
+const fired = {};
+function track(name, data){
+  if(fired[name]) return; fired[name] = true;
+  try{
+    if(window.plausible) window.plausible(name, {props:data||{}});
+    if(EVENTS_URL) navigator.sendBeacon(EVENTS_URL, JSON.stringify({e:name,...data,t:Date.now()}));
+  }catch(e){}
+}
+const GROUPS = [
+  {name:"Foundation rhythm", sub:"Stop getting ambushed", rows:[
+    {l:"Weeks of payroll in the bank", h:"Green: 8 or more, checked weekly", p:1},
+    {l:"AR over 60 days", h:"Green: under 5% of total AR", p:2},
+    {l:"Invoices out within 3 days of work done", h:"Green: 95% or more", p:3},
+    {l:"Gross margin last week", h:"Green: weekly, at or above target", p:5},
+  ]},
+  {name:"Planning rhythm", sub:"Stop growing broke", rows:[
+    {l:"Cash forecast accuracy (last week)", h:"Green: 13-week forecast, within 5%", p:4},
+    {l:"Spend approved vs. weekly budget", h:"Green: within budget", p:7},
+    {l:"Payroll as % of revenue (rolling 4 weeks)", h:"Green: at or below plan", p:8},
+  ]},
+  {name:"Intelligence rhythm", sub:"Stop the blank stares", rows:[
+    {l:"Jobs or clients below the margin floor", h:"Green: zero new this week", p:6},
+    {l:"AP exceptions (duplicates, off-contract)", h:"Green: zero", p:9},
+    {l:"Quoted margin on new bids", h:"Green: at or above floor", p:10},
+  ]},
+];
+const FIXWHY = {
+  "Weeks of payroll in the bank":"Survival math comes before everything. Get the daily bank feed wired first.",
+  "AR over 60 days":"This is money you already earned. A named call list this week beats any cost cut.",
+  "Invoices out within 3 days of work done":"Billing lag is the most common self-inflicted cash wound. Cutting it is a one-time cash pull.",
+  "Cash forecast accuracy (last week)":"A forecast nobody scores is a wish. Start scoring week 1 against actual.",
+  "Gross margin last week":"Weekly margin catches profit leaks in week 2 instead of the monthlies.",
+};
+const STATES=[["green","Green","g",1],["amber","Amber","a",0.5],["red","Red","r",0]];
+const PTS={green:1,amber:.5,red:0};
+const marks={}; const ALL=[]; const groupEls=[];
+const groupsEl=document.getElementById("groups");
+GROUPS.forEach((grp,gi)=>{
+  const card=document.createElement("div"); card.className="rhythm"; groupEls.push(card);
+  card.innerHTML=`<div class="rhythm-head"><span class="rhythm-name">${grp.name}</span><span class="rhythm-sub">${grp.sub}</span></div>`;
+  grp.rows.forEach(rw=>{
+    const idx=ALL.length; ALL.push({...rw,group:gi});
+    const row=document.createElement("div"); row.className="row";
+    row.innerHTML=`<div class="row-label"><span class="row-mark" id="mk${idx}"></span><span>${rw.l}<span class="row-hint">${rw.h}</span></span></div>`;
+    const tg=document.createElement("div"); tg.className="toggles";
+    STATES.forEach(([k,lab,cls])=>{
+      const b=document.createElement("button"); b.textContent=lab;
+      b.onclick=()=>{
+        marks[idx]=k;
+        [...tg.children].forEach(x=>x.className=""); b.className=cls;
+        row.className="row is-"+cls;
+        document.getElementById("mk"+idx).textContent = k==="green"?"✓":(k==="amber"?"~":"!");
+        update();
+      };
+      tg.appendChild(b);
+    });
+    row.appendChild(tg); card.appendChild(row);
+  });
+  groupsEl.appendChild(card);
+});
+const barsEl=document.getElementById("bars");
+GROUPS.forEach((grp,gi)=>{
+  const d=document.createElement("div"); d.className="bar-row";
+  d.innerHTML=`<div class="bar-top"><span class="nm">${grp.name}</span><span class="pc" id="pc${gi}">—</span></div><div class="bar-track"><div class="bar-fill" id="bf${gi}"></div></div>`;
+  barsEl.appendChild(d);
+});
+function ragColor(pct){return pct>=70?"#1d9e75":(pct>=40?"#ef9f27":"#e24b4a");}
+let lastVerdictHTML="";
+function update(){
+  const marked=Object.keys(marks).length;
+  const pts=Object.values(marks).reduce((s,v)=>s+PTS[v],0);
+  const pct=Math.round(pts/marked*100);
+  const reds=Object.values(marks).filter(v=>v==="red").length;
+  const ambers=Object.values(marks).filter(v=>v==="amber").length;
+  if(marked===1)track("first_mark");
+  if(marked===5)track("half_marked");
+  if(marked===10)track("all_marked",{score:pct});
+  document.getElementById("prog").textContent=marked<10?`${marked} of 10 marked, score so far`:`Final: ${reds} red, ${ambers} amber, ${10-reds-ambers} green`;
+  const gnum=document.getElementById("gnum");
+  const txt=pct+"%";
+  if(gnum.textContent!==txt){
+    gnum.textContent=txt;
+    const gw=document.getElementById("gw");
+    gw.classList.remove("bump"); void gw.offsetWidth; gw.classList.add("bump");
+  }
+  const arc=document.getElementById("arc");
+  arc.style.strokeDashoffset=389.6*(1-pct/100);
+  arc.style.stroke=ragColor(pct);
+  GROUPS.forEach((grp,gi)=>{
+    const idxs=ALL.map((r,i)=>r.group===gi?i:-1).filter(i=>i>=0);
+    const m=idxs.filter(i=>marks[i]!==undefined);
+    const gp=m.reduce((s,i)=>s+PTS[marks[i]],0);
+    const gpct=m.length?Math.round(gp/m.length*100):0;
+    document.getElementById("pc"+gi).textContent=m.length?gpct+"%":"—";
+    const f=document.getElementById("bf"+gi);
+    f.style.width=(m.length?gpct:0)+"%";
+    f.style.background=ragColor(gpct);
+    let done="";
+    if(m.length===idxs.length){done=gpct>=70?" done-ok":(gpct>=40?" done-amber":" done-bad");}
+    groupEls[gi].className="rhythm"+done;
+  });
+  const v=document.getElementById("verdict");
+  let html, cls;
+  if(pct>=70){
+    cls="verdict ok";
+    html=marked<10?`<b>${pct}% so far</b>Keep marking; the picture changes fast after row five.`:`<b>${pct}%: tight</b>Turn the ambers weekly, install what's missing, and hold the cadence.`;
+  }else if(pct>=40){
+    cls="verdict amber";
+    html=`<b>${pct}%: your Data Component is failing on finance</b>Ambers are lagging indicators wearing a Scorecard costume. The PDF shows the owner and weekly target for every row below green.`;
+  }else{
+    cls="verdict bad";
+    html=`<b>${pct}%: finance is running blind between L10s</b>This is an install, not a tweak. It is exactly what the 90-day rhythm fixes.`;
+  }
+  if(marked && html!==lastVerdictHTML){
+    lastVerdictHTML=html;
+    v.className=cls; v.innerHTML=html;
+    v.classList.remove("anim"); void v.offsetWidth; v.classList.add("anim");
+  }
+  const ff=document.getElementById("fixfirst");
+  const sorted=ALL.map((r,i)=>({r,i,s:marks[i]})).filter(x=>x.s&&x.s!=="green")
+    .sort((a,b)=>(a.s==="red"?0:1)-(b.s==="red"?0:1)||a.r.p-b.r.p);
+  if(sorted.length){
+    const first=sorted[0].r;
+    const nhtml=`<b>Fix first</b>${first.l}. ${FIXWHY[first.l]||"It carries the most cash impact of your rows below green."}`;
+    if(ff.innerHTML!==nhtml){
+      ff.innerHTML=nhtml; ff.style.display="block";
+      ff.classList.remove("anim"); void ff.offsetWidth; ff.classList.add("anim");
+    }
+  } else { ff.style.display="none"; }
+  const sb=document.getElementById("sbar");
+  sb.classList.add("show");
+  sb.className="stickybar show "+(pct>=70?"ok":(pct>=40?"amber":"bad"));
+  document.getElementById("sbar-text").textContent=
+    marked<10?`Score ${pct}% · ${10-marked} left`:`Score ${pct}% · done`;
+}
+document.getElementById("go").onclick=async()=>{
+  const em=document.getElementById("em").value.trim();
+  const fine=document.getElementById("fine");
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){fine.textContent="Enter a valid work email and try again.";return;}
+  fine.textContent="Sending…";
+  const marked=Object.keys(marks).length;
+  const pts=Object.values(marks).reduce((s,v)=>s+PTS[v],0);
+  const pct=marked?Math.round(pts/marked*100):"";
+  const below=ALL.filter((r,i)=>marks[i]&&marks[i]!=="green");
+  const redRows=ALL.filter((r,i)=>marks[i]==="red").map(r=>r.l);
+  const amberRows=ALL.filter((r,i)=>marks[i]==="amber").map(r=>r.l);
+  track("gate_submit",{score:pct});
+  try{
+    const fd=new FormData();
+    fd.append("email_address",em);
+    fd.append("fields[source]","eos-scorecard-dashboard");
+    fd.append("fields[eos_score]",String(pct)+"%");
+    fd.append("fields[eos_red_count]",String(below.length));
+    fd.append("fields[eos_red_rows]",(redRows.join("; ")+(amberRows.length?" | Amber: "+amberRows.join("; "):"")).slice(0,500));
+    const res=await fetch(KIT_URL,{method:"POST",body:fd});
+    if(!res.ok)throw 0;
+    track("gate_success");
+    window.open(PDF,"_blank");
+    fine.textContent=`Done. The Scorecard opened in a new tab, and Russ sees your ${pct}% score before he replies.`;
+  }catch{
+    window.open(PDF,"_blank");
+    fine.textContent="The Scorecard opened in a new tab. Email backend unreachable; write russell@decisive.finance with questions.";
+  }
+};
+</script>
+</body>
+</html>
