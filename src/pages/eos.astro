@@ -255,28 +255,13 @@ const installSteps = [
   <section class="magnet" id="scorecard">
     <div class="container">
       <div class="cohort-eyebrow">Free tool</div>
-      <h2>Run the EOS Cash Scorecard on your company</h2>
+      <h2>Score your finance function in 90 seconds</h2>
       <p class="lede" style="color: rgba(255,255,255,0.92);">
-        Ten finance measurables that belong on a weekly Scorecard. Mark each one the way it stands today.
-        Not measured counts as red: if you can't measure it, that is the finding.
+        Mark ten finance measurables green, amber, or red, the way they stand today. You get a live cash
+        score, the one row to fix first, and the full Scorecard PDF: owners, weekly targets, and the
+        30-minute Friday routine for every row.
       </p>
-      <div class="check-card">
-        <div class="check-rows" id="check-rows">
-          <!-- rows injected by script -->
-        </div>
-        <div class="check-verdict" id="check-verdict" hidden>
-          <span class="check-count" id="check-count"></span>
-          <span id="check-text"></span>
-        </div>
-        <form class="magnet-form" id="scorecard-form" novalidate>
-          <input type="email" name="email_address" id="scorecard-email" placeholder="Work email" required aria-label="Work email" />
-          <button class="btn" type="submit" id="scorecard-submit">Email me my results + the Scorecard</button>
-        </form>
-        <p class="magnet-fine-dark" id="scorecard-status">
-          You get the full Scorecard PDF: owners, red/green targets, and the 30-minute Friday routine for
-          every row above, plus the 13-week cash forecast companion.
-        </p>
-      </div>
+      <a class="btn scorecard-cta" href="/eos/scorecard">Run the EOS Cash Scorecard</a>
     </div>
   </section>
 
@@ -476,227 +461,14 @@ const installSteps = [
     margin-top: 14px;
     margin-bottom: 0;
   }
-  .check-card {
-    background: var(--white);
-    border-radius: 16px;
-    padding: 28px 28px 26px;
-    margin-top: 36px;
-    max-width: 920px;
-  }
-  .check-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 13px 0;
-    border-bottom: 1px solid var(--hairline);
-  }
-  .check-row:last-child {
-    border-bottom: none;
-  }
-  .check-label {
-    font-size: 15.5px;
-    color: var(--ink);
-    font-weight: 500;
-  }
-  .check-toggles {
-    display: flex;
-    gap: 6px;
-    flex-shrink: 0;
-  }
-  .check-toggles button {
-    font-family: inherit;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 7px 13px;
-    border-radius: 999px;
-    border: 1.5px solid var(--hairline);
-    background: var(--white);
-    color: var(--muted);
-    cursor: pointer;
-    transition: all 0.12s ease;
-  }
-  .check-toggles button.on-green {
-    background: var(--green);
-    border-color: var(--green);
-    color: var(--white);
-  }
-  .check-toggles button.on-red {
-    background: var(--orange);
-    border-color: var(--orange);
-    color: var(--white);
-  }
-  .check-toggles button.on-grey {
+  .scorecard-cta {
+    margin-top: 32px;
     background: var(--ink);
-    border-color: var(--ink);
     color: var(--white);
+    font-size: 16px;
+    padding: 15px 30px;
   }
-  .check-verdict {
-    margin-top: 22px;
-    padding: 16px 20px;
-    background: var(--paper);
-    border-left: 4px solid var(--orange);
-    border-radius: 0 10px 10px 0;
-    font-size: 15.5px;
-    color: var(--ink);
-    display: flex;
-    gap: 14px;
-    align-items: baseline;
-  }
-  .check-count {
-    font-family: Inter, sans-serif;
-    font-size: 26px;
-    font-weight: 800;
-    color: var(--orange);
-    letter-spacing: -0.02em;
-    white-space: nowrap;
-  }
-  .check-card .magnet-form {
-    margin-top: 22px;
-    max-width: none;
-  }
-  .check-card .magnet-form input {
-    border: 1.5px solid var(--hairline);
-  }
-  .magnet-fine-dark {
-    font-size: 13px;
-    color: var(--muted);
-    margin-top: 14px;
-    margin-bottom: 0;
-  }
-  @media (max-width: 720px) {
-    .check-row {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
+  .scorecard-cta:hover {
+    transform: translateY(-1px);
   }
 </style>
-
-<script>
-  const KIT_FORM_ID = '9406590';
-  const KIT_SUBSCRIBE_URL = `https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`;
-  const PDF_PATH = '/resources/eos/eos-cash-scorecard.pdf';
-
-  const ROWS = [
-    'Weeks of payroll in the bank',
-    'Cash forecast accuracy (last week)',
-    'AR over 60 days',
-    'Invoices out within 3 days of work done',
-    'Gross margin last week',
-    'Jobs or clients below the margin floor',
-    'AP exceptions (duplicates, off-contract)',
-    'Spend approved vs. weekly budget',
-    'Payroll as % of revenue (rolling 4 weeks)',
-    'Quoted margin on new bids',
-  ];
-  const STATES = [
-    { key: 'green', label: 'Green', cls: 'on-green' },
-    { key: 'red', label: 'Red', cls: 'on-red' },
-    { key: 'unmeasured', label: 'Not measured', cls: 'on-grey' },
-  ];
-
-  const rowsEl = document.getElementById('check-rows');
-  const verdictEl = document.getElementById('check-verdict');
-  const countEl = document.getElementById('check-count');
-  const textEl = document.getElementById('check-text');
-  const form = document.getElementById('scorecard-form');
-  const status = document.getElementById('scorecard-status');
-  const submitBtn = document.getElementById('scorecard-submit');
-
-  const marks: Record<number, string> = {};
-
-  function verdict() {
-    const marked = Object.keys(marks).length;
-    if (!marked || !verdictEl || !countEl || !textEl) return;
-    const reds = Object.values(marks).filter((v) => v !== 'green').length;
-    verdictEl.hidden = false;
-    countEl.textContent = `${reds} of ${marked}`;
-    if (reds <= 2) {
-      textEl.textContent =
-        marked < 10
-          ? 'red so far. Keep marking; the picture changes fast after row five.'
-          : 'red. Tight. Install the remaining rows as weekly measurables and hold the cadence.';
-    } else if (reds <= 5) {
-      textEl.textContent =
-        'red, counting what you cannot measure. Three or more means your Data Component is failing on finance. The Scorecard PDF shows the owner and target for every red row.';
-    } else {
-      textEl.textContent =
-        'red, counting what you cannot measure. Finance is running blind between L10s. This is an install, not a tweak, and it is exactly what the 90-day rhythm fixes.';
-    }
-  }
-
-  ROWS.forEach((label, i) => {
-    const row = document.createElement('div');
-    row.className = 'check-row';
-    const lab = document.createElement('div');
-    lab.className = 'check-label';
-    lab.textContent = label;
-    const tog = document.createElement('div');
-    tog.className = 'check-toggles';
-    STATES.forEach((s) => {
-      const b = document.createElement('button');
-      b.type = 'button';
-      b.textContent = s.label;
-      b.setAttribute('aria-pressed', 'false');
-      b.addEventListener('click', () => {
-        marks[i] = s.key;
-        tog.querySelectorAll('button').forEach((x) => {
-          x.className = '';
-          x.setAttribute('aria-pressed', 'false');
-        });
-        b.className = s.cls;
-        b.setAttribute('aria-pressed', 'true');
-        verdict();
-      });
-      tog.appendChild(b);
-    });
-    row.appendChild(lab);
-    row.appendChild(tog);
-    rowsEl?.appendChild(row);
-  });
-
-  function triggerDownload() {
-    const a = document.createElement('a');
-    a.href = PDF_PATH;
-    a.download = 'EOS-Cash-Scorecard.pdf';
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-  }
-
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const email = (document.getElementById('scorecard-email') as HTMLInputElement)?.value?.trim();
-    if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
-      if (status) status.textContent = 'Enter a valid work email and try again.';
-      return;
-    }
-    if (submitBtn) (submitBtn as HTMLButtonElement).disabled = true;
-    if (status) status.textContent = 'Sending…';
-    const redRows = ROWS.filter((_, i) => marks[i] && marks[i] !== 'green');
-    const redCount = redRows.length;
-    try {
-      const body = new FormData();
-      body.append('email_address', email);
-      body.append('fields[source]', 'eos-landing');
-      body.append('fields[eos_red_count]', String(redCount));
-      body.append('fields[eos_red_rows]', redRows.join('; ').slice(0, 500));
-      const res = await fetch(KIT_SUBSCRIBE_URL, { method: 'POST', body });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      triggerDownload();
-      if (status)
-        status.textContent =
-          redCount > 0
-            ? `Done. The Scorecard just downloaded. Russ sees your ${redCount} red row${redCount === 1 ? '' : 's'} and reads every reply.`
-            : 'Done. The Scorecard just downloaded, and a copy is on its way to your inbox.';
-    } catch {
-      triggerDownload();
-      if (status)
-        status.textContent =
-          'The Scorecard downloaded to your machine. The email backend was unreachable, so forward any questions to russell@decisive.finance.';
-    } finally {
-      if (submitBtn) (submitBtn as HTMLButtonElement).disabled = false;
-    }
-  });
-</script>
