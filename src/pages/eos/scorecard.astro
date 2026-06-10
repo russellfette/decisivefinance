@@ -164,7 +164,6 @@ const fired = {};
 function track(name, data){
   if(fired[name]) return; fired[name] = true;
   try{
-    if(window.plausible) window.plausible(name, {props:data||{}});
     if(EVENTS_URL) navigator.sendBeacon(EVENTS_URL, JSON.stringify({e:name,...data,t:Date.now()}));
   }catch(e){}
 }
