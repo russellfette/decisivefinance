@@ -97,7 +97,7 @@ That document goes in the board book at the next meeting. It is not a pitch. It 
 
 This is the tool we built for GPs and independent directors who want to run the 12-signal grid across the portfolio. It's a spreadsheet with one row per portco, the 12 signals as columns, a visual rollup tab, and notes on which portcos have moved into or out of the stalled portco track over the last two quarters.
 
-**[Download the Portfolio Stalled Portco Scorecard](/resources/portfolio-stalled-scorecard)**
+**[Send the founder the Next Call Self-Assessment](/assessment/next-call/)**: six screens, their numbers against the cohort, a board-grade read they bring to the next meeting.
 
 Scorecard is free. Email required so we can send updates when the signal list evolves.
 
@@ -122,7 +122,7 @@ What we will do on a call with a GP:
 ---
 
 *Further reading:*
-- [The stalled portco: what it is](/perspectives/walking-dead-portco)
+- [The stalled portco: what it is](/perspectives/stalled-portco)
 - [Decision-first finance: the methodology](/perspectives/decision-first-finance)
 - [The guarantee: risk transfers to us on purpose](/guarantee)
-- [Burn multiple above 3: what to do](/perspectives/burn-multiple-above-three-what-to-do)
+- [Burn multiple above 3: get the read in six minutes](/assessment/next-call/)

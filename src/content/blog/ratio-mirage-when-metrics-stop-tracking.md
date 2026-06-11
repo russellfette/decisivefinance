@@ -69,6 +69,6 @@ If any of this tracks, the six-signal pattern is probably running somewhere in y
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/stalled-portco)
 - [Decision-first finance: the methodology](https://decisive.finance/perspectives/decision-first-finance)
 - [A field guide to spotting stalled portcos](https://decisive.finance/perspectives/stalled-portco-field-guide-for-investors)

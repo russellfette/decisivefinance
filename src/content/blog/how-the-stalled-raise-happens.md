@@ -83,6 +83,6 @@ To see where you sit between growth and runway before the next investor conversa
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/stalled-portco)
 - [The CEO/investor fracture: the silent break in year two](https://decisive.finance/perspectives/ceo-investor-fracture)
 - [The down-round conversation: how to time it](https://decisive.finance/perspectives/down-round-conversation-timing)

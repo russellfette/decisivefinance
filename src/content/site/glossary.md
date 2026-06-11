@@ -10,13 +10,13 @@
 
 A post-Series A or Series B company that has stopped moving. Revenue holds or creeps. Burn is the thing that grows. The board deck still has up-and-to-the-right charts. The next round is six months overdue. Alive on the cap table. Dead in the forecast.
 
-**See:** [The stalled portco](/perspectives/walking-dead-portco)
+**See:** [The stalled portco](/perspectives/stalled-portco)
 
 ## 2. Six-signal pattern
 
 The Six Trap Diagnostic™ that together define a stalled portco. Three of six is enough to be in the category. The signals are: ratio mirage, board question shift, CEO/investor fracture, stalled raise, retrospective CFO, and trapped value with no owner.
 
-**See:** [The stalled portco](/perspectives/walking-dead-portco)
+**See:** [The stalled portco](/perspectives/stalled-portco)
 
 ## 3. Ratio mirage
 

@@ -69,6 +69,6 @@ If any of this is recognizable, the pattern is farther along than the reassuranc
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/stalled-portco)
 - [The CEO/investor fracture: the silent break in year two](https://decisive.finance/perspectives/ceo-investor-fracture)
 - [The one-page decision slide every board should see](https://decisive.finance/perspectives/one-page-decision-slide-for-boards)

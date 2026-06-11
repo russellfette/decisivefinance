@@ -78,6 +78,6 @@ If this pattern is recognizable, the self-assessment takes six minutes and names
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/stalled-portco)
 - [The board question shift: when softer questions are the real signal](https://decisive.finance/perspectives/the-board-question-shift)
 - [How the stalled raise actually happens](https://decisive.finance/perspectives/how-the-stalled-raise-happens)
