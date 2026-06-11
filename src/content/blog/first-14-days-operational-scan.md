@@ -102,5 +102,5 @@ To see what the Day 14 deliverable looks like before committing to anything, [pr
 Related reading:
 
 - [Decision-first finance: the methodology](https://decisive.finance/perspectives/decision-first-finance)
-- [Walking dead recovery: day 1 to day 90](https://decisive.finance/perspectives/walking-dead-recovery-day-1-to-90)
+- [Walking dead recovery: day 1 to day 90](https://decisive.finance/perspectives/stalled-recovery-day-1-to-90)
 - [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/perspectives/financial-rhythm-system-monthly-cadence)

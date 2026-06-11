@@ -81,6 +81,6 @@ The CFO mirage is one of the six stalled portco signals. The self-assessment nam
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/stalled-portco)
 - [Why retrospective finance fails growth-stage companies](https://decisive.finance/perspectives/why-retrospective-finance-fails-growth-stage)
 - [The one-page decision slide every board should see](https://decisive.finance/perspectives/one-page-decision-slide-for-boards)

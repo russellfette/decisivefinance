@@ -144,6 +144,6 @@ If you want the board-pack rewrite spec before you talk to us, the Board-Ready D
 
 *Further reading on this pillar:*
 - [The Six-Trap Diagnostic, explained](/perspectives/six-trap-diagnostic-explained)
-- [Three paths: how to use the Three-Path Model](/perspectives/three-path-model-how-to-use)
+- [The Three-Path Model inside the engagement](/how-it-works)
 - [Decision-first finance vs. fractional CFO](/perspectives/decision-first-finance-vs-fractional-cfo)
-- [Why we put money behind the guarantee](/perspectives/guarantee-why-we-put-money-behind-it)
+- [Why we put money behind the guarantee](/guarantee)

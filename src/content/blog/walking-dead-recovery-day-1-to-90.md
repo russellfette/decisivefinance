@@ -88,6 +88,6 @@ To see what the Day 14 report looks like for a company your size, [preview the T
 
 Related reading:
 
-- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
+- [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/stalled-portco)
 - [Decision-first finance: the methodology](https://decisive.finance/perspectives/decision-first-finance)
 - [The Financial Rhythm System: what a monthly cadence looks like](https://decisive.finance/perspectives/financial-rhythm-system-monthly-cadence)
