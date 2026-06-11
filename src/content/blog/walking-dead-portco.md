@@ -90,13 +90,11 @@ A stalled portco typically has five decisions running in the background that sho
 
 Pick one. Model three paths. Decide. Move to the next. Inside 90 days, five of them are resolved. That is the recovery.
 
-## What about the $22.5K to $30K?
+## Where does the $22,500 come from?
 
-Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. That recovery funds the Three-Path work that follows. This is not an accident. It is how we structured the firm. Inside the first 14 days of a Diagnostic, we run a scan across eight categories:
+Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. That recovery funds the Three-Path work that follows. This is not an accident. It is how we structured the firm. Inside the first 14 days of a Diagnostic, we run a scan across the five canon recovery categories: Cost, Pricing, Growth Spend, Product Line, Capital Structure. The Cost sweep alone covers SaaS audits, cloud infrastructure, R&D tax credits, AR and cash acceleration, vendor terms, revenue leakage, contractor load, and G&A overhead.
 
-SaaS audits. Cloud infrastructure. R&D tax credits. AR and cash acceleration. Vendor terms. Revenue leakage. Headcount and contractor review. G&A overhead.
-
-Not all eight hit in every engagement. Four to six always do. The 14-day number is what surfaces as trapped value. The recovery follows: some items clear inside 30 days (AR, SaaS, contract cleanup), others file in month 2 or 3 (R&D credits). Either way, the number pays for the decision work that matters more, which is picking the five decisions that change the company's trajectory and running them three ways.
+Not every category hits in every engagement. Most do. The 14-day number is what surfaces as trapped value. The recovery follows: some items clear inside 30 days (AR, SaaS, contract cleanup), others file in month 2 or 3 (R&D credits). Either way, the number pays for the decision work that matters more, which is picking the five decisions that change the company's trajectory and running them three ways.
 
 ## Coming back
 
@@ -125,6 +123,8 @@ If the self-assessment comes back in the high range, the follow-up is a 30-minut
 **[Book a 30-minute call](https://calendly.com/russell-decisive/30min)**
 
 ---
+
+Wondering which side of stalled you are on? [Run the Next Call Self-Assessment](https://decisive.finance/assessment/next-call/): six screens, six minutes, a board-grade read on the growth-versus-runway call.
 
 *Further reading on this pillar:*
 - [What a stalled portco actually is](/perspectives/what-stalled-portco-actually-is)

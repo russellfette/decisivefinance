@@ -79,6 +79,8 @@ If your raise has been in process for more than four months, the other signals a
 
 [Take the self-assessment](https://decisive.finance/assessment/walking-dead)
 
+To see where you sit between growth and runway before the next investor conversation, [run the Next Call Self-Assessment](https://decisive.finance/assessment/next-call/). Six screens, six minutes, your numbers against the cohort.
+
 Related reading:
 
 - [The stalled portco: what it is, how to spot it, how to come back](https://decisive.finance/perspectives/walking-dead-portco)
