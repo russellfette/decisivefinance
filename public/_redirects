@@ -17,10 +17,6 @@
 /financial-rhythms         /              301
 /financial-rhythms/*       /              301
 
-# Stalled Raise Self-Assessment: legacy walking-dead URL -> rebrand
-/assessment/walking-dead/   /assessment/stalled-raise/   301
-/assessment/walking-dead    /assessment/stalled-raise/   301
-
 # Blog -> Perspectives URL rename
 /blog                      /perspectives                  301
 /blog/                     /perspectives                  301

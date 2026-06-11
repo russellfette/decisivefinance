@@ -92,7 +92,7 @@ Fourteen days total. Nothing ships to the client's calendar without a 48-hour he
 
 ## Where to go from here
 
-The Diagnostic is a fixed-fee engagement with a guaranteed floor of $22,500 to $30,000 in recovered capital in 14 days. If we miss, the fee refunds.
+The Diagnostic is a fixed-fee engagement with a guaranteed floor of $22,500 in named value in 14 days ($30,000 from $3M ARR). If we miss, the fee refunds.
 
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)

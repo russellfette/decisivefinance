@@ -58,7 +58,7 @@ A CFO who is stuck produces clean retrospective decks. Variance explained. Bridg
 
 ### 6. There is $22.5K to $30K of trapped value no one is chasing
 
-We have yet to open a Diagnostic on a stalled portco and not surface at least $22,500 of trapped value in the first 14 days. Most Diagnostics surface $22.5K to $30K. Some clear far more. Vendor overages on SaaS no one audited. R&D credits the bookkeeper never filed. AR that went 90 days because nobody made the call. Contract terms that auto-renewed past the point of need. In a stalled portco, someone is always busy, and no one is running the recovery.
+We have yet to open a Diagnostic on a stalled portco and not surface at least $22,500 of trapped value in the first 14 days. Engagements to date: 5x to 10x the fee. Some clear far more. Vendor overages on SaaS no one audited. R&D credits the bookkeeper never filed. AR that went 90 days because nobody made the call. Contract terms that auto-renewed past the point of need. In a stalled portco, someone is always busy, and no one is running the recovery.
 
 If you nodded at three of those, the rest of this guide is for you.
 
@@ -92,7 +92,7 @@ Pick one. Model three paths. Decide. Move to the next. Inside 90 days, five of t
 
 ## What about the $22.5K to $30K?
 
-Most Diagnostics surface $22,500 to $30,000 of trapped value in 14 days. Guaranteed. That recovery funds the Three-Path work that follows. This is not an accident. It is how we structured the firm. Inside the first 14 days of a Diagnostic, we run a scan across eight categories:
+Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. That recovery funds the Three-Path work that follows. This is not an accident. It is how we structured the firm. Inside the first 14 days of a Diagnostic, we run a scan across eight categories:
 
 SaaS audits. Cloud infrastructure. R&D tax credits. AR and cash acceleration. Vendor terms. Revenue leakage. Headcount and contractor review. G&A overhead.
 
