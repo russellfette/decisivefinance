@@ -14,7 +14,7 @@ featured: true
 ## At a glance
 
 - Series B SaaS company, $18M ARR, 140 employees, 16 months post-Series B, raise had been in process for 5 months.
-- Diagnostic surfaced $47,000 of trapped value in 22 days across four of the eight categories: SaaS subscription audit ($18K), R&D tax credit filing ($14K), AR acceleration ($9K), and two vendor renegotiations ($6K).
+- Diagnostic surfaced $47,000 of trapped value in 22 days across four recovery fronts: SaaS subscription audit ($18K), R&D tax credit filing ($14K), AR acceleration ($9K), and two vendor renegotiations ($6K).
 - Core decision unstuck: the SDR motion was running by default at a negative contribution margin. A Three-Path Model landed on Kill. Six FTEs redeployed to customer success. The raise narrative changed on the next board call.
 
 ## Situation
@@ -53,7 +53,7 @@ The ratio mirage was specific, measurable, and traceable to two definition chang
 - Structured interview with the CEO (90 minutes, recorded).
 - Structured interview with the chair of the audit committee (45 minutes).
 - Six-Trap mapping.
-- First cash-recovery sweep across the eight categories.
+- First cash-recovery sweep across the five canon recovery categories.
 - Ratio restatement on the three load-bearing numbers.
 - Diagnostic memo delivered on day 14: trap stack, ratio restatement, five decisions queued for Three-Path.
 

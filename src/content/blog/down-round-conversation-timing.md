@@ -85,6 +85,8 @@ If the raise has been in process for four months and the comps are compressing, 
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)
 
+Before you time the conversation, get the read: [the Next Call Self-Assessment](https://decisive.finance/assessment/next-call/) benchmarks your burn multiple, runway, and growth against the post-Series A and B cohort in six minutes.
+
 Related reading:
 
 - [How the stalled raise actually happens](https://decisive.finance/perspectives/how-the-stalled-raise-happens)

@@ -55,7 +55,7 @@ If the company offers to have the restated view for the next meeting, book the f
 
 ## Question 3: What is the cash recovery posture?
 
-*What is the company's trapped-capital position across the eight categories, and who owns the recovery?*
+*What is the company's trapped value position across the five canon recovery categories, and who owns the recovery?*
 
 This one tends to produce the longest silence in the room. Most CFOs have not been asked about trapped value by name. The question forces an acknowledgement that cash recovery is a finance responsibility, not a procurement or operations side-project.
 
@@ -82,6 +82,8 @@ In our experience across portfolio engagements, boards that ask these three ques
 For the full detection and intervention sequence from the investor seat:
 
 [Read: A field guide to spotting stalled portcos](https://decisive.finance/perspectives/stalled-portco-field-guide-for-investors)
+
+If you want the founder to do the homework before the meeting, send them [the Next Call Self-Assessment](https://decisive.finance/assessment/next-call/): six screens, their numbers against the cohort, a board-grade read they can bring into the room.
 
 Related reading:
 

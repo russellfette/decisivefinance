@@ -74,6 +74,8 @@ If a bridge term sheet is on the table this quarter, run the three exclusions ag
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)
 
+Not sure whether you are bridging into a round or into a wall? [Run the Next Call Self-Assessment](https://decisive.finance/assessment/next-call/) and take the dashboard into the term-sheet conversation.
+
 Related reading:
 
 - [The down-round conversation: how to time it](https://decisive.finance/perspectives/down-round-conversation-timing)

@@ -77,6 +77,8 @@ If your company runs on a chart of accounts and a budget but no register, the th
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)
 
+The register shows up first inside the Diagnostic. [Preview the Trapped Value Report](https://decisive.finance/resources/recovery-checklist/) to see how the five categories and effort tiers are laid out.
+
 Related reading:
 
 - [The first 14 days: what an operational scan covers](https://decisive.finance/perspectives/first-14-days-operational-scan)

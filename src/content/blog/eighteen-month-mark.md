@@ -68,6 +68,8 @@ If three or more of the tells above are live in your last three exec meetings, t
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)
 
+If you are at the 18-month mark now, [run the Next Call Self-Assessment](https://decisive.finance/assessment/next-call/): six screens, your numbers against the post-Series A and B cohort, a board-grade read on the call you are sitting on.
+
 Related reading:
 
 - [How the stalled raise actually happens](https://decisive.finance/perspectives/how-the-stalled-raise-happens)

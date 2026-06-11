@@ -27,7 +27,7 @@ A stalled portco does not turn around by accelerating. It turns around by decidi
 
 The first fourteen days do three things in parallel. They surface cash. They restate the numbers the board actually uses. They produce one decision on paper.
 
-1. **Cash recovery scan across eight categories.** SaaS overages, cloud spend, R&D credits, AR aging, vendor terms, revenue leakage, headcount and contractor load, G&A creep. Every Diagnostic we have run has surfaced at least $22,500 of recoverable capital inside this window. Most land between $22,500 and $30,000. Some clear far more. The mechanical work is done by the engagement team; the company keeps the cash.
+1. **Cash recovery scan across the five canon recovery categories.** Cost, Pricing, Growth Spend, Product Line, Capital Structure. The Cost sweep covers SaaS overages, cloud spend, R&D credits, AR aging, vendor terms, revenue leakage, contractor load, G&A creep. Every Diagnostic we have run has surfaced at least $22,500 of trapped value inside this window. Engagements to date: 5x to 10x the fee. Some clear far more. The mechanical work is done by the engagement team; the company keeps the cash.
 2. **Ratio restatement.** Gross margin, LTV/CAC, and net revenue retention restated against one explicit customer definition and one explicit cohort break. This is the *ratio mirage* fix, and it is what makes the next eleven weeks of decisions legible to the board.
 3. **First Three-Path Model.** Keep, Kill, Restructure on the one decision the CEO and lead investor have been avoiding for two quarters. Usually the go-to-market motion, the product portfolio, or a senior hire that has not worked. Dollars under each path. Timing. A recommended path.
 
@@ -83,6 +83,8 @@ A Diagnostic is the first fourteen days of this sequence. It costs a fixed fee, 
 
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)
+
+To see what the Day 14 report looks like for a company your size, [preview the Trapped Value Report](https://decisive.finance/resources/recovery-checklist/): three questions, five categories, an effort tier per finding.
 
 Related reading:
 

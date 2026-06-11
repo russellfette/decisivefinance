@@ -63,7 +63,7 @@ The third instrument is the one that keeps the first two compounding. Most CFO e
 
 - **Monthly decision review** (60 minutes, CEO + CFO): each open Three-Path gets re-reviewed. New decisions added. Resolved decisions archived.
 - **Monthly trap reread** (30 minutes): which traps from the Six-Trap Diagnostic are showing up in this month's operations, and where?
-- **Monthly cash sweep** (30 minutes): fresh scan of the eight cash-recovery categories. New recoveries queued, old ones closed.
+- **Monthly cash sweep** (30 minutes): fresh scan of the five canon recovery categories. New recoveries queued, old ones closed.
 - **Quarterly pricing and unit-economics re-ground**: are the ratios we report still measuring what we think they measure?
 - **Quarterly board pack rewrite**: one page of variance, four pages of decisions.
 
@@ -91,7 +91,7 @@ Two practical consequences:
 - Structured interview with the CEO (90 minutes, recorded).
 - Structured interview with the board's lead operator or director (30 minutes).
 - Six-Trap mapping.
-- First cash-recovery sweep across the eight categories.
+- First cash-recovery sweep across the five canon recovery categories.
 - Delivery of the diagnostic memo: trap stack, five decisions queued for Three-Path, initial cash recovery pipeline.
 
 **Typical outcome by day 14:** the full $22.5K to $30K of trapped value identified and documented, three to five decisions ranked, trap stack named.

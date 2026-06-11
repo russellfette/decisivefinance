@@ -32,7 +32,7 @@ A methodology that moves finance's primary deliverable from retrospective report
 
 ## 5. Six-Trap Diagnostic
 
-A two-week, fixed-fee engagement that runs across eight cash-recovery categories, restates the company's three headline ratios against an explicit customer definition, and produces the first Three-Path Model on a material decision. The guarantee: put in $7,500, at least $22,500 of trapped value named in 14 days, or the Diagnostic is free.
+A two-week, fixed-fee engagement that runs across the five canon recovery categories (Cost, Pricing, Growth Spend, Product Line, Capital Structure), restates the company's three headline ratios against an explicit customer definition, and produces the first Three-Path Model on a material decision. The guarantee: put in $7,500, at least $22,500 of trapped value named in 14 days, or the Diagnostic is free.
 
 **See:** [What the first 14 days actually look like](/perspectives/first-14-days-operational-scan) and [the guarantee](/guarantee)
 
@@ -56,7 +56,7 @@ A rolling 18-month cash view with three sensitivities (base, downside, upside), 
 
 ## 9. trapped value
 
-Recoverable cash sitting across one of eight categories in a funded technology company: SaaS overages, cloud infrastructure, R&D tax credits, AR aging, vendor terms, revenue leakage, headcount and contractor load, and G&A overhead. In a stalled portco, at least $22,500 of trapped value named in 14 days is the floor we have yet to miss.
+Recoverable cash sitting in past decisions across the five canon recovery categories: Cost, Pricing, Growth Spend, Product Line, and Capital Structure. The Cost sweep alone runs SaaS overages, cloud infrastructure, R&D tax credits, AR aging, vendor terms, revenue leakage, contractor load, and G&A overhead. In a stalled portco, at least $22,500 of trapped value named in 14 days is the floor we have yet to miss.
 
 **See:** [What the first 14 days actually look like](/perspectives/first-14-days-operational-scan) and [the guarantee](/guarantee)
 

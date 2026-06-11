@@ -17,7 +17,7 @@ readingTime: 7
 
 ## At a glance
 
-- Day 1 to 3: access, eight-category inventory, first interviews. Day 4 to 8: the scan. Day 9 to 11: ratio restatement. Day 12 to 14: Three-Path Model and readout.
+- Day 1 to 3: access, the recovery inventory, first interviews. Day 4 to 8: the scan. Day 9 to 11: ratio restatement. Day 12 to 14: Three-Path Model and readout.
 - Client time during the two weeks is usually 3 to 5 hours in week one and 6 to 8 hours in week two. The rest runs offline.
 - By day 14 the company has cash recovered, numbers restated, and one Keep/Kill/Restructure decision on paper ready for the next board vote.
 
@@ -33,13 +33,13 @@ Nothing is touched without a clean access trail. Every pull is logged. The engag
 
 ## What happens Day 2 to Day 3?
 
-Day 2 and 3 are the eight-category inventory. One engineer on the team runs the cloud-billing scan and the SaaS-subscription pull. A second runs the R&D tax credit pre-read against the last three years of returns. A third runs AR aging and vendor terms. Finance runs headcount, contractor, and G&A extracts.
+Day 2 and 3 are the recovery inventory, built against the five canon recovery categories (Cost, Pricing, Growth Spend, Product Line, Capital Structure). The Cost category carries the heaviest mechanical load: One engineer on the team runs the cloud-billing scan and the SaaS-subscription pull. A second runs the R&D tax credit pre-read against the last three years of returns. A third runs AR aging and vendor terms. Finance runs headcount, contractor, and G&A extracts.
 
-By end of Day 3 the team has a one-page inventory for each of the eight categories. Nothing is acted on yet. The point of the inventory is to have a single view of where every dollar could be in one of the eight buckets, so the scan in Days 4-8 can be in dollars and prioritized.
+By end of Day 3 the team has a one-page inventory for each of the five categories. Nothing is acted on yet. The point of the inventory is a single view of where every dollar could be, so the scan in Days 4 to 8 can be in dollars and prioritized.
 
 ## What happens Day 4 to Day 8?
 
-This is the week of the scan. The eight categories get worked in order of expected recovery and risk.
+This is the week of the scan. The five categories get worked in order of expected recovery and risk.
 
 - SaaS subscription overages and duplicated tools: usually the fastest recovery. Found, documented, terminations or downgrades staged for client approval.
 - Cloud infrastructure: committed-use gaps, reserved instance holes, right-sizing misses. Recoverable; work continues into Day 7.
@@ -76,7 +76,7 @@ Day 14: Readout. A 90-minute session with the CEO, CFO, and optionally the lead 
 
 Three deliverables, each one page or close to it.
 
-1. **Cash Recovery Schedule.** A line-item view of every dollar recovered or queued across the eight categories. Always above $22,500 in our engagements. Most engagements clear $30K. Some clear far more.
+1. **Cash Recovery Schedule.** A line-item view of every dollar recovered or queued across the five categories. Always above $22,500 in our engagements. Engagements to date: 5x to 10x the fee.
 2. **Restated Ratios Summary.** Reported vs. restated gross margin, LTV/CAC, NRR. Driver notes for each gap. A single-page document.
 3. **Three-Path Model.** The first Keep/Kill/Restructure on the decision the company has been running by default.
 
@@ -96,6 +96,8 @@ The Diagnostic is a fixed-fee engagement with a guaranteed floor of $22,500 in n
 
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)
+
+To see what the Day 14 deliverable looks like before committing to anything, [preview the Trapped Value Report](https://decisive.finance/resources/recovery-checklist/): three questions, sized to your ARR, organized in the five canon categories.
 
 Related reading:
 
