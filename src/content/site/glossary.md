@@ -32,7 +32,7 @@ A methodology that moves finance's primary deliverable from retrospective report
 
 ## 5. Six-Trap Diagnostic
 
-A two-week, fixed-fee engagement that runs across eight cash-recovery categories, restates the company's three headline ratios against an explicit customer definition, and produces the first Three-Path Model on a material decision. Cash recovery floor: $22,500 to $30,000 in 14 days. Guaranteed.
+A two-week, fixed-fee engagement that runs across eight cash-recovery categories, restates the company's three headline ratios against an explicit customer definition, and produces the first Three-Path Model on a material decision. The guarantee: put in $7,500, at least $22,500 of trapped value named in 14 days, or the Diagnostic is free.
 
 **See:** [What the first 14 days actually look like](/perspectives/first-14-days-operational-scan) and [the guarantee](/guarantee)
 
@@ -56,7 +56,7 @@ A rolling 18-month cash view with three sensitivities (base, downside, upside), 
 
 ## 9. trapped value
 
-Recoverable cash sitting across one of eight categories in a funded technology company: SaaS overages, cloud infrastructure, R&D tax credits, AR aging, vendor terms, revenue leakage, headcount and contractor load, and G&A overhead. In a stalled portco, $22,500 to $30,000 of trapped value is the floor we have yet to miss in 14 days.
+Recoverable cash sitting across one of eight categories in a funded technology company: SaaS overages, cloud infrastructure, R&D tax credits, AR aging, vendor terms, revenue leakage, headcount and contractor load, and G&A overhead. In a stalled portco, at least $22,500 of trapped value named in 14 days is the floor we have yet to miss.
 
 **See:** [What the first 14 days actually look like](/perspectives/first-14-days-operational-scan) and [the guarantee](/guarantee)
 

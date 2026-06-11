@@ -69,7 +69,7 @@ The third meeting is the one that compounds. Decisions start arriving smaller an
 
 ## What is the Decisive Finance role in this?
 
-The hard part of meeting one is not the format. It is the math, because the three-path models on the stuck calls usually do not exist yet. The 14-day Decision Diagnostic builds them: the three decisions that matter, modeled as Keep, Kill, Restructure with dollars under each path, ready to defend. Guaranteed 3x your Diagnostic fee in trapped value, in 14 days. Typical 5x to 10x. Most clients run their first Decision Review in the same week the Diagnostic lands.
+The hard part of meeting one is not the format. It is the math, because the three-path models on the stuck calls usually do not exist yet. The 14-day Decision Diagnostic builds them: the three decisions that matter, modeled as Keep, Kill, Restructure with dollars under each path, ready to defend. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. Most clients run their first Decision Review in the same week the Diagnostic lands.
 
 ## Where to go from here
 

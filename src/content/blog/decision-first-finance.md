@@ -20,7 +20,7 @@ pillarHub: true
 
 - Decision-first finance is a CFO methodology, not a service tier. It reorganizes the finance function around the next five material decisions the company has to make, not the last five months of variance.
 - The core instruments are the Six-Trap Diagnostic (what pattern you are in), the Three-Path Model (Keep, Kill, Restructure on every material decision), and the Financial Rhythm System (the monthly cadence that keeps the work compounding after the engagement ends).
-- A fractional CFO fills a chair. Decision-first finance changes what the chair does. Same hours, different output: a Three-Path Model on every decision that matters, a board deck that drives the next decision instead of explaining the last one, and $22,500 to $30,000 of trapped value surfaced in 14 days to pay for the work.
+- A fractional CFO fills a chair. Decision-first finance changes what the chair does. Same hours, different output: a Three-Path Model on every decision that matters, a board deck that drives the next decision instead of explaining the last one, and at least $22,500 of trapped value named in 14 days to pay for the work.
 
 ## Why "decision-first"
 

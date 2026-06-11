@@ -61,7 +61,7 @@ The fee is $7,500 under $3M ARR and $10,000 from $3M to $8M ARR. A first-year au
 
 ## What is the Decisive Finance role in this?
 
-The Diagnostic is ours: a 14-day scan across the five canon categories, run against your actual financials, ending in a dollar figure and a decision list rather than an opinion letter. Guaranteed 3x your Diagnostic fee in trapped value, in 14 days. Typical 5x to 10x. Keep your auditor; they are doing a job we do not do. We don't audit the past. We justify each next call.
+The Diagnostic is ours: a 14-day scan across the five canon categories, run against your actual financials, ending in a dollar figure and a decision list rather than an opinion letter. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. Keep your auditor; they are doing a job we do not do. We don't audit the past. We justify each next call.
 
 ## Where to go from here
 

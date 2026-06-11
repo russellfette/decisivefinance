@@ -63,7 +63,7 @@ This one tends to produce the longest silence in the room. Most CFOs have not be
 
 **What a drifting company answers:** *We have not done a formal scan. We could probably find some opportunities, but the team has been focused on the raise.* The answer is the opening. An external Diagnostic is the appropriate response, and the GP can underwrite it on the spot.
 
-The recovery floor is $22,500 to $30,000 across the eight categories. No company we have run a Diagnostic on has come in under that floor. The range is worth citing by name when asking this question, because it sets the frame for what "a scan" means.
+The guarantee floor is $22,500 ($30,000 from $3M ARR). No company we have run a Diagnostic on has come in under that floor. The range is worth citing by name when asking this question, because it sets the frame for what "a scan" means.
 
 ## How to sequence them
 

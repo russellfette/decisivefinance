@@ -1,0 +1,1559 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>The Next Call Self-Assessment | Decisive Finance</title>
+<meta name="description" content="Eighteen months in. Six screens. Real numbers in, live cohort benchmarks, a board-grade read on the growth-versus-runway call you are sitting on right now." />
+<link rel="canonical" href="https://decisive.finance/assessment/next-call/" />
+
+<meta property="og:site_name" content="Decisive Finance" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The Next Call Self-Assessment | Decisive Finance" />
+<meta property="og:description" content="Eighteen months in. Six screens. Live cohort benchmarks. A board-grade read on the call you are at." />
+<meta property="og:url" content="https://decisive.finance/assessment/next-call/" />
+<meta property="og:image" content="https://decisive.finance/og-next-call-assessment.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" />
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"The Next Call Self-Assessment","applicationCategory":"BusinessApplication","operatingSystem":"Any","url":"https://decisive.finance/assessment/next-call/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"ProfessionalService","name":"Decisive Finance","url":"https://decisive.finance"}}
+</script>
+
+<style>
+:root{
+  --ink:#182228;
+  --ink-2:#214c52;
+  --ink-3:#2c3a42;
+  --orange:#e3632b;
+  --orange-2:#c8501a;
+  --paper:#ffffff;
+  --bone:#f7f9fa;
+  --bone-2:#eef2f4;
+  --rule:#dde4e7;
+  --rule-2:#c4ced3;
+  --muted:#5a6a72;
+  --muted-2:#8694a0;
+
+  /* RAG */
+  --rag-g:#1f8a5b;       /* green: healthy */
+  --rag-g-bg:#e6f4ee;
+  --rag-a:#b88412;       /* amber: stretched */
+  --rag-a-bg:#fbf2dc;
+  --rag-r:#b03a2e;       /* red: stalled */
+  --rag-r-bg:#fbe6e2;
+  --rag-n:#5a6a72;       /* neutral */
+  --rag-n-bg:#eef2f4;
+
+  --shadow-sm: 0 1px 2px rgba(24,34,40,0.04);
+  --shadow:    0 1px 2px rgba(24,34,40,0.04), 0 8px 24px rgba(24,34,40,0.06);
+  --shadow-lg: 0 10px 40px rgba(24,34,40,0.10);
+
+  --width-prose: 760px;
+  --width-hero: 920px;
+  --width-content: 1180px;
+
+  --r-sm: 8px;
+  --r:    10px;
+  --r-lg: 14px;
+  --r-xl: 18px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Inter','SF Pro Text',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  font-size:16.5px;line-height:1.55;color:var(--ink);background:var(--bone);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+.mono{font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Consolas,monospace;font-feature-settings:"tnum"}
+a{color:var(--ink-2);text-decoration:underline;text-underline-offset:3px}
+a:hover{color:var(--orange-2)}
+
+/* ---------- Topbar ---------- */
+.topbar{background:var(--paper);border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:50}
+.topbar-inner{max-width:var(--width-content);margin:0 auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:16.5px;letter-spacing:-0.01em;color:var(--ink);text-decoration:none}
+.brand-mark{width:10px;height:10px;border-radius:50%;background:var(--orange);display:inline-block;flex:0 0 auto}
+.brand-text{text-transform:none}
+.topbar-cta{font-size:14px;color:var(--muted);text-decoration:none}
+.topbar-cta strong{color:var(--ink)}
+@media (max-width:560px){ .topbar-cta{display:none} }
+
+/* ---------- Layout ---------- */
+.shell{max-width:var(--width-hero);margin:0 auto;padding:32px 20px 80px}
+.shell-wide{max-width:var(--width-content);margin:0 auto;padding:32px 20px 80px}
+.cover .shell{padding-top:44px}
+.eyebrow{text-transform:uppercase;letter-spacing:0.14em;font-size:11.5px;font-weight:700;color:var(--ink-2)}
+.eyebrow-orange{color:var(--orange-2)}
+h1{font-size:clamp(34px,5.2vw,52px);line-height:1.06;letter-spacing:-0.022em;margin:14px 0 14px;font-weight:700}
+.hero-h1{display:flex;flex-direction:column;gap:0;line-height:1.08}
+.hero-h1 span{display:block}
+.hero-h1-accent{color:var(--orange-2)}
+h2{font-size:26px;line-height:1.18;letter-spacing:-0.015em;margin:0 0 10px;font-weight:700}
+h3{font-size:18px;line-height:1.22;margin:0 0 6px;font-weight:600}
+p{margin:0 0 14px}
+.lede{font-size:20px;line-height:1.45;color:var(--ink);max-width:var(--width-prose)}
+.muted{color:var(--muted)}
+.dollar{color:var(--orange-2);font-weight:600;white-space:nowrap}
+.rule{height:1px;background:var(--rule);margin:24px 0;border:0}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:inherit;font-size:15.5px;font-weight:600;letter-spacing:-0.005em;padding:13px 22px;border-radius:999px;border:1px solid transparent;cursor:pointer;text-decoration:none;line-height:1;transition:transform .08s ease,background-color .15s ease,border-color .15s ease,color .15s ease;min-height:46px}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--orange);color:#fff;border-color:var(--orange)}
+.btn-primary:hover{background:var(--orange-2);border-color:var(--orange-2);color:#fff}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--rule-2)}
+.btn-ghost:hover{border-color:var(--ink);color:var(--ink)}
+.btn-link{background:transparent;color:var(--muted);border:0;padding:8px 4px;font-weight:500;text-decoration:underline;text-underline-offset:3px;min-height:auto}
+.btn-link:hover{color:var(--ink)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+/* ---------- Cover ---------- */
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:center}
+.trust{display:flex;flex-wrap:wrap;gap:14px 24px;font-size:13.5px;color:var(--muted);margin-top:20px}
+.trust b{color:var(--ink);font-weight:600}
+
+/* hero kpi tiles preview on cover */
+.preview{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+@media (max-width:760px){ .preview{grid-template-columns:repeat(2,1fr)} }
+.preview-tile{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r);padding:12px 14px}
+.preview-tile .pl{font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);font-weight:600}
+.preview-tile .pv{font-size:18px;font-weight:700;letter-spacing:-0.01em;margin-top:2px}
+.preview-tile .ps{font-size:12px;color:var(--muted);margin-top:1px}
+
+/* ---------- Progress ---------- */
+.progress-wrap{display:flex;align-items:center;gap:12px;margin:0 0 20px;font-size:12.5px;color:var(--muted)}
+.progress-track{flex:1;height:6px;background:var(--rule);border-radius:999px;overflow:hidden}
+.progress-fill{height:100%;background:var(--orange);width:0%;transition:width .35s cubic-bezier(.2,.8,.2,1)}
+
+/* Two-column layout while inputting: form left, live read right */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,360px);gap:24px}
+@media (max-width:880px){ .split{grid-template-columns:1fr} }
+
+/* ---------- Card ---------- */
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:24px}
+@media (min-width:680px){ .card{padding:30px} }
+.card-tight{padding:18px}
+
+/* ---------- Form: questions ---------- */
+.q-eyebrow{text-transform:uppercase;letter-spacing:0.14em;font-size:11px;font-weight:700;color:var(--ink-2);margin-bottom:8px}
+.q-stem{font-size:clamp(20px,2.4vw,26px);line-height:1.25;letter-spacing:-0.012em;margin:0 0 6px;font-weight:600}
+.q-help{font-size:14px;color:var(--muted);margin:0 0 18px}
+
+.options{display:flex;flex-direction:column;gap:9px;margin:0 0 8px;padding:0;list-style:none}
+.opt{display:flex;align-items:center;gap:12px;padding:13px 16px;background:var(--paper);border:1.5px solid var(--rule);border-radius:var(--r);cursor:pointer;transition:border-color .12s ease,background-color .12s ease;font-size:15.5px;line-height:1.35}
+.opt:hover{border-color:var(--ink-2)}
+.opt input{appearance:none;-webkit-appearance:none;width:18px;height:18px;border:1.5px solid var(--rule-2);border-radius:50%;flex:0 0 auto;display:grid;place-items:center;background:#fff;cursor:pointer}
+.opt input::after{content:"";width:9px;height:9px;border-radius:50%;background:#fff;transform:scale(0);transition:transform .12s ease}
+.opt input:checked{background:var(--orange);border-color:var(--orange)}
+.opt input:checked::after{transform:scale(1)}
+.opt:has(input:checked){border-color:var(--orange);background:linear-gradient(0deg,rgba(227,99,43,0.05),rgba(227,99,43,0.05)),#fff}
+
+.opt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:9px}
+.opt-grid .opt{justify-content:flex-start}
+
+/* Number / text inputs */
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:6px 0 4px}
+@media (max-width:560px){ .field-row{grid-template-columns:1fr} }
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1 / -1}
+.field label{font-size:13px;font-weight:600;color:var(--ink)}
+.field .input-wrap{position:relative}
+.field input[type=text],.field input[type=email],.field input[type=number]{font:inherit;font-size:16px;padding:13px 14px 13px 14px;border:1.5px solid var(--rule);border-radius:10px;background:#fff;color:var(--ink);transition:border-color .12s ease;width:100%}
+.field input:focus{outline:none;border-color:var(--ink-2)}
+.field .input-wrap.with-prefix input{padding-left:30px}
+.field .input-wrap.with-suffix input{padding-right:42px}
+.field .input-prefix{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:500;pointer-events:none}
+.field .input-suffix{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px;pointer-events:none}
+.field .hint{font-size:12.5px;color:var(--muted)}
+.field .hint b{color:var(--ink-2);font-weight:600}
+
+/* slider for growth */
+input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:6px;background:var(--rule);border-radius:999px;outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;background:var(--orange);border:2px solid #fff;border-radius:50%;box-shadow:var(--shadow-sm);cursor:pointer}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;background:var(--orange);border:2px solid #fff;border-radius:50%;box-shadow:var(--shadow-sm);cursor:pointer}
+
+/* checkbox list (activities) */
+.checks{display:flex;flex-direction:column;gap:10px;margin:6px 0 0;padding:0;list-style:none}
+.check{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:flex-start;padding:14px 16px;background:var(--paper);border:1.5px solid var(--rule);border-radius:var(--r);cursor:pointer;transition:border-color .12s ease,background-color .12s ease}
+.check:has(input:checked){border-color:var(--rag-g);background:linear-gradient(0deg,var(--rag-g-bg),var(--rag-g-bg)),#fff}
+.check input[type=checkbox]{appearance:none;-webkit-appearance:none;width:20px;height:20px;border:1.5px solid var(--rule-2);border-radius:5px;background:#fff;cursor:pointer;display:grid;place-items:center;margin-top:2px}
+.check input[type=checkbox]:checked{background:var(--rag-g);border-color:var(--rag-g)}
+.check input[type=checkbox]:checked::after{content:"";width:11px;height:6px;border-left:2.5px solid #fff;border-bottom:2.5px solid #fff;transform:rotate(-45deg) translate(0,-1px)}
+.check-body{min-width:0}
+.check-name{font-size:15px;font-weight:600;line-height:1.3;color:var(--ink)}
+.check-desc{font-size:13px;color:var(--muted);line-height:1.4;margin-top:2px}
+.check-tag{font-size:11.5px;font-weight:600;color:var(--rag-r);background:var(--rag-r-bg);padding:4px 8px;border-radius:999px;white-space:nowrap;align-self:center}
+.check:has(input:checked) .check-tag{color:var(--rag-g);background:transparent;font-weight:600}
+.check:has(input:checked) .check-tag::before{content:"covered ✓"}
+.check:has(input:checked) .check-tag-text{display:none}
+
+/* Q nav */
+.q-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid var(--rule)}
+.q-nav .left{flex:1}
+.q-nav .right{display:flex;gap:10px;align-items:center}
+
+/* ---------- Live Read panel ---------- */
+.live{position:sticky;top:80px;align-self:flex-start}
+.live-card{background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:18px 20px;box-shadow:var(--shadow)}
+.live-card .eyebrow{color:var(--orange)}
+.live-card h3{font-size:16px;color:#fff;margin:8px 0 12px;letter-spacing:-0.005em}
+.live-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:9px 0;border-top:1px solid rgba(255,255,255,0.08);font-size:13px}
+.live-row:first-of-type{border-top:0;padding-top:4px}
+.live-row .lk{color:#a8b3b8;font-weight:500}
+.live-row .lv{color:#fff;font-weight:600;font-feature-settings:"tnum"}
+.live-row .lv.rag-g{color:#7ed7a8}
+.live-row .lv.rag-a{color:#f4c771}
+.live-row .lv.rag-r{color:#f29489}
+.live-row .lv.rag-n{color:#c4ced3}
+.live-blurb{font-size:12.5px;color:#a8b3b8;margin-top:12px;line-height:1.5}
+
+/* RAG chip */
+.rag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.rag.rag-g{color:var(--rag-g);background:var(--rag-g-bg)}
+.rag.rag-a{color:var(--rag-a);background:var(--rag-a-bg)}
+.rag.rag-r{color:var(--rag-r);background:var(--rag-r-bg)}
+.rag.rag-n{color:var(--rag-n);background:var(--rag-n-bg)}
+.rag-dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+
+/* ---------- Cohort context tile (after stage+arr) ---------- */
+.cohort{background:var(--ink-2);color:#fff;border-radius:var(--r-lg);padding:16px 20px;margin:8px 0 0}
+.cohort .eyebrow{color:#a4d6db}
+.cohort h3{color:#fff;margin:6px 0 8px;font-size:17px}
+.cohort .cohort-row{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;font-size:13px}
+.cohort .cohort-row .ck{color:#bfd4d8}
+.cohort .cohort-row .cv{color:#fff;font-weight:600;font-feature-settings:"tnum"}
+
+/* ---------- Dashboard ---------- */
+.dash-head{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:center;margin-bottom:18px}
+@media (max-width:780px){ .dash-head{grid-template-columns:1fr} }
+
+.gauge-card{background:var(--ink);color:#fff;border-radius:var(--r-xl);padding:26px 28px;display:flex;align-items:center;gap:24px;box-shadow:var(--shadow-lg)}
+.gauge-svg{width:160px;height:96px;flex:0 0 auto}
+.gauge-num{font-size:54px;font-weight:800;letter-spacing:-0.025em;line-height:1;color:#fff}
+.gauge-num small{font-size:18px;color:var(--rule-2);font-weight:500;margin-left:2px}
+.gauge-tier{display:inline-block;padding:4px 10px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin:6px 0 4px}
+.gauge-name{font-size:22px;font-weight:700;margin:2px 0 4px;color:#fff;letter-spacing:-0.01em}
+.gauge-blurb{font-size:14px;color:#bfd4d8;margin:0}
+
+.headline-card{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r-xl);padding:22px 24px;box-shadow:var(--shadow)}
+.headline-card .eyebrow{color:var(--orange-2)}
+.headline-card h2{font-size:21px;margin:6px 0 6px;line-height:1.25}
+.headline-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.55}
+
+/* Tile grid */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+@media (max-width:880px){ .tiles{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:520px){ .tiles{grid-template-columns:1fr} }
+
+.tile{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r-lg);padding:16px 18px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow-sm)}
+.tile-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.tile-label{font-size:11.5px;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);font-weight:700}
+.tile-val{font-size:28px;font-weight:800;letter-spacing:-0.018em;line-height:1.05;color:var(--ink);font-feature-settings:"tnum"}
+.tile-val small{font-size:14px;color:var(--muted);font-weight:500;margin-left:2px}
+.tile-bench{font-size:12px;color:var(--muted);line-height:1.45}
+.tile-bench b{color:var(--ink-2);font-weight:600}
+.tile-bar{position:relative;height:8px;background:var(--rule);border-radius:999px;overflow:hidden}
+.tile-bar .seg-g{position:absolute;height:100%;background:rgba(31,138,91,0.18)}
+.tile-bar .seg-a{position:absolute;height:100%;background:rgba(184,132,18,0.22)}
+.tile-bar .seg-r{position:absolute;height:100%;background:rgba(176,58,46,0.18)}
+.tile-bar .pin{position:absolute;top:-3px;width:4px;height:14px;background:var(--ink);border-radius:2px}
+
+/* trapped value summary */
+.tv-card{background:linear-gradient(180deg,var(--bone-2),var(--paper));border:1px solid var(--rule);border-radius:var(--r-xl);padding:22px 24px;margin-top:14px}
+.tv-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.tv-num{font-size:34px;font-weight:800;letter-spacing:-0.02em;line-height:1.05;color:var(--orange-2)}
+.tv-num small{font-size:14px;color:var(--muted);font-weight:500;margin-left:4px}
+.tv-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px;padding:0;list-style:none}
+@media (max-width:680px){ .tv-list{grid-template-columns:1fr} }
+.tv-item{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:9px 12px;background:#fff;border:1px solid var(--rule);border-radius:var(--r-sm);font-size:13.5px}
+.tv-item .ti-name{font-weight:600;color:var(--ink)}
+.tv-item .ti-amt{color:var(--orange-2);font-weight:600;font-feature-settings:"tnum"}
+.tv-item .ti-icon{width:8px;height:8px;border-radius:50%;background:var(--rag-r)}
+.tv-item.done .ti-icon{background:var(--rag-g)}
+.tv-item.done .ti-amt{color:var(--rag-g)}
+.tv-item.done .ti-name{color:var(--muted);text-decoration:line-through}
+
+/* Signals + actions */
+.signal-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+@media (max-width:780px){ .signal-grid{grid-template-columns:1fr} }
+.signal{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r-lg);padding:16px 18px}
+.signal .sn{font-size:12px;font-weight:700;color:var(--orange-2);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px}
+.signal .sname{font-size:16px;font-weight:600;color:var(--ink);margin:0 0 4px}
+.signal .sd{font-size:13.5px;color:var(--muted);margin:0;line-height:1.5}
+
+/* Form gate (inline below dashboard) */
+.gate-card{background:var(--ink);color:#fff;border-radius:var(--r-xl);padding:24px 28px;margin-top:18px;box-shadow:var(--shadow-lg)}
+.gate-card .eyebrow{color:var(--orange)}
+.gate-card h2{color:#fff;margin:6px 0 6px;font-size:24px;line-height:1.2}
+.gate-card p{color:#bfd4d8;font-size:14.5px;margin:0 0 14px}
+.gate-form-grid{display:grid;grid-template-columns:1fr 1fr 1.2fr auto;gap:10px;margin-top:6px}
+@media (max-width:760px){ .gate-form-grid{grid-template-columns:1fr;gap:10px} }
+.gate-form-grid input[type=text],.gate-form-grid input[type=email]{background:#fff;color:var(--ink);border-radius:10px;border:0;padding:13px 14px;font-size:15.5px}
+.gate-form-grid input::placeholder{color:#8694a0}
+.gate-foot{font-size:12px;color:#8d9aa1;margin-top:10px}
+.kit-optin{display:flex;align-items:flex-start;gap:10px;margin-top:14px;padding:12px 14px;background:rgba(255,255,255,0.04);border-radius:8px}
+.kit-optin input[type=checkbox]{width:18px;height:18px;margin-top:1px;accent-color:var(--orange);cursor:pointer;flex:0 0 auto}
+.kit-optin label{font-size:13px;color:#bfd4d8;line-height:1.5;cursor:pointer}
+.form-error{display:none;background:#fdecea;color:#8a2a1f;padding:9px 12px;border-radius:8px;font-size:13.5px;margin-top:10px}
+.form-error.on{display:block}
+
+/* Confirmation */
+.confirm-card{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r-xl);padding:28px 30px;box-shadow:var(--shadow);text-align:left;margin-top:14px}
+.confirm-card .eyebrow{color:var(--rag-g)}
+.confirm-card h2{margin:6px 0 8px;font-size:24px}
+.dl-row{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 4px}
+
+/* Sources */
+.sources{margin-top:24px;font-size:12.5px;color:var(--muted);line-height:1.55}
+.sources h4{font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-2);margin:0 0 8px;font-weight:700}
+.sources ol{padding-left:18px;margin:0}
+.sources li{margin-bottom:5px}
+
+/* Footer */
+.foot{max-width:var(--width-content);margin:60px auto 0;padding:24px 20px 40px;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid var(--rule)}
+.foot a{color:var(--muted)}
+.foot a:hover{color:var(--ink)}
+
+.hidden{display:none !important}
+.fade-in{animation:fadeIn .35s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion: reduce){ .progress-fill,.fade-in{transition:none;animation:none} }
+/* Save-dashboard-as-PDF utility button row */
+.dash-actions{display:flex;justify-content:flex-end;gap:10px;margin:14px 0 4px;align-items:center}
+.btn-print{font-size:13.5px;padding:9px 16px;min-height:38px;color:var(--muted);border-color:var(--rule-2);background:var(--paper)}
+.btn-print:hover{color:var(--ink);border-color:var(--ink)}
+.btn-print svg{stroke:currentColor;flex:0 0 auto}
+
+@media print{
+  *{ print-color-adjust:exact; -webkit-print-color-adjust:exact; color-adjust:exact; }
+  .topbar,.foot,.btn,.q-nav,.progress-wrap,.gate-card,.live,.dash-actions{display:none !important}
+  body{background:#fff}
+  .card,.tile{box-shadow:none;border:1px solid #ccc}
+  .gauge-card,.headline-card,.tile,.tv-card,.signal{break-inside:avoid;page-break-inside:avoid}
+  .shell-wide{padding:18px 0;max-width:none}
+  @page{margin:14mm 12mm}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://decisive.finance/" class="brand" aria-label="Decisive Finance home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">Decisive Finance</span>
+    </a>
+    <a class="topbar-cta" href="https://calendly.com/russell-decisive/30min"><strong>Book 30 minutes</strong> with Russ</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================
+     STAGE 1: COVER
+============================================================ -->
+<section id="stage-cover" class="stage cover">
+  <div class="shell">
+    <div class="eyebrow">18 months in · 6 screens · 6 minutes</div>
+    <h1 class="hero-h1">
+      <span>Your board wants growth.</span>
+      <span>Your bank wants runway.</span>
+      <span class="hero-h1-accent">Your future rides on the next call.</span>
+    </h1>
+    <p class="lede">
+      The next ninety days decide which founder you were.
+    </p>
+    <p class="lede" style="font-size:17px;color:var(--muted);font-weight:400;margin-top:-2px">
+      Six screens. Real numbers in. Live cohort benchmarks against the post-Series A and B universe.
+      By the last screen you have a board-grade read on where you sit between the two pressures, the
+      math behind each, and the call most founders are within one quarter of making.
+    </p>
+
+    <div class="cta-row">
+      <button type="button" class="btn btn-primary" data-go="q">Run the diagnostic</button>
+      <a class="btn btn-ghost" href="https://calendly.com/russell-decisive/30min">Book 30 minutes with Russ</a>
+    </div>
+
+    <div class="trust">
+      <span><b>Engagements to date: 5x to 10x</b> on Diagnostic fee</span>
+      <span><b>At least $22,500 of trapped value named in 14 days</b>, or the Diagnostic is free</span>
+      <span>Your inputs never leave your browser without a click</span>
+    </div>
+
+    <div class="preview" aria-hidden="true">
+      <div class="preview-tile"><div class="pl">Burn Multiple</div><div class="pv mono">2.4x</div><div class="ps">Stretched · Sacks 2020</div></div>
+      <div class="preview-tile"><div class="pl">Runway</div><div class="pv mono">11 mo</div><div class="ps">Below 12 · the call is now</div></div>
+      <div class="preview-tile"><div class="pl">Rule of 40</div><div class="pv mono">14%</div><div class="ps">Below 20 · math runs thin</div></div>
+      <div class="preview-tile"><div class="pl">Trapped value</div><div class="pv mono">$31K / mo</div><div class="ps">Recoverable in 14 days</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STAGE 2: QUESTIONS
+============================================================ -->
+<section id="stage-q" class="stage hidden">
+  <div class="shell-wide">
+    <div class="progress-wrap" aria-label="Assessment progress">
+      <span id="prog-label">Screen 1 of 6</span>
+      <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="6" aria-valuenow="1">
+        <div class="progress-fill" id="prog-fill"></div>
+      </div>
+      <span id="prog-pct" aria-hidden="true">0%</span>
+    </div>
+
+    <div class="split">
+      <!-- LEFT: question card -->
+      <div class="card" id="q-card">
+        <div id="q-body"></div>
+        <div class="q-nav">
+          <div class="left">
+            <button type="button" class="btn btn-link" id="btn-back">&larr; Back</button>
+          </div>
+          <div class="right">
+            <button type="button" class="btn btn-primary" id="btn-next" disabled>Next &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: live read panel -->
+      <aside class="live">
+        <div class="live-card">
+          <div class="eyebrow">Live read</div>
+          <h3 id="live-title">Building your read</h3>
+          <div id="live-rows"></div>
+          <p class="live-blurb" id="live-blurb">Each input below recalculates against the cohort. Numbers stay in your browser until you ask for the write-up.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STAGE 3: DASHBOARD
+============================================================ -->
+<section id="stage-dash" class="stage hidden">
+  <div class="shell-wide">
+
+    <div class="dash-head">
+      <div class="gauge-card">
+        <svg class="gauge-svg" viewBox="0 0 200 120" aria-hidden="true">
+          <path d="M16,108 A92,92 0 0 1 184,108" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="14" stroke-linecap="round"/>
+          <path id="gauge-arc" d="M16,108 A92,92 0 0 1 184,108" fill="none" stroke="#e3632b" stroke-width="14" stroke-linecap="round" stroke-dasharray="0 999" />
+        </svg>
+        <div>
+          <span class="gauge-tier" id="gauge-tier" style="background:var(--orange);color:#fff">Tier</span>
+          <div class="gauge-num"><span id="gauge-num">0</span><small>/100</small></div>
+          <div class="gauge-name" id="gauge-name">&nbsp;</div>
+          <div class="gauge-blurb" id="gauge-blurb">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="headline-card">
+        <div class="eyebrow eyebrow-orange">The read</div>
+        <h2 id="read-headline">&nbsp;</h2>
+        <p id="read-blurb">&nbsp;</p>
+      </div>
+    </div>
+
+    <div class="dash-actions">
+      <button type="button" class="btn btn-print" id="btn-print" aria-label="Save dashboard as PDF">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Save dashboard as PDF
+      </button>
+    </div>
+
+    <div class="tiles" id="tiles"></div>
+
+    <div class="tv-card">
+      <div class="tv-head">
+        <div>
+          <div class="eyebrow eyebrow-orange">Trapped value estimate</div>
+          <div style="font-size:14.5px;color:var(--muted);max-width:560px;margin-top:4px">
+            Based on activities you have not yet completed. Ranges reflect what the
+            14-day Diagnostic surfaces in this category for post-Series A and B portcos.
+          </div>
+        </div>
+        <div style="text-align:right">
+          <div class="tv-num"><span id="tv-low">$0</span><small> to </small><span id="tv-high">$0</span></div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px"><span id="tv-period">monthly recurring</span></div>
+        </div>
+      </div>
+      <ul class="tv-list" id="tv-list"></ul>
+    </div>
+
+    <h3 style="font-size:14px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-2);margin:22px 0 0;font-weight:700">Top live signals</h3>
+    <div class="signal-grid" id="signals"></div>
+
+    <!-- Inline form gate -->
+    <div class="gate-card" id="gate-card">
+      <div class="eyebrow">Get the personal read</div>
+      <h2>Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free.</h2>
+      <p>The dashboard above is yours. The reasoning behind each number, the specific decisions to queue, the worked examples, and a hand-written read for your tier come back from Russ in a personal email within 24 hours. Same-day during business hours. We do not sell, share, or rent your address. Reply &ldquo;remove&rdquo; any time.</p>
+      <form id="lead-form" novalidate>
+        <div class="gate-form-grid">
+          <input id="f-name" name="name" type="text" placeholder="First name" autocomplete="given-name" maxlength="80" required />
+          <input id="f-company" name="company" type="text" placeholder="Company" autocomplete="organization" maxlength="120" required />
+          <input id="f-email" name="email" type="email" placeholder="Work email" autocomplete="email" maxlength="160" required />
+          <button type="submit" class="btn btn-primary" id="btn-submit">Send to Russ</button>
+        </div>
+        <div style="position:absolute;left:-9999px" aria-hidden="true">
+          <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <!-- Kit opt-in: explicit consent, no auto-drip -->
+        <div class="kit-optin">
+          <input type="checkbox" id="f-optin" name="optin" />
+          <label for="f-optin">
+            Also send me Russ's Friday field notes. One real case per week, no padding. Unsubscribe any time.
+          </label>
+        </div>
+
+        <div class="form-error" id="form-error"></div>
+        <div class="gate-foot">By submitting, you agree we can email you the read at this address.</div>
+      </form>
+    </div>
+
+    <div class="sources" id="sources">
+      <h4>Sources &amp; benchmark notes</h4>
+      <ol>
+        <li><b>Burn Multiple</b>: David Sacks, &ldquo;The Burn Multiple,&rdquo; Craft Ventures, 2020. Bands: &lt;1x amazing, 1-1.5x great, 1.5-2x good, 2-3x suspect, 3x+ bad.</li>
+        <li><b>Net Dollar Retention</b>: Bessemer Venture Partners, <i>State of the Cloud 2024</i>; ICONIQ Growth, <i>Topline Growth &amp; Efficiency 2024</i>. Top quartile 120%+, median ~110-115%, below 100% is net contraction.</li>
+        <li><b>Growth rate by ARR cohort</b>: ICONIQ Growth, <i>Topline 2024</i>; ChartMogul, <i>SaaS Benchmarks Report 2024</i>. Median YoY growth declines as ARR scales.</li>
+        <li><b>ARR per FTE (capital efficiency)</b>: KeyBanc Capital Markets, <i>SaaS Survey 2023 to 2024</i>; SaaS Capital, <i>Spending Benchmarks 2024</i>. Public unicorn medians $300K to $500K; Series A norm $150K to $200K; Series B norm $200K to $300K.</li>
+        <li><b>Burn / runway by cohort</b>: ICONIQ Growth <i>Topline 2024</i>; Bessemer <i>State of the Cloud 2024</i>; informed by Decisive Finance engagements with $1M to $8M ARR Series A and B portcos. Post-2022 efficient-SaaS norms.</li>
+        <li><b>Rule of 40</b>: Brad Feld (popularized) and SaaS Capital methodology. Public-SaaS median fell from ~40% (2021) to ~30% (2024). Below 20% is the typical stall threshold for capital-efficient growth.</li>
+        <li><b>Trapped value estimates</b>: ranges reflect Diagnostic outcomes in the $1M to $8M ARR cohort. Individual results vary; the guarantee ($22,500 named on a $7,500 Diagnostic, $30,000 on $10,000) is the floor, not the median. Engagements to date: 5x to 10x.</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     STAGE 4: CONFIRM
+============================================================ -->
+<section id="stage-confirm" class="stage hidden">
+  <div class="shell">
+    <div class="confirm-card">
+      <div class="eyebrow">Submission received</div>
+      <h2>Russ will follow up within 24 hours with the report and a quick read on your numbers.</h2>
+      <p class="muted">He usually replies same-day during business hours. The report comes from him personally, attached to a short note calibrated to what your dashboard showed. If your tier is Hard call or At the call, expect the one decision he would queue first in that note. Confirmation sent to <b id="confirm-email"></b>.</p>
+
+      <div class="dl-row">
+        <a class="btn btn-primary" href="https://calendly.com/russell-decisive/30min" id="confirm-cta">Book 30 minutes with Russ</a>
+        <a class="btn btn-ghost" href="https://decisive.finance/perspectives/" >Read the field notes</a>
+      </div>
+      <p class="muted" style="font-size:13px;margin-top:10px">No pitch. You leave with at least one named action.</p>
+
+      <hr class="rule" />
+      <p class="muted" style="font-size:13px">
+        Anything pressing in the meantime, reach Russ directly at
+        <a href="mailto:contact@decisive.finance">contact@decisive.finance</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div>&copy; <span id="yr"></span> Decisive Finance · The category belongs to the market.</div>
+  <div>
+    <a href="https://decisive.finance/">Home</a> &nbsp;·&nbsp;
+    <a href="https://decisive.finance/guarantee/">Guarantee</a> &nbsp;·&nbsp;
+    <a href="https://decisive.finance/perspectives/">Field notes</a> &nbsp;·&nbsp;
+    <a href="mailto:contact@decisive.finance">contact@decisive.finance</a>
+  </div>
+</footer>
+
+<script>
+/* =============================================================
+   CONFIG
+   ----
+   FORM_ENDPOINT: Formspree, Web3Forms, or a Pages Function. Receives
+     the full lead payload at contact@decisive.finance. Required.
+   KIT_FORM_URL: Kit (formerly ConvertKit) public form-subscribe URL.
+     Format: https://app.kit.com/forms/{FORM_ID}/subscriptions
+     Only fires when the user checks the field-notes opt-in.
+     Set up:
+       1. In Kit, create a form named "Decisive · Field Notes (opt-in
+          from assessment)" with welcome-email DISABLED.
+       2. In that form, add custom fields: company, tier, score, source.
+       3. (Optional) Auto-tag rule: new subscribers from this form get the
+          'assessment-next-call' tag plus a tier-specific tag.
+       4. Copy the form's public subscription URL into KIT_FORM_URL.
+     If KIT_FORM_URL remains the placeholder, the opt-in checkbox still
+     appears but no Kit call is made. Path A (manual personal follow-up)
+     is unaffected either way.
+============================================================= */
+const FORM_ENDPOINT = "/api/assessment-submit";
+const KIT_FORM_URL  = "https://app.kit.com/forms/9477668/subscriptions";
+const FALLBACK_EMAIL = "contact@decisive.finance";
+const CALENDLY = "https://calendly.com/russell-decisive/30min";
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* =============================================================
+   COHORT BENCHMARKS
+   Sourced from: ICONIQ Topline 2024, Bessemer State of the Cloud
+   2024, ChartMogul SaaS Benchmarks 2024, KeyBanc SaaS Survey
+   2023-2024, SaaS Capital 2024, Sacks "Burn Multiple" 2020.
+   Ranges reflect post-2022 efficient-SaaS norms.
+
+   Each band: { burnMo:[low,high], growthYoY:[p25,p75], ndr:[p50low,p50high],
+                arrPerFTE:[low,high] }
+   burnMo = monthly NET burn ($K)
+   growthYoY in %, ndr in %, arrPerFTE in $K
+============================================================= */
+const COHORT = {
+  // pre-seed / seed: out of Decisive's primary ICP but captured
+  "seed":{
+    "<1": { burnMo:[ 60, 200], growthYoY:[100, 300], ndr:[ 95,115], arrPerFTE:[ 80,160], runwayP50:18, label:"Seed, <$1M ARR" },
+    "1-3":{ burnMo:[150, 350], growthYoY:[100, 250], ndr:[100,115], arrPerFTE:[120,200], runwayP50:18, label:"Seed, $1-3M ARR" }
+  },
+  "series-a":{
+    "<1": { burnMo:[100, 300], growthYoY:[100, 200], ndr:[100,115], arrPerFTE:[120,180], runwayP50:18, label:"Series A, <$1M ARR" },
+    "1-3":{ burnMo:[200, 450], growthYoY:[ 80, 150], ndr:[105,120], arrPerFTE:[150,220], runwayP50:18, label:"Series A, $1-3M ARR" },
+    "3-5":{ burnMo:[300, 550], growthYoY:[ 60, 120], ndr:[105,120], arrPerFTE:[180,260], runwayP50:18, label:"Series A, $3-5M ARR" }
+  },
+  "series-b":{
+    "1-3":{ burnMo:[300, 500], growthYoY:[ 80, 150], ndr:[110,125], arrPerFTE:[180,260], runwayP50:18, label:"Series B, $1-3M ARR" },
+    "3-5":{ burnMo:[350, 650], growthYoY:[ 60, 120], ndr:[110,125], arrPerFTE:[220,320], runwayP50:18, label:"Series B, $3-5M ARR" },
+    "5-8":{ burnMo:[450, 800], growthYoY:[ 50,  90], ndr:[110,130], arrPerFTE:[260,360], runwayP50:18, label:"Series B, $5-8M ARR" },
+    "8+": { burnMo:[600,1200], growthYoY:[ 40,  80], ndr:[115,135], arrPerFTE:[300,420], runwayP50:18, label:"Series B, $8M+ ARR" }
+  },
+  "later":{
+    "5-8":{ burnMo:[450, 900], growthYoY:[ 40,  80], ndr:[115,130], arrPerFTE:[280,400], runwayP50:18, label:"Later stage, $5-8M ARR" },
+    "8+": { burnMo:[700,1500], growthYoY:[ 30,  70], ndr:[115,135], arrPerFTE:[320,460], runwayP50:18, label:"Later stage, $8M+ ARR" }
+  }
+};
+function arrMid(band){
+  return ({"<1":700, "1-3":2000, "3-5":4000, "5-8":6500, "8+":11000})[band] || 4000; // $K
+}
+
+/* =============================================================
+   ACTIVITIES (replaces recency questions)
+   Each unchecked item carries a trapped-value range.
+   loMo/hiMo: monthly recurring ($)
+   loOne/hiOne: one-time recoverable ($)
+   recurring=true means the value is recurring (multiplied across runway)
+============================================================= */
+const ACTIVITIES = [
+  { key:"saas",     name:"SaaS / vendor stack audited for duplicates and underuse in last 12 months",
+    desc:"Per-seat SaaS, observability, dev tooling. Underuse, duplicates, auto-renewals.",
+    recurring:true,  loMo:2500, hiMo:8000,  loOne:0, hiOne:0,
+    signal:"trapped-value" },
+  { key:"cloud",    name:"Cloud spend right-sized in last 12 months",
+    desc:"Reserved instances and savings plans, idle resources, oversized environments.",
+    recurring:true,  loMo:2000, hiMo:15000, loOne:0, hiOne:0,
+    signal:"cloud" },
+  { key:"rd",       name:"R&amp;D tax credits filed through a specialist for every qualifying year",
+    desc:"Federal R&amp;D credit, plus state where applicable. Specialist firm, not generalist CPA.",
+    recurring:false, loMo:0,    hiMo:0,     loOne:25000, hiOne:150000,
+    signal:"tax-credits" },
+  { key:"vendor",   name:"Top 10 vendor contracts renegotiated at last renewal",
+    desc:"Annual term, multi-year discount, usage-banded pricing, MSA cleanup.",
+    recurring:true,  loMo:1500, hiMo:6000,  loOne:0, hiOne:0,
+    signal:"vendor" },
+  { key:"unit-econ",name:"Unit economics re-validated against current cohort data in last 90 days",
+    desc:"LTV/CAC, payback period, margin shape. Current cohorts, current pricing.",
+    recurring:false, loMo:0,    hiMo:0,     loOne:0, hiOne:0,
+    isDecisionQuality:true,
+    signal:"ratio-mirage" },
+  { key:"three-path",name:"Three-Path Models built on top 5 deferred decisions",
+    desc:"Keep / Kill / Restructure on each material call. Defensible math, not a memo.",
+    recurring:false, loMo:0,    hiMo:0,     loOne:0, hiOne:0,
+    isDecisionQuality:true,
+    signal:"finance-function" },
+  { key:"pricing", name:"Pricing reviewed with current willingness-to-pay data in last 12 months",
+    desc:"Van Westendorp, Gabor-Granger, segment-level pricing, packaging review.",
+    recurring:false, loMo:0,    hiMo:0,     loOne:0, hiOne:0,
+    isDecisionQuality:true,
+    signal:"pricing" },
+  { key:"gross-net",name:"Gross-to-net reviewed in last quarter (discounts, comps, write-offs, refunds)",
+    desc:"Where reported revenue and collected revenue diverge. Often material at $3M+ ARR.",
+    recurring:true,  loMo:1000, hiMo:5000,  loOne:0, hiOne:0,
+    signal:"gross-net" }
+];
+
+/* =============================================================
+   STATE
+============================================================= */
+const screens = ['stage','burnCash','growthNDR','headcount','raise','activities'];
+let cur = 0;
+
+const input = {
+  stage: null,         // "seed" | "series-a" | "series-b" | "later"
+  arrBand: null,       // "<1" | "1-3" | "3-5" | "5-8" | "8+"
+  burnMo: null,        // $ per month, NUMERIC
+  cash: null,          // $ on hand, NUMERIC
+  growthYoY: null,     // % YoY, NUMERIC
+  ndr: null,           // % NDR, NUMERIC  (null === don't track)
+  ndrTrack: null,      // "yes" | "no"
+  revenueModel: null,  // "self-serve" | "invoiced" | "mixed"
+  hcTotal: null,       // FTE
+  hcGTM: null,         // FTE GTM (optional)
+  monthsSinceClose: null, // months since last priced round
+  raiseStatus: null,   // "not-raising"|"on-track"|"stretched"|"stalled"
+  activities: {}       // map key -> bool
+};
+
+/* =============================================================
+   COMPUTED METRICS
+============================================================= */
+function metrics(){
+  const m = {};
+  m.cohort = (input.stage && input.arrBand && COHORT[input.stage] && COHORT[input.stage][input.arrBand]) || null;
+  m.arrK = arrMid(input.arrBand); // ARR midpoint $K
+
+  // Runway
+  if(input.burnMo > 0 && input.cash > 0){
+    m.runway = input.cash / input.burnMo;
+  }
+
+  // Net new ARR per month, derived from ARR + YoY growth
+  if(input.growthYoY != null && input.arrBand){
+    const annualARR = m.arrK * 1000;
+    const g = Math.max(0, input.growthYoY) / 100;
+    const nnarrAnnual = annualARR * (g / (1 + g));
+    m.nnarrMo = nnarrAnnual / 12;
+  }
+
+  // Burn multiple
+  if(m.nnarrMo > 0 && input.burnMo > 0){
+    m.burnMultiple = input.burnMo / m.nnarrMo;
+  }
+
+  // Rule of 40 (proxy: growth + burn margin)
+  if(input.growthYoY != null && input.burnMo > 0 && m.arrK){
+    const burnAnnual = input.burnMo * 12;
+    const arrAnnual = m.arrK * 1000;
+    const burnMargin = -1 * (burnAnnual / arrAnnual) * 100;
+    m.rule40 = input.growthYoY + burnMargin;
+  }
+
+  // ARR per FTE
+  if(input.hcTotal > 0 && m.arrK){
+    m.arrPerFTE = (m.arrK * 1000) / input.hcTotal; // $ per FTE
+  }
+
+  // Raise health
+  if(input.raiseStatus){
+    m.raiseHealth = input.raiseStatus;
+  }
+
+  // Trapped value estimate (uses runway months for recurring; default 12 if unknown)
+  const tvWindow = Math.min(Math.max(m.runway || 12, 6), 18);
+  let tvLo = 0, tvHi = 0;
+  ACTIVITIES.forEach(a=>{
+    const done = !!input.activities[a.key];
+    if(done) return;
+    if(a.recurring){
+      tvLo += a.loMo * tvWindow;
+      tvHi += a.hiMo * tvWindow;
+    } else {
+      tvLo += a.loOne;
+      tvHi += a.hiOne;
+    }
+  });
+  m.trappedLo = Math.round(tvLo);
+  m.trappedHi = Math.round(tvHi);
+  m.trappedWindow = Math.round(tvWindow);
+
+  // Decision Risk Index (composite, weighted)
+  // 0 = call is well-supported, 100 = founder is at the call now
+  const W = { burn:25, runway:15, growth:15, ndr:10, eff:10, raise:15, act:10 };
+  let wdi = 0, denom = 0;
+
+  function rate(val, cuts){ // cuts: [bestEnd, midEnd, redStart] expressed in metric units
+    // returns 0-100 where 0 is great, 100 is worst
+    if(val == null) return null;
+    if(cuts.dir === 'highIsBad'){
+      if(val <= cuts.green) return 10;
+      if(val <= cuts.amber) return 45;
+      return Math.min(100, 70 + (val - cuts.amber) * cuts.scale);
+    } else {
+      if(val >= cuts.green) return 10;
+      if(val >= cuts.amber) return 45;
+      return Math.min(100, 70 + (cuts.amber - val) * cuts.scale);
+    }
+  }
+
+  if(m.burnMultiple != null){
+    const score = rate(m.burnMultiple, {dir:'highIsBad', green:1.5, amber:2.5, scale:8}); // Sacks bands
+    if(score != null){ wdi += W.burn * score; denom += W.burn; }
+  }
+  if(m.runway != null){
+    const score = rate(m.runway, {dir:'lowIsBad', green:18, amber:12, scale:5}); // months
+    if(score != null){ wdi += W.runway * score; denom += W.runway; }
+  }
+  if(input.growthYoY != null && m.cohort){
+    const goodFloor = m.cohort.growthYoY[0];
+    const concernFloor = goodFloor * 0.6; // 60% of cohort low = stalled territory
+    const score = rate(input.growthYoY, {dir:'lowIsBad', green:goodFloor, amber:concernFloor, scale:1});
+    if(score != null){ wdi += W.growth * score; denom += W.growth; }
+  }
+  if(input.ndr != null){
+    const score = rate(input.ndr, {dir:'lowIsBad', green:110, amber:100, scale:3});
+    if(score != null){ wdi += W.ndr * score; denom += W.ndr; }
+  }
+  if(m.arrPerFTE != null && m.cohort){
+    const goodFloor = m.cohort.arrPerFTE[0] * 1000;
+    const concernFloor = goodFloor * 0.65;
+    const score = rate(m.arrPerFTE, {dir:'lowIsBad', green:goodFloor, amber:concernFloor, scale:0.0002});
+    if(score != null){ wdi += W.eff * score; denom += W.eff; }
+  }
+  if(m.raiseHealth){
+    const map = { "not-raising":15, "on-track":25, "stretched":60, "stalled":92 };
+    const score = map[m.raiseHealth];
+    if(score != null){ wdi += W.raise * score; denom += W.raise; }
+  }
+  // Activities: % skipped
+  const skipped = ACTIVITIES.filter(a=>!input.activities[a.key]).length;
+  const skipScore = (skipped / ACTIVITIES.length) * 100;
+  wdi += W.act * skipScore; denom += W.act;
+
+  m.wdi = denom > 0 ? Math.round(wdi / denom) : null;
+  m.tier = tierFor(m.wdi);
+  return m;
+}
+
+function tierFor(wdi){
+  if(wdi == null) return null;
+  if(wdi <= 25) return { n:1, key:'clear', name:"Clear",          chip:"Tier 1 · Clear",
+    blurb:"The call is well-supported. Numbers, cohort, and trajectory all defend growth as the next call." };
+  if(wdi <= 50) return { n:2, key:'watch', name:"Watch",          chip:"Tier 2 · Watch",
+    blurb:"One or two signals tightening. The call is still defensible, but worth naming before the next board." };
+  if(wdi <= 75) return { n:3, key:'hard',  name:"Hard call",      chip:"Tier 3 · Hard call",
+    blurb:"Three to four signals against the cohort. The math runs thin. Defending growth gets harder each month from here." };
+  return                  { n:4, key:'atcall', name:"At the call", chip:"Tier 4 · At the call",
+    blurb:"Five or more signals live. You are at the growth-versus-runway call now, even if the deck has not said so yet." };
+}
+
+/* =============================================================
+   STAGE NAV
+============================================================= */
+function show(stage){
+  ['cover','q','dash','confirm'].forEach(s=>{
+    const el = document.getElementById('stage-'+s);
+    if(el) el.classList.toggle('hidden', s !== stage);
+  });
+  window.scrollTo({top:0, behavior:'instant' in window ? 'instant' : 'auto'});
+}
+document.querySelectorAll('[data-go]').forEach(b=>{
+  b.addEventListener('click',()=>{
+    const t = b.getAttribute('data-go');
+    if(t === 'q'){ cur = 0; renderScreen(); show('q'); }
+    else show(t);
+  });
+});
+
+/* =============================================================
+   SCREEN RENDER
+============================================================= */
+const elBody = document.getElementById('q-body');
+const elBack = document.getElementById('btn-back');
+const elNext = document.getElementById('btn-next');
+const elProgFill = document.getElementById('prog-fill');
+const elProgLabel = document.getElementById('prog-label');
+const elProgPct = document.getElementById('prog-pct');
+
+function renderScreen(){
+  const i = cur, total = screens.length;
+  const pct = Math.round((i / total) * 100);
+  elProgFill.style.width = pct + '%';
+  elProgLabel.textContent = 'Screen ' + (i+1) + ' of ' + total;
+  elProgPct.textContent = pct + '%';
+  elBack.style.visibility = i === 0 ? 'hidden' : 'visible';
+  elNext.textContent = i === total - 1 ? 'See my dashboard →' : 'Next →';
+  elBody.innerHTML = '';
+  ({
+    stage:    renderStage,
+    burnCash: renderBurnCash,
+    growthNDR:renderGrowthNDR,
+    headcount:renderHeadcount,
+    raise:    renderRaise,
+    activities:renderActivities
+  })[screens[i]]();
+  refreshLive();
+  refreshNext();
+  elBody.classList.add('fade-in');
+  setTimeout(()=>elBody.classList.remove('fade-in'), 380);
+}
+
+elBack.addEventListener('click',()=>{ if(cur>0){ cur--; renderScreen(); } });
+elNext.addEventListener('click',()=>{
+  if(elNext.disabled) return;
+  if(cur < screens.length - 1){ cur++; renderScreen(); }
+  else { finalize(); }
+});
+
+/* ---------- Screen 1: stage + ARR band ---------- */
+function renderStage(){
+  elBody.innerHTML = `
+    <div class="q-eyebrow">Cohort context · 1 of 6</div>
+    <h2 class="q-stem">Where is the company sitting?</h2>
+    <p class="q-help">We benchmark against the post-Series A and B universe. Pick the tightest match.</p>
+
+    <div class="field">
+      <label>Stage</label>
+      <ul class="options opt-grid" role="radiogroup" aria-label="Stage">
+        ${[
+          {v:"seed",     t:"Pre-seed / Seed"},
+          {v:"series-a", t:"Series A (incl. extension)"},
+          {v:"series-b", t:"Series B (incl. extension)"},
+          {v:"later",    t:"Later stage"}
+        ].map(o=>`<li><label class="opt"><input type="radio" name="stage" value="${o.v}" ${input.stage===o.v?'checked':''}/><span>${o.t}</span></label></li>`).join('')}
+      </ul>
+    </div>
+
+    <div class="field" style="margin-top:14px">
+      <label>Current ARR</label>
+      <ul class="options opt-grid" role="radiogroup" aria-label="ARR band">
+        ${[
+          {v:"<1", t:"&lt; $1M"},
+          {v:"1-3",t:"$1M to $3M"},
+          {v:"3-5",t:"$3M to $5M"},
+          {v:"5-8",t:"$5M to $8M"},
+          {v:"8+", t:"$8M+"}
+        ].map(o=>`<li><label class="opt"><input type="radio" name="arrBand" value="${o.v}" ${input.arrBand===o.v?'checked':''}/><span>${o.t}</span></label></li>`).join('')}
+      </ul>
+    </div>
+
+    <div id="cohort-feedback" style="margin-top:14px"></div>
+  `;
+  elBody.querySelectorAll('input[name=stage]').forEach(r=>r.addEventListener('change',e=>{ input.stage = e.target.value; refreshAll(); }));
+  elBody.querySelectorAll('input[name=arrBand]').forEach(r=>r.addEventListener('change',e=>{ input.arrBand = e.target.value; refreshAll(); }));
+  paintCohortTile();
+}
+
+function paintCohortTile(){
+  const el = document.getElementById('cohort-feedback');
+  if(!el) return;
+  const m = metrics();
+  if(!m.cohort){ el.innerHTML = ''; return; }
+  const c = m.cohort;
+  el.innerHTML = `
+    <div class="cohort fade-in">
+      <div class="eyebrow">Cohort baseline</div>
+      <h3>${c.label}</h3>
+      <div class="cohort-row">
+        <div class="ck">Median monthly burn</div><div class="cv mono">$${c.burnMo[0]}K to $${c.burnMo[1]}K</div>
+        <div class="ck">Median YoY growth (P25 to P75)</div><div class="cv mono">${c.growthYoY[0]}% to ${c.growthYoY[1]}%</div>
+        <div class="ck">Median NDR</div><div class="cv mono">${c.ndr[0]}% to ${c.ndr[1]}%</div>
+        <div class="ck">Median ARR / FTE</div><div class="cv mono">$${c.arrPerFTE[0]}K to $${c.arrPerFTE[1]}K</div>
+      </div>
+    </div>
+  `;
+}
+
+/* ---------- Screen 2: Burn + Cash ---------- */
+function renderBurnCash(){
+  const m = metrics();
+  const cohortHint = m.cohort
+    ? `Cohort median: <b>$${m.cohort.burnMo[0]}K to $${m.cohort.burnMo[1]}K</b> per month.`
+    : `Use net burn (cash out, less non-dilutive in).`;
+  elBody.innerHTML = `
+    <div class="q-eyebrow">Cash + burn · 2 of 6</div>
+    <h2 class="q-stem">Net monthly burn and cash on hand.</h2>
+    <p class="q-help">Net burn = total cash out, minus revenue and any non-dilutive cash in. Round to the nearest 25K.</p>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="i-burn">Net monthly burn</label>
+        <div class="input-wrap with-prefix"><span class="input-prefix">$</span>
+          <input id="i-burn" type="number" inputmode="numeric" step="5000" min="0" placeholder="e.g. 380000" value="${input.burnMo ?? ''}" />
+        </div>
+        <div class="hint">${cohortHint}</div>
+      </div>
+      <div class="field">
+        <label for="i-cash">Cash on hand</label>
+        <div class="input-wrap with-prefix"><span class="input-prefix">$</span>
+          <input id="i-cash" type="number" inputmode="numeric" step="50000" min="0" placeholder="e.g. 4200000" value="${input.cash ?? ''}" />
+        </div>
+        <div class="hint">Bank + short investments. Treat venture debt drawn as non-cash (covenant value, not runway).</div>
+      </div>
+    </div>
+  `;
+  elBody.querySelector('#i-burn').addEventListener('input',e=>{ input.burnMo = parseFloat(e.target.value)||null; refreshAll(); });
+  elBody.querySelector('#i-cash').addEventListener('input',e=>{ input.cash = parseFloat(e.target.value)||null; refreshAll(); });
+}
+
+/* ---------- Screen 3: Growth + NDR ---------- */
+function renderGrowthNDR(){
+  const m = metrics();
+  const ndrHint = m.cohort ? `Cohort median: <b>${m.cohort.ndr[0]}% to ${m.cohort.ndr[1]}%</b>. Below 100% = net contraction.` : '';
+  const grHint = m.cohort ? `Cohort median: <b>${m.cohort.growthYoY[0]}% to ${m.cohort.growthYoY[1]}% YoY</b>.` : '';
+  elBody.innerHTML = `
+    <div class="q-eyebrow">Growth + retention · 3 of 6</div>
+    <h2 class="q-stem">Top-line growth and net dollar retention.</h2>
+    <p class="q-help">YoY ARR growth in the trailing 12 months. NDR (or NRR) is current ARR from a year-ago cohort, divided by their starting ARR.</p>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="i-growth">YoY ARR growth</label>
+        <div class="input-wrap with-suffix"><input id="i-growth" type="number" inputmode="numeric" step="1" min="-50" max="500" placeholder="e.g. 65" value="${input.growthYoY ?? ''}"/><span class="input-suffix">%</span></div>
+        <div class="hint">${grHint}</div>
+      </div>
+      <div class="field">
+        <label for="i-ndr">Net dollar retention (NDR)</label>
+        <div class="input-wrap with-suffix"><input id="i-ndr" type="number" inputmode="numeric" step="1" min="0" max="200" placeholder="e.g. 108" value="${input.ndr ?? ''}" ${input.ndrTrack==='no'?'disabled':''}/><span class="input-suffix">%</span></div>
+        <div class="hint">${ndrHint}</div>
+        <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin-top:6px;cursor:pointer">
+          <input type="checkbox" id="i-ndr-skip" ${input.ndrTrack==='no'?'checked':''} style="width:16px;height:16px;accent-color:var(--orange)"/>
+          We do not currently track NDR
+        </label>
+      </div>
+    </div>
+
+    <div class="field" style="margin-top:14px">
+      <label>Revenue model</label>
+      <ul class="options opt-grid">
+        ${[
+          {v:"self-serve",t:"Self-serve / Stripe"},
+          {v:"invoiced",  t:"Invoiced enterprise"},
+          {v:"mixed",     t:"Mixed"}
+        ].map(o=>`<li><label class="opt"><input type="radio" name="rev" value="${o.v}" ${input.revenueModel===o.v?'checked':''}/><span>${o.t}</span></label></li>`).join('')}
+      </ul>
+      <div class="hint">Drives whether we look at AR aging or instant-card capture in the trapped-value scan.</div>
+    </div>
+  `;
+  elBody.querySelector('#i-growth').addEventListener('input',e=>{ input.growthYoY = parseFloat(e.target.value); if(isNaN(input.growthYoY)) input.growthYoY=null; refreshAll(); });
+  const ndrEl = elBody.querySelector('#i-ndr');
+  ndrEl.addEventListener('input',e=>{ input.ndr = parseFloat(e.target.value); if(isNaN(input.ndr)) input.ndr=null; refreshAll(); });
+  elBody.querySelector('#i-ndr-skip').addEventListener('change',e=>{
+    if(e.target.checked){ input.ndrTrack='no'; input.ndr=null; ndrEl.value=''; ndrEl.disabled=true; }
+    else { input.ndrTrack='yes'; ndrEl.disabled=false; }
+    refreshAll();
+  });
+  elBody.querySelectorAll('input[name=rev]').forEach(r=>r.addEventListener('change',e=>{ input.revenueModel=e.target.value; refreshAll(); }));
+}
+
+/* ---------- Screen 4: Headcount ---------- */
+function renderHeadcount(){
+  const m = metrics();
+  const hint = m.cohort ? `Cohort median ARR per FTE: <b>$${m.cohort.arrPerFTE[0]}K to $${m.cohort.arrPerFTE[1]}K</b>.` : '';
+  elBody.innerHTML = `
+    <div class="q-eyebrow">Capital efficiency · 4 of 6</div>
+    <h2 class="q-stem">Headcount.</h2>
+    <p class="q-help">Total full-time equivalents, including founders. We use this for capital efficiency, not for opining on org structure.</p>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="i-hc">Total FTE</label>
+        <input id="i-hc" type="number" inputmode="numeric" step="1" min="1" placeholder="e.g. 28" value="${input.hcTotal ?? ''}" />
+        <div class="hint">${hint}</div>
+      </div>
+      <div class="field">
+        <label for="i-gtm">GTM headcount (optional)</label>
+        <input id="i-gtm" type="number" inputmode="numeric" step="1" min="0" placeholder="e.g. 9" value="${input.hcGTM ?? ''}" />
+        <div class="hint">Sales, marketing, CS combined. Used for sales-efficiency context only.</div>
+      </div>
+    </div>
+  `;
+  elBody.querySelector('#i-hc').addEventListener('input',e=>{ input.hcTotal = parseInt(e.target.value)||null; refreshAll(); });
+  elBody.querySelector('#i-gtm').addEventListener('input',e=>{ input.hcGTM = parseInt(e.target.value)||null; refreshAll(); });
+}
+
+/* ---------- Screen 5: Raise position ---------- */
+function renderRaise(){
+  elBody.innerHTML = `
+    <div class="q-eyebrow">Raise position · 5 of 6</div>
+    <h2 class="q-stem">Where is the round?</h2>
+    <p class="q-help">The single highest-correlation signal we have for whether the next 12 months go well.</p>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="i-mc">Months since last priced round closed</label>
+        <input id="i-mc" type="number" inputmode="numeric" step="1" min="0" max="60" placeholder="e.g. 18" value="${input.monthsSinceClose ?? ''}" />
+        <div class="hint">If you haven't raised, leave at 0.</div>
+      </div>
+      <div class="field">
+        <label>Current raise status</label>
+        <ul class="options" style="gap:7px">
+          ${[
+            {v:"not-raising",t:"Not currently raising"},
+            {v:"on-track",   t:"In process and on schedule"},
+            {v:"stretched",  t:"In process but past target close (1 to 3 months)"},
+            {v:"stalled",    t:"Stalled, soft, or quiet (3+ months past target)"}
+          ].map(o=>`<li><label class="opt"><input type="radio" name="raise" value="${o.v}" ${input.raiseStatus===o.v?'checked':''}/><span>${o.t}</span></label></li>`).join('')}
+        </ul>
+      </div>
+    </div>
+  `;
+  elBody.querySelector('#i-mc').addEventListener('input',e=>{ input.monthsSinceClose = parseInt(e.target.value); if(isNaN(input.monthsSinceClose)) input.monthsSinceClose=null; refreshAll(); });
+  elBody.querySelectorAll('input[name=raise]').forEach(r=>r.addEventListener('change',e=>{ input.raiseStatus=e.target.value; refreshAll(); }));
+}
+
+/* ---------- Screen 6: Activities checklist ---------- */
+function renderActivities(){
+  elBody.innerHTML = `
+    <div class="q-eyebrow">Decision rhythm + recovered cash · 6 of 6</div>
+    <h2 class="q-stem">Which of these has happened in the last 12 months?</h2>
+    <p class="q-help">Check the items that are actually done. Anything unchecked is where the trapped value sits in this cohort, and it is what the 14-day Diagnostic targets first.</p>
+    <ul class="checks" id="check-list"></ul>
+  `;
+  const ul = elBody.querySelector('#check-list');
+  ACTIVITIES.forEach(a=>{
+    const checked = !!input.activities[a.key];
+    let tag = '';
+    if(a.recurring){
+      tag = `$${(a.loMo/1000).toFixed(0)}K to $${(a.hiMo/1000).toFixed(0)}K / mo at risk`;
+    } else if(a.loOne || a.hiOne){
+      tag = `$${(a.loOne/1000).toFixed(0)}K to $${(a.hiOne/1000).toFixed(0)}K one-time`;
+    } else {
+      tag = `Decision quality`;
+    }
+    const li = document.createElement('li');
+    li.className = 'check';
+    li.innerHTML = `
+      <input type="checkbox" data-act="${a.key}" ${checked?'checked':''} aria-label="${a.name}"/>
+      <div class="check-body">
+        <div class="check-name">${a.name}</div>
+        <div class="check-desc">${a.desc}</div>
+      </div>
+      <span class="check-tag"><span class="check-tag-text">${tag}</span></span>
+    `;
+    ul.appendChild(li);
+  });
+  ul.querySelectorAll('input[type=checkbox]').forEach(box=>{
+    box.addEventListener('change',e=>{
+      input.activities[e.target.dataset.act] = e.target.checked;
+      refreshAll();
+    });
+  });
+}
+
+/* =============================================================
+   LIVE READ PANEL
+============================================================= */
+const elLiveTitle = document.getElementById('live-title');
+const elLiveRows = document.getElementById('live-rows');
+const elLiveBlurb = document.getElementById('live-blurb');
+
+function ragOf(metric, value){
+  if(value == null) return null;
+  switch(metric){
+    case 'runway':       return value >= 18 ? 'g' : value >= 12 ? 'a' : 'r';
+    case 'burnMultiple': return value <= 1.5 ? 'g' : value <= 2.5 ? 'a' : 'r';
+    case 'rule40':       return value >= 40 ? 'g' : value >= 20 ? 'a' : 'r';
+    case 'ndr':          return value >= 110 ? 'g' : value >= 100 ? 'a' : 'r';
+    case 'arrFTE':{
+      const m = metrics();
+      const lo = m.cohort ? m.cohort.arrPerFTE[0]*1000 : 200000;
+      return value >= lo ? 'g' : value >= lo*0.7 ? 'a' : 'r';
+    }
+    case 'raise':{
+      return value === 'on-track' || value === 'not-raising' ? 'g' : value === 'stretched' ? 'a' : 'r';
+    }
+  }
+  return 'n';
+}
+
+function fmtMoney(n){
+  if(n == null || isNaN(n)) return '·';
+  if(Math.abs(n) >= 1000000) return '$' + (n/1000000).toFixed(n>=10000000?0:1) + 'M';
+  if(Math.abs(n) >= 1000) return '$' + Math.round(n/1000) + 'K';
+  return '$' + Math.round(n);
+}
+function fmtPct(n){ if(n==null||isNaN(n)) return '·'; return Math.round(n) + '%'; }
+function fmtMult(n){ if(n==null||isNaN(n)) return '·'; return n.toFixed(2) + 'x'; }
+function fmtMo(n){ if(n==null||isNaN(n)) return '·'; return Math.round(n) + ' mo'; }
+
+function refreshLive(){
+  const m = metrics();
+  const rows = [];
+
+  if(input.stage && input.arrBand && m.cohort){
+    rows.push(['Cohort', m.cohort.label, 'n']);
+  } else {
+    rows.push(['Cohort', 'set on screen 1', 'n']);
+  }
+  rows.push(['Runway', m.runway != null ? fmtMo(m.runway) : '·', ragOf('runway', m.runway)]);
+  rows.push(['Burn multiple', m.burnMultiple != null ? fmtMult(m.burnMultiple) : '·', ragOf('burnMultiple', m.burnMultiple)]);
+  rows.push(['Rule of 40', m.rule40 != null ? Math.round(m.rule40)+'%' : '·', ragOf('rule40', m.rule40)]);
+  rows.push(['ARR / FTE', m.arrPerFTE != null ? fmtMoney(m.arrPerFTE) : '·', ragOf('arrFTE', m.arrPerFTE)]);
+  rows.push(['NDR', input.ndrTrack === 'no' ? 'not tracked' : (input.ndr != null ? fmtPct(input.ndr) : '·'), ragOf('ndr', input.ndr)]);
+  rows.push(['Raise', input.raiseStatus ? raiseChip(input.raiseStatus) : '·', ragOf('raise', input.raiseStatus)]);
+  rows.push(['Decision Risk Index', m.wdi != null ? (m.wdi + ' / 100') : '·', wdiRag(m.wdi)]);
+
+  elLiveTitle.textContent = m.tier ? m.tier.chip : 'Building your read';
+  elLiveRows.innerHTML = rows.map(r=>{
+    const rag = r[2] || 'n';
+    return `<div class="live-row"><span class="lk">${r[0]}</span><span class="lv rag-${rag}">${r[1]}</span></div>`;
+  }).join('');
+  elLiveBlurb.textContent = liveBlurb();
+}
+
+function raiseChip(s){
+  return ({ "not-raising":"not raising", "on-track":"on track", "stretched":"stretched", "stalled":"stalled" })[s] || s;
+}
+function wdiRag(wdi){
+  if(wdi==null) return 'n';
+  if(wdi<=25) return 'g';
+  if(wdi<=50) return 'a';
+  return 'r';
+}
+function liveBlurb(){
+  switch(screens[cur]){
+    case 'stage':    return "Pick stage and ARR. The cohort baseline appears below the inputs.";
+    case 'burnCash': return "We need both numbers to compute runway. Estimates are fine, round to the nearest $25K.";
+    case 'growthYoY':
+    case 'growthNDR':return "Growth and NDR drive burn multiple and Rule of 40. NDR is optional.";
+    case 'headcount':return "Total FTE is enough for ARR per FTE. GTM split is optional.";
+    case 'raise':    return "Raise position is the highest-correlation signal we have. Be honest.";
+    case 'activities':return "Each unchecked item is where the 14-day Diagnostic targets first.";
+    default: return "Numbers stay in your browser until you ask for the write-up.";
+  }
+}
+
+function refreshNext(){
+  const i = cur;
+  let ok = false;
+  switch(screens[i]){
+    case 'stage':     ok = !!(input.stage && input.arrBand); break;
+    case 'burnCash':  ok = (input.burnMo > 0) && (input.cash > 0); break;
+    case 'growthNDR': ok = (input.growthYoY != null) && (input.ndrTrack === 'no' || input.ndr != null) && !!input.revenueModel; break;
+    case 'headcount': ok = (input.hcTotal > 0); break;
+    case 'raise':     ok = (input.monthsSinceClose != null) && !!input.raiseStatus; break;
+    case 'activities':ok = true; break;
+  }
+  elNext.disabled = !ok;
+}
+
+function refreshAll(){
+  refreshLive();
+  refreshNext();
+  if(screens[cur] === 'stage') paintCohortTile();
+}
+
+/* =============================================================
+   FINALIZE → DASHBOARD
+============================================================= */
+function finalize(){
+  const m = metrics();
+  paintDashboard(m);
+  show('dash');
+}
+
+function paintDashboard(m){
+  // Gauge
+  const wdi = m.wdi || 0;
+  document.getElementById('gauge-num').textContent = wdi;
+  const arc = document.getElementById('gauge-arc');
+  const arcLen = 264;            // approximate length of the half-circle path
+  const filled = (wdi / 100) * arcLen;
+  arc.setAttribute('stroke-dasharray', filled + ' ' + arcLen);
+  arc.setAttribute('stroke', wdi <= 25 ? '#1f8a5b' : wdi <= 50 ? '#b88412' : wdi <= 75 ? '#e3632b' : '#b03a2e');
+  document.getElementById('gauge-tier').textContent = m.tier.chip;
+  document.getElementById('gauge-tier').style.background = wdi <= 25 ? '#1f8a5b' : wdi <= 50 ? '#b88412' : wdi <= 75 ? '#e3632b' : '#b03a2e';
+  document.getElementById('gauge-name').textContent = m.tier.name;
+  document.getElementById('gauge-blurb').textContent = m.tier.blurb;
+
+  // Headline
+  const head = HEADLINES[m.tier.key];
+  document.getElementById('read-headline').textContent = head.h;
+  document.getElementById('read-blurb').textContent = head.b;
+
+  // Tiles
+  const tiles = [];
+  tiles.push(makeTile('Runway',     m.runway != null ? Math.round(m.runway) : null, 'mo',
+    {green:18, amber:12, dir:'highIsBetter', max:30,
+     bench: m.cohort ? `Cohort target: <b>18+ mo</b> · Bessemer 2024.` : `Healthy: 18+ mo.`}));
+  tiles.push(makeTile('Burn Multiple', m.burnMultiple != null ? +m.burnMultiple.toFixed(2) : null, 'x',
+    {green:1.5, amber:2.5, dir:'lowIsBetter', max:5,
+     bench:`Sacks 2020 bands: <b>&lt;1.5x great · 1.5-2.5x stretched · 2.5x+ stalled</b>.`}));
+  tiles.push(makeTile('Rule of 40', m.rule40 != null ? Math.round(m.rule40) : null, '%',
+    {green:40, amber:20, dir:'highIsBetter', max:80,
+     bench:`Public-SaaS median fell to <b>~30%</b> (2024) · <b>20%</b> is stall threshold.`}));
+  tiles.push(makeTile('ARR / FTE', m.arrPerFTE != null ? Math.round(m.arrPerFTE/1000) : null, 'K',
+    {green: m.cohort ? m.cohort.arrPerFTE[0] : 200, amber: m.cohort ? m.cohort.arrPerFTE[0]*0.7 : 140, dir:'highIsBetter', max: m.cohort ? m.cohort.arrPerFTE[1]*1.4 : 400,
+     bench: m.cohort ? `Cohort median: <b>$${m.cohort.arrPerFTE[0]}K to $${m.cohort.arrPerFTE[1]}K</b> per FTE · KeyBanc 2024.` : `Public unicorn benchmark: $300K to $500K.`}));
+  tiles.push(makeTile('NDR', input.ndrTrack === 'no' ? 'n/a' : (input.ndr != null ? Math.round(input.ndr) : null), '%',
+    {green:110, amber:100, dir:'highIsBetter', max:140,
+     bench:`Bessemer 2024: top quartile <b>120%+</b>, median <b>~110-115%</b>.`}));
+  tiles.push(makeTile('Raise health', null, '',
+    {custom:true, label: raiseLabel(input.raiseStatus, input.monthsSinceClose),
+     rag: ragOf('raise', input.raiseStatus) || 'n',
+     bench:`Past target close past 4+ months is the strongest stall signal.`}));
+  document.getElementById('tiles').innerHTML = tiles.join('');
+
+  // Trapped value
+  document.getElementById('tv-low').textContent = fmtMoney(m.trappedLo);
+  document.getElementById('tv-high').textContent = fmtMoney(m.trappedHi);
+  document.getElementById('tv-period').textContent = `Across ${m.trappedWindow} months of runway · combined recurring + one-time`;
+
+  const tvList = document.getElementById('tv-list');
+  tvList.innerHTML = ACTIVITIES.map(a=>{
+    const done = !!input.activities[a.key];
+    let amt = '';
+    if(!done){
+      if(a.recurring) amt = `$${(a.loMo/1000).toFixed(0)}K to $${(a.hiMo/1000).toFixed(0)}K / mo`;
+      else if(a.loOne || a.hiOne) amt = `$${(a.loOne/1000).toFixed(0)}K to $${(a.hiOne/1000).toFixed(0)}K one-time`;
+      else amt = 'decision quality';
+    } else { amt = 'covered'; }
+    const short = a.name.replace(/in last 12 months$/,'').replace(/in last 90 days$/,'').replace(/at last renewal$/,'').replace(/in last quarter.*$/,'');
+    return `<li class="tv-item ${done?'done':''}"><span class="ti-icon"></span><span class="ti-name">${short}</span><span class="ti-amt">${amt}</span></li>`;
+  }).join('');
+
+  // Signals
+  const sigs = topSignals(m);
+  document.getElementById('signals').innerHTML = sigs.map((s,i)=>`
+    <div class="signal">
+      <div class="sn">Signal ${i+1}</div>
+      <div class="sname">${s.name}</div>
+      <p class="sd">${s.detail}</p>
+    </div>
+  `).join('');
+}
+
+function makeTile(label, val, unit, cfg){
+  let display = '·';
+  let ragClass = 'rag-n';
+  if(cfg.custom){
+    display = cfg.label;
+    ragClass = 'rag-' + (cfg.rag || 'n');
+  } else if(val != null && val !== 'n/a'){
+    display = (typeof val === 'number' ? (Number.isInteger(val) ? val : val.toFixed(2)) : val);
+    if(unit === 'K') display = '$' + display + 'K';
+    else if(unit === '%' || unit === 'x' || unit === 'mo') display = display + (unit === 'mo' ? ' mo' : unit);
+    if(cfg.dir === 'highIsBetter'){
+      ragClass = val >= cfg.green ? 'rag-g' : val >= cfg.amber ? 'rag-a' : 'rag-r';
+    } else {
+      ragClass = val <= cfg.green ? 'rag-g' : val <= cfg.amber ? 'rag-a' : 'rag-r';
+    }
+  } else if(val === 'n/a'){
+    display = '·';
+  }
+
+  // Bench bar segments
+  let bar = '';
+  if(!cfg.custom && cfg.max){
+    const max = cfg.max;
+    const g = cfg.green/max*100, a = cfg.amber/max*100;
+    let pinPct = 0;
+    if(val != null && val !== 'n/a'){
+      pinPct = Math.min(100, Math.max(0, (val/max)*100));
+    }
+    if(cfg.dir === 'highIsBetter'){
+      // 0 to amber = red, amber to green = amber, green to max = green
+      bar = `
+        <div class="tile-bar" aria-hidden="true">
+          <div class="seg-r" style="left:0;width:${a}%"></div>
+          <div class="seg-a" style="left:${a}%;width:${g - a}%"></div>
+          <div class="seg-g" style="left:${g}%;width:${100 - g}%"></div>
+          ${val!=null?`<div class="pin" style="left:calc(${pinPct}% - 2px)"></div>`:''}
+        </div>`;
+    } else {
+      // 0 to green = green, green to amber = amber, amber to max = red
+      bar = `
+        <div class="tile-bar" aria-hidden="true">
+          <div class="seg-g" style="left:0;width:${g}%"></div>
+          <div class="seg-a" style="left:${g}%;width:${a - g}%"></div>
+          <div class="seg-r" style="left:${a}%;width:${100 - a}%"></div>
+          ${val!=null?`<div class="pin" style="left:calc(${pinPct}% - 2px)"></div>`:''}
+        </div>`;
+    }
+  }
+
+  return `
+    <div class="tile">
+      <div class="tile-head">
+        <div class="tile-label">${label}</div>
+        <span class="rag ${ragClass}"><span class="rag-dot"></span>${ragText(ragClass)}</span>
+      </div>
+      <div class="tile-val mono">${display}</div>
+      ${bar}
+      <div class="tile-bench">${cfg.bench}</div>
+    </div>
+  `;
+}
+function ragText(c){
+  return c==='rag-g' ? 'on band' : c==='rag-a' ? 'stretched' : c==='rag-r' ? 'stalled' : '·';
+}
+function raiseLabel(status, mc){
+  if(!status) return '·';
+  const m = mc != null ? `${mc} mo since close` : '';
+  const t = ({ "not-raising":"Not raising", "on-track":"On track", "stretched":"Stretched", "stalled":"Stalled" })[status];
+  return m ? `${t} · ${m}` : t;
+}
+
+function topSignals(m){
+  const out = [];
+  if(m.burnMultiple != null && m.burnMultiple > 2.5){
+    out.push({name:"Burn multiple above 2.5x", detail:`Your burn multiple is ${m.burnMultiple.toFixed(2)}x. Sacks 2020 puts 2.5x+ in &ldquo;suspect to bad.&rdquo; In our cohort this is the dominant predictor of a founder reaching the growth-versus-runway call sooner than planned.`});
+  } else if(m.burnMultiple != null && m.burnMultiple > 1.5){
+    out.push({name:"Burn multiple stretched", detail:`Your burn multiple is ${m.burnMultiple.toFixed(2)}x. Manageable, but the next round will price this number harder than the last one did.`});
+  }
+  if(m.runway != null && m.runway < 12){
+    out.push({name:"Runway under 12 months", detail:`At ${Math.round(m.runway)} months of runway, the bridge / inside round / RIF decisions are not optional. They are the next 90 days of work.`});
+  } else if(m.runway != null && m.runway < 18){
+    out.push({name:"Runway in the stretched band", detail:`${Math.round(m.runway)} months. Bessemer puts healthy at 18+. Add 4 to 9 months without a raise by closing two of the unchecked activities below.`});
+  }
+  if(input.growthYoY != null && m.cohort && input.growthYoY < m.cohort.growthYoY[0]){
+    out.push({name:"Growth below cohort floor", detail:`${input.growthYoY}% YoY against a cohort floor of ${m.cohort.growthYoY[0]}%. The story the next investor reads is the trajectory, not the ARR.`});
+  }
+  if(input.ndr != null && input.ndr < 100){
+    out.push({name:"Net contraction", detail:`NDR at ${input.ndr}% means existing customers are shrinking faster than expanding. The path to defensible growth runs through retention before new logos.`});
+  } else if(input.ndr != null && input.ndr < 110){
+    out.push({name:"NDR below cohort median", detail:`${input.ndr}% NDR. Cohort median is 110-115%. Two-three customer-level interventions usually move this 5-8 points.`});
+  }
+  if(m.arrPerFTE != null && m.cohort){
+    const lo = m.cohort.arrPerFTE[0]*1000;
+    if(m.arrPerFTE < lo*0.7){
+      out.push({name:"Capital efficiency below cohort", detail:`$${Math.round(m.arrPerFTE/1000)}K ARR per FTE against a cohort median of $${m.cohort.arrPerFTE[0]}K-$${m.cohort.arrPerFTE[1]}K. The headcount call is the largest single lever in the model.`});
+    }
+  }
+  if(input.raiseStatus === 'stalled'){
+    out.push({name:"Round 3+ months past target close", detail:`This is the strongest single predictor in our 30+ engagement set of a founder arriving at the growth-versus-runway call. The decisions that change the trajectory are almost always inside the next five material calls, not in a different deck.`});
+  } else if(input.raiseStatus === 'stretched'){
+    out.push({name:"Round past target close", detail:`In our engagement set, rounds that go more than 6 weeks past target close on average go 9+ months out. The intervention is now, not at month 4.`});
+  }
+  const skipped = ACTIVITIES.filter(a=>!input.activities[a.key]).length;
+  if(skipped >= 5){
+    out.push({name:"Decision rhythm not running", detail:`${skipped} of ${ACTIVITIES.length} activities not done. The first $22,500 of trapped value sits in the unchecked items, not in a strategy review.`});
+  }
+  return out.slice(0, 6);
+}
+
+const HEADLINES = {
+  clear:  { h:"The next call is well-supported.", b:"On the metrics that determine whether a post-Series A or B founder defends growth or pivots to runway, you are inside the cohort band on every dimension. Re-run this in 6 months." },
+  watch:  { h:"One or two signals tightening.", b:"The call is still yours to make. The early pattern is usually the numbers still reading well while the board conversations have softened. Two interventions move the score before it becomes a question." },
+  hard:   { h:"The call is harder than the deck makes it look.", b:"Three to four signals against the cohort. The math you need to defend the next round is running thin. The 14-day Diagnostic is built to put numbers behind the call before the next board." },
+  atcall: { h:"You are at the call now.", b:"Five or more signals against the cohort. The growth-versus-runway decision is being made, even if no one has said it out loud. The Diagnostic names the five calls and runs the math behind each this week." }
+};
+
+/* =============================================================
+   SAVE-AS-PDF BUTTON
+============================================================= */
+document.getElementById('btn-print').addEventListener('click', ()=>{
+  // Browser print dialog. The @media print rules hide chrome and form;
+  // user picks "Save as PDF" as destination. Works in Chrome, Safari, Edge, Firefox.
+  window.print();
+});
+
+/* =============================================================
+   FORM SUBMIT
+============================================================= */
+const form = document.getElementById('lead-form');
+const formError = document.getElementById('form-error');
+const btnSubmit = document.getElementById('btn-submit');
+
+form.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  formError.classList.remove('on');
+  const data = {
+    name: document.getElementById('f-name').value.trim(),
+    company: document.getElementById('f-company').value.trim(),
+    email: document.getElementById('f-email').value.trim(),
+    website: document.getElementById('f-website').value.trim(),
+    optin: document.getElementById('f-optin').checked
+  };
+  if(data.website){ goConfirm(data); return; } // honeypot
+  if(!data.name || data.name.length < 2) return showFormError("First name, please.");
+  if(!data.company || data.company.length < 2) return showFormError("Company, please.");
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) return showFormError("That email looks off.");
+
+  btnSubmit.disabled = true;
+  btnSubmit.textContent = "Sending…";
+
+  const payload = buildPayload(data);
+
+  // 1. Always: lead notification to Russ (Path A intake)
+  try{
+    if(FORM_ENDPOINT && !/REPLACE_WITH_YOUR/.test(FORM_ENDPOINT)){
+      const res = await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)});
+      if(!res.ok) throw new Error('endpoint failed');
+    } else { mailtoFallback(payload); }
+  } catch(err){ mailtoFallback(payload); }
+
+  // 2. Conditional: Kit field-notes subscribe, only if user opted in
+  if(data.optin){ await kitSubscribe(data, payload).catch(()=>{/* fail silent; intake already succeeded */}); }
+
+  goConfirm(data);
+});
+
+/* Kit (formerly ConvertKit) field-notes subscription.
+   Public form-subscribe endpoint, no API key needed.
+   Tier and score travel as custom fields; tags handled by Kit form rules. */
+async function kitSubscribe(data, payload){
+  if(!KIT_FORM_URL || /REPLACE_WITH_KIT/.test(KIT_FORM_URL)) return;
+  const body = new URLSearchParams({
+    'email_address': data.email,
+    'first_name': data.name,
+    'fields[company]':       data.company || '',
+    'fields[tier]':          (payload.tier || ''),
+    'fields[decision_risk]': String(payload.wdi != null ? payload.wdi : ''),
+    'fields[source]':        payload.source || 'assessment/next-call'
+  });
+  return fetch(KIT_FORM_URL, {
+    method:'POST',
+    headers:{'Content-Type':'application/x-www-form-urlencoded','Accept':'application/json'},
+    body
+  });
+}
+function showFormError(msg){
+  formError.textContent = msg; formError.classList.add('on');
+  btnSubmit.disabled = false; btnSubmit.textContent = "Send to Russ";
+}
+function goConfirm(data){
+  document.getElementById('confirm-email').textContent = data.email || '';
+  show('confirm');
+}
+function buildPayload(data){
+  const m = metrics();
+  return {
+    _subject: 'Next Call Self-Assessment · ' + (m.tier ? m.tier.chip : 'unscored') + ' · ' + (data.company||''),
+    name:data.name, email:data.email, company:data.company,
+    wdi:m.wdi, tier:m.tier && m.tier.chip,
+    inputs:{
+      stage:input.stage, arrBand:input.arrBand,
+      burnMo:input.burnMo, cash:input.cash,
+      growthYoY:input.growthYoY, ndr:input.ndr, ndrTrack:input.ndrTrack,
+      revenueModel:input.revenueModel,
+      hcTotal:input.hcTotal, hcGTM:input.hcGTM,
+      monthsSinceClose:input.monthsSinceClose, raiseStatus:input.raiseStatus,
+      activities:input.activities
+    },
+    metrics:{
+      runwayMo: m.runway, burnMultiple: m.burnMultiple, rule40: m.rule40,
+      arrPerFTE: m.arrPerFTE, trappedLo: m.trappedLo, trappedHi: m.trappedHi
+    },
+    submitted_at: new Date().toISOString(),
+    source: 'assessment/next-call'
+  };
+}
+function mailtoFallback(p){
+  const subj = p._subject;
+  const body = [
+    'Name: ' + p.name,
+    'Email: ' + p.email,
+    'Company: ' + p.company,
+    '',
+    'Decision Risk Index: ' + (p.wdi != null ? p.wdi : '·') + ' / 100',
+    'Tier: ' + (p.tier || '·'),
+    '',
+    'Inputs: ' + JSON.stringify(p.inputs, null, 2),
+    'Metrics: ' + JSON.stringify(p.metrics, null, 2),
+    '',
+    'Submitted: ' + p.submitted_at,
+    'Source: ' + p.source
+  ].join('\n');
+  const url = 'mailto:' + FALLBACK_EMAIL + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
+  try{
+    const a = document.createElement('a'); a.href = url; a.style.display='none';
+    document.body.appendChild(a); a.click(); setTimeout(()=>a.remove(), 500);
+  } catch(e){}
+}
+</script>
+</body>
+</html>
