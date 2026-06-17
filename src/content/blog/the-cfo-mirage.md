@@ -6,7 +6,7 @@ pubDate: 2026-02-03
 updatedDate: 2026-02-03
 author: "Russell Fette"
 postType: "field-note"
-topicCluster: "cfo-mirage"
+topicCluster: "system-of-decision"
 pillar: 1
 ctaVariant: "diagnostic-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"

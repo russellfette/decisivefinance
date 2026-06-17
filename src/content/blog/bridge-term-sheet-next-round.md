@@ -6,7 +6,7 @@ pubDate: 2026-06-23
 updatedDate: 2026-06-23
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "down-round-timing"
+topicCluster: "funded-tech"
 pillar: 3
 ctaVariant: "scorecard"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -65,7 +65,7 @@ A bridge is a forward decision dressed as a capital event. Treat it like the dec
 
 ## What is the Decisive Finance role in this?
 
-The right time for a Diagnostic is before the bridge is signed, because the Diagnostic produces the raw material the term sheet needs: the three headline ratios restated, the material decision named with Keep/Kill/Restructure paths in dollars, and the use-of-proceeds page drafted against real numbers. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. The trapped value matters here for a structural reason: every dollar recovered is a dollar of bridge the company does not raise, and a smaller bridge with named uses beats a bigger bridge with stacked preferences in every version of the next round.
+The right time for a Diagnostic is before the bridge is signed, because the Diagnostic produces the raw material the term sheet needs: the three headline ratios restated, the material decision named with Keep/Kill/Restructure paths in dollars, and the use-of-proceeds page drafted against real numbers. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. The recoverable value matters here for a structural reason: every dollar recovered is a dollar of bridge the company does not raise, and a smaller bridge with named uses beats a bigger bridge with stacked preferences in every version of the next round.
 
 ## Where to go from here
 

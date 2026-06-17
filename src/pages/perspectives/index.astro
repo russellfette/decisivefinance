@@ -26,27 +26,27 @@ function postsForPillar(n: Pillar): Post[] {
 const pillars = [
   {
     n: 1 as Pillar,
-    title: 'The round 18 months in',
+    title: 'The profit paradox',
     eyebrow: 'Pillar 01',
-    tagline: 'The pattern, the math, and the signal investors will not name.',
+    tagline: 'Why revenue climbs, profit stalls, and the numbers can not tell you why.',
     accent: 'orange',
     iconKind: 'stalled' as const,
     posts: postsForPillar(1),
   },
   {
     n: 2 as Pillar,
-    title: 'Decision-first finance',
+    title: 'Decision-First Finance',
     eyebrow: 'Pillar 02',
-    tagline: 'The method that replaces the forecast with a forward decision rhythm.',
+    tagline: 'The method that turns your books into a system of decision.',
     accent: 'green',
     iconKind: 'method' as const,
     posts: postsForPillar(2),
   },
   {
     n: 3 as Pillar,
-    title: 'Field guide for investors and boards',
+    title: 'For boards, advisors, and investors',
     eyebrow: 'Pillar 03',
-    tagline: 'For GPs, directors, and portfolio CFOs reading the room from the cap table.',
+    tagline: 'For EOS implementers, Vistage chairs, operating partners, and directors.',
     accent: 'ink',
     iconKind: 'field-guide' as const,
     posts: postsForPillar(3),
@@ -61,16 +61,16 @@ function fmtDate(d: Date) {
 
 const title = 'Perspectives | Decisive Finance';
 const description =
-  'Field notes from inside venture-backed tech 18 months past the raise. Three pillars: the pattern, decision-first finance, and a field guide for investors and boards.';
+  'Field notes on Decision-First Finance for operating companies, $5M to $50M. The profit paradox, the method, and a field guide for boards and advisors.';
 ---
 
 <BaseLayout title={title} description={description}>
   <header class="perspectives-hero">
     <div class="perspectives-hero-inner">
       <span class="eyebrow">Perspectives</span>
-      <h1>Field notes from inside venture-backed tech 18 months past the raise.</h1>
+      <h1>Field notes on the numbers behind the next call.</h1>
       <p class="perspectives-hero-sub">
-        Working theory, recovered dollars, and the operating rhythm that replaces the dashboard as the primary artifact.
+        Working theory, recovered dollars, and the operating rhythm that turns your books into a system of decision.
       </p>
       <div class="perspectives-hero-meta">
         <span><strong>Three pillars</strong></span>
@@ -144,14 +144,14 @@ const description =
   <section class="close-section">
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow" style="color: var(--orange);">Stop reading. Start resolving.</span>
+        <span class="section-eyebrow" style="color: var(--orange);">Stop reading. Start deciding.</span>
         <h2>The writing is free. The Diagnostic pays for itself.</h2>
         <p class="lede" style="color: rgba(255,255,255,0.8);">
-          Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. Engagements to date: 5x to 10x. The founders who book usually started in the field notes.
+          Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. The owners who book usually started in the field notes.
         </p>
         <div class="hero-cta-row">
-          <a href={CALENDLY} class="btn btn-primary">Book 30 minutes with Russ</a>
-          <a href="/guarantee" class="btn btn-secondary">Read Guarantee</a>
+          <a href={CALENDLY} class="btn btn-primary">Book a fit call</a>
+          <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
         </div>
       </div>
     </div>

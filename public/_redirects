@@ -23,8 +23,10 @@
 /blog/rss.xml              /perspectives/rss.xml          301
 /blog/*                    /perspectives/:splat           301
 
-# Next Call Self-Assessment: chained redirects from prior slugs (v2.5 canon refresh)
-/assessment/walking-dead/    /assessment/next-call/   301
-/assessment/walking-dead     /assessment/next-call/   301
-/assessment/stalled-raise/   /assessment/next-call/   301
-/assessment/stalled-raise    /assessment/next-call/   301
+# Retired M&A landing (canon v3 horizontal) → tiers
+/m-and-a                   /#tiers        301
+/m-and-a/                  /#tiers        301
+
+# Retired funded-tech assessment routes (canon v3 horizontal) → home
+/assessment              /          301
+/assessment/*            /          301

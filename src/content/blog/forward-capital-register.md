@@ -6,7 +6,7 @@ pubDate: 2026-07-14
 updatedDate: 2026-07-14
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "decision-first"
+topicCluster: "financial-rhythms"
 pillar: 2
 ctaVariant: "slide-template"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -68,7 +68,7 @@ For the board, the register summary becomes one page in the packet: total deploy
 
 ## What is the Decisive Finance role in this?
 
-Building the first forward capital register is half the work of the 14-day Decision Diagnostic. We inventory the deployed dollars, score them against current context, name the defenders, and hand back the register with the dead-context rows ranked by recoverable value. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. We don't audit the past. We justify each next call.
+Building the first forward capital register is half the work of the 14-day Decision Diagnostic. We inventory the deployed dollars, score them against current context, name the defenders, and hand back the register with the dead-context rows ranked by recoverable value. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. We don't audit the past. We justify each next call.
 
 ## Where to go from here
 

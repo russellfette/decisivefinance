@@ -6,7 +6,7 @@ pubDate: 2026-04-14
 updatedDate: 2026-04-14
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "independent-director-role"
+topicCluster: "funded-tech"
 pillar: 3
 ctaVariant: "investor-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"

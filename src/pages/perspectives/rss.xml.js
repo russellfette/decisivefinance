@@ -9,7 +9,7 @@ export async function GET(context) {
   return rss({
     title: 'Decisive Finance: Perspectives',
     description:
-      'Field notes from inside venture-backed tech 18 months past the raise. The pattern, decision-first finance, and a field guide for investors and boards.',
+      'Field notes on Decision-First Finance for operating companies, $5M to $50M. The profit paradox, the method, and a field guide for boards and advisors.',
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,

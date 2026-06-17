@@ -6,7 +6,7 @@ pubDate: 2026-03-17
 updatedDate: 2026-03-17
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "board-reporting"
+topicCluster: "funded-tech"
 pillar: 3
 ctaVariant: "scorecard"
 dominantClaim: "two-quarters-early"
@@ -20,7 +20,7 @@ pillarHub: true
 
 - Walking dead portcos are identifiable two quarters before their next raise stalls. The early signals are relational and structural, not purely financial.
 - Twelve signals matter, grouped into three buckets: deck drift, decision drift, and cash drift. Three or more live signals means the portco is on the stalled portco track, whether the CEO has named it or not.
-- What to demand when you see it: a Three-Path Model on the next five material decisions, a rewritten board pack that leads with decisions rather than variance, and a 14-day Diagnostic that either surfaces $22.5K+ in trapped value or confirms the company is leaner than its peers.
+- What to demand when you see it: a Three-Path Model on the next five material decisions, a rewritten board pack that leads with decisions rather than variance, and a 14-day Diagnostic that either surfaces recoverable value at 3x the fee or more or confirms the company is leaner than its peers.
 
 ## Who this is for
 
@@ -82,8 +82,8 @@ If the CFO cannot produce that format, the CFO has gone retrospective and the co
 
 A scoped audit of the eight recovery categories: SaaS, cloud, R&D credits, AR, vendor terms, revenue leakage, headcount, G&A. Two outcomes are acceptable:
 
-- $22.5K+ of trapped value is identified in 14 days, in which case the company captures it and the Diagnostic paid for itself at 3x.
-- Less than $22.5K is identified, in which case the Diagnostic fee refunds in full and the board has a defensible lean-ops story for the LPs.
+- Recoverable value of at least 3x the Diagnostic fee is identified in 14 days, in which case the company captures it and the Diagnostic paid for itself at 3x or more.
+- Less than 3x the fee is identified, in which case the Diagnostic fee refunds in full and the board has a defensible lean-ops story for the LPs.
 
 Either outcome is useful. Both foreclose the "we think we're efficient" answer that covers too much.
 

@@ -6,7 +6,7 @@ pubDate: 2025-12-23
 updatedDate: 2025-12-23
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "decision-slide"
+topicCluster: "funded-tech"
 pillar: 2
 ctaVariant: "diagnostic-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"

@@ -4,7 +4,7 @@ postDate: 2026-07-28
 channel: russellfette
 status: draft
 ---
-Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free.
+Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.
 
 That sentence carries my whole business model, so here is exactly what I am claiming.
 

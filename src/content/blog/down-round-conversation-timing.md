@@ -6,7 +6,7 @@ pubDate: 2026-04-21
 updatedDate: 2026-04-21
 author: "Russell Fette"
 postType: "field-note"
-topicCluster: "down-round-timing"
+topicCluster: "funded-tech"
 pillar: 1
 ctaVariant: "investor-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -74,7 +74,7 @@ The third call ratifies. The term sheet is signed, the raise is in process, and 
 
 ## What is the Decisive Finance role in this?
 
-The Diagnostic is often the piece of work that gets the restated view onto paper. A two-week scan names at least $22,500 of trapped value, restates the three headline ratios, and produces a first Three-Path Model on the material decision still open. All three of those deliverables feed directly into the Call 1 document.
+The Diagnostic is often the piece of work that gets the restated view onto paper. A two-week scan names recoverable value, guaranteed at 3x your Diagnostic fee and typically 5x to 10x, restates the three headline ratios, and produces a first Three-Path Model on the material decision still open. All three of those deliverables feed directly into the Call 1 document.
 
 Several of the portcos we have worked with went through their down-round conversation with the Diagnostic output as the anchor document. The conversation is materially easier when the restated view is already on paper before Call 1 starts.
 

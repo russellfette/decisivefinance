@@ -5,107 +5,107 @@ const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
 const title = 'How it works | Decisive Finance';
 const description =
-  'The Decisive Finance method, in detail. The Six Trap Diagnostic, the Decision Loop, the three tiers, the 19 artifacts, the Financial Rhythms operating cadence, and what stays out of scope. Glass box.';
+  'The Decisive Finance method, in detail. The Decision Loop, the Six Trap Diagnostic, three tiers with banded pricing, the Financial Rhythms cadence, and what stays out of scope. Glass box.';
 
 const traps = [
   { name: 'Sunk Cost', body: 'The money already spent feels like it is voting. It is not. The next dollar is the only one that matters.' },
   { name: 'Status Quo', body: 'Doing nothing feels neutral. It is never neutral. Every week of unchanged spend is an active call.' },
   { name: 'Mental Accounting', body: 'The right total can hide the wrong allocation. A clean aggregate can mask a customer-funded cost sitting in the wrong bucket.' },
-  { name: 'Anchoring', body: 'The first number set becomes the number the conversation orbits. The price you launched at 18 months ago is rarely the price today’s buyer responds to.' },
-  { name: 'Loss Aversion', body: 'The pain of admitting a commitment is not paying off is roughly twice the pleasure of recovering the cash. Most companies 18 months past their raise sit under that coefficient without naming it.' },
-  { name: 'Certainty Illusion', body: 'Polished reporting can feel like evidence when it is actually theater. Defending numbers with a story that quietly stopped being true is the most expensive habit a company carries 18 months in.' },
+  { name: 'Anchoring', body: 'The first number set becomes the number the conversation orbits. The price you launched with is rarely the price today\'s market will hold.' },
+  { name: 'Loss Aversion', body: 'The pain of admitting a commitment is not paying off is roughly twice the pleasure of recovering the cash. Most operating companies run under that coefficient for years without naming it.' },
+  { name: 'Certainty Illusion', body: 'Polished reporting can feel like evidence when it is actually theater. Defending numbers with a story that quietly stopped being true is the most expensive habit a company carries.' },
 ];
 
 const loopNodes = [
   { name: 'Decision', body: 'A hire, a product launch, a vendor sign, a pricing set, a channel spend commit. Made once, in a context.' },
   { name: 'Cost or commitment', body: 'The recurring P&L line or revenue-side commitment that decision created. Now living in the business.' },
-  { name: 'Drift', body: 'The context that justified the decision changes. The decision stays. Compounding capital deploys against a context that no longer exists.' },
+  { name: 'Drift', body: 'The context that justified the decision changes. The decision stays. Compounding spend deploys against a context that no longer exists.' },
   { name: 'Trap', body: 'One of six cognitive biases keeps the decision running. Sunk cost. Status quo. Mental accounting. Anchoring. Loss aversion. Certainty illusion.' },
-  { name: 'Diagnose', body: 'The Six Trap Diagnostic surfaces the gap. Decision Register. Trapped Value Report. Six Trap Scorecard.' },
+  { name: 'Diagnose', body: 'The Six Trap Diagnostic surfaces the gap. Decision Register. Recoverable Value Report. Six Trap Scorecard.' },
   { name: 'Defend', body: 'A Three-Path Model, a Pricing Architecture Revisit, or a Growth Experiment Register produces a new decision tested in market.' },
 ];
 
 const tiers = [
   {
     label: 'Tier 1, Find',
-    name: 'Decision Diagnostic',
+    name: 'The Decision Diagnostic',
     duration: '14 days',
-    price: '$7,500 to $10,000, fixed',
-    promise: 'Names what your current capital is doing, in 14 days.',
-    body: 'A read of every material capital commitment running in the business today, in dollars, with the context that justified each one, the context that exists now, and a CEO-accepted plan for every dollar that has to move.',
-    deliverables: '5 named artifacts. 3 hours of CEO time. Day-14 readout with the Trapped Value Report and the Prioritized Action Register.',
-    guarantee: '3x the fee in trapped value with CEO-accepted recovery plans, a strategic finding of equivalent materiality, or full refund.',
+    price: '$10,000 ($5M to $8M) / $15,000 ($8M to $25M) / $20,000 ($25M to $50M)',
+    promise: 'Names what your money is actually doing, in 14 days.',
+    body: 'A read of every material cost, product line, and customer relationship running in the business today, in dollars, with the context that justified each one, the context that exists now, and an owner-accepted plan for every dollar that has to move. Output: a dollar-ranked map of recoverable cash, recoverable margin, and avoided cost.',
+    deliverables: 'Named artifacts. Three hours of owner time. Day 14 readout with the Recoverable Value Report and the Prioritized Action Register.',
+    guarantee: 'Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. A strategic finding of equivalent materiality confirmed in writing also satisfies the guarantee. Full refund if neither condition is met. A Resolution signed within 7 days of the Day 14 readout credits the Diagnostic fee 100%; past Day 21 the Diagnostic fee is sunk.',
   },
   {
     label: 'Tier 2, Install',
-    name: '90-Day Decision Resolution',
+    name: 'The 90-Day Decision Resolution',
     duration: '90 days',
-    price: '$22,500 to $30,000 total',
-    promise: 'Installs the rhythm that defends every next call, and proves it in market across 90 days.',
-    body: 'A 90-day engagement that installs the decision rhythm and the Financial Rhythms operating system. By Day 90 the CEO walks out with a board-ready package, a raise narrative defensible line by line, and the discipline to defend every next material call with math.',
-    deliverables: '10 new artifacts across three phases (Find It, Model It, Run It). Approximately 15 to 18 hours of CEO time across the 90 days. Cumulative 15 artifacts when combined with the Diagnostic.',
-    guarantee: 'The rhythm installed and in market by Day 90 (five decisions defended, two live in market with measurement, an 18-month forecast with weekly reconciliation), or full refund. CEO keeps every artifact produced.',
+    price: '$30,000 ($5M to $8M) / $45,000 ($8M to $25M) / $60,000 ($25M to $50M)',
+    promise: 'Installs the rhythm that makes the next call defensible, and proves it in market across 90 days.',
+    body: 'A 90-day engagement that installs the decision rhythm and the Financial Rhythms operating system. Material decisions are defended with math, taken live (pricing moves, a product line restructured, a cost cut), and scored against what actually happened. The owner walks out of Day 90 with every major call documented, measured, and repeatable.',
+    deliverables: 'Named artifacts across three phases (Find It, Model It, Run It). Approximately 15 to 18 hours of owner time across the 90 days.',
+    guarantee: 'The rhythm installed and in market by Day 90, with at least two live decisions measured against outcomes, or full refund. The owner keeps every artifact produced.',
   },
   {
     label: 'Tier 3, Run',
-    name: 'Decision Partnership',
-    duration: 'Ongoing, monthly',
-    price: '$7,500 / month + 5% on Realized Value',
-    promise: 'Runs the rhythm on retainer.',
-    body: 'Ongoing operation of the decision rhythm built in Tier 2. Weekly cadence on open decisions. Monthly review. Quarterly model rebuild. Pricing and growth experiments running inside a defined envelope.',
-    deliverables: '4 recurring artifacts plus on-demand modeling inside a specified monthly envelope. 2 to 3 hours per month of CEO time, plus 4 to 6 per quarter for the Strategic Review.',
-    guarantee: 'Realized Value certified quarterly against methodology, not opinion. 5% success fee invoices only against confirmed Realized Value.',
+    name: 'The Decision Partnership',
+    duration: 'Ongoing, monthly retainer',
+    price: '$7,500 ($5M to $8M) / $10,000 ($8M to $25M) / $12,500 ($25M to $50M) per month, plus 5% on confirmed Realized Value certified quarterly',
+    promise: 'Runs the decision rhythm on retainer.',
+    body: 'Ongoing operation of the decision rhythm built in the Resolution. Weekly decision cadence on open commitments. Monthly deep dive. Quarterly model rebuild. Pricing and growth experiments running inside a defined envelope. The cadence is Financial Rhythms™.',
+    deliverables: 'Recurring artifacts plus on-demand modeling inside a specified monthly envelope. Two to three hours per month of owner time, plus four to six per quarter for the Strategic Review.',
+    guarantee: 'Realized Value certified quarterly against the engagement-letter methodology, not opinion. The 5% success fee invoices only against confirmed Realized Value.',
   },
 ];
 
 const artifactsT1 = [
-  { num: '01', name: 'Decision Register v1', body: 'Every recurring cost over $5K per month, every active pricing decision, every growth-spend channel, every product-line commitment, traced back to the originating decision. 15 to 20 page PDF plus live spreadsheet.' },
-  { num: '02', name: 'Trapped Value Report', body: 'The artifact the Tier 1 guarantee is measured against. Per opportunity: dollar amount annualized, source decision, trap category, effort to recover, recovery plan narrative, evidence, recommended move.' },
-  { num: '03', name: 'Runway Truth Card', body: '2-page PDF. Base, upside, downside runway. Driver decomposition. The three variables most likely to move the number. Trigger points.' },
-  { num: '04', name: 'Six Trap Scorecard', body: 'For each of the six traps: LIVE, LATENT, or NOT PRESENT, across cost, pricing, and growth. With evidence and value at stake. 1-page card plus 4-page backing detail.' },
-  { num: '05', name: 'Prioritized Action Register', body: 'Top 5 next calls to defend first, ranked by impact and sequenced by effort. At least one pricing move and one growth-motion move if either is live in the Scorecard.' },
+  { num: '01', name: 'Decision Register v1', body: 'Every recurring cost over $5,000 per month, every active pricing decision, every growth-spend channel, every product-line commitment, traced back to the originating decision. PDF plus live spreadsheet.' },
+  { num: '02', name: 'Recoverable Value Report', body: 'The artifact the Tier 1 guarantee is measured against. Per opportunity: dollar amount annualized, source decision, trap category, effort to recover, recovery plan narrative, evidence, recommended move.' },
+  { num: '03', name: 'Cash Flow Truth Card', body: '2-page PDF. Base, upside, and downside cash position. Driver decomposition. The three variables most likely to move the number. Trigger points.' },
+  { num: '04', name: 'Six Trap Scorecard', body: 'For each of the six traps: LIVE, LATENT, or NOT PRESENT, across cost, pricing, and growth. With evidence and value at stake. One-page card plus four-page backing detail.' },
+  { num: '05', name: 'Prioritized Action Register', body: 'Top five next calls to defend first, ranked by impact and sequenced by effort. At least one pricing move and one growth-motion move if either is live in the Scorecard.' },
 ];
 
 const artifactsT2 = [
-  { num: '06', name: 'Unit Economics Dashboard', body: 'Live CAC, LTV, payback period, gross margin, contribution margin, by segment, cohort, channel. Auto-refreshes on monthly close.' },
+  { num: '06', name: 'Contribution Margin Dashboard', body: 'Live contribution margin by product line, customer segment, and channel. Cost allocation visible. Auto-refreshes on monthly close.' },
   { num: '07', name: 'Product Line P&Ls', body: 'Contribution margin by product line with full cost allocation. Plus the cross-subsidy flow diagram nobody had.' },
-  { num: '08', name: 'Forward Capital Register', body: 'Decision Register extended. Every cost above $5K per month, every active pricing tier, every growth channel commitment carries an explicit decision status, an owner, and a standing review cadence.' },
-  { num: '09', name: 'Three-Path Models', body: 'Five to ten per engagement. For each trapped decision: Keep, Kill, Restructure modeled on identical metrics, with the trap stack and the unlock move.' },
+  { num: '08', name: 'Forward Capital Register', body: 'Decision Register extended. Every cost above $5,000 per month, every active pricing tier, every growth channel commitment carries an explicit decision status, an owner, and a standing review cadence.' },
+  { num: '09', name: 'Three-Path Models', body: 'Five to ten per engagement. For each trapped decision: Keep, Kill, Restructure modeled on identical metrics, with the trap stack and the recommended move.' },
   { num: '10', name: 'Pricing Architecture Revisit', body: 'Segment-by-segment pricing audit. Repricing hypotheses. List-to-realized leakage analysis. Discount discipline map. In-market test plan with measurement.' },
-  { num: '11', name: 'Growth Experiment Register', body: 'Three named experiments inside the existing GTM envelope. At least two live in market by Day 90. Each with hypothesis, target metric, budget, sample size, go and no-go triggers.' },
-  { num: '12', name: 'Scenario Forecast', body: '18-month base, upside, downside with sensitivity to 3 to 5 key drivers. Trigger points. Weekly actuals-vs-prediction reconciliation structure.' },
-  { num: '13', name: 'Board Decision Package', body: 'Fully populated 18 to 22 slide deck. Current state, decisions defended, experiments running, forward plan, asks. Reusable template delivered separately.' },
-  { num: '14', name: 'Bridge / Pivot / Raise Model', body: 'Capital plan for the most likely next funding event. Three financing paths with implications. Cap table modeling.' },
-  { num: '15', name: 'Final Readout + Decision Playbook', body: '90-day capstone plus forward playbook. The CEO can run the loop without us.' },
+  { num: '11', name: 'Growth Experiment Register', body: 'Three named experiments inside the existing go-to-market envelope. At least two live in market by Day 90. Each with hypothesis, target metric, budget, sample size, go and no-go triggers.' },
+  { num: '12', name: 'Scenario Forecast', body: 'Rolling base, upside, and downside model with sensitivity to three to five key drivers. Trigger points. Weekly actuals-vs-prediction reconciliation structure.' },
+  { num: '13', name: 'Owner Decision Package', body: 'Fully populated summary deck. Current state, decisions defended, experiments running, forward plan, asks. Reusable template delivered separately.' },
+  { num: '14', name: 'Capital and Structure Model', body: 'Financial model for the most likely near-term capital event (debt refinance, product-line exit, ownership change). Three paths with documented implications.' },
+  { num: '15', name: 'Final Readout and Decision Playbook', body: '90-day capstone plus forward playbook. The owner can run the loop without us.' },
 ];
 
 const artifactsT3 = [
   { num: '16', name: 'Monthly Decision Dashboard', body: 'Rolling view of all registers, the Scorecard, the Scenario Forecast, open decisions, active experiments. Decision of the Month. Experiment of the Month.' },
   { num: '17', name: 'Decision Journal', body: 'Log of every major decision at the time it is made. Rationale, confidence, expected outcome. Reviewed quarterly against actuals.' },
-  { num: '18', name: 'Quarterly Strategic Review', body: 'Full model rebuild from current economics. Trap Scorecard refresh. Forecast reset. Pricing architecture revisit. Realized Value certification per Appendix E.' },
+  { num: '18', name: 'Quarterly Strategic Review', body: 'Full model rebuild from current economics. Trap Scorecard refresh. Forecast reset. Pricing architecture revisit. Realized Value certification.' },
   { num: '19', name: 'Validated Learning Log', body: 'Hypothesis, test, outcome, decision. Every experiment, every repricing, every Three-Path recommendation generates entries.' },
 ];
 
 const timeline = [
   { day: 'Day 0', body: 'Engagement letter signed. Kickoff agenda, data request list, 14-day calendar.' },
   { day: 'Day 3', body: 'Kickoff complete. Data room set up. Six Trap Interview booked.' },
-  { day: 'Day 7', body: 'Decision Register draft ready for CEO review.' },
-  { day: 'Day 14', body: 'Diagnostic package delivered. 5 artifacts. 60-minute readout. Tier 1 guarantee triggered. Resolution decision made.' },
+  { day: 'Day 7', body: 'Decision Register draft ready for owner review.' },
+  { day: 'Day 14', body: 'Diagnostic package delivered. Named artifacts. 60-minute readout. Tier 1 guarantee triggered. Resolution decision made.' },
   { day: 'Day 21', body: 'Resolution kickoff. Pricing Architecture Revisit scope confirmed. Growth Experiment Register draft reviewed.' },
-  { day: 'Day 30', body: 'Unit Economics Dashboard live. Monthly refresh cycle installed. Product Line P&Ls in draft.' },
+  { day: 'Day 30', body: 'Contribution Margin Dashboard live. Monthly refresh cycle installed. Product Line P&Ls in draft.' },
   { day: 'Day 45', body: 'Mid-Resolution milestone. Forward Capital Register delivered. Pricing hypotheses confirmed.' },
   { day: 'Day 60', body: 'Rhythm running. Pricing changes live with measurement. Two growth experiments in market. Three-Path Models on top decisions.' },
-  { day: 'Day 75', body: 'Board Decision Package drafted. Bridge / Pivot / Raise Model if applicable.' },
-  { day: 'Day 90', body: 'Final Readout. 15 artifacts delivered. Decision Playbook handed off. Day-90 rhythm-installed test evaluated.' },
+  { day: 'Day 75', body: 'Owner Decision Package drafted. Capital and Structure Model if applicable.' },
+  { day: 'Day 90', body: 'Final Readout. Artifacts delivered. Decision Playbook handed off. Day 90 rhythm-installed test evaluated.' },
   { day: 'Day 150', body: 'Realization check. 30-minute standing call to score in-market experiments and pricing changes. No additional fee.' },
 ];
 
 const outOfScope = [
   'Ad-hoc modeling of unrelated transactions (acquisition offers, side investments, secondary sales).',
-  'Bookkeeping cleanup beyond what the artifacts require. If the GL cannot produce Artifact 1, we quote cleanup as a separate fixed-fee phase.',
-  'Board-meeting facilitation. The Board Decision Package is a deliverable; running the meeting is not.',
-  'HR or legal consulting on specific RIF cases. Three-Path on a headcount decision is in scope; severance math, employment counsel, and manager coaching are out.',
-  'Fundraising introductions or pitch coaching. The Bridge / Pivot / Raise Model is in scope; making introductions or sitting in pitch meetings is not.',
+  'Bookkeeping cleanup beyond what the artifacts require. If the general ledger cannot produce Artifact 1, we quote cleanup as a separate fixed-fee phase.',
+  'Board-meeting facilitation. The Owner Decision Package is a deliverable; running the meeting is not.',
+  'HR or legal consulting on specific reduction-in-force cases. Three-Path on a headcount decision is in scope; severance math, employment counsel, and manager coaching are out.',
+  'Capital introductions or transaction advisory. The Capital and Structure Model is in scope; making introductions or sitting in negotiations is not.',
   'Interim controller or FP&A hiring.',
   'Pricing architecture for net-new products or net-new channels. Net-new design is a change order with its own scope and fee.',
   'Growth experiments in channels the company is not already operating in.',
@@ -118,7 +118,7 @@ const outOfScope = [
       <span class="eyebrow">Method &middot; Glass box</span>
       <h1>How Decisive Finance works.</h1>
       <p class="hero-subhead">
-        The Decision Loop, the Six Trap Diagnostic, three tiers, 19 named artifacts, the Financial Rhythms cadence, and what stays out of scope. <span class="dollar">No black box.</span>
+        The Decision Loop, the Six Trap Diagnostic, three tiers with banded pricing, the Financial Rhythms cadence, and what stays out of scope. <span class="dollar">No black box.</span>
       </p>
       <div class="hero-cta-row">
         <a href={CALENDLY} class="btn btn-primary">Book 30 minutes with Russ</a>
@@ -134,7 +134,7 @@ const outOfScope = [
         <span class="section-eyebrow">The canonical visual</span>
         <h2>The Decision Loop.</h2>
         <p class="lede">
-          A funded company is a chain of decisions made in a context, generating commitments that outlast the context that justified them. The Decisive Finance method is one closed loop: every material decision moves through six nodes, and our intervention sits at nodes 5 and 6, operated recurrently through the Financial Rhythms cadence rings (weekly, monthly, quarterly).
+          An operating company is a chain of decisions made in a context, generating commitments that outlast the context that justified them. The Decisive Finance method is one closed loop: every material decision moves through six nodes, and our intervention sits at nodes 5 and 6, operated recurrently through the Financial Rhythms cadence rings (weekly, monthly, quarterly).
         </p>
       </div>
       <div class="loop-grid">
@@ -159,7 +159,7 @@ const outOfScope = [
       <span class="section-eyebrow">The proprietary IP</span>
       <h2>The Six Trap Diagnostic&trade;</h2>
       <p class="lede" style="color: rgba(255,255,255,0.88);">
-        A 90-minute structured interview plus a standardized data pull, executed in Week 1. The traps are not failures of the founder. They are structural cognitive patterns no founder alone, however smart, can counteract while operating the business they created. The protocol exists to surface them so the next-call conversation can happen on math rather than on instinct.
+        A 90-minute structured interview plus a standardized data pull, executed in Week 1. The traps are not failures of the owner. They are structural cognitive patterns no owner alone, however capable, can counteract while operating the business they built. The protocol exists to surface them so the next-call conversation can happen on math rather than on instinct.
       </p>
       <div class="trap-grid">
         {traps.map((trap, i) => (
@@ -182,7 +182,7 @@ const outOfScope = [
         <span class="section-eyebrow">Three tiers, three promises</span>
         <h2>Find. Install. Run.</h2>
         <p class="lede">
-          Each tier carries a distinct promise. No repeat guarantees against the same mechanism. Find names what your capital is doing in 14 days. Install puts the rhythm in market across 90 days. Run keeps the rhythm operating on retainer.
+          Each tier carries a distinct promise. Find names what your money is actually doing in 14 days. Install puts the rhythm in market across 90 days. Run keeps the rhythm operating on retainer. Pricing is banded by revenue: $5M to $8M / $8M to $25M / $25M to $50M. Below $5M in revenue, refer out; the guarantee math does not hold.
         </p>
       </div>
       <div class="tier-list">
@@ -209,7 +209,7 @@ const outOfScope = [
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">What we deliver</span>
-        <h2>Nineteen named artifacts.</h2>
+        <h2>Named artifacts.</h2>
         <p class="lede">
           Every deliverable has a name, a definition, an output spec, and an owner. The catalog below is the full deliverables list across all three tiers. If a deliverable is not on this list, it is a change order, not a favor.
         </p>
@@ -227,7 +227,7 @@ const outOfScope = [
         ))}
       </div>
       <p class="lede" style="margin-top: 16px;">
-        To see what artifact 02 looks like for a company your size, <a href="/resources/recovery-checklist/">preview the Trapped Value Report</a>. Four minutes, three questions.
+        To see what artifact 02 looks like for a company your size, <a href="/resources/recovery-checklist/">preview the Recoverable Value Report</a>. Four minutes, three questions.
       </p>
       <h3 class="artifact-group-h3">Resolution, Day 15 to Day 90, 10 artifacts</h3>
       <div class="artifact-grid">
@@ -259,10 +259,10 @@ const outOfScope = [
   <section id="timeline">
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow">CEO deliverable timeline</span>
-        <h2>What the CEO gets, day by day.</h2>
+        <span class="section-eyebrow">Owner deliverable timeline</span>
+        <h2>What the owner gets, day by day.</h2>
         <p class="lede">
-          The schedule is a contract. The CEO knows what lands when. We know what we owe. Founder time across the full 90 days runs about 18 to 21 hours, including the Diagnostic.
+          The schedule is a contract. The owner knows what lands when. We know what we owe. Owner time across the full 90 days runs about 18 to 21 hours, including the Diagnostic.
         </p>
       </div>
       <ol class="timeline-list">
@@ -287,7 +287,7 @@ const outOfScope = [
         <ul class="rhythm-list">
           <li><strong>Weekly.</strong> Open-decision review. Active experiment scoring against go and no-go triggers. Forward Capital Register movement. 30 minutes.</li>
           <li><strong>Monthly.</strong> Decision Dashboard refresh. Decision of the Month and Experiment of the Month. Validated Learning Log entries. Variance narrative. 90 minutes.</li>
-          <li><strong>Quarterly.</strong> Strategic Review. Full model rebuild from current economics. Trap Scorecard refresh. Forecast reset. Pricing architecture revisit. Realized Value certification. 4 to 6 hours.</li>
+          <li><strong>Quarterly.</strong> Strategic Review. Full model rebuild from current economics. Trap Scorecard refresh. Forecast reset. Pricing architecture revisit. Realized Value certification. Four to six hours.</li>
         </ul>
       </div>
     </div>
@@ -299,12 +299,12 @@ const outOfScope = [
         <span class="section-eyebrow">The Tier 3 success fee</span>
         <h2>Realized Value, certified quarterly.</h2>
         <p class="lede">
-          The 5% Partnership success fee invoices only against confirmed Realized Value, defined in three categories. Each category has a quantification method written into the engagement letter. Russ does not get to grade his own homework: every category requires a CEO signature against the methodology, not an opinion.
+          The 5% Partnership success fee invoices only against confirmed Realized Value, defined in three categories. Each category has a quantification method written into the engagement letter. Russ does not get to grade his own homework: every category requires an owner signature against the methodology, not an opinion.
         </p>
         <ul class="value-list">
           <li><strong>In-market pricing or volume changes with measurement.</strong> Repricing live across at least one full cycle. Volume change attributable to a specific experiment. Measured in revenue uplift annualized at the new rate, with the comparison period explicit.</li>
           <li><strong>Capacity reallocation booked to a downstream metric.</strong> Engineering, marketing, or sales capacity moved off a low-margin line and onto a higher-margin one. Measured by the contribution margin delta over the next two quarters.</li>
-          <li><strong>Capital structure or product-line changes with documented economic delta.</strong> Debt restructured. Product line exited. Cap table reset. Measured by the discount-rate-adjusted present-value delta to the company.</li>
+          <li><strong>Capital structure or product-line changes with documented economic delta.</strong> Debt restructured. Product line exited. Ownership structure reset. Measured by the discount-rate-adjusted present-value delta to the company.</li>
         </ul>
       </div>
     </div>
@@ -333,12 +333,13 @@ const outOfScope = [
         <span class="section-eyebrow" style="color: var(--orange);">The 14-day Diagnostic</span>
         <h2>Read the guarantee, then book 30 minutes.</h2>
         <p class="lede" style="color: rgba(255,255,255,0.8);">
-          30 minutes with Russ. No pitch. You leave with at least one named action. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. Engagements to date: 5x to 10x.
+          30 minutes with Russ. No pitch. You leave with at least one named action. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. We don't audit the past. We make the next call defensible.
         </p>
         <div class="hero-cta-row">
           <a href={CALENDLY} class="btn btn-primary">Book 30 minutes with Russ</a>
           <a href="/guarantee" class="btn btn-secondary">Read Guarantee</a>
         </div>
+        <p class="close-frame">Decide from the numbers. Prove it in the cash.</p>
       </div>
     </div>
   </section>
@@ -564,6 +565,14 @@ const outOfScope = [
     color: var(--muted);
     font-weight: 700;
     font-size: 18px;
+  }
+
+  .close-frame {
+    margin-top: 28px;
+    font-size: 18px;
+    font-style: italic;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
   }
 
   @media (max-width: 900px) {

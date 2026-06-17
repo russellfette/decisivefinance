@@ -1,12 +1,12 @@
 ---
-title: "What a $7,500 Diagnostic finds that an annual audit misses"
+title: "What a Diagnostic finds that an annual audit misses"
 slug: diagnostic-vs-annual-audit
-description: "The annual audit looks at what happened. A $7,500 Diagnostic looks at what's about to happen: five categories of trapped value, surfaced in 14 days."
+description: "The annual audit looks at what happened. A Diagnostic looks at what's about to happen: five categories of recoverable value, surfaced in 14 days."
 pubDate: 2026-05-05
 updatedDate: 2026-05-05
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "diagnostic-operations"
+topicCluster: "recoverable-value"
 pillar: 2
 ctaVariant: "diagnostic-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -18,10 +18,10 @@ readingTime: 7
 ## At a glance
 
 - The annual audit looks at what happened: material misstatements, internal controls, going concern. A Diagnostic looks at what's about to happen. Different instruments, different jobs, and both worth doing.
-- The Diagnostic scans five places, the five canon categories: Cost, Pricing, Growth Spend, Product Line, Capital Structure. Each one holds a class of trapped value no audit is designed to surface.
+- The Diagnostic scans five places, the five canon categories: Cost, Pricing, Growth Spend, Product Line, Capital Structure. Each one holds a class of recoverable value no audit is designed to surface.
 - Annual audits cost more. Diagnostics surface more. Only one of them defends the next call.
 
-A $7,500 Diagnostic finds trapped value in five places: Cost, Pricing, Growth Spend, Product Line, and Capital Structure. An annual audit looks at none of them, and it is not supposed to. The audit looks at what happened. Material misstatements. Internal controls. Going concern. A Diagnostic looks at what's about to happen. The two instruments share a building and almost nothing else.
+A Diagnostic finds recoverable value in five places: Cost, Pricing, Growth Spend, Product Line, and Capital Structure. An annual audit looks at none of them, and it is not supposed to. The audit looks at what happened. Material misstatements. Internal controls. Going concern. A Diagnostic looks at what's about to happen. The two instruments share a building and almost nothing else.
 
 This matters because a lot of post-Series A founders treat the clean audit opinion as evidence the finance function is doing its job. It is evidence of something real, but not that. The audit certifies that the past is accurately recorded. It says nothing about whether the next call is right, and the next call is where companies stall.
 
@@ -57,11 +57,11 @@ Notice what every example has in common. The books were right. The decision was 
 
 Days 1 to 4 are the data pull: GL, contracts, payroll, pipeline, cohort revenue, and the commitments register. Days 5 to 10 run the five categories against that data and score the Six Traps against the actual financials, because every stale decision above is being held in place by a named bias, not by bad math. Days 11 to 14 turn the findings into dollars and dates: each item gets a recovery value, an owner, and a forward decision it unblocks. The full day-by-day walk-through is in [The first 14 days: the operational scan](https://decisive.finance/perspectives/first-14-days-operational-scan).
 
-The fee is $7,500 under $3M ARR and $10,000 from $3M to $8M ARR. A first-year audit for a company that size typically runs $25,000 to $60,000. Annual audits cost more. Diagnostics surface more. Different work, both worth doing. But only one of them defends the next call.
+The Diagnostic is priced from $10,000 to $20,000. A first-year audit for a company that size typically runs $25,000 to $60,000. Annual audits cost more. Diagnostics surface more. Different work, both worth doing. But only one of them defends the next call.
 
 ## What is the Decisive Finance role in this?
 
-The Diagnostic is ours: a 14-day scan across the five canon categories, run against your actual financials, ending in a dollar figure and a decision list rather than an opinion letter. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. Keep your auditor; they are doing a job we do not do. We don't audit the past. We justify each next call.
+The Diagnostic is ours: a 14-day scan across the five canon categories, run against your actual financials, ending in a dollar figure and a decision list rather than an opinion letter. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. Keep your auditor; they are doing a job we do not do. We don't audit the past. We justify each next call.
 
 ## Where to go from here
 

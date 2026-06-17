@@ -6,7 +6,7 @@ pubDate: 2026-01-06
 updatedDate: 2026-01-06
 author: "Russell Fette"
 postType: "field-note"
-topicCluster: "retrospective-finance"
+topicCluster: "system-of-decision"
 pillar: 2
 ctaVariant: "diagnostic-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"

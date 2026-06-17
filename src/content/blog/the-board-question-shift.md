@@ -6,7 +6,7 @@ pubDate: 2026-02-17
 updatedDate: 2026-02-17
 author: "Russell Fette"
 postType: "field-note"
-topicCluster: "board-question-shift"
+topicCluster: "funded-tech"
 pillar: 3
 ctaVariant: "self-assessment"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"

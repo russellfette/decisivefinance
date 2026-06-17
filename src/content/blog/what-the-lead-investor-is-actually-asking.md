@@ -6,7 +6,7 @@ pubDate: 2026-05-26
 updatedDate: 2026-05-26
 author: "Russell Fette"
 postType: "field-note"
-topicCluster: "gp-board-questions"
+topicCluster: "funded-tech"
 pillar: 3
 ctaVariant: "scorecard"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -61,7 +61,7 @@ So the play is simple to state. Answer the three real questions before they are 
 
 ## What is the Decisive Finance role in this?
 
-The strong answer requires restated ratios and a named decision on hand, and most companies 18 months past a raise have neither. That is what the 14-day Decision Diagnostic produces: the three headline ratios restated against one explicit customer definition, the material decision named with a Keep/Kill/Restructure one-pager, and the trapped value surfaced to fund the move. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. After the Diagnostic, "what's new" has a fifteen-second answer every month, and it is an answer that defends the mark instead of dodging it.
+The strong answer requires restated ratios and a named decision on hand, and most companies 18 months past a raise have neither. That is what the 14-day Decision Diagnostic produces: the three headline ratios restated against one explicit customer definition, the material decision named with a Keep/Kill/Restructure one-pager, and the recoverable value surfaced to fund the move. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. After the Diagnostic, "what's new" has a fifteen-second answer every month, and it is an answer that defends the mark instead of dodging it.
 
 ## Where to go from here
 

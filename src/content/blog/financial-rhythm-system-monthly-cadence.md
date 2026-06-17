@@ -6,7 +6,7 @@ pubDate: 2026-01-20
 updatedDate: 2026-01-20
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "financial-rhythm-system"
+topicCluster: "financial-rhythms"
 pillar: 2
 ctaVariant: "diagnostic-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
