@@ -142,26 +142,49 @@ const fitNo = [
 <BaseLayout title={title} description={description}>
   <!-- Hero / the problem -->
   <section id="problem" class="hero">
-    <div class="hero-inner">
-      <span class="eyebrow">For operating companies, $5M to $50M in revenue</span>
-      <h1>
-        <span class="h1-line">Revenue&rsquo;s up.</span>
-        <span class="h1-line">Profit isn&rsquo;t.</span>
-        <span class="h1-line h1-line-accent">And your numbers can&rsquo;t tell you why.</span>
-      </h1>
-      <p class="hero-subhead">
-        We build the decision layer your books were never meant to give you. <span class="dollar">Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.</span>
-      </p>
-      <div class="hero-cta-row">
-        <a href={CALENDLY} class="btn btn-primary">Book a fit call</a>
-        <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
+    <div class="hero-inner hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">For operating companies, $5M to $50M in revenue</span>
+        <h1>
+          <span class="h1-line">Revenue&rsquo;s up.</span>
+          <span class="h1-line">Profit isn&rsquo;t.</span>
+          <span class="h1-line h1-line-accent">And your numbers can&rsquo;t tell you why.</span>
+        </h1>
+        <p class="hero-subhead">
+          We build the decision layer your books were never meant to give you. <span class="dollar">Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.</span>
+        </p>
+        <div class="hero-cta-row">
+          <a href={CALENDLY} class="btn btn-primary">Book a fit call</a>
+          <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
+        </div>
+        <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave with at least one named number.</p>
+        <blockquote class="hero-quote">
+          &ldquo;You showed me the customer I was protecting was the one bleeding me. I would never have gone looking.&rdquo;
+          <cite>Owner, manufacturer, $15M revenue</cite>
+        </blockquote>
+        <div class="rally">FIND. INSTALL. RUN.</div>
       </div>
-      <p style="font-size: 15px; color: rgba(255,255,255,0.7); margin: 10px 0 0;">30 minutes with Russ. No pitch. You leave with at least one named number.</p>
-      <blockquote class="hero-quote">
-        &ldquo;You showed me the customer I was protecting was the one bleeding me. I would never have gone looking.&rdquo;
-        <cite>Owner, manufacturer, $15M revenue</cite>
-      </blockquote>
-      <div class="rally">FIND. INSTALL. RUN.</div>
+
+      <div class="hero-viz" aria-hidden="true">
+        <svg viewBox="0 0 460 380" role="img" xmlns="http://www.w3.org/2000/svg">
+          <title>Revenue rising while profit stays flat</title>
+          <!-- gap fill: revenue over profit -->
+          <path class="viz-gap" d="M60 300 L135 250 L210 205 L285 150 L365 100 L440 62 L440 286 L365 288 L285 285 L210 292 L135 290 L60 296 Z" />
+          <!-- baseline -->
+          <line x1="60" y1="320" x2="440" y2="320" class="viz-axis" />
+          <!-- profit line (flat) -->
+          <polyline class="viz-line viz-profit" points="60,296 135,290 210,292 285,285 365,288 440,286" />
+          <!-- revenue line (rising) -->
+          <polyline class="viz-line viz-revenue" points="60,300 135,250 210,205 285,150 365,100 440,62" />
+          <!-- end dots -->
+          <circle class="viz-dot viz-dot-rev" cx="440" cy="62" r="5" />
+          <circle class="viz-dot viz-dot-pro" cx="440" cy="286" r="5" />
+          <!-- labels -->
+          <text x="446" y="60" class="viz-tag viz-tag-rev">Revenue</text>
+          <text x="446" y="290" class="viz-tag viz-tag-pro">Profit</text>
+          <text x="250" y="200" class="viz-note">The gap is recoverable value</text>
+        </svg>
+      </div>
     </div>
   </section>
 
@@ -241,7 +264,12 @@ const fitNo = [
       <p class="lede">
         Most owners start with the Diagnostic and move into the Resolution. Pricing is banded by revenue. The floor is $5M; below that the guarantee math does not hold, so we refer out.
       </p>
-      <div class="tier-grid">
+      <div class="band-toggle" role="group" aria-label="Highlight your revenue band">
+        <button type="button" data-band="0" class="is-active">$5M to $8M</button>
+        <button type="button" data-band="1">$8M to $25M</button>
+        <button type="button" data-band="2">$25M to $50M</button>
+      </div>
+      <div class="tier-grid" data-band="0">
         {tiers.map((tier) => (
           <div class={`tier${tier.featured ? ' featured' : ''}`}>
             {tier.featured && <span class="featured-badge">Start here</span>}
@@ -249,8 +277,8 @@ const fitNo = [
             <h3>{tier.name}</h3>
             <p class="tier-promise">{tier.promise}</p>
             <div class="tier-meta">
-              {tier.bands.map((band) => (
-                <div class="tier-row">
+              {tier.bands.map((band, bi) => (
+                <div class="tier-row" data-row={bi}>
                   <span>{band[0]}</span>
                   <span>{band[1]}</span>
                 </div>
@@ -263,6 +291,26 @@ const fitNo = [
             </div>
           </div>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Recoverable value calculator -->
+  <section id="calculator">
+    <div class="container">
+      <div class="calc-card">
+        <div class="calc-intro">
+          <span class="section-eyebrow">Run the math</span>
+          <h2>What the guarantee puts on the table.</h2>
+          <p>Enter your annual revenue. We show your Diagnostic fee and the recoverable value the guarantee names in 14 days, or the Diagnostic is free.</p>
+          <label for="rev">Your annual revenue</label>
+          <div class="calc-field">
+            <span class="calc-cur">$</span>
+            <input id="rev" type="text" inputmode="numeric" autocomplete="off" value="15,000,000" />
+          </div>
+          <p class="calc-disclaimer">Estimate based on banded pricing. Final scope is set on the fit call.</p>
+        </div>
+        <div class="calc-output" id="calcOut" aria-live="polite"></div>
       </div>
     </div>
   </section>
@@ -318,18 +366,58 @@ const fitNo = [
     </div>
   </section>
 
-  <!-- Methodology -->
+  <!-- Methodology / Decision Loop -->
   <section>
     <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">Methodology</span>
-        <h2>The methodology is called Decision-First Finance.</h2>
-        <p class="lede">
-          We reorganize the finance function around the next material calls the company has to make, not the last few months of variance. Reporting becomes a byproduct of decision-first work, not its product. The close still closes. The board deck still ships. The center of gravity moves to the decision queue.
-        </p>
-        <p>
-          <a href="/perspectives/decision-first-finance">Read the methodology &rarr;</a>
-        </p>
+      <div class="loop-grid">
+        <div class="loop-copy">
+          <span class="section-eyebrow">Methodology</span>
+          <h2>The methodology is called Decision-First Finance.</h2>
+          <p class="lede">
+            We reorganize the finance function around the next material calls the company has to make, not the last few months of variance. Reporting becomes a byproduct of decision-first work, not its product. The close still closes. The board deck still ships. The center of gravity moves to the decision queue.
+          </p>
+          <p>
+            Every decision runs the same loop. Most companies never close it, so value traps and stays trapped. Our intervention is the last two nodes, Diagnose and Defend, run on a rhythm: weekly cadence, monthly deep dive, quarterly rebuild.
+          </p>
+          <p>
+            <a href="/perspectives/decision-first-finance">Read the methodology &rarr;</a>
+          </p>
+        </div>
+
+        <figure class="loop-fig">
+          <svg viewBox="0 0 480 440" role="img" xmlns="http://www.w3.org/2000/svg">
+            <title>The Decision Loop: Decision, Cost and Commitment, Drift, Trap, Diagnose, Defend</title>
+            <defs>
+              <marker id="arrowGrey" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                <path d="M0 0 L6 3 L0 6 Z" class="loop-arrow-grey" />
+              </marker>
+              <marker id="arrowOrange" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                <path d="M0 0 L6 3 L0 6 Z" class="loop-arrow-orange" />
+              </marker>
+            </defs>
+
+            <!-- flow arcs -->
+            <path class="loop-arc" d="M220 80 A140 140 0 0 1 341 150" marker-end="url(#arrowGrey)" />
+            <path class="loop-arc" d="M341 150 A140 140 0 0 1 341 290" marker-end="url(#arrowGrey)" />
+            <path class="loop-arc" d="M341 290 A140 140 0 0 1 220 360" marker-end="url(#arrowGrey)" />
+            <path class="loop-arc loop-arc-on" d="M220 360 A140 140 0 0 1 99 290" marker-end="url(#arrowOrange)" />
+            <path class="loop-arc loop-arc-on" d="M99 290 A140 140 0 0 1 99 150" marker-end="url(#arrowOrange)" />
+            <path class="loop-arc loop-arc-on" d="M99 150 A140 140 0 0 1 220 80" marker-end="url(#arrowOrange)" />
+
+            <!-- center label -->
+            <text x="220" y="214" class="loop-center">The</text>
+            <text x="220" y="236" class="loop-center">Decision Loop</text>
+
+            <!-- nodes -->
+            <g class="loop-node"><circle cx="220" cy="80" r="9" /><text x="220" y="56" class="loop-label" text-anchor="middle">Decision</text></g>
+            <g class="loop-node"><circle cx="341" cy="150" r="9" /><text x="356" y="146" class="loop-label">Cost &amp;</text><text x="356" y="163" class="loop-label">commitment</text></g>
+            <g class="loop-node"><circle cx="341" cy="290" r="9" /><text x="356" y="295" class="loop-label">Drift</text></g>
+            <g class="loop-node"><circle cx="220" cy="360" r="9" /><text x="220" y="386" class="loop-label" text-anchor="middle">Trap</text></g>
+            <g class="loop-node loop-node-on"><circle cx="99" cy="290" r="9" /><text x="84" y="295" class="loop-label loop-label-on" text-anchor="end">Diagnose</text></g>
+            <g class="loop-node loop-node-on"><circle cx="99" cy="150" r="9" /><text x="84" y="155" class="loop-label loop-label-on" text-anchor="end">Defend</text></g>
+          </svg>
+          <figcaption>Decision &rarr; Cost and commitment &rarr; Drift &rarr; Trap &rarr; <strong>Diagnose</strong> &rarr; <strong>Defend</strong>. We close the loop.</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -357,3 +445,145 @@ const fitNo = [
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  /* Hero: two columns + chart */
+  .hero { padding-bottom: 96px; }
+  .hero-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
+  .hero-copy { min-width: 0; }
+  .hero-microcopy { font-size: 15px; color: rgba(255, 255, 255, 0.7); margin: 10px 0 0; }
+  .hero-viz { display: none; }
+  .hero-viz svg { width: 100%; height: auto; overflow: visible; }
+  @media (min-width: 1000px) {
+    .hero-grid { grid-template-columns: 1.12fr 0.88fr; gap: 48px; }
+    .hero-viz { display: block; }
+  }
+  .viz-axis { stroke: rgba(255, 255, 255, 0.18); stroke-width: 1.5; }
+  .viz-line { fill: none; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 640; stroke-dashoffset: 640; animation: vizdraw 1.4s ease forwards; }
+  .viz-revenue { stroke: var(--orange); }
+  .viz-profit { stroke: rgba(255, 255, 255, 0.5); animation-delay: 0.2s; }
+  .viz-gap { fill: rgba(227, 99, 43, 0.13); opacity: 0; animation: vizfade 1s ease 0.9s forwards; }
+  .viz-dot-rev { fill: var(--orange); }
+  .viz-dot-pro { fill: rgba(255, 255, 255, 0.6); }
+  .viz-dot, .viz-tag, .viz-note { opacity: 0; animation: vizfade 0.6s ease 1.2s forwards; }
+  .viz-tag { font: 600 13px Inter, sans-serif; }
+  .viz-tag-rev { fill: var(--orange); }
+  .viz-tag-pro { fill: rgba(255, 255, 255, 0.6); }
+  .viz-note { fill: rgba(255, 255, 255, 0.7); font: italic 12px Inter, sans-serif; text-anchor: middle; }
+  @keyframes vizdraw { to { stroke-dashoffset: 0; } }
+  @keyframes vizfade { to { opacity: 1; } }
+
+  /* Tier band selector */
+  .band-toggle { display: inline-flex; flex-wrap: wrap; gap: 6px; background: var(--white); border: 1px solid var(--hairline); border-radius: 999px; padding: 5px; margin: 0 0 28px; }
+  .band-toggle button { border: none; background: none; font: inherit; font-size: 14px; font-weight: 600; color: var(--muted); padding: 9px 16px; border-radius: 999px; cursor: pointer; transition: background 0.15s ease, color 0.15s ease; }
+  .band-toggle button:hover { color: var(--ink); }
+  .band-toggle button.is-active { background: var(--ink); color: var(--white); }
+  .tier-row { transition: opacity 0.18s ease; }
+  .tier-grid[data-band="0"] .tier-row:not([data-row="0"]),
+  .tier-grid[data-band="1"] .tier-row:not([data-row="1"]),
+  .tier-grid[data-band="2"] .tier-row:not([data-row="2"]) { opacity: 0.32; }
+  .tier-grid[data-band="0"] .tier-row[data-row="0"] span:last-child,
+  .tier-grid[data-band="1"] .tier-row[data-row="1"] span:last-child,
+  .tier-grid[data-band="2"] .tier-row[data-row="2"] span:last-child { color: var(--orange); }
+
+  /* Calculator */
+  #calculator { background: var(--ink); color: var(--white); }
+  .calc-card { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: center; }
+  @media (min-width: 900px) { .calc-card { grid-template-columns: 1fr 1fr; gap: 56px; } }
+  .calc-intro h2 { color: var(--white); }
+  .calc-intro .section-eyebrow { color: var(--orange); }
+  .calc-intro p { color: rgba(255, 255, 255, 0.75); font-size: 17px; max-width: 520px; }
+  .calc-intro label { display: block; font: 600 13px Inter, sans-serif; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.6); margin: 24px 0 10px; }
+  .calc-field { display: flex; align-items: center; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 12px; padding: 4px 16px; max-width: 340px; }
+  .calc-field:focus-within { border-color: var(--orange); }
+  .calc-cur { font: 700 22px Inter, sans-serif; color: rgba(255, 255, 255, 0.6); }
+  .calc-field input { flex: 1; background: none; border: none; outline: none; color: var(--white); font: 700 22px Inter, sans-serif; padding: 12px 8px; width: 100%; }
+  .calc-disclaimer { font-size: 13px; color: rgba(255, 255, 255, 0.45); margin-top: 12px; }
+  .calc-output { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 16px; padding: 34px 32px; }
+  .calc-output :global(.calc-k) { display: block; font: 600 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255, 255, 255, 0.6); margin-bottom: 10px; }
+  .calc-output :global(.calc-big) { display: block; font: 700 clamp(38px, 6vw, 58px) Inter, sans-serif; letter-spacing: -0.03em; color: var(--orange); line-height: 1; }
+  .calc-output :global(.calc-sub) { display: block; margin-top: 14px; font-size: 16px; line-height: 1.5; color: rgba(255, 255, 255, 0.85); }
+  .calc-output :global(.calc-fee) { display: block; margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.12); font-size: 15px; color: rgba(255, 255, 255, 0.75); }
+  .calc-output :global(.btn) { margin-top: 24px; }
+  .calc-output.calc-refer :global(.calc-big) { color: var(--white); font-size: clamp(26px, 4vw, 36px); }
+
+  /* Decision Loop */
+  .loop-grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
+  @media (min-width: 900px) { .loop-grid { grid-template-columns: 1fr 1fr; gap: 56px; } }
+  .loop-copy { max-width: 620px; }
+  .loop-fig { margin: 0; }
+  .loop-fig svg { width: 100%; height: auto; max-width: 460px; display: block; margin: 0 auto; overflow: visible; }
+  .loop-arc { fill: none; stroke: var(--hairline); stroke-width: 2.5; }
+  .loop-arc-on { stroke: var(--orange); }
+  .loop-arrow-grey { fill: #9aa7ad; }
+  .loop-arrow-orange { fill: var(--orange); }
+  .loop-node circle { fill: var(--white); stroke: var(--ink); stroke-width: 2.5; transition: transform 0.15s ease; transform-box: fill-box; transform-origin: center; }
+  .loop-node:hover circle { transform: scale(1.25); }
+  .loop-node-on circle { fill: var(--orange); stroke: var(--orange); }
+  .loop-label { font: 600 13px Inter, sans-serif; fill: var(--ink); }
+  .loop-label-on { fill: var(--orange); }
+  .loop-center { font: 700 15px Inter, sans-serif; fill: var(--muted); text-anchor: middle; }
+  .loop-fig figcaption { margin: 18px auto 0; text-align: center; font-size: 14px; color: var(--muted); max-width: 440px; line-height: 1.5; }
+  .loop-fig figcaption strong { color: var(--orange); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .viz-line { stroke-dasharray: none; stroke-dashoffset: 0; animation: none; }
+    .viz-gap, .viz-dot, .viz-tag, .viz-note { opacity: 1; animation: none; }
+  }
+</style>
+
+<script>
+  const CAL = 'https://calendly.com/russell-decisive/30min';
+
+  // Tier band selector
+  const grid = document.querySelector('.tier-grid');
+  const bandBtns = document.querySelectorAll<HTMLButtonElement>('.band-toggle button');
+  bandBtns.forEach((btn) =>
+    btn.addEventListener('click', () => {
+      bandBtns.forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      if (grid && btn.dataset.band) grid.setAttribute('data-band', btn.dataset.band);
+    })
+  );
+
+  // Recoverable value calculator
+  const rev = document.getElementById('rev') as HTMLInputElement | null;
+  const out = document.getElementById('calcOut');
+  const fmt = (n: number) => '$' + Math.round(n).toLocaleString('en-US');
+
+  function feeFor(r: number): { fee: number; band: string } | null {
+    if (r < 5000000) return null;
+    if (r <= 8000000) return { fee: 10000, band: '$5M to $8M' };
+    if (r <= 25000000) return { fee: 15000, band: '$8M to $25M' };
+    return { fee: 20000, band: '$25M to $50M' };
+  }
+
+  function render() {
+    if (!rev || !out) return;
+    const digits = rev.value.replace(/[^0-9]/g, '');
+    rev.value = digits ? parseInt(digits, 10).toLocaleString('en-US') : '';
+    const r = parseInt(digits || '0', 10);
+    const f = feeFor(r);
+    if (!f) {
+      out.className = 'calc-output calc-refer';
+      out.innerHTML =
+        '<span class="calc-k">Below the floor</span>' +
+        '<span class="calc-big">We would refer you out</span>' +
+        '<span class="calc-sub">Under $5M in revenue, the guarantee math does not hold. Tell us anyway and we will point you somewhere useful.</span>' +
+        '<a class="btn btn-primary" href="' + CAL + '">Book a fit call</a>';
+      return;
+    }
+    out.className = 'calc-output';
+    out.innerHTML =
+      '<span class="calc-k">Guaranteed recoverable value, in 14 days</span>' +
+      '<span class="calc-big">' + fmt(f.fee * 3) + '</span>' +
+      '<span class="calc-sub">Typical 5x to 10x: ' + fmt(f.fee * 5) + ' to ' + fmt(f.fee * 10) + '. Or the Diagnostic is free.</span>' +
+      '<div class="calc-fee">Your Diagnostic fee: ' + fmt(f.fee) + ' &middot; ' + f.band + ' band</div>' +
+      '<a class="btn btn-primary" href="' + CAL + '">Book a fit call</a>';
+  }
+
+  if (rev) {
+    rev.addEventListener('input', render);
+    render();
+  }
+</script>
