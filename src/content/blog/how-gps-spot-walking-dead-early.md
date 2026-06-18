@@ -6,7 +6,7 @@ pubDate: 2026-03-24
 updatedDate: 2026-03-24
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "gp-detection"
+topicCluster: "funded-tech"
 pillar: 3
 ctaVariant: "investor-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"

@@ -6,10 +6,10 @@ pubDate: 2026-06-11
 updatedDate: 2026-06-11
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "ratio-mirage"
+topicCluster: "funded-tech"
 pillar: 1
 ctaVariant: "self-assessment"
-dominantClaim: "put-in-7500-name-22500"
+dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/what-stalled-portco-actually-is.png"
 featured: false
 readingTime: 5

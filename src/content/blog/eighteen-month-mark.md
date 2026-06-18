@@ -6,7 +6,7 @@ pubDate: 2026-04-28
 updatedDate: 2026-04-28
 author: "Russell Fette"
 postType: "field-note"
-topicCluster: "stalled-raise"
+topicCluster: "funded-tech"
 pillar: 1
 ctaVariant: "self-assessment"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -19,7 +19,7 @@ readingTime: 7
 
 - The stall becomes visible at 18 months past the last raise, and it shows up in decision velocity about two quarters before it shows up in ARR or burn. The dashboard is the last place it appears.
 - Five early tells, all observable in a single exec meeting: open calls rolling forward, decision latency stretching, the board's questions softening, the plan still orbiting last round's number, and the runway conversation moving out of the room.
-- The companies that come back are the ones that treat the mark as a decision point, not a verdict. At 18 months the founder is sitting between a board that wants growth and a bank that wants runway, and that seat is exactly where the next call has to get made.
+- The companies that come back are the ones that treat the mark as a decision point, not a verdict. At 18 months the founder is sitting between directors pushing for growth and lenders pushing for runway, and that seat is exactly where the next call has to get made.
 
 The stall becomes visible at 18 months past the last raise, and it shows up in decision velocity about two quarters before it shows up in ARR or burn. By the time the metrics confirm it, the pattern has been running for six months. The companies that recover are not the ones with better numbers at month 18. They are the ones that read the early tells while the dashboard still looks fine.
 
@@ -51,7 +51,7 @@ One tell is a Tuesday. Two is drift. Three or more, pointing at the same stuck d
 
 A choice, not a confession.
 
-At 18 months the founder is sitting in a specific seat: the board wants growth, because growth is what reopens the next round. The bank wants runway, because runway is what keeps the covenant conversation quiet. Those two demands pull in opposite directions, and the founder is the only person in the structure who has to answer both at once. That seat is uncomfortable. It is also the only seat from which the next call can actually be made.
+At 18 months the founder is sitting in a specific seat: directors are pushing for growth, because growth is what reopens the next round, while the lenders are pushing for runway, because runway is what keeps the covenant conversation quiet. Those two demands pull in opposite directions, and the founder is the only person in the structure who has to answer both at once. That seat is uncomfortable. It is also the only seat from which the next call can actually be made.
 
 The instinct at the mark is to relitigate: which hire was wrong, which bet missed, who should have seen it. That instinct burns the one resource the company has the least of, which is decision capacity. The decisions weren't wrong. They were right for a context that no longer exists. The useful question is not what the last 18 months should have been. It is which forward decision the next 90 days depends on, and what date it gets.
 
@@ -59,7 +59,7 @@ The companies that come back from the mark share one behavior, and it is not a m
 
 ## What is the Decisive Finance role in this?
 
-We run the 14-day Decision Diagnostic for exactly this moment. We scan the five canon recovery categories (Cost, Pricing, Growth Spend, Product Line, Capital Structure), score the Six Traps against the actual financials, and put the trapped value in dollars next to the decisions that have been rolling forward. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. The Diagnostic is $7,500 under $3M ARR and $10,000 from $3M to $8M ARR, and the output is the decision list the 18-month mark has been asking for. We don't audit the past. We justify each next call.
+We run the 14-day Decision Diagnostic for exactly this moment. We scan the five canon recovery categories (Cost, Pricing, Growth Spend, Product Line, Capital Structure), score the Six Traps against the actual financials, and put the recoverable value in dollars next to the decisions that have been rolling forward. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. The Diagnostic is priced from $10,000 to $20,000, and the output is the decision list the 18-month mark has been asking for. We don't audit the past. We justify each next call.
 
 ## Where to go from here
 

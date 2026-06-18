@@ -6,7 +6,7 @@ pubDate: 2025-12-30
 updatedDate: 2025-12-30
 author: "Russell Fette"
 postType: "field-note"
-topicCluster: "ratio-mirage"
+topicCluster: "profit-paradox"
 pillar: 1
 ctaVariant: "self-assessment"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"

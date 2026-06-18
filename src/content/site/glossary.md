@@ -1,75 +1,75 @@
 # Decisive Finance glossary
 
-**Purpose:** A single reference for the vocabulary used across Decisive Finance writing. Ten canonical terms, each with a short definition and a pointer to the pillar where it lives.
+**Purpose:** A single reference for the vocabulary used across Decisive Finance writing. Each term has a short definition and a pointer to where it lives.
 
 **For the site:** publish at `/glossary/` as a standalone page. Link from the footer. Link into it from every blog post on first use of a term.
 
 ---
 
-## 1. Walking dead portco
+## 1. Decision-First Finance
 
-A post-Series A or Series B company that has stopped moving. Revenue holds or creeps. Burn is the thing that grows. The board deck still has up-and-to-the-right charts. The next round is six months overdue. Alive on the cap table. Dead in the forecast.
+The category. A way of running the finance function around the next material calls a company has to make, not the last few months of variance. The close still closes and the board deck still ships, but the center of gravity moves to the decision queue. The unowned category name; it carries no trademark.
 
-**See:** [The stalled portco](/perspectives/stalled-portco)
+**See:** [Decision-First Finance: the methodology](/perspectives/decision-first-finance)
 
-## 2. Six-signal pattern
+## 2. System of record vs system of decision
 
-The Six Trap Diagnostic™ that together define a stalled portco. Three of six is enough to be in the category. The signals are: ratio mirage, board question shift, CEO/investor fracture, stalled raise, retrospective CFO, and trapped value with no owner.
+Your books, your accounting software, and your monthly reports are a system of record. They tell you what happened. They were never built to tell you what to do next. A system of decision is the layer Decisive installs on top: the same numbers, reframed so every major call can point at the figure behind it.
 
-**See:** [The stalled portco](/perspectives/stalled-portco)
+**See:** [Decision-First Finance: the methodology](/perspectives/decision-first-finance)
 
-## 3. Ratio mirage
+## 3. The profit paradox
 
-When a company's headline ratios (gross margin, LTV/CAC, NRR) remain inside acceptable bands while the denominators drift out from under them. The numbers stay fine and stop meaning what they used to. A structural feature of stalled portcos.
+When revenue climbs but profit stalls, and nothing in the monthly report can point at why. The cash is not gone; it is locked inside calls that looked right at the time and were never re-decided against what is true now.
 
 **See:** [The ratio mirage](/perspectives/ratio-mirage-when-metrics-stop-tracking)
 
-## 4. Decision-first finance
+## 4. The Six Trap Diagnostic™
 
-A methodology that moves finance's primary deliverable from retrospective reporting (variance deck) to forward decision framing (Three-Path Model). The close and the variance still happen. They are no longer the center of gravity.
+The six structural patterns in human cognition that quietly hold value inside past decisions: Sunk Cost, Status Quo, Mental Accounting, Anchoring, Loss Aversion, and Certainty Illusion. Most companies are running three or four at once. They are patterns, not failures of the owner.
 
-**See:** [Decision-first finance](/perspectives/decision-first-finance)
+**See:** [The Six Trap Diagnostic explained](/perspectives/six-trap-diagnostic-explained)
 
-## 5. Six-Trap Diagnostic
+## 5. The Decision Loop
 
-A two-week, fixed-fee engagement that runs across the five canon recovery categories (Cost, Pricing, Growth Spend, Product Line, Capital Structure), restates the company's three headline ratios against an explicit customer definition, and produces the first Three-Path Model on a material decision. The guarantee: put in $7,500, at least $22,500 of trapped value named in 14 days, or the Diagnostic is free.
+The signature visual: Decision, Cost and Commitment, Drift, Trap, Diagnose, Defend, and back to Decision. Our intervention is the last two nodes, Diagnose and Defend. Most companies never close the loop, so value traps and stays trapped. We close it on a rhythm.
+
+**See:** [The Six Trap Diagnostic explained](/perspectives/six-trap-diagnostic-explained)
+
+## 6. Recoverable value
+
+Quantified, owner-accepted value in one of three forms: recoverable cash, recoverable margin, or avoided cost. It is what the Diagnostic guarantees. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.
 
 **See:** [What the first 14 days actually look like](/perspectives/first-14-days-operational-scan) and [the guarantee](/guarantee)
 
-## 6. Three-Path Model
+## 7. Three-Path Model
 
-A one-page decision artifact that frames a material decision as Keep, Kill, or Restructure, with dollars under each path (incremental ARR, incremental burn, 12-month net cash), a recommendation from the finance function, and a decision date with a named owner. Also called the Decision Slide when it appears in the board deck.
+A one-page decision artifact that frames a material decision as Keep, Kill, or Restructure, with dollars under each path, a recommendation from the finance function, and a decision date with a named owner. Also called the Decision Slide when it appears in the board deck.
 
 **See:** [The one-page decision slide](/perspectives/one-page-decision-slide-for-boards)
 
-## 7. Financial Rhythm System (FRS)
+## 8. Financial Rhythms™
 
-The monthly operating cadence that keeps decision-first finance running after a Diagnostic ends. Three instruments: Decision Slide, Runway Spine, Signal Dashboard. All three produced before the close deck, each one page, every month.
+The operating cadence that keeps Decision-First Finance running after a Diagnostic ends: a weekly decision cadence, a monthly deep dive, and a quarterly model rebuild. The rhythm a Resolution installs and a Partnership runs.
 
-**See:** [The Financial Rhythm System](/perspectives/financial-rhythm-system-monthly-cadence)
+**See:** [The monthly cadence](/perspectives/financial-rhythm-system-monthly-cadence)
 
-## 8. Runway Spine
+## 9. Forward Capital Register
 
-A rolling 18-month cash view with three sensitivities (base, downside, upside), each row naming the decision the scenario depends on. One of the three instruments in the Financial Rhythm System.
+A standing register where every cost above a set threshold carries an explicit decision status, an owner, and a review cadence. It turns spend from a line item into a decision.
 
-**See:** [The Financial Rhythm System](/perspectives/financial-rhythm-system-monthly-cadence)
+**See:** [The Forward Capital Register](/perspectives/forward-capital-register)
 
-## 9. trapped value
+## 10. Normalize, Reframe, Teach
 
-Recoverable cash sitting in past decisions across the five canon recovery categories: Cost, Pricing, Growth Spend, Product Line, and Capital Structure. The Cost sweep alone runs SaaS overages, cloud infrastructure, R&D tax credits, AR aging, vendor terms, revenue leakage, contractor load, and G&A overhead. In a stalled portco, at least $22,500 of trapped value named in 14 days is the floor we have yet to miss.
+How the work is productized. Normalize any company's data into a standard internal format, reframe it into the Decisive decision view, and teach the owner to read it and decide from it. Roughly 70% of the value at a fraction of the effort; the custom 30% is reserved for clients who lean in.
 
-**See:** [What the first 14 days actually look like](/perspectives/first-14-days-operational-scan) and [the guarantee](/guarantee)
-
-## 10. CEO/investor fracture
-
-The silent break that opens between the CEO and the lead investor around month ten to sixteen of the Series A, when each party starts operating on a different story about the company and tells it to different outside audiences. Repaired by a one-page co-authored definition of what the company is, signed by both.
-
-**See:** [The CEO/investor fracture](/perspectives/ceo-investor-fracture)
+**See:** [Decision-First Finance: the methodology](/perspectives/decision-first-finance)
 
 ---
 
 ## Implementation notes
 
-- Publish at `/glossary/` with an anchor id on each term (`#stalled-portco`, etc.) so posts can deep-link into the entry.
+- Publish at `/glossary/` with an anchor id on each term (`#decision-first-finance`, etc.) so posts can deep-link into the entry.
 - On first use of a glossary term in any blog post, wrap as a link to the glossary entry. On second use, unlinked.
-- Keep the glossary to 10 entries. New canon terms require a Phrase Book update first; glossary follows the Phrase Book, not the other way around.
+- New canon terms require a Phrase Book update first; the glossary follows the Phrase Book, not the other way around.

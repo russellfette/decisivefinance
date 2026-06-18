@@ -1,12 +1,12 @@
 ---
 title: "The stalled portco: what it is, how to spot it, how to come back"
 slug: stalled-portco
-description: "A funded-tech company 18 months past the raise looks alive on the cap table and stalled in the forecast. Here are the Six Trap Diagnostic™, the three paths out, and the 3x-fee trapped value the Diagnostic guarantees in 14 days."
+description: "A funded-tech company 18 months past the raise looks alive on the cap table and stalled in the forecast. Here are the Six Trap Diagnostic™, the three paths out, and the recoverable value the Diagnostic guarantees in 14 days."
 pubDate: 2026-02-10
 updatedDate: 2026-02-10
 author: "Russell Fette"
 postType: "field-note"
-topicCluster: "ratio-mirage"
+topicCluster: "funded-tech"
 pillar: 1
 ctaVariant: "self-assessment"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -19,7 +19,7 @@ pillarHub: true
 ## At a glance
 
 - A stalled portco is a post-Series A or Series B company that looks funded on the cap table and stalled in the forecast. The numbers are "fine." Nothing grows.
-- Six Trap Diagnostic™ tell you which one you are: ratios that stop tracking, a board that starts asking softer questions, a CEO/investor fracture, a raise that's "in progress" for four months, a CFO who defaults to retrospective reporting, and $22.5K to $30K of trapped value nobody owns.
+- Six Trap Diagnostic™ tell you which one you are: ratios that stop tracking, a board that starts asking softer questions, a CEO/investor fracture, a raise that's "in progress" for four months, a CFO who defaults to retrospective reporting, and recoverable value nobody owns.
 - The move out is never "grow faster." It's to recover cash, re-ground the unit economics, and make the next five material decisions three ways, not one.
 
 ## What a stalled portco actually is
@@ -56,9 +56,9 @@ Not rejected. In progress. Partner meetings that go well but do not convert. IOI
 
 A CFO who is stuck produces clean retrospective decks. Variance explained. Bridges walked. Cash position restated. What they do not produce is a three-path model on the next material decision the company has to make. If every board deck is a rearview mirror with five tabs in Excel and no Keep/Kill/Restructure on the five decisions that matter this quarter, the finance function has gone defensive.
 
-### 6. There is $22.5K to $30K of trapped value no one is chasing
+### 6. There is recoverable value no one is chasing
 
-We have yet to open a Diagnostic on a stalled portco and not surface at least $22,500 of trapped value in the first 14 days. Engagements to date: 5x to 10x the fee. Some clear far more. Vendor overages on SaaS no one audited. R&D credits the bookkeeper never filed. AR that went 90 days because nobody made the call. Contract terms that auto-renewed past the point of need. In a stalled portco, someone is always busy, and no one is running the recovery.
+We have yet to open a Diagnostic on a stalled portco and not surface recoverable value in the first 14 days. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. Some clear far more. Vendor overages on SaaS no one audited. R&D credits the bookkeeper never filed. AR that went 90 days because nobody made the call. Contract terms that auto-renewed past the point of need. In a stalled portco, someone is always busy, and no one is running the recovery.
 
 If you nodded at three of those, the rest of this guide is for you.
 
@@ -90,9 +90,9 @@ A stalled portco typically has five decisions running in the background that sho
 
 Pick one. Model three paths. Decide. Move to the next. Inside 90 days, five of them are resolved. That is the recovery.
 
-## Where does the $22,500 come from?
+## Where does the recoverable value come from?
 
-Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. That recovery funds the Three-Path work that follows. This is not an accident. It is how we structured the firm. Inside the first 14 days of a Diagnostic, we run a scan across the five canon recovery categories: Cost, Pricing, Growth Spend, Product Line, Capital Structure. The Cost sweep alone covers SaaS audits, cloud infrastructure, R&D tax credits, AR and cash acceleration, vendor terms, revenue leakage, contractor load, and G&A overhead.
+Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. That recovery funds the Three-Path work that follows. This is not an accident. It is how we structured the firm. Inside the first 14 days of a Diagnostic, we run a scan across the five canon recovery categories: Cost, Pricing, Growth Spend, Product Line, Capital Structure. The Cost sweep alone covers SaaS audits, cloud infrastructure, R&D tax credits, AR and cash acceleration, vendor terms, revenue leakage, contractor load, and G&A overhead.
 
 Not every category hits in every engagement. Most do. The 14-day number is what surfaces as trapped value. The recovery follows: some items clear inside 30 days (AR, SaaS, contract cleanup), others file in month 2 or 3 (R&D credits). Either way, the number pays for the decision work that matters more, which is picking the five decisions that change the company's trajectory and running them three ways.
 

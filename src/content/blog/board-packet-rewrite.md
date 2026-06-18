@@ -6,7 +6,7 @@ pubDate: 2026-05-12
 updatedDate: 2026-05-12
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "board-reporting"
+topicCluster: "funded-tech"
 pillar: 2
 ctaVariant: "slide-template"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -55,7 +55,7 @@ One more practical note: do the rewrite in one cycle, not gradually. A packet th
 
 ## What is the Decisive Finance role in this?
 
-The rewrite needs inputs most stalled companies do not have on the shelf: three-path math on the material calls, runway modeled per path, a forward capital register with real line items. The 14-day Decision Diagnostic builds exactly those, which means the first rewritten packet can ship at your next board meeting instead of two quarters from now. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. The capital register summary alone usually covers it.
+The rewrite needs inputs most stalled companies do not have on the shelf: three-path math on the material calls, runway modeled per path, a forward capital register with real line items. The 14-day Decision Diagnostic builds exactly those, which means the first rewritten packet can ship at your next board meeting instead of two quarters from now. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. The capital register summary alone usually covers it.
 
 ## Where to go from here
 

@@ -6,7 +6,7 @@ pubDate: 2026-01-13
 updatedDate: 2026-01-13
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "board-reporting"
+topicCluster: "system-of-decision"
 pillar: 2
 ctaVariant: "slide-template"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -20,7 +20,7 @@ pillarHub: true
 
 - Decision-first finance is a CFO methodology, not a service tier. It reorganizes the finance function around the next five material decisions the company has to make, not the last five months of variance.
 - The core instruments are the Six-Trap Diagnostic (what pattern you are in), the Three-Path Model (Keep, Kill, Restructure on every material decision), and the Financial Rhythm System (the monthly cadence that keeps the work compounding after the engagement ends).
-- A fractional CFO fills a chair. Decision-first finance changes what the chair does. Same hours, different output: a Three-Path Model on every decision that matters, a board deck that drives the next decision instead of explaining the last one, and at least $22,500 of trapped value named in 14 days to pay for the work.
+- A fractional CFO fills a chair. Decision-first finance changes what the chair does. Same hours, different output: a Three-Path Model on every decision that matters, a board deck that drives the next decision instead of explaining the last one, and recoverable value named in 14 days to pay for the work. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.
 
 ## Why "decision-first"
 
@@ -82,7 +82,7 @@ You can hire a fractional CFO and get a competent finance function. If you hire 
 Two practical consequences:
 
 1. **We work in engagements, not retainers.** A diagnostic is scoped. An Engine engagement is scoped. A Fractional tier is scoped. Nobody is paying us to fill a seat indefinitely.
-2. **We guarantee the recovery.** Every diagnostic carries a 3x fee guarantee on recovered cash in the first 30 days. We stand behind the methodology because the methodology produces the number.
+2. **We guarantee the recovery.** Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. We stand behind the methodology because the methodology produces the number.
 
 ## What 90 days of decision-first finance looks like
 
@@ -94,7 +94,7 @@ Two practical consequences:
 - First cash-recovery sweep across the five canon recovery categories.
 - Delivery of the diagnostic memo: trap stack, five decisions queued for Three-Path, initial cash recovery pipeline.
 
-**Typical outcome by day 14:** the full $22.5K to $30K of trapped value identified and documented, three to five decisions ranked, trap stack named.
+**Typical outcome by day 14:** recoverable value identified and documented at 3x the Diagnostic fee or more, three to five decisions ranked, trap stack named.
 
 ### Days 15 to 45: the first engine cycle
 
@@ -104,7 +104,7 @@ Two practical consequences:
 - Board pack rewrite for the first board cycle after engagement start.
 - First monthly rhythm meeting.
 
-**Typical outcome by day 45:** decisions #1 and #2 signed. Decisions #3 and #4 scoped. Cash recovery at $35K to $55K.
+**Typical outcome by day 45:** decisions #1 and #2 signed. Decisions #3 and #4 scoped. Recoverable value tracking at 5x to 10x the Diagnostic fee.
 
 ### Days 46 to 90: compounding
 
@@ -113,7 +113,7 @@ Two practical consequences:
 - Board pack format in its second iteration.
 - The CFO function (internal or fractional) running the rhythm without us in the room.
 
-**Typical outcome by day 90:** five decisions resolved, one trap pattern named and retired, $50K+ recovered, monthly rhythm installed.
+**Typical outcome by day 90:** five decisions resolved, one trap pattern named and retired, recoverable value captured at 5x to 10x the Diagnostic fee, monthly rhythm installed.
 
 ## What decision-first finance is not
 

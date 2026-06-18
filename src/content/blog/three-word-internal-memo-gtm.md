@@ -6,7 +6,7 @@ pubDate: 2026-07-07
 updatedDate: 2026-07-07
 author: "Russell Fette"
 postType: "field-note"
-topicCluster: "stalled-raise"
+topicCluster: "system-of-decision"
 pillar: 1
 ctaVariant: "self-assessment"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -69,7 +69,7 @@ The founder's read afterward was the most useful part: the four GTM reviews had 
 
 ## What is the Decisive Finance role in this?
 
-The per-offer math in step one is exactly what the 14-day Decision Diagnostic builds, and Product Line is one of the five canon recovery categories we score it against. The Diagnostic surfaces the line that converts but does not scale, puts the dollars under Keep, Kill, and Restructure, and hands the CEO a memo that is ready to sign. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free.
+The per-offer math in step one is exactly what the 14-day Decision Diagnostic builds, and Product Line is one of the five canon recovery categories we score it against. The Diagnostic surfaces the line that converts but does not scale, puts the dollars under Keep, Kill, and Restructure, and hands the CEO a memo that is ready to sign. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.
 
 ## Where to go from here
 

@@ -110,7 +110,7 @@ h1 span{color:var(--orange)}
 <div class="hero">
   <span class="eyebrow">For companies running on EOS&reg;</span>
   <h1>Score your finance function <span>in 90 seconds</span></h1>
-  <p class="sub">Ten measurables that belong on a weekly Scorecard, grouped by the three rhythms we install. Mark each one the way it stands today.</p>
+  <p class="sub">The Scorecard tells you the boat is moving. These ten measurables tell you if it is pointed at the money. Mark each one the way it stands today.</p>
   <div class="legend">
     <span><i class="dot" style="background:#1d9e75"></i>Green: weekly, at target</span>
     <span><i class="dot" style="background:#ef9f27"></i>Amber: tracked, but monthly or off target</span>
@@ -128,7 +128,7 @@ h1 span{color:var(--orange)}
         <circle id="arc" cx="75" cy="75" r="62" fill="none" stroke="#1d9e75" stroke-width="13"
           stroke-linecap="round" stroke-dasharray="389.6" stroke-dashoffset="389.6"
           transform="rotate(-90 75 75)" style="transition:stroke-dashoffset .5s cubic-bezier(.2,.8,.2,1),stroke .3s"/>
-        <text id="gnum" x="75" y="73" text-anchor="middle" font-size="32" font-weight="800" fill="#182228" font-family="Inter,sans-serif">—</text>
+        <text id="gnum" x="75" y="73" text-anchor="middle" font-size="32" font-weight="800" fill="#182228" font-family="Inter,sans-serif">&#8212;</text>
         <text x="75" y="93" text-anchor="middle" font-size="11" font-weight="600" fill="#5a6a72" font-family="Inter,sans-serif">CASH SCORE</text>
       </svg>
     </div>
@@ -144,7 +144,7 @@ h1 span{color:var(--orange)}
       <input type="email" id="em" placeholder="Work email" aria-label="Work email">
       <button id="go">Email me my score + the Scorecard</button>
       <p class="fine" id="fine">Instant delivery. Your score and red rows travel with it, so the reply you get is specific.</p>
-      <div class="guarantee"><b>The install behind this self-funds.</b> If the first 14 days don't surface at least 3x the monthly fee, you don't pay.</div>
+      <div class="guarantee"><b>The Decision Diagnostic behind this self-funds.</b> Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. Or 100% refund.</div>
       <p class="implementer">Implementer? Send this to a client before their next quarterly: <a href="https://decisive.finance/eos">decisive.finance/eos</a>. The results come back to you both.</p>
     </div>
   </aside>
@@ -222,7 +222,7 @@ GROUPS.forEach((grp,gi)=>{
 const barsEl=document.getElementById("bars");
 GROUPS.forEach((grp,gi)=>{
   const d=document.createElement("div"); d.className="bar-row";
-  d.innerHTML=`<div class="bar-top"><span class="nm">${grp.name}</span><span class="pc" id="pc${gi}">—</span></div><div class="bar-track"><div class="bar-fill" id="bf${gi}"></div></div>`;
+  d.innerHTML=`<div class="bar-top"><span class="nm">${grp.name}</span><span class="pc" id="pc${gi}">&#8212;</span></div><div class="bar-track"><div class="bar-fill" id="bf${gi}"></div></div>`;
   barsEl.appendChild(d);
 });
 function ragColor(pct){return pct>=70?"#1d9e75":(pct>=40?"#ef9f27":"#e24b4a");}
@@ -252,7 +252,7 @@ function update(){
     const m=idxs.filter(i=>marks[i]!==undefined);
     const gp=m.reduce((s,i)=>s+PTS[marks[i]],0);
     const gpct=m.length?Math.round(gp/m.length*100):0;
-    document.getElementById("pc"+gi).textContent=m.length?gpct+"%":"—";
+    document.getElementById("pc"+gi).textContent=m.length?gpct+"%":"&#8212;";
     const f=document.getElementById("bf"+gi);
     f.style.width=(m.length?gpct:0)+"%";
     f.style.background=ragColor(gpct);

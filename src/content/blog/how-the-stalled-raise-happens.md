@@ -6,7 +6,7 @@ pubDate: 2026-03-03
 updatedDate: 2026-03-03
 author: "Russell Fette"
 postType: "field-note"
-topicCluster: "stalled-raise"
+topicCluster: "funded-tech"
 pillar: 1
 ctaVariant: "self-assessment"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -71,7 +71,7 @@ The reversal has three moves.
 
 ## Where does cash recovery fit in?
 
-Inside a stalled raise, the cash recovery work is doing double duty. The $22,500 or more of trapped value named in the first 14 days of a Diagnostic buys runway. More importantly, the act of finding it and cleaning it up demonstrates to existing investors that the CEO still has operating grip on the company. That matters in the bridge conversation more than any pitch page.
+Inside a stalled raise, the cash recovery work is doing double duty. The recoverable value named in the first 14 days of a Diagnostic, guaranteed at 3x your Diagnostic fee and typically 5x to 10x, buys runway. More importantly, the act of finding it and cleaning it up demonstrates to existing investors that the CEO still has operating grip on the company. That matters in the bridge conversation more than any pitch page.
 
 ## Where to go from here
 

@@ -6,7 +6,7 @@ pubDate: 2026-06-30
 updatedDate: 2026-06-30
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "financial-rhythm-system"
+topicCluster: "financial-rhythms"
 pillar: 2
 ctaVariant: "slide-template"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -67,7 +67,7 @@ That ordering is the whole trick. Close first, decide second, explain third. Mos
 
 ## What is the Decisive Finance role in this?
 
-The 14-day Decision Diagnostic builds the first version of all three artifacts: the initial forward capital register, the first named call with its three-path model, and the runway truth under each path. The second month of an engagement installs the cadence so the company produces them itself, every second Tuesday, without us in the room. Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. We don't audit the past. We justify each next call.
+The 14-day Decision Diagnostic builds the first version of all three artifacts: the initial forward capital register, the first named call with its three-path model, and the runway truth under each path. The second month of an engagement installs the cadence so the company produces them itself, every second Tuesday, without us in the room. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. We don't audit the past. We justify each next call.
 
 ## Where to go from here
 

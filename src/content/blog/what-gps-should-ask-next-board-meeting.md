@@ -6,7 +6,7 @@ pubDate: 2026-03-31
 updatedDate: 2026-03-31
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "gp-board-questions"
+topicCluster: "funded-tech"
 pillar: 3
 ctaVariant: "investor-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
@@ -63,7 +63,7 @@ This one tends to produce the longest silence in the room. Most CFOs have not be
 
 **What a drifting company answers:** *We have not done a formal scan. We could probably find some opportunities, but the team has been focused on the raise.* The answer is the opening. An external Diagnostic is the appropriate response, and the GP can underwrite it on the spot.
 
-The guarantee floor is $22,500 ($30,000 from $3M ARR). No company we have run a Diagnostic on has come in under that floor. The range is worth citing by name when asking this question, because it sets the frame for what "a scan" means.
+The guarantee is simple: 3x your Diagnostic fee in recoverable value, in 14 days, typical 5x to 10x. No company we have run a Diagnostic on has come in under that floor. The guarantee is worth citing by name when asking this question, because it sets the frame for what "a scan" means.
 
 ## How to sequence them
 

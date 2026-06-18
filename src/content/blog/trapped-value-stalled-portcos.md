@@ -1,15 +1,15 @@
 ---
 title: "Trapped value in stalled portcos: where it sits and how to name it"
 slug: trapped-value-stalled-portcos
-description: "Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. Here is where that money sits and why nobody inside can see it."
+description: "Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. Here is where that money sits and why nobody inside can see it."
 pubDate: 2026-06-11
 updatedDate: 2026-06-11
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "cash-recovery"
+topicCluster: "recoverable-value"
 pillar: 1
 ctaVariant: "trapped-value-preview"
-dominantClaim: "put-in-7500-name-22500"
+dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/trapped-value-stalled-portcos.png"
 featured: false
 readingTime: 6
@@ -21,7 +21,7 @@ readingTime: 6
 - It concentrates in five categories: Cost, Pricing, Growth Spend, Product Line, Capital Structure. Every Diagnostic scans all five.
 - It is invisible from inside by design. The same traps that made the original decisions defensible now defend them against review.
 
-Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free. That sentence carries the whole business model, so it is worth being precise about what trapped value actually is, where it sits in a stalled portco, and why the people closest to it cannot see it.
+Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. That sentence carries the whole business model, so it is worth being precise about what recoverable value actually is, where it sits in a stalled portco, and why the people closest to it cannot see it.
 
 ## What counts as trapped value?
 

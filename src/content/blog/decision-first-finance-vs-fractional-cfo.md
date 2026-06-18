@@ -6,10 +6,10 @@ pubDate: 2026-06-11
 updatedDate: 2026-06-11
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "decision-first"
+topicCluster: "system-of-decision"
 pillar: 1
 ctaVariant: "book-30"
-dominantClaim: "put-in-7500-name-22500"
+dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/decision-first-finance-vs-fractional-cfo.png"
 featured: false
 readingTime: 6
@@ -38,7 +38,7 @@ The calendar inverts. Reporting still happens, but it is the exhaust, not the pr
 1. **Every material call gets a Three-Path Model.** Keep, Kill, Restructure, with dollars under each path and a recommendation we will defend in front of the board. Not a sensitivity table. A named call with a date.
 2. **Deployed capital gets a forward register.** Every committed dollar scored against current context rather than the context it was approved in, with the dead-context rows ranked by recoverable value.
 3. **The cadence produces decisions on a schedule.** A monthly rhythm where the close exists to feed the decision review, not the other way around. The output of a finance month is the calls made, not the pages produced.
-4. **The first engagement pays for itself on the record.** Put in $7,500. We name at least $22,500 of trapped value in 14 days, or the Diagnostic is free.
+4. **The first engagement pays for itself on the record.** Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.
 
 ## When is the standard fractional CFO the right answer?
 
