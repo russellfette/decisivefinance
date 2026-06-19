@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CalendlyEmbed from '../components/CalendlyEmbed.astro';
 
-const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+const CALENDLY = '#book';
 
 const title = "Revenue's up. Profit isn't. | Decisive Finance";
 const description =
@@ -430,16 +431,20 @@ const fitNo = [
       <p class="lede">
         You walk into every major decision able to point at the number behind it, and the recovered cash proves the view was right. That is the whole promise. It starts with one 30-minute call.
       </p>
-      <div class="close-grid">
-        <div class="close-card">
-          <h3>For owners</h3>
-          <p>One 30-minute fit call. No pitch. If the fit is there, we book the Diagnostic. If it is not, both sides know inside the first call and we end clean.</p>
-          <a href={CALENDLY} class="btn btn-primary">Book a fit call</a>
+      <div class="book-grid">
+        <div class="book-aside">
+          <div class="book-note">
+            <h3>For owners</h3>
+            <p>One 30-minute fit call. No pitch. If the fit is there, we book the Diagnostic. If it is not, both sides know inside the first call and we end clean.</p>
+          </div>
+          <div class="book-note">
+            <h3>For advisors and boards</h3>
+            <p>EOS implementers, Vistage chairs, PE operating partners, and fractional teams bring us in when an operating company is making big calls without the math to defend them.</p>
+            <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
+          </div>
         </div>
-        <div class="close-card">
-          <h3>For advisors and boards</h3>
-          <p>EOS implementers, Vistage chairs, PE operating partners, and fractional teams bring us in when an operating company is making big calls without the math to defend them.</p>
-          <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
+        <div class="book-embed">
+          <CalendlyEmbed />
         </div>
       </div>
     </div>
@@ -530,10 +535,20 @@ const fitNo = [
     .viz-line { stroke-dasharray: none; stroke-dashoffset: 0; animation: none; }
     .viz-gap, .viz-dot, .viz-tag, .viz-note { opacity: 1; animation: none; }
   }
+
+  /* Book: copy aside + inline scheduler */
+  .book-grid { display: grid; grid-template-columns: 1fr; gap: 32px; margin-top: 44px; align-items: start; }
+  @media (min-width: 1000px) { .book-grid { grid-template-columns: 0.82fr 1.18fr; gap: 48px; } }
+  .book-aside { display: flex; flex-direction: column; gap: 22px; }
+  .book-note { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 14px; padding: 28px 26px; }
+  .book-note h3 { color: var(--white); margin-top: 0; margin-bottom: 12px; font-size: 21px; }
+  .book-note p { color: rgba(255, 255, 255, 0.78); font-size: 15px; margin-bottom: 0; line-height: 1.55; }
+  .book-note .btn { margin-top: 20px; }
+  .book-embed { min-width: 0; }
 </style>
 
 <script>
-  const CAL = 'https://calendly.com/russell-decisive/30min';
+  const CAL = '#book';
 
   // Tier band selector
   const grid = document.querySelector('.tier-grid');

@@ -1,0 +1,54 @@
+---
+// Inline Calendly scheduler, brand-matched to the Decisive palette.
+// Books straight on the page, no off-site redirect.
+interface Props {
+  height?: number;
+  minWidth?: number;
+}
+
+const { height = 720, minWidth = 320 } = Astro.props;
+
+const BOOKING = 'https://calendly.com/russell-decisive/30min';
+const params = new URLSearchParams({
+  hide_gdpr_banner: '1',
+  background_color: 'ffffff',
+  text_color: '182228',
+  primary_color: 'e3632b',
+});
+const dataUrl = `${BOOKING}?${params.toString()}`;
+---
+
+<div class="cal-panel">
+  <div
+    class="calendly-inline-widget"
+    data-url={dataUrl}
+    style={`min-width:${minWidth}px;height:${height}px;`}
+  >
+  </div>
+  <noscript>
+    <p class="cal-fallback">
+      Scheduling needs JavaScript. <a href={BOOKING}>Open the booking page</a> instead.
+    </p>
+  </noscript>
+</div>
+
+<script is:inline async src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+<style>
+  .cal-panel {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 8px;
+    overflow: hidden;
+    box-shadow: 0 14px 40px rgba(24, 34, 40, 0.22);
+  }
+  .calendly-inline-widget {
+    width: 100%;
+  }
+  .cal-fallback {
+    padding: 24px;
+    color: var(--ink);
+    font-size: 15px;
+    margin: 0;
+  }
+</style>

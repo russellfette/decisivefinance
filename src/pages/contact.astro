@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+import CalendlyEmbed from '../components/CalendlyEmbed.astro';
 ---
 
 <BaseLayout
@@ -16,7 +15,7 @@ const CALENDLY = 'https://calendly.com/russell-decisive/30min';
         The fastest path is the 30-minute call. No pitch. You leave with at least one action. If a call isn&rsquo;t the right first move, the inbox is open.
       </p>
       <div class="hero-cta-row">
-        <a href={CALENDLY} class="btn btn-primary">Book 30 minutes with Russ</a>
+        <a href="#schedule" class="btn btn-primary">Book 30 minutes with Russ</a>
         <a href="mailto:contact@decisive.finance" class="btn btn-secondary">Email us</a>
       </div>
     </div>
@@ -31,6 +30,14 @@ const CALENDLY = 'https://calendly.com/russell-decisive/30min';
           We ask where the company is, we ask what the next material decision is, and we name the number that decision is running against. If the engagement fits, we scope it on the call. If it doesn&rsquo;t, we tell you why and you walk away with at least one action.
         </p>
       </div>
+
+      <div id="schedule" class="schedule-block">
+        <CalendlyEmbed />
+      </div>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .schedule-block { max-width: 920px; margin: 44px auto 0; scroll-margin-top: 90px; }
+</style>
