@@ -109,34 +109,31 @@ const tiers = [
 
 const proofs = [
   {
-    name: 'Consumer products manufacturer',
+    name: 'Consumer products',
     tag: '$25M revenue',
-    outcome: "The banker's estimate was $25M to $35M, on books the owner didn't trust. We modeled a path to roughly $52M in enterprise value.",
+    outcome: "Banker's estimate was $25M to $35M, on books the owner didn't trust. We modeled a path to roughly $52M.",
     trap: 'Mental Accounting + Anchoring',
     resolution:
-      'We found the mispriced input costs, the phantom discounts, and the revenue that was never brought over, then rebuilt the close to 10 days. Pricing had been anchored to costs that moved years earlier, and the aggregate P&L hid which products carried the business.',
-    takeaway:
-      'The gap was never the market. It was the numbers.',
+      'Mispriced inputs, phantom discounts, and revenue never brought over. Pricing was anchored to costs that had moved years earlier, and the aggregate P&L hid which products carried the business.',
+    takeaway: 'The gap was never the market. It was the numbers.',
   },
   {
-    name: 'Professional services firm',
+    name: 'Professional services',
     tag: '$30M revenue',
-    outcome: '$380,000 of working capital recovered. Close cut from 22 days to 3. Roughly $50,000 a month of margin improvement, in 90 days.',
+    outcome: '$380,000 of working capital recovered. Close cut from 22 days to 3. Roughly $50,000 a month of margin, in 90 days.',
     trap: 'Status Quo + Certainty Illusion',
     resolution:
-      'Cash was trapped in a billing and close cadence nobody had revisited, and clean-looking reports masked the leak. We rebuilt the rhythm, pulled the working capital forward, and put margin on a weekly line of sight, the kind of report a buyer believes.',
-    takeaway:
-      'A clean close is not the same as a fast one, and neither one tells a buyer where the cash is stuck.',
+      'Cash was trapped in a billing and close cadence nobody had revisited, and clean reports masked the leak. We rebuilt the rhythm, pulled the working capital forward, and put margin on a weekly line of sight.',
+    takeaway: 'A clean close is not a fast one, and neither tells a buyer where the cash is stuck.',
   },
   {
-    name: 'Manufacturer',
-    tag: '$15M revenue',
-    outcome: 'The largest customer turned out to be the least profitable. Margins moved from 15% to 22% in 90 days.',
+    name: 'D2C food manufacturer',
+    tag: '$15M revenue, retail',
+    outcome: 'The largest customer was the least profitable. Margins moved from 15% to 22% in 90 days.',
     trap: 'Loss Aversion + Mental Accounting',
     resolution:
-      'The biggest account felt untouchable, so the math on it never got run, and the concentration was exactly what a buyer would discount hardest. Full cost allocation showed it was funded by everyone else. We repriced and reset terms instead of protecting the logo.',
-    takeaway:
-      'Customer concentration a buyer discounts is margin you can recover before you ever go to market.',
+      'The biggest account felt untouchable, so the math never got run, and the concentration was exactly what a buyer discounts hardest. Full cost allocation showed it was funded by everyone else. We repriced and reset terms.',
+    takeaway: 'Concentration a buyer discounts is margin you can recover before you go to market.',
   },
 ];
 
@@ -162,12 +159,11 @@ const fitNo = [
       <div class="hero-copy">
         <span class="eyebrow">For owners facing a sale, a PE approach, or a succession</span>
         <h1>
-          <span class="h1-line">You can&rsquo;t sell a company</span>
-          <span class="h1-line">on numbers</span>
+          <span class="h1-line">You can&rsquo;t sell a company on numbers</span>
           <span class="h1-line h1-line-accent">you don&rsquo;t trust yourself.</span>
         </h1>
         <p class="hero-subhead">
-          A sale price is a multiple times earnings. <span class="dollar">We work both numbers.</span> Buyers pay for a trend they can believe, and the trailing-twelve clock doesn&rsquo;t start until the numbers are true.
+          A sale price is a multiple times earnings. <span class="dollar">We work both numbers.</span> Buyers pay for a trend they believe, and the clock doesn&rsquo;t start until yours are true.
         </p>
         <div class="hero-cta-row">
           <a href={CALENDLY} class="btn btn-primary">Book a fit call</a>
@@ -347,13 +343,13 @@ const fitNo = [
       </div>
       <div class="fit-grid">
         <div class="fit-col yes">
-          <h4>Fits</h4>
+          <h3>Fits</h3>
           <ul>
             {fitYes.map((line) => <li>{line}</li>)}
           </ul>
         </div>
         <div class="fit-col no">
-          <h4>Not a fit</h4>
+          <h3>Not a fit</h3>
           <ul>
             {fitNo.map((line) => <li>{line}</li>)}
           </ul>
@@ -498,7 +494,7 @@ const fitNo = [
   @media (min-width: 800px) { .both-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
   .both-card { background: var(--white); border: 1px solid var(--hairline); border-radius: 16px; padding: 32px 30px; transition: border-color 0.18s ease, transform 0.18s ease; }
   .both-card:hover { border-color: var(--green); transform: translateY(-2px); }
-  .both-side { display: inline-block; font: 700 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: 0.16em; color: var(--orange); margin-bottom: 12px; }
+  .both-side { display: inline-block; font: 700 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: 0.16em; color: var(--orange-ink); margin-bottom: 12px; }
   .both-card h3 { margin: 0 0 12px; font-size: 24px; }
   .both-card p { font-size: 16px; line-height: 1.6; color: var(--muted); margin: 0; }
 
