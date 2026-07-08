@@ -28,33 +28,33 @@ const loopNodes = [
 const tiers = [
   {
     label: 'Tier 1, Find',
-    name: 'The Decision Diagnostic',
+    name: 'The Sellable-Numbers Scan',
     duration: '14 days',
     price: '$10,000 ($5M to $8M) / $15,000 ($8M to $25M) / $20,000 ($25M to $50M)',
-    promise: 'Names what your money is actually doing, in 14 days.',
-    body: 'A read of every material cost, product line, and customer relationship running in the business today, in dollars, with the context that justified each one, the context that exists now, and an owner-accepted plan for every dollar that has to move. Output: a dollar-ranked map of recoverable cash, recoverable margin, and avoided cost.',
-    deliverables: 'Named artifacts. Three hours of owner time. Day 14 readout with the Recoverable Value Report and the Prioritized Action Register.',
-    guarantee: 'Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. A strategic finding of equivalent materiality confirmed in writing also satisfies the guarantee. Full refund if neither condition is met. A Resolution signed within 7 days of the Day 14 readout credits the Diagnostic fee 100%; past Day 21 the Diagnostic fee is sunk.',
+    promise: 'Shows you your company the way a buyer will, in 14 days, on both sides of the equation.',
+    body: 'The Decision Diagnostic engine, re-aimed for the exit. We normalize your numbers and run the Six Trap Diagnostic through the valuation lens, then hand you the dollarized findings: what diligence would knock off your number (buyer discounts, add-back and owner-dependence flags) and where the value expansion lives (pricing, mix, margin, concentration). A sale price is a multiple times earnings, and the Scan reads both numbers.',
+    deliverables: 'Named artifacts. Three hours of owner time. Day 14 readout with the re-price read, the worth read, and the first three moves.',
+    guarantee: 'At least 3x the Scan fee in owner-accepted value identified by Day 14, or you pay nothing. A strategic finding of equivalent materiality confirmed in writing also satisfies it. A Resolution signed within 7 days of the Day 14 readout credits the Scan fee 100%; past Day 21 the Scan fee is sunk.',
   },
   {
     label: 'Tier 2, Install',
     name: 'The 90-Day Decision Resolution',
     duration: '90 days',
     price: '$30,000 ($5M to $8M) / $45,000 ($8M to $25M) / $60,000 ($25M to $50M)',
-    promise: 'Installs the rhythm that makes the next call defensible, and proves it in market across 90 days.',
-    body: 'A 90-day engagement that installs the decision rhythm and the Financial Rhythms operating system. Material decisions are defended with math, taken live (pricing moves, a product line restructured, a cost cut), and scored against what actually happened. The owner walks out of Day 90 with every major call documented, measured, and repeatable.',
+    promise: 'Makes the numbers believable and decision-grade, and proves it in market across 90 days.',
+    body: 'A 90-day engagement that installs the decision rhythm and the Financial Rhythms cadence. Material calls are defended with math, taken live (pricing moves, a product line restructured, a cost cut), and scored against what actually happened. The close tightens, the add-backs and owner-dependence flags get resolved, and the trailing-twelve clock starts running on numbers a buyer can trust.',
     deliverables: 'Named artifacts across three phases (Find It, Model It, Run It). Approximately 15 to 18 hours of owner time across the 90 days.',
     guarantee: 'The rhythm installed and in market by Day 90, with at least two live decisions measured against outcomes, or full refund. The owner keeps every artifact produced.',
   },
   {
     label: 'Tier 3, Run',
-    name: 'The Decision Partnership',
-    duration: 'Ongoing, monthly retainer',
-    price: '$7,500 ($5M to $8M) / $10,000 ($8M to $25M) / $12,500 ($25M to $50M) per month, plus 5% on confirmed Realized Value certified quarterly',
-    promise: 'Runs the decision rhythm on retainer.',
-    body: 'Ongoing operation of the decision rhythm built in the Resolution. Weekly decision cadence on open commitments. Monthly deep dive. Quarterly model rebuild. Pricing and growth experiments running inside a defined envelope. The cadence is Financial Rhythms™.',
+    name: 'The Exit-Value Partnership',
+    duration: '12 to 24 months, monthly retainer',
+    price: '$7,500 ($5M to $8M) / $10,000 ($8M to $25M) / $12,500 ($25M to $50M) per month, plus 5% on confirmed Realized Value validated quarterly. Fees tied to value created, never to the deal.',
+    promise: 'Builds the value and the trend a buyer will pay for, across the 12 to 24 months before market.',
+    body: 'Ongoing operation of the decision rhythm built in the Resolution, plus a quarterly re-valuation against the engagement baseline so the owner watches the number move. Weekly decision cadence. Monthly deep dive. Quarterly model rebuild. Pricing and growth experiments running inside a defined envelope. The promise: a more valuable company, and the numbers to prove it. The cadence is Financial Rhythms™.',
     deliverables: 'Recurring artifacts plus on-demand modeling inside a specified monthly envelope. Two to three hours per month of owner time, plus four to six per quarter for the Strategic Review.',
-    guarantee: 'Realized Value certified quarterly against the engagement-letter methodology, not opinion. The 5% success fee invoices only against confirmed Realized Value.',
+    guarantee: 'Realized Value validated quarterly against the engagement-letter methodology, not opinion. No fee is ever calculated from the transaction or contingent on a closing. We are the one advisor in the deal who is not paid on the deal.',
   },
 ];
 
@@ -90,7 +90,7 @@ const timeline = [
   { day: 'Day 0', body: 'Engagement letter signed. Kickoff agenda, data request list, 14-day calendar.' },
   { day: 'Day 3', body: 'Kickoff complete. Data room set up. Six Trap Interview booked.' },
   { day: 'Day 7', body: 'Decision Register draft ready for owner review.' },
-  { day: 'Day 14', body: 'Diagnostic package delivered. Named artifacts. 60-minute readout. Tier 1 guarantee triggered. Resolution decision made.' },
+  { day: 'Day 14', body: 'Scan package delivered. Named artifacts. 60-minute readout with the re-price read and the worth read. Tier 1 guarantee triggered. Resolution decision made.' },
   { day: 'Day 21', body: 'Resolution kickoff. Pricing Architecture Revisit scope confirmed. Growth Experiment Register draft reviewed.' },
   { day: 'Day 30', body: 'Contribution Margin Dashboard live. Monthly refresh cycle installed. Product Line P&Ls in draft.' },
   { day: 'Day 45', body: 'Mid-Resolution milestone. Forward Capital Register delivered. Pricing hypotheses confirmed.' },
@@ -182,7 +182,7 @@ const outOfScope = [
         <span class="section-eyebrow">Three tiers, three promises</span>
         <h2>Find. Install. Run.</h2>
         <p class="lede">
-          Each tier carries a distinct promise. Find names what your money is actually doing in 14 days. Install puts the rhythm in market across 90 days. Run keeps the rhythm operating on retainer. Pricing is banded by revenue: $5M to $8M / $8M to $25M / $25M to $50M. Below $5M in revenue, refer out; the guarantee math does not hold.
+          Each tier carries a distinct promise. Find shows you your company the way a buyer will in 14 days. Install makes the numbers believable and decision-grade across 90 days. Run builds the value and the trend a buyer will pay for across the months before market. Pricing is banded by revenue: $5M to $8M / $8M to $25M / $25M to $50M. Below $5M in revenue, refer out; the guarantee math does not hold.
         </p>
       </div>
       <div class="tier-list">
@@ -214,7 +214,7 @@ const outOfScope = [
           Every deliverable has a name, a definition, an output spec, and an owner. The catalog below is the full deliverables list across all three tiers. If a deliverable is not on this list, it is a change order, not a favor.
         </p>
       </div>
-      <h3 class="artifact-group-h3">Diagnostic, 14 days, 5 artifacts</h3>
+      <h3 class="artifact-group-h3">The Scan, 14 days, 5 artifacts</h3>
       <div class="artifact-grid">
         {artifactsT1.map((a) => (
           <div class="artifact">
@@ -297,9 +297,9 @@ const outOfScope = [
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">The Tier 3 success fee</span>
-        <h2>Realized Value, certified quarterly.</h2>
+        <h2>Realized Value, validated quarterly.</h2>
         <p class="lede">
-          The 5% Partnership success fee invoices only against confirmed Realized Value, defined in three categories. Each category has a quantification method written into the engagement letter. Russ does not get to grade his own homework: every category requires an owner signature against the methodology, not an opinion.
+          The 5% Partnership fee invoices only against confirmed Realized Value, defined in three categories. Each category has a quantification method written into the engagement letter. Russ does not get to grade his own homework: every category requires an owner signature against the methodology, not an opinion. No fee is ever calculated from the transaction or contingent on a closing. We are the one advisor in the deal who is not paid on the deal.
         </p>
         <ul class="value-list">
           <li><strong>In-market pricing or volume changes with measurement.</strong> Repricing live across at least one full cycle. Volume change attributable to a specific experiment. Measured in revenue uplift annualized at the new rate, with the comparison period explicit.</li>
@@ -330,10 +330,10 @@ const outOfScope = [
   <section class="close-section">
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow" style="color: var(--orange);">The 14-day Diagnostic</span>
+        <span class="section-eyebrow" style="color: var(--orange);">The 14-day Scan</span>
         <h2>Read the guarantee, then book 30 minutes.</h2>
         <p class="lede" style="color: rgba(255,255,255,0.8);">
-          30 minutes with Russ. No pitch. You leave with at least one named action. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. We don't audit the past. We make the next call defensible.
+          30 minutes with Russ. No pitch. You leave knowing what a buyer would re-price. At least 3x the Scan fee in owner-accepted value identified in 14 days, or you pay nothing. We don't audit the past. We make the company worth believing.
         </p>
         <div class="hero-cta-row">
           <a href={CALENDLY} class="btn btn-primary">Book 30 minutes with Russ</a>

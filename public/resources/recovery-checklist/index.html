@@ -671,7 +671,7 @@
               <span class="spinner" aria-hidden="true"></span>
             </button>
           </div>
-          <p class="privacy-note">Your submission goes to contact@decisive.finance. Russ reads every one. No newsletter, no drip, no list. The report you downloaded is yours either way.</p>
+          <p class="privacy-note">Your submission goes to russell@decisive.finance. Russ reads every one. No newsletter, no drip, no list. The report you downloaded is yours either way.</p>
         </form>
       </div>
 
@@ -690,7 +690,7 @@
   <footer class="foot">
     <div class="foot-inner">
       <span>&copy; <span id="year"></span> Decisive Finance. <a href="https://decisive.finance">decisive.finance</a></span>
-      <span><a href="https://decisive.finance/guarantee">Guarantee</a> · <a href="https://decisive.finance/#tiers">Tiers</a> · <a href="mailto:contact@decisive.finance">contact@decisive.finance</a></span>
+      <span><a href="https://decisive.finance/guarantee">Guarantee</a> · <a href="https://decisive.finance/#tiers">Tiers</a> · <a href="mailto:russell@decisive.finance">russell@decisive.finance</a></span>
     </div>
   </footer>
 
@@ -1155,7 +1155,7 @@
 
     doc.setFontSize(9);
     doc.setTextColor(255, 255, 255, 0.55);
-    doc.text("decisive.finance · contact@decisive.finance · Preview of Diagnostic Artifact 2", M, H - M);
+    doc.text("decisive.finance · russell@decisive.finance · Preview of Diagnostic Artifact 2", M, H - M);
 
     // ===== PAGE 2: SUMMARY =====
     doc.addPage();
@@ -1539,7 +1539,7 @@
     gateCard.innerHTML = `
       <h3>${localOnly ? "Your PDF was downloaded." : "Got it. Russ will reply within 24 hours."}</h3>
       <p>${localOnly
-        ? "We had trouble reaching the submission backend but the report is on your machine. Forward it to Russ at contact@decisive.finance if you want a read."
+        ? "We had trouble reaching the submission backend but the report is on your machine. Forward it to Russ at russell@decisive.finance if you want a read."
         : "He'll reply with a short read on what your numbers actually mean for a company your size. Same-day replies during business hours. The PDF preview just downloaded to your machine, so you have a copy in hand. If you want to skip ahead, the Calendly link is below."}</p>
       <a href="https://calendly.com/russell-decisive/30min" class="btn btn-primary" target="_blank" rel="noopener" style="background: var(--orange); color: var(--white);">Book 30 minutes with Russ <span class="arrow">→</span></a>
     `;
