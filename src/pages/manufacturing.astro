@@ -3,22 +3,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
-const title = 'Finance for EOS and Vistage companies | Decisive';
+const title = 'Finance for manufacturers | Decisive';
 const description =
-  'A sale price is a multiple times earnings. We grow the number your Scorecard never tracked and make it believable to a buyer, in 14 days.';
+  'A sale price is a multiple times earnings. We grow the earnings your products actually make and make them believable to a buyer, in 14 days.';
 
 const traps = [
   {
-    name: 'Certainty Illusion',
-    body: 'A Scorecard full of green can feel like proof the company is healthy. A buyer tests the story behind every number. The measurables that stopped tracking money are the first place the price comes down.',
+    name: 'Anchoring',
+    body: 'Pricing anchored to input costs that moved years ago is the most common trapped margin on a factory floor. A buyer re-prices it against you the moment they see the standard costs are stale.',
   },
   {
     name: 'Mental Accounting',
-    body: 'A Rock ships, the team celebrates, and a clean bottom line hides the product or client the rest of the business is quietly funding. Diligence finds the cross-subsidy. Better you find it first.',
+    body: 'A clean aggregate P&L hides which SKUs and lines carry the business and which quietly bleed. Diligence runs the product-line math you never did. Better you find the cross-subsidy first.',
   },
   {
-    name: 'Status Quo',
-    body: 'A measurable nobody has re-baselined in three years reads to a buyer as a cost they can cut, which is upside you left on the table, priced back to you as risk.',
+    name: 'Loss Aversion',
+    body: 'The largest customer is often the least profitable, and the concentration a buyer discounts hardest. The account you are most afraid to reprice is usually the one capping your margin.',
   },
 ];
 ---
@@ -26,13 +26,13 @@ const traps = [
 <BaseLayout title={title} description={description}>
   <header class="hero">
     <div class="hero-inner">
-      <span class="eyebrow">For EOS and Vistage operating companies</span>
+      <span class="eyebrow">For manufacturers and consumer products companies</span>
       <h1>
-        <span class="h1-line">The Scorecard tells you the boat is moving.</span>
-        <span class="h1-line h1-line-accent">We tell you if it's pointed at the money.</span>
+        <span class="h1-line">You can't sell a maker on numbers</span>
+        <span class="h1-line h1-line-accent">that hide which products pay.</span>
       </h1>
       <p class="hero-subhead">
-        A sale price is a multiple times earnings. <span class="dollar">We work both numbers:</span> we grow the earnings a buyer pays for, and we make them believable. Your Scorecard tracks the activity, not either one.
+        A sale price is a multiple times earnings. <span class="dollar">We work both numbers:</span> we grow the earnings your products actually make, and we make them believable to a buyer. Most makers can't see either from the P&amp;L they have.
       </p>
       <div class="hero-cta-row">
         <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
@@ -45,10 +45,10 @@ const traps = [
   <section>
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow">The empty seat</span>
-        <h2>Your Scorecard measures motion. It doesn't measure worth.</h2>
+        <span class="section-eyebrow">What a buyer re-prices in a product business</span>
+        <h2>Revenue is easy to see. Which product makes money is not.</h2>
         <p class="lede">
-          EOS gives you a Scorecard, Rocks, and an L10. What it assumes, and rarely names, is a Finance seat that can tell you which of those numbers a buyer would pay for. Most operating companies run for years with that seat empty.
+          A buyer of a manufacturer tests input-cost drift, phantom discounts, standard versus actual cost, product-line and SKU profitability, and customer concentration. Every soft answer is a discount, and every one is also margin you can recover before you go to market.
         </p>
         <div class="category-pull">
           Accurate and ugly beats polished and untrustworthy. Buyers know the difference.
@@ -66,9 +66,9 @@ const traps = [
   <section class="traps">
     <div class="container">
       <div class="section-eyebrow">Where the value is trapped</div>
-      <h2>Three traps a green Scorecard hides.</h2>
+      <h2>Three traps that hide inside a clean P&amp;L.</h2>
       <p class="lede" style="color: rgba(255,255,255,0.88);">
-        The Six Trap Diagnostic&trade; reads your numbers the way a buyer will. Three of the six show up most often behind a healthy-looking Scorecard. The patterns are structural, not failures of the owner.
+        The Six Trap Diagnostic&trade; reads your numbers the way a buyer will. Three of the six do the most damage in a product business. The patterns are structural, not failures of the owner.
       </p>
       <div class="trap-grid">
         {traps.map((t, i) => (
@@ -89,22 +89,33 @@ const traps = [
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">Proof</span>
-        <h2>An operating company that ran on data, and still wasn't getting the truth from it.</h2>
+        <h2>Two product companies. The gap was never the market. It was the numbers.</h2>
       </div>
       <div class="worked">
-        <span class="label">Professional services, $30M revenue</span>
-        <h4>A clean close is not a fast one, and neither tells a buyer where the cash is stuck.</h4>
+        <span class="label">D2C food manufacturer, $25M revenue</span>
+        <h4>The gap was never the market. It was the numbers.</h4>
         <p>
-          Cash was trapped in a billing and close cadence nobody had revisited, and clean-looking reports masked the leak. We rebuilt the rhythm, pulled the working capital forward, and put margin on a weekly line of sight, the kind of report a buyer believes.
+          The banker's estimate was $25M to $35M, on books the owner didn't trust. Mispriced inputs, phantom discounts, and revenue never brought over. Pricing was anchored to costs that had moved years earlier, and the aggregate P&amp;L hid which products carried the business. We rebuilt the numbers a buyer could believe and modeled the path forward.
         </p>
         <div class="calc">
-          <div><span class="k">Working capital recovered</span><span class="v accent">$380,000</span></div>
-          <div><span class="k">Close time</span><span class="v">22 to 3 days</span></div>
-          <div><span class="k">Margin improvement</span><span class="v">~$50,000 / mo</span></div>
+          <div><span class="k">Banker's estimate</span><span class="v">$25M to $35M</span></div>
+          <div><span class="k">Modeled path</span><span class="v accent">roughly $52M</span></div>
+        </div>
+      </div>
+      <div class="worked" style="margin-top: 24px;">
+        <span class="label">Retail food manufacturer, $15M revenue</span>
+        <h4>Concentration a buyer discounts is margin you can recover before you go to market.</h4>
+        <p>
+          The largest customer was the least profitable. The account felt untouchable, so the math never got run, and full cost allocation showed it was funded by everyone else. We repriced and reset terms instead of protecting the logo.
+        </p>
+        <div class="calc">
+          <div><span class="k">Least profitable account</span><span class="v">The largest one</span></div>
+          <div><span class="k">Margins moved</span><span class="v accent">15% to 22%</span></div>
+          <div><span class="k">Time to recover</span><span class="v">90 days</span></div>
         </div>
       </div>
       <p style="font-size: 14px; color: var(--muted); margin-top: 22px;">
-        Anonymized by segment and revenue band until attribution is confirmed. The mechanism reads the same across industries because the traps do.
+        Anonymized by segment and revenue band until attribution is confirmed.
       </p>
     </div>
   </section>

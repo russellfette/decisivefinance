@@ -2,8 +2,8 @@
 title: "How GPs spot stalled portcos early"
 slug: how-gps-spot-stalled-early
 description: "The early tells are in the monthly update, the board deck, and the way the CEO answers a specific follow-up question. Here is the GP playbook for early detection."
-pubDate: 2026-03-24
-updatedDate: 2026-03-24
+pubDate: 2025-03-24
+updatedDate: 2025-03-24
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"

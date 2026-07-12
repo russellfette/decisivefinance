@@ -2,8 +2,8 @@
 title: "The board question shift: when softer questions are the real signal"
 slug: the-board-question-shift
 description: "When your board stops asking sharp operating questions and starts asking gentle orientation ones, your company has already been diagnosed. Here is what the shift looks like and how to respond."
-pubDate: 2026-02-17
-updatedDate: 2026-02-17
+pubDate: 2025-02-17
+updatedDate: 2025-02-17
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"

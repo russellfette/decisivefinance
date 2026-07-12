@@ -2,8 +2,8 @@
 title: "The down-round conversation: how to time it"
 slug: down-round-conversation-timing
 description: "Most down rounds get decided six months later than they should have been. Here is how to recognize the window, who raises it first, and how the conversation should actually run."
-pubDate: 2026-04-21
-updatedDate: 2026-04-21
+pubDate: 2025-04-21
+updatedDate: 2025-04-21
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"

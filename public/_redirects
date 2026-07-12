@@ -30,3 +30,7 @@
 # Retired funded-tech assessment routes (canon v3 horizontal) → home
 /assessment              /          301
 /assessment/*            /          301
+
+# Construction spoke renamed to Trades (canon v3 industries nav)
+/construction            /trades        301
+/construction/           /trades        301

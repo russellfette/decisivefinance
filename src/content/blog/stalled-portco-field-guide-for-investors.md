@@ -2,8 +2,8 @@
 title: "A field guide to spotting stalled portcos before the next raise"
 slug: stalled-portco-field-guide-for-investors
 description: "For VC operators, LPs, and independent directors: the 12 signals that tell you a Series A or B portco is stalled portco two quarters before the raise stalls, and what to demand when you see them."
-pubDate: 2026-03-17
-updatedDate: 2026-03-17
+pubDate: 2025-03-17
+updatedDate: 2025-03-17
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"

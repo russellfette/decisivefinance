@@ -2,8 +2,8 @@
 title: "Walking dead recovery: day 1 to day 90"
 slug: stalled-recovery-day-1-to-90
 description: "A ninety-day sequence to pull a stalled post-Series A or Series B company out of the stalled-portco pattern. Day-by-day, in dollars, with exactly who owns what."
-pubDate: 2026-03-10
-updatedDate: 2026-03-10
+pubDate: 2025-03-10
+updatedDate: 2025-03-10
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"

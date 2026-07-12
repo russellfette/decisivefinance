@@ -2,8 +2,8 @@
 title: "The stalled portco: what it is, how to spot it, how to come back"
 slug: stalled-portco
 description: "A funded-tech company 18 months past the raise looks alive on the cap table and stalled in the forecast. Here are the Six Trap Diagnostic™, the three paths out, and the recoverable value the Diagnostic guarantees in 14 days."
-pubDate: 2026-02-10
-updatedDate: 2026-02-10
+pubDate: 2025-02-10
+updatedDate: 2025-02-10
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"

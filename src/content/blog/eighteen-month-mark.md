@@ -2,8 +2,8 @@
 title: "The 18-month mark: why the stall shows up before the metrics do"
 slug: eighteen-month-mark
 description: "The stall shows up in decision velocity about two quarters before it shows up in ARR or burn. Five early tells, visible at the 18-month mark."
-pubDate: 2026-04-28
-updatedDate: 2026-04-28
+pubDate: 2025-04-28
+updatedDate: 2025-04-28
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"

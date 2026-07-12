@@ -2,8 +2,8 @@
 title: "What a stalled portco actually is"
 slug: what-stalled-portco-actually-is
 description: "A stalled portco is not dying and not failing. It is a funded company 18 months past the raise whose decisions stopped. Six signals tell you which one you are."
-pubDate: 2026-06-11
-updatedDate: 2026-06-11
+pubDate: 2025-06-11
+updatedDate: 2025-06-11
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"

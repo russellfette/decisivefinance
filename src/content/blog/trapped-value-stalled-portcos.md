@@ -2,8 +2,8 @@
 title: "Trapped value in stalled portcos: where it sits and how to name it"
 slug: trapped-value-stalled-portcos
 description: "Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. Here is where that money sits and why nobody inside can see it."
-pubDate: 2026-06-11
-updatedDate: 2026-06-11
+pubDate: 2025-06-11
+updatedDate: 2025-06-11
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "recoverable-value"

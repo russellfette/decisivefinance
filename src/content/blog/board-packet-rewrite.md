@@ -2,8 +2,8 @@
 title: "The board packet rewrite: three sections to cut, four to add"
 slug: board-packet-rewrite
 description: "Three sections to cut, four to add. The standard growth-stage board packet is retrospective theater. Here is the rewrite that makes the board useful."
-pubDate: 2026-05-12
-updatedDate: 2026-05-12
+pubDate: 2025-05-12
+updatedDate: 2025-05-12
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"

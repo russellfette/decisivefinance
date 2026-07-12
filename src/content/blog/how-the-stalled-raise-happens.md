@@ -2,8 +2,8 @@
 title: "How the stalled raise actually happens"
 slug: how-the-stalled-raise-happens
 description: "Stalled raises almost never fail at the partner meeting. They fail at a specific sequence of soft signals 120 days earlier. Here is the anatomy of the stall and the 30-day move that reverses it."
-pubDate: 2026-03-03
-updatedDate: 2026-03-03
+pubDate: 2025-03-03
+updatedDate: 2025-03-03
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"

@@ -14,6 +14,16 @@ const LINKEDIN = 'https://linkedin.com/in/russellfette';
       </p>
     </div>
 
+    <nav class="footer-nav" aria-label="Who we work with">
+      <span class="footer-nav-head">Who we work with</span>
+      <a href="/tech">Tech</a>
+      <a href="/manufacturing">Manufacturing</a>
+      <a href="/professional-services">Professional services</a>
+      <a href="/trades">Trades</a>
+      <a href="/wealth-management">Wealth management</a>
+      <a href="/eos">EOS and Vistage</a>
+    </nav>
+
     <div class="footer-meta">
       <div class="footer-contact">
         <a href="mailto:russell@decisive.finance">russell@decisive.finance</a>
@@ -41,9 +51,29 @@ const LINKEDIN = 'https://linkedin.com/in/russellfette';
     max-width: 1180px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto auto;
     gap: 56px;
     align-items: start;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+  .footer-nav-head {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 4px;
+  }
+  .footer-nav a {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .footer-nav a:hover {
+    color: var(--orange);
+    opacity: 1;
   }
   .footer-wordmark {
     display: block;

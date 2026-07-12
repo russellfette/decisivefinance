@@ -5,8 +5,8 @@ clientStage: "Series B"
 clientSize: "$18M ARR"
 engagementType: "Diagnostic"
 outcome: "$47K recovered in 22 days, SDR motion killed, one Three-Path Model signed"
-pubDate: 2026-04-17
-updatedDate: 2026-04-17
+pubDate: 2025-04-17
+updatedDate: 2025-04-17
 confidential: true
 featured: true
 ---

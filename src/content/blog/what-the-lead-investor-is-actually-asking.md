@@ -2,8 +2,8 @@
 title: "What the lead investor is actually asking when they ask 'what's new'"
 slug: what-the-lead-investor-is-actually-asking
 description: "'What's new' from the lead investor is three real questions in one casual sentence. Here is the decode, and how to answer with numbers, not narrative."
-pubDate: 2026-05-26
-updatedDate: 2026-05-26
+pubDate: 2025-05-26
+updatedDate: 2025-05-26
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"

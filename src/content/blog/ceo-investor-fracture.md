@@ -2,8 +2,8 @@
 title: "The CEO/investor fracture: the silent break in year two"
 slug: ceo-investor-fracture
 description: "A specific fracture opens between the CEO and the lead investor around month fourteen of the Series A. Here is what it sounds like, why it happens, and how to repair it before the raise stalls."
-pubDate: 2026-02-24
-updatedDate: 2026-02-24
+pubDate: 2025-02-24
+updatedDate: 2025-02-24
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"

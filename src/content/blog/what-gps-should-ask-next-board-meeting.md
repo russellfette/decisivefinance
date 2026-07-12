@@ -2,8 +2,8 @@
 title: "What GPs should ask at the next board meeting"
 slug: what-gps-should-ask-next-board-meeting
 description: "Three questions, in order, that take a drifting board meeting and restore operating posture inside forty-five minutes. With the expected answers and the follow-ups."
-pubDate: 2026-03-31
-updatedDate: 2026-03-31
+pubDate: 2025-03-31
+updatedDate: 2025-03-31
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"

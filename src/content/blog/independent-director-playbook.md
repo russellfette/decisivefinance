@@ -2,8 +2,8 @@
 title: "The independent director's playbook for a drifting portco"
 slug: independent-director-playbook
 description: "Independent directors have an asymmetric seat when a portco starts to drift. Here is the three-move playbook for using it well."
-pubDate: 2026-04-14
-updatedDate: 2026-04-14
+pubDate: 2025-04-14
+updatedDate: 2025-04-14
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"

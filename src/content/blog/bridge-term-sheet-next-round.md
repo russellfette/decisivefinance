@@ -2,8 +2,8 @@
 title: "The bridge term sheet that does not crater the next round"
 slug: bridge-term-sheet-next-round
 description: "Three terms to keep out of a bridge: a compounding discount, a stacking preference, and an observer seat per participant. And the three terms to keep in."
-pubDate: 2026-06-23
-updatedDate: 2026-06-23
+pubDate: 2025-06-23
+updatedDate: 2025-06-23
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"

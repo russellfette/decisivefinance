@@ -2,8 +2,8 @@
 title: "How to read a deck that is hiding the stall"
 slug: how-to-read-a-deck-hiding-the-stall
 description: "A stalled post-Series A or Series B deck has specific tells: forward-looking slides up front, a logo parade in the middle, a pricing-page reshuffle at the back. Here is the investor's reading guide."
-pubDate: 2026-04-07
-updatedDate: 2026-04-07
+pubDate: 2025-04-07
+updatedDate: 2025-04-07
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"
