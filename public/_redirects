@@ -34,3 +34,34 @@
 # Construction spoke renamed to Trades (canon v3 industries nav)
 /construction            /trades        301
 /construction/           /trades        301
+
+# Funded-tech spoke folded into the Tech industry page (canon v3 industries)
+/funded-tech             /tech          301
+/funded-tech/            /tech          301
+/funded-tech/*           /tech          301
+
+# Exit-readiness v2 (2026-07-12): retired methodology posts folded into exit spokes
+/perspectives/six-trap-diagnostic-explained            /perspectives/six-traps-a-buyer-prices              301
+/perspectives/six-trap-diagnostic-explained/           /perspectives/six-traps-a-buyer-prices              301
+/perspectives/trap-stack-inventory                     /perspectives/six-traps-a-buyer-prices              301
+/perspectives/trap-stack-inventory/                    /perspectives/six-traps-a-buyer-prices              301
+/perspectives/why-retrospective-finance-fails-growth-stage   /perspectives/built-to-record-not-decide      301
+/perspectives/why-retrospective-finance-fails-growth-stage/  /perspectives/built-to-record-not-decide      301
+/perspectives/the-cfo-mirage                           /perspectives/built-to-record-not-decide            301
+/perspectives/the-cfo-mirage/                          /perspectives/built-to-record-not-decide            301
+/perspectives/cfo-debrief-finance-function-stalled     /perspectives/built-to-record-not-decide            301
+/perspectives/cfo-debrief-finance-function-stalled/    /perspectives/built-to-record-not-decide            301
+/perspectives/first-14-days-operational-scan           /perspectives/sell-side-qoe-prep                    301
+/perspectives/first-14-days-operational-scan/          /perspectives/sell-side-qoe-prep                    301
+/perspectives/diagnostic-vs-annual-audit               /perspectives/sell-side-qoe-prep                    301
+/perspectives/diagnostic-vs-annual-audit/              /perspectives/sell-side-qoe-prep                    301
+/perspectives/second-tuesday-of-the-close              /perspectives/trailing-twelve-what-counts-as-clean  301
+/perspectives/second-tuesday-of-the-close/             /perspectives/trailing-twelve-what-counts-as-clean  301
+/perspectives/ratio-mirage-when-metrics-stop-tracking  /perspectives/revenue-up-profit-down-margin-squeeze 301
+/perspectives/ratio-mirage-when-metrics-stop-tracking/ /perspectives/revenue-up-profit-down-margin-squeeze 301
+/perspectives/forward-capital-register                 /perspectives/the-value-build-before-market         301
+/perspectives/forward-capital-register/                /perspectives/the-value-build-before-market         301
+/perspectives/first-decision-review-meeting            /perspectives/financial-rhythm-system-monthly-cadence 301
+/perspectives/first-decision-review-meeting/           /perspectives/financial-rhythm-system-monthly-cadence 301
+/perspectives/three-word-internal-memo-gtm             /perspectives/worth-more-before-you-sell            301
+/perspectives/three-word-internal-memo-gtm/            /perspectives/worth-more-before-you-sell            301

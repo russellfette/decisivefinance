@@ -1,149 +1,63 @@
 ---
-title: "Decision-first finance: the methodology behind the recovery"
+title: "Decision-First Finance: numbers built to decide from, and to sell on"
 slug: decision-first-finance
-description: "Decision-first finance is the CFO methodology built around the five decisions that actually move a funded tech company's trajectory. Here's what it is, how it differs from fractional CFO work, and what 90 days of it looks like."
+description: "Decision-First Finance is the method that turns books built to record into numbers you can decide from, and that a buyer can believe. Here's what it is and why it matters at exit."
 pubDate: 2026-01-13
-updatedDate: 2026-01-13
+updatedDate: 2026-07-12
 author: "Russell Fette"
 postType: "framework"
-topicCluster: "system-of-decision"
-pillar: 2
-ctaVariant: "slide-template"
-dominantClaim: "3x-guarantee-typical-5x-to-10x"
+topicCluster: "sellable-numbers"
+pillar: 1
+ctaVariant: "sellable-numbers-scan"
+dominantClaim: "3x-scan-fee-owner-accepted-value"
 ogImage: "/og/decision-first-finance.png"
-featured: true
-readingTime: 10
-pillarHub: true
+featured: false
+readingTime: 7
+pillarHub: false
 ---
 
 ## At a glance
 
-- Decision-first finance is a CFO methodology, not a service tier. It reorganizes the finance function around the next five material decisions the company has to make, not the last five months of variance.
-- The core instruments are the Six-Trap Diagnostic (what pattern you are in), the Three-Path Model (Keep, Kill, Restructure on every material decision), and the Financial Rhythm System (the monthly cadence that keeps the work compounding after the engagement ends).
-- A fractional CFO fills a chair. Decision-first finance changes what the chair does. Same hours, different output: a Three-Path Model on every decision that matters, a board deck that drives the next decision instead of explaining the last one, and recoverable value named in 14 days to pay for the work. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.
+- Decision-First Finance is a method, not a role. It turns books built to record the past into numbers an owner can decide from and a buyer can believe, which turn out to be the same numbers.
+- Ordinary finance closes the month and files the taxes. Decision-First Finance answers the questions that set a sale price: which line makes money, what a buyer would re-price, what the company is worth once the numbers are true.
+- It's the method behind everything we do, and at exit it's the difference between a company that gets its number and one that gets discounted.
 
-## Why "decision-first"
+Most owners have plenty of finance and almost no help deciding. This piece defines Decision-First Finance, why it's a different job from what your bookkeeper and accountant do, and why it becomes the whole game when a sale comes into view.
 
-Most finance functions at post-Series A and Series B companies are built around two things: the close and the board deck. Both are retrospective. Both are honest. Neither drives the company's trajectory.
+## What is Decision-First Finance?
 
-The trajectory is set by five or six material decisions the CEO makes every quarter: a hire, a price change, a channel bet, a geography, a product line, a vendor contract. In most funded tech companies, those decisions get made with one model ("here's our plan") and revisited only when something breaks.
+It's finance organized around the decisions that move a company's value, rather than around the calendar of closing the books. Ordinary finance is backward-looking and rules-based: record what happened, reconcile it, file it. Decision-First Finance starts from the questions an owner actually has to answer and builds the numbers that answer them: which product or customer makes money, where margin is leaking, what a buyer would trust and what he'd strike.
 
-Decision-first finance flips the output. The finance function's primary deliverable is a Three-Path Model on every material decision, on file before the CEO makes it, re-reviewed monthly until it's either resolved, parked, or replaced.
+The category name matters because it names the gap. You can have clean, timely, fully compliant books and still be unable to decide from them, because recording and deciding are different jobs. Decision-First Finance is the second job, built on top of the first.
 
-The retrospective work still happens. The close still closes. The board deck still ships. But the center of gravity moves from the variance bridge to the decision queue. That is the methodology.
+## How is it different from a fractional CFO or a good accountant?
 
-## The three instruments
+By what it's built to produce. A good accountant produces accurate records. A fractional CFO fills a seat and often produces more of the same reporting, faster. Decision-First Finance produces decisions: a normalized view you can act on, the traps that are holding value in place named with dollars, and the first moves to release it.
 
-### 1. The Six-Trap Diagnostic
+The distinction shows up hardest at a sale. Cleaner books are not the same as believable numbers. A buyer isn't asking whether your month tied to the bank; he's asking whether your earnings are real, repeatable, and yours to sell. Decision-First Finance is built to answer that question, which is why it's the method underneath sellable numbers.
 
-Before we can three-path anything, we need to know which cognitive and structural traps are keeping current decisions alive past their usefulness. We have catalogued six:
+## What does it actually do?
 
-- **Marginal analysis framing:** treating sunk cost as invested cost.
-- **Default flip:** decisions that run by default because nobody installed a re-decide trigger.
-- **Cross-subsidy blindness:** one profitable line hiding two unprofitable ones.
-- **First-principles decay:** models and ratios built on assumptions two pricing changes ago.
-- **Loss aversion:** Keep looks safer than Kill because the numbers are symmetrical and the feeling is not.
-- **Uncertainty paralysis:** three scenarios turned into no decision because no one ranked the scenarios by likelihood.
+Concretely, it installs a handful of capabilities the close never will:
 
-Every stalled portco we have opened is running at least three of these six. Usually four. The diagnostic is a 90-minute structured interview that maps which traps are live, which decisions they are keeping alive, and which move out of each trap is the priority.
+1. **Truth in the margin.** Full cost loaded onto each product and job, so margin stops swinging on a bad entry and the losers stop hiding in the average.
+2. **A current close.** Numbers that land inside two weeks, so decisions are made on this month, not last quarter.
+3. **The traps named.** The six decision patterns that keep value trapped in past calls, scored against your actual financials with dollars attached.
+4. **The buyer's read, on your side.** What a buyer would re-price, what diligence would catch, what value is trapped, dollarized before a buyer ever looks.
+5. **A rhythm that holds.** The whole thing run on a monthly and quarterly cadence, so the numbers stay decidable instead of drifting back to record-keeping.
 
-### 2. The Three-Path Model
+Together they turn a company that flies on a blended average into one that decides from the truth, and a company that decides from the truth is one a buyer can believe.
 
-Every material decision gets modeled three ways. Keep. Kill. Restructure.
+## Why it becomes the whole game at exit
 
-- **Keep** includes a pre-mortem: under what scenarios does this decision fail, and can we see them early?
-- **Kill** includes a quantified cost: what revenue do we lose, what burn do we recover, what follow-on effects land?
-- **Restructure** includes new unit economics: what does the decision look like at a different price, staff model, geography, or partner structure?
+Because a sale is the moment recording and deciding finally collide. For years, books built to record are good enough, because growth forgives the gap. Then a buyer shows up asking the deciding questions, and the gap becomes a discount. Decision-First Finance closes it before the buyer arrives, which is why the same method that helps an owner run the company better is the method that makes it worth more and easier to sell.
 
-The Three-Path Model is not a consulting deliverable. It's a one-page document that lives on file and gets re-reviewed every month until the decision is resolved. The CEO signs the recommended path. The board sees all three paths.
+## Where this leads
 
-### 3. The Financial Rhythm System
+Decision-First Finance is the parent method under the exit work: [sellable numbers](/perspectives/sellable-numbers), [why your books were built to record, not to decide](/perspectives/built-to-record-not-decide), and [how it differs from a fractional CFO](/perspectives/decision-first-finance-vs-fractional-cfo).
 
-The third instrument is the one that keeps the first two compounding. Most CFO engagements end and the finance function regresses to the close and the board deck inside 90 days. The Financial Rhythm System installs a monthly cadence that prevents the regression:
+The Sellable-Numbers Scan is the method applied to your exit, in dollars, in 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
 
-- **Monthly decision review** (60 minutes, CEO + CFO): each open Three-Path gets re-reviewed. New decisions added. Resolved decisions archived.
-- **Monthly trap reread** (30 minutes): which traps from the Six-Trap Diagnostic are showing up in this month's operations, and where?
-- **Monthly cash sweep** (30 minutes): fresh scan of the five canon recovery categories. New recoveries queued, old ones closed.
-- **Quarterly pricing and unit-economics re-ground**: are the ratios we report still measuring what we think they measure?
-- **Quarterly board pack rewrite**: one page of variance, four pages of decisions.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 
-The cadence is the compounding mechanism. Take it out and the methodology becomes a 90-day project with a shelf life.
-
-## Decision-first finance vs. fractional CFO
-
-The question we get most often is whether this is just a fractional CFO engagement with a brand name. The answer is no, and the difference is specific.
-
-**A fractional CFO fills the chair.** The scope is whatever the company needs that week: close the books, build a forecast, support a raise, review a contract, sit in the board meeting. The deliverable varies. The value is presence.
-
-**Decision-first finance changes what the chair does.** The scope is locked: diagnose the trap pattern, Three-Path every material decision, install the rhythm, recover the cash. The deliverable is consistent. The value is methodology.
-
-You can hire a fractional CFO and get a competent finance function. If you hire one who happens to run decision-first finance, you also get a decision engine. The hours are similar. The output is different.
-
-Two practical consequences:
-
-1. **We work in engagements, not retainers.** A diagnostic is scoped. An Engine engagement is scoped. A Fractional tier is scoped. Nobody is paying us to fill a seat indefinitely.
-2. **We guarantee the recovery.** Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. We stand behind the methodology because the methodology produces the number.
-
-## What 90 days of decision-first finance looks like
-
-### Days 1 to 14: the diagnostic
-
-- Structured interview with the CEO (90 minutes, recorded).
-- Structured interview with the board's lead operator or director (30 minutes).
-- Six-Trap mapping.
-- First cash-recovery sweep across the five canon recovery categories.
-- Delivery of the diagnostic memo: trap stack, five decisions queued for Three-Path, initial cash recovery pipeline.
-
-**Typical outcome by day 14:** recoverable value identified and documented at 3x the Diagnostic fee or more, three to five decisions ranked, trap stack named.
-
-### Days 15 to 45: the first engine cycle
-
-- Three-Path Model on decision #1 (usually pricing or the load-bearing channel).
-- Three-Path Model on decision #2 (usually the cross-subsidized product line or the auto-renewing vendor stack).
-- Cash recovery execution: vendor renegotiation calls, R&D credit filings, SaaS audits actioned.
-- Board pack rewrite for the first board cycle after engagement start.
-- First monthly rhythm meeting.
-
-**Typical outcome by day 45:** decisions #1 and #2 signed. Decisions #3 and #4 scoped. Recoverable value tracking at 5x to 10x the Diagnostic fee.
-
-### Days 46 to 90: compounding
-
-- Three-Path Models on decisions #3, #4, #5.
-- Financial Rhythm System installed and running for 60 days.
-- Board pack format in its second iteration.
-- The CFO function (internal or fractional) running the rhythm without us in the room.
-
-**Typical outcome by day 90:** five decisions resolved, one trap pattern named and retired, recoverable value captured at 5x to 10x the Diagnostic fee, monthly rhythm installed.
-
-## What decision-first finance is not
-
-- It is not consulting. We do not produce 60-page decks.
-- It is not bookkeeping. We do not close your books.
-- It is not fundraising support. We model the decisions that unstick the raise; we do not run the process.
-- It is not an AI tool. The Financial Rhythm System uses software, but the work is structured human thinking.
-- It is not a replacement for a full-time CFO at scale. At $30M+ ARR with a sophisticated finance function already in seat, our engagement is a methodology install, not a staffing solution.
-
-## Who it's for
-
-- Post-Series A or Series B companies at $5M to $30M ARR.
-- Stalled growth or a raise that is four months past the target close.
-- A CEO who can name three of the six stalled portco signals without flinching.
-- A willingness to run the monthly rhythm after the engagement ends.
-
-If that does not describe the company, decision-first finance is not the right engagement, and we will say so on the first call.
-
-## Next step
-
-If you want to see the methodology in action on a specific decision your company is facing right now, the shortest path is a 30-minute diagnostic call. No deck, no pitch. We read the pattern and map what the first 30 days would look like for your specific situation.
-
-**[Book a 30-minute call](https://calendly.com/russell-decisive/30min)**
-
-If you want the board-pack rewrite spec before you talk to us, the Board-Ready Decision Slide Template ships as a public GitHub repo with the format we use. Free, no email required.
-
----
-
-*Further reading on this pillar:*
-- [The Six-Trap Diagnostic, explained](/perspectives/six-trap-diagnostic-explained)
-- [The Three-Path Model inside the engagement](/how-it-works)
-- [Decision-first finance vs. fractional CFO](/perspectives/decision-first-finance-vs-fractional-cfo)
-- [Why we put money behind the guarantee](/guarantee)
+*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
