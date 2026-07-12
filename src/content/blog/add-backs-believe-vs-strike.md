@@ -27,11 +27,11 @@ The add-back schedule is where a lot of value is won or lost in a sale, and most
 
 An add-back is a cost you remove from historical earnings because it won't carry forward to the new owner: a one-time legal bill, an owner's above-market salary, a personal expense that ran through the company. Done right, it shows a buyer the real earning power he's buying, which is fair and correct.
 
-It matters out of proportion to its size because of the math. A buyer pays a multiple of earnings, so a defensible $100,000 add-back on a 5x business is worth $500,000 of price. That leverage cuts both ways: a struck add-back doesn't just cost you the adjustment, it costs you the multiple on it, and it costs you credibility on every other number.
+It matters out of proportion to its size because of the math. A buyer pays a multiple of earnings, so a defensible $100,000 add-back on a 5x business is worth $500,000 of price. That math cuts both ways: a struck add-back doesn't just cost you the adjustment, it costs you the multiple on it, and it costs you credibility on every other number.
 
 ## Which add-backs will a buyer believe?
 
-The ones that are genuinely non-recurring, genuinely outside the business, and genuinely documented. As a rule, an add-back survives when you can name it, prove it happened once, and show it won't happen again for the new owner.
+The ones that are truly non-recurring, clearly outside the business, and fully documented. As a rule, an add-back survives when you can name it, prove it happened once, and show it won't happen again for the new owner.
 
 1. **Owner compensation above market.** If you pay yourself $600,000 for a role that costs $250,000 to replace, the $350,000 difference is a clean add-back, provided you can support the replacement figure.
 2. **Documented one-time events.** A lawsuit settled, a systems migration, a flood repair. One-time, provable, gone.
