@@ -5,20 +5,20 @@ const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
 const title = 'Finance for the trades | Decisive';
 const description =
-  'A sale price is a multiple times earnings. We grow the margin your crews earn and make it provable in the numbers a buyer tests, in 14 days.';
+  'Your crews earn the margin. Your numbers can\'t prove it. Job costs, WIP, and bid pricing read in dollars, in 14 days, on guarantee.';
 
 const traps = [
   {
     name: 'Anchoring',
-    body: 'Bids priced to costs that moved two years ago read as margin you gave away. Anchored pricing is the most common trapped margin a buyer re-prices against you, job by job.',
+    body: 'Bids priced to costs that moved two years ago are margin you gave away before the crew ever rolled. Anchored bid pricing is the most common trapped margin in the trades, job by job.',
   },
   {
     name: 'Status Quo',
-    body: 'Sub invoices and material receipts that never land on the job that spent them mean the true cost of a job shows up 60 days after closeout. A buyer sees WIP nobody can defend, and discounts the whole backlog.',
+    body: 'Sub invoices and material receipts that never land on the job that spent them mean the true cost of a job shows up 60 days after closeout, long after the next bid went out on the same bad math.',
   },
   {
     name: 'Loss Aversion',
-    body: 'The general contractor account you are most afraid to reprice is often the one capping your margin, and the concentration a buyer discounts hardest. Naming it early is worth real multiple.',
+    body: 'The general contractor account you are most afraid to reprice is often the one capping your margin. The math never gets run because losing the relationship feels worse than the leak.',
   },
 ];
 ---
@@ -28,36 +28,36 @@ const traps = [
     <div class="hero-inner">
       <span class="eyebrow">For owner-led trades: construction, HVAC, electrical, plumbing</span>
       <h1>
-        <span class="h1-line">You can't sell a trades business on numbers</span>
-        <span class="h1-line h1-line-accent">a buyer can't tie to the jobs.</span>
+        <span class="h1-line">Your crews earn the margin.</span>
+        <span class="h1-line h1-line-accent">Your numbers can't prove it.</span>
       </h1>
       <p class="hero-subhead">
-        A sale price is a multiple times earnings. <span class="dollar">We work both numbers:</span> we grow the margin your crews earn, and we make it provable in the WIP, retainage, and job costs a buyer will test.
+        Job costs that land late, WIP nobody trusts, and bids priced to stale costs hide which jobs actually make money. <span class="dollar">We price the answer in dollars.</span> Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days.
       </p>
       <div class="hero-cta-row">
         <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Scan</a>
+        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
       </div>
-      <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing what a buyer would re-price, and what you could recover.</p>
+      <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing where to look first.</p>
     </div>
   </header>
 
   <section>
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow">What a buyer re-prices in the trades</span>
-        <h2>Your crews earn the margin. Your numbers have to prove it.</h2>
+        <span class="section-eyebrow">Where the margin hides in the trades</span>
+        <h2>The margin is earned on the job. It disappears in the books.</h2>
         <p class="lede">
-          A buyer of a trades business is buying a backlog and a track record of hitting it. They test WIP accuracy, over and under-billing, retainage, the quality of the backlog, how much of the company is the owner, and whether job costs are real. Every soft answer is a discount, and every one is also margin you can recover before you go to market.
+          WIP accuracy, over and under-billing, retainage, job costs that land on the job that spent them, and which GC relationships actually pay: the numbers that decide what to bid next. Most contractors bid this week on last quarter's math.
         </p>
         <div class="category-pull">
-          Accurate and ugly beats polished and untrustworthy. Buyers know the difference.
+          Your books tell you what happened. They can't tell you what to do next.
         </div>
         <p>
-          The mess isn't negligence. Growth covered it, and the people producing the numbers were never paid to look. Everyone who touches your books closes the month. Nobody is making your company worth believing, and that is the job we do. The day a sale, a PE approach, or a succession comes into view, every soft number converts from a chronic annoyance into priced risk, and the clock starts.
+          The decisions weren't wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the report. Nobody is paid to make the next call defensible, and that is the job we do.
         </p>
         <div class="delay-callout">
-          The trailing-twelve clock doesn't start until the numbers are true. Every month you wait moves the sale date a month.
+          We don't audit the past. We make the next call defensible.
         </div>
       </div>
     </div>
@@ -66,9 +66,9 @@ const traps = [
   <section class="traps">
     <div class="container">
       <div class="section-eyebrow">Where the value is trapped</div>
-      <h2>Three traps a buyer looks for first.</h2>
+      <h2>Three traps that eat a contractor's margin.</h2>
       <p class="lede" style="color: rgba(255,255,255,0.88);">
-        The Six Trap Diagnostic&trade; reads your numbers the way a buyer will. Three of the six do the most damage in the trades. The patterns are structural, not failures of the owner.
+        The Six Trap Diagnostic&trade; reads your numbers through the decisions that produced them. Three of the six do the most damage in the trades. The patterns are structural, not failures of the owner.
       </p>
       <div class="trap-grid">
         {traps.map((t, i) => (
@@ -80,7 +80,7 @@ const traps = [
         ))}
       </div>
       <div class="traps-footer">
-        We name the stack, price each one two ways, what a buyer discounts and what you can recover, and turn the read into a plan. We don't audit the past. We make the company worth believing.
+        We name the stack, price each one in dollars, and turn the read into a plan. We don't audit the past. We make the next call defensible.
       </div>
     </div>
   </section>
@@ -93,9 +93,9 @@ const traps = [
       </div>
       <div class="worked">
         <span class="label">Manufacturer, $15M revenue</span>
-        <h4>Concentration a buyer discounts is margin you can recover before you go to market.</h4>
+        <h4>The account nobody would touch was the margin everyone was looking for.</h4>
         <p>
-          The biggest account felt untouchable, so the math never got run, and the concentration was exactly what a buyer discounts hardest. Full cost allocation showed it was funded by everyone else. We repriced and reset terms instead of protecting the logo. The same pattern lives in a contractor's largest GC relationship.
+          The biggest account felt untouchable, so the math never got run. Full cost allocation showed it was funded by everyone else. We repriced and reset terms instead of protecting the logo. The same pattern lives in a contractor's largest GC relationship.
         </p>
         <div class="calc">
           <div><span class="k">Least profitable account</span><span class="v accent">The largest one</span></div>
@@ -115,10 +115,10 @@ const traps = [
         <span class="section-eyebrow">Tiers and pricing</span>
         <h2>Find. Install. Run.</h2>
         <p class="lede">
-          Most owners start with the 14-day Sellable-Numbers Scan and move into the 90-Day Resolution. Pricing is banded by revenue, and the floor is $5M.
+          Most owners start with the 14-day Decision Diagnostic and move into the 90-Day Resolution. Pricing is banded by revenue, and the floor is $5M.
         </p>
         <p class="promise-line">
-          The Scan promise: at least 3x the fee in owner-accepted value identified by Day 14, or you pay nothing.
+          The Diagnostic promise: at least 3x the fee in owner-accepted value identified by Day 14, or you pay nothing.
         </p>
         <div class="hero-cta-row" style="margin-top: 8px;">
           <a class="btn btn-secondary" href="/#tiers">See tiers and pricing</a>
@@ -133,11 +133,11 @@ const traps = [
       <span class="section-eyebrow">Book a fit call</span>
       <h2>Decide from the numbers. Prove it in the cash.</h2>
       <p class="lede">
-        In 14 days you see your company the way a buyer will, in dollars, on both sides of the equation. You leave with the re-price read, the worth read, and the first three moves, whether or not we ever work together again. It starts with one 30-minute call.
+        In 14 days you know what your money is actually doing, in dollars: the traps that are running, the recoverable value, and the first three moves, whether or not we ever work together again. It starts with one 30-minute call.
       </p>
       <div class="hero-cta-row">
         <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Scan</a>
+        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
       </div>
     </div>
   </section>
