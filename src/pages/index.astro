@@ -4,115 +4,50 @@ import CalendlyEmbed from '../components/CalendlyEmbed.astro';
 
 const CALENDLY = '#book';
 
-const title = 'Decision-First Finance, on guarantee | Decisive Finance';
+const title = "You can't sell a company on numbers you don't trust yourself";
 const description =
-  "Revenue's up. Profit isn't. We make the next call defensible. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.";
+  'In 14 days, see your company the way a buyer will, in dollars. Guaranteed 3x the fee in identified value or you pay nothing. For $5M to $50M companies.';
 
-// The two nodes we run: Diagnose and Defend
-const both = [
-  {
-    side: 'Diagnose',
-    head: 'Find where the profit went.',
-    body: 'Which products, customers, and jobs actually make money, and which ones the rest of the business is quietly funding. Not a hunch, a number. We name the value trapped inside past calls and price it in dollars.',
-  },
-  {
-    side: 'Defend',
-    head: 'Make the next call defensible.',
-    body: 'Every material decision gets the math before you make it: the paths, the dollars on each, and the number you can point at when someone asks why. Then the cash proves the view was right.',
-  },
-];
-
-// The Six Traps, read through the profit lens
-const traps = [
-  {
-    name: 'Sunk Cost',
-    body: 'The money already spent feels like it is voting on the next call. It is not. The only question is what the business earns from here, and your books were never built to answer it.',
-  },
-  {
-    name: 'Status Quo',
-    body: 'A line item nobody has revisited in three years is not stable. It is margin leaking quietly, at a rate nobody has priced, because the report it lives in always looks the same.',
-  },
-  {
-    name: 'Mental Accounting',
-    body: 'A clean bottom line can hide the product or customer the rest of the business is quietly funding. The aggregate P&L keeps the secret. Full allocation gives it up.',
-  },
-  {
-    name: 'Anchoring',
-    body: 'The price you set years ago is rarely the price the market would pay now. Anchored pricing is the most common trapped margin we find, and the fastest to recover.',
-  },
-  {
-    name: 'Loss Aversion',
-    body: 'The account you are most afraid to touch is often the one capping your margin. The math never gets run because the answer feels dangerous. Naming it is worth real dollars.',
-  },
-  {
-    name: 'Certainty Illusion',
-    body: 'Polished reporting can feel like proof when it is really theater. Some of the numbers everyone trusts stopped being true a while ago. Nobody is paid to notice.',
-  },
-];
-
+// How it works: Find, Install, Run (the Two Numbers)
 const steps = [
   {
-    title: 'Find. The Decision Diagnostic, in 14 days.',
-    body: 'We name what your money is actually doing, in dollars: which traps are running, what is recoverable in cash, margin, or avoided cost, and the first three moves. You leave with the read whether or not we ever work together again.',
+    step: 'Find',
+    title: 'The Sellable-Numbers Scan, 14 days.',
+    body: "We normalize your numbers and run the Six Trap Diagnostic™ through a buyer's eyes. You get the re-price read (what diligence would knock off your number, in dollars), the worth read (where the value expansion lives: pricing, mix, margin, concentration), and the first three moves. From $10,000, fixed. Guaranteed.",
+    href: '/scan',
+    link: 'The Scan, in full',
   },
   {
-    title: 'Install. The 90-Day Decision Resolution.',
-    body: 'The rhythm that makes every next call defensible, installed and proven in market across 90 days. Material calls get the math, go live, and get scored against what happened.',
+    step: 'Install',
+    title: 'The 90-Day Decision Resolution.',
+    body: 'The decision rhythm installed: numbers you can decide from and defend, proven on your real decisions, in market. The trailing-twelve clock starts here.',
+    href: '/how-it-works',
+    link: 'How the install works',
   },
   {
-    title: 'Run. The Decision Partnership, monthly.',
-    body: 'Financial Rhythms™ running as the operating cadence: weekly decision cadence, monthly deep dive, quarterly model rebuild. Every major call from a view built to decide from.',
-  },
-];
-
-const tiers = [
-  {
-    label: 'Tier 1, Find',
-    name: 'The Decision Diagnostic',
-    promise: 'Find. 14 days. What your money is actually doing, in dollars.',
-    bands: [
-      ['$5M to $8M revenue', '$10,000'],
-      ['$8M to $25M revenue', '$15,000'],
-      ['$25M to $50M revenue', '$20,000'],
-    ],
-    body: 'Your numbers normalized, the Six Trap Diagnostic™ run, and the dollarized findings: recoverable cash, recoverable margin, avoided cost, and the first three moves. It ends the guessing about where the profit went.',
-    guarantee: 'At least 3x the Diagnostic fee in owner-accepted value identified by Day 14, or you pay nothing.',
-    featured: true,
-  },
-  {
-    label: 'Tier 2, Install',
-    name: 'The 90-Day Decision Resolution',
-    promise: 'Install. 90 days. Every next call defensible.',
-    bands: [
-      ['$5M to $8M revenue', '$30,000'],
-      ['$8M to $25M revenue', '$45,000'],
-      ['$25M to $50M revenue', '$60,000'],
-    ],
-    body: 'Material calls defended with math, taken live in market, and scored against what happened, with Financial Rhythms™ running as the monthly cadence. A Resolution signed within 7 days of the Day 14 readout credits the Diagnostic fee 100%.',
-    guarantee: 'The rhythm installed and in market, a strategic finding of equivalent materiality, or full refund of all fees paid. You keep every deliverable.',
-    featured: false,
-  },
-  {
-    label: 'Tier 3, Run',
-    name: 'The Decision Partnership',
-    promise: 'Run. Monthly. The rhythm, and the recovered value it keeps finding.',
-    bands: [
-      ['$5M to $8M revenue', '$7,500 / mo'],
-      ['$8M to $25M revenue', '$10,000 / mo'],
-      ['$25M to $50M revenue', '$12,500 / mo'],
-    ],
-    body: 'Financial Rhythms™ as the standing cadence: the weekly decision view, the monthly deep dive, the quarterly model rebuild. Every major call gets the math before you make it, and the recovered cash is tracked against the baseline.',
-    guarantee: 'Realized Value validated quarterly against methodology, not opinion.',
-    featured: false,
+    step: 'Run',
+    title: 'The Exit-Value Partnership, 12 to 24 months to market.',
+    body: 'We build the value the Scan found and the trend a buyer will pay for, with a re-valuation every quarter so you watch the number move. Our fees ride the value created, never the transaction. We are the one advisor in the deal who is not paid on the deal.',
+    href: '/partnership',
+    link: 'The Partnership, both faces',
   },
 ];
 
 const proofs = [
   {
+    name: 'Consumer products manufacturer',
+    tag: '$25M revenue',
+    outcome:
+      "Bankers' estimate was $25M to $35M, on books the owner didn't trust. We modeled a path to roughly $52M in enterprise value.",
+    resolution:
+      'Mispriced inputs, phantom discounts, and revenue never brought over. Pricing was anchored to costs that had moved years earlier, and the aggregate P&L hid which products carried the business.',
+    takeaway: 'The gap was never the market. It was the numbers.',
+  },
+  {
     name: 'Professional services',
     tag: '$30M revenue',
-    outcome: '$380,000 of working capital recovered. Close cut from 22 days to 3. Roughly $50,000 a month of margin, in 90 days.',
-    trap: 'Status Quo + Certainty Illusion',
+    outcome:
+      '$380,000 of working capital recovered. Close cut from 22 days to 3. Roughly $50,000 a month of margin, in 90 days.',
     resolution:
       'Cash was trapped in a billing and close cadence nobody had revisited, and clean reports masked the leak. We rebuilt the rhythm, pulled the working capital forward, and put margin on a weekly line of sight.',
     takeaway: 'A clean close is not a fast one, and neither tells you where the cash is stuck.',
@@ -121,266 +56,115 @@ const proofs = [
     name: 'Manufacturer',
     tag: '$15M revenue',
     outcome: 'The largest customer was the least profitable. Margins moved from 15% to 22% in 90 days.',
-    trap: 'Loss Aversion + Mental Accounting',
     resolution:
       'The biggest account felt untouchable, so the math never got run. Full cost allocation showed it was funded by everyone else. We repriced and reset terms, and margin followed inside the quarter.',
     takeaway: 'The account nobody would touch was the margin everyone was looking for.',
   },
-  {
-    name: 'Consumer products manufacturer',
-    tag: '$25M revenue',
-    outcome: "Bankers' estimate was $25M to $35M, on books the owner didn't trust. We modeled a path to roughly $52M in enterprise value.",
-    trap: 'Mental Accounting + Anchoring',
-    resolution:
-      'Mispriced inputs, phantom discounts, and revenue never brought over. Pricing was anchored to costs that had moved years earlier, and the aggregate P&L hid which products carried the business.',
-    takeaway: 'The gap was never the market. It was the numbers.',
-  },
-];
-
-const fitYes = [
-  'Owner-led operating companies, $5M to $50M in revenue.',
-  'Revenue is growing. Profit is flat or lumpy. Nobody can say exactly why.',
-  'You run on data but suspect the numbers are not telling you the truth.',
-  'EOS and Vistage operating companies, plus manufacturing, consumer products, professional services, and construction.',
 ];
 
 const fitNo = [
   'Under $5M in revenue. The guarantee math does not hold, so we refer out.',
   'You want someone to promise a sale price or find you a buyer. We do not sell companies.',
   'Happy deciding on instinct, or unwilling to act on the numbers.',
-  'Shopping for cheap bookkeeping.',
+  'Shopping for bookkeeping.',
 ];
+
+const fitYes = [
+  'You own an operating company between $5M and $50M in revenue.',
+  'A real decision is on the table: a sale, a succession, a price, a hire, an expansion.',
+  "You're tired of making it half-blind.",
+  'EOS and Vistage operating companies, manufacturing, consumer products, professional services, and construction.',
+];
+
+const pricing = [
+  {
+    name: 'Sellable-Numbers Scan or Decision Diagnostic (14 days)',
+    bands: ['$10,000', '$15,000', '$20,000'],
+  },
+  {
+    name: '90-Day Decision Resolution',
+    bands: ['$30,000', '$45,000', '$60,000'],
+  },
+  {
+    name: 'Partnership (monthly)',
+    bands: ['$7,500', '$10,000', '$12,500'],
+  },
+];
+
+// Page-level JSON-LD: banded offers + founder, per Homepage v3 build notes
+const offersJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Decisive Finance',
+  url: 'https://decisive.finance',
+  founder: {
+    '@type': 'Person',
+    name: 'Russell Fette',
+    jobTitle: 'Founder',
+    sameAs: 'https://www.linkedin.com/in/russellfette',
+  },
+  makesOffer: [
+    {
+      '@type': 'Offer',
+      name: 'Sellable-Numbers Scan / Decision Diagnostic (14 days)',
+      priceSpecification: [
+        { '@type': 'UnitPriceSpecification', price: 10000, priceCurrency: 'USD', name: '$5M to $8M revenue' },
+        { '@type': 'UnitPriceSpecification', price: 15000, priceCurrency: 'USD', name: '$8M to $25M revenue' },
+        { '@type': 'UnitPriceSpecification', price: 20000, priceCurrency: 'USD', name: '$25M to $50M revenue' },
+      ],
+    },
+    {
+      '@type': 'Offer',
+      name: '90-Day Decision Resolution',
+      priceSpecification: [
+        { '@type': 'UnitPriceSpecification', price: 30000, priceCurrency: 'USD', name: '$5M to $8M revenue' },
+        { '@type': 'UnitPriceSpecification', price: 45000, priceCurrency: 'USD', name: '$8M to $25M revenue' },
+        { '@type': 'UnitPriceSpecification', price: 60000, priceCurrency: 'USD', name: '$25M to $50M revenue' },
+      ],
+    },
+    {
+      '@type': 'Offer',
+      name: 'Decision Partnership / Exit-Value Partnership (monthly)',
+      priceSpecification: [
+        { '@type': 'UnitPriceSpecification', price: 7500, priceCurrency: 'USD', name: '$5M to $8M revenue' },
+        { '@type': 'UnitPriceSpecification', price: 10000, priceCurrency: 'USD', name: '$8M to $25M revenue' },
+        { '@type': 'UnitPriceSpecification', price: 12500, priceCurrency: 'USD', name: '$25M to $50M revenue' },
+      ],
+    },
+  ],
+};
 ---
 
 <BaseLayout title={title} description={description}>
-  <!-- Hero / the problem -->
-  <section id="problem" class="hero">
-    <div class="hero-inner hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow">For owner-led operating companies, $5M to $50M in revenue</span>
-        <h1>
-          <span class="h1-line">Revenue&rsquo;s up. Profit isn&rsquo;t.</span>
-          <span class="h1-line h1-line-accent">And your numbers can&rsquo;t tell you why.</span>
-        </h1>
-        <p class="hero-subhead">
-          Most founders and owners look back wishing they had called it differently. <span class="dollar">Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days.</span> Typical 5x to 10x.
-        </p>
-        <div class="hero-cta-row">
-          <a href={CALENDLY} class="btn btn-primary">Book a fit call</a>
-          <a href="#how" class="btn btn-secondary">See the 14-day Diagnostic</a>
-        </div>
-        <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing where to look first.</p>
-        <blockquote class="hero-quote">
-          The decisions weren&rsquo;t wrong. You made them on the only numbers you had, and those numbers were never built to decide from.
-          <cite>The diagnosis, in one line</cite>
-        </blockquote>
-        <div class="rally">FIND. INSTALL. RUN.</div>
-      </div>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(offersJsonLd)} />
 
-      <div class="hero-viz" aria-hidden="true">
-        <svg viewBox="0 0 460 380" role="img" xmlns="http://www.w3.org/2000/svg">
-          <title>Revenue rising while profit stays flat</title>
-          <line x1="60" y1="330" x2="440" y2="330" class="viz-axis" />
-          <!-- Revenue bar (tall, grey) -->
-          <rect class="viz-bar viz-bar-est" x="96" y="86" width="104" height="244" rx="6" />
-          <text x="148" y="72" class="viz-tag viz-tag-est" text-anchor="middle">Revenue</text>
-          <text x="148" y="356" class="viz-num viz-num-est" text-anchor="middle">up and to the right</text>
-          <!-- Profit bar (short, orange) -->
-          <rect class="viz-bar viz-bar-worth" x="272" y="252" width="104" height="78" rx="6" />
-          <text x="324" y="238" class="viz-tag viz-tag-worth" text-anchor="middle">Profit</text>
-          <text x="324" y="356" class="viz-num viz-num-worth" text-anchor="middle">flat</text>
-          <!-- gap note -->
-          <text x="250" y="40" class="viz-note" text-anchor="middle">The gap has a dollar figure. The Diagnostic names it.</text>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- The parent diagnosis: system of record vs system of decision -->
-  <section id="system" class="alt">
-    <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">Why the numbers can&rsquo;t answer</span>
-        <h2>You have a system of record. You don&rsquo;t have a system of decision.</h2>
-        <p class="lede">
-          Your books tell you what happened. They can&rsquo;t tell you what to do next. They were built for the tax return and the closed month, not for the call you have to make this quarter.
-        </p>
-        <p>
-          Everyone who touches your numbers is paid to serve something else: the filing, the close, the report. Nobody is paid to make the next call defensible. That is a different job, and it is the one we do. What it recovers is the value trapped inside decisions made on numbers that were never built to decide from.
-        </p>
-        <div class="delay-callout">
-          We don&rsquo;t audit the past. We make the next call defensible.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- The two nodes -->
-  <section id="work">
-    <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">What we install</span>
-        <h2>The decision layer your monthly reports were never built to give you.</h2>
-        <p class="lede">
-          Not the generalist who gives you cleaner books. The operator who builds the decision layer your accountant, your bookkeeper, and your monthly reports were never built to give you.
-        </p>
-      </div>
-      <div class="both-grid">
-        {both.map((b) => (
-          <div class="both-card">
-            <span class="both-side">{b.side}</span>
-            <h3>{b.head}</h3>
-            <p>{b.body}</p>
-          </div>
-        ))}
-      </div>
-      <div class="container-narrow">
-        <div class="category-pull">
-          You walk into every major decision able to point at the number behind it, and the recovered cash proves the view was right.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- The Six Traps, through the profit lens -->
-  <section class="traps">
-    <div class="container">
-      <span class="section-eyebrow">Where the profit is hiding</span>
-      <h2>The Six Trap Diagnostic&trade;: where good calls trap value.</h2>
-      <p class="lede" style="color: rgba(255,255,255,0.88);">
-        Every material decision commits money, then the context drifts and the value stays trapped where the call left it. The patterns are structural, not failures of the owner. No one running a company can counteract all six alone.
+  <!-- Exit hero: why now -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">For owner-led operating companies, $5M to $50M in revenue</span>
+      <h1>
+        <span class="h1-line">You can&rsquo;t sell a company</span>
+        <span class="h1-line h1-line-accent">on numbers you don&rsquo;t trust yourself.</span>
+      </h1>
+      <p class="hero-subhead">
+        Most owners aren&rsquo;t waiting for the right market. They&rsquo;re waiting for numbers they&rsquo;d be willing to show. In 14 days, we show you your company the way a buyer will, in dollars, guaranteed: <span class="dollar">at least 3x the fee in owner-accepted value identified, or you pay nothing.</span>
       </p>
-      <div class="trap-grid">
-        {traps.map((trap, i) => (
-          <div class="trap-card">
-            <div class="trap-num">Trap {String(i + 1).padStart(2, '0')}</div>
-            <div class="trap-name">{trap.name}</div>
-            <p>{trap.body}</p>
-          </div>
-        ))}
+      <div class="hero-cta-row">
+        <a href={CALENDLY} class="btn btn-primary">See if you qualify</a>
       </div>
-      <p class="traps-footer">
-        Most companies are running three or four of these at once. We name the stack, price each one in dollars, and turn the read into a plan. We don&rsquo;t audit the past. We make the next call defensible.
+      <p class="trust-strip">
+        A $25M manufacturer&rsquo;s modeled exit value, roughly doubled &middot; $380K of working capital recovered in 90 days &middot; a monthly close cut from 22 days to 3
       </p>
     </div>
   </section>
 
-  <!-- How it works -->
-  <section id="how">
-    <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">How it works</span>
-        <h2>Find. Install. Run.</h2>
-        <p class="lede">
-          Three steps, one rhythm. We find where the profit went, install the rhythm that makes every next call defensible, and run it with you until deciding from the numbers is simply how the company works.
-        </p>
-      </div>
-      <div class="engine-list">
-        {steps.map((item) => (
-          <div class="engine-item">
-            <div>
-              <p><strong>{item.title}</strong></p>
-              <p style="margin-top: 8px; color: var(--muted);">{item.body}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-      <p style="margin-top: 36px;">
-        <a href="/how-it-works">See the full method &rarr;</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- Tiers and pricing -->
-  <section id="tiers" class="alt">
-    <div class="container">
-      <span class="section-eyebrow">Tiers and pricing</span>
-      <h2>Three promises, priced to your revenue.</h2>
-      <p class="lede">
-        Most owners start with the Diagnostic and move into the Resolution. Pricing is banded by revenue. The floor is $5M; below that the guarantee math does not hold, so we refer out.
-      </p>
-      <div class="band-toggle" role="group" aria-label="Highlight your revenue band">
-        <button type="button" data-band="0" class="is-active">$5M to $8M</button>
-        <button type="button" data-band="1">$8M to $25M</button>
-        <button type="button" data-band="2">$25M to $50M</button>
-      </div>
-      <div class="tier-grid" data-band="0">
-        {tiers.map((tier) => (
-          <div class={`tier${tier.featured ? ' featured' : ''}`}>
-            {tier.featured && <span class="featured-badge">Start here</span>}
-            <div class="tier-label">{tier.label}</div>
-            <h3>{tier.name}</h3>
-            <p class="tier-promise">{tier.promise}</p>
-            <div class="tier-meta">
-              {tier.bands.map((band, bi) => (
-                <div class="tier-row" data-row={bi}>
-                  <span>{band[0]}</span>
-                  <span>{band[1]}</span>
-                </div>
-              ))}
-            </div>
-            <p style="font-size:15px; line-height:1.55; margin-bottom:22px;">{tier.body}</p>
-            <div class="tier-guarantee">
-              <strong>Promise</strong>
-              {tier.guarantee}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- EOS and Vistage -->
-  <section id="eos-vistage">
-    <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">For EOS and Vistage companies</span>
-        <h2>The Scorecard tells you the boat is moving. We tell you if it&rsquo;s pointed at the money.</h2>
-        <p class="lede">
-          EOS gave you cadence, accountability, and a Scorecard full of measurables. What it did not give you is the Finance seat: measurables that predict profit instead of tracking activity, and numbers settled before the Level 10 so the meeting spends its time on issues, not on debating the data.
-        </p>
-        <p>
-          We build the financial measurables that belong on the Scorecard, tie the budget to the plan you already run, and give the owner a weekly answer to the only question the Scorecard can&rsquo;t ask: which of the things we are measuring actually makes money.
-        </p>
-        <p>
-          <a href="/eos">How we work inside EOS and Vistage &rarr;</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Who this is for -->
-  <section id="who" class="alt">
-    <div class="container">
-      <span class="section-eyebrow">Who this is for</span>
-      <h2>Built for owners who run on data and aren&rsquo;t getting the truth from it.</h2>
-      <p class="lede">
-        The work fits a specific band and a specific frustration. If you are inside it, the method reads the same across whatever you build or sell. If you are outside it, we will say so on the first call and you keep your time.
-      </p>
-      <div class="fit-grid">
-        <div class="fit-col yes">
-          <h3>Fits</h3>
-          <ul>
-            {fitYes.map((line) => <li>{line}</li>)}
-          </ul>
-        </div>
-        <div class="fit-col no">
-          <h3>Not a fit</h3>
-          <ul>
-            {fitNo.map((line) => <li>{line}</li>)}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Proof -->
-  <section id="proof">
+  <!-- Proof strip -->
+  <section id="proof" class="alt">
     <div class="container">
       <span class="section-eyebrow">Proof</span>
-      <h2>Recovered value, proven in the cash.</h2>
+      <h2>The numbers moved because the numbers changed.</h2>
       <p class="lede">
-        The mechanism reads the same across industries because the traps do. Three companies, three sectors, one method. Anonymized by segment and revenue band until attribution is confirmed.
+        Three companies, three sectors, one method. Anonymized by segment and revenue band until attribution is confirmed.
       </p>
       <div class="proof-grid">
         {proofs.map((p) => (
@@ -388,7 +172,6 @@ const fitNo = [
             <div class="proof-name">{p.name}</div>
             <span class="proof-tag">{p.tag}</span>
             <div class="proof-outcome">{p.outcome}</div>
-            <span class="proof-trap">{p.trap}</span>
             <p class="resolution">{p.resolution}</p>
             <div class="takeaway">{p.takeaway}</div>
           </div>
@@ -397,180 +180,223 @@ const fitNo = [
     </div>
   </section>
 
-  <!-- Methodology / Decision Loop -->
-  <section>
+  <!-- Second act: the wound (why us) -->
+  <section id="why-us">
     <div class="container">
-      <div class="loop-grid">
-        <div class="loop-copy">
-          <span class="section-eyebrow">Methodology</span>
-          <h2>The methodology is called Decision-First Finance.</h2>
-          <p class="lede">
-            We reorganize the finance function around the calls that set your profit, not the last few months of variance. Every decision runs the same loop. Most companies never close it, so value traps and stays trapped.
-          </p>
-          <p>
-            Our intervention is the last two nodes, Diagnose and Defend, run on a rhythm: weekly cadence, monthly deep dive, quarterly rebuild. That rhythm is what turns a set of numbers into a view you can decide from.
-          </p>
-          <p>
-            <a href="/perspectives/decision-first-finance">Read the methodology &rarr;</a>
-          </p>
+      <div class="container-narrow">
+        <span class="section-eyebrow">Why this keeps happening</span>
+        <h2>Your books tell you what happened. They can&rsquo;t tell you what to do next.</h2>
+        <p class="lede">
+          Your accounting was built to answer one question: what happened. It closes the month, files the taxes, satisfies the bank. It was never built to answer the question a sale forces: what is this actually worth, and can I prove it?
+        </p>
+        <p>
+          Here&rsquo;s the part nobody says out loud. Everyone who touches your numbers is paid to serve something other than you. The tax preparer optimizes the return. The bookkeeper, often a junior person carrying a senior title, produces a P&amp;L and closes the month. Not one of them is paid to make your company worth believing.
+        </p>
+        <p>
+          The decisions weren&rsquo;t wrong. You made them on the only numbers you had, and those numbers were never built to decide from. The mess isn&rsquo;t negligence. Growth covered it, and the people producing the numbers were never paid to look. But a buyer will look. Buyers pay a multiple times earnings, and they only pay for a trend they can believe.
+        </p>
+        <div class="delay-callout">
+          The trailing-twelve clock doesn&rsquo;t start until the numbers are true, and every month you wait moves the sale date a month.
         </div>
-
-        <figure class="loop-fig">
-          <svg viewBox="0 0 480 440" role="img" xmlns="http://www.w3.org/2000/svg">
-            <title>The Decision Loop: Decision, Cost and Commitment, Drift, Trap, Diagnose, Defend</title>
-            <defs>
-              <marker id="arrowGrey" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
-                <path d="M0 0 L6 3 L0 6 Z" class="loop-arrow-grey" />
-              </marker>
-              <marker id="arrowOrange" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
-                <path d="M0 0 L6 3 L0 6 Z" class="loop-arrow-orange" />
-              </marker>
-            </defs>
-
-            <path class="loop-arc" d="M220 80 A140 140 0 0 1 341 150" marker-end="url(#arrowGrey)" />
-            <path class="loop-arc" d="M341 150 A140 140 0 0 1 341 290" marker-end="url(#arrowGrey)" />
-            <path class="loop-arc" d="M341 290 A140 140 0 0 1 220 360" marker-end="url(#arrowGrey)" />
-            <path class="loop-arc loop-arc-on" d="M220 360 A140 140 0 0 1 99 290" marker-end="url(#arrowOrange)" />
-            <path class="loop-arc loop-arc-on" d="M99 290 A140 140 0 0 1 99 150" marker-end="url(#arrowOrange)" />
-            <path class="loop-arc loop-arc-on" d="M99 150 A140 140 0 0 1 220 80" marker-end="url(#arrowOrange)" />
-
-            <text x="220" y="214" class="loop-center">The</text>
-            <text x="220" y="236" class="loop-center">Decision Loop</text>
-
-            <g class="loop-node"><circle cx="220" cy="80" r="9" /><text x="220" y="56" class="loop-label" text-anchor="middle">Decision</text></g>
-            <g class="loop-node"><circle cx="341" cy="150" r="9" /><text x="356" y="146" class="loop-label">Cost &amp;</text><text x="356" y="163" class="loop-label">commitment</text></g>
-            <g class="loop-node"><circle cx="341" cy="290" r="9" /><text x="356" y="295" class="loop-label">Drift</text></g>
-            <g class="loop-node"><circle cx="220" cy="360" r="9" /><text x="220" y="386" class="loop-label" text-anchor="middle">Trap</text></g>
-            <g class="loop-node loop-node-on"><circle cx="99" cy="290" r="9" /><text x="84" y="295" class="loop-label loop-label-on" text-anchor="end">Diagnose</text></g>
-            <g class="loop-node loop-node-on"><circle cx="99" cy="150" r="9" /><text x="84" y="155" class="loop-label loop-label-on" text-anchor="end">Defend</text></g>
-          </svg>
-          <figcaption>Decision &rarr; Cost and commitment &rarr; Drift &rarr; Trap &rarr; <strong>Diagnose</strong> &rarr; <strong>Defend</strong>. We close the loop.</figcaption>
-        </figure>
       </div>
     </div>
   </section>
 
-  <!-- Closing CTA -->
+  <!-- How it works: Find. Install. Run. -->
+  <section id="how" class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">How it works</span>
+        <h2>A sale price is a multiple times earnings. We work both numbers.</h2>
+        <p class="lede">
+          Three steps, one rhythm. Find what a buyer would pay and would question. Install the rhythm that fixes both. Run it until the trend is one a buyer will pay for.
+        </p>
+      </div>
+      <div class="step-grid">
+        {steps.map((item, i) => (
+          <div class="step-card">
+            <div class="step-num">{String(i + 1).padStart(2, '0')}</div>
+            <div class="step-name">{item.step}</div>
+            <h3>{item.title}</h3>
+            <p>{item.body}</p>
+            <a href={item.href} class="step-link">{item.link} &rarr;</a>
+          </div>
+        ))}
+      </div>
+      <div class="container-narrow">
+        <div class="rally" style="margin-top: 44px;">FIND. INSTALL. RUN.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The guarantee -->
+  <section id="guarantee">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">The guarantee</span>
+        <h2>We put the risk on our side of the table.</h2>
+        <p class="lede">
+          The Scan identifies at least 3x its fee in owner-accepted value (recoverable cash, recoverable margin, avoided cost, or dollarized valuation exposure) inside 14 days, validated by you in writing, or you pay nothing. Typical results run 5x to 10x.
+        </p>
+        <p>
+          The 90-Day Resolution installs the rhythm and proves it in market, or every fee is refunded and you keep every artifact we built. We never guarantee a sale price or a multiple. We don&rsquo;t control the market. We control whether a buyer can believe you.
+        </p>
+        <p>
+          <a href="/guarantee">The guarantee mechanics, in full &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The second door: not selling -->
+  <section id="not-selling" class="traps">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">The second door</span>
+        <h2>Not selling? The same numbers are costing you every month.</h2>
+        <p class="lede" style="color: rgba(255,255,255,0.88);">
+          Revenue&rsquo;s up. Profit isn&rsquo;t. And your numbers can&rsquo;t tell you why. The wound is identical; only the deadline is missing.
+        </p>
+        <p style="max-width: 760px;">
+          The 14-day <a href="/diagnostic">Decision Diagnostic</a> runs the same engine without the buyer&rsquo;s lens: which products, customers, or jobs actually make money, where the recoverable value sits, and what to do first. Same bands, same guarantee.
+        </p>
+        <p style="margin-top: 28px;">
+          <a href={CALENDLY} class="second-door-cta">Book the Diagnostic fit call &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who this is for (the filter) -->
+  <section id="filter" class="alt">
+    <div class="container">
+      <span class="section-eyebrow">Who this is for</span>
+      <h2>The filter runs both ways.</h2>
+      <div class="fit-grid">
+        <div class="fit-col yes">
+          <h3>It is for you if</h3>
+          <ul>
+            {fitYes.map((line) => <li>{line}</li>)}
+          </ul>
+        </div>
+        <div class="fit-col no">
+          <h3>This is not for you if</h3>
+          <ul>
+            {fitNo.map((line) => <li>{line}</li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing: visible, banded, no form -->
+  <section id="pricing">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Pricing</span>
+        <h2>Fixed before we begin. Banded to your revenue.</h2>
+      </div>
+      <div class="pricing-table-wrap">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th scope="col"><span class="sr-only">Engagement</span></th>
+              <th scope="col">$5M to $8M revenue</th>
+              <th scope="col">$8M to $25M</th>
+              <th scope="col">$25M to $50M</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pricing.map((row) => (
+              <tr>
+                <th scope="row">{row.name}</th>
+                {row.bands.map((price) => <td>{price}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="container-narrow">
+        <p class="pricing-note">
+          A Resolution signed within 7 days of the Scan readout credits the Scan fee in full. The floor is $5M in revenue; below that the guarantee math does not hold, so we refer out.
+        </p>
+        <p style="margin-top: 32px;">
+          <a href={CALENDLY} class="btn btn-primary">See if you qualify</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
   <section id="book" class="close-section">
     <div class="container">
-      <span class="section-eyebrow">Book a fit call</span>
-      <h2>Decide from the numbers. Prove it in the cash.</h2>
-      <p class="lede">
-        In 14 days you know what your money is actually doing, in dollars: the traps that are running, the recoverable value, and the first three moves, whether or not we ever work together again. It starts with one 30-minute call.
-      </p>
-      <div class="book-grid">
-        <div class="book-aside">
-          <div class="book-note">
-            <h3>For owners</h3>
-            <p>One 30-minute fit call. No pitch. If the fit is there, the 14-day Diagnostic starts. If it is not, both sides know inside the first call and we end clean.</p>
-          </div>
-          <div class="book-note">
-            <h3>For advisors</h3>
-            <p>Vistage chairs, EOS implementers, CPAs, bankers, and attorneys bring us in when a member&rsquo;s profit stops tracking revenue. The Diagnostic gives your member a dollarized answer in 14 days, on guarantee, and you keep the relationship.</p>
-            <a href="/guarantee" class="btn btn-secondary">Read the guarantee</a>
-          </div>
-        </div>
-        <div class="book-embed">
-          <CalendlyEmbed />
-        </div>
+      <div class="container-narrow">
+        <span class="section-eyebrow">Book the fit call</span>
+        <h2>Decide from the numbers. Prove it in the cash.</h2>
+        <p class="lede">
+          One 30-minute fit call. If it fits, the 14 days start.
+        </p>
+        <a href="https://calendly.com/russell-decisive/30min" class="btn btn-primary" style="margin-bottom: 40px;">See if you qualify</a>
+      </div>
+      <div class="book-embed">
+        <CalendlyEmbed />
       </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  /* Hero: two columns + chart */
-  .hero { padding-bottom: 96px; }
-  .hero-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
-  .hero-copy { min-width: 0; }
-  .hero-microcopy { font-size: 15px; color: rgba(255, 255, 255, 0.7); margin: 10px 0 0; }
-  .hero-viz { display: none; }
-  .hero-viz svg { width: 100%; height: auto; overflow: visible; }
-  @media (min-width: 1000px) {
-    .hero-grid { grid-template-columns: 1.12fr 0.88fr; gap: 48px; }
-    .hero-viz { display: block; }
-  }
-  .viz-axis { stroke: rgba(255, 255, 255, 0.18); stroke-width: 1.5; }
-  .viz-bar { opacity: 0; transform: scaleY(0); transform-origin: bottom; transform-box: fill-box; animation: vizgrow 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-  .viz-bar-est { fill: rgba(255, 255, 255, 0.16); stroke: rgba(255, 255, 255, 0.3); stroke-width: 1.5; animation-delay: 0.15s; }
-  .viz-bar-worth { fill: rgba(227, 99, 43, 0.9); animation-delay: 0.45s; }
-  .viz-tag { font: 600 13px Inter, sans-serif; }
-  .viz-tag-est { fill: rgba(255, 255, 255, 0.6); }
-  .viz-tag-worth { fill: var(--orange); }
-  .viz-num { font: 700 15px Inter, sans-serif; }
-  .viz-num-est { fill: rgba(255, 255, 255, 0.6); }
-  .viz-num-worth { fill: var(--white); }
-  .viz-note { fill: rgba(255, 255, 255, 0.7); font: italic 12px Inter, sans-serif; }
-  .viz-tag, .viz-num, .viz-note { opacity: 0; animation: vizfade 0.6s ease 0.9s forwards; }
-  @keyframes vizgrow { to { opacity: 1; transform: scaleY(1); } }
-  @keyframes vizfade { to { opacity: 1; } }
-
-  /* Diagnose / Defend value prop */
-  .both-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin: 44px 0 8px; }
-  @media (min-width: 800px) { .both-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
-  .both-card { background: var(--white); border: 1px solid var(--hairline); border-radius: 16px; padding: 32px 30px; transition: border-color 0.18s ease, transform 0.18s ease; }
-  .both-card:hover { border-color: var(--green); transform: translateY(-2px); }
-  .both-side { display: inline-block; font: 700 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: 0.16em; color: var(--orange-ink); margin-bottom: 12px; }
-  .both-card h3 { margin: 0 0 12px; font-size: 24px; }
-  .both-card p { font-size: 16px; line-height: 1.6; color: var(--muted); margin: 0; }
-
-  /* Tier band selector */
-  .band-toggle { display: inline-flex; flex-wrap: wrap; gap: 6px; background: var(--white); border: 1px solid var(--hairline); border-radius: 999px; padding: 5px; margin: 0 0 28px; }
-  .band-toggle button { border: none; background: none; font: inherit; font-size: 14px; font-weight: 600; color: var(--muted); padding: 9px 16px; border-radius: 999px; cursor: pointer; transition: background 0.15s ease, color 0.15s ease; }
-  .band-toggle button:hover { color: var(--ink); }
-  .band-toggle button.is-active { background: var(--ink); color: var(--white); }
-  .tier-row { transition: opacity 0.18s ease; }
-  .tier-grid[data-band="0"] .tier-row:not([data-row="0"]),
-  .tier-grid[data-band="1"] .tier-row:not([data-row="1"]),
-  .tier-grid[data-band="2"] .tier-row:not([data-row="2"]) { opacity: 0.32; }
-  .tier-grid[data-band="0"] .tier-row[data-row="0"] span:last-child,
-  .tier-grid[data-band="1"] .tier-row[data-row="1"] span:last-child,
-  .tier-grid[data-band="2"] .tier-row[data-row="2"] span:last-child { color: var(--orange); }
-
-  /* Decision Loop */
-  .loop-grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
-  @media (min-width: 900px) { .loop-grid { grid-template-columns: 1fr 1fr; gap: 56px; } }
-  .loop-copy { max-width: 620px; }
-  .loop-fig { margin: 0; }
-  .loop-fig svg { width: 100%; height: auto; max-width: 460px; display: block; margin: 0 auto; overflow: visible; }
-  .loop-arc { fill: none; stroke: var(--hairline); stroke-width: 2.5; }
-  .loop-arc-on { stroke: var(--orange); }
-  .loop-arrow-grey { fill: #9aa7ad; }
-  .loop-arrow-orange { fill: var(--orange); }
-  .loop-node circle { fill: var(--white); stroke: var(--ink); stroke-width: 2.5; transition: transform 0.15s ease; transform-box: fill-box; transform-origin: center; }
-  .loop-node:hover circle { transform: scale(1.25); }
-  .loop-node-on circle { fill: var(--orange); stroke: var(--orange); }
-  .loop-label { font: 600 13px Inter, sans-serif; fill: var(--ink); }
-  .loop-label-on { fill: var(--orange); }
-  .loop-center { font: 700 15px Inter, sans-serif; fill: var(--muted); text-anchor: middle; }
-  .loop-fig figcaption { margin: 18px auto 0; text-align: center; font-size: 14px; color: var(--muted); max-width: 440px; line-height: 1.5; }
-  .loop-fig figcaption strong { color: var(--orange); }
-
-  @media (prefers-reduced-motion: reduce) {
-    .viz-bar { opacity: 1; transform: scaleY(1); animation: none; }
-    .viz-tag, .viz-num, .viz-note { opacity: 1; animation: none; }
+  .hero { padding-bottom: 110px; }
+  .trust-strip {
+    font-family: Inter, sans-serif;
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.72);
+    max-width: 920px;
+    margin: 6px 0 0;
+    line-height: 1.6;
   }
 
-  /* Book: copy aside + inline scheduler */
-  .book-grid { display: grid; grid-template-columns: 1fr; gap: 32px; margin-top: 44px; align-items: start; }
-  @media (min-width: 1000px) { .book-grid { grid-template-columns: 0.82fr 1.18fr; gap: 48px; } }
-  .book-aside { display: flex; flex-direction: column; gap: 22px; }
-  .book-note { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 14px; padding: 28px 26px; }
-  .book-note h3 { color: var(--white); margin-top: 0; margin-bottom: 12px; font-size: 21px; }
-  .book-note p { color: rgba(255, 255, 255, 0.78); font-size: 15px; margin-bottom: 0; line-height: 1.55; }
-  .book-note .btn { margin-top: 20px; }
-  .book-embed { min-width: 0; }
+  /* Find / Install / Run cards */
+  .step-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 44px; }
+  @media (min-width: 900px) { .step-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; } }
+  .step-card {
+    background: var(--white);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 34px 30px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.18s ease, transform 0.18s ease;
+  }
+  .step-card:hover { border-color: var(--green); transform: translateY(-2px); }
+  .step-num { font-family: Inter, sans-serif; font-size: 30px; font-weight: 600; color: var(--orange); line-height: 1; margin-bottom: 14px; }
+  .step-name { font: 700 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: 0.16em; color: var(--orange-ink); margin-bottom: 10px; }
+  .step-card h3 { margin: 0 0 12px; font-size: 21px; }
+  .step-card p { font-size: 15px; line-height: 1.6; color: var(--muted); margin: 0 0 20px; flex-grow: 1; }
+  .step-link { font-family: Inter, sans-serif; font-size: 14px; font-weight: 600; margin-top: auto; }
+
+  /* Second door CTA (on ink background) */
+  .second-door-cta {
+    display: inline-block;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--orange);
+    border-bottom: 2px solid rgba(227, 99, 43, 0.5);
+    padding-bottom: 3px;
+  }
+  .second-door-cta:hover { border-bottom-color: var(--orange); opacity: 1; }
+  #not-selling a { color: var(--orange); }
+
+  /* Pricing table */
+  .pricing-table-wrap { margin-top: 44px; overflow-x: auto; }
+  .pricing-table { width: 100%; max-width: 1180px; border-collapse: collapse; font-family: Inter, sans-serif; }
+  .pricing-table th, .pricing-table td { padding: 18px 20px; text-align: left; border-bottom: 1px solid var(--hairline); font-size: 15.5px; }
+  .pricing-table thead th { font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); font-weight: 600; }
+  .pricing-table tbody th { font-weight: 600; color: var(--ink); max-width: 340px; }
+  .pricing-table td { font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+  .pricing-note { margin-top: 28px; font-size: 15.5px; color: var(--muted); max-width: 760px; }
+
+  .book-embed { margin-top: 12px; }
 </style>
-
-<script>
-  // Tier band selector
-  const grid = document.querySelector('.tier-grid');
-  const bandBtns = document.querySelectorAll<HTMLButtonElement>('.band-toggle button');
-  bandBtns.forEach((btn) =>
-    btn.addEventListener('click', () => {
-      bandBtns.forEach((b) => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      if (grid && btn.dataset.band) grid.setAttribute('data-band', btn.dataset.band);
-    })
-  );
-</script>

@@ -20,12 +20,28 @@ const team = [
     body: 'Payal runs the financial analysis layer of every Decisive Finance engagement. Inside a Diagnostic, she turns a messy general ledger into a ranked inventory of decisions, in dollars. Inside a Resolution, she maintains the Forward Capital Register, the weekly actuals-vs-prediction reconciliation, and the cross-subsidy map that reveals which products and customers are actually carrying the business. She is the operational constant between Day 1 and Day 90.',
   },
 ];
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Russell Fette',
+  jobTitle: 'Founder',
+  worksFor: { '@type': 'Organization', name: 'Decisive Finance', url: 'https://decisive.finance' },
+  url: 'https://decisive.finance/about',
+  email: 'russell@decisive.finance',
+  sameAs: ['https://www.linkedin.com/in/russellfette'],
+  description:
+    'Russell Fette runs Decisive Finance and created Financial Rhythms™, the decision rhythm that lets growing companies make every major call from a view built to decide from, on guarantee.',
+  alumniOf: { '@type': 'CollegeOrUniversity', name: 'Whitman College' },
+  knowsAbout: ['Decision-First Finance', 'Financial Rhythms', 'Pricing and margin strategy', 'Exit readiness for operating companies'],
+};
 ---
 
 <BaseLayout
   title="About Decisive Finance | Decision-First Finance for operating companies"
   description="The team behind Decisive Finance. We find the value trapped in past calls and make the next one defensible, on guarantee. Owner-led companies, $5M to $50M in revenue."
 >
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
   <section class="hero">
     <div class="hero-inner">
       <span class="eyebrow">About</span>

@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+
+const title = 'The Sellable-Numbers Scan: 14 days, guaranteed | Decisive Finance';
+const description =
+  "See your company the way a buyer will, in dollars, in 14 days. Guaranteed 3x the fee in owner-accepted value or you pay nothing. From $10,000, fixed.";
+
+const reads = [
+  {
+    heading: 'The re-price read',
+    body: 'What diligence would knock off your number, in dollars. Every place a buyer&rsquo;s team would re-cut the earnings, discount the trend, or price a risk you have been living with so long you stopped seeing it.',
+  },
+  {
+    heading: 'The worth read',
+    body: 'Where the value expansion lives: the price set years ago and never re-decided, the products and customers the rest of the business is quietly funding, the costs allocated to habit instead of reality, the concentration a buyer prices as risk.',
+  },
+  {
+    heading: 'The first three moves',
+    body: 'The readout ends with the three moves that change the number fastest, each one dollarized, each with a named path. You leave with the read whether or not we ever work together again.',
+  },
+];
+
+const bands = [
+  ['$5M to $8M revenue', '$10,000'],
+  ['$8M to $25M revenue', '$15,000'],
+  ['$25M to $50M revenue', '$20,000'],
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">The Sellable-Numbers Scan &middot; Find &middot; 14 days</span>
+      <h1>
+        <span class="h1-line">See your company the way a buyer will,</span>
+        <span class="h1-line h1-line-accent">in dollars, in 14 days.</span>
+      </h1>
+      <p class="hero-subhead">
+        You can&rsquo;t sell a company on numbers you don&rsquo;t trust yourself. Accurate and ugly beats polished and untrustworthy. Buyers know the difference. <span class="dollar">Guaranteed: at least 3x the fee in owner-accepted value identified, or you pay nothing.</span>
+      </p>
+      <div class="hero-cta-row">
+        <a href={CALENDLY} class="btn btn-primary">See if you qualify</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Why now</span>
+        <h2>Every month you wait moves the sale date a month.</h2>
+        <p class="lede">
+          The trailing-twelve clock doesn&rsquo;t start until the numbers are true. Buyers pay a multiple times earnings, and they only pay for a trend they can believe. Most owners aren&rsquo;t waiting for the right market. They&rsquo;re waiting for numbers they&rsquo;d be willing to show.
+        </p>
+        <p>
+          The mess isn&rsquo;t negligence. Growth covered it, and the people producing the numbers were never paid to look. Everyone who touches your books closes the month. Nobody is making your company worth believing. That is the job the Scan starts.
+        </p>
+        <div class="delay-callout">
+          We don&rsquo;t audit the past. We make the company worth believing.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">What you get</span>
+        <h2>Two reads and the first three moves.</h2>
+        <p class="lede">
+          We normalize your numbers and run the Six Trap Diagnostic&trade; through a buyer&rsquo;s eyes. The readout carries the Sellable-Numbers Score, a 0 to 100 read of where your company stands on the two numbers a buyer prices: what the earnings are worth and whether the numbers can be believed. Then it puts dollars on both.
+        </p>
+        <ol class="engine-list">
+          {reads.map((r) => (
+            <li class="engine-item">
+              <div>
+                <p><strong>{r.heading}.</strong></p>
+                <p style="margin-top: 8px; color: var(--muted);" set:html={r.body} />
+              </div>
+            </li>
+          ))}
+        </ol>
+        <p style="margin-top: 32px;">
+          The readout closes with the owner-readiness conversation: what the number means for the decision on your table, and what the next 12 to 24 months would need to look like for the trend to be one a buyer pays for.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Pricing and guarantee</span>
+        <h2>Fixed before we begin.</h2>
+        <div class="tier-meta" style="max-width: 560px;">
+          {bands.map((band) => (
+            <div class="tier-row">
+              <span>{band[0]}</span>
+              <span>{band[1]}</span>
+            </div>
+          ))}
+        </div>
+        <p class="lede" style="margin-top: 28px;">
+          The Scan identifies at least 3x its fee in owner-accepted value (recoverable cash, recoverable margin, avoided cost, or dollarized valuation exposure) inside 14 days, validated by you in writing, or you pay nothing. Typical results run 5x to 10x.
+        </p>
+        <p>
+          A 90-Day Decision Resolution signed within 7 days of the readout credits the Scan fee in full. We never guarantee a sale price or a multiple. We don&rsquo;t control the market. We control whether a buyer can believe you. <a href="/guarantee">The guarantee mechanics, in full &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">The filter</span>
+        <h2>Who the Scan is not for.</h2>
+        <p class="lede">
+          Under $5M in revenue, the guarantee math does not hold and we refer out. If you want someone to promise a sale price or find you a buyer, we are not that firm; we do not sell companies. And if you are not selling, the same engine runs without the buyer&rsquo;s lens: the <a href="/diagnostic">Decision Diagnostic</a>, same bands, same guarantee.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="close-section">
+    <div class="container">
+      <div class="container-narrow">
+        <h2>Decide from the numbers. Prove it in the cash.</h2>
+        <p class="lede" style="color: rgba(255,255,255,0.8);">One 30-minute fit call. If it fits, the 14 days start.</p>
+        <a href={CALENDLY} class="btn btn-primary">See if you qualify</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,15 +1,15 @@
 # Canon v2 route renames (from Recovery Engine / Fractional CFO)
-/recovery-engine           /#tiers        301
-/recovery-engine/*         /#tiers        301
-/fractional-cfo            /#tiers        301
-/fractional-cfo/*          /#tiers        301
+/recovery-engine           /#pricing        301
+/recovery-engine/*         /#pricing        301
+/fractional-cfo            /#pricing        301
+/fractional-cfo/*          /#pricing        301
 
 # Legacy offers routes → homepage tier section
-/offers                    /#tiers        301
-/offers/                   /#tiers        301
-/offers/decision-diagnostic    /#tiers    301
-/offers/decision-resolution    /#tiers    301
-/offers/decision-partnership   /#tiers    301
+/offers                    /#pricing        301
+/offers/                   /#pricing        301
+/offers/decision-diagnostic    /diagnostic    301
+/offers/decision-resolution    /#pricing    301
+/offers/decision-partnership   /partnership   301
 
 # /how-it-works is now its own long-form page (no redirect)
 
@@ -24,8 +24,8 @@
 /blog/*                    /perspectives/:splat           301
 
 # Retired M&A landing (canon v3 horizontal) → tiers
-/m-and-a                   /#tiers        301
-/m-and-a/                  /#tiers        301
+/m-and-a                   /#pricing        301
+/m-and-a/                  /#pricing        301
 
 # Retired funded-tech assessment routes (canon v3 horizontal) → home
 /assessment              /          301
