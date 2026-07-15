@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SpokeDoors from '../components/SpokeDoors.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
-const title = 'Finance for the trades | Decisive';
+const title = 'Exit-ready numbers for the trades | Decisive Finance';
 const description =
-  'Your crews earn the margin. Your numbers can\'t prove it. Job costs, WIP, and bid pricing read in dollars, in 14 days, on guarantee.';
+  'The roll-ups are buying shops like yours. They pay for numbers they can believe, not trucks. Job costs and WIP read in dollars, in 14 days, guaranteed.';
 
 const traps = [
   {
@@ -28,37 +29,45 @@ const traps = [
     <div class="hero-inner">
       <span class="eyebrow">For owner-led trades: construction, HVAC, electrical, plumbing</span>
       <h1>
-        <span class="h1-line">Your crews earn the margin.</span>
-        <span class="h1-line h1-line-accent">Your numbers can't prove it.</span>
+        <span class="h1-line">The roll-ups are buying shops like yours.</span>
+        <span class="h1-line h1-line-accent">They pay for numbers, not trucks.</span>
       </h1>
       <p class="hero-subhead">
-        Job costs that land late, WIP nobody trusts, and bids priced to stale costs hide which jobs actually make money. <span class="dollar">We price the answer in dollars.</span> Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days.
+        When the call comes, from a consolidator, a competitor, or your own kid ready to take over, the price lands on earnings somebody can believe, job by job. In 14 days, we show you your shop the way a buyer will, in dollars, guaranteed: <span class="dollar">at least 3x the fee in owner-accepted value identified, or you pay nothing.</span>
       </p>
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
+        <a class="btn btn-primary" href={CALENDLY}>See if you qualify</a>
       </div>
-      <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing where to look first.</p>
+      <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing what a buyer would question first.</p>
     </div>
   </header>
 
   <section>
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow">Where the margin hides in the trades</span>
+        <span class="section-eyebrow">Why now</span>
         <h2>The margin is earned on the job. It disappears in the books.</h2>
         <p class="lede">
-          WIP accuracy, over and under-billing, retainage, job costs that land on the job that spent them, and which GC relationships actually pay: the numbers that decide what to bid next. Most contractors bid this week on last quarter's math.
+          WIP nobody trusts, over and under-billing, retainage, job costs that land 60 days late, and bids priced on last quarter&rsquo;s math. You can run a shop that way for years. You can&rsquo;t sell one that way, and every month the numbers stay soft moves the sale date a month.
         </p>
-        <div class="category-pull">
-          Your books tell you what happened. They can't tell you what to do next.
-        </div>
         <p>
-          The decisions weren't wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the report. Nobody is paid to make the next call defensible, and that is the job we do.
+          The mess isn&rsquo;t negligence. Growth covered it, and the people producing the numbers were never paid to look. But a buyer will look, at job-level margin, at WIP accuracy, at how much of the shop lives in your head, and whatever they can&rsquo;t verify comes off the price.
         </p>
         <div class="delay-callout">
-          We don't audit the past. We make the next call defensible.
+          We don&rsquo;t audit the past. We make the company worth believing.
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Why this keeps happening</span>
+        <h2>Your books tell you what happened. They can&rsquo;t tell you what to do next.</h2>
+        <p class="lede">
+          The decisions weren&rsquo;t wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the report. Nobody is paid to prove which jobs and which GC relationships actually pay, and that is the job we do.
+        </p>
       </div>
     </div>
   </section>
@@ -66,9 +75,9 @@ const traps = [
   <section class="traps">
     <div class="container">
       <div class="section-eyebrow">Where the value is trapped</div>
-      <h2>Three traps that eat a contractor's margin.</h2>
+      <h2>Three traps that eat a shop&rsquo;s margin.</h2>
       <p class="lede" style="color: rgba(255,255,255,0.88);">
-        The Six Trap Diagnostic&trade; reads your numbers through the decisions that produced them. Three of the six do the most damage in the trades. The patterns are structural, not failures of the owner.
+        The Six Trap Diagnostic&trade; reads your numbers through the decisions that produced them. Three of the six do the most damage in the trades, and every one of them shows up in a buyer&rsquo;s read with a discount attached.
       </p>
       <div class="trap-grid">
         {traps.map((t, i) => (
@@ -80,7 +89,7 @@ const traps = [
         ))}
       </div>
       <div class="traps-footer">
-        We name the stack, price each one in dollars, and turn the read into a plan. We don't audit the past. We make the next call defensible.
+        We name the stack, price each one in dollars, and turn the read into a plan a buyer can believe.
       </div>
     </div>
   </section>
@@ -95,49 +104,45 @@ const traps = [
         <span class="label">Manufacturer, $15M revenue</span>
         <h4>The account nobody would touch was the margin everyone was looking for.</h4>
         <p>
-          The biggest account felt untouchable, so the math never got run. Full cost allocation showed it was funded by everyone else. We repriced and reset terms instead of protecting the logo. The same pattern lives in a contractor's largest GC relationship.
+          The largest customer was the least profitable. The account felt untouchable, so the math never got run, and full cost allocation showed it was funded by everyone else. We repriced and reset terms instead of protecting the logo. The GC account you protect works exactly the same way.
         </p>
         <div class="calc">
-          <div><span class="k">Least profitable account</span><span class="v accent">The largest one</span></div>
-          <div><span class="k">Margins moved</span><span class="v">15% to 22%</span></div>
+          <div><span class="k">Least profitable account</span><span class="v">The largest one</span></div>
+          <div><span class="k">Margins moved</span><span class="v accent">15% to 22%</span></div>
           <div><span class="k">Time to recover</span><span class="v">90 days</span></div>
         </div>
       </div>
+      <div class="worked" style="margin-top: 24px;">
+        <span class="label">Professional services, $30M revenue</span>
+        <h4>Cash was trapped in a billing cadence nobody had revisited.</h4>
+        <p>
+          Clean-looking reports masked the leak. We rebuilt the billing and close rhythm and pulled the working capital forward. In the trades, the same leak lives in progress billings, retainage, and change orders that never got invoiced.
+        </p>
+        <div class="calc">
+          <div><span class="k">Working capital recovered</span><span class="v accent">$380,000</span></div>
+          <div><span class="k">Close time</span><span class="v">22 to 3 days</span></div>
+        </div>
+      </div>
       <p style="font-size: 14px; color: var(--muted); margin-top: 22px;">
-        Anonymized by segment and revenue band until attribution is confirmed. Trades outcomes available in conversation.
+        Anonymized by segment and revenue band until attribution is confirmed.
       </p>
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">Tiers and pricing</span>
-        <h2>Find. Install. Run.</h2>
-        <p class="lede">
-          Most owners start with the 14-day Decision Diagnostic and move into the 90-Day Resolution. Pricing is banded by revenue, and the floor is $5M.
-        </p>
-        <p class="promise-line">
-          The Diagnostic promise: at least 3x the fee in owner-accepted value identified by Day 14, or you pay nothing.
-        </p>
-        <div class="hero-cta-row" style="margin-top: 8px;">
-          <a class="btn btn-secondary" href="/#tiers">See tiers and pricing</a>
-          <a class="btn btn-secondary" href="/guarantee">Read the guarantee</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <SpokeDoors
+    scanLine="A consolidator calling, a succession, a partner buyout? The Scan shows you your shop the way a buyer will, in dollars, in 14 days: what diligence would knock off your number, where the value expansion lives, and the first three moves. From $10,000, fixed."
+    diagnosticLine="Same engine, without the buyer's lens: which jobs, crews, and GC relationships actually make money, where the recoverable value sits, and what to bid next. The same numbers are costing you every month, sale or no sale."
+  />
 
   <section class="close-section">
     <div class="container">
-      <span class="section-eyebrow">Book a fit call</span>
+      <span class="section-eyebrow">Book the fit call</span>
       <h2>Decide from the numbers. Prove it in the cash.</h2>
       <p class="lede">
-        In 14 days you know what your money is actually doing, in dollars: the traps that are running, the recoverable value, and the first three moves, whether or not we ever work together again. It starts with one 30-minute call.
+        One 30-minute fit call. If it fits, the 14 days start. If your bonding agent, banker, or CPA sent you this page, this is the work they meant.
       </p>
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
+        <a class="btn btn-primary" href={CALENDLY}>See if you qualify</a>
       </div>
     </div>
   </section>
@@ -145,5 +150,4 @@ const traps = [
 
 <style>
   .hero-microcopy { font-size: 15px; color: rgba(255, 255, 255, 0.7); margin: 10px 0 0; }
-  .promise-line { font-family: Inter, sans-serif; font-weight: 600; color: var(--ink); margin-top: 8px; }
 </style>

@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SpokeDoors from '../components/SpokeDoors.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
-const title = 'Finance for manufacturers | Decisive';
+const title = 'Exit-ready numbers for manufacturers | Decisive Finance';
 const description =
-  'Which product actually makes money? We price the answer in dollars, in 14 days, on guarantee. Margin recovered 15% to 22% in 90 days at a $15M manufacturer.';
+  "A buyer won't pay for the factory. They'll pay for the numbers behind it. A $25M manufacturer's modeled exit value roughly doubled. 14 days, guaranteed.";
 
 const traps = [
   {
@@ -26,39 +27,47 @@ const traps = [
 <BaseLayout title={title} description={description}>
   <header class="hero">
     <div class="hero-inner">
-      <span class="eyebrow">For manufacturers and consumer products companies</span>
+      <span class="eyebrow">For manufacturers and consumer products companies, $5M to $50M</span>
       <h1>
-        <span class="h1-line">Revenue is easy to see.</span>
-        <span class="h1-line h1-line-accent">Which product makes money is not.</span>
+        <span class="h1-line">A buyer won&rsquo;t pay for the factory.</span>
+        <span class="h1-line h1-line-accent">They&rsquo;ll pay for the numbers behind it.</span>
       </h1>
       <p class="hero-subhead">
-        The aggregate P&amp;L hides which products carry the business and which quietly bleed. <span class="dollar">We price the answer in dollars.</span> Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days.
+        The PE letters are already arriving, and a sale price is a multiple times earnings. Both numbers live in books built for the tax return, not the deal. In 14 days, we show you your company the way a buyer will, in dollars, guaranteed: <span class="dollar">at least 3x the fee in owner-accepted value identified, or you pay nothing.</span>
       </p>
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
+        <a class="btn btn-primary" href={CALENDLY}>See if you qualify</a>
       </div>
-      <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing where to look first.</p>
+      <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing what a buyer would question first.</p>
     </div>
   </header>
 
   <section>
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow">Where the margin hides in a product business</span>
-        <h2>The margin is on the floor. The P&amp;L can't see it.</h2>
+        <span class="section-eyebrow">Why now</span>
+        <h2>The trailing-twelve clock doesn&rsquo;t start until the numbers are true.</h2>
         <p class="lede">
-          Input-cost drift, phantom discounts, standard versus actual cost, product-line and SKU profitability, customer concentration: the numbers that decide which products deserve your capacity. Most product companies run for years without any of them allocated to reality.
+          Every month you wait moves the sale date a month. Most owners aren&rsquo;t waiting for the right market. They&rsquo;re waiting for numbers they&rsquo;d be willing to show: standard costs that match reality, product lines allocated to the truth, a customer list a buyer doesn&rsquo;t price as risk.
         </p>
-        <div class="category-pull">
-          Your books tell you what happened. They can't tell you what to do next.
-        </div>
         <p>
-          The decisions weren't wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the report. Nobody is paid to make the next call defensible, and that is the job we do.
+          The mess isn&rsquo;t negligence. Growth covered it, and the people producing the numbers were never paid to look. But a buyer will look, at input-cost drift, phantom discounts, standard versus actual cost, SKU profitability, and concentration, and whatever they can&rsquo;t believe comes off the price.
         </p>
         <div class="delay-callout">
-          We don't audit the past. We make the next call defensible.
+          We don&rsquo;t audit the past. We make the company worth believing.
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Why this keeps happening</span>
+        <h2>Your books tell you what happened. They can&rsquo;t tell you what to do next.</h2>
+        <p class="lede">
+          The decisions weren&rsquo;t wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the report. Nobody is paid to make your company worth believing, and that is the job we do.
+        </p>
       </div>
     </div>
   </section>
@@ -68,7 +77,7 @@ const traps = [
       <div class="section-eyebrow">Where the value is trapped</div>
       <h2>Three traps that hide inside a clean P&amp;L.</h2>
       <p class="lede" style="color: rgba(255,255,255,0.88);">
-        The Six Trap Diagnostic&trade; reads your numbers through the decisions that produced them. Three of the six do the most damage in a product business. The patterns are structural, not failures of the owner.
+        The Six Trap Diagnostic&trade; reads your numbers through the decisions that produced them. Three of the six do the most damage in a product business, and every one of them shows up in diligence with a discount attached.
       </p>
       <div class="trap-grid">
         {traps.map((t, i) => (
@@ -80,7 +89,7 @@ const traps = [
         ))}
       </div>
       <div class="traps-footer">
-        We name the stack, price each one in dollars, and turn the read into a plan. We don't audit the past. We make the next call defensible.
+        We name the stack, price each one in dollars, and turn the read into a plan a buyer can believe.
       </div>
     </div>
   </section>
@@ -93,9 +102,9 @@ const traps = [
       </div>
       <div class="worked">
         <span class="label">Consumer products manufacturer, $25M revenue</span>
-        <h4>The gap was never the market. It was the numbers.</h4>
+        <h4>The bankers said $25M to $35M, on books the owner didn&rsquo;t trust.</h4>
         <p>
-          Bankers' estimate was $25M to $35M, on books the owner didn't trust. Mispriced inputs, phantom discounts, and revenue never brought over. Pricing was anchored to costs that had moved years earlier, and the aggregate P&amp;L hid which products carried the business. We rebuilt the numbers and modeled the path forward.
+          Mispriced inputs, phantom discounts, and revenue never brought over. Pricing was anchored to costs that had moved years earlier, and the aggregate P&amp;L hid which products carried the business. We rebuilt the numbers and modeled the path forward.
         </p>
         <div class="calc">
           <div><span class="k">Banker's estimate</span><span class="v">$25M to $35M</span></div>
@@ -120,35 +129,20 @@ const traps = [
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">Tiers and pricing</span>
-        <h2>Find. Install. Run.</h2>
-        <p class="lede">
-          Most owners start with the 14-day Decision Diagnostic and move into the 90-Day Resolution. Pricing is banded by revenue, and the floor is $5M.
-        </p>
-        <p class="promise-line">
-          The Diagnostic promise: at least 3x the fee in owner-accepted value identified by Day 14, or you pay nothing.
-        </p>
-        <div class="hero-cta-row" style="margin-top: 8px;">
-          <a class="btn btn-secondary" href="/#tiers">See tiers and pricing</a>
-          <a class="btn btn-secondary" href="/guarantee">Read the guarantee</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <SpokeDoors
+    scanLine="A sale, a PE approach, a succession on the table? The Scan shows you your company the way a buyer will, in dollars, in 14 days: what diligence would knock off your number, where the value expansion lives, and the first three moves. From $10,000, fixed."
+    diagnosticLine="Same engine, without the buyer's lens: which products, SKUs, and customers actually make money, where the recoverable value sits, and what to do first. The same numbers are costing you every month, deal or no deal."
+  />
 
   <section class="close-section">
     <div class="container">
-      <span class="section-eyebrow">Book a fit call</span>
+      <span class="section-eyebrow">Book the fit call</span>
       <h2>Decide from the numbers. Prove it in the cash.</h2>
       <p class="lede">
-        In 14 days you know what your money is actually doing, in dollars: the traps that are running, the recoverable value, and the first three moves, whether or not we ever work together again. It starts with one 30-minute call.
+        One 30-minute fit call. If it fits, the 14 days start. If your banker or CPA sent you this page, this is the work they meant.
       </p>
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
+        <a class="btn btn-primary" href={CALENDLY}>See if you qualify</a>
       </div>
     </div>
   </section>
@@ -156,5 +150,4 @@ const traps = [
 
 <style>
   .hero-microcopy { font-size: 15px; color: rgba(255, 255, 255, 0.7); margin: 10px 0 0; }
-  .promise-line { font-family: Inter, sans-serif; font-weight: 600; color: var(--ink); margin-top: 8px; }
 </style>

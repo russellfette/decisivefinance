@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SpokeDoors from '../components/SpokeDoors.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
-const title = 'Finance for EOS and Vistage companies | Decisive';
+const title = 'Finance for EOS and Vistage companies | Decisive Finance';
 const description =
-  'The Scorecard tells you the boat is moving. We tell you if it is pointed at the money. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days.';
+  'The Scorecard tells you the boat is moving. We tell you if it is pointed at the money. Guaranteed 3x your fee in owner-accepted value, in 14 days.';
 
 const traps = [
   {
@@ -32,11 +33,10 @@ const traps = [
         <span class="h1-line h1-line-accent">We tell you if it's pointed at the money.</span>
       </h1>
       <p class="hero-subhead">
-        The Scorecard tracks activity. <span class="dollar">We track which of it makes money.</span> Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.
+        The Scorecard tracks activity. <span class="dollar">We track which of it makes money.</span> Guaranteed 3x your fee in owner-accepted value, in 14 days. Typical 5x to 10x. And when the ownership event arrives, a sale, a PE approach, a succession, the same numbers become the price.
       </p>
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
+        <a class="btn btn-primary" href={CALENDLY}>See if you qualify</a>
       </div>
       <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing which measurables actually track the money.</p>
     </div>
@@ -46,7 +46,7 @@ const traps = [
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">The empty seat</span>
-        <h2>Your Scorecard measures motion. It doesn't measure profit.</h2>
+        <h2>Your Scorecard measures motion. It doesn&rsquo;t measure profit.</h2>
         <p class="lede">
           EOS gives you a Scorecard, Rocks, and an L10. What it assumes, and rarely names, is a Finance seat that can tell you which of those numbers actually makes money. Most operating companies run for years with that seat empty.
         </p>
@@ -54,11 +54,26 @@ const traps = [
           Your books tell you what happened. They can't tell you what to do next.
         </div>
         <p>
-          The decisions weren't wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the report. Nobody is paid to make the next call defensible, and that is the job we do.
+          The decisions weren&rsquo;t wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the report. Nobody is paid to make the next call defensible, and that is the job we do.
         </p>
         <div class="delay-callout">
-          We don't audit the past. We make the next call defensible.
+          We don&rsquo;t audit the past. We make the next call defensible.
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">When the event arrives</span>
+        <h2>One day the Scorecard meets a buyer. Only one of them negotiates.</h2>
+        <p class="lede">
+          A PE letter, a competitor&rsquo;s approach, a succession conversation at the kitchen table: the moment an ownership event forms, every measurable that never tracked money converts to priced risk. A sale price is a multiple times earnings, and buyers only pay for a trend they can believe.
+        </p>
+        <p>
+          The trailing-twelve clock doesn&rsquo;t start until the numbers are true. Every month you wait moves the sale date a month, and the strongest position an EOS company can be in is the one where the Scorecard, the P&amp;L, and the buyer&rsquo;s read all say the same thing.
+        </p>
       </div>
     </div>
   </section>
@@ -80,7 +95,7 @@ const traps = [
         ))}
       </div>
       <div class="traps-footer">
-        We name the stack, price each one in dollars, and turn the read into a plan. We don't audit the past. We make the next call defensible.
+        We name the stack, price each one in dollars, and turn the read into a plan. We don&rsquo;t audit the past. We make the next call defensible.
       </div>
     </div>
   </section>
@@ -89,13 +104,13 @@ const traps = [
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">Proof</span>
-        <h2>An operating company that ran on data, and still wasn't getting the truth from it.</h2>
+        <h2>An operating company that ran on data, and still wasn&rsquo;t getting the truth from it.</h2>
       </div>
       <div class="worked">
         <span class="label">Professional services, $30M revenue</span>
         <h4>A clean close is not a fast one, and neither tells you where the cash is stuck.</h4>
         <p>
-          Cash was trapped in a billing and close cadence nobody had revisited, and clean-looking reports masked the leak. We rebuilt the rhythm, pulled the working capital forward, and put margin on a weekly line of sight.
+          Cash was trapped in a billing and close cadence nobody had revisited, and clean-looking reports masked the leak. We rebuilt the rhythm, pulled the working capital forward, and put margin on a weekly line of sight, numbers settled before the Level 10, so the meeting spends its time on issues, not on debating the data.
         </p>
         <div class="calc">
           <div><span class="k">Working capital recovered</span><span class="v accent">$380,000</span></div>
@@ -109,35 +124,20 @@ const traps = [
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">Tiers and pricing</span>
-        <h2>Find. Install. Run.</h2>
-        <p class="lede">
-          Most owners start with the 14-day Decision Diagnostic and move into the 90-Day Resolution. Pricing is banded by revenue, and the floor is $5M.
-        </p>
-        <p class="promise-line">
-          The Diagnostic promise: at least 3x the fee in owner-accepted value identified by Day 14, or you pay nothing.
-        </p>
-        <div class="hero-cta-row" style="margin-top: 8px;">
-          <a class="btn btn-secondary" href="/#tiers">See tiers and pricing</a>
-          <a class="btn btn-secondary" href="/guarantee">Read the guarantee</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <SpokeDoors
+    scanLine="A sale, a PE approach, a succession forming? The Scan shows you your company the way a buyer will, in dollars, in 14 days: what diligence would knock off your number, where the value expansion lives, and the first three moves. From $10,000, fixed."
+    diagnosticLine="Not selling? The Diagnostic builds the financial measurables that belong on the Scorecard: which products, customers, or jobs actually make money, where the recoverable value sits, and what to do first, settled before the L10."
+  />
 
   <section class="close-section">
     <div class="container">
-      <span class="section-eyebrow">Book a fit call</span>
+      <span class="section-eyebrow">Book the fit call</span>
       <h2>Decide from the numbers. Prove it in the cash.</h2>
       <p class="lede">
-        In 14 days you know what your money is actually doing, in dollars: the traps that are running, the recoverable value, and the first three moves, whether or not we ever work together again. It starts with one 30-minute call.
+        One 30-minute fit call. If it fits, the 14 days start. If your implementer or chair sent you this page, this is the Finance seat they meant.
       </p>
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
+        <a class="btn btn-primary" href={CALENDLY}>See if you qualify</a>
       </div>
     </div>
   </section>
@@ -145,5 +145,4 @@ const traps = [
 
 <style>
   .hero-microcopy { font-size: 15px; color: rgba(255, 255, 255, 0.7); margin: 10px 0 0; }
-  .promise-line { font-family: Inter, sans-serif; font-weight: 600; color: var(--ink); margin-top: 8px; }
 </style>

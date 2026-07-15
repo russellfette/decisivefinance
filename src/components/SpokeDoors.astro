@@ -1,0 +1,62 @@
+---
+// Two doors, every spoke: the Scan (exit face) and the Diagnostic (wound face).
+// Trigger-first per Core v1.4; the second door is mandatory on every lead surface.
+interface Props {
+  scanLine: string;
+  diagnosticLine: string;
+}
+const { scanLine, diagnosticLine } = Astro.props;
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+---
+
+<section class="doors">
+  <div class="container">
+    <div class="container-narrow">
+      <span class="section-eyebrow">Where to start</span>
+      <h2>Two doors. Same engine. Same guarantee.</h2>
+      <p class="lede">
+        Both start with 14 days and end with owner-accepted value in dollars: at least 3x the fee identified, or you pay nothing. Typical results run 5x to 10x.
+      </p>
+    </div>
+    <div class="door-grid">
+      <div class="door-card">
+        <span class="door-label">If an ownership event is on the table</span>
+        <h3>The Sellable-Numbers Scan</h3>
+        <p>{scanLine}</p>
+        <a href="/scan" class="door-link">The Scan, in full &rarr;</a>
+      </div>
+      <div class="door-card">
+        <span class="door-label">If you&rsquo;re not selling</span>
+        <h3>The Decision Diagnostic</h3>
+        <p>{diagnosticLine}</p>
+        <a href="/diagnostic" class="door-link">The Diagnostic, in full &rarr;</a>
+      </div>
+    </div>
+    <div class="container-narrow">
+      <p class="door-note">
+        Pricing is banded by revenue and fixed before we begin: <a href="/#pricing">see the bands</a>. The mechanics are public: <a href="/guarantee">read the guarantee</a>. One next step either way: <a href={CALENDLY}>a 30-minute fit call</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .doors { background: var(--paper); }
+  .door-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 44px; }
+  @media (min-width: 800px) { .door-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
+  .door-card {
+    background: var(--white);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 34px 30px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.18s ease, transform 0.18s ease;
+  }
+  .door-card:hover { border-color: var(--green); transform: translateY(-2px); }
+  .door-label { display: inline-block; font: 700 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: 0.16em; color: var(--orange-ink); margin-bottom: 12px; }
+  .door-card h3 { margin: 0 0 12px; font-size: 22px; }
+  .door-card p { font-size: 15.5px; line-height: 1.6; color: var(--muted); margin: 0 0 20px; flex-grow: 1; }
+  .door-link { font-family: Inter, sans-serif; font-size: 14px; font-weight: 600; margin-top: auto; }
+  .door-note { margin-top: 32px; font-size: 15px; color: var(--muted); }
+</style>

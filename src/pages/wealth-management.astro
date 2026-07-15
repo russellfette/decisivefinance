@@ -1,16 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SpokeDoors from '../components/SpokeDoors.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
-const title = 'Finance for wealth management firms | Decisive';
+const title = 'Exit-ready numbers for RIA practices | Decisive Finance';
 const description =
-  'The AUM is growing. The practice\'s profit is a guess. We find which clients and advisors actually carry the book, in dollars, in 14 days, on guarantee.';
+  "Buyers won't price your AUM. They'll price the profit behind it. Client and advisor economics in dollars, in 14 days, guaranteed 3x the fee or free.";
 
 const traps = [
   {
     name: 'Loss Aversion',
-    body: 'The large household or senior advisor you are most afraid to touch is often the one capping the practice\'s margin. The math never gets run because the answer feels dangerous.',
+    body: "The large household or senior advisor you are most afraid to touch is often the one capping the practice's margin. The math never gets run because the answer feels dangerous.",
   },
   {
     name: 'Certainty Illusion',
@@ -26,39 +27,47 @@ const traps = [
 <BaseLayout title={title} description={description}>
   <header class="hero">
     <div class="hero-inner">
-      <span class="eyebrow">For wealth management and RIA firms</span>
+      <span class="eyebrow">For wealth management and RIA firms, $5M to $50M</span>
       <h1>
-        <span class="h1-line">The AUM is growing.</span>
-        <span class="h1-line h1-line-accent">The practice's profit is a guess.</span>
+        <span class="h1-line">A buyer won&rsquo;t price your AUM.</span>
+        <span class="h1-line h1-line-accent">They&rsquo;ll price the profit behind it.</span>
       </h1>
       <p class="hero-subhead">
-        In a practice, the value hides in which clients and advisors actually carry it. <span class="dollar">We price the answer in dollars.</span> Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days.
+        The consolidators are calling every practice your size, and every offer lands on the same questions: which households actually make money, how much of the book walks with an advisor, and whether the earnings survive a second look. In 14 days, we show you your practice the way a buyer will, in dollars, guaranteed: <span class="dollar">at least 3x the fee in owner-accepted value identified, or you pay nothing.</span>
       </p>
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
+        <a class="btn btn-primary" href={CALENDLY}>See if you qualify</a>
       </div>
-      <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing where to look first.</p>
+      <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing what a buyer would question first.</p>
     </div>
   </header>
 
   <section>
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow">Where the profit hides in a practice</span>
-        <h2>The AUM is visible. What it earns you is not.</h2>
+        <span class="section-eyebrow">Why now</span>
+        <h2>The multiple lands on earnings somebody can believe.</h2>
         <p class="lede">
-          Client and advisor profitability, the quality of recurring fee revenue, the split between fee and commission, and what each relationship actually costs to serve: the numbers that decide where the practice's time goes. Most books grow for years without any of them run.
+          Most owners aren&rsquo;t waiting for the right market. They&rsquo;re waiting for numbers they&rsquo;d be willing to show: household-level profitability instead of blended AUM, advisor economics that don&rsquo;t depend on one name, growth you can separate from market beta.
         </p>
-        <div class="category-pull">
-          Your books tell you what happened. They can't tell you what to do next.
-        </div>
         <p>
-          The decisions weren't wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the report. Nobody is paid to make the next call defensible, and that is the job we do.
+          The mess isn&rsquo;t negligence. Growth covered it, and the people producing the numbers were never paid to look. But a buyer will look, at fee realization, at service cost per household, at concentration in a founder&rsquo;s book, and whatever they can&rsquo;t believe comes off the price.
         </p>
         <div class="delay-callout">
-          We don't audit the past. We make the next call defensible.
+          We don&rsquo;t audit the past. We make the practice worth believing.
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Why this keeps happening</span>
+        <h2>Your books tell you what happened. They can&rsquo;t tell you what to do next.</h2>
+        <p class="lede">
+          The decisions weren&rsquo;t wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the custodian report. Nobody is paid to prove which clients and advisors actually carry the practice, and that is the job we do.
+        </p>
       </div>
     </div>
   </section>
@@ -66,9 +75,9 @@ const traps = [
   <section class="traps">
     <div class="container">
       <div class="section-eyebrow">Where the value is trapped</div>
-      <h2>Three traps behind a growing book.</h2>
+      <h2>Three traps that hide inside a growing book.</h2>
       <p class="lede" style="color: rgba(255,255,255,0.88);">
-        The Six Trap Diagnostic&trade; reads your numbers through the decisions that produced them. Three of the six do the most damage in a wealth practice. The patterns are structural, not failures of the owner.
+        The Six Trap Diagnostic&trade; reads your numbers through the decisions that produced them. Three of the six do the most damage in a practice, and every one of them shows up in a buyer&rsquo;s read with a discount attached.
       </p>
       <div class="trap-grid">
         {traps.map((t, i) => (
@@ -80,7 +89,7 @@ const traps = [
         ))}
       </div>
       <div class="traps-footer">
-        We name the stack, price each one in dollars, and turn the read into a plan. We don't audit the past. We make the next call defensible.
+        We name the stack, price each one in dollars, and turn the read into a plan a buyer can believe.
       </div>
     </div>
   </section>
@@ -95,7 +104,7 @@ const traps = [
         <span class="label">Professional services, $30M revenue</span>
         <h4>A clean close is not a fast one, and neither tells you where the cash is stuck.</h4>
         <p>
-          Cash was trapped in a billing and close cadence nobody had revisited, and clean-looking reports masked the leak. We rebuilt the rhythm, pulled the working capital forward, and put margin on a weekly line of sight. A fee-based practice runs the same play.
+          Cash was trapped in a billing and close cadence nobody had revisited, and clean-looking reports masked the leak. We rebuilt the rhythm, pulled the working capital forward, and put margin on a weekly line of sight. A practice&rsquo;s version of this leak lives in fee schedules, service models, and households nobody has re-priced.
         </p>
         <div class="calc">
           <div><span class="k">Working capital recovered</span><span class="v accent">$380,000</span></div>
@@ -109,35 +118,20 @@ const traps = [
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">Tiers and pricing</span>
-        <h2>Find. Install. Run.</h2>
-        <p class="lede">
-          Most owners start with the 14-day Decision Diagnostic and move into the 90-Day Resolution. Pricing is banded by revenue, and the floor is $5M.
-        </p>
-        <p class="promise-line">
-          The Diagnostic promise: at least 3x the fee in owner-accepted value identified by Day 14, or you pay nothing.
-        </p>
-        <div class="hero-cta-row" style="margin-top: 8px;">
-          <a class="btn btn-secondary" href="/#tiers">See tiers and pricing</a>
-          <a class="btn btn-secondary" href="/guarantee">Read the guarantee</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <SpokeDoors
+    scanLine="A consolidator's letter, a succession, a partner buy-in? The Scan shows you your practice the way a buyer will, in dollars, in 14 days: what diligence would knock off your number, where the value expansion lives, and the first three moves. From $10,000, fixed."
+    diagnosticLine="Same engine, without the buyer's lens: which households and advisors actually make money, where the recoverable value sits, and what to do first. The same numbers are costing the practice every month, sale or no sale."
+  />
 
   <section class="close-section">
     <div class="container">
-      <span class="section-eyebrow">Book a fit call</span>
+      <span class="section-eyebrow">Book the fit call</span>
       <h2>Decide from the numbers. Prove it in the cash.</h2>
       <p class="lede">
-        In 14 days you know what the practice's money is actually doing, in dollars: the traps that are running, the recoverable value, and the first three moves, whether or not we ever work together again. It starts with one 30-minute call.
+        One 30-minute fit call. If it fits, the 14 days start. If your custodian contact or CPA sent you this page, this is the work they meant.
       </p>
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
+        <a class="btn btn-primary" href={CALENDLY}>See if you qualify</a>
       </div>
     </div>
   </section>
@@ -145,5 +139,4 @@ const traps = [
 
 <style>
   .hero-microcopy { font-size: 15px; color: rgba(255, 255, 255, 0.7); margin: 10px 0 0; }
-  .promise-line { font-family: Inter, sans-serif; font-weight: 600; color: var(--ink); margin-top: 8px; }
 </style>

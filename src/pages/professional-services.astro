@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SpokeDoors from '../components/SpokeDoors.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
-const title = 'Finance for professional services firms | Decisive';
+const title = 'Exit-ready numbers for services firms | Decisive Finance';
 const description =
-  'The billings are visible. The profit behind them is not. $380,000 of working capital recovered and close cut from 22 days to 3 at a $30M firm, in 90 days.';
+  'The firm has to outlive the partners, and the numbers have to prove it can. $380,000 of working capital recovered at a $30M firm. 14 days, guaranteed.';
 
 const traps = [
   {
@@ -26,39 +27,47 @@ const traps = [
 <BaseLayout title={title} description={description}>
   <header class="hero">
     <div class="hero-inner">
-      <span class="eyebrow">For professional services firms</span>
+      <span class="eyebrow">For professional services firms, $5M to $50M</span>
       <h1>
-        <span class="h1-line">The billings are visible.</span>
-        <span class="h1-line h1-line-accent">The profit behind them is not.</span>
+        <span class="h1-line">The firm has to outlive the partners.</span>
+        <span class="h1-line h1-line-accent">The numbers have to prove it can.</span>
       </h1>
       <p class="hero-subhead">
-        Realization leakage, unbilled WIP, and a slow close hide which clients and partners actually make money. <span class="dollar">We price the answer in dollars.</span> Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days.
+        A succession, a merger, a partner exit: every one of them prices the firm on the same question. Can anyone believe the earnings without the partners in the room? In 14 days, we show you your firm the way a buyer or an incoming partner will, in dollars, guaranteed: <span class="dollar">at least 3x the fee in owner-accepted value identified, or you pay nothing.</span>
       </p>
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
+        <a class="btn btn-primary" href={CALENDLY}>See if you qualify</a>
       </div>
-      <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing where to look first.</p>
+      <p class="hero-microcopy">30 minutes with Russ. No pitch. You leave knowing what a buyer would question first.</p>
     </div>
   </header>
 
   <section>
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow">Where the profit hides in a firm</span>
-        <h2>The billings are visible. What actually earns is not.</h2>
+        <span class="section-eyebrow">Why now</span>
+        <h2>The buyout math starts long before the buyout.</h2>
         <p class="lede">
-          Realization leakage, utilization truth, unbilled WIP, client and partner profitability, and the speed of the close: the numbers that decide which work deserves the firm's hours. Most firms bill on all of it and decide on none of it.
+          Whether it&rsquo;s a competitor, a consolidator, or your own next generation writing the check, the price lands on earnings somebody can verify and a book that doesn&rsquo;t walk out the door with a name. Most owners aren&rsquo;t waiting for the right moment. They&rsquo;re waiting for numbers they&rsquo;d be willing to show.
         </p>
-        <div class="category-pull">
-          Your books tell you what happened. They can't tell you what to do next.
-        </div>
         <p>
-          The decisions weren't wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the report. Nobody is paid to make the next call defensible, and that is the job we do.
+          Realization leakage, unbilled WIP, client and partner profitability, a three-week close: none of it is negligence. Growth covered it, and the people producing the numbers were never paid to look. But whoever prices the firm will look, and whatever they can&rsquo;t believe comes off the number.
         </p>
         <div class="delay-callout">
-          We don't audit the past. We make the next call defensible.
+          We don&rsquo;t audit the past. We make the firm worth believing.
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Why this keeps happening</span>
+        <h2>Your books tell you what happened. They can&rsquo;t tell you what to do next.</h2>
+        <p class="lede">
+          The decisions weren&rsquo;t wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Everyone who touches your books is paid to serve something else: the filing, the close, the report. Nobody is paid to prove which clients, matters, and partners actually carry the firm, and that is the job we do.
+        </p>
       </div>
     </div>
   </section>
@@ -66,9 +75,9 @@ const traps = [
   <section class="traps">
     <div class="container">
       <div class="section-eyebrow">Where the value is trapped</div>
-      <h2>Three traps behind a firm's clean reports.</h2>
+      <h2>Three traps that hide behind clean monthly reports.</h2>
       <p class="lede" style="color: rgba(255,255,255,0.88);">
-        The Six Trap Diagnostic&trade; reads your numbers through the decisions that produced them. Three of the six do the most damage in a firm. The patterns are structural, not failures of the owner.
+        The Six Trap Diagnostic&trade; reads your numbers through the decisions that produced them. Three of the six do the most damage in a firm, and every one of them shows up when someone prices the practice.
       </p>
       <div class="trap-grid">
         {traps.map((t, i) => (
@@ -80,7 +89,7 @@ const traps = [
         ))}
       </div>
       <div class="traps-footer">
-        We name the stack, price each one in dollars, and turn the read into a plan. We don't audit the past. We make the next call defensible.
+        We name the stack, price each one in dollars, and turn the read into a plan the next owner can believe.
       </div>
     </div>
   </section>
@@ -89,7 +98,7 @@ const traps = [
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">Proof</span>
-        <h2>A firm that ran on data, and still wasn't getting the truth from it.</h2>
+        <h2>A $30M firm that ran on data, and still wasn&rsquo;t getting the truth from it.</h2>
       </div>
       <div class="worked">
         <span class="label">Professional services, $30M revenue</span>
@@ -109,35 +118,20 @@ const traps = [
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">Tiers and pricing</span>
-        <h2>Find. Install. Run.</h2>
-        <p class="lede">
-          Most owners start with the 14-day Decision Diagnostic and move into the 90-Day Resolution. Pricing is banded by revenue, and the floor is $5M.
-        </p>
-        <p class="promise-line">
-          The Diagnostic promise: at least 3x the fee in owner-accepted value identified by Day 14, or you pay nothing.
-        </p>
-        <div class="hero-cta-row" style="margin-top: 8px;">
-          <a class="btn btn-secondary" href="/#tiers">See tiers and pricing</a>
-          <a class="btn btn-secondary" href="/guarantee">Read the guarantee</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <SpokeDoors
+    scanLine="A succession, a merger, an approach from a consolidator? The Scan shows you your firm the way whoever writes the check will, in dollars, in 14 days: what their diligence would knock off the number, where the value expansion lives, and the first three moves. From $10,000, fixed."
+    diagnosticLine="Same engine, without the buyer's lens: which clients, matters, and partners actually make money, where the recoverable value sits, and what to do first. The same numbers are costing the firm every month, succession or no succession."
+  />
 
   <section class="close-section">
     <div class="container">
-      <span class="section-eyebrow">Book a fit call</span>
+      <span class="section-eyebrow">Book the fit call</span>
       <h2>Decide from the numbers. Prove it in the cash.</h2>
       <p class="lede">
-        In 14 days you know what the firm's money is actually doing, in dollars: the traps that are running, the recoverable value, and the first three moves, whether or not we ever work together again. It starts with one 30-minute call.
+        One 30-minute fit call. If it fits, the 14 days start. If your CPA or a fellow managing partner sent you this page, this is the work they meant.
       </p>
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href={CALENDLY}>Book a fit call</a>
-        <a class="btn btn-secondary" href="/how-it-works">See the 14-day Diagnostic</a>
+        <a class="btn btn-primary" href={CALENDLY}>See if you qualify</a>
       </div>
     </div>
   </section>
@@ -145,5 +139,4 @@ const traps = [
 
 <style>
   .hero-microcopy { font-size: 15px; color: rgba(255, 255, 255, 0.7); margin: 10px 0 0; }
-  .promise-line { font-family: Inter, sans-serif; font-weight: 600; color: var(--ink); margin-top: 8px; }
 </style>
