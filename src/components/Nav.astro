@@ -111,6 +111,16 @@ const CALENDLY = '/#book';
     .nav-dropdown:hover .nav-dropdown-caret {
       transform: rotate(180deg);
     }
+    /* Transparent bridge across the 14px gap so hover survives the trip
+       from the toggle down to the menu items */
+    .nav-dropdown-menu::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: 0;
+      right: 0;
+      height: 14px;
+    }
   }
 
   /* Click/keyboard open via aria state */
