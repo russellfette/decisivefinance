@@ -2,7 +2,7 @@
 title: "The trailing-twelve clock doesn't start until the numbers are true"
 slug: the-exit-clock
 description: "Owners think the sale clock starts when they decide to sell. It starts when the numbers are believable. Every month you wait moves the sale date a month."
-pubDate: 2026-07-28
+pubDate: 2026-05-26
 updatedDate: 2026-07-12
 author: "Russell Fette"
 postType: "framework"

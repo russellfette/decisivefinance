@@ -35,6 +35,8 @@ const toc = headings.filter((h) => h.depth === 2);
 
 const allPosts = (await getCollection('blog'))
   .filter((p) => p.slug !== post.slug)
+  .filter((p) => !p.data.archived)
+  .filter((p) => !p.data.pubDate || p.data.pubDate.getTime() <= Date.now())
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const related: CollectionEntry<'blog'>[] = [];

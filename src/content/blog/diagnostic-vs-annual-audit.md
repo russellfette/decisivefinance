@@ -13,6 +13,7 @@ dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/diagnostic-vs-annual-audit.png"
 featured: false
 readingTime: 7
+archived: true
 ---
 
 ## At a glance

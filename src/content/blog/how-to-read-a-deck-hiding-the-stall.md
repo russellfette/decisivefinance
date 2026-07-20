@@ -7,12 +7,13 @@ updatedDate: 2025-04-07
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"
-pillar: 3
+pillar: 5
 ctaVariant: "investor-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/reading-stalled-deck.png"
 featured: false
 readingTime: 6
+industry: "tech"
 ---
 
 ## At a glance

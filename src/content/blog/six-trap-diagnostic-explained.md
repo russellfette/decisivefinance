@@ -13,6 +13,7 @@ dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/six-trap-diagnostic-explained.png"
 featured: false
 readingTime: 6
+archived: true
 ---
 
 ## At a glance

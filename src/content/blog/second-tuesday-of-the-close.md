@@ -13,6 +13,7 @@ dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/second-tuesday-of-the-close.png"
 featured: false
 readingTime: 7
+archived: true
 ---
 
 ## At a glance

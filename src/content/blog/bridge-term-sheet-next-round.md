@@ -7,12 +7,13 @@ updatedDate: 2025-06-23
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"
-pillar: 3
+pillar: 5
 ctaVariant: "scorecard"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/bridge-term-sheet-next-round.png"
 featured: false
 readingTime: 8
+industry: "tech"
 ---
 
 ## At a glance

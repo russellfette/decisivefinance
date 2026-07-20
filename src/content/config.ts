@@ -16,8 +16,10 @@ const blog = defineCollection({
     ogImage: z.string().optional(),
     featured: z.boolean().default(false),
     readingTime: z.number().optional(),
-    pillar: z.number().int().min(1).max(4).optional(),
+    pillar: z.number().int().min(1).max(5).optional(),
     pillarHub: z.boolean().default(false),
+    industry: z.enum(['tech', 'professional-services', 'manufacturing', 'trades', 'wealth-management']).optional(),
+    archived: z.boolean().default(false),
   }),
 });
 

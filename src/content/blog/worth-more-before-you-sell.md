@@ -2,7 +2,7 @@
 title: "A sale price is a multiple times earnings. Grow both."
 slug: worth-more-before-you-sell
 description: "The years before a sale are when a company's value is made or left on the table. Here are the five levers that move both numbers in the sale-price equation."
-pubDate: 2026-08-04
+pubDate: 2026-05-12
 updatedDate: 2026-07-12
 author: "Russell Fette"
 postType: "framework"

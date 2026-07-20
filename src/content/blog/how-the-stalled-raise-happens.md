@@ -7,12 +7,13 @@ updatedDate: 2025-03-03
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"
-pillar: 1
+pillar: 5
 ctaVariant: "self-assessment"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/stalled-raise.png"
 featured: false
 readingTime: 7
+industry: "tech"
 ---
 
 ## At a glance

@@ -7,13 +7,14 @@ updatedDate: 2025-03-17
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"
-pillar: 3
+pillar: 5
 ctaVariant: "scorecard"
 dominantClaim: "two-quarters-early"
 ogImage: "/og/for-investors-and-boards.png"
 featured: true
 readingTime: 9
-pillarHub: true
+pillarHub: false
+industry: "tech"
 ---
 
 ## At a glance

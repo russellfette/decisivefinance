@@ -7,13 +7,14 @@ updatedDate: 2025-02-10
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"
-pillar: 1
+pillar: 5
 ctaVariant: "self-assessment"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/walking-dead-portco.png"
 featured: true
 readingTime: 11
-pillarHub: true
+pillarHub: false
+industry: "tech"
 ---
 
 ## At a glance

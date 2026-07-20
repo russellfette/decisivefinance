@@ -7,12 +7,13 @@ updatedDate: 2025-05-12
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"
-pillar: 2
+pillar: 5
 ctaVariant: "slide-template"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/board-packet-rewrite.png"
 featured: false
 readingTime: 6
+industry: "tech"
 ---
 
 ## At a glance

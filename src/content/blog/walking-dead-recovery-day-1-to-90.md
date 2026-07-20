@@ -7,12 +7,13 @@ updatedDate: 2025-03-10
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "funded-tech"
-pillar: 1
+pillar: 5
 ctaVariant: "diagnostic-cta"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/walking-dead-recovery.png"
 featured: true
 readingTime: 9
+industry: "tech"
 ---
 
 ## At a glance

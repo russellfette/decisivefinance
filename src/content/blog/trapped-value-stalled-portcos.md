@@ -7,12 +7,13 @@ updatedDate: 2025-06-11
 author: "Russell Fette"
 postType: "framework"
 topicCluster: "recoverable-value"
-pillar: 1
+pillar: 5
 ctaVariant: "trapped-value-preview"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/trapped-value-stalled-portcos.png"
 featured: false
 readingTime: 6
+industry: "tech"
 ---
 
 ## At a glance

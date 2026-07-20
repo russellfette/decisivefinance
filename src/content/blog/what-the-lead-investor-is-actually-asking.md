@@ -7,12 +7,13 @@ updatedDate: 2025-05-26
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"
-pillar: 3
+pillar: 5
 ctaVariant: "scorecard"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/what-the-lead-investor-is-actually-asking.png"
 featured: false
 readingTime: 7
+industry: "tech"
 ---
 
 ## At a glance

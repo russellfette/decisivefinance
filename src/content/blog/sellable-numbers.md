@@ -2,7 +2,7 @@
 title: "You can't sell a company on numbers you don't trust yourself"
 slug: sellable-numbers
 description: "Buyers don't walk over messy numbers. They discount them. Here's what a buyer re-prices, and how to fix it before you go to market."
-pubDate: 2026-07-21
+pubDate: 2026-05-05
 updatedDate: 2026-07-12
 author: "Russell Fette"
 postType: "framework"

@@ -7,12 +7,13 @@ updatedDate: 2025-04-28
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "funded-tech"
-pillar: 1
+pillar: 5
 ctaVariant: "self-assessment"
 dominantClaim: "3x-guarantee-typical-5x-to-10x"
 ogImage: "/og/eighteen-month-mark.png"
 featured: false
 readingTime: 7
+industry: "tech"
 ---
 
 ## At a glance

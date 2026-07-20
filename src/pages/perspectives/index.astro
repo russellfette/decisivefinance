@@ -6,12 +6,14 @@ import PillarIcon from '../../components/PillarIcon.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
+type Post = CollectionEntry<'blog'>;
+
 const posts = (await getCollection('blog'))
+  .filter((p) => !p.data.archived)
   .filter((p) => !p.data.pubDate || p.data.pubDate.getTime() <= Date.now())
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-type Post = CollectionEntry<'blog'>;
-type Pillar = 1 | 2 | 3;
+type Pillar = 1 | 2 | 3 | 4;
 
 function postsForPillar(n: Pillar): Post[] {
   return posts
@@ -19,6 +21,8 @@ function postsForPillar(n: Pillar): Post[] {
     .sort((a, b) => {
       if (a.data.pillarHub && !b.data.pillarHub) return -1;
       if (!a.data.pillarHub && b.data.pillarHub) return 1;
+      if (a.data.featured && !b.data.featured) return -1;
+      if (!a.data.featured && b.data.featured) return 1;
       return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
     });
 }
@@ -26,54 +30,77 @@ function postsForPillar(n: Pillar): Post[] {
 const pillars = [
   {
     n: 1 as Pillar,
-    title: 'The profit paradox',
+    title: 'Sellable numbers',
     eyebrow: 'Pillar 01',
-    tagline: 'Why revenue climbs, profit stalls, and the numbers can not tell you why.',
+    tagline: 'The numbers a buyer can believe, built before the buyer shows up.',
     accent: 'orange',
-    iconKind: 'stalled' as const,
+    iconKind: 'ledger' as const,
     posts: postsForPillar(1),
   },
   {
     n: 2 as Pillar,
-    title: 'Decision-First Finance',
+    title: 'Worth more',
     eyebrow: 'Pillar 02',
-    tagline: 'The method that turns your books into a system of decision.',
+    tagline: 'Pricing, mix, and margin truth: grow the earnings a buyer pays a multiple on.',
     accent: 'green',
-    iconKind: 'method' as const,
+    iconKind: 'scale' as const,
     posts: postsForPillar(2),
   },
   {
     n: 3 as Pillar,
-    title: 'For boards, advisors, and investors',
+    title: 'Surviving diligence',
     eyebrow: 'Pillar 03',
-    tagline: 'For EOS implementers, Vistage chairs, operating partners, and directors.',
+    tagline: 'Deals die in diligence, and it is almost never the business. It is believability.',
     accent: 'ink',
-    iconKind: 'field-guide' as const,
+    iconKind: 'shield' as const,
     posts: postsForPillar(3),
+  },
+  {
+    n: 4 as Pillar,
+    title: 'The exit clock',
+    eyebrow: 'Pillar 04',
+    tagline: 'Timing, triggers, and the cost of waiting for numbers you would be willing to show.',
+    accent: 'orange-ink',
+    iconKind: 'clock' as const,
+    posts: postsForPillar(4),
   },
 ];
 
+const industries = [
+  { slug: 'tech', name: 'Technology', href: '/tech' },
+  { slug: 'professional-services', name: 'Professional services', href: '/professional-services' },
+  { slug: 'manufacturing', name: 'Manufacturing', href: '/manufacturing' },
+  { slug: 'trades', name: 'Trades', href: '/trades' },
+  { slug: 'wealth-management', name: 'Wealth management', href: '/wealth-management' },
+].map((ind) => ({
+  ...ind,
+  count: posts.filter((p) => p.data.pillar === 5 && p.data.industry === ind.slug).length,
+}));
+
+const industryPosts = posts.filter((p) => p.data.pillar === 5);
 const totalPosts = posts.length;
 
 function fmtDate(d: Date) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 }
 
+const SPOKE_CAP = 5;
+
 const title = 'Perspectives | Decisive Finance';
 const description =
-  'Field notes on Decision-First Finance for operating companies, $5M to $50M. The profit paradox, the method, and a field guide for boards and advisors.';
+  'Field notes on the numbers behind what your company is worth. Sellable numbers, worth more, surviving diligence, the exit clock, and how it reads in your industry.';
 ---
 
 <BaseLayout title={title} description={description}>
   <header class="perspectives-hero">
     <div class="perspectives-hero-inner">
       <span class="eyebrow">Perspectives</span>
-      <h1>Field notes on the numbers behind the next call.</h1>
+      <h1>Field notes on the numbers behind what your company is worth.</h1>
       <p class="perspectives-hero-sub">
-        Working theory, recovered dollars, and the operating rhythm that turns your books into a system of decision.
+        A sale price is a multiple times earnings. These pieces work both numbers: growing what the company earns, and making the numbers a buyer can believe. Written from inside the engagements.
       </p>
       <div class="perspectives-hero-meta">
-        <span><strong>Three pillars</strong></span>
+        <span><strong>Four questions</strong> every owner faces</span>
         <span class="dot">&middot;</span>
         <span><strong>{totalPosts}</strong> {totalPosts === 1 ? 'piece' : 'pieces'} live</span>
         <span class="dot">&middot;</span>
@@ -87,7 +114,7 @@ const description =
       <div class="pillars-grid">
         {pillars.map((p) => {
           const hub = p.posts.find((post) => post.data.pillarHub);
-          const spokes = p.posts.filter((post) => !post.data.pillarHub);
+          const spokes = p.posts.filter((post) => !post.data.pillarHub).slice(0, SPOKE_CAP);
           return (
             <div class={`pillar-col pillar-col-${p.accent}`}>
               <div class="pillar-col-header">
@@ -100,7 +127,7 @@ const description =
               </div>
               {hub && (
                 <a class="hub-card" href={`/perspectives/${hub.slug}/`}>
-                  <span class="hub-card-pill">Hub piece</span>
+                  <span class="hub-card-pill">Start here</span>
                   <h3 class="hub-card-title">{hub.data.title}</h3>
                   <p class="hub-card-desc">{hub.data.description}</p>
                   <div class="hub-card-meta">
@@ -141,13 +168,52 @@ const description =
     </div>
   </section>
 
+  <section class="industry-section">
+    <div class="container">
+      <div class="industry-header">
+        <span class="section-eyebrow">By industry</span>
+        <h2 class="industry-h2">Read it in the language of your business.</h2>
+        <p class="industry-sub">
+          The same two numbers, told in the words of your industry: what a buyer prices, where the margin hides, and what diligence questions first.
+        </p>
+      </div>
+      <div class="industry-grid">
+        {industries.map((ind) => (
+          <a class="industry-card" href={ind.href}>
+            <span class="industry-card-icon"><PillarIcon kind="industry" size={24} /></span>
+            <h3>{ind.name}</h3>
+            <span class="industry-card-meta">
+              {ind.count > 0 ? `${ind.count} field notes` : 'Landing page live'}
+            </span>
+          </a>
+        ))}
+      </div>
+      {industryPosts.length > 0 && (
+        <ul class="industry-post-list">
+          {industryPosts.slice(0, 6).map((s) => (
+            <li>
+              <a class="spoke" href={`/perspectives/${s.slug}/`}>
+                <h4>{s.data.title}</h4>
+                <div class="spoke-meta">
+                  <span>Technology</span>
+                  <span class="dot">&middot;</span>
+                  <span>{fmtDate(s.data.pubDate)}</span>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+
   <section class="close-section">
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow" style="color: var(--orange);">Stop reading. Start deciding.</span>
-        <h2>The writing is free. The Diagnostic pays for itself.</h2>
+        <h2>The writing is free. The Scan pays for itself.</h2>
         <p class="lede" style="color: rgba(255,255,255,0.8);">
-          Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. The owners who book usually started in the field notes.
+          At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. The owners who book usually started in the field notes.
         </p>
         <div class="hero-cta-row">
           <a href={CALENDLY} class="btn btn-primary">Book a fit call</a>
@@ -215,14 +281,14 @@ const description =
   }
   .perspectives-hero-meta .dot { opacity: 0.4; }
 
-  /* 3-column pillars grid */
+  /* 2x2 pillars grid */
   .pillars-grid-section {
-    padding: 80px 32px 100px;
+    padding: 80px 32px 72px;
     background: var(--white);
   }
   .pillars-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
   }
   .pillar-col {
@@ -240,6 +306,7 @@ const description =
   .pillar-col-orange { --accent: var(--orange); }
   .pillar-col-green  { --accent: var(--green); }
   .pillar-col-ink    { --accent: var(--ink); }
+  .pillar-col-orange-ink { --accent: var(--orange-ink); }
 
   .pillar-col-header {
     margin-bottom: 22px;
@@ -357,12 +424,8 @@ const description =
     text-decoration: none;
     transition: color 0.15s ease;
   }
-  .spoke:hover {
-    opacity: 1;
-  }
-  .spoke:hover h4 {
-    color: var(--accent);
-  }
+  .spoke:hover { opacity: 1; }
+  .spoke:hover h4 { color: var(--accent); }
   .spoke h4 {
     font-family: Inter, sans-serif;
     font-size: 15px;
@@ -384,12 +447,91 @@ const description =
   }
   .spoke-meta .dot { opacity: 0.5; }
 
+  /* Industry band */
+  .industry-section {
+    padding: 24px 32px 96px;
+    background: var(--white);
+  }
+  .industry-header { max-width: 760px; margin-bottom: 32px; }
+  .industry-h2 {
+    font-size: clamp(28px, 3.4vw, 40px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin: 0 0 14px;
+  }
+  .industry-sub {
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--muted);
+    margin: 0;
+  }
+  .industry-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .industry-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--paper);
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    padding: 22px 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .industry-card:hover {
+    border-color: var(--green);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(24, 34, 40, 0.08);
+    opacity: 1;
+  }
+  .industry-card-icon { color: var(--green); display: inline-flex; }
+  .industry-card h3 {
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.2;
+  }
+  .industry-card-meta {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: auto;
+  }
+  .industry-post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: 48px;
+    border-top: 1px solid var(--hairline);
+  }
+  .industry-post-list li {
+    border-bottom: 1px solid var(--hairline);
+    break-inside: avoid;
+  }
+  .industry-post-list .spoke:hover h4 { color: var(--green); }
+
   @media (max-width: 1100px) {
     .pillars-grid { grid-template-columns: 1fr; gap: 22px; }
-    .pillars-grid-section { padding: 56px 24px 72px; }
+    .pillars-grid-section { padding: 56px 24px 48px; }
+    .industry-grid { grid-template-columns: repeat(2, 1fr); }
+    .industry-post-list { columns: 1; }
   }
   @media (max-width: 720px) {
     .perspectives-hero { padding: 64px 24px 48px; }
     .pillar-col { padding: 24px 22px 18px; }
+    .industry-section { padding: 16px 24px 64px; }
+    .industry-grid { grid-template-columns: 1fr; }
   }
 </style>
