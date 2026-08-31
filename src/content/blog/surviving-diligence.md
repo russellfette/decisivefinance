@@ -62,4 +62,4 @@ The Sellable-Numbers Scan is built to surface exactly this. In 14 days, in dolla
 
 If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals and want to talk about protecting a specific one, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch either way.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

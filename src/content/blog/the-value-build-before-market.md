@@ -54,4 +54,4 @@ The Sellable-Numbers Scan is where the build starts: it finds the value and doll
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

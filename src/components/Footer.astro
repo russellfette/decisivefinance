@@ -36,7 +36,8 @@ const LINKEDIN = 'https://linkedin.com/in/russellfette';
     </div>
   </div>
   <div class="footer-copy">
-    © {year} Decisive Finance.
+    <p>© {year} Decisive Finance.</p>
+    <p class="footer-marks">The Financial Rhythm System&trade; and Six Trap Diagnostic&trade; are trademarks of Decisive Finance.</p>
   </div>
 </footer>
 
@@ -129,6 +130,13 @@ const LINKEDIN = 'https://linkedin.com/in/russellfette';
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     font-size: 12px;
     color: rgba(255, 255, 255, 0.4);
+  }
+  .footer-copy p {
+    margin: 0;
+  }
+  .footer-marks {
+    margin-top: 6px;
+    color: rgba(255, 255, 255, 0.32);
   }
   @media (max-width: 720px) {
     .footer-inner {

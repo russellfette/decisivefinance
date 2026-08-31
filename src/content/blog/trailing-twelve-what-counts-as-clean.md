@@ -54,4 +54,4 @@ The Sellable-Numbers Scan tells you, in 14 days, how clean your trailing twelve 
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

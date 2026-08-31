@@ -77,4 +77,4 @@ If you own the company and a sale is anywhere in the next three years, [book a f
 
 Decide from the numbers. Prove it in the cash.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

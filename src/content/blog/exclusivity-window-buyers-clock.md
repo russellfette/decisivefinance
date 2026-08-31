@@ -75,4 +75,4 @@ If you own the company and an LOI is anywhere on the horizon, [book a fit call](
 
 Decide from the numbers. Prove it in the cash.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

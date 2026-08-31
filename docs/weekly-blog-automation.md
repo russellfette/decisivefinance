@@ -43,3 +43,11 @@ Never push, never post. Russ ships, and he voices every external word.
 - Never guarantee a sale price or a multiple. State the guarantee in dollars,
   never in Sellable-Numbers Score points.
 - No dashes of any kind. Ranges use "to". Dollar sign always.
+- The methodology is the Financial Rhythm System (FRS), decided 2026-08-12.
+  "Financial Rhythms" standing alone is the retired pre-Decisive DBA and never
+  appears on a live surface. Every post closes with the signature block exactly
+  as written here, pulled from this line and never from memory:
+
+  `*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*`
+
+  If a sibling post shows any other form, that post is stale, not the pattern.

@@ -58,4 +58,4 @@ The Sellable-Numbers Scan rebuilds realized price along with the rest of the buy
 
 If you suspect the gap is there, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

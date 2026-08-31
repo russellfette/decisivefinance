@@ -64,4 +64,4 @@ That is what the Sellable-Numbers Scan is built to find. In 14 days, in dollars,
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch. A more valuable company and the numbers to prove it is the whole job.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

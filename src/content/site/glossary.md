@@ -48,7 +48,7 @@ A one-page decision artifact that frames a material decision as Keep, Kill, or R
 
 **See:** [The one-page decision slide](/perspectives/one-page-decision-slide-for-boards)
 
-## 8. Financial Rhythms™
+## 8. The Financial Rhythm System™
 
 The operating cadence that keeps Decision-First Finance running after a Diagnostic ends: a weekly decision cadence, a monthly deep dive, and a quarterly model rebuild. The rhythm a Resolution installs and a Partnership runs.
 

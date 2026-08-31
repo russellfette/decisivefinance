@@ -58,4 +58,4 @@ The Sellable-Numbers Scan is Decision-First Finance aimed at your exit: in 14 da
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

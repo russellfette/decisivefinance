@@ -1,7 +1,7 @@
 ---
-title: "Financial Rhythms: the monthly cadence that builds value to market"
+title: "The Financial Rhythm System: the monthly cadence that builds value to market"
 slug: financial-rhythm-system-monthly-cadence
-description: "Believable numbers and a growing value don't hold on their own. Financial Rhythms is the weekly, monthly, quarterly cadence that keeps them true through the run to a sale."
+description: "Believable numbers and a growing value don't hold on their own. The Financial Rhythm System is the weekly, monthly, quarterly cadence that keeps them true through the run to a sale."
 pubDate: 2026-01-20
 updatedDate: 2026-07-12
 author: "Russell Fette"
@@ -18,10 +18,10 @@ readingTime: 6
 ## At a glance
 
 - Fixing the numbers once doesn't hold. Without a cadence, the close drifts stale, pricing drifts out of line, and the value you built starts leaking back out.
-- Financial Rhythms™ is the weekly, monthly, and quarterly cadence that keeps the numbers true and the value growing across the 12 to 24 months before a sale.
+- The Financial Rhythm System™ is the weekly, monthly, and quarterly cadence that keeps the numbers true and the value growing across the 12 to 24 months before a sale.
 - It's the engine of the Run tier, the Exit-Value Partnership: a more valuable company and the numbers to prove it, built on a rhythm rather than a one-time cleanup.
 
-A value build is not an event, it's a program, and programs need a cadence or they decay. This piece is about Financial Rhythms™, the operating cadence that keeps believable numbers believable and a rising value rising, through the run to market.
+A value build is not an event, it's a program, and programs need a cadence or they decay. This piece is about the Financial Rhythm System™, the operating cadence that keeps believable numbers believable and a rising value rising, through the run to market.
 
 ## Why does a one-time fix decay?
 
@@ -53,4 +53,4 @@ The Sellable-Numbers Scan is where the rhythm starts, with the value found and d
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

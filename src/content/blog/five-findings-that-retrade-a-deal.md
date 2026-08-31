@@ -55,4 +55,4 @@ The Sellable-Numbers Scan runs the buyer's read on your side first, in dollars, 
 
 If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals and want to protect a specific one, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch either way.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

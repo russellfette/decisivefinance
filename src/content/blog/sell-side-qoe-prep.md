@@ -55,4 +55,4 @@ The Sellable-Numbers Scan is the fast, dollarized front end of that prep: in 14 
 
 If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals and want to get a client ready, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

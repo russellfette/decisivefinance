@@ -56,4 +56,4 @@ The Sellable-Numbers Scan is a fast, independent read you can point a client to:
 
 If you run deals and want to protect one, [book a fit call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

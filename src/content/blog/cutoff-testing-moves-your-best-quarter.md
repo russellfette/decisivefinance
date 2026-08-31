@@ -71,4 +71,4 @@ If you own the company, [book a fit call](https://calendly.com/russell-decisive/
 
 Decide from the numbers. Prove it in the cash.
 
-*Russell Fette · Decisive Finance · Creator of Financial Rhythms™*
+*Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*
