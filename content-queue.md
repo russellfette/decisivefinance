@@ -10,6 +10,11 @@ date.
 
 ## How selection works
 
+0. **Mode, decided before anything else.** If 6 or more consecutive Tuesdays
+   ahead are already filled, the run stops drafting blog posts and switches to
+   drafting the LinkedIn repurposes that publishing posts are missing. A row
+   below naming the open slot beats the cap. `docs/weekly-blog-automation.md`
+   carries the mode table.
 1. **Slot.** The first Tuesday after today with no post already dated to it.
    Slots come from `pubDate` frontmatter in `src/content/blog/`, so the corpus
    is the calendar. There is no second list to keep in sync.

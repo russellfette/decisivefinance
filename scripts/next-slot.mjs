@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // next-slot.mjs
-// Picks the next publish slot and the pillar that is due, from repo state only.
+// Decides what the weekly content run should do, from repo state only.
 // No dependency on OneDrive, the editorial calendar, or any doc outside this repo.
 //
 // Why this exists: the content-engine planning docs in the canon repo
@@ -8,13 +8,24 @@
 // content schedule) are not listed CURRENT in CANON-INDEX v2.2. They are
 // flagged there as built on the retired funded-tech ICP. Slot and pillar
 // selection therefore comes from the live corpus, which is trigger-first.
+// That is the design, not a fallback: a run that cannot reach those files
+// has lost nothing and should not report a caveat.
 //
 // Usage:
-//   node scripts/next-slot.mjs              pick from today
-//   node scripts/next-slot.mjs --date 2026-09-14   pick as if today were that date
-//   node scripts/next-slot.mjs --json       machine-readable only
+//   node scripts/next-slot.mjs                     decide from today
+//   node scripts/next-slot.mjs --date 2026-09-14   decide as if today were that date
+//   node scripts/next-slot.mjs --max-ahead 6       weeks of banked blog before draft mode stops
+//   node scripts/next-slot.mjs --force-draft       draft anyway, ignoring the cap
+//   node scripts/next-slot.mjs --json              machine-readable only
 //
-// Selection rules, in order:
+// Modes, decided first:
+//   draft      the blog queue has room. Draft the post for the open slot below.
+//   repurpose  the blog queue is banked past the cap. Draft the LinkedIn
+//              repurpose for the soonest publishing posts that lack one.
+//   idle       queue banked past the cap and every publishing post already
+//              has a LinkedIn draft. Nothing to write this week.
+//
+// Draft-mode selection rules, in order:
 //   1. Slot: the first Tuesday strictly after today with no post already dated to it.
 //   2. If content-queue.md holds a row for that slot, its pillar and working
 //      title win. A hand-written row always beats the computed pick.
@@ -29,6 +40,7 @@ import { fileURLToPath } from 'node:url';
 
 const REPO = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BLOG_DIR = join(REPO, 'src/content/blog');
+const LI_DIR = join(REPO, 'src/content/linkedin');
 const QUEUE_FILE = join(REPO, 'content-queue.md');
 
 // Pillar 5 is the Industry band, not part of the Tuesday rotation.
@@ -39,9 +51,23 @@ const PILLARS = {
   4: 'The exit clock',
 };
 
+// Weeks of banked blog posts allowed before the run stops drafting new ones.
+// Six is deliberate: enough runway that one missed run leaves no gap, short
+// enough that no post is written against canon a quarter before it publishes.
+const DEFAULT_MAX_AHEAD = 6;
+
+// How many LinkedIn repurposes one repurpose-mode run should produce. Two
+// beats one: publishing runs up to two posts a Tuesday, so one a week never
+// closes a backlog.
+const REPURPOSE_BATCH = 2;
+
 const args = process.argv.slice(2);
 const jsonOnly = args.includes('--json');
+const forceDraft = args.includes('--force-draft');
 const dateArg = args.includes('--date') ? args[args.indexOf('--date') + 1] : null;
+const maxAhead = args.includes('--max-ahead')
+  ? Number(args[args.indexOf('--max-ahead') + 1])
+  : DEFAULT_MAX_AHEAD;
 
 const iso = (d) => d.toISOString().slice(0, 10);
 const parseISO = (s) => new Date(`${s}T00:00:00Z`);
@@ -79,12 +105,32 @@ for (const f of readdirSync(BLOG_DIR).filter((f) => f.endsWith('.md'))) {
 const live = posts.filter((p) => !p.archived);
 const taken = new Set(live.map((p) => p.pubDate));
 
-// 1. Next open Tuesday after today.
-let slot = new Date(today);
-slot.setUTCDate(slot.getUTCDate() + 1);
-while (slot.getUTCDay() !== 2) slot.setUTCDate(slot.getUTCDate() + 1);
-while (taken.has(iso(slot))) slot.setUTCDate(slot.getUTCDate() + 7);
+// The next Tuesday after today, filled or not.
+const firstTuesday = new Date(today);
+firstTuesday.setUTCDate(firstTuesday.getUTCDate() + 1);
+while (firstTuesday.getUTCDay() !== 2) firstTuesday.setUTCDate(firstTuesday.getUTCDate() + 1);
+
+// 1. Next open Tuesday, and how many consecutive Tuesdays are banked before it.
+const slot = new Date(firstTuesday);
+let weeksBanked = 0;
+while (taken.has(iso(slot))) {
+  weeksBanked += 1;
+  slot.setUTCDate(slot.getUTCDate() + 7);
+}
 const slotISO = iso(slot);
+const bankedThrough = weeksBanked
+  ? iso(new Date(slot.getTime() - 7 * 86400000))
+  : null;
+
+// LinkedIn backlog: posts that publish from the next Tuesday onward with no
+// repurpose drafted. This is the real weekly deficit once the blog is banked.
+const haveLI = existsSync(LI_DIR)
+  ? new Set(readdirSync(LI_DIR).filter((f) => f.endsWith('.md')).map((f) => f.replace(/\.md$/, '')))
+  : new Set();
+const liBacklog = live
+  .filter((p) => p.pubDate >= iso(firstTuesday) && !haveLI.has(p.slug))
+  .sort((a, b) => (a.pubDate < b.pubDate ? -1 : a.pubDate > b.pubDate ? 1 : 0))
+  .map((p) => ({ slug: p.slug, pubDate: p.pubDate, pillar: p.pillar, title: p.title }));
 
 // 2. Queue override, if a row names this slot.
 let override = null;
@@ -119,31 +165,84 @@ const computed = [...stats].sort(
 
 const chosen = override ? stats.find((s) => s.pillar === override.pillar) : computed;
 
+// Mode decision. An override row for the open slot is a hand-written
+// instruction, so it beats the cap the same way it beats the computed pillar.
+const queueDeep = weeksBanked >= maxAhead;
+let mode = 'draft';
+let modeReason = `blog banked ${weeksBanked} of ${maxAhead} weeks, room to draft`;
+if (queueDeep && !forceDraft && !override) {
+  if (liBacklog.length) {
+    mode = 'repurpose';
+    modeReason = `blog banked ${weeksBanked} weeks through ${bankedThrough}, past the ${maxAhead} week cap, and ${liBacklog.length} publishing posts have no LinkedIn draft`;
+  } else {
+    mode = 'idle';
+    modeReason = `blog banked ${weeksBanked} weeks through ${bankedThrough}, past the ${maxAhead} week cap, and every publishing post already has a LinkedIn draft`;
+  }
+} else if (queueDeep && override) {
+  modeReason = `blog banked ${weeksBanked} weeks, past the cap, but content-queue.md names ${slotISO} so the hand-written row wins`;
+} else if (queueDeep && forceDraft) {
+  modeReason = `blog banked ${weeksBanked} weeks, past the ${maxAhead} week cap, drafting anyway on --force-draft`;
+}
+
+const assignment = mode === 'repurpose' ? liBacklog.slice(0, REPURPOSE_BATCH) : [];
+
 const result = {
-  slot: slotISO,
-  pillar: chosen.pillar,
-  pillarName: chosen.name,
+  mode,
+  modeReason,
+  weeksBanked,
+  maxAhead,
+  bankedThrough,
+  slot: mode === 'draft' ? slotISO : null,
+  pillar: mode === 'draft' ? chosen.pillar : null,
+  pillarName: mode === 'draft' ? chosen.name : null,
   source: override ? 'content-queue.md' : 'computed from repo state',
   workingTitle: override?.workingTitle || null,
+  repurpose: assignment,
+  linkedinBacklog: liBacklog.length,
   asOf: iso(today),
+  nextOpenTuesday: slotISO,
   pillarStats: stats,
 };
 
 if (jsonOnly) {
   console.log(JSON.stringify(result, null, 2));
 } else {
-  console.log(`Slot:   ${result.slot} (next open Tuesday)`);
-  console.log(`Pillar: ${result.pillar}, ${result.pillarName}`);
-  console.log(`Source: ${result.source}`);
-  if (result.workingTitle) console.log(`Title:  ${result.workingTitle}`);
+  console.log(`Mode:   ${result.mode.toUpperCase()}`);
+  console.log(`Why:    ${result.modeReason}`);
+  console.log('');
+  if (mode === 'draft') {
+    console.log(`Slot:   ${result.slot} (next open Tuesday)`);
+    console.log(`Pillar: ${result.pillar}, ${result.pillarName}`);
+    console.log(`Source: ${result.source}`);
+    if (result.workingTitle) console.log(`Title:  ${result.workingTitle}`);
+  } else if (mode === 'repurpose') {
+    console.log('Draft the LinkedIn repurpose for these, soonest publishing first:');
+    for (const r of assignment) {
+      console.log(`  ${r.pubDate}  p${r.pillar}  ${r.slug}`);
+    }
+    console.log('');
+    console.log(`LinkedIn backlog: ${liBacklog.length} publishing posts with no repurpose.`);
+    console.log(`Next open blog Tuesday, for reference: ${slotISO}.`);
+  } else {
+    console.log('Nothing to draft. Blog is banked past the cap and the LinkedIn');
+    console.log('backlog is clear. Say so in the email and stop.');
+  }
   console.log('');
   console.log('Pillar  Ahead  Total  Last covered  Name');
   for (const s of stats) {
-    const mark = s.pillar === chosen.pillar ? '>' : ' ';
+    const mark = mode === 'draft' && s.pillar === chosen.pillar ? '>' : ' ';
     console.log(
       `${mark} ${s.pillar}     ${String(s.ahead).padStart(3)}    ${String(s.total).padStart(3)}   ${s.lastCovered}    ${s.name}`,
     );
   }
   console.log('');
-  console.log(JSON.stringify({ slot: result.slot, pillar: result.pillar, source: result.source }));
+  console.log(
+    JSON.stringify({
+      mode: result.mode,
+      slot: result.slot,
+      pillar: result.pillar,
+      repurpose: assignment.map((r) => r.slug),
+      weeksBanked,
+    }),
+  );
 }
