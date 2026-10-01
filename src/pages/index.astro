@@ -4,30 +4,50 @@ import CalendlyEmbed from '../components/CalendlyEmbed.astro';
 
 const CALENDLY = '#book';
 
-const title = "You can't sell a company on numbers you don't trust yourself";
+const title = 'Hourly CFOs get paid to look. We get paid to find.';
 const description =
-  'In 14 days, see your company the way a buyer will, in dollars. Guaranteed 3x the fee in identified value or you pay nothing. For $5M to $50M companies.';
+  'In 14 days we find at least 3x our fee in owner-accepted value, or you pay nothing. For $5M to $50M owner-led companies, running it or selling it.';
+
+// Two lanes of equal weight under the hero (Homepage v4, Phrase Book v3.4 grid 3a)
+const lanes = [
+  {
+    label: 'Running it',
+    h2: "Revenue\u2019s up. Profit isn\u2019t. And your numbers can\u2019t tell you why.",
+    body: 'The Decision Diagnostic shows you, in 14 days, which products, customers and jobs actually make money, where the recoverable cash and margin sit, and what to decide first.',
+    href: '/diagnostic',
+    link: 'The Diagnostic, in full',
+    cta: 'Book the Diagnostic fit call',
+  },
+  {
+    label: 'Selling it',
+    h2: "You can\u2019t sell a company on numbers you don\u2019t trust yourself.",
+    body: "Most owners aren\u2019t waiting for the right market. They\u2019re waiting for numbers they\u2019d be willing to show. The Sellable-Numbers Scan shows you your company the way a buyer will, in dollars, in 14 days. Buying a company instead? Same lens, pointed the other way.",
+    href: '/scan',
+    link: 'The Scan, in full',
+    cta: 'Book the Scan fit call',
+  },
+];
 
 // How it works: Find, Install, Run (the Two Numbers)
 const steps = [
   {
     step: 'Find',
-    title: 'The Sellable-Numbers Scan, 14 days.',
-    body: "We normalize your numbers and run the Six Trap Diagnostic™ through a buyer's eyes. You get the re-price read (what diligence would knock off your number, in dollars), the worth read (where the value expansion lives: pricing, mix, margin, concentration), and the first three moves. From $10,000, fixed. Guaranteed.",
-    href: '/scan',
-    link: 'The Scan, in full',
+    title: 'The Decision Diagnostic or the Sellable-Numbers Scan, 14 days.',
+    body: "The Diagnostic if you're running it; the Scan if you're selling. We normalize your numbers and run the Six Trap Diagnostic™. You get the recoverable value in dollars, and on the Scan, what diligence would knock off your number. From $10,000, fixed. Guaranteed.",
+    href: '/how-it-works',
+    link: 'How Find works',
   },
   {
     step: 'Install',
     title: 'The 90-Day Decision Resolution.',
-    body: 'The decision rhythm installed: numbers you can decide from and defend, proven on your real decisions, in market. The trailing-twelve clock starts here.',
+    body: "The Financial Rhythm System™ installed: numbers you can decide from and defend, proven on your real decisions, in market. If you're selling, the trailing-twelve clock starts here.",
     href: '/how-it-works',
     link: 'How the install works',
   },
   {
     step: 'Run',
-    title: 'The Exit-Value Partnership, 12 to 24 months to market.',
-    body: 'We build the value the Scan found and the trend a buyer will pay for, with a re-valuation every quarter so you watch the number move. Our fees ride the value created, never the transaction. We are the one advisor in the deal who is not paid on the deal.',
+    title: 'The Decision Partnership or the Exit-Value Partnership.',
+    body: 'The Decision Partnership keeps the rhythm running on retainer. For owners heading to market, the Exit-Value Partnership spends the 12 to 24 months before a sale building the value the Scan found and the trend a buyer will pay for. Our fees are tied to the value created, never to the deal. We are the one advisor in the deal who is not paid on the deal.',
     href: '/partnership',
     link: 'The Partnership, both faces',
   },
@@ -38,7 +58,7 @@ const proofs = [
     name: 'Consumer products manufacturer',
     tag: '$25M revenue',
     outcome:
-      "Bankers' estimate was $25M to $35M, on books the owner didn't trust. We modeled a path to roughly $52M in enterprise value.",
+      "Bankers' estimate was $25M to $35M, on books the owner didn't trust. The work roughly doubled the modeled exit value.",
     resolution:
       'Mispriced inputs, phantom discounts, and revenue never brought over. Pricing was anchored to costs that had moved years earlier, and the aggregate P&L hid which products carried the business.',
     takeaway: 'The gap was never the market. It was the numbers.',
@@ -71,14 +91,14 @@ const fitNo = [
 
 const fitYes = [
   'You own an operating company between $5M and $50M in revenue.',
-  'A real decision is on the table: a sale, a succession, a price, a hire, an expansion.',
+  'A real decision is on the table: a price, a hire, an expansion, a bank renewal, a sale, a succession.',
   "You're tired of making it half-blind.",
   'EOS and Vistage operating companies, manufacturing, consumer products, professional services, and construction.',
 ];
 
 const pricing = [
   {
-    name: 'Sellable-Numbers Scan or Decision Diagnostic (14 days)',
+    name: 'Decision Diagnostic or Sellable-Numbers Scan (14 days)',
     bands: ['$10,000', '$15,000', '$20,000'],
   },
   {
@@ -86,17 +106,19 @@ const pricing = [
     bands: ['$30,000', '$45,000', '$60,000'],
   },
   {
-    name: 'Partnership (monthly)',
+    name: 'Decision Partnership or Exit-Value Partnership (monthly)',
     bands: ['$7,500', '$10,000', '$12,500'],
   },
 ];
 
-// Page-level JSON-LD: banded offers + founder, per Homepage v3 build notes
+// Page-level JSON-LD: banded offers + founder, per Homepage v4 build notes
 const offersJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'Decisive Finance',
   url: 'https://decisive.finance',
+  description:
+    'Decision-First Finance for owner-led companies, $5M to $50M in revenue, running it or getting it ready to sell. In 14 days we find at least 3x our fee in owner-accepted value, or you pay nothing.',
   founder: {
     '@type': 'Person',
     name: 'Russell Fette',
@@ -106,7 +128,7 @@ const offersJsonLd = {
   makesOffer: [
     {
       '@type': 'Offer',
-      name: 'Sellable-Numbers Scan / Decision Diagnostic (14 days)',
+      name: 'Decision Diagnostic / Sellable-Numbers Scan (14 days)',
       priceSpecification: [
         { '@type': 'UnitPriceSpecification', price: 10000, priceCurrency: 'USD', name: '$5M to $8M revenue' },
         { '@type': 'UnitPriceSpecification', price: 15000, priceCurrency: 'USD', name: '$8M to $25M revenue' },
@@ -138,22 +160,41 @@ const offersJsonLd = {
 <BaseLayout title={title} description={description}>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(offersJsonLd)} />
 
-  <!-- Exit hero: why now -->
+  <!-- Hero: both prongs -->
   <section id="hero" class="hero">
     <div class="hero-inner">
-      <span class="eyebrow">For owner-led operating companies, $5M to $50M in revenue</span>
+      <span class="eyebrow">For owner-led companies, $5M to $50M in revenue</span>
       <h1>
-        <span class="h1-line">You can&rsquo;t sell a company</span>
-        <span class="h1-line h1-line-accent">on numbers you don&rsquo;t trust yourself.</span>
+        <span class="h1-line">Hourly CFOs get paid to look.</span>
+        <span class="h1-line h1-line-accent">We get paid to find.</span>
       </h1>
       <p class="hero-subhead">
-        Most owners aren&rsquo;t waiting for the right market. They&rsquo;re waiting for numbers they&rsquo;d be willing to show. In 14 days, we show you your company the way a buyer will, in dollars, guaranteed: <span class="dollar">at least 3x the fee in owner-accepted value identified, or you pay nothing.</span>
+        In 14 days we find <span class="dollar">at least 3x our fee in owner-accepted value</span> in your numbers, or you pay nothing. Whether you&rsquo;re running it or getting it ready to sell.
       </p>
       <div class="hero-cta-row">
         <a href={CALENDLY} class="btn btn-primary">See if you qualify</a>
       </div>
+    </div>
+  </section>
+
+  <!-- Two lanes, equal weight -->
+  <section id="lanes" class="lanes-section">
+    <div class="container">
+      <div class="lane-grid">
+        {lanes.map((lane) => (
+          <div class="lane-card">
+            <div class="lane-label">{lane.label}</div>
+            <h2 class="lane-h2">{lane.h2}</h2>
+            <p>{lane.body}</p>
+            <div class="lane-links">
+              <a href={CALENDLY} class="lane-cta">{lane.cta} &rarr;</a>
+              <a href={lane.href} class="lane-more">{lane.link}</a>
+            </div>
+          </div>
+        ))}
+      </div>
       <p class="trust-strip">
-        A $25M manufacturer&rsquo;s modeled exit value, roughly doubled &middot; $380K of working capital recovered in 90 days &middot; a monthly close cut from 22 days to 3
+        $380K of working capital recovered in 90 days &middot; a monthly close cut from 22 days to 3 &middot; a $25M manufacturer&rsquo;s modeled exit value, roughly doubled
       </p>
     </div>
   </section>
@@ -187,17 +228,14 @@ const offersJsonLd = {
         <span class="section-eyebrow">Why this keeps happening</span>
         <h2>Your books tell you what happened. They can&rsquo;t tell you what to do next.</h2>
         <p class="lede">
-          Your accounting was built to answer one question: what happened. It closes the month, files the taxes, satisfies the bank. It was never built to answer the question a sale forces: what is this actually worth, and can I prove it?
+          Your accounting was built to answer one question: what happened. It closes the month, files the taxes, satisfies the bank. It was never built to answer the questions an owner actually faces: which work makes money, what to do next, and what the company is worth.
         </p>
         <p>
-          Here&rsquo;s the part nobody says out loud. Everyone who touches your numbers is paid to serve something other than you. The tax preparer optimizes the return. The bookkeeper, often a junior person carrying a senior title, produces a P&amp;L and closes the month. Not one of them is paid to make your company worth believing.
+          Here&rsquo;s the part nobody says out loud. Everyone who touches your numbers is paid to serve something other than you. The tax preparer optimizes the return. The bookkeeper, often a junior person carrying a senior title, produces a P&amp;L and closes the month. Not one of them is paid to find the margin, the cash or the value.
         </p>
         <p>
-          The decisions weren&rsquo;t wrong. You made them on the only numbers you had, and those numbers were never built to decide from. The mess isn&rsquo;t negligence. Growth covered it, and the people producing the numbers were never paid to look. But a buyer will look. Buyers pay a multiple times earnings, and they only pay for a trend they can believe.
+          The decisions weren&rsquo;t wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Growth covered it. Then a big call lands, or a buyer calls, and the gap has a price.
         </p>
-        <div class="delay-callout">
-          The trailing-twelve clock doesn&rsquo;t start until the numbers are true, and every month you wait moves the sale date a month.
-        </div>
       </div>
     </div>
   </section>
@@ -209,7 +247,7 @@ const offersJsonLd = {
         <span class="section-eyebrow">How it works</span>
         <h2>A sale price is a multiple times earnings. We work both numbers.</h2>
         <p class="lede">
-          Three steps, one rhythm. Find what a buyer would pay and would question. Install the rhythm that fixes both. Run it until the trend is one a buyer will pay for.
+          Three steps, one rhythm, whether you&rsquo;re running the company or selling it. Find what&rsquo;s trapped. Install the rhythm that fixes it. Run it until the numbers prove it in the cash.
         </p>
       </div>
       <div class="step-grid">
@@ -236,32 +274,13 @@ const offersJsonLd = {
         <span class="section-eyebrow">The guarantee</span>
         <h2>We put the risk on our side of the table.</h2>
         <p class="lede">
-          The Scan identifies at least 3x its fee in owner-accepted value (recoverable cash, recoverable margin, avoided cost, or dollarized valuation exposure) inside 14 days, validated by you in writing, or you pay nothing. Typical results run 5x to 10x.
+          The Diagnostic or the Scan identifies at least 3x its fee in quantified, owner-accepted value (recoverable cash, recoverable margin, avoided cost, and on the Scan, dollarized valuation exposure) inside 14 days, or a strategic finding of equivalent materiality confirmed in writing, or you pay nothing. Typical results run 5x to 10x.
         </p>
         <p>
-          The 90-Day Resolution installs the rhythm and proves it in market, or every fee is refunded and you keep every artifact we built. We never guarantee a sale price or a multiple. We don&rsquo;t control the market. We control whether a buyer can believe you.
+          The 90-Day Resolution installs the rhythm and proves it in market, or every fee is refunded and you keep every artifact we built. We never guarantee a sale price or a multiple.
         </p>
         <p>
           <a href="/guarantee">The guarantee mechanics, in full &rarr;</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- The second door: not selling -->
-  <section id="not-selling" class="traps">
-    <div class="container">
-      <div class="container-narrow">
-        <span class="section-eyebrow">The second door</span>
-        <h2>Not selling? The same numbers are costing you every month.</h2>
-        <p class="lede" style="color: rgba(255,255,255,0.88);">
-          Revenue&rsquo;s up. Profit isn&rsquo;t. And your numbers can&rsquo;t tell you why. The wound is identical; only the deadline is missing.
-        </p>
-        <p style="max-width: 760px;">
-          The 14-day <a href="/diagnostic">Decision Diagnostic</a> runs the same engine without the buyer&rsquo;s lens: which products, customers, or jobs actually make money, where the recoverable value sits, and what to do first. Same bands, same guarantee.
-        </p>
-        <p style="margin-top: 28px;">
-          <a href={CALENDLY} class="second-door-cta">Book the Diagnostic fit call &rarr;</a>
         </p>
       </div>
     </div>
@@ -318,7 +337,7 @@ const offersJsonLd = {
       </div>
       <div class="container-narrow">
         <p class="pricing-note">
-          A Resolution signed within 7 days of the Scan readout credits the Scan fee in full. The floor is $5M in revenue; below that the guarantee math does not hold, so we refer out.
+          A Resolution signed within 7 days of the Find readout credits the Find fee in full. Partnerships add 5% of Realized Value, validated quarterly, never a percentage of a sale. The floor is $5M in revenue; below that the guarantee math does not hold, so we refer out.
         </p>
         <p style="margin-top: 32px;">
           <a href={CALENDLY} class="btn btn-primary">See if you qualify</a>
@@ -375,18 +394,24 @@ const offersJsonLd = {
   .step-card p { font-size: 15px; line-height: 1.6; color: var(--muted); margin: 0 0 20px; flex-grow: 1; }
   .step-link { font-family: Inter, sans-serif; font-size: 14px; font-weight: 600; margin-top: auto; }
 
-  /* Second door CTA (on ink background) */
-  .second-door-cta {
-    display: inline-block;
-    font-family: Inter, sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--orange);
-    border-bottom: 2px solid rgba(227, 99, 43, 0.5);
-    padding-bottom: 3px;
+  /* Two lanes, equal weight */
+  .lanes-section { padding-top: 64px; padding-bottom: 64px; }
+  .lane-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  @media (min-width: 900px) { .lane-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
+  .lane-card {
+    background: var(--grey);
+    border-radius: 16px;
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
   }
-  .second-door-cta:hover { border-bottom-color: var(--orange); opacity: 1; }
-  #not-selling a { color: var(--orange); }
+  .lane-label { font: 700 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: 0.16em; color: var(--orange-ink); margin-bottom: 14px; }
+  .lane-h2 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; margin: 0 0 16px; padding-top: 14px; border-top: 3px solid var(--orange); }
+  .lane-card p { font-size: 16px; line-height: 1.6; margin: 0 0 24px; flex-grow: 1; }
+  .lane-links { display: flex; flex-wrap: wrap; gap: 18px; align-items: baseline; margin-top: auto; }
+  .lane-cta { font-family: Inter, sans-serif; font-size: 16px; font-weight: 600; color: var(--orange-ink); border-bottom: 2px solid var(--orange); padding-bottom: 2px; }
+  .lane-more { font-family: Inter, sans-serif; font-size: 14px; font-weight: 600; color: var(--ink); }
+  .lanes-section .trust-strip { color: var(--muted); margin-top: 28px; }
 
   /* Pricing table */
   .pricing-table-wrap { margin-top: 44px; overflow-x: auto; }
