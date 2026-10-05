@@ -19,7 +19,7 @@ readingTime: 6
 
 - Clean books close on time and tie to the bank. Believable numbers survive a stranger checking them before he wires you millions. They are different jobs, and most companies under $50M in revenue only pay for the first.
 - At one $25M consumer products manufacturer, the prior firm adjusted the budget to match actuals so variance would disappear, and the controller was told not to overwhelm the owner with detail. The books were clean. Nobody was making them believable.
-- Closing the gap is worth real money: with numbers he could stand behind, we modeled a path from roughly $21M to $52M in enterprise value for the same business.
+- Closing the gap is worth real money: with numbers he could stand behind, the work roughly doubled the modeled exit value.
 
 Clean books are not the same as believable numbers, and the difference is exactly what a buyer pays for. This piece is about why a set of books can be tidy, timely, and still get re-priced in diligence, and what "believable" actually requires.
 
@@ -49,13 +49,13 @@ That is the move from clean to believable, and it is the whole difference betwee
 
 ## Why a buyer pays for believable, not clean
 
-Because he is not buying tidy records. He is buying earnings he can trust and a management team that sees clearly. Clean gets you to the table. Believable protects the price once you are there. At that $25M manufacturer, making the numbers believable is what moved the modeled enterprise value from roughly $21M toward $52M, against a banker's estimate built on numbers the owner did not trust. Same company. We do not audit the past. We make the company worth believing.
+Because he is not buying tidy records. He is buying earnings he can trust and a management team that sees clearly. Clean gets you to the table. Believable protects the price once you are there. At that $25M manufacturer, making the numbers believable is what roughly doubled the modeled exit value, against a banker's estimate built on numbers the owner did not trust. Same company. We do not audit the past. We make the company worth believing.
 
 ## Where this leads
 
-The gap between clean and believable is the practical face of [books built to record, not to decide from](/perspectives/built-to-record-not-decide), and it is why [nobody producing your numbers was ever paid to make you worth believing](/perspectives/nobody-paid-to-make-you-believable). See it in the extreme in [the record month that was really a loss](/perspectives/anatomy-of-a-record-month), and in the standard a buyer holds in [numbers a buyer can believe](/perspectives/sellable-numbers).
+The gap between clean and believable is the practical face of [books built to record, not to decide from](/perspectives/built-to-record-not-decide), and it is why [nobody producing your numbers was ever paid to make you worth believing](/perspectives/nobody-paid-to-make-you-believable). See it in the extreme in the record month that was really a loss, and in the standard a buyer holds in [numbers a buyer can believe](/perspectives/sellable-numbers).
 
-The Sellable-Numbers Scan measures the distance between your current books and a believable set, in dollars, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan measures the distance between your current books and a believable set, in dollars. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

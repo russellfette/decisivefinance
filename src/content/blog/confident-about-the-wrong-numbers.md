@@ -19,7 +19,7 @@ readingTime: 5
 
 - Owners are usually most confident about revenue, the number a buyer discounts, and vaguest about margin by line, the number a buyer rewards. The confidence is pointed at the wrong figures.
 - At one $25M consumer products manufacturer, the owner knew his top line cold but could not say which products or customers actually made money, and a revenue-recognition issue meant he could not fully trust even the sales number he was proudest of.
-- Redirecting that confidence pays: for the same company, believable numbers moved the modeled enterprise value from roughly $21M toward $52M.
+- Redirecting that confidence pays: for the same company, believable numbers roughly doubled the modeled exit value.
 
 Owners are confident about the numbers a buyer discounts and vague about the ones a buyer rewards, and that mismatch quietly caps the sale price. This piece is about which numbers earn a buyer's trust, which ones he marks down, and why most owners have it backwards.
 
@@ -49,13 +49,13 @@ The goal is simple. Be most confident about the numbers a buyer rewards, not the
 
 ## Why this is worth doing now
 
-Because the numbers a buyer rewards take time to build and prove, and confidence built on a verified figure survives diligence while confidence built on a total does not. At the $25M manufacturer, moving trust onto believable earnings is what took the modeled enterprise value from roughly $21M toward $52M, against a banker's estimate on numbers he did not trust. We do not audit the past. We make the company worth believing.
+Because the numbers a buyer rewards take time to build and prove, and confidence built on a verified figure survives diligence while confidence built on a total does not. At the $25M manufacturer, moving trust onto believable earnings is what roughly doubled the modeled exit value, against a banker's estimate on numbers he did not trust. We do not audit the past. We make the company worth believing.
 
 ## Where this leads
 
 Misplaced confidence is the quiet version of the whole problem: [clean books that are not believable numbers](/perspectives/clean-books-vs-believable-numbers), profit hidden because [nobody was paid to make you believable](/perspectives/nobody-paid-to-make-you-believable), and the [six traps a buyer prices](/perspectives/six-traps-a-buyer-prices) into a business that cannot defend its own figures. The standard is [numbers a buyer can believe](/perspectives/sellable-numbers).
 
-The Sellable-Numbers Scan shows you which of your numbers a buyer would reward and which he would discount, in dollars, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan shows you which of your numbers a buyer would reward and which he would discount, in dollars. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

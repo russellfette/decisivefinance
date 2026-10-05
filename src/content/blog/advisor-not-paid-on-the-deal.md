@@ -1,5 +1,5 @@
 ---
-title: "The one advisor in the deal who is not paid on the deal"
+title: "Why the numbers should come from someone with no piece of the transaction"
 slug: advisor-not-paid-on-the-deal
 description: "Every advisor in a sale is paid to get the deal done, which is exactly why a buyer discounts what they say. Independence from the transaction is the product."
 pubDate: 2026-10-20
@@ -19,7 +19,7 @@ readingTime: 5
 
 - Almost everyone in a sale is paid when it closes, which means their numbers are read, by the buyer, as advocacy. That discount is baked in before anyone speaks.
 - The one voice a buyer's analyst can trust is the one with nothing riding on the transaction. Independence from the deal is not a compliance footnote, it's what makes the numbers believable.
-- We are the one advisor in the deal who is not paid on the deal, and our fees are tied to the value created, never to the deal.
+- We take no piece of the transaction.
 
 There's a structural reason a buyer distrusts a seller's numbers before he's even read them: he knows who's paid to get the deal done. This piece is about why independence from the transaction is what makes numbers believable, and why it's the product rather than a disclaimer.
 
@@ -36,7 +36,7 @@ A source with nothing riding on the transaction. When the person who prepared an
 This is the position we hold on purpose:
 
 1. **We don't sell the company.** We don't solicit buyers, negotiate terms, or advise on the form of the deal.
-2. **We're not paid on the close.** Our fees are tied to the value created, never to the deal, so nothing we say is bent toward getting to yes.
+2. **We're not paid on the close.** We take no piece of the transaction, so nothing we say is bent toward getting to yes.
 3. **We work the numbers, not the transaction.** Our only job is to make the earnings true and believable, which serves the seller and survives the buyer's read at the same time.
 
 Because we have nothing riding on the close, the number we put on the page is one both the owner and the buyer's analyst can trust, and that trust is worth real dollars at the table.
@@ -49,7 +49,7 @@ For the owner, independence turns his numbers from advocacy into evidence, which
 
 Independence is why the diligence work holds up: [the five findings that re-trade a deal](/perspectives/five-findings-that-retrade-a-deal), [sell-side QoE prep](/perspectives/sell-side-qoe-prep), and [a referral partner's field guide](/perspectives/referral-partner-field-guide) for advisors who want to protect their deals.
 
-The Sellable-Numbers Scan is independent by design: we find and dollarize what a buyer would re-price, with nothing riding on whether you ever sell. For owners, the guarantee is simple: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan is independent by design: we find and dollarize what a buyer would re-price, with nothing riding on whether you ever sell. For owners, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch.
 

@@ -55,7 +55,7 @@ Because a fast close is proof of a managed business, and a managed business is w
 
 Close speed is one of the signals a buyer reads in [deals die in diligence](/perspectives/deals-die-in-diligence), and current books are the base of [a clean trailing twelve](/perspectives/trailing-twelve-what-counts-as-clean) and [a data room that answers first](/perspectives/data-room-that-answers-first). The cadence that produces it is the same one that makes the numbers [built to decide from, not just to record](/perspectives/built-to-record-not-decide).
 
-The Sellable-Numbers Scan measures your close and what a slow one is costing you, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan measures your close and what a slow one is costing you. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

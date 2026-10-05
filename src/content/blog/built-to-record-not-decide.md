@@ -61,7 +61,7 @@ The reason this matters for a sale is that the decision layer and the sellable l
 
 This is the diagnosis underneath the whole exit picture: [whether your numbers are believable at all](/perspectives/sellable-numbers), [the six traps a buyer prices against you](/perspectives/six-traps-a-buyer-prices), and [what a Quality of Earnings actually tests](/perspectives/quality-of-earnings-owners-fail).
 
-The Sellable-Numbers Scan is built to find the gap and dollarize it. In 14 days, we show an owner what a buyer would re-price and what the company is worth once the numbers can be believed, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan is built to find the gap and dollarize it. In 14 days, we show an owner what a buyer would re-price and what the company is worth once the numbers can be believed, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

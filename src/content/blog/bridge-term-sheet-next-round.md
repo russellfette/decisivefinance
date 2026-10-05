@@ -66,7 +66,7 @@ A bridge is a forward decision dressed as a capital event. Treat it like the dec
 
 ## What is the Decisive Finance role in this?
 
-The right time for a Diagnostic is before the bridge is signed, because the Diagnostic produces the raw material the term sheet needs: the three headline ratios restated, the material decision named with Keep/Kill/Restructure paths in dollars, and the use-of-proceeds page drafted against real numbers. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. The recoverable value matters here for a structural reason: every dollar recovered is a dollar of bridge the company does not raise, and a smaller bridge with named uses beats a bigger bridge with stacked preferences in every version of the next round.
+The right time for a Diagnostic is before the bridge is signed, because the Diagnostic produces the raw material the term sheet needs: the three headline ratios restated, the material decision named with Keep/Kill/Restructure paths in dollars, and the use-of-proceeds page drafted against real numbers. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. The recoverable value matters here for a structural reason: every dollar recovered is a dollar of bridge the company does not raise, and a smaller bridge with named uses beats a bigger bridge with stacked preferences in every version of the next round.
 
 ## Where to go from here
 

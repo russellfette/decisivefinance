@@ -56,7 +56,7 @@ One more practical note: do the rewrite in one cycle, not gradually. A packet th
 
 ## What is the Decisive Finance role in this?
 
-The rewrite needs inputs most stalled companies do not have on the shelf: three-path math on the material calls, runway modeled per path, a forward capital register with real line items. The 14-day Decision Diagnostic builds exactly those, which means the first rewritten packet can ship at your next board meeting instead of two quarters from now. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. The capital register summary alone usually covers it.
+The rewrite needs inputs most stalled companies do not have on the shelf: three-path math on the material calls, runway modeled per path, a forward capital register with real line items. The 14-day Decision Diagnostic builds exactly those, which means the first rewritten packet can ship at your next board meeting instead of two quarters from now. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. The capital register summary alone usually covers it.
 
 ## Where to go from here
 

@@ -50,7 +50,7 @@ The $25M consumer products manufacturer we worked with had every incentive to pr
 
 This is the posture underneath the entire exit picture: [whether your numbers are believable at all](/perspectives/sellable-numbers), [the add-backs a buyer will believe versus strike](/perspectives/add-backs-believe-vs-strike), and [what a Quality of Earnings actually tests](/perspectives/quality-of-earnings-owners-fail).
 
-The Sellable-Numbers Scan does the accurate-and-ugly work and puts a dollar figure on what believability is worth to your price. In 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan does the accurate-and-ugly work and puts a dollar figure on what believability is worth to your price. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

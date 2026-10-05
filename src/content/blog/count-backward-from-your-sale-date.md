@@ -58,7 +58,7 @@ The backward count converts intent into a schedule, and a schedule is what actua
 
 Counting backward is how you act on [when the clock actually starts](/perspectives/when-the-clock-actually-starts) before [a trigger](/perspectives/four-triggers-that-start-the-clock) sets your timeline for you. It is the disciplined answer to [every month moves the sale date](/perspectives/every-month-moves-the-sale-date), and it defines what "true" has to mean in [a clean trailing twelve](/perspectives/trailing-twelve-what-counts-as-clean).
 
-The Sellable-Numbers Scan tells you how long your numbers need and builds the backward timeline with you, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan tells you how long your numbers need and builds the backward timeline with you. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

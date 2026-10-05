@@ -56,7 +56,7 @@ And run the debrief annually even when things are moving. The sympathy stall doe
 
 ## What is the Decisive Finance role in this?
 
-The 14-day Decision Diagnostic is this debrief run from the outside, with the data open. We ask the same questions, then build what the answers reveal is missing: the product-line P&L, the three-path math on the stuck calls, the register of committed dollars deployed against a dead plan. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. Question four alone usually finds it.
+The 14-day Decision Diagnostic is this debrief run from the outside, with the data open. We ask the same questions, then build what the answers reveal is missing: the product-line P&L, the three-path math on the stuck calls, the register of committed dollars deployed against a dead plan. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. Question four alone usually finds it.
 
 ## Where to go from here
 

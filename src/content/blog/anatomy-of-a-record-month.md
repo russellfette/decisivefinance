@@ -11,6 +11,7 @@ pillar: 1
 ctaVariant: "sellable-numbers"
 dominantClaim: "3x-owner-accepted-14-days"
 ogImage: "/og/anatomy-of-a-record-month.png"
+archived: true
 featured: true
 readingTime: 6
 ---
@@ -55,7 +56,7 @@ The unglamorous work was fixing the costing so margin told the truth instead of 
 
 A record month that was really a loss is the sharpest version of a broader problem: [books built to record, not to decide from](/perspectives/built-to-record-not-decide), and the gap between [clean books and believable numbers](/perspectives/clean-books-vs-believable-numbers). Fixing it is why [accurate and ugly beats polished and untrustworthy](/perspectives/accurate-and-ugly-beats-polished), and it is the foundation of [numbers a buyer can believe](/perspectives/sellable-numbers).
 
-The Sellable-Numbers Scan finds the entries and swings a buyer would question and dollarizes what they do to your value, in 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan finds the entries and swings a buyer would question and dollarizes what they do to your value, in 14 days, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 
