@@ -62,7 +62,7 @@ So the play is simple to state. Answer the three real questions before they are 
 
 ## What is the Decisive Finance role in this?
 
-The strong answer requires restated ratios and a named decision on hand, and most companies 18 months past a raise have neither. That is what the 14-day Decision Diagnostic produces: the three headline ratios restated against one explicit customer definition, the material decision named with a Keep/Kill/Restructure one-pager, and the recoverable value surfaced to fund the move. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. After the Diagnostic, "what's new" has a fifteen-second answer every month, and it is an answer that defends the mark instead of dodging it.
+The strong answer requires restated ratios and a named decision on hand, and most companies 18 months past a raise have neither. That is what the 14-day Decision Diagnostic produces: the three headline ratios restated against one explicit customer definition, the material decision named with a Keep/Kill/Restructure one-pager, and the recoverable value surfaced to fund the move. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. After the Diagnostic, "what's new" has a fifteen-second answer every month, and it is an answer that defends the mark instead of dodging it.
 
 ## Where to go from here
 

@@ -56,7 +56,7 @@ At the $25M consumer products manufacturer, the honest early verdict was that th
 
 The specifics live in the sibling pieces: [five findings that re-trade a deal](/perspectives/five-findings-that-retrade-a-deal), [what counts as a clean trailing twelve](/perspectives/trailing-twelve-what-counts-as-clean), [a data room that answers questions before they are asked](/perspectives/data-room-that-answers-first), and [sell-side QoE prep](/perspectives/sell-side-qoe-prep). The full picture is [surviving diligence](/perspectives/surviving-diligence).
 
-The Sellable-Numbers Scan shows you what diligence would question first and dollarizes the exposure, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan shows you what diligence would question first and dollarizes the exposure. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

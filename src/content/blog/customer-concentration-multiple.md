@@ -52,7 +52,7 @@ That's the counterintuitive move the owners who get their number make: they spen
 
 Concentration is one of the value levers you can only manage once you can see profit and revenue by customer. It connects to [which customer actually makes money](/perspectives/which-customer-makes-money), [owner-dependence and the relationships you hold personally](/perspectives/owner-dependence-discount), and the timing question, [when the clock on all of it starts](/perspectives/the-exit-clock).
 
-The Sellable-Numbers Scan measures your concentration the way a buyer will and dollarizes what reducing it is worth to your price. In 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan measures your concentration the way a buyer will and dollarizes what reducing it is worth to your price. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

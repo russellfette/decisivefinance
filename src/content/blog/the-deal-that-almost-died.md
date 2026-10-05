@@ -11,6 +11,7 @@ pillar: 3
 ctaVariant: "surviving-diligence"
 dominantClaim: "3x-owner-accepted-14-days"
 ogImage: "/og/the-deal-that-almost-died.png"
+archived: true
 featured: true
 readingTime: 6
 ---
@@ -53,7 +54,7 @@ Three things carry over to almost any owner within a few years of a sale:
 
 This is the lived version of why [deals die in diligence and it is almost never the business](/perspectives/deals-die-in-diligence), and why [the trailing-twelve clock does not start until the numbers are true](/perspectives/when-the-clock-actually-starts). The findings that would have surfaced are in [five findings that re-trade a deal](/perspectives/five-findings-that-retrade-a-deal), and the fix is [numbers a buyer can believe](/perspectives/sellable-numbers).
 
-The Sellable-Numbers Scan runs the read a buyer's analyst would run and dollarizes what it finds, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan runs the read a buyer's analyst would run and dollarizes what it finds. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

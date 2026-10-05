@@ -54,7 +54,7 @@ Because a buyer pays a multiple on earnings he can trust, and trust comes from n
 
 This comparison sits on the parent method, [Decision-First Finance](/perspectives/decision-first-finance), and leads into the exit work: [sellable numbers](/perspectives/sellable-numbers) and [surviving diligence](/perspectives/surviving-diligence).
 
-The Sellable-Numbers Scan is Decision-First Finance aimed at your exit: in 14 days, in dollars, what a buyer would re-price and what the company is worth once the numbers can be believed. The guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan is Decision-First Finance aimed at your exit: in 14 days, in dollars, what a buyer would re-price and what the company is worth once the numbers can be believed. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

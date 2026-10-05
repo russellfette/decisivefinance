@@ -51,7 +51,7 @@ That is why sell-side prep is a head-start exercise, not a pre-sale scramble. Be
 
 Sell-side prep is the practical answer to [the five findings that re-trade a deal](/perspectives/five-findings-that-retrade-a-deal), and it rests on the same work as [why owners fail a QoE on their own numbers](/perspectives/quality-of-earnings-owners-fail) and [the add-backs a buyer will believe](/perspectives/add-backs-believe-vs-strike).
 
-The Sellable-Numbers Scan is the fast, dollarized front end of that prep: in 14 days it shows what a QoE would re-price and what the company is worth once the numbers can be believed. For owners, the guarantee is simple: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan is the fast, dollarized front end of that prep: in 14 days it shows what a QoE would re-price and what the company is worth once the numbers can be believed. For owners, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals and want to get a client ready, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch.
 

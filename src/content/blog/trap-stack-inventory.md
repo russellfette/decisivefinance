@@ -61,7 +61,7 @@ Two things to hold onto when the score comes back high. First, the score maps de
 
 ## What is the Decisive Finance role in this?
 
-The inventory above is the self-serve edition of the Six Trap Diagnostic™, the first instrument we run inside the 14-day Decision Diagnostic. We score all six traps against the actual financials rather than the live-test answers, map each stack to the decision it is blocking, and put the recoverable value in dollars next to every one. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. We don't audit the past. We justify each next call.
+The inventory above is the self-serve edition of the Six Trap Diagnostic™, the first instrument we run inside the 14-day Decision Diagnostic. We score all six traps against the actual financials rather than the live-test answers, map each stack to the decision it is blocking, and put the recoverable value in dollars next to every one. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. We don't audit the past. We justify each next call.
 
 ## Where to go from here
 

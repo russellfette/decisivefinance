@@ -51,7 +51,7 @@ The catch is timing. This is trailing-track-record work, so clearing the finding
 
 Each finding has its own fix: [add-backs a buyer will believe versus strike](/perspectives/add-backs-believe-vs-strike), [owner-dependence and the discount it carries](/perspectives/owner-dependence-discount), and [sell-side QoE prep, what the seller controls](/perspectives/sell-side-qoe-prep). Underneath them is the diagnosis: [books built to record, not to decide](/perspectives/built-to-record-not-decide).
 
-The Sellable-Numbers Scan runs the buyer's read on your side first, in dollars, and clears the findings while there's still time. For owners, the guarantee is simple: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan runs the buyer's read on your side first, in dollars, and clears the findings while there's still time. For owners, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals and want to protect a specific one, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch either way.
 

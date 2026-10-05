@@ -59,7 +59,7 @@ Because it produces durable, provable margin, and a buyer multiplies earnings he
 
 Concentration is how you act on [which job, product, or customer actually makes money](/perspectives/which-customer-makes-money), and it powers the margin lever in [the two numbers behind the price](/perspectives/two-numbers-behind-the-price). It compounds with [pricing off today's cost](/perspectives/price-off-todays-cost) and shows up in the price through [margin points run through a multiple](/perspectives/margin-points-through-a-multiple).
 
-The Sellable-Numbers Scan finds the one or two lines holding your margin gap and dollarizes the fix, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan finds the one or two lines holding your margin gap and dollarizes the fix. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

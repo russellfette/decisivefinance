@@ -51,7 +51,7 @@ The owners who capture the value treat this as a multi-year project, not a pre-s
 
 Owner-independence is both a diligence risk to clear and a value lever to pull, which is why it sits across two of the exit questions at once: [surviving the buyer's diligence](/perspectives/surviving-diligence) and [growing what the company is worth before you sell](/perspectives/worth-more-before-you-sell). Underneath it is the same diagnosis as everything else: [numbers and systems built to decide from, not just to record](/perspectives/built-to-record-not-decide).
 
-The Sellable-Numbers Scan flags owner-dependence and dollarizes the discount it's costing you, while there's still time to move the trend. In 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan flags owner-dependence and dollarizes the discount it's costing you, while there's still time to move the trend. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

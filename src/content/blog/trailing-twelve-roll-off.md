@@ -19,7 +19,7 @@ readingTime: 7
 
 - A trailing twelve months is a window, not a total. Every month it gains one month at the front and loses one month at the back, and the buyer prices the net.
 - On a $30M manufacturer running $3.6M of trailing EBITDA, a $520,000 record month rolling out and a $300,000 average month rolling in drops trailing EBITDA by $220,000. At 6x that is $1,320,000 of enterprise value, lost on the last day of a month in which nothing about the business changed.
-- The roll-off schedule is knowable 12 months ahead, and almost nobody looks at it. We build it, name the months worth going to market on, and price the ones that are not. In 14 days, with one guarantee: at least 3x the fee in owner-accepted value, or you pay nothing.
+- The roll-off schedule is knowable 12 months ahead, and almost nobody looks at it. We build it, name the months worth going to market on, and price the ones that are not. In 14 days, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 A month you already lived through can cost you $1,320,000 on the day it ages out of your trailing twelve. That is the arithmetic on a $30M-revenue manufacturer priced at 6x trailing EBITDA when a record September rolls out of the window and an ordinary September rolls in. Revenue did not fall. No customer left. The number a buyer underwrites fell by $220,000 because the twelve months he is standing on are not the twelve months he was standing on four weeks ago.
 
@@ -33,7 +33,7 @@ The recent month is the one under management. It reflects the pricing in force, 
 
 So the change in the window is the difference between an average month and a historical outlier, and the sign of that difference is set by history rather than by anything happening now. When last year's strongest month is the one rolling off, the trailing twelve falls even in a business that is growing. Owners read that fall as a business problem and go looking for one. There is no business problem. There is a window that moved.
 
-This is also why [a record month deserves an autopsy before it becomes a story](/perspectives/anatomy-of-a-record-month). A record built on a pull-forward is a month that will be in your trailing twelve for exactly twelve months, and then it will be working against you.
+This is also why a record month deserves an autopsy before it becomes a story. A record built on a pull-forward is a month that will be in your trailing twelve for exactly twelve months, and then it will be working against you.
 
 ## What does the roll-off actually cost?
 
@@ -71,7 +71,7 @@ There is also a real operating use for this that has nothing to do with selling.
 
 The trailing twelve is the single number your company is priced on, and it changes on the last day of every month whether anyone looks or not. The change is knowable a year ahead. Treating it as weather rather than as arithmetic is how owners go to market in the worst window of the next twelve and never learn that it was a choice.
 
-The Sellable-Numbers Scan builds the roll-off schedule on a consistent basis, names the launch months worth having and the ones that cost you, and puts a dollar figure on the difference. Fourteen days, one guarantee: at least 3x the fee in owner-accepted value, or you pay nothing.
+The Sellable-Numbers Scan builds the roll-off schedule on a consistent basis, names the launch months worth having and the ones that cost you, and puts a dollar figure on the difference. Fourteen days, one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If you own the company and a sale is anywhere in the next three years, [book a fit call](https://calendly.com/russell-decisive/30min). If you advise owners and want to see what the schedule looks like on a real set of books, [book the same call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch either way.
 

@@ -54,7 +54,7 @@ Twice. First, the leak sits inside the earnings he multiplies, so every recovere
 
 Discount creep is a pricing problem, a margin problem, and a believability problem wearing one coat. The good news is that it is also the fastest kind of value to recover, because the product already exists, the customer already buys it, and the profit is already in the building. It just is not reaching your earnings.
 
-The Sellable-Numbers Scan rebuilds realized price along with the rest of the buyer's-eyes read, and dollarizes what the leak is worth through a realistic multiple, in 14 days, guaranteed: at least 3x the fee in owner-accepted value, or you pay nothing.
+The Sellable-Numbers Scan rebuilds realized price along with the rest of the buyer's-eyes read, and dollarizes what the leak is worth through a realistic multiple. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If you suspect the gap is there, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

@@ -69,7 +69,7 @@ The founder's read afterward was the most useful part: the four GTM reviews had 
 
 ## What is the Decisive Finance role in this?
 
-The per-offer math in step one is exactly what the 14-day Decision Diagnostic builds, and Product Line is one of the five canon recovery categories we score it against. The Diagnostic surfaces the line that converts but does not scale, puts the dollars under Keep, Kill, and Restructure, and hands the CEO a memo that is ready to sign. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.
+The per-offer math in step one is exactly what the 14-day Decision Diagnostic builds, and Product Line is one of the five canon recovery categories we score it against. The Diagnostic surfaces the line that converts but does not scale, puts the dollars under Keep, Kill, and Restructure, and hands the CEO a memo that is ready to sign. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x.
 
 ## Where to go from here
 

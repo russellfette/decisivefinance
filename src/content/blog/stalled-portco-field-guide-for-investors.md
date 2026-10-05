@@ -83,8 +83,8 @@ If the CFO cannot produce that format, the CFO has gone retrospective and the co
 
 A scoped audit of the eight recovery categories: SaaS, cloud, R&D credits, AR, vendor terms, revenue leakage, headcount, G&A. Two outcomes are acceptable:
 
-- Recoverable value of at least 3x the Diagnostic fee is identified in 14 days, in which case the company captures it and the Diagnostic paid for itself at 3x or more.
-- Less than 3x the fee is identified, in which case the Diagnostic fee refunds in full and the board has a defensible lean-ops story for the LPs.
+- At least 3x the fee in owner-accepted value is identified in 14 days, in which case the company captures it and the Diagnostic paid for itself at 3x or more.
+- Less than 3x the fee is identified, in which case the company pays nothing and the board has a defensible lean-ops story for the LPs.
 
 Either outcome is useful. Both foreclose the "we think we're efficient" answer that covers too much.
 

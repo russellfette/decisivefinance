@@ -56,7 +56,7 @@ Because a sale is the moment recording and deciding finally collide. For years, 
 
 Decision-First Finance is the parent method under the exit work: [sellable numbers](/perspectives/sellable-numbers), [why your books were built to record, not to decide](/perspectives/built-to-record-not-decide), and [how it differs from a fractional CFO](/perspectives/decision-first-finance-vs-fractional-cfo).
 
-The Sellable-Numbers Scan is the method applied to your exit, in dollars, in 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan is the method applied to your exit, in dollars, in 14 days, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

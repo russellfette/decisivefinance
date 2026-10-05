@@ -55,7 +55,7 @@ Because a buyer multiplies the EBITDA he believes, not the one you claim. A defe
 
 The bridge is where [add-backs a buyer believes meet the ones he strikes](/perspectives/add-backs-believe-vs-strike), and it is one of the findings in [five findings that re-trade a deal](/perspectives/five-findings-that-retrade-a-deal). It only holds if it sits on [numbers a buyer can believe](/perspectives/sellable-numbers) and survives the read described in [deals die in diligence](/perspectives/deals-die-in-diligence).
 
-The Sellable-Numbers Scan builds your normalized EBITDA bridge the way a buyer would and dollarizes what survives, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan builds your normalized EBITDA bridge the way a buyer would and dollarizes what survives. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

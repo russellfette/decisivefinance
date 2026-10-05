@@ -57,7 +57,7 @@ Because the levers compound and revenue alone does not. A few points of margin, 
 
 Each lever has its own field note: [which job, product, or customer actually makes money](/perspectives/which-customer-makes-money), [the pricing swing hiding in your worst-priced line](/perspectives/pricing-swing-worst-line), [pricing off today's cost, not last year's](/perspectives/price-off-todays-cost), and [the customer concentration that halves your multiple](/perspectives/customer-concentration-multiple). The full picture is [growing what the company is worth before you sell](/perspectives/worth-more-before-you-sell).
 
-The Sellable-Numbers Scan works both numbers and dollarizes what each lever is worth to you, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan works both numbers and dollarizes what each lever is worth to you. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

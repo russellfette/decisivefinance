@@ -54,7 +54,7 @@ Because durable margin lifts earnings and signals a management team that prices 
 
 Margin is one of the three earnings levers in [the two numbers behind the price](/perspectives/two-numbers-behind-the-price). Find it in [which job, product, or customer actually makes money](/perspectives/which-customer-makes-money), protect it by [pricing off today's cost](/perspectives/price-off-todays-cost), and concentrate the work where [margin actually lives](/perspectives/fix-margin-where-it-lives).
 
-The Sellable-Numbers Scan finds the margin worth multiplying and dollarizes it through a realistic multiple, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan finds the margin worth multiplying and dollarizes it through a realistic multiple. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

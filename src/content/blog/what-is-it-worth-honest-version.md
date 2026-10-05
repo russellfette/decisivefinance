@@ -18,7 +18,7 @@ readingTime: 6
 ## At a glance
 
 - Most valuations owners get are either a broker's optimistic teaser or a formula off unaudited books. The honest version is different: what a buyer would actually pay today, given the numbers as they really are.
-- The more useful number is the pair: what it's worth now, and where it could go once the numbers can be believed. For one $25M owner, that pair was a banker's $25M to $35M versus a modeled path to roughly $52M.
+- The more useful number is the pair: what it's worth now, and where it could go once the numbers can be believed. For one $25M owner, that pair was the bankers' estimate versus a modeled exit value the work roughly doubled.
 - You don't need a live deal to ask. The best time to ask is when there's no deal at all, so the answer is information you can act on instead of a number someone else holds over you.
 
 "What's it worth" is the question under every exit, and it's usually answered badly, either too high to be useful or too formulaic to be true. This piece is about the honest version of the question, why the pair of numbers matters more than the single one, and why now is the right time to ask.
@@ -33,7 +33,7 @@ The honest version starts from the buyer's seat. It reads your numbers the way h
 
 Because a single number hides the most important part: the gap between what the business is worth today and what it could be worth once the numbers are true and the value is built. That gap is the whole opportunity.
 
-Consider the $25M owner. The single number he had was a banker's $25M to $35M, resting on books he didn't trust. The honest pair was different: a clear-eyed read of where he stood, and a modeled path from roughly $21M to $52M once the numbers could be believed and the trapped value was freed. The single number would have sent him to market underprepared. The pair showed him what the work was worth before he committed to it.
+Consider the $25M owner. The single number he had was the bankers' estimate, resting on books he didn't trust. The honest pair was different: a clear-eyed read of where he stood, and a modeled exit value the work roughly doubled once the numbers could be believed and the trapped value was freed. The single number would have sent him to market underprepared. The pair showed him what the work was worth before he committed to it.
 
 That's what makes the pair actionable:
 

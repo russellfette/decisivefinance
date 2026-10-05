@@ -36,9 +36,9 @@ The signature visual: Decision, Cost and Commitment, Drift, Trap, Diagnose, Defe
 
 **See:** [The Six Trap Diagnostic explained](/perspectives/six-trap-diagnostic-explained)
 
-## 6. Recoverable value
+## 6. Owner-accepted value
 
-Quantified, owner-accepted value in one of three forms: recoverable cash, recoverable margin, or avoided cost. It is what the Diagnostic guarantees. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.
+Quantified value the owner accepts in writing, in one of three forms: recoverable cash, recoverable margin, or avoided cost. On the Sellable-Numbers Scan, dollarized valuation exposure also counts. It is what the guarantee measures: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x.
 
 **See:** [What the first 14 days actually look like](/perspectives/first-14-days-operational-scan) and [the guarantee](/guarantee)
 

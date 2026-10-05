@@ -11,6 +11,7 @@ pillar: 2
 ctaVariant: "worth-more"
 dominantClaim: "more-valuable-company-and-numbers-to-prove-it"
 ogImage: "/og/value-build-walkthrough-21-to-52.png"
+archived: true
 featured: true
 readingTime: 7
 ---
@@ -57,7 +58,7 @@ The lesson the owner drew was the one that matters most: the numbers weren't jus
 
 This walkthrough is the value levers, run together: [pricing](/perspectives/pricing-swing-worst-line), [which customer makes money](/perspectives/which-customer-makes-money), [mix](/perspectives/mix-revenue-that-lowers-value), and [concentration](/perspectives/customer-concentration-multiple), on top of [numbers a buyer can believe](/perspectives/sellable-numbers), assembled as [a 12-to-24-month value build](/perspectives/the-value-build-before-market).
 
-The Sellable-Numbers Scan is where a build like this starts, with the value found and dollarized before you commit. In 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan is where a build like this starts, with the value found and dollarized before you commit. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

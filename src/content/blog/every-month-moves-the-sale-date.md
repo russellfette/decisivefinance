@@ -19,7 +19,7 @@ readingTime: 5
 
 - Waiting to make the numbers true does not pause the clock. Every month you wait moves the sale date a month, because the believable trailing twelve a buyer needs starts only once the numbers are true.
 - Delay costs twice: it pushes the earliest credible sale out, and it lets fixable problems keep dragging on the value in the meantime.
-- At one $25M consumer products manufacturer, over a year of deferral was pure delay against a fixable problem. Believable numbers later helped model a path from roughly $21M toward $52M.
+- At one $25M consumer products manufacturer, over a year of deferral was pure delay against a fixable problem. Believable numbers later helped roughly double the modeled exit value.
 
 Every month you wait moves the sale date a month, and that is the cost of delay almost no owner prices correctly. Waiting feels free, like a decision postponed. It is not. The clock on a believable sale is running whether you engage it or not, and each month of delay is a month added to the earliest date you can credibly sell. This piece is about the true cost of waiting.
 
@@ -42,7 +42,7 @@ The owner who waits does not preserve his options. He spends them, one month at 
 
 Because nothing visibly breaks. The business runs, the books close eventually, the top line may even grow. The cost is invisible because it is an opportunity cost, the sale you could have had sooner and the value you could have built. At the $25M consumer products manufacturer, the owner deferred for over a year, not for the market, but for numbers he would be willing to show. That year was pure delay against a fixable problem, and it bought nothing.
 
-Once the numbers were made true, believable earnings helped model a path from roughly $21M toward $52M. Every month before that was a month that value sat unbuilt.
+Once the numbers were made true, believable earnings helped roughly double the modeled exit value. Every month before that was a month that value sat unbuilt.
 
 ## How to stop the meter
 
@@ -58,7 +58,7 @@ The cheapest month to start is always this one.
 
 This is the cost side of [when the clock actually starts](/perspectives/when-the-clock-actually-starts) and the reason to [count backward from your sale date](/perspectives/count-backward-from-your-sale-date). It is what makes [being ready when the call comes](/perspectives/ready-when-the-call-comes) valuable, and it rests on building [numbers a buyer can believe](/perspectives/sellable-numbers).
 
-The Sellable-Numbers Scan quantifies what your delay is costing and how fast the clock can start, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan quantifies what your delay is costing and how fast the clock can start. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

@@ -56,7 +56,7 @@ Because a buyer pays for a trend he can believe, and a data room that answers fi
 
 A prepared room is how you avoid the trap in [deals die in diligence](/perspectives/deals-die-in-diligence) and [five findings that re-trade a deal](/perspectives/five-findings-that-retrade-a-deal). It rests on a clean trailing twelve, covered in [what counts as a clean trailing twelve](/perspectives/trailing-twelve-what-counts-as-clean), and a believable set of numbers overall: [numbers a buyer can believe](/perspectives/sellable-numbers).
 
-The Sellable-Numbers Scan runs the buyer's read in advance and shows you exactly what your data room needs to answer first, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan runs the buyer's read in advance and shows you exactly what your data room needs to answer first. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

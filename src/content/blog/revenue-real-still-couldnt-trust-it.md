@@ -19,7 +19,7 @@ readingTime: 5
 
 - Every sale can be real and the top line still untrustworthy. When revenue is recognized inconsistently month to month, a buyer discounts it even though the money came in.
 - At one $25M consumer products manufacturer, a revenue-recognition issue left the owner unable to trust his own sales number, something that used to not be a problem, and roughly $200,000 of unapplied cash piled up in a single month from a discount-integration issue.
-- Fixing how revenue is recognized is part of what let us model a path from roughly $21M to $52M in enterprise value for the same company.
+- Fixing how revenue is recognized is part of what let the work roughly double the modeled exit value.
 
 The revenue was real, and the owner still could not trust his own sales number. That is not a contradiction. It is what happens when money is real but the way it lands on the books is inconsistent, and it is one of the fastest ways to lose price in diligence. This piece is about how a true top line becomes an untrustworthy one, and what it takes to fix.
 
@@ -49,13 +49,13 @@ None of that changes how much you actually sold. It changes whether anyone, incl
 
 ## Why this protects the multiple
 
-Because a buyer pays for a trend he can believe, and revenue he cannot verify comes off the price even when it is entirely real. Making recognition consistent is quiet, unglamorous work, and it is part of what moved the modeled enterprise value at that $25M manufacturer from roughly $21M toward $52M. We do not audit the past. We make the company worth believing.
+Because a buyer pays for a trend he can believe, and revenue he cannot verify comes off the price even when it is entirely real. Making recognition consistent is quiet, unglamorous work, and it is part of what roughly doubled the modeled exit value at that $25M manufacturer. We do not audit the past. We make the company worth believing.
 
 ## Where this leads
 
-An untrustworthy top line is the revenue-side version of the pattern behind [the record month that was really a loss](/perspectives/anatomy-of-a-record-month) and the reason [clean books are not believable numbers](/perspectives/clean-books-vs-believable-numbers). It is also why owners end up [confident about the numbers a buyer discounts](/perspectives/confident-about-the-wrong-numbers). The standard is [numbers a buyer can believe](/perspectives/sellable-numbers).
+An untrustworthy top line is the revenue-side version of the pattern behind the record month that was really a loss and the reason [clean books are not believable numbers](/perspectives/clean-books-vs-believable-numbers). It is also why owners end up [confident about the numbers a buyer discounts](/perspectives/confident-about-the-wrong-numbers). The standard is [numbers a buyer can believe](/perspectives/sellable-numbers).
 
-The Sellable-Numbers Scan tests whether your top line would survive a buyer's read and dollarizes what it would cost if it does not, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan tests whether your top line would survive a buyer's read and dollarizes what it would cost if it does not. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

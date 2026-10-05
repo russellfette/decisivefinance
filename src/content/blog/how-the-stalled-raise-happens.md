@@ -72,7 +72,7 @@ The reversal has three moves.
 
 ## Where does cash recovery fit in?
 
-Inside a stalled raise, the cash recovery work is doing double duty. The recoverable value named in the first 14 days of a Diagnostic, guaranteed at 3x your Diagnostic fee and typically 5x to 10x, buys runway. More importantly, the act of finding it and cleaning it up demonstrates to existing investors that the CEO still has operating grip on the company. That matters in the bridge conversation more than any pitch page.
+Inside a stalled raise, the cash recovery work is doing double duty. The recoverable cash named in the first 14 days of a Diagnostic buys runway. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. More importantly, the act of finding it and cleaning it up demonstrates to existing investors that the CEO still has operating grip on the company. That matters in the bridge conversation more than any pitch page.
 
 ## Where to go from here
 

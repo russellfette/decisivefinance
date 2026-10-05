@@ -46,13 +46,13 @@ Any two of these together, and the client is likely sitting on a diligence probl
 
 As early as you can, because the fix is trailing-period work. Corrections made in the quarter the process starts document that the problems were recent; corrections made a year ahead are simply how the business runs by the time a buyer looks. The advisors who protect their deals raise the numbers question early, while there's still time for the fix to age into the track record a buyer will pay for.
 
-And because independence is what makes the fixed numbers believable, the party who does the work should be one with nothing riding on the close. We are the one advisor in the deal who is not paid on the deal, and our fees are tied to the value created, never to the deal, which is what lets an owner and a buyer's analyst both trust the result, and lets you bring us in without adding a competing hand to the close.
+And because independence is what makes the fixed numbers believable, the party who does the work should be one with nothing riding on the close. We take no piece of the transaction, which is what lets an owner and a buyer's analyst both trust the result, and lets you bring us in without adding a competing hand to the close.
 
 ## Where this leads
 
 The signals map to the fixes: [the five findings that re-trade a deal](/perspectives/five-findings-that-retrade-a-deal), [owner-dependence](/perspectives/owner-dependence-discount), [customer concentration](/perspectives/customer-concentration-multiple), and [why independence makes the numbers believable](/perspectives/advisor-not-paid-on-the-deal).
 
-The Sellable-Numbers Scan is a fast, independent read you can point a client to: in 14 days, in dollars, what a buyer would re-price and what the company is worth once the numbers can be believed. For the owner, the guarantee is simple: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan is a fast, independent read you can point a client to: in 14 days, in dollars, what a buyer would re-price and what the company is worth once the numbers can be believed. For the owner, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If you run deals and want to protect one, [book a fit call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch.
 

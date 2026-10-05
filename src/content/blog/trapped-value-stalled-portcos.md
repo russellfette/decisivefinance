@@ -1,7 +1,7 @@
 ---
 title: "Trapped value in stalled portcos: where it sits and how to name it"
 slug: trapped-value-stalled-portcos
-description: "Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. Here is where that money sits and why nobody inside can see it."
+description: "At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. Here is where that money sits and why nobody inside can see it."
 pubDate: 2025-06-11
 updatedDate: 2025-06-11
 author: "Russell Fette"
@@ -22,7 +22,7 @@ industry: "tech"
 - It concentrates in five categories: Cost, Pricing, Growth Spend, Product Line, Capital Structure. Every Diagnostic scans all five.
 - It is invisible from inside by design. The same traps that made the original decisions defensible now defend them against review.
 
-Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. That sentence carries the whole business model, so it is worth being precise about what recoverable value actually is, where it sits in a stalled portco, and why the people closest to it cannot see it.
+At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. That sentence carries the whole business model, so it is worth being precise about what recoverable value actually is, where it sits in a stalled portco, and why the people closest to it cannot see it.
 
 ## What counts as trapped value?
 

@@ -20,7 +20,7 @@ readingTime: 8
 
 - Deals rarely die on price. They die when a buyer's analyst finds something in the numbers he can't reconcile, and every figure after that gets read with suspicion. Believable numbers protect the multiple from diligence discounts.
 - The five findings that re-trade a deal are predictable, and every one of them is fixable before a buyer ever opens the data room. Found early, they're housekeeping. Found in diligence, they arm the buyer.
-- For advisors, brokers, bankers, and attorneys: the fastest way to protect a deal you're about to run is to send the owner in with numbers that survive the read. We are the one advisor in the deal who is not paid on the deal.
+- For advisors, brokers, bankers, and attorneys: the fastest way to protect a deal you're about to run is to send the owner in with numbers that survive the read. We take no piece of the transaction. Your mandate stays yours.
 
 If you sit on the deal side, you already know the pattern. A process starts strong, the price is agreed in principle, and then diligence turns up a thread nobody prepared for and the whole thing slows, re-trades, or dies. This piece is about the specific findings that cause it, and why the seller controls almost all of them if the work is done early enough.
 
@@ -52,13 +52,13 @@ The catch is timing. This is trailing-track-record work. A buyer wants twelve mo
 
 If you run deals, the seller's unready numbers are your risk too. A re-trade or a collapse in diligence costs you the fee, the timeline, and the client's confidence, and it usually traces back to numbers the owner could never quite stand behind. The move that protects the deal is getting that work done before the process starts, by someone whose only job is to make the numbers believable.
 
-That is the position we hold on purpose. We do not sell companies, solicit buyers, negotiate terms, or take a cut of the deal. We are the one advisor in the deal who is not paid on the deal, and our fees are tied to the value created, never to the deal. That independence is the product: it is why an owner and a buyer's analyst can both trust what we put on the page, and why an advisor can bring us in without introducing another party angling for a piece of the close.
+That is the position we hold on purpose. We do not sell companies, solicit buyers, negotiate terms, or take a cut of the deal. We take no piece of the transaction. That independence is the product: it is why an owner and a buyer's analyst can both trust what we put on the page, and why an advisor can bring us in without introducing another party angling for a piece of the close.
 
 ## Where to start
 
 Whether you're an owner circling a sale or an advisor about to run one, the first move is the same: find out which of the five findings are sitting in the numbers today, and clear them while there's still time to do it away from a buyer's eyes. That connects to the rest of the exit picture directly: [whether the numbers are believable at all](/perspectives/sellable-numbers), [growing what the company is worth before the sale](/perspectives/worth-more-before-you-sell), and [when the clock on believable numbers starts](/perspectives/the-exit-clock).
 
-The Sellable-Numbers Scan is built to surface exactly this. In 14 days, in dollars, we show what a buyer would re-price and where the value is trapped, plus the first three moves. For owners, the guarantee is simple: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan is built to surface exactly this. In 14 days, in dollars, we show what a buyer would re-price and where the value is trapped, plus the first three moves. For owners, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals and want to talk about protecting a specific one, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch either way.
 

@@ -55,7 +55,7 @@ The earlier the numbers become true, the sooner the clock starts, and the sooner
 
 The clock is set off by [four triggers](/perspectives/four-triggers-that-start-the-clock), and its cost compounds in [every month moves the sale date](/perspectives/every-month-moves-the-sale-date). Act on it by [counting backward from your sale date](/perspectives/count-backward-from-your-sale-date), and understand what "true" means in [what counts as a clean trailing twelve](/perspectives/trailing-twelve-what-counts-as-clean). The base is [numbers a buyer can believe](/perspectives/sellable-numbers).
 
-The Sellable-Numbers Scan tells you how far your numbers are from true and what the wait is costing, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan tells you how far your numbers are from true and what the wait is costing. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

@@ -49,7 +49,7 @@ That is the Run tier in practice, the Exit-Value Partnership: 12 to 24 months of
 
 The cadence is how the value levers hold: [the value build before market](/perspectives/the-value-build-before-market), [which customer makes money](/perspectives/which-customer-makes-money), and [pricing](/perspectives/pricing-swing-worst-line). It rests on numbers built to decide from: [Decision-First Finance](/perspectives/decision-first-finance).
 
-The Sellable-Numbers Scan is where the rhythm starts, with the value found and dollarized before you commit to the build. In 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan is where the rhythm starts, with the value found and dollarized before you commit to the build. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

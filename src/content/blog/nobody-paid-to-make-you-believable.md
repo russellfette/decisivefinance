@@ -19,7 +19,7 @@ readingTime: 5
 
 - Everyone who touches your books is paid to serve something else: the tax filing, the closed month, the bank report. Nobody in the chain is paid to make your company worth believing.
 - At one $25M consumer products manufacturer, the controller was told not to overwhelm the owner with detail, and the prior firm adjusted the budget to match actuals. Each did their job. The result was numbers the owner could not trust.
-- That gap is fixable, and it pays: with believable numbers, we modeled a path from roughly $21M to $52M in enterprise value for the same company.
+- That gap is fixable, and it pays: with believable numbers, the work roughly doubled the modeled exit value.
 
 Everyone who touches your books closes the month. Nobody is paid to make your company worth believing, and that single misalignment is why so many good businesses cannot trust their own numbers. This piece is about the roles, what each is actually paid to do, and the job that falls in the gap between them.
 
@@ -47,13 +47,13 @@ That is not bookkeeping done harder. It is the layer your bookkeeper, accountant
 
 ## Why this protects your price
 
-Because a buyer prices believability. When the numbers are built to decide from, they also survive being checked, and a business that can defend its earnings line by line does not get re-priced the way one running on faith does. Filling the gap at that $25M manufacturer is what moved the modeled enterprise value from roughly $21M toward $52M. We do not audit the past. We make the company worth believing.
+Because a buyer prices believability. When the numbers are built to decide from, they also survive being checked, and a business that can defend its earnings line by line does not get re-priced the way one running on faith does. Filling the gap at that $25M manufacturer is what roughly doubled the modeled exit value. We do not audit the past. We make the company worth believing.
 
 ## Where this leads
 
-This is the villain behind the whole cluster: it is why [clean books are not believable numbers](/perspectives/clean-books-vs-believable-numbers), why the books were [built to record, not to decide from](/perspectives/built-to-record-not-decide), and how [a single entry can turn a loss into a record month](/perspectives/anatomy-of-a-record-month) with nobody paid to catch it. The fix is [numbers a buyer can believe](/perspectives/sellable-numbers).
+This is the villain behind the whole cluster: it is why [clean books are not believable numbers](/perspectives/clean-books-vs-believable-numbers), why the books were [built to record, not to decide from](/perspectives/built-to-record-not-decide), and how a single entry can turn a loss into a record month with nobody paid to catch it. The fix is [numbers a buyer can believe](/perspectives/sellable-numbers).
 
-The Sellable-Numbers Scan does the job that falls in the gap, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan does the job that falls in the gap. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

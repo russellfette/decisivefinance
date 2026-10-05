@@ -4,7 +4,8 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  // Archived posts are not built; each has a 301 in public/_redirects.
+  const posts = (await getCollection('blog')).filter((p) => !p.data.archived);
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },

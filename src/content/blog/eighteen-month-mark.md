@@ -60,7 +60,7 @@ The companies that come back from the mark share one behavior, and it is not a m
 
 ## What is the Decisive Finance role in this?
 
-We run the 14-day Decision Diagnostic for exactly this moment. We scan the five canon recovery categories (Cost, Pricing, Growth Spend, Product Line, Capital Structure), score the Six Traps against the actual financials, and put the recoverable value in dollars next to the decisions that have been rolling forward. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. The Diagnostic is priced from $10,000 to $20,000, and the output is the decision list the 18-month mark has been asking for. We don't audit the past. We justify each next call.
+We run the 14-day Decision Diagnostic for exactly this moment. We scan the five canon recovery categories (Cost, Pricing, Growth Spend, Product Line, Capital Structure), score the Six Traps against the actual financials, and put the recoverable value in dollars next to the decisions that have been rolling forward. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. The Diagnostic is priced from $10,000 to $20,000, and the output is the decision list the 18-month mark has been asking for. We don't audit the past. We justify each next call.
 
 ## Where to go from here
 

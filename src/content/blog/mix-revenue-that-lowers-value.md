@@ -50,7 +50,7 @@ That is value creation through subtraction as much as addition, and it's only po
 
 Mix is a lever you can only steer once profit is visible by line, and it interacts directly with the others: [which customer actually makes money](/perspectives/which-customer-makes-money), [the pricing swing in your worst line](/perspectives/pricing-swing-worst-line), and [customer concentration](/perspectives/customer-concentration-multiple). Together they're [the value build before market](/perspectives/the-value-build-before-market).
 
-The Sellable-Numbers Scan reads your mix the way a buyer will and dollarizes what steering it is worth. In 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan reads your mix the way a buyer will and dollarizes what steering it is worth. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

@@ -19,7 +19,7 @@ readingTime: 6
 
 - A calendar-year return filed on the September extension describes a year that ended nine months earlier. An owner who takes a call in March 2027 is being asked about a year no filed document covers yet.
 - The return and the buyer's number are not the same number. On a $20M-revenue company, a $310,000 difference between tax-basis and accrual EBITDA is $1,860,000 of enterprise value at 6x, and the direction usually favors the owner, who cannot prove it.
-- We close the year on the basis a buyer underwrites, name the gap in dollars, and put the number in your hands before anyone else puts one on you. In 14 days, with one guarantee: at least 3x the fee in owner-accepted value, or you pay nothing.
+- We close the year on the basis a buyer underwrites, name the gap in dollars, and put the number in your hands before anyone else puts one on you. In 14 days, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 Most owners can name one earnings figure for their company with confidence, and it is the wrong one. It is the number on the tax return, and on a $20M-revenue company that number can sit $310,000 below what a buyer would underwrite, which is $1,860,000 of price at a 6x multiple. The return is not sloppy. It is accurate, filed, and signed by someone competent. It was simply built to answer a different question than the one a buyer asks, and it arrives nine months after the year it describes.
 
@@ -64,7 +64,7 @@ None of that takes a transaction to justify. It takes one closing cycle, and it 
 
 The filing calendar is one of several clocks running on your numbers without your input. The trailing twelve rolls whether or not you are watching it, and [a record month aging out can cost $1,320,000 on a day nothing changed](/perspectives/trailing-twelve-roll-off). The sequence that gets ahead of all of it starts by [counting backward from your sale date](/perspectives/count-backward-from-your-sale-date).
 
-The Sellable-Numbers Scan builds the accrual view and the tax-to-accrual bridge, and dollarizes the gap between the number you have been running on and the number a buyer would underwrite. In 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value, or you pay nothing.
+The Sellable-Numbers Scan builds the accrual view and the tax-to-accrual bridge, and dollarizes the gap between the number you have been running on and the number a buyer would underwrite. In 14 days, guaranteed: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If your most recent finished number is a return, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

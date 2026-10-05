@@ -59,7 +59,7 @@ A CFO who is stuck produces clean retrospective decks. Variance explained. Bridg
 
 ### 6. There is recoverable value no one is chasing
 
-We have yet to open a Diagnostic on a stalled portco and not surface recoverable value in the first 14 days. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. Some clear far more. Vendor overages on SaaS no one audited. R&D credits the bookkeeper never filed. AR that went 90 days because nobody made the call. Contract terms that auto-renewed past the point of need. In a stalled portco, someone is always busy, and no one is running the recovery.
+We have yet to open a Diagnostic on a stalled portco and not surface recoverable value in the first 14 days. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. Some clear far more. Vendor overages on SaaS no one audited. R&D credits the bookkeeper never filed. AR that went 90 days because nobody made the call. Contract terms that auto-renewed past the point of need. In a stalled portco, someone is always busy, and no one is running the recovery.
 
 If you nodded at three of those, the rest of this guide is for you.
 
@@ -93,7 +93,7 @@ Pick one. Model three paths. Decide. Move to the next. Inside 90 days, five of t
 
 ## Where does the recoverable value come from?
 
-Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. That recovery funds the Three-Path work that follows. This is not an accident. It is how we structured the firm. Inside the first 14 days of a Diagnostic, we run a scan across the five canon recovery categories: Cost, Pricing, Growth Spend, Product Line, Capital Structure. The Cost sweep alone covers SaaS audits, cloud infrastructure, R&D tax credits, AR and cash acceleration, vendor terms, revenue leakage, contractor load, and G&A overhead.
+At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. That recovery funds the Three-Path work that follows. This is not an accident. It is how we structured the firm. Inside the first 14 days of a Diagnostic, we run a scan across the five canon recovery categories: Cost, Pricing, Growth Spend, Product Line, Capital Structure. The Cost sweep alone covers SaaS audits, cloud infrastructure, R&D tax credits, AR and cash acceleration, vendor terms, revenue leakage, contractor load, and G&A overhead.
 
 Not every category hits in every engagement. Most do. The 14-day number is what surfaces as trapped value. The recovery follows: some items clear inside 30 days (AR, SaaS, contract cleanup), others file in month 2 or 3 (R&D credits). Either way, the number pays for the decision work that matters more, which is picking the five decisions that change the company's trajectory and running them three ways.
 

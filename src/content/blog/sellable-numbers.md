@@ -20,7 +20,7 @@ readingTime: 9
 
 - A buyer who can't trust your numbers doesn't walk away. He discounts. Every figure he can't verify becomes a reason to lower the price, and it surfaces in diligence, when your negotiating room is already gone.
 - One $25M consumer products manufacturer had a month that looked like his best ever, near 90% gross margin. A single wrong cost entry, about $364,000 of it, had turned a roughly $44,000 loss into a fake blowout. He almost made decisions off it.
-- With numbers he could finally stand behind, we modeled a path from roughly $21M to $52M in enterprise value. Same company. The difference was believability.
+- With numbers he could finally stand behind, the work roughly doubled the modeled exit value. Same company. The difference was believability.
 
 Most owners find out their numbers can't survive a sale at the worst possible time: in diligence, with the price already on the table and a buyer's analyst pulling the thread. This piece is about why that happens, what it costs in real dollars, and how to fix it while you still have the time to do it calmly.
 
@@ -82,7 +82,7 @@ Which is why the owners who get the number they want start early, on purpose, wi
 
 For that owner, the work was unglamorous, and that's the point. We fixed the costing so gross margin told the truth instead of swinging on a bad entry. We rebuilt the close so the numbers came in current instead of a month stale. We tracked down cash that had come in and never been matched to what it was for. We found product that was mispriced against its real cost, and discounts that were never really discounts.
 
-None of that is clever. It's the boring work of making each number mean what it says. And with numbers he could finally stand behind, we modeled a path from roughly $21M to $52M in enterprise value, against a banker's earlier estimate of $25M to $35M on numbers he didn't trust.
+None of that is clever. It's the boring work of making each number mean what it says. And with numbers he could finally stand behind, the work roughly doubled the modeled exit value, against the bankers' estimate on numbers he didn't trust.
 
 Same company. The difference was believability, and believability turned out to be worth more than any single operational change we could have made.
 
@@ -92,7 +92,7 @@ If you're anywhere within a few years of selling, the first move is not figuring
 
 That's the whole idea behind what we call sellable numbers: the numbers a buyer can believe, built before the buyer shows up. It connects directly to the other three questions every owner eventually faces, [growing what the company is worth before you sell](/perspectives/worth-more-before-you-sell), [surviving the buyer's diligence](/perspectives/surviving-diligence), and [when the clock actually starts](/perspectives/the-exit-clock). Underneath all of them sits the same diagnosis: [books built to record, not to decide](/perspectives/built-to-record-not-decide), and [the six traps a buyer prices against you](/perspectives/six-traps-a-buyer-prices).
 
-That's exactly what the Sellable-Numbers Scan is built to show. In 14 days, in dollars, we show an owner what a buyer would re-price in their numbers and what the company is worth once those numbers can be believed. The guarantee is simple: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+That's exactly what the Sellable-Numbers Scan is built to show. In 14 days, in dollars, we show an owner what a buyer would re-price in their numbers and what the company is worth once those numbers can be believed. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch. If the shape fits, we'll talk about the Scan. If it doesn't, you'll know inside the first call.
 

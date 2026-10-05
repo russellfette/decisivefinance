@@ -28,7 +28,7 @@ A stalled portco does not turn around by accelerating. It turns around by decidi
 
 The first fourteen days do three things in parallel. They surface cash. They restate the numbers the board actually uses. They produce one decision on paper.
 
-1. **Cash recovery scan across the five canon recovery categories.** Cost, Pricing, Growth Spend, Product Line, Capital Structure. The Cost sweep covers SaaS overages, cloud spend, R&D credits, AR aging, vendor terms, revenue leakage, contractor load, G&A creep. Every Diagnostic we have run has surfaced recoverable value inside this window. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. Some clear far more. The mechanical work is done by the engagement team; the company keeps the cash.
+1. **Cash recovery scan across the five canon recovery categories.** Cost, Pricing, Growth Spend, Product Line, Capital Structure. The Cost sweep covers SaaS overages, cloud spend, R&D credits, AR aging, vendor terms, revenue leakage, contractor load, G&A creep. Every Diagnostic we have run has surfaced recoverable value inside this window. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. Some clear far more. The mechanical work is done by the engagement team; the company keeps the cash.
 2. **Ratio restatement.** Gross margin, LTV/CAC, and net revenue retention restated against one explicit customer definition and one explicit cohort break. This is the *ratio mirage* fix, and it is what makes the next eleven weeks of decisions legible to the board.
 3. **First Three-Path Model.** Keep, Kill, Restructure on the one decision the CEO and lead investor have been avoiding for two quarters. Usually the go-to-market motion, the product portfolio, or a senior hire that has not worked. Dollars under each path. Timing. A recommended path.
 
@@ -80,7 +80,7 @@ It is also not a program that runs in parallel with the day job. The CEO's time,
 
 ## Where to go from here
 
-A Diagnostic is the first fourteen days of this sequence. It costs a fixed fee, guarantees 3x your Diagnostic fee in recoverable value in 14 days, typical 5x to 10x, and produces the first Three-Path Model on paper. If we miss the floor, the fee refunds. We have yet to refund one.
+A Diagnostic is the first fourteen days of this sequence. It costs a fixed fee, and produces the first Three-Path Model on paper. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. We have yet to refund one.
 
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)

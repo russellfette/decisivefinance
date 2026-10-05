@@ -52,7 +52,7 @@ Do that across six traps and the picture of what the company is worth changes, o
 
 The Six Trap Diagnostic™ is the first instrument we run, and it sets the priority for everything after it. It connects straight to the rest of the exit picture: [why your books couldn't catch these on their own](/perspectives/built-to-record-not-decide), [growing what the company is worth before you sell](/perspectives/worth-more-before-you-sell), and [surviving the buyer's diligence](/perspectives/surviving-diligence).
 
-That scoring runs inside the Sellable-Numbers Scan. In 14 days, in dollars, we show an owner where value is trapped and what the company is worth once the numbers can be believed, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+That scoring runs inside the Sellable-Numbers Scan. In 14 days, in dollars, we show an owner where value is trapped and what the company is worth once the numbers can be believed, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

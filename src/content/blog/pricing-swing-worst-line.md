@@ -54,7 +54,7 @@ A company that prices deliberately, against real and current costs, reads to a b
 
 Pricing is one of the value levers that only becomes visible once you can see profit by line. It connects to [which job, product, or customer actually makes money](/perspectives/which-customer-makes-money), [the mix decisions that quietly lower your value](/perspectives/mix-revenue-that-lowers-value), and the diagnosis underneath, [books built to record, not to decide](/perspectives/built-to-record-not-decide).
 
-The Sellable-Numbers Scan finds the mispriced lines and dollarizes the swing. In 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan finds the mispriced lines and dollarizes the swing. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

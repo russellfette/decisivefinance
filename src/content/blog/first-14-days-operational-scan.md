@@ -1,7 +1,7 @@
 ---
 title: "What the first 14 days of a Diagnostic actually look like"
 slug: first-14-days-operational-scan
-description: "Day-by-day, inside the 14-day Diagnostic scan that guarantees 3x your fee in recoverable value. What gets touched, what does not, and what the client actually sees by the end of week two."
+description: "Day-by-day, inside the 14-day Diagnostic scan backed by one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. What gets touched, what does not, and what the client actually sees by the end of week two."
 pubDate: 2026-01-27
 updatedDate: 2026-01-27
 author: "Russell Fette"
@@ -77,7 +77,7 @@ Day 14: Readout. A 90-minute session with the CEO, CFO, and optionally the lead 
 
 Three deliverables, each one page or close to it.
 
-1. **Cash Recovery Schedule.** A line-item view of every dollar recovered or queued across the five categories. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x.
+1. **Cash Recovery Schedule.** A line-item view of every dollar recovered or queued across the five categories. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x.
 2. **Restated Ratios Summary.** Reported vs. restated gross margin, LTV/CAC, NRR. Driver notes for each gap. A single-page document.
 3. **Three-Path Model.** The first Keep/Kill/Restructure on the decision the company has been running by default.
 
@@ -93,7 +93,7 @@ Fourteen days total. Nothing ships to the client's calendar without a 48-hour he
 
 ## Where to go from here
 
-The Diagnostic is a fixed-fee engagement with a guarantee: 3x your Diagnostic fee in recoverable value, in 14 days, typical 5x to 10x. If we miss, the fee refunds.
+The Diagnostic is a fixed-fee engagement with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x.
 
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)

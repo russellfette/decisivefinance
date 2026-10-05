@@ -55,7 +55,7 @@ Because a business that prices off current cost is a business that defends its o
 
 Pricing is one of the three earnings levers in [the two numbers behind the price](/perspectives/two-numbers-behind-the-price), and it compounds with margin: [a few points of margin, run through a multiple](/perspectives/margin-points-through-a-multiple). It starts with seeing the truth: [which job, product, or customer actually makes money](/perspectives/which-customer-makes-money) and why the numbers must be [built to decide from, not just to record](/perspectives/built-to-record-not-decide).
 
-The Sellable-Numbers Scan rebuilds cost at today's inputs and dollarizes the repricing opportunity, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan rebuilds cost at today's inputs and dollarizes the repricing opportunity. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

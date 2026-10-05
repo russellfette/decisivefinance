@@ -6,9 +6,9 @@ const CALENDLY = '#book';
 
 const title = 'Hourly CFOs get paid to look. We get paid to find.';
 const description =
-  'In 14 days we find at least 3x our fee in owner-accepted value, or you pay nothing. For $5M to $50M owner-led companies, running it or selling it.';
+  'At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. For $5M to $50M owner-led companies, running it or selling it.';
 
-// Two lanes of equal weight under the hero (Homepage v4, Phrase Book v3.4 grid 3a)
+// Two lanes of equal weight under the hero (Homepage v4.1, Phrase Book v3.5 grid 3a)
 const lanes = [
   {
     label: 'Running it',
@@ -33,7 +33,7 @@ const steps = [
   {
     step: 'Find',
     title: 'The Decision Diagnostic or the Sellable-Numbers Scan, 14 days.',
-    body: "The Diagnostic if you're running it; the Scan if you're selling. We normalize your numbers and run the Six Trap Diagnostic™. You get the recoverable value in dollars, and on the Scan, what diligence would knock off your number. From $10,000, fixed. Guaranteed.",
+    body: "The Diagnostic if you're running it; the Scan if you're selling. We normalize your numbers and run the Six Trap Diagnostic™. You get the recoverable cash and margin in dollars, and on the Scan, what diligence would knock off your number. From $10,000, fixed. Guaranteed.",
     href: '/how-it-works',
     link: 'How Find works',
   },
@@ -47,40 +47,12 @@ const steps = [
   {
     step: 'Run',
     title: 'The Decision Partnership or the Exit-Value Partnership.',
-    body: 'The Decision Partnership keeps the rhythm running on retainer. For owners heading to market, the Exit-Value Partnership spends the 12 to 24 months before a sale building the value the Scan found and the trend a buyer will pay for. Our fees are tied to the value created, never to the deal. We are the one advisor in the deal who is not paid on the deal.',
+    body: 'The Decision Partnership keeps the rhythm running on retainer. For owners heading to market, the Exit-Value Partnership spends the 12 to 24 months before a sale building the value the Scan found and the trend a buyer will pay for. Our fees are tied to the value created, never to the deal. We take no piece of the transaction.',
     href: '/partnership',
     link: 'The Partnership, both faces',
   },
 ];
 
-const proofs = [
-  {
-    name: 'Consumer products manufacturer',
-    tag: '$25M revenue',
-    outcome:
-      "Bankers' estimate was $25M to $35M, on books the owner didn't trust. The work roughly doubled the modeled exit value.",
-    resolution:
-      'Mispriced inputs, phantom discounts, and revenue never brought over. Pricing was anchored to costs that had moved years earlier, and the aggregate P&L hid which products carried the business.',
-    takeaway: 'The gap was never the market. It was the numbers.',
-  },
-  {
-    name: 'Professional services',
-    tag: '$30M revenue',
-    outcome:
-      '$380,000 of working capital recovered. Close cut from 22 days to 3. Roughly $50,000 a month of margin, in 90 days.',
-    resolution:
-      'Cash was trapped in a billing and close cadence nobody had revisited, and clean reports masked the leak. We rebuilt the rhythm, pulled the working capital forward, and put margin on a weekly line of sight.',
-    takeaway: 'A clean close is not a fast one, and neither tells you where the cash is stuck.',
-  },
-  {
-    name: 'Manufacturer',
-    tag: '$15M revenue',
-    outcome: 'The largest customer was the least profitable. Margins moved from 15% to 22% in 90 days.',
-    resolution:
-      'The biggest account felt untouchable, so the math never got run. Full cost allocation showed it was funded by everyone else. We repriced and reset terms, and margin followed inside the quarter.',
-    takeaway: 'The account nobody would touch was the margin everyone was looking for.',
-  },
-];
 
 const fitNo = [
   'Under $5M in revenue. The guarantee math does not hold, so we refer out.',
@@ -118,7 +90,7 @@ const offersJsonLd = {
   name: 'Decisive Finance',
   url: 'https://decisive.finance',
   description:
-    'Decision-First Finance for owner-led companies, $5M to $50M in revenue, running it or getting it ready to sell. In 14 days we find at least 3x our fee in owner-accepted value, or you pay nothing.',
+    'Decision-First Finance for owner-led companies, $5M to $50M in revenue, running it or getting it ready to sell. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.',
   founder: {
     '@type': 'Person',
     name: 'Russell Fette',
@@ -169,7 +141,7 @@ const offersJsonLd = {
         <span class="h1-line h1-line-accent">We get paid to find.</span>
       </h1>
       <p class="hero-subhead">
-        In 14 days we find <span class="dollar">at least 3x our fee in owner-accepted value</span> in your numbers, or you pay nothing. Whether you&rsquo;re running it or getting it ready to sell.
+        <span class="dollar">At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.</span> For owner-led companies, $5M to $50M, whether you&rsquo;re running it or getting it ready to sell.
       </p>
       <div class="hero-cta-row">
         <a href={CALENDLY} class="btn btn-primary">See if you qualify</a>
@@ -194,32 +166,11 @@ const offersJsonLd = {
         ))}
       </div>
       <p class="trust-strip">
-        $380K of working capital recovered in 90 days &middot; a monthly close cut from 22 days to 3 &middot; a $25M manufacturer&rsquo;s modeled exit value, roughly doubled
+        A $30M services firm: $380K of working capital recovered and the monthly close cut from 22 days to 3, in 90 days. &middot; A $25M consumer products manufacturer whose owner didn&rsquo;t trust the P&amp;L behind the bankers&rsquo; estimate; the work roughly doubled the modeled exit value.
       </p>
     </div>
   </section>
 
-  <!-- Proof strip -->
-  <section id="proof" class="alt">
-    <div class="container">
-      <span class="section-eyebrow">Proof</span>
-      <h2>The numbers moved because the numbers changed.</h2>
-      <p class="lede">
-        Three companies, three sectors, one method. Anonymized by segment and revenue band until attribution is confirmed.
-      </p>
-      <div class="proof-grid">
-        {proofs.map((p) => (
-          <div class="proof-card">
-            <div class="proof-name">{p.name}</div>
-            <span class="proof-tag">{p.tag}</span>
-            <div class="proof-outcome">{p.outcome}</div>
-            <p class="resolution">{p.resolution}</p>
-            <div class="takeaway">{p.takeaway}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
 
   <!-- Second act: the wound (why us) -->
   <section id="why-us">
@@ -231,7 +182,7 @@ const offersJsonLd = {
           Your accounting was built to answer one question: what happened. It closes the month, files the taxes, satisfies the bank. It was never built to answer the questions an owner actually faces: which work makes money, what to do next, and what the company is worth.
         </p>
         <p>
-          Here&rsquo;s the part nobody says out loud. Everyone who touches your numbers is paid to serve something other than you. The tax preparer optimizes the return. The bookkeeper, often a junior person carrying a senior title, produces a P&amp;L and closes the month. Not one of them is paid to find the margin, the cash or the value.
+          Here&rsquo;s the part nobody says out loud. Everyone who touches your numbers is paid to serve something other than you. The tax preparer optimizes the return. The bookkeeper closes the month. Not one of them is paid to find the margin, the cash or the value.
         </p>
         <p>
           The decisions weren&rsquo;t wrong. You made them on the only numbers you had, and those numbers were never built to decide from. Growth covered it. Then a big call lands, or a buyer calls, and the gap has a price.
@@ -246,9 +197,6 @@ const offersJsonLd = {
       <div class="container-narrow">
         <span class="section-eyebrow">How it works</span>
         <h2>A sale price is a multiple times earnings. We work both numbers.</h2>
-        <p class="lede">
-          Three steps, one rhythm, whether you&rsquo;re running the company or selling it. Find what&rsquo;s trapped. Install the rhythm that fixes it. Run it until the numbers prove it in the cash.
-        </p>
       </div>
       <div class="step-grid">
         {steps.map((item, i) => (
@@ -274,7 +222,7 @@ const offersJsonLd = {
         <span class="section-eyebrow">The guarantee</span>
         <h2>We put the risk on our side of the table.</h2>
         <p class="lede">
-          The Diagnostic or the Scan identifies at least 3x its fee in quantified, owner-accepted value (recoverable cash, recoverable margin, avoided cost, and on the Scan, dollarized valuation exposure) inside 14 days, or a strategic finding of equivalent materiality confirmed in writing, or you pay nothing. Typical results run 5x to 10x.
+          The Diagnostic or the Scan: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. Owner-accepted value is recoverable cash, recoverable margin, avoided cost, and on the Scan, dollarized valuation exposure.
         </p>
         <p>
           The 90-Day Resolution installs the rhythm and proves it in market, or every fee is refunded and you keep every artifact we built. We never guarantee a sale price or a multiple.

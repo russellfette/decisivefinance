@@ -65,7 +65,7 @@ Timing is the constraint. This is trailing-track-record work, so a policy correc
 
 Cutoff is not an accounting curiosity. It is the mechanism that decides whether your best quarter belongs to you or to the period after the sale, and it is settled by documents you already have.
 
-The Sellable-Numbers Scan runs the buyer's read on your side first, re-cuts the trailing twelve on the basis he will use, and puts a dollar figure on what a cutoff adjustment would cost before anyone else is holding the pen. In 14 days, with one guarantee: at least 3x the fee in owner-accepted value, or you pay nothing.
+The Sellable-Numbers Scan runs the buyer's read on your side first, re-cuts the trailing twelve on the basis he will use, and puts a dollar figure on what a cutoff adjustment would cost before anyone else is holding the pen. In 14 days, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If you own the company, [book a fit call](https://calendly.com/russell-decisive/30min). If you are advising on a specific deal and want this cleared before diligence opens, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch either way.
 

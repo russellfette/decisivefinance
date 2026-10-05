@@ -56,7 +56,7 @@ Because a company that knows exactly which lines make money is a company a buyer
 
 Seeing profit by line is the foundation of the other value levers: [the pricing swing hiding in your worst-priced line](/perspectives/pricing-swing-worst-line), [the customer concentration that halves your multiple](/perspectives/customer-concentration-multiple), and the [mix decisions that quietly lower your value](/perspectives/mix-revenue-that-lowers-value). Underneath all of it sits the same requirement: [numbers built to decide from, not just to record](/perspectives/built-to-record-not-decide).
 
-The Sellable-Numbers Scan builds that per-line view and dollarizes what it changes about your value. In 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan builds that per-line view and dollarizes what it changes about your value. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

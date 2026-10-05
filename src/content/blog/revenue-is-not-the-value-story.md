@@ -19,7 +19,7 @@ readingTime: 5
 
 - Revenue is the story owners tell and the number a buyer discounts. Believable earnings is the story a buyer pays for, and the two often point in different directions.
 - At one $25M consumer products manufacturer, the owner knew his top line cold and could not fully trust it, because a revenue-recognition issue meant even real sales did not land consistently.
-- Changing the story from revenue to believable earnings is what grows value: for the same company, it helped move the modeled enterprise value from roughly $21M toward $52M.
+- Changing the story from revenue to believable earnings is what grows value: for the same company, it helped roughly double the modeled exit value.
 
 Revenue is not the value story. Earnings a buyer believes is the value story, and confusing the two is one of the most expensive mistakes an owner can make before a sale. This piece is about why the top line feels like the headline and why a buyer reads a different number entirely.
 
@@ -49,13 +49,13 @@ The shift is from "look how much we sold" to "look how much we actually make, an
 
 ## Why this grows what the company is worth
 
-Because a buyer multiplies believable earnings, not revenue, and a company that leads with provable earnings gets both a bigger multiplied number and more trust in it. At the $25M manufacturer, moving the story onto believable earnings is part of what took the modeled value from roughly $21M toward $52M. A more valuable company and the numbers to prove it starts with telling the right story.
+Because a buyer multiplies believable earnings, not revenue, and a company that leads with provable earnings gets both a bigger multiplied number and more trust in it. At the $25M manufacturer, moving the story onto believable earnings is part of what roughly doubled the modeled exit value. A more valuable company and the numbers to prove it starts with telling the right story.
 
 ## Where this leads
 
 Believable earnings is the point of [the two numbers behind the price](/perspectives/two-numbers-behind-the-price) and depends on the numbers being [built to decide from, not just to record](/perspectives/built-to-record-not-decide). It is also why owners end up [confident about the numbers a buyer discounts](/perspectives/confident-about-the-wrong-numbers), and how [real revenue can still be untrustworthy](/perspectives/revenue-real-still-couldnt-trust-it).
 
-The Sellable-Numbers Scan builds the believable-earnings case and dollarizes what it does to your value, in 14 days, guaranteed: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan builds the believable-earnings case and dollarizes what it does to your value. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 

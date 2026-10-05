@@ -11,6 +11,7 @@ pillar: 1
 ctaVariant: "sellable-numbers"
 dominantClaim: "3x-owner-accepted-14-days"
 ogImage: "/og/inventory-a-buyer-cannot-find.png"
+archived: true
 featured: false
 readingTime: 5
 ---
@@ -53,7 +54,7 @@ The unglamorous work was tying out the inventory, drawing down the prepaid, and 
 
 ## Where this leads
 
-Phantom value on the balance sheet is the asset-side version of a broader problem: [clean books that are not the same as believable numbers](/perspectives/clean-books-vs-believable-numbers), and [books built to record, not to decide from](/perspectives/built-to-record-not-decide). It is the same failure that let [one cost entry turn a loss into a record month](/perspectives/anatomy-of-a-record-month), and it is exactly the kind of finding that [kills deals in diligence](/perspectives/deals-die-in-diligence) when a buyer finds it first.
+Phantom value on the balance sheet is the asset-side version of a broader problem: [clean books that are not the same as believable numbers](/perspectives/clean-books-vs-believable-numbers), and [books built to record, not to decide from](/perspectives/built-to-record-not-decide). It is the same failure that let one cost entry turn a loss into a record month, and it is exactly the kind of finding that [kills deals in diligence](/perspectives/deals-die-in-diligence) when a buyer finds it first.
 
 The Sellable-Numbers Scan checks the balance sheet a buyer will check and dollarizes what will not survive him counting, in 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value, in 14 days, or you pay nothing.
 

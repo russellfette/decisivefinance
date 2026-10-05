@@ -49,7 +49,7 @@ Every one of these is a trigger, not a plan. The owners who come through them we
 
 ## What is it even worth right now?
 
-This is the question underneath all of it, and it's the honest place to start. Not a polished valuation you commission to feel good, but a clear read of what a buyer would actually pay today, given the numbers as they really are, and where that number could go once the numbers can be believed. For the $25M owner, that honest read was the difference between a banker's early estimate of $25M to $35M on numbers he didn't trust and a modeled path from roughly $21M to $52M once he could stand behind them.
+This is the question underneath all of it, and it's the honest place to start. Not a polished valuation you commission to feel good, but a clear read of what a buyer would actually pay today, given the numbers as they really are, and where that number could go once the numbers can be believed. For the $25M owner, that honest read was the difference between the bankers' estimate on numbers he didn't trust and a modeled exit value the work roughly doubled once he could stand behind them.
 
 You don't need a live deal to ask the question. In fact, the best time to ask it is when there's no deal at all, because then the answer is information you can act on instead of an advantage someone else holds.
 

@@ -62,7 +62,7 @@ The Diagnostic is priced from $10,000 to $20,000. A first-year audit for a compa
 
 ## What is the Decisive Finance role in this?
 
-The Diagnostic is ours: a 14-day scan across the five canon categories, run against your actual financials, ending in a dollar figure and a decision list rather than an opinion letter. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. Keep your auditor; they are doing a job we do not do. We don't audit the past. We justify each next call.
+The Diagnostic is ours: a 14-day scan across the five canon categories, run against your actual financials, ending in a dollar figure and a decision list rather than an opinion letter. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. Keep your auditor; they are doing a job we do not do. We don't audit the past. We justify each next call.
 
 ## Where to go from here
 

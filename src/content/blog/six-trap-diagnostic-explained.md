@@ -45,7 +45,7 @@ The evidence rule is what separates the instrument from an opinion. The data pul
 
 Everything downstream. The trap diagnosis sets priority for the entire engagement: the Trapped Value Report scans hardest where the traps are LIVE, because that is where [the trapped value](https://decisive.finance/perspectives/trapped-value-stalled-portcos) concentrates. The Three-Path Models get built first on the decisions the trap stack is defending. The [day 1 to 90 sequence](https://decisive.finance/perspectives/stalled-recovery-day-1-to-90) orders its recovery work by the same map. Diagnose before prescribing is the operating rule; the Scorecard is the diagnosis.
 
-It also sets the floor under the guarantee. Guaranteed 3x your Diagnostic fee in recoverable value, in 14 days. Typical 5x to 10x. We can put money behind that sentence because the traps are predictable: where two or more are LIVE around the same decision, the value is there.
+It also sets the floor under the guarantee. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. We can put money behind that sentence because the traps are predictable: where two or more are LIVE around the same decision, the value is there.
 
 ## Can you run a version of this yourself?
 

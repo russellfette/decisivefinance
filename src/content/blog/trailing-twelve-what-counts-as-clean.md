@@ -50,7 +50,7 @@ The reverse is just as sharp. One un-clean month, a swing nobody can explain or 
 
 The clean trailing twelve is the product of the same work as the rest of the diligence picture: [sell-side QoE prep](/perspectives/sell-side-qoe-prep), [the five findings that re-trade a deal](/perspectives/five-findings-that-retrade-a-deal), and the diagnosis underneath, [books built to record, not to decide](/perspectives/built-to-record-not-decide). For the timing question in full, see [when the clock actually starts](/perspectives/the-exit-clock).
 
-The Sellable-Numbers Scan tells you, in 14 days, how clean your trailing twelve is today and what it would take to get it there. For owners, the guarantee is simple: at least 3x the Scan fee in owner-accepted value identified, or you pay nothing.
+The Sellable-Numbers Scan tells you, in 14 days, how clean your trailing twelve is today and what it would take to get it there. For owners, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
 If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
 
