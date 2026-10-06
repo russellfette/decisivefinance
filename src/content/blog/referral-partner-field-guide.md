@@ -50,7 +50,7 @@ And because independence is what makes the fixed numbers believable, the party w
 
 ## Where this leads
 
-The signals map to the fixes: [the five findings that re-trade a deal](/perspectives/five-findings-that-retrade-a-deal), [owner-dependence](/perspectives/owner-dependence-discount), [customer concentration](/perspectives/customer-concentration-multiple), and [why independence makes the numbers believable](/perspectives/advisor-not-paid-on-the-deal).
+The signals map to the fixes: [the five findings that re-trade a deal](/perspectives/five-findings-that-retrade-a-deal), [owner-dependence](/perspectives/owner-dependence-discount), [customer concentration](/perspectives/customer-concentration-multiple), and why independence makes the numbers believable.
 
 The Sellable-Numbers Scan is a fast, independent read you can point a client to: in 14 days, in dollars, what a buyer would re-price and what the company is worth once the numbers can be believed. For the owner, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 

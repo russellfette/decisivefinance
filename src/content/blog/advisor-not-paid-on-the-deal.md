@@ -11,6 +11,7 @@ pillar: 3
 ctaVariant: "surviving-diligence"
 dominantClaim: "believable-numbers-protect-the-multiple"
 ogImage: "/og/advisor-not-paid-on-the-deal.png"
+archived: true
 featured: false
 readingTime: 5
 ---
