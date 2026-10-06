@@ -35,7 +35,7 @@ A buyer lives entirely in the second world. He is not asking whether your month 
 
 Because growth pays the bill that the missing decision layer should have caught. When the top line is climbing, a mispriced product still sells, a subsidized customer still ships, and a stale close still feels close enough, because rising revenue forgives all of it. Nobody feels the problem, so nobody funds the fix.
 
-Then one of two things happens. Growth softens and the forgiving stops, or the owner decides to sell and a stranger starts reading the numbers with a very different question in mind. Either way, the same books that felt fine for a decade suddenly can't answer what's being asked. The mess isn't negligence. Growth covered it, and the people producing the numbers were never paid to look.
+Then one of two things happens. Growth softens and the forgiving stops, or the owner decides to sell and a stranger starts reading the numbers with a very different question in mind. Either way, the same books that felt fine for a decade suddenly can't answer what's being asked. The mess isn't negligence. Growth covered it.
 
 ## How fast does a buyer see it?
 

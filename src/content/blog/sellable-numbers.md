@@ -30,7 +30,7 @@ Start with the uncomfortable version, because it's the true one. Your books were
 
 It is also a completely different job from proving to a stranger, who is about to wire you millions of dollars, that your earnings are real and repeatable. Recording the past and proving the future are not the same skill, and the people who did the first were never asked to do the second.
 
-So the gap sits there, invisible, for years. Growth covers it. When sales are climbing, nobody feels the accounting problems, because the top line forgives a lot. Then growth softens, or an owner decides it's time to sell, and the same numbers that felt fine suddenly can't answer basic questions. The mess isn't negligence. Growth covered it, and the people producing the numbers were never paid to look.
+So the gap sits there, invisible, for years. Growth covers it. When sales are climbing, nobody feels the accounting problems, because the top line forgives a lot. Then growth softens, or an owner decides it's time to sell, and the same numbers that felt fine suddenly can't answer basic questions. The mess isn't negligence. Growth covered it.
 
 We worked with the owner of a $25M consumer products manufacturer who lived this exactly. For years, he had a controller and a couple of accountants, and things ran okay. The books closed. But nobody was getting to the questions that actually decide a sale price, because nobody's job was to ask them.
 

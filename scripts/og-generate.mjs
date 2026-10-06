@@ -1,13 +1,13 @@
 // og-generate.mjs
 // Regenerates post OG PNGs (1200x630) from blog frontmatter titles.
-// Layout matches public/og/default.svg. Claim line is canon v3.2 (trigger-first).
+// Layout matches public/og/default.svg. Claim line is the public guarantee string, Phrase Book v3.6 section 7.
 // Usage: node scripts/og-generate.mjs [slug ...]   (no args = all posts + default)
 
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import sharp from 'sharp';
 
-const CLAIM = 'Guaranteed 3x your fee in owner-accepted value, in 14 days.';
+const CLAIM = 'At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.';
 const SUB = 'Field notes from inside the engagements.';
 const BLOG = 'src/content/blog';
 
@@ -81,14 +81,14 @@ for (const f of posts) {
   console.log(`og: ${og}.png  (${title.length} chars)`);
 }
 
-// Default (homepage) card: ink, exit H1, flag wordmark. Homepage v3 build note 2.
+// Default (homepage) card: rasterized from public/og/default.svg, the hand-built hero card
+// (Homepage v4.3: "Some customers pay you. Some cost you."). Edit the SVG, not this script.
 if (!only.length || only.includes('default')) {
-  const defaultSvg = svgFor("You can't sell a company on numbers you don't trust yourself.")
-    .replace('>Perspectives</text>', '>decisive.finance</text>');
+  const defaultSvg = readFileSync('public/og/default.svg', 'utf8');
   const png = await sharp(Buffer.from(defaultSvg), { density: 96 })
     .resize(1200, 630)
     .png()
     .toBuffer();
   writeFileSync('public/og/default.png', png);
-  console.log('og: default.png (exit H1)');
+  console.log('og: default.png (from default.svg)');
 }

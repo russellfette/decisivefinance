@@ -28,7 +28,7 @@ A single wrong cost entry can turn a losing month into the best month you have e
 
 Gross margin came in near 90%. On paper, the strongest month the company had ever run. It was not real. One input cost had been entered wrong, and that single bad entry, roughly $364,000 of it, flipped a month that actually lost about $44,000 into a fake blowout.
 
-The mechanism is boring, which is exactly why it survives. Cost of goods flows from entries nobody re-checks once the month closes. If the cost side is understated, margin inflates automatically, and the number lands on a report that looks clean. Nothing flags it, because the books were built to record what was entered, not to ask whether the entry made sense. The mess is not negligence. Growth covered it, and the people producing the numbers were never paid to look.
+The mechanism is boring, which is exactly why it survives. Cost of goods flows from entries nobody re-checks once the month closes. If the cost side is understated, margin inflates automatically, and the number lands on a report that looks clean. Nothing flags it, because the books were built to record what was entered, not to ask whether the entry made sense. The mess is not negligence. Growth covered it.
 
 ## Why is a fake good month more dangerous than a bad one?
 
