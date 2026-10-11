@@ -44,12 +44,19 @@ const LI_DIR = join(REPO, 'src/content/linkedin');
 const QUEUE_FILE = join(REPO, 'content-queue.md');
 
 // Pillar 5 is the Industry band, not part of the Tuesday rotation.
+// Two prongs of equal weight (Core v1.5.2): pillar 6 is the running-it prong;
+// pillars 1 to 4 are the selling-it prong. Added 2026-10-11.
 const PILLARS = {
   1: 'Sellable numbers',
   2: 'Worth more',
   3: 'Surviving diligence',
   4: 'The exit clock',
+  6: 'Where the profit went',
 };
+const RUNNING = new Set([6]);
+const SELLING = new Set([1, 2, 3, 4]);
+// A Tuesday carries at most this many posts.
+const MAX_PER_TUESDAY = 2;
 
 // Weeks of banked blog posts allowed before the run stops drafting new ones.
 // Six is deliberate: enough runway that one missed run leaves no gap, short
@@ -136,7 +143,7 @@ const liBacklog = live
 let override = null;
 if (existsSync(QUEUE_FILE)) {
   for (const line of readFileSync(QUEUE_FILE, 'utf8').split(/\r?\n/)) {
-    const row = line.match(/^\s*\|\s*(\d{4}-\d{2}-\d{2})\s*\|\s*([1-4])\s*\|\s*([^|]*)\|/);
+    const row = line.match(/^\s*\|\s*(\d{4}-\d{2}-\d{2})\s*\|\s*([1-46])\s*\|\s*([^|]*)\|/);
     if (row && row[1] === slotISO) {
       override = { pillar: Number(row[2]), workingTitle: row[3].trim() };
       break;
@@ -163,14 +170,42 @@ const computed = [...stats].sort(
   (a, b) => a.ahead - b.ahead || (a.lastCovered < b.lastCovered ? -1 : 1),
 )[0];
 
-const chosen = override ? stats.find((s) => s.pillar === override.pillar) : computed;
+// Prong balance. If the running-it prong has fewer posts ahead than the
+// selling-it prong, the run drafts a running-it post even when the queue is
+// banked past the cap, into the first Tuesday from next week on with room
+// for a second post. Equal weight is canon; a deficit is not a surplus.
+const runningAhead = forward.filter((p) => RUNNING.has(p.pillar)).length;
+const sellingAhead = forward.filter((p) => SELLING.has(p.pillar)).length;
+const prongDeficit = runningAhead < sellingAhead;
+let deficitSlot = null;
+if (prongDeficit) {
+  const d = new Date(firstTuesday);
+  d.setUTCDate(d.getUTCDate() + 7);
+  for (let i = 0; i < 26; i++) {
+    const n = live.filter((p) => p.pubDate === iso(d)).length;
+    if (n < MAX_PER_TUESDAY) { deficitSlot = iso(d); break; }
+    d.setUTCDate(d.getUTCDate() + 7);
+  }
+}
+
+const runningStat = stats.find((s) => s.pillar === 6);
+const sellingPick = [...stats].filter((s) => SELLING.has(s.pillar)).sort(
+  (a, b) => a.ahead - b.ahead || (a.lastCovered < b.lastCovered ? -1 : 1),
+)[0];
+const balanced = prongDeficit ? runningStat : sellingPick;
+
+const chosen = override ? stats.find((s) => s.pillar === override.pillar) : balanced;
 
 // Mode decision. An override row for the open slot is a hand-written
 // instruction, so it beats the cap the same way it beats the computed pillar.
 const queueDeep = weeksBanked >= maxAhead;
 let mode = 'draft';
 let modeReason = `blog banked ${weeksBanked} of ${maxAhead} weeks, room to draft`;
-if (queueDeep && !forceDraft && !override) {
+let draftSlot = slotISO;
+if (queueDeep && !forceDraft && !override && prongDeficit && deficitSlot) {
+  draftSlot = deficitSlot;
+  modeReason = `running-it prong has ${runningAhead} posts ahead against ${sellingAhead} on selling it; drafting a running-it post for ${deficitSlot} despite the ${maxAhead} week cap`;
+} else if (queueDeep && !forceDraft && !override) {
   if (liBacklog.length) {
     mode = 'repurpose';
     modeReason = `blog banked ${weeksBanked} weeks through ${bankedThrough}, past the ${maxAhead} week cap, and ${liBacklog.length} publishing posts have no LinkedIn draft`;
@@ -192,7 +227,9 @@ const result = {
   weeksBanked,
   maxAhead,
   bankedThrough,
-  slot: mode === 'draft' ? slotISO : null,
+  slot: mode === 'draft' ? draftSlot : null,
+  runningAhead,
+  sellingAhead,
   pillar: mode === 'draft' ? chosen.pillar : null,
   pillarName: mode === 'draft' ? chosen.name : null,
   source: override ? 'content-queue.md' : 'computed from repo state',
@@ -211,7 +248,8 @@ if (jsonOnly) {
   console.log(`Why:    ${result.modeReason}`);
   console.log('');
   if (mode === 'draft') {
-    console.log(`Slot:   ${result.slot} (next open Tuesday)`);
+    console.log(`Slot:   ${result.slot}`);
+    console.log(`Prongs: running it ${runningAhead} ahead, selling it ${sellingAhead} ahead`);
     console.log(`Pillar: ${result.pillar}, ${result.pillarName}`);
     console.log(`Source: ${result.source}`);
     if (result.workingTitle) console.log(`Title:  ${result.workingTitle}`);

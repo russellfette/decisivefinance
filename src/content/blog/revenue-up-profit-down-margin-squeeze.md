@@ -7,7 +7,7 @@ updatedDate: 2026-07-12
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "exit-clock"
-pillar: 4
+pillar: 6
 ctaVariant: "worth-x-ray"
 dominantClaim: "every-month-you-wait-moves-the-sale-date"
 ogImage: "/og/revenue-up-profit-down-margin-squeeze.png"

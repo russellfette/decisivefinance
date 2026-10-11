@@ -36,6 +36,9 @@ same question as thinnest.
 | 2 | Worth more | Pricing, mix, and margin truth: grow the earnings a buyer pays a multiple on. |
 | 3 | Surviving diligence | Deals die in diligence, and it is almost never the business. It is believability. |
 | 4 | The exit clock | Timing, the trailing twelve, and the sequence a transition actually runs on. |
+| 6 | Where the profit went | Running it: revenue up and profit flat, margin by customer, job and product, cash, the big call. |
+
+Two prongs of equal weight (Core v1.5.2, added 2026-10-11). Pillar 6 is the running-it prong; pillars 1 to 4 are the selling-it prong. When pillar 6 has fewer posts ahead than pillars 1 to 4 combined, the script picks pillar 6 and drafts it even past the six-week cap, into the first Tuesday from next week on with room for a second post.
 
 Pillar 5 is the Industry band. It sits outside the Tuesday rotation and is
 scheduled by hand.

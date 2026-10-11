@@ -52,8 +52,27 @@ from repo state` or `content-queue.md`.
    named, trigger-first, canon-gated. Load `decisive-copywriting` for the craft
    layer and `russ-voice` before any first-person line.
 2. `node scripts/og-generate.mjs <slug>` for the card, `draft` mode only.
-3. Draft `src/content/linkedin/<slug>.md`, first person, exit-forward: the new
-   post in `draft` mode, the named backlog posts in `repurpose` mode.
+3. Draft `src/content/linkedin/<slug>.md`, first person, on the post's own prong
+   (pillar 6 running it; pillars 1 to 4 selling it), the new post in `draft`
+   mode, the named backlog posts in `repurpose` mode. Load `russ-voice`.
+3a. LinkedIn week (added 2026-10-11). Draft three LinkedIn posts for the
+   coming Monday, Wednesday and Friday at 08:00 PT: one running it, one selling
+   it, one referrer (alternate chairs and implementers with deal
+   professionals). Use repurposes from step 3 where they fit. Proof only from
+   the approved set in Phrase Book v3.6 section 8a or a cleared Proof Library
+   pattern. Referrer posts lead with the problem, name or contrast no other
+   profession, carry no guarantee sentence; deal professionals get the stance
+   line, never the independence line.
+3b. Card per post, 1200 by 1200, ink ground, hero words white then orange,
+   Inter, wordmark top left, "Russell Fette" and "decisive.finance" in the
+   footer, into `public/social/YYYY-MM/li-YYYY-MM-DD-<slug>.png`.
+3c. Commit and push only `public/social/` and `src/content/linkedin/`. Those
+   paths publish nothing a reader sees on the site. Blog posts stay for Russ
+   to ship.
+3d. Once the card URL returns 200 on decisive.finance, create each Buffer
+   post as a draft (saveToDraft true) on the LinkedIn channel with its due
+   time, the card attached by URL, and the first comment. Never schedule,
+   never publish. Russ approves in Buffer.
 4. Build-check via the /tmp trick, since rollup fails on mounted node_modules.
    Skip the build in `repurpose` mode when only files under
    `src/content/linkedin/` changed, and say so in the email.
@@ -61,7 +80,7 @@ from repo state` or `content-queue.md`.
    account: the mode and why, the summary, the LinkedIn draft or drafts in
    full, and a copy-paste git block.
 
-Never push, never post. Russ ships, and he voices every external word.
+Never push blog posts, never post. Step 3c is the only push. Russ ships the blog and voices every external word.
 
 ## Gates that bind on every draft
 

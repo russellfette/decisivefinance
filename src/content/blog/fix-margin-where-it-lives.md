@@ -7,7 +7,7 @@ updatedDate: 2026-07-16
 author: "Russell Fette"
 postType: "field-note"
 topicCluster: "worth-more"
-pillar: 2
+pillar: 6
 ctaVariant: "worth-more"
 dominantClaim: "more-valuable-company-and-numbers-to-prove-it"
 ogImage: "/og/fix-margin-where-it-lives.png"

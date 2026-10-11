@@ -13,7 +13,7 @@ const posts = (await getCollection('blog'))
   .filter((p) => !p.data.pubDate || p.data.pubDate.getTime() <= Date.now())
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-type Pillar = 1 | 2 | 3 | 4;
+type Pillar = 1 | 2 | 3 | 4 | 6;
 
 function postsForPillar(n: Pillar): Post[] {
   return posts
@@ -28,6 +28,15 @@ function postsForPillar(n: Pillar): Post[] {
 }
 
 const pillars = [
+  {
+    n: 6 as Pillar,
+    title: 'Where the profit went',
+    eyebrow: 'Running it',
+    tagline: 'Revenue is up and profit isn\'t. Margin by customer, job and product, and what to decide first.',
+    accent: 'green',
+    iconKind: 'scale' as const,
+    posts: postsForPillar(6),
+  },
   {
     n: 1 as Pillar,
     title: 'Sellable numbers',
