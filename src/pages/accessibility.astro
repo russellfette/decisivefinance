@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const lastUpdated = '2026-10-16';
+---
+
+<BaseLayout
+  title="Accessibility | Decisive Finance"
+  description="Our commitment to an accessible decisive.finance, the standard we test against, and how to reach us about a barrier."
+>
+  <section class="post-hero">
+    <div class="post-hero-inner">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.85); background: transparent; border-color: rgba(255,255,255,0.2);">Accessibility</span>
+      <h1 class="post-title">Accessibility</h1>
+      <p class="post-lede">Last updated: {lastUpdated}</p>
+    </div>
+  </section>
+
+  <section class="post-body-section">
+    <div class="post-body">
+      <p>We want every owner and advisor to be able to read this site and book a call, including people who use a screen reader, keyboard navigation, magnification, or other assistive technology.</p>
+
+      <h2>The standard we work to</h2>
+      <p>We build and test decisive.finance against the Web Content Accessibility Guidelines (WCAG) 2.2, Level AA. Every page is checked with automated testing before it ships, and we review new templates by keyboard.</p>
+
+      <h2>What we have done</h2>
+      <ul>
+        <li>Text and controls meet AA color contrast on light and dark sections.</li>
+        <li>Links inside paragraphs are underlined, so they do not rely on color alone.</li>
+        <li>A skip link, visible focus outlines, and a single main landmark on every page.</li>
+        <li>Text alternatives on meaningful images, and labeled navigation and embeds.</li>
+        <li>Motion and smooth scrolling turn off when your device asks for reduced motion.</li>
+      </ul>
+
+      <h2>Known limitations</h2>
+      <p>Call booking runs on Calendly, a third-party scheduler we do not control. If the embedded scheduler does not work with your setup, use the direct booking page at <a href="https://calendly.com/russell-decisive/30min">calendly.com/russell-decisive/30min</a>, or email us and we will schedule the call with you directly.</p>
+
+      <h2>Tell us about a barrier</h2>
+      <p>If any part of the site is hard to use, email <a href="mailto:russell@decisive.finance">russell@decisive.finance</a> with the page and what happened. We will reply, fix what we can, and get you the information in another format in the meantime.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .post-hero {
+    background: var(--ink);
+    color: var(--white);
+    padding: 96px 32px 64px;
+  }
+  .post-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .post-title {
+    font-family: Inter, sans-serif;
+    font-size: clamp(34px, 5vw, 60px);
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin: 24px 0;
+  }
+  .post-lede {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+  }
+  .post-body-section {
+    padding: 72px 32px;
+    background: var(--white);
+  }
+  .post-body {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  .post-body h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 14px;
+    font-weight: 700;
+  }
+  .post-body p {
+    margin-bottom: 1.2em;
+  }
+  .post-body a {
+    color: var(--orange);
+    border-bottom: 1px solid rgba(227, 99, 43, 0.3);
+  }
+  .post-body a:hover {
+    opacity: 1;
+  }
+</style>
