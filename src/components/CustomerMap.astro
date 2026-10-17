@@ -1,0 +1,93 @@
+---
+// The Customer Map. Source: site-visuals-handoff-2026-10-17/charts/customer-map-2x2.svg, rebuilt with site tokens.
+// Dots are illustrative, generated for the chart. Not client data.
+interface Props { showText?: boolean; question?: string }
+const { showText = true, question = 'Which of your top ten customers are in the bottom right?' } = Astro.props;
+const dots = [
+  [738,176,26,'ink'],[630,240,20,'ink'],[558,144,16,'ink'],[270,160,9,'ink'],[198,264,8,'ink'],[360,96,10,'ink'],
+  [135,320,6,'ink'],[405,336,11,'ink'],[252,360,7,'ink'],
+  [774,576,28,'ember'],[612,544,22,'ember'],[522,656,15,'ember'],
+  [315,576,8,'muted'],[180,672,7,'muted'],[108,608,6,'muted'],
+];
+// Keep dots clear of the quadrant labels: top row 96..360 maps to 150..375, bottom row 544..672 maps to 600..760.
+const placed = dots.map(([cx, cy, r, c]) => {
+  const y = cy < 400 ? 150 + ((cy - 96) * 225) / 264 : 600 + ((cy - 544) * 160) / 128;
+  return [cx, Math.round(y), r, c];
+});
+const quads = [
+  { k: 'tl', name: 'Grow', body: 'Small and profitable. Worth more of.' },
+  { k: 'tr', name: 'Protect', body: 'Big and profitable. The real core.' },
+  { k: 'bl', name: 'Fix or release', body: 'Small and losing money.' },
+  { k: 'br', name: 'Reprice', body: 'Big and losing money. The shock.' },
+];
+---
+<div class={`cmap ${showText ? 'cmap-with-text' : ''}`}>
+  {showText && (
+    <div class="cmap-text">
+      <span class="section-eyebrow">The customer map</span>
+      <p class="cmap-lede">Revenue says who is big. Margin after cost to serve says who is good.</p>
+      <p class="cmap-note">Most owners rank customers by the first and never see the second.</p>
+      <p class="cmap-ask-label">Ask any owner</p>
+      <p class="cmap-ask">{question}</p>
+    </div>
+  )}
+  <figure class="cmap-figure">
+    <div class="cmap-yaxis" aria-hidden="true">Margin after cost to serve &uarr;</div>
+    <div class="cmap-plot" role="img" aria-label="Customers plotted by revenue and by margin after the cost to serve. The big customers that lose money sit in the bottom right.">
+      <svg viewBox="0 0 900 800" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
+        <rect x="450" y="400" width="450" height="400" style="fill:var(--orange-brand)" opacity="0.09" />
+        <rect x="0.75" y="0.75" width="898.5" height="798.5" fill="none" style="stroke:var(--rule)" stroke-width="1.5" />
+        <line x1="450" y1="0" x2="450" y2="800" style="stroke:var(--teal)" stroke-width="1.5" />
+        <line x1="0" y1="400" x2="900" y2="400" style="stroke:var(--ink)" stroke-width="2" />
+        {placed.map(([cx, cy, r, c]) => (
+          <circle cx={cx} cy={cy} r={r} class={`dot dot-${c}`} />
+        ))}
+      </svg>
+      {quads.map((q) => (
+        <div class={`cmap-q cmap-q-${q.k}`}>
+          <span class="cmap-q-name">{q.name}</span>
+          <span class="cmap-q-body">{q.body}</span>
+        </div>
+      ))}
+    </div>
+    <div class="cmap-xaxis" aria-hidden="true">Revenue from the customer &rarr;</div>
+    <dl class="cmap-legend">
+      {quads.map((q) => (<div><dt class={`cmap-legend-${q.k}`}>{q.name}</dt><dd>{q.body}</dd></div>))}
+    </dl>
+    <figcaption class="cmap-caption"><span>Bubble size: revenue.</span><span>Illustrative. Not client data.</span></figcaption>
+  </figure>
+</div>
+<style>
+  .cmap { display: grid; gap: 40px; align-items: center; }
+  @media (min-width: 900px) { .cmap-with-text { grid-template-columns: 5fr 7fr; gap: 56px; } }
+  .cmap-lede { font-size: 22px; line-height: 1.4; color: var(--ink); margin: 6px 0 16px; max-width: 520px; }
+  .cmap-note { color: var(--muted); font-size: 17px; margin-bottom: 28px; max-width: 460px; }
+  .cmap-ask-label { font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
+  .cmap-ask { font-size: 19px; font-weight: 600; color: var(--ink); max-width: 420px; }
+  .cmap-figure { margin: 0; }
+  .cmap-plot { position: relative; aspect-ratio: 9 / 8; width: 100%; }
+  .cmap-plot svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .dot-ink { fill: var(--ink); opacity: 0.75; }
+  .dot-ember { fill: var(--orange-brand); opacity: 0.9; }
+  .dot-muted { fill: var(--muted); opacity: 0.75; }
+  .cmap-q { position: absolute; width: 50%; height: 50%; padding: 4.5% 4%; display: flex; flex-direction: column; gap: 4px; pointer-events: none; }
+  .cmap-q-tl { left: 0; top: 0; } .cmap-q-tr { left: 50%; top: 0; } .cmap-q-bl { left: 0; top: 50%; } .cmap-q-br { left: 50%; top: 50%; }
+  .cmap-q-name { font-size: clamp(12px, 1.5vw, 18px); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); }
+  .cmap-q-bl .cmap-q-name { color: var(--muted); }
+  .cmap-q-br .cmap-q-name { color: var(--orange); }
+  .cmap-q-body { font-size: clamp(12px, 1.25vw, 16px); line-height: 1.35; color: var(--ink); max-width: 85%; }
+  .cmap-yaxis, .cmap-xaxis { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); }
+  .cmap-yaxis { margin-bottom: 10px; }
+  .cmap-xaxis { margin-top: 12px; text-align: right; }
+  .cmap-legend { display: none; }
+  @media (max-width: 600px) {
+    .cmap-q-body { display: none; }
+    .cmap-legend { display: grid; gap: 8px; margin: 16px 0 0; font-size: 14px; }
+    .cmap-legend div { display: flex; gap: 8px; }
+    .cmap-legend dt { font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 12px; min-width: 104px; color: var(--teal); padding-top: 2px; }
+    .cmap-legend dt.cmap-legend-bl { color: var(--muted); }
+    .cmap-legend dt.cmap-legend-br { color: var(--orange); }
+    .cmap-legend dd { margin: 0; color: var(--ink); }
+  }
+  .cmap-caption { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 8px; font-size: 13px; color: var(--muted); }
+</style>

@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CalendlyEmbed from '../components/CalendlyEmbed.astro';
+import CustomerMap from '../components/CustomerMap.astro';
+import SituationGrid from '../components/SituationGrid.astro';
+import MetricsStrip from '../components/MetricsStrip.astro';
 import Icon from '../components/Icon.astro';
 
 const CALENDLY = '#book';
@@ -153,6 +156,20 @@ const offersJsonLd = {
     </div>
   </section>
 
+  <!-- The customer map (site visuals 2026-10-17) -->
+  <section id="customer-map" class="alt">
+    <div class="container">
+      <CustomerMap />
+    </div>
+  </section>
+
+  <!-- Where are you? (site visuals 2026-10-17) -->
+  <section id="where">
+    <div class="container">
+      <SituationGrid />
+    </div>
+  </section>
+
   <!-- Two lanes, equal weight -->
   <section id="lanes" class="lanes-section">
     <div class="container">
@@ -216,6 +233,13 @@ const offersJsonLd = {
       <div class="container-narrow">
         <div class="rally" style="margin-top: 44px;">FIND. INSTALL. RUN.</div>
       </div>
+    </div>
+  </section>
+
+  <!-- The five numbers (site visuals 2026-10-17) -->
+  <section id="numbers">
+    <div class="container">
+      <MetricsStrip />
     </div>
   </section>
 

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SituationGrid from '../components/SituationGrid.astro';
 
 const title = 'For referral partners | Decisive Finance';
 const description =
@@ -87,6 +88,12 @@ const faqJsonLd = {
 
   <section class="alt">
     <div class="container">
+      <SituationGrid audience="advisor" />
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">What the owner gets</span>
         <h2>The 48-hour read, free through you.</h2>
@@ -99,7 +106,7 @@ const faqJsonLd = {
     </div>
   </section>
 
-  <section>
+  <section class="alt">
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">Recent work</span>
@@ -112,7 +119,7 @@ const faqJsonLd = {
     </div>
   </section>
 
-  <section class="alt">
+  <section>
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">Questions partners ask</span>
