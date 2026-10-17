@@ -20,7 +20,7 @@ readingTime: 8
 
 - Deals rarely die on price. They die when a buyer's analyst finds something in the numbers he can't reconcile, and every figure after that gets read with suspicion. Believable numbers protect the multiple from diligence discounts.
 - The five findings that re-trade a deal are predictable, and every one of them is fixable before a buyer ever opens the data room. Found early, they're housekeeping. Found in diligence, they arm the buyer.
-- For advisors, brokers, bankers, and attorneys: the fastest way to protect a deal you're about to run is to send the owner in with numbers that survive the read. We take no piece of the transaction. Your mandate stays yours.
+- For advisors, brokers, bankers, and attorneys: the fastest way to protect a deal you're about to run is to send the owner in with numbers that survive the read. We take no piece of any transaction, so your mandate and your relationship stay yours.
 
 If you sit on the deal side, you already know the pattern. A process starts strong, the price is agreed in principle, and then diligence turns up a thread nobody prepared for and the whole thing slows, re-trades, or dies. This piece is about the specific findings that cause it, and why the seller controls almost all of them if the work is done early enough.
 
