@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const CALENDLY = 'https://calendly.com/russell-decisive/30min';
+const title = 'Margin by customer check | Decisive Finance';
+const description =
+  'Type in revenue and direct cost for your top 10 customers and see which ones pay you and which cost you. Runs in your browser. Nothing is sent or stored.';
+const rows = Array.from({ length: 10 }, (_, i) => i + 1);
+---
+
+<BaseLayout title={title} description={description}>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Margin by customer check</span>
+      <h1><span class="h1-line">Which customers pay you, and which cost you?</span></h1>
+      <p class="hero-subhead">
+        Type in last year&rsquo;s revenue and direct cost for your top 10 customers. <span class="dollar">Five minutes, no login.</span> It runs in your browser; nothing is sent or stored.
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Your top 10</span>
+        <h2>Enter what you have. Estimates are fine.</h2>
+        <p class="lede">Direct cost is what it took to deliver to that customer: materials, labor on their work, freight, commissions. Leave overhead out.</p>
+      </div>
+
+      <form id="mc-form" class="mc-form" autocomplete="off" onsubmit="return false;">
+        <div class="mc-head" aria-hidden="true">
+          <span>Customer</span><span>Revenue ($)</span><span>Direct cost ($)</span>
+        </div>
+        {rows.map((n) => (
+          <div class="mc-row">
+            <label class="sr-only" for={`name-${n}`}>Customer {n} label</label>
+            <input id={`name-${n}`} name="name" type="text" placeholder={`Customer ${String.fromCharCode(64 + n)}`} />
+            <label class="sr-only" for={`rev-${n}`}>Customer {n} revenue in dollars</label>
+            <input id={`rev-${n}`} name="rev" type="text" inputmode="decimal" placeholder="0" />
+            <label class="sr-only" for={`cost-${n}`}>Customer {n} direct cost in dollars</label>
+            <input id={`cost-${n}`} name="cost" type="text" inputmode="decimal" placeholder="0" />
+          </div>
+        ))}
+        <button id="mc-run" class="btn btn-primary" type="button">Show me</button>
+      </form>
+
+      <div id="mc-result" class="mc-result" aria-live="polite" hidden>
+        <h3 id="mc-headline"></h3>
+        <p id="mc-summary" class="lede"></p>
+        <div class="mc-table-wrap">
+          <table class="mc-table">
+            <thead>
+              <tr><th scope="col">Customer</th><th scope="col">Revenue</th><th scope="col">Gross margin $</th><th scope="col">Margin %</th><th scope="col">Versus your average</th></tr>
+            </thead>
+            <tbody id="mc-body"></tbody>
+          </table>
+        </div>
+        <p class="mc-note">This uses direct cost only. Most of the gap between your best and worst customers usually sits in cost to serve: support time, rework, payment terms, small orders, discounts. The Decision Diagnostic puts that in dollars too.</p>
+        <div class="hero-cta-row">
+          <a class="btn btn-primary" href={CALENDLY}>Talk through what you found</a>
+          <a class="btn btn-secondary" href="/diagnostic">The Diagnostic, in full</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (function () {
+    var fmt = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+    function num(v) { var n = parseFloat(String(v || '').replace(/[$,\s]/g, '')); return isFinite(n) ? n : 0; }
+    document.getElementById('mc-run').addEventListener('click', function () {
+      var rows = Array.prototype.slice.call(document.querySelectorAll('.mc-row'));
+      var data = rows.map(function (r, i) {
+        var inputs = r.querySelectorAll('input');
+        return { name: inputs[0].value.trim() || ('Customer ' + String.fromCharCode(65 + i)), rev: num(inputs[1].value), cost: num(inputs[2].value) };
+      }).filter(function (d) { return d.rev > 0; });
+      var result = document.getElementById('mc-result');
+      if (data.length < 2) {
+        result.hidden = false;
+        document.getElementById('mc-headline').textContent = 'Add at least two customers with revenue.';
+        document.getElementById('mc-summary').textContent = '';
+        document.getElementById('mc-body').innerHTML = '';
+        return;
+      }
+      var totRev = 0, totGm = 0;
+      data.forEach(function (d) { d.gm = d.rev - d.cost; d.pct = d.gm / d.rev; totRev += d.rev; totGm += d.gm; });
+      var avg = totGm / totRev;
+      data.sort(function (a, b) { return a.pct - b.pct; });
+      var below = data.filter(function (d) { return d.pct < avg; });
+      var negative = data.filter(function (d) { return d.gm < 0; });
+      var gap = below.reduce(function (s, d) { return s + (avg - d.pct) * d.rev; }, 0);
+      var biggest = data.slice().sort(function (a, b) { return b.rev - a.rev; })[0];
+      var head = negative.length
+        ? negative.length + (negative.length === 1 ? ' customer costs' : ' customers cost') + ' you money before overhead.'
+        : below.length + ' of ' + data.length + ' customers earn below your average margin of ' + (avg * 100).toFixed(1) + '%.';
+      var sum = 'If the below-average customers earned your average margin, gross margin would be about ' + fmt.format(gap) + ' higher on the same revenue.';
+      if (biggest.pct < avg) sum += ' Your largest customer, ' + biggest.name + ', is one of them.';
+      document.getElementById('mc-headline').textContent = head;
+      document.getElementById('mc-summary').textContent = sum;
+      var body = document.getElementById('mc-body');
+      body.innerHTML = '';
+      data.forEach(function (d) {
+        var tr = document.createElement('tr');
+        var diff = (d.pct - avg) * 100;
+        [d.name, fmt.format(d.rev), fmt.format(d.gm), (d.pct * 100).toFixed(1) + '%', (diff >= 0 ? '+' : '') + diff.toFixed(1) + ' pts'].forEach(function (v, i) {
+          var td = document.createElement('td'); td.textContent = v;
+          if (i === 4 && diff < 0) td.className = 'neg';
+          tr.appendChild(td);
+        });
+        body.appendChild(tr);
+      });
+      result.hidden = false;
+      result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  })();
+</script>
+
+<style>
+  .mc-form { margin-top: 32px; max-width: 760px; }
+  .mc-head, .mc-row { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 12px; }
+  .mc-head span { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); padding-bottom: 8px; }
+  .mc-row { margin-bottom: 10px; }
+  .mc-row input { width: 100%; padding: 12px 14px; border: 1px solid var(--hairline); border-radius: 10px; font: inherit; font-size: 16px; background: var(--white); color: var(--ink); }
+  .mc-row input:focus { outline: 2px solid var(--orange); outline-offset: 1px; }
+  #mc-run { margin-top: 16px; }
+  .mc-result { margin-top: 56px; max-width: 900px; }
+  .mc-result h3 { margin-top: 0; }
+  .mc-table-wrap { overflow-x: auto; margin: 24px 0; }
+  .mc-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .mc-table th, .mc-table td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--hairline); white-space: nowrap; }
+  .mc-table th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .mc-table td.neg { color: var(--orange); font-weight: 600; }
+  .mc-note { color: var(--muted); font-size: 15px; max-width: 720px; }
+  .mc-result .hero-cta-row .btn-secondary { color: var(--ink); }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+  @media (max-width: 600px) { .mc-head, .mc-row { grid-template-columns: 1fr 1fr 1fr; gap: 8px; } .mc-row input { padding: 10px; font-size: 15px; } }
+</style>

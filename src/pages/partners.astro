@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'For referral partners | Decisive Finance';
+const description =
+  'Most owners of growing companies can’t say which jobs or customers actually make money. One page to forward, a free 48-hour read for the owner, and an outcome note back to you.';
+
+const introOwner = 'mailto:russell@decisive.finance?subject=' + encodeURIComponent('Intro: [owner name], [company]') + '&body=' + encodeURIComponent('Russell, meet [owner name], who runs [company]. [One line on what is going on.] I’ve copied them here.');
+
+const proofOperating = [
+  'A $15M manufacturer whose largest customer was its least profitable; margins moved from 15% to 22%.',
+  'A $30M services firm: $380K of working capital recovered and the monthly close cut from 22 days to 3, in 90 days.',
+  'A $25M consumer products manufacturer whose owner didn’t trust the P&L behind the bankers’ estimate; the work roughly doubled the modeled exit value.',
+];
+
+const faqs = [
+  {
+    q: 'What does the owner have to send?',
+    a: 'Three reports: monthly P&L and balance sheet for the last 24 months, plus whichever sales or margin report they actually read. In 48 hours they get one page back: what’s trapped, in dollars, and what it would take to confirm it. No charge, no meeting required.',
+  },
+  {
+    q: 'What happens after the read?',
+    a: 'If the read shows money on the table, the owner can start the 14-day Decision Diagnostic, or the Sellable-Numbers Scan if they are selling. From $10,000, fixed. At least 3x the fee in owner-accepted value, in 14 days, or the owner pays nothing.',
+  },
+  {
+    q: 'Will I hear how it went?',
+    a: 'Yes. Same-day acknowledgment when you make an intro. The read goes to the owner in 48 hours, and you hear the outcome within the week, with the owner’s OK.',
+  },
+  {
+    q: 'Do you pay referral fees?',
+    a: 'No. We never charge you, never pay you, and never go around you.',
+  },
+  {
+    q: 'What don’t you do?',
+    a: 'We don’t sell companies, find buyers, or promise a price or a multiple. Fees are fixed before we begin.',
+  },
+];
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+
+<BaseLayout title={title} description={description}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">For referral partners</span>
+      <h1>
+        <span class="h1-line">Most owners of growing companies can&rsquo;t say which jobs or customers actually make money.</span>
+      </h1>
+      <p class="hero-subhead">
+        Every owner can tell you revenue. <span class="dollar">Few can tell you which jobs make the profit.</span> We find it, in dollars, before the next big call is made on a guess. We take no piece of any transaction, so your mandate and your relationship stay yours.
+      </p>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href={introOwner}>Make an intro</a>
+        <a class="btn btn-secondary" href="/partners/decisive-one-pager-operating-companies.pdf">Download the one-pager</a>
+      </div>
+      <p class="hero-microcopy">Email russell@decisive.finance with the owner copied. We reply the same day.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">What to forward</span>
+        <h2>Two pages, one for each kind of owner you know.</h2>
+        <p class="lede">Each one stands on its own. Forward it as is, or attach it to your intro.</p>
+      </div>
+      <div class="fit-grid">
+        <div class="fit-col">
+          <h3>Running the company</h3>
+          <p>For chairs, implementers, CPAs and bankers. You know the owner: revenue&rsquo;s up, profit isn&rsquo;t, and the cash is tighter than it should be.</p>
+          <a class="btn btn-secondary" href="/partners/decisive-one-pager-operating-companies.pdf">Operating-company one-pager (PDF)</a>
+        </div>
+        <div class="fit-col">
+          <h3>Selling the company</h3>
+          <p>For M&amp;A advisors, brokers and transaction attorneys. Fix the financials before the LOI, not after the QoE haircut.</p>
+          <a class="btn btn-secondary" href="/partners/decisive-one-pager-deal-professionals.pdf">Deal-professional one-pager (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">What the owner gets</span>
+        <h2>The 48-hour read, free through you.</h2>
+        <ol class="engine-list">
+          <li class="engine-item"><div><p><strong>The read.</strong> The owner sends three reports. In 48 hours they get one page: what&rsquo;s trapped, in dollars, and what it would take to confirm it. No charge, no meeting required.</p></div></li>
+          <li class="engine-item"><div><p><strong>If the read shows money on the table, 14 days.</strong> The Decision Diagnostic shows which products, customers and jobs make money, where the recoverable cash and margin sit, and what to decide first. If the owner is selling, the Sellable-Numbers Scan runs the same 14 days through a buyer&rsquo;s eyes. From $10,000, fixed. At least 3x the fee in owner-accepted value, in 14 days, or the owner pays nothing.</p></div></li>
+          <li class="engine-item"><div><p><strong>Then the rhythm.</strong> The 90-Day Decision Resolution puts the Financial Rhythm System&trade; in place.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Recent work</span>
+        <h2>What owners have found.</h2>
+        <ul class="pillars">
+          {proofOperating.map((p) => <li>{p}</li>)}
+        </ul>
+        <p class="muted-note">Client results anonymized.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">Questions partners ask</span>
+        <h2>Before you make the intro.</h2>
+        <div class="faq-list">
+          {faqs.map((f) => (
+            <details class="faq">
+              <summary>{f.q}</summary>
+              <p>{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="close-section">
+    <div class="container">
+      <div class="container-narrow">
+        <h2>Make an intro.</h2>
+        <p class="lede">Email russell@decisive.finance with the owner copied. We reply the same day.</p>
+        <a href={introOwner} class="btn btn-primary">Make an intro</a>
+        <p class="close-tagline">Decide from the numbers. Prove it in the cash.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-microcopy { color: rgba(255,255,255,0.7); font-size: 15px; }
+  .fit-col p { color: var(--muted); font-size: 16px; margin-bottom: 24px; }
+  .fit-col h3 { margin-top: 0; }
+  .pillars { list-style: none; padding: 0; margin: 28px 0 16px; }
+  .pillars li { padding: 16px 0; border-top: 1px solid var(--hairline); font-size: 17px; }
+  .pillars li:last-child { border-bottom: 1px solid var(--hairline); }
+  .lede, .hero-microcopy { overflow-wrap: anywhere; }
+  .muted-note { color: var(--muted); font-size: 14px; }
+  .close-tagline { color: rgba(255,255,255,0.6); font-size: 15px; margin-top: 24px; font-style: italic; }
+</style>

@@ -6,42 +6,57 @@ const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 const team = [
   {
     name: 'Russell Fette',
+    slug: 'russell-fette',
     title: 'Founder, Chief Financial Officer',
-    body: 'Russell Fette runs Decisive Finance and created the Financial Rhythm System™, the decision rhythm that lets growing companies make every major call from a view built to decide from, on guarantee. Two decades of finance leadership across Microsoft, JPMorgan Chase, and operating companies at every stage. At Pathwright he drove 40% year-over-year revenue growth and a 4x EBITDA improvement without outside capital. That is where Decision-First Finance took shape. BA in Economics from Whitman College (Phi Beta Kappa).',
+    photo: null,
+    sameAs: ['https://www.linkedin.com/in/russellfette'],
+    alumniOf: 'Whitman College',
+    body: 'Russell Fette runs Decisive Finance and created the Financial Rhythm System™, the decision rhythm owner-led companies use to run on numbers built to decide from, and to sell on numbers a buyer will believe. Two decades of finance leadership across Microsoft, JPMorgan Chase, and operating companies at every stage. As CFO and Head of Growth at Pathwright he drove 40% year-over-year platform growth and a 4x expansion in net income margin without outside capital. That is where Decision-First Finance took shape. BA in Economics from Whitman College (Phi Beta Kappa).',
   },
   {
     name: 'Christopher Koo',
+    slug: 'christopher-koo',
     title: 'Director of Finance',
+    photo: null,
+    sameAs: [],
+    alumniOf: 'Lehigh University',
     body: 'Christopher architects the financial systems that turn a Diagnostic into execution. Senior finance across JPMorgan, Citi, Imprint, and Synchrony before this; credit-portfolio decisions compressed from weeks to days, reporting lag on a $76B banking portfolio cut in half, product, capital, and pricing strategies aligned to recover millions in partnership value. He turns finance from a rearview mirror into a forward system. BA in Financial Mathematics, Lehigh University. Inside a Decisive Finance engagement, Christopher owns the Unit Economics Dashboard, the Product Line P&Ls, and the Scenario Forecast.',
   },
   {
     name: 'Payal Halani',
+    slug: 'payal-halani',
     title: 'Finance Analyst',
+    photo: null,
+    sameAs: [],
+    alumniOf: null,
     body: 'Payal runs the financial analysis layer of every Decisive Finance engagement. Inside a Diagnostic, she turns a messy general ledger into a ranked inventory of decisions, in dollars. Inside a Resolution, she maintains the Forward Capital Register, the weekly actuals-vs-prediction reconciliation, and the cross-subsidy map that reveals which products and customers are actually carrying the business. She is the operational constant between Day 1 and Day 90.',
   },
 ];
 
-const personJsonLd = {
+const initials = (name) => name.split(' ').map((w) => w[0]).join('');
+
+const peopleJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Russell Fette',
-  jobTitle: 'Founder',
-  worksFor: { '@type': 'Organization', name: 'Decisive Finance', url: 'https://decisive.finance' },
-  url: 'https://decisive.finance/about',
-  email: 'russell@decisive.finance',
-  sameAs: ['https://www.linkedin.com/in/russellfette'],
-  description:
-    'Russell Fette runs Decisive Finance and created the Financial Rhythm System™, the decision rhythm that lets growing companies make every major call from a view built to decide from, on guarantee.',
-  alumniOf: { '@type': 'CollegeOrUniversity', name: 'Whitman College' },
-  knowsAbout: ['Decision-First Finance', 'Financial Rhythm System', 'Pricing and margin strategy', 'Exit readiness for operating companies'],
+  '@graph': team.map((m) => ({
+    '@type': 'Person',
+    '@id': `https://decisive.finance/about#${m.slug}`,
+    name: m.name,
+    jobTitle: m.title,
+    worksFor: { '@type': 'Organization', name: 'Decisive Finance', url: 'https://decisive.finance' },
+    url: `https://decisive.finance/about#${m.slug}`,
+    ...(m.photo ? { image: `https://decisive.finance${m.photo}` } : {}),
+    ...(m.sameAs.length ? { sameAs: m.sameAs } : {}),
+    ...(m.alumniOf ? { alumniOf: { '@type': 'CollegeOrUniversity', name: m.alumniOf } } : {}),
+    description: m.body.split('. ')[0] + '.',
+  })),
 };
 ---
 
 <BaseLayout
   title="About Decisive Finance | Decision-First Finance for operating companies"
-  description="The team behind Decisive Finance. We find the value trapped in past calls and make the next one defensible, on guarantee. Owner-led companies, $5M to $50M in revenue."
+  description="The team behind Decisive Finance: ongoing CFO work for owners running the company, and sale readiness for owners getting it ready to sell. Owner-led companies, $5M to $50M in revenue."
 >
-  <script slot="head" type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(peopleJsonLd)} />
   <section class="hero">
     <div class="hero-inner">
       <span class="eyebrow">About</span>
@@ -58,7 +73,12 @@ const personJsonLd = {
       <h2>Three people. One job.</h2>
       <div class="team-grid">
         {team.map((member) => (
-          <article class="team-card">
+          <article class="team-card" id={member.slug}>
+            {member.photo ? (
+              <img class="team-photo" src={member.photo} alt={`${member.name}, ${member.title}, Decisive Finance`} width="160" height="160" loading="lazy" />
+            ) : (
+              <div class="team-photo team-monogram" aria-hidden="true">{initials(member.name)}</div>
+            )}
             <h3>{member.name}</h3>
             <p class="team-title">{member.title}</p>
             <p>{member.body}</p>
@@ -110,6 +130,24 @@ const personJsonLd = {
     border: 1px solid var(--hairline);
     border-radius: 16px;
     padding: 32px 28px;
+  }
+  .team-photo {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .team-monogram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ink);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.04em;
   }
   .team-card h3 {
     font-size: 22px;
