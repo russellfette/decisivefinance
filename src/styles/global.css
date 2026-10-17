@@ -10,3 +10,5 @@ main p a:not(.btn),main li a:not(.btn),main td a:not(.btn){text-decoration:under
 :focus-visible{outline:2px solid var(--orange-ink);outline-offset:3px}
 .hero :focus-visible,.traps :focus-visible,.close-section :focus-visible,.nav-dark :focus-visible,.site-footer :focus-visible{outline-color:var(--orange-on-dark)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+:root{--teal:#4a6466;--rule:#d9d4cb}

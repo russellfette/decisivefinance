@@ -1,0 +1,69 @@
+---
+// Where Are You? Source: site-visuals-handoff-2026-10-17/charts/situation-2x2.svg, rebuilt as HTML so every word is real text.
+interface Props { audience?: 'owner' | 'advisor'; headingLevel?: 'h2' | 'h3' }
+const { audience = 'owner' } = Astro.props;
+const quads = [
+  { k: 'tl', name: 'Keep the rhythm', body: 'Numbers you trust, no sale on the horizon.', start: 'Decision Partnership', href: '/partnership' },
+  { k: 'tr', name: 'Build the value', body: 'Numbers you trust, a sale ahead.', start: 'Exit-Value Partnership', href: '/partnership' },
+  { k: 'bl', name: 'Find the money', body: 'Growing, and you can’t tell where the profit went.', start: 'Decision Diagnostic · 14 days', href: '/diagnostic' },
+  { k: 'br', name: 'The clock is running', body: 'A sale ahead, on numbers a buyer will re-price.', start: 'Sellable-Numbers Scan · 14 days', href: '/scan' },
+];
+const ask = audience === 'advisor'
+  ? { label: 'For advisors', q: 'Which of your clients sit in the bottom right?' }
+  : { label: 'Ask yourself', q: 'Which box are you in today?' };
+---
+<div class="sgrid">
+  <div class="sgrid-text">
+    <span class="section-eyebrow">Where are you?</span>
+    <h2 class="sgrid-h2">Two questions. Four places to start.</h2>
+    <p class="sgrid-lede">Running it or selling it, the first move depends on these two answers.</p>
+    <p class="sgrid-ask-label">{ask.label}</p>
+    <p class="sgrid-ask">{ask.q}</p>
+  </div>
+  <figure class="sgrid-figure">
+    <div class="sgrid-yaxis">Can you decide from your numbers? <span aria-hidden="true">&uarr;</span></div>
+    <div class="sgrid-board">
+      {quads.map((q) => (
+        <a class={`sgrid-q sgrid-q-${q.k}`} href={q.href}>
+          <span class="sgrid-q-name">{q.name}</span>
+          <span class="sgrid-q-body">{q.body}</span>
+          <span class="sgrid-q-start"><span class="sgrid-q-start-label">Start with</span> {q.start}</span>
+        </a>
+      ))}
+    </div>
+    <div class="sgrid-xaxis"><span>No</span><span>Is a sale or succession coming in the next three years? <span aria-hidden="true">&rarr;</span></span><span>Yes</span></div>
+  </figure>
+</div>
+<style>
+  .sgrid { display: grid; gap: 40px; align-items: center; }
+  @media (min-width: 900px) { .sgrid { grid-template-columns: 5fr 7fr; gap: 56px; } }
+  .sgrid-h2 { margin-bottom: 18px; }
+  .sgrid-lede { font-size: 21px; line-height: 1.45; color: var(--ink); max-width: 480px; margin-bottom: 28px; }
+  .sgrid-ask-label { font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
+  .sgrid-ask { font-size: 19px; font-weight: 600; color: var(--ink); }
+  .sgrid-figure { margin: 0; }
+  .sgrid-yaxis, .sgrid-xaxis { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); }
+  .sgrid-yaxis { margin-bottom: 10px; }
+  .sgrid-xaxis { display: flex; justify-content: space-between; gap: 10px; margin-top: 12px; }
+  .sgrid-xaxis span:nth-child(2) { text-align: center; }
+  .sgrid-board { display: grid; grid-template-columns: 1fr 1fr; border: 1.5px solid var(--rule); background: var(--white); }
+  .sgrid-q { display: flex; flex-direction: column; gap: 10px; padding: 26px 24px; min-height: 230px; color: var(--ink); text-decoration: none; transition: background .15s ease; }
+  .sgrid-q:hover { background: var(--paper); opacity: 1; }
+  .sgrid-q-tl, .sgrid-q-bl { border-right: 1.5px solid var(--teal); }
+  .sgrid-q-tl, .sgrid-q-tr { border-bottom: 1.5px solid var(--teal); }
+  .sgrid-q-br { background: rgba(227, 99, 43, 0.09); }
+  .sgrid-q-br:hover { background: rgba(227, 99, 43, 0.15); }
+  .sgrid-q-name { font-size: 15px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); }
+  .sgrid-q-bl .sgrid-q-name { color: var(--ink); }
+  .sgrid-q-br .sgrid-q-name { color: var(--orange); }
+  .sgrid-q-body { font-size: 16px; line-height: 1.45; flex-grow: 1; }
+  .sgrid-q-start { font-size: 15px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+  .sgrid-q-start-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); text-decoration: none; margin-bottom: 4px; }
+  @media (max-width: 600px) {
+    .sgrid-q { padding: 16px 12px; min-height: 0; gap: 6px; }
+    .sgrid-q-name { font-size: 12px; letter-spacing: 0.06em; }
+    .sgrid-q-body { font-size: 13.5px; }
+    .sgrid-q-start { font-size: 13px; }
+    .sgrid-xaxis { font-size: 10.5px; }
+  }
+</style>

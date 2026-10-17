@@ -1,0 +1,69 @@
+---
+// Value Is the Area. Source: site-visuals-handoff-2026-10-17/charts/value-is-the-area.svg, rebuilt as HTML and CSS.
+// Six Levers names are canon (Positioning Core v1.5.2 section 3.4).
+---
+<div class="varea">
+  <div class="varea-text">
+    <span class="section-eyebrow">Value is the area</span>
+    <h2 class="varea-h2">Two numbers set your price.</h2>
+    <p class="varea-lede">A buyer pays earnings times a multiple. Stretch either side and the area grows.</p>
+    <p class="varea-note">Owners usually push the earnings side. A buyer prices both.</p>
+    <p class="varea-levers-label">The six levers</p>
+    <p class="varea-levers"><strong>Earnings:</strong> Pricing, Mix, Margin Truth<br /><strong>Multiple:</strong> Believability, Concentration, Owner Independence</p>
+  </div>
+  <figure class="varea-figure" role="img" aria-label="A rectangle whose width is earnings and height is the multiple. Six levers stretch it wider or taller.">
+    <div class="varea-chart" aria-hidden="true">
+      <div class="varea-y">Multiple</div>
+      <div class="varea-box">
+        <div class="varea-up">
+          {['Believability', 'Concentration', 'Owner Independence'].map((l) => (
+            <span class="varea-up-item"><span class="varea-arrow-up"></span><span class="varea-up-label">{l}</span></span>
+          ))}
+        </div>
+        <div class="varea-could">What the same company could be worth</div>
+        <div class="varea-today"><span class="varea-today-name">Today</span><span class="varea-today-sub">what a buyer will pay now</span></div>
+        <div class="varea-right">
+          {['Pricing', 'Mix', 'Margin Truth'].map((l) => (
+            <span class="varea-right-item"><span class="varea-right-label">{l}</span><span class="varea-arrow-right"></span></span>
+          ))}
+        </div>
+      </div>
+      <div class="varea-x">Earnings</div>
+    </div>
+    <figcaption class="varea-caption">Illustrative. Not a promise of a price or a multiple.</figcaption>
+  </figure>
+</div>
+<style>
+  .varea { display: grid; gap: 40px; align-items: center; }
+  @media (min-width: 900px) { .varea { grid-template-columns: 5fr 7fr; gap: 56px; } }
+  .varea-h2 { margin-bottom: 18px; }
+  .varea-lede { font-size: 21px; line-height: 1.45; color: var(--ink); max-width: 480px; margin-bottom: 14px; }
+  .varea-note { color: var(--muted); font-size: 17px; margin-bottom: 28px; }
+  .varea-levers-label { font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
+  .varea-levers { font-size: 17px; line-height: 1.6; color: var(--ink); }
+  .varea-figure { margin: 0; }
+  .varea-chart { display: grid; grid-template-columns: 22px 1fr; grid-template-rows: 1fr auto; gap: 8px 10px; }
+  .varea-y { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); border-right: 2px solid var(--ink); padding-left: 6px; align-self: stretch; text-align: right; }
+  .varea-x { grid-column: 2; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); border-top: 2px solid var(--ink); padding-top: 8px; }
+  .varea-box { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; background: rgba(227, 99, 43, 0.12); outline: 1.5px dashed rgba(227, 99, 43, 0.45); outline-offset: -1px; aspect-ratio: 16 / 11; min-height: 300px; }
+  .varea-up { grid-column: 1; grid-row: 1; display: flex; gap: 6%; align-items: stretch; padding: 4% 5% 0; }
+  .varea-up-item { display: flex; align-items: center; gap: 8px; flex-direction: column-reverse; justify-content: flex-start; }
+  .varea-arrow-up { flex-grow: 1; width: 3px; background: var(--orange-brand); position: relative; min-height: 40px; }
+  .varea-arrow-up::after { content: ''; position: absolute; top: -10px; left: -6px; border: 7.5px solid transparent; border-bottom: 11px solid var(--orange-brand); border-top: 0; }
+  .varea-up-label { font-size: clamp(10px, 1.1vw, 13px); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); writing-mode: vertical-rl; transform: rotate(180deg); }
+  .varea-could { grid-column: 2; grid-row: 1; padding: 6% 6% 0 0; text-align: right; font-size: clamp(11px, 1.2vw, 15px); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange); }
+  .varea-today { grid-column: 1; grid-row: 2; background: var(--ink); color: var(--white); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; padding: 12px; }
+  .varea-today-name { font-size: clamp(15px, 1.8vw, 22px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .varea-today-sub { font-size: clamp(12px, 1.2vw, 16px); color: rgba(255,255,255,0.85); }
+  .varea-right { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; justify-content: space-around; padding: 0 6% 0 4%; }
+  .varea-right-item { display: flex; flex-direction: column; gap: 6px; }
+  .varea-right-label { font-size: clamp(10px, 1.1vw, 13px); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); }
+  .varea-arrow-right { height: 3px; background: var(--orange-brand); position: relative; margin-right: 10px; }
+  .varea-arrow-right::after { content: ''; position: absolute; right: -11px; top: -6px; border: 7.5px solid transparent; border-left: 11px solid var(--orange-brand); border-right: 0; }
+  @media (max-width: 600px) {
+    .varea-box { aspect-ratio: auto; min-height: 340px; grid-template-columns: 3fr 2fr; }
+    .varea-could { font-size: 10px; letter-spacing: 0.06em; padding: 8px 8px 0 0; }
+    .varea-right-label { font-size: 10px; letter-spacing: 0.04em; }
+  }
+  .varea-caption { margin-top: 10px; font-size: 13px; color: var(--muted); text-align: right; }
+</style>

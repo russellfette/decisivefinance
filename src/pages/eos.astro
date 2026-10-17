@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SpokeDoors from '../components/SpokeDoors.astro';
+import Icon from '../components/Icon.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
@@ -11,14 +12,17 @@ const description =
 const traps = [
   {
     name: 'Certainty Illusion',
+    icon: 'trap-certainty-illusion',
     body: 'A Scorecard full of green can feel like proof the company is healthy. Some of those measurables stopped tracking money a while ago, and nobody is paid to notice. That is where the profit quietly leaks.',
   },
   {
     name: 'Mental Accounting',
+    icon: 'trap-mental-accounting',
     body: 'A Rock ships, the team celebrates, and a clean bottom line hides the product or client the rest of the business is quietly funding. The aggregate P&L keeps the secret. Full allocation gives it up.',
   },
   {
     name: 'Status Quo',
+    icon: 'trap-status-quo',
     body: 'A measurable nobody has re-baselined in three years is not stable. It is margin leaking at a rate nobody has priced, because the Scorecard row always looks the same.',
   },
 ];
@@ -88,6 +92,7 @@ const traps = [
       <div class="trap-grid">
         {traps.map((t, i) => (
           <div class="trap-card">
+            <Icon name={t.icon} size={48} class="trap-icon" />
             <div class="trap-num">Trap {String(i + 1).padStart(2, '0')}</div>
             <div class="trap-name">{t.name}</div>
             <p>{t.body}</p>
@@ -145,4 +150,5 @@ const traps = [
 
 <style>
   .hero-microcopy { font-size: 15px; color: rgba(255, 255, 255, 0.7); margin: 10px 0 0; }
+  .trap-card :global(.trap-icon) { --ink: #ffffff; --teal: #a9c1c3; margin-bottom: 14px; }
 </style>

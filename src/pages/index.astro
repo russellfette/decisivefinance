@@ -1,6 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CalendlyEmbed from '../components/CalendlyEmbed.astro';
+import CustomerMap from '../components/CustomerMap.astro';
+import SituationGrid from '../components/SituationGrid.astro';
+import MetricsStrip from '../components/MetricsStrip.astro';
+import Icon from '../components/Icon.astro';
 
 const CALENDLY = '#book';
 
@@ -32,6 +36,7 @@ const lanes = [
 const steps = [
   {
     step: 'Find',
+    icon: 'tier-find',
     title: 'The Decision Diagnostic or the Sellable-Numbers Scan, 14 days.',
     body: "The Diagnostic if you're running it; the Scan if you're selling. We normalize your numbers and run the Six Trap Diagnostic™. You get the recoverable cash and margin in dollars, and on the Scan, what diligence would knock off your number. From $10,000, fixed. Guaranteed.",
     href: '/how-it-works',
@@ -39,6 +44,7 @@ const steps = [
   },
   {
     step: 'Install',
+    icon: 'tier-install',
     title: 'The 90-Day Decision Resolution.',
     body: "The Financial Rhythm System™ installed: numbers you can decide from and defend, proven on your real decisions, in market. If you're selling, the trailing-twelve clock starts here.",
     href: '/how-it-works',
@@ -46,6 +52,7 @@ const steps = [
   },
   {
     step: 'Run',
+    icon: 'tier-run',
     title: 'The Decision Partnership or the Exit-Value Partnership.',
     body: 'The Decision Partnership keeps the rhythm running on retainer. For owners heading to market, the Exit-Value Partnership spends the 12 to 24 months before a sale building the value the Scan found and the trend a buyer will pay for. Our fees are tied to the value created, never to the deal. We take no piece of the transaction.',
     href: '/partnership',
@@ -149,6 +156,20 @@ const offersJsonLd = {
     </div>
   </section>
 
+  <!-- The customer map (site visuals 2026-10-17) -->
+  <section id="customer-map" class="alt">
+    <div class="container">
+      <CustomerMap />
+    </div>
+  </section>
+
+  <!-- Where are you? (site visuals 2026-10-17) -->
+  <section id="where">
+    <div class="container">
+      <SituationGrid />
+    </div>
+  </section>
+
   <!-- Two lanes, equal weight -->
   <section id="lanes" class="lanes-section">
     <div class="container">
@@ -201,7 +222,7 @@ const offersJsonLd = {
       <div class="step-grid">
         {steps.map((item, i) => (
           <div class="step-card">
-            <div class="step-num">{String(i + 1).padStart(2, '0')}</div>
+            <div class="step-head"><Icon name={item.icon} size={52} /><div class="step-num">{String(i + 1).padStart(2, '0')}</div></div>
             <div class="step-name">{item.step}</div>
             <h3>{item.title}</h3>
             <p>{item.body}</p>
@@ -212,6 +233,13 @@ const offersJsonLd = {
       <div class="container-narrow">
         <div class="rally" style="margin-top: 44px;">FIND. INSTALL. RUN.</div>
       </div>
+    </div>
+  </section>
+
+  <!-- The five numbers (site visuals 2026-10-17) -->
+  <section id="numbers">
+    <div class="container">
+      <MetricsStrip />
     </div>
   </section>
 
@@ -336,6 +364,8 @@ const offersJsonLd = {
     transition: border-color 0.18s ease, transform 0.18s ease;
   }
   .step-card:hover { border-color: var(--green); transform: translateY(-2px); }
+  .step-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .step-head .step-num { margin-bottom: 0; }
   .step-num { font-family: Inter, sans-serif; font-size: 30px; font-weight: 600; color: var(--orange); line-height: 1; margin-bottom: 14px; }
   .step-name { font: 700 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: 0.16em; color: var(--orange); margin-bottom: 10px; }
   .step-card h3 { margin: 0 0 12px; font-size: 21px; }
