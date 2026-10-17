@@ -20,6 +20,8 @@ const blog = defineCollection({
     pillarHub: z.boolean().default(false),
     industry: z.enum(['tech', 'professional-services', 'manufacturing', 'trades', 'wealth-management']).optional(),
     archived: z.boolean().default(false),
+    answer: z.string().optional(),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   }),
 });
 

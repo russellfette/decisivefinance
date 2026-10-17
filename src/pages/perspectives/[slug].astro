@@ -79,7 +79,9 @@ const blogPostingJsonLd = {
   wordCount,
   author: {
     '@type': 'Person',
+    '@id': 'https://decisive.finance/about#russell-fette',
     name: post.data.author || 'Russell Fette',
+    url: 'https://decisive.finance/about#russell-fette',
     sameAs: 'https://www.linkedin.com/in/russellfette',
   },
   publisher: {
@@ -89,6 +91,14 @@ const blogPostingJsonLd = {
     logo: { '@type': 'ImageObject', url: siteUrl + '/brand/wordmark-light.svg' },
   },
 };
+
+const faqJsonLd = post.data.faq && post.data.faq.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: post.data.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    }
+  : null;
 
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -109,6 +119,7 @@ const breadcrumbJsonLd = {
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(blogPostingJsonLd)} />
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+  {faqJsonLd && <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />}
   <article>
     <section class="post-hero">
       <div class="post-hero-inner">
@@ -116,7 +127,8 @@ const breadcrumbJsonLd = {
         <div class="post-hero-meta">
           <span>{fmtDate(post.data.pubDate)}</span>
           <span class="dot">&middot;</span>
-          <span>By {post.data.author || 'Russell Fette'}</span>
+          <span>By <a class="post-author-link" href="/about#russell-fette">{post.data.author || 'Russell Fette'}</a></span>
+          {post.data.updatedDate && (<><span class="dot">&middot;</span><span>Updated {fmtDate(post.data.updatedDate)}</span></>)}
           <span class="dot">&middot;</span>
           <span>{readingTime} min read</span>
         </div>
@@ -153,9 +165,28 @@ const breadcrumbJsonLd = {
 
         <p class="post-stats">{readingTime} min read &middot; {wordCount.toLocaleString()} words</p>
 
+        {post.data.answer && (
+          <div class="post-answer">
+            <span class="post-answer-eyebrow">The short answer</span>
+            <p>{post.data.answer}</p>
+          </div>
+        )}
+
         <div class="post-prose">
           <Content />
         </div>
+
+        {post.data.faq && post.data.faq.length > 0 && (
+          <div class="post-faq faq-list">
+            <h2>Questions owners ask</h2>
+            {post.data.faq.map((f) => (
+              <details class="faq">
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        )}
 
         <p class="post-author-note">
           <em>Russell Fette writes these pieces from inside the engagements. If something here mirrors what you are running, the 30-minute call is the next move.</em>
@@ -266,4 +297,10 @@ const breadcrumbJsonLd = {
     .post-related { padding: 56px 24px; }
     .post-related-grid { grid-template-columns: 1fr; }
   }
+  .post-author-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  .post-answer { margin: 0 0 40px; padding: 24px 26px; background: rgba(33,76,82,0.06); border-left: 3px solid var(--green); border-radius: 0 10px 10px 0; }
+  .post-answer-eyebrow { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--green); margin-bottom: 10px; }
+  .post-answer p { margin: 0; font-size: 19px; line-height: 1.55; color: var(--ink); }
+  .post-faq { margin-top: 56px; }
+  .post-faq h2 { font-size: 28px; margin-bottom: 8px; }
 </style>

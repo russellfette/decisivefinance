@@ -19,7 +19,9 @@ For owners who are not selling, the same numbers are costing them every month. R
 - [The guarantee](https://decisive.finance/guarantee): full mechanics of the guarantee.
 - [How it works](https://decisive.finance/how-it-works): the method: Find. Install. Run.
 - [EOS and Vistage](https://decisive.finance/eos): the Scorecard tells you the boat is moving. We tell you if it's pointed at the money.
-- [About](https://decisive.finance/about): Russell Fette, founder, creator of the Financial Rhythm System.
+- [About](https://decisive.finance/about): the team: Russell Fette, founder, creator of the Financial Rhythm System; Christopher Koo, Director of Finance; Payal Halani, Finance Analyst.
+- [For referral partners](https://decisive.finance/partners): one-pagers to forward, the free 48-hour read, and how to make an intro.
+- [Margin by customer check](https://decisive.finance/margin-check): enter revenue and direct cost for your top 10 customers and see which ones pay you and which cost you. Runs in the browser; nothing is stored.
 - [Perspectives](https://decisive.finance/perspectives): field notes and frameworks from inside the engagements.
 
 ## Fit
