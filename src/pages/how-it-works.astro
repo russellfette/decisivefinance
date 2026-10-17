@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
@@ -282,12 +283,12 @@ const outOfScope = [
         <span class="section-eyebrow">The cadence</span>
         <h2>The Financial Rhythm System&trade;.</h2>
         <p class="lede">
-          The cadence that runs the loop after the 90 days end. Three concentric rings. Weekly is decision cadence. Monthly is deep dive. Quarterly is model rebuild. The rings keep running whether we are in the chair or not.
+          The cadence that runs the loop after the 90 days end. Three rhythms: Weekly &middot; Cash, Monthly &middot; Decisions, Quarterly &middot; Proof. They keep running whether we are in the chair or not.
         </p>
         <ul class="rhythm-list">
-          <li><strong>Weekly.</strong> Open-decision review. Active experiment scoring against go and no-go triggers. Forward Capital Register movement. 30 minutes.</li>
-          <li><strong>Monthly.</strong> Decision Dashboard refresh. Decision of the Month and Experiment of the Month. Validated Learning Log entries. Variance narrative. 90 minutes.</li>
-          <li><strong>Quarterly.</strong> Strategic Review. Full model rebuild from current economics. Trap Scorecard refresh. Forecast reset. Pricing architecture revisit. Realized Value validation. Four to six hours.</li>
+          <li><Icon name="rhythm-weekly-cash" size={44} /><div><strong>Weekly &middot; Cash.</strong> Open-decision review. Active experiment scoring against go and no-go triggers. Forward Capital Register movement. 30 minutes.</div></li>
+          <li><Icon name="rhythm-monthly-decisions" size={44} /><div><strong>Monthly &middot; Decisions.</strong> Decision Dashboard refresh. Decision of the Month and Experiment of the Month. Validated Learning Log entries. Variance narrative. 90 minutes.</div></li>
+          <li><Icon name="rhythm-quarterly-worth" size={44} /><div><strong>Quarterly &middot; Proof.</strong> Did the decisions pay off? Answered in dollars, validated quarterly. Strategic Review. Full model rebuild from current economics. Trap Scorecard refresh. Forecast reset. Pricing architecture revisit. Realized Value validation. Four to six hours.</div></li>
         </ul>
       </div>
     </div>
@@ -503,7 +504,8 @@ const outOfScope = [
     list-style: none;
     padding: 0;
   }
-  .rhythm-list li {
+  .rhythm-list li { display: flex; gap: 18px; align-items: flex-start;
+
     padding: 18px 0;
     border-top: 1px solid var(--hairline);
     font-size: 17px;
