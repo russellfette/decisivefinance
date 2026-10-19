@@ -20,7 +20,7 @@ archived: true
 
 - The Six Trap Diagnostic™ is the first instrument we run inside the 14-day Diagnostic. It scores six cognitive traps against the company's actual financials: LIVE, LATENT, or NOT PRESENT, each with evidence.
 - The traps are structural patterns in decision-making, not founder failures. They show up in disciplined teams with clean books, which is why they need an instrument rather than an intuition.
-- The Scorecard it produces is the foundation artifact. Every downstream deliverable, from the Trapped Value Report to the Three-Path Models, takes its priority from the trap diagnosis.
+- The Scorecard it produces is the foundation artifact. Every downstream deliverable, from the Day 14 readout to the Three-Path Models, takes its priority from the trap diagnosis.
 
 The Six Trap Diagnostic™ exists because of a pattern we kept hitting: the dollars were findable in the data, but the paths to recover them kept dying in the room. Capital does not get trapped by accident. It gets trapped by decisions, and those decisions are defended by six specific cognitive patterns that operate below the level of any dashboard. Scan the financials without naming the traps and you produce a report. Name the traps with evidence and you produce movement.
 
@@ -43,7 +43,7 @@ The evidence rule is what separates the instrument from an opinion. The data pul
 
 ## What does the Scorecard feed?
 
-Everything downstream. The trap diagnosis sets priority for the entire engagement: the Trapped Value Report scans hardest where the traps are LIVE, because that is where [the trapped value](https://decisive.finance/perspectives/trapped-value-stalled-portcos) concentrates. The Three-Path Models get built first on the decisions the trap stack is defending. The [day 1 to 90 sequence](https://decisive.finance/perspectives/stalled-recovery-day-1-to-90) orders its recovery work by the same map. Diagnose before prescribing is the operating rule; the Scorecard is the diagnosis.
+Everything downstream. The trap diagnosis sets priority for the entire engagement: the Day 14 readout scans hardest where the traps are LIVE, because that is where [the trapped value](https://decisive.finance/perspectives/trapped-value-stalled-portcos) concentrates. The Three-Path Models get built first on the decisions the trap stack is defending. The [day 1 to 90 sequence](https://decisive.finance/perspectives/stalled-recovery-day-1-to-90) orders its recovery work by the same map. Diagnose before prescribing is the operating rule; the Scorecard is the diagnosis.
 
 It also sets the floor under the guarantee. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. We can put money behind that sentence because the traps are predictable: where two or more are LIVE around the same decision, the value is there.
 

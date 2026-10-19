@@ -22,7 +22,7 @@ const loopNodes = [
   { name: 'Cost or commitment', body: 'The recurring P&L line or revenue-side commitment that decision created. Now living in the business.' },
   { name: 'Drift', body: 'The context that justified the decision changes. The decision stays. Compounding spend deploys against a context that no longer exists.' },
   { name: 'Trap', body: 'One of six cognitive biases keeps the decision running. Sunk cost. Status quo. Mental accounting. Anchoring. Loss aversion. Certainty illusion.' },
-  { name: 'Diagnose', body: 'The Six Trap Diagnostic surfaces the gap. Decision Register. Recoverable Value Report. Six Trap Scorecard.' },
+  { name: 'Diagnose', body: 'The Six Trap Diagnostic surfaces the gap. Decision Register. Day 14 Readout. Six Trap Scorecard.' },
   { name: 'Defend', body: 'A Three-Path Model, a Pricing Architecture Revisit, or a Growth Experiment Register produces a new decision tested in market.' },
 ];
 
@@ -61,7 +61,7 @@ const tiers = [
 
 const artifactsT1 = [
   { num: '01', name: 'Decision Register v1', body: 'Every recurring cost over $5,000 per month, every active pricing decision, every growth-spend channel, every product-line commitment, traced back to the originating decision. PDF plus live spreadsheet.' },
-  { num: '02', name: 'Recoverable Value Report', body: 'The artifact the Tier 1 guarantee is measured against. Per opportunity: dollar amount annualized, source decision, trap category, effort to recover, recovery plan narrative, evidence, recommended move.' },
+  { num: '02', name: 'Day 14 Readout', body: 'The artifact the Tier 1 guarantee is measured against. Per opportunity: dollar amount annualized, source decision, trap category, effort to recover, recovery plan narrative, evidence, recommended move.' },
   { num: '03', name: 'Cash Flow Truth Card', body: '2-page PDF. Base, upside, and downside cash position. Driver decomposition. The three variables most likely to move the number. Trigger points.' },
   { num: '04', name: 'Six Trap Scorecard', body: 'For each of the six traps: LIVE, LATENT, or NOT PRESENT, across cost, pricing, and growth. With evidence and value at stake. One-page card plus four-page backing detail.' },
   { num: '05', name: 'Prioritized Action Register', body: 'Top five next calls to defend first, ranked by impact and sequenced by effort. At least one pricing move and one growth-motion move if either is live in the Scorecard.' },
@@ -227,9 +227,6 @@ const outOfScope = [
           </div>
         ))}
       </div>
-      <p class="lede" style="margin-top: 16px;">
-        To see what artifact 02 looks like for a company your size, <a href="/resources/recovery-checklist/">preview the Recoverable Value Report</a>. Four minutes, three questions.
-      </p>
       <h3 class="artifact-group-h3">Resolution, Day 15 to Day 90, 10 artifacts</h3>
       <div class="artifact-grid">
         {artifactsT2.map((a) => (
@@ -286,7 +283,7 @@ const outOfScope = [
           The cadence that runs the loop after the 90 days end. Three rhythms: Weekly &middot; Cash, Monthly &middot; Decisions, Quarterly &middot; Proof. They keep running whether we are in the chair or not.
         </p>
         <ul class="rhythm-list">
-          <li><Icon name="rhythm-weekly-cash" size={44} /><div><strong>Weekly &middot; Cash.</strong> Open-decision review. Active experiment scoring against go and no-go triggers. Forward Capital Register movement. 30 minutes.</div></li>
+          <li><Icon name="rhythm-weekly-cash" size={44} /><div><strong>Weekly &middot; Cash.</strong> Will the cash be there for the next 13 weeks? Checked every week against the minimum-cash floor. Open-decision review. Active experiment scoring against go and no-go triggers. Forward Capital Register movement. 30 minutes.</div></li>
           <li><Icon name="rhythm-monthly-decisions" size={44} /><div><strong>Monthly &middot; Decisions.</strong> Decision Dashboard refresh. Decision of the Month and Experiment of the Month. Validated Learning Log entries. Variance narrative. 90 minutes.</div></li>
           <li><Icon name="rhythm-quarterly-worth" size={44} /><div><strong>Quarterly &middot; Proof.</strong> Did the decisions pay off? Answered in dollars, validated quarterly. Strategic Review. Full model rebuild from current economics. Trap Scorecard refresh. Forecast reset. Pricing architecture revisit. Realized Value validation. Four to six hours.</div></li>
         </ul>

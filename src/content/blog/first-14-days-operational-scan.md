@@ -98,7 +98,7 @@ The Diagnostic is a fixed-fee engagement with one guarantee: at least 3x the fee
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)
 
-To see what the Day 14 deliverable looks like before committing to anything, [preview the Trapped Value Report](https://decisive.finance/resources/recovery-checklist/): three questions, sized to your ARR, organized in the five canon categories.
+To see what the Day 14 deliverable covers before committing to anything, [read what the Day 14 readout includes](https://decisive.finance/diagnostic).
 
 Related reading:
 

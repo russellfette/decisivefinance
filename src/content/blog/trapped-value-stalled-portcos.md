@@ -32,7 +32,7 @@ It has to trace to a decision. A SaaS line running $4K a month is not a finding.
 
 It has to be dollarized. "We should look at our cloud spend" names nothing. "$61K annualized in compute provisioned for a load profile the product no longer has" names something a CEO can act on.
 
-And it has to come with an accepted path. Naming money nobody will move is theater. The Trapped Value Report ties every line to a recovery move with an effort tier, and the Day 14 readout ends with the CEO accepting or rejecting each path on the record.
+And it has to come with an accepted path. Naming money nobody will move is theater. The Day 14 readout ties every line to a recovery move with an effort tier, and ends with the CEO accepting or rejecting each path on the record.
 
 ## Where does it sit? The five categories
 
@@ -54,7 +54,7 @@ This is why a checklist run by the same team that made the decisions recovers a 
 
 It becomes the floor, not the outcome. The named value funds the work that matters more: the Three-Path Models on the material decisions, the forward capital register, the [day 1 to 90 recovery sequence](https://decisive.finance/perspectives/stalled-recovery-day-1-to-90). Engagements to date: 5x to 10x the Diagnostic fee.
 
-To see what the report itself looks like for a company your size, [preview the Trapped Value Report](https://decisive.finance/resources/recovery-checklist/): three questions, the five categories, an effort tier per finding. Four minutes, no email required.
+To see what the report itself covers, [read what the Day 14 readout includes](https://decisive.finance/diagnostic).
 
 Related reading:
 

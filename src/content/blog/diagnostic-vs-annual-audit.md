@@ -71,7 +71,7 @@ If the last audit came back clean and the company still feels stuck, the books a
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)
 
-The fastest way to see the difference is the deliverable itself. [Preview the Trapped Value Report](https://decisive.finance/resources/recovery-checklist/) in four minutes.
+The fastest way to see the difference is the deliverable itself. [Read what the Day 14 readout includes](https://decisive.finance/diagnostic).
 
 Related reading:
 

@@ -80,12 +80,12 @@ It is also not a program that runs in parallel with the day job. The CEO's time,
 
 ## Where to go from here
 
-A Diagnostic is the first fourteen days of this sequence. It costs a fixed fee, and produces the first Three-Path Model on paper. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x. We have yet to refund one.
+A Diagnostic is the first fourteen days of this sequence. It costs a fixed fee, and produces the first Three-Path Model on paper. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. Typical 5x to 10x.
 
 [Read the guarantee](https://decisive.finance/guarantee)
 [Book the call](https://decisive.finance/contact)
 
-To see what the Day 14 report looks like for a company your size, [preview the Trapped Value Report](https://decisive.finance/resources/recovery-checklist/): three questions, five categories, an effort tier per finding.
+To see what the Day 14 report covers, [read what the Day 14 readout includes](https://decisive.finance/diagnostic).
 
 Related reading:
 
