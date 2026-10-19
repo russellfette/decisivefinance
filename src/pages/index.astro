@@ -5,6 +5,7 @@ import CustomerMap from '../components/CustomerMap.astro';
 import SituationGrid from '../components/SituationGrid.astro';
 import MetricsStrip from '../components/MetricsStrip.astro';
 import Icon from '../components/Icon.astro';
+import HeroBars from '../components/HeroBars.astro';
 
 const CALENDLY = '#book';
 
@@ -141,17 +142,22 @@ const offersJsonLd = {
 
   <!-- Hero: both prongs -->
   <section id="hero" class="hero">
-    <div class="hero-inner">
-      <span class="eyebrow">For owner-led companies, $5M to $50M in revenue</span>
-      <h1>
-        <span class="h1-line">Some customers pay you.</span>
-        <span class="h1-line h1-line-accent">Some cost you.</span>
-      </h1>
-      <p class="hero-subhead">
-        <span class="dollar">At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.</span> For owner-led companies, $5M to $50M, whether you&rsquo;re running it or getting it ready to sell.
-      </p>
-      <div class="hero-cta-row">
-        <a href={CALENDLY} class="btn btn-primary">See if you qualify</a>
+    <div class="hero-inner hero-split">
+      <div class="hero-copy">
+        <span class="eyebrow">For owner-led companies, $5M to $50M in revenue</span>
+        <h1>
+          <span class="h1-line">Some customers pay you.</span>
+          <span class="h1-line h1-line-accent">Some cost you.</span>
+        </h1>
+        <p class="hero-subhead">
+          <span class="dollar">At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.</span> For owner-led companies, $5M to $50M, whether you&rsquo;re running it or getting it ready to sell.
+        </p>
+        <div class="hero-cta-row">
+          <a href={CALENDLY} class="btn btn-primary">See if you qualify</a>
+        </div>
+      </div>
+      <div class="hero-viz">
+        <HeroBars />
       </div>
     </div>
   </section>
@@ -342,6 +348,13 @@ const offersJsonLd = {
 
 <style>
   .hero { padding-bottom: 110px; }
+  .hero-split { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+  .hero-split h1 { max-width: none; }
+  .hero-viz { min-width: 0; }
+  @media (max-width: 900px) {
+    .hero-split { grid-template-columns: 1fr; gap: 28px; }
+    .hero-viz { max-width: 460px; }
+  }
   .trust-strip {
     font-family: Inter, sans-serif;
     font-size: 14.5px;

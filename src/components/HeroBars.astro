@@ -1,0 +1,38 @@
+---
+// Hero visual: profit by customer, ranked. Illustrative figures only, no client data.
+const vals = [38, 31, 26, 22, 18, 15, 12, 9, 6, 3, -4, -9, -15, -24];
+const W = 480, zero = 230, scale = 5.2, gap = 8;
+const n = vals.length;
+const bw = (W - gap * (n - 1)) / n;
+const firstNeg = vals.findIndex((v) => v < 0);
+const bars = vals.map((v, i) => {
+  const h = Math.abs(v) * scale;
+  const neg = v < 0;
+  return { x: +(i * (bw + gap)).toFixed(2), y: neg ? zero : +(zero - h).toFixed(2), h: +h.toFixed(2), neg, delay: (i * 0.06).toFixed(2) };
+});
+---
+<figure class="hero-bars">
+  <svg viewBox="0 0 480 360" role="img" aria-labelledby="hb-title">
+    <title id="hb-title">Illustrative chart: profit by customer, ranked. Most customers are above zero; the last four fall below zero.</title>
+    <text x="0" y="12" class="hb-label">Pay you</text>
+    <line x1="0" x2={W} y1={zero} y2={zero} class="hb-axis" />
+    {bars.map((b) => (
+      <rect x={b.x} y={b.y} width={bw.toFixed(2)} height={b.h} rx="3" class={b.neg ? 'hb-bar hb-neg' : 'hb-bar'} style={`animation-delay:${b.delay}s`} />
+    ))}
+    <text x={firstNeg * (bw + gap) - 10} y={zero + 20} text-anchor="end" class="hb-label hb-label-neg">Cost you</text>
+  </svg>
+  <figcaption>Profit by customer, ranked. Illustrative.</figcaption>
+</figure>
+
+<style>
+  .hero-bars { margin: 0; }
+  .hero-bars svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .hb-axis { stroke: rgba(255, 255, 255, 0.35); stroke-width: 1; }
+  .hb-bar { fill: rgba(255, 255, 255, 0.9); transform-box: fill-box; transform-origin: bottom; animation: hb-grow 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  .hb-neg { fill: var(--orange-on-dark); transform-origin: top; }
+  .hb-label { font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; fill: rgba(255, 255, 255, 0.7); }
+  .hb-label-neg { fill: var(--orange-on-dark); }
+  .hero-bars figcaption { font-family: Inter, sans-serif; font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 6px; }
+  @keyframes hb-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .hb-bar { animation: none; } }
+</style>
