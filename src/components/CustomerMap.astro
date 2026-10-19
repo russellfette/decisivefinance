@@ -31,7 +31,7 @@ const quads = [
       <p class="cmap-ask">{question}</p>
     </div>
   )}
-  <figure class="cmap-figure">
+  <figure class="cmap-figure" data-reveal>
     <div class="cmap-yaxis" aria-hidden="true">Margin after cost to serve &uarr;</div>
     <div class="cmap-plot" role="img" aria-label="Customers plotted by revenue and by margin after the cost to serve. The big customers that lose money sit in the bottom right.">
       <svg viewBox="0 0 900 800" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
@@ -39,8 +39,8 @@ const quads = [
         <rect x="0.75" y="0.75" width="898.5" height="798.5" fill="none" style="stroke:var(--rule)" stroke-width="1.5" />
         <line x1="450" y1="0" x2="450" y2="800" style="stroke:var(--teal)" stroke-width="1.5" />
         <line x1="0" y1="400" x2="900" y2="400" style="stroke:var(--ink)" stroke-width="2" />
-        {placed.map(([cx, cy, r, c]) => (
-          <circle cx={cx} cy={cy} r={r} class={`dot dot-${c}`} />
+        {placed.map(([cx, cy, r, c], i) => (
+          <circle cx={cx} cy={cy} r={r} class={`dot dot-${c}`} style={`--i:${i}`} />
         ))}
       </svg>
       {quads.map((q) => (
@@ -67,6 +67,8 @@ const quads = [
   .cmap-figure { margin: 0; }
   .cmap-plot { position: relative; aspect-ratio: 9 / 8; width: 100%; }
   .cmap-plot svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  :global(html.js-reveal) .cmap-figure .dot { transform-box: fill-box; transform-origin: center; transform: scale(0); transition: transform .5s cubic-bezier(.2,.8,.2,1); transition-delay: calc(var(--i) * 25ms); }
+  :global(html.js-reveal) .cmap-figure.is-visible .dot { transform: scale(1); }
   .dot-ink { fill: var(--ink); opacity: 0.75; }
   .dot-ember { fill: var(--orange-brand); opacity: 0.9; }
   .dot-muted { fill: var(--muted); opacity: 0.75; }

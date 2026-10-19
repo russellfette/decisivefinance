@@ -6,6 +6,8 @@ import SituationGrid from '../components/SituationGrid.astro';
 import MetricsStrip from '../components/MetricsStrip.astro';
 import Icon from '../components/Icon.astro';
 import HeroBars from '../components/HeroBars.astro';
+import Timeline14 from '../components/Timeline14.astro';
+import FounderNote from '../components/FounderNote.astro';
 
 const CALENDLY = '#book';
 
@@ -236,6 +238,10 @@ const offersJsonLd = {
           </div>
         ))}
       </div>
+      <div class="container-narrow" style="margin-top: 56px;">
+        <h3 style="margin-top: 0;">The first 14 days.</h3>
+      </div>
+      <Timeline14 />
       <div class="container-narrow">
         <div class="rally" style="margin-top: 44px;">FIND. INSTALL. RUN.</div>
       </div>
@@ -264,6 +270,7 @@ const offersJsonLd = {
         <p>
           <a href="/guarantee">The guarantee mechanics, in full &rarr;</a>
         </p>
+        <FounderNote />
       </div>
     </div>
   </section>

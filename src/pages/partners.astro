@@ -42,6 +42,7 @@ const faqJsonLd = {
   '@type': 'FAQPage',
   mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
 };
+import ReadoutSample from '../components/ReadoutSample.astro';
 ---
 
 <BaseLayout title={title} description={description}>
@@ -102,6 +103,8 @@ const faqJsonLd = {
           <li class="engine-item"><div><p><strong>If the read shows money on the table, 14 days.</strong> The Decision Diagnostic shows which products, customers and jobs make money, where the recoverable cash and margin sit, and what to decide first. If the owner is selling, the Sellable-Numbers Scan runs the same 14 days through a buyer&rsquo;s eyes. From $10,000, fixed. At least 3x the fee in owner-accepted value, in 14 days, or the client pays nothing.</p></div></li>
           <li class="engine-item"><div><p><strong>Then the rhythm.</strong> The 90-Day Decision Resolution puts the Financial Rhythm System&trade; in place.</p></div></li>
         </ol>
+        <h3>What your client sees on Day 14.</h3>
+        <ReadoutSample />
       </div>
     </div>
   </section>

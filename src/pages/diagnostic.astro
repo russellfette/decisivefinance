@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ReadoutSample from '../components/ReadoutSample.astro';
+import Timeline14 from '../components/Timeline14.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
@@ -79,6 +81,10 @@ const bands = [
             </li>
           ))}
         </ol>
+        <h3>What page one looks like.</h3>
+        <ReadoutSample />
+        <h3 style="margin-top: 64px;">The 14 days.</h3>
+        <Timeline14 />
       </div>
     </div>
   </section>

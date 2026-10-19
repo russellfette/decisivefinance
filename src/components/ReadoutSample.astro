@@ -1,0 +1,86 @@
+---
+// Sample Day 14 readout, page one. Fictional company and figures; not client data.
+interface Props { tone?: 'light' | 'dark' }
+const { tone = 'light' } = Astro.props;
+const rows = [
+  { opp: 'Three accounts priced below their cost to serve', trap: 'Mental Accounting', amt: '$54,000', effort: 'Low', move: 'Reprice two at renewal; release the third' },
+  { opp: 'Freight absorbed on small orders since 2023', trap: 'Status Quo', amt: '$41,000', effort: 'Low', move: 'Minimum order size or a freight line' },
+  { opp: 'On-time delivery bought with unpriced overtime', trap: 'Certainty Illusion', amt: '$23,000', effort: 'Medium', move: 'Rush fee; overtime approval above 4 hours' },
+];
+---
+<div class={`rs rs-${tone}`}>
+  <button type="button" class="rs-open" aria-haspopup="dialog">
+    <div class="rs-page rs-thumb" aria-hidden="true">
+      <div class="rs-head"><span class="rs-brand">Decisive</span><span class="rs-tag">Day 14 Readout &middot; Sample</span></div>
+      <p class="rs-co">Example Co., a $14M distributor <span>(fictional)</span></p>
+      <p class="rs-bottom"><strong>$118,000 a year identified, 7.9x the $15,000 fee.</strong></p>
+      <table class="rs-table"><thead><tr><th>Opportunity</th><th>Trap</th><th>Per year</th></tr></thead>
+        <tbody>{rows.map((r) => <tr><td>{r.opp}</td><td>{r.trap}</td><td class="rs-amt">{r.amt}</td></tr>)}</tbody></table>
+      <p class="rs-moves-h">First three moves</p>
+      <ol class="rs-moves">{rows.map((r) => <li>{r.move}</li>)}</ol>
+    </div>
+    <span class="rs-cta">See the sample page &rarr;</span>
+  </button>
+  <dialog class="rs-dialog" aria-labelledby="rs-title">
+    <div class="rs-page rs-full">
+      <div class="rs-head"><span class="rs-brand">Decisive</span><span class="rs-tag">Day 14 Readout &middot; Sample</span></div>
+      <h3 id="rs-title" class="rs-co">Example Co., a $14M distributor <span>(fictional company, illustrative figures)</span></h3>
+      <p class="rs-bottom"><strong>$118,000 a year identified, 7.9x the $15,000 fee.</strong> Each finding below names the dollars, the decision that created it, the effort to recover it and the move we recommend.</p>
+      <div class="rs-scroll">
+        <table class="rs-table">
+          <thead><tr><th>Opportunity</th><th>Trap</th><th>Per year</th><th>Effort</th><th>Recommended move</th></tr></thead>
+          <tbody>{rows.map((r) => <tr><td>{r.opp}</td><td>{r.trap}</td><td class="rs-amt">{r.amt}</td><td>{r.effort}</td><td>{r.move}</td></tr>)}</tbody>
+          <tfoot><tr><td>Total identified</td><td></td><td class="rs-amt">$118,000</td><td></td><td></td></tr></tfoot>
+        </table>
+      </div>
+      <p class="rs-moves-h">First three moves, ranked by dollars and speed</p>
+      <ol class="rs-moves">{rows.map((r) => <li>{r.move}.</li>)}</ol>
+      <p class="rs-note">Sample page with a fictional company. Not client data. A real readout adds the evidence and a recovery plan for each finding.</p>
+      <form method="dialog"><button class="btn btn-primary rs-close">Close</button></form>
+    </div>
+  </dialog>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.rs').forEach((el) => {
+    const d = el.querySelector('dialog') as HTMLDialogElement | null;
+    el.querySelector('.rs-open')?.addEventListener('click', () => d?.showModal());
+    d?.addEventListener('click', (e) => { if (e.target === d) d.close(); });
+  });
+</script>
+
+<style>
+  .rs-open { all: unset; cursor: pointer; display: block; max-width: 520px; }
+  .rs-open:focus-visible { outline: 3px solid var(--orange-ink); outline-offset: 6px; border-radius: 8px; }
+  .rs-page { background: #fff; color: var(--ink); border-radius: 6px; font-family: Inter, sans-serif; }
+  .rs-thumb { padding: 26px 26px 22px; box-shadow: 0 24px 60px rgba(24,34,40,.22), 0 2px 6px rgba(24,34,40,.12); transform: rotate(-2deg); transition: transform .25s ease; border: 1px solid var(--hairline); }
+  .rs-open:hover .rs-thumb, .rs-open:focus-visible .rs-thumb { transform: rotate(0) translateY(-4px); }
+  .rs-head { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--ink); padding-bottom: 8px; margin-bottom: 14px; }
+  .rs-brand { font-weight: 800; letter-spacing: -.02em; font-size: 16px; }
+  .rs-tag { font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); }
+  .rs-co { font-size: 15px; font-weight: 700; margin: 0 0 6px; letter-spacing: -.01em; }
+  .rs-co span { font-weight: 400; color: var(--muted); }
+  .rs-bottom { font-size: 14px; line-height: 1.45; margin: 0 0 14px; }
+  .rs-bottom strong { color: var(--orange); }
+  .rs-table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-bottom: 14px; }
+  .rs-table th { text-align: left; font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--hairline); padding: 6px 6px 6px 0; }
+  .rs-table td { border-bottom: 1px solid var(--hairline); padding: 7px 6px 7px 0; vertical-align: top; line-height: 1.35; }
+  .rs-table tfoot td { font-weight: 700; border-bottom: none; }
+  .rs-amt { text-align: right; font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .rs-table th:nth-child(3) { text-align: right; white-space: nowrap; }
+  .rs-moves-h { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .rs-moves { margin: 0 0 0 18px; padding: 0; font-size: 12.5px; line-height: 1.5; }
+  .rs-cta { display: inline-block; margin-top: 18px; font-weight: 600; font-size: 15px; color: var(--orange); }
+  .rs-dark .rs-cta { color: var(--orange-on-dark); }
+  .rs-dialog { margin: auto; border: none; padding: 0; background: transparent; max-width: min(880px, calc(100vw - 32px)); width: 100%; }
+  .rs-dialog::backdrop { background: rgba(24,34,40,.7); }
+  .rs-full { padding: 36px 36px 28px; }
+  .rs-full .rs-co { font-size: 22px; }
+  .rs-full .rs-bottom { font-size: 16px; }
+  .rs-full .rs-table { font-size: 14px; }
+  .rs-full .rs-moves { font-size: 15px; }
+  .rs-scroll { overflow-x: auto; }
+  .rs-note { font-size: 13px; color: var(--muted); margin: 16px 0 18px; }
+  @media (max-width: 600px) { .rs-full { padding: 22px 16px; } .rs-thumb { padding: 18px 16px; } .rs-table td, .rs-table th { font-size: 11.5px; } }
+  @media (prefers-reduced-motion: reduce) { .rs-thumb { transition: none; } }
+</style>

@@ -1,0 +1,38 @@
+---
+// The 14-day Find, as a timeline. Steps from the owner deliverable timeline on /how-it-works.
+const steps = [
+  { day: 'Day 0', title: 'Signed', body: 'Engagement letter signed. Data request list and the 14-day calendar.' },
+  { day: 'Day 3', title: 'Kickoff', body: 'Kickoff done. Data room set up. Six Trap Interview booked.' },
+  { day: 'Day 7', title: 'Draft', body: 'Decision Register draft ready for your review.' },
+  { day: 'Day 14', title: 'Readout', body: '60 minutes: the findings in dollars and the first three moves. The guarantee is measured here.', key: true },
+];
+---
+<div class="t14" data-reveal>
+  <ol class="t14-list">
+    {steps.map((s, i) => (
+      <li class={`t14-step ${s.key ? 't14-key' : ''}`} style={`--i:${i}`}>
+        <span class="t14-dot" aria-hidden="true"></span>
+        <span class="t14-day">{s.day}</span>
+        <span class="t14-title">{s.title}</span>
+        <span class="t14-body">{s.body}</span>
+      </li>
+    ))}
+  </ol>
+</div>
+<style>
+  .t14-list { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; position: relative; }
+  .t14-list::before { content: ""; position: absolute; left: 8px; right: 8px; top: 8px; height: 2px; background: linear-gradient(90deg, var(--teal), var(--orange-brand)); }
+  .t14-step { position: relative; padding-top: 34px; display: flex; flex-direction: column; gap: 6px; }
+  .t14-dot { position: absolute; top: 0; left: 0; width: 18px; height: 18px; border-radius: 50%; background: var(--white); border: 3px solid var(--teal); }
+  .t14-key .t14-dot { border-color: var(--orange-brand); background: var(--orange-brand); box-shadow: 0 0 0 6px rgba(227,99,43,.18); }
+  .t14-day { font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--orange); }
+  .t14-title { font-family: Inter, sans-serif; font-size: 20px; font-weight: 700; letter-spacing: -.015em; color: var(--ink); }
+  .t14-body { font-size: 15px; line-height: 1.5; color: var(--muted); }
+  @media (max-width: 760px) {
+    .t14-list { grid-template-columns: 1fr; gap: 22px; }
+    .t14-list::before { left: 8px; right: auto; top: 8px; bottom: 8px; width: 2px; height: auto; background: linear-gradient(180deg, var(--teal), var(--orange-brand)); }
+    .t14-step { padding: 0 0 0 36px; }
+  }
+  :global(html.js-reveal) .t14 .t14-step { opacity: 0; transform: translateY(12px); transition: opacity .5s ease, transform .5s ease; transition-delay: calc(var(--i) * 140ms); }
+  :global(html.js-reveal) .t14.is-visible .t14-step { opacity: 1; transform: none; }
+</style>

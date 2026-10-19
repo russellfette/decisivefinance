@@ -9,13 +9,13 @@ const metrics = [
   { icon: 'metric-believability-gap', name: 'Believability gap', value: '$0.75M', body: 'of EBITDA a buyer won’t believe', accent: true },
 ];
 ---
-<div class="mstrip">
+<div class="mstrip" data-reveal>
   <span class="section-eyebrow">The five numbers</span>
   <h2>Five numbers your books don&rsquo;t show you.</h2>
   <p class="lede">Four come out of the 14-day Find. The fifth proves the rhythm is running.</p>
   <ol class="mstrip-grid">
     {metrics.map((m, i) => (
-      <li class={`mstrip-card ${m.accent ? 'mstrip-accent' : ''}`}>
+      <li class={`mstrip-card ${m.accent ? 'mstrip-accent' : ''}`} style={`--i:${i}`}>
         <Icon name={m.icon} size={56} />
         <span class="mstrip-num">{String(i + 1).padStart(2, '0')}</span>
         <span class="mstrip-name">{m.name}</span>
@@ -36,5 +36,7 @@ const metrics = [
   .mstrip-name { font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); }
   .mstrip-value { font-family: Inter, sans-serif; font-size: 40px; font-weight: 800; letter-spacing: -0.03em; color: var(--orange); line-height: 1.1; }
   .mstrip-body { font-size: 15px; line-height: 1.45; color: var(--ink); }
+  :global(html.js-reveal) .mstrip .mstrip-card { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; transition-delay: calc(var(--i) * 110ms); }
+  :global(html.js-reveal) .mstrip.is-visible .mstrip-card { opacity: 1; transform: none; }
   .mstrip-caption { margin-top: 14px; font-size: 13px; color: var(--muted); text-align: right; }
 </style>

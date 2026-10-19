@@ -1,0 +1,26 @@
+---
+// Founder note. Shows the headshot once public/team/russell-fette.jpg exists; initials until then.
+import fs from 'node:fs';
+import path from 'node:path';
+const photo = '/team/russell-fette.jpg';
+const hasPhoto = fs.existsSync(path.join(process.cwd(), 'public', photo));
+---
+<figure class="fnote">
+  <div class="fnote-face">
+    {hasPhoto ? <img src={photo} alt="Russell Fette" width="96" height="96" loading="lazy" /> : <span aria-hidden="true">RF</span>}
+  </div>
+  <div>
+    <blockquote class="fnote-quote">&ldquo;If the financial statements only tell you where you&rsquo;ve been, they don&rsquo;t tell you anything about where you&rsquo;re going.&rdquo;</blockquote>
+    <figcaption class="fnote-cite"><a href="/about#russell-fette">Russell Fette</a>, founder, Decisive Finance</figcaption>
+  </div>
+</figure>
+<style>
+  .fnote { display: flex; gap: 22px; align-items: center; margin: 40px 0 0; padding: 26px 28px; background: var(--paper); border: 1px solid var(--hairline); border-radius: 16px; max-width: 760px; }
+  .fnote-face { flex-shrink: 0; width: 96px; height: 96px; border-radius: 50%; overflow: hidden; background: var(--ink); display: flex; align-items: center; justify-content: center; }
+  .fnote-face img { width: 100%; height: 100%; object-fit: cover; }
+  .fnote-face span { color: var(--white); font-family: Inter, sans-serif; font-weight: 800; font-size: 30px; letter-spacing: -.02em; }
+  .fnote-quote { margin: 0 0 10px; font-family: Inter, sans-serif; font-size: 20px; line-height: 1.4; font-weight: 600; letter-spacing: -.01em; color: var(--ink); }
+  .fnote-cite { font-size: 14px; color: var(--muted); }
+  .fnote-cite a { color: var(--ink); text-decoration: underline; font-weight: 600; }
+  @media (max-width: 560px) { .fnote { flex-direction: column; align-items: flex-start; padding: 22px 20px; } .fnote-face { width: 72px; height: 72px; } .fnote-face span { font-size: 24px; } .fnote-quote { font-size: 18px; } }
+</style>
