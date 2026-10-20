@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import FieldNotesSignup from '../../components/FieldNotesSignup.astro';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 
@@ -63,6 +64,9 @@ for (const p of allPosts) {
 
 const ogImage = post.data.ogImage || '/og/default.png';
 
+// Only show or emit an update date that is later than the publish date.
+const showUpdated = !!post.data.updatedDate && post.data.updatedDate.getTime() > post.data.pubDate.getTime();
+
 const siteUrl = 'https://decisive.finance';
 const postUrl = `${siteUrl}/perspectives/${post.slug}/`;
 
@@ -74,7 +78,7 @@ const blogPostingJsonLd = {
   url: postUrl,
   mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
   datePublished: post.data.pubDate.toISOString(),
-  ...(post.data.updatedDate ? { dateModified: post.data.updatedDate.toISOString() } : {}),
+  ...(showUpdated ? { dateModified: post.data.updatedDate!.toISOString() } : {}),
   image: siteUrl + (ogImage.startsWith('http') ? '' : ogImage),
   wordCount,
   author: {
@@ -128,7 +132,7 @@ const breadcrumbJsonLd = {
           <span>{fmtDate(post.data.pubDate)}</span>
           <span class="dot">&middot;</span>
           <span>By <a class="post-author-link" href="/about#russell-fette">{post.data.author || 'Russell Fette'}</a></span>
-          {post.data.updatedDate && (<><span class="dot">&middot;</span><span>Updated {fmtDate(post.data.updatedDate)}</span></>)}
+          {showUpdated && (<><span class="dot">&middot;</span><span>Updated {fmtDate(post.data.updatedDate!)}</span></>)}
           <span class="dot">&middot;</span>
           <span>{readingTime} min read</span>
         </div>
@@ -193,6 +197,8 @@ const breadcrumbJsonLd = {
         </p>
       </div>
     </section>
+
+    <FieldNotesSignup />
 
     {related.length > 0 && (
       <section class="post-related">

@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import PillarIcon from '../../components/PillarIcon.astro';
+import FieldNotesSignup from '../../components/FieldNotesSignup.astro';
 
 const CALENDLY = 'https://calendly.com/russell-decisive/30min';
 
@@ -15,65 +16,28 @@ const posts = (await getCollection('blog'))
 
 type Pillar = 1 | 2 | 3 | 4 | 6;
 
+// Newest first. Dates are not shown on cards; each post page carries its own publish date.
 function postsForPillar(n: Pillar): Post[] {
-  return posts
-    .filter((p) => p.data.pillar === n)
-    .sort((a, b) => {
-      if (a.data.pillarHub && !b.data.pillarHub) return -1;
-      if (!a.data.pillarHub && b.data.pillarHub) return 1;
-      if (a.data.featured && !b.data.featured) return -1;
-      if (!a.data.featured && b.data.featured) return 1;
-      return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
-    });
+  return posts.filter((p) => p.data.pillar === n);
 }
 
+// Five sections, one pattern. Color by prong: running it in green, selling it in orange.
 const pillars = [
-  {
-    n: 6 as Pillar,
-    title: 'Where the profit went',
-    eyebrow: 'Running it',
-    tagline: 'Revenue is up and profit isn\'t. Margin by customer, job and product, and what to decide first.',
-    accent: 'green',
-    iconKind: 'scale' as const,
-    posts: postsForPillar(6),
-  },
-  {
-    n: 1 as Pillar,
-    title: 'Sellable numbers',
-    eyebrow: 'Pillar 01',
-    tagline: 'The numbers a buyer can believe, built before the buyer shows up.',
-    accent: 'orange',
-    iconKind: 'ledger' as const,
-    posts: postsForPillar(1),
-  },
-  {
-    n: 2 as Pillar,
-    title: 'Worth more',
-    eyebrow: 'Pillar 02',
-    tagline: 'Pricing, mix, and margin truth: grow the earnings a buyer pays a multiple on.',
-    accent: 'green',
-    iconKind: 'scale' as const,
-    posts: postsForPillar(2),
-  },
-  {
-    n: 3 as Pillar,
-    title: 'Surviving diligence',
-    eyebrow: 'Pillar 03',
-    tagline: 'Deals die in diligence, and it is almost never the business. It is believability.',
-    accent: 'ink',
-    iconKind: 'shield' as const,
-    posts: postsForPillar(3),
-  },
-  {
-    n: 4 as Pillar,
-    title: 'The exit clock',
-    eyebrow: 'Pillar 04',
-    tagline: 'Timing, triggers, and the cost of waiting for numbers you would be willing to show.',
-    accent: 'orange-ink',
-    iconKind: 'clock' as const,
-    posts: postsForPillar(4),
-  },
-];
+  { n: 6 as Pillar, id: 'where-the-profit-went', title: 'Where the profit went', prong: 'run',
+    tagline: 'Revenue is up and profit isn\'t. Margin by customer, job and product, and what to decide first.', iconKind: 'profit' as const },
+  { n: 1 as Pillar, id: 'sellable-numbers', title: 'Sellable numbers', prong: 'sell',
+    tagline: 'The numbers a buyer can believe, built before the buyer shows up.', iconKind: 'ledger' as const },
+  { n: 2 as Pillar, id: 'worth-more', title: 'Worth more', prong: 'sell',
+    tagline: 'Pricing, mix, and margin truth: grow the earnings a buyer pays a multiple on.', iconKind: 'scale' as const },
+  { n: 3 as Pillar, id: 'surviving-diligence', title: 'Surviving diligence', prong: 'sell',
+    tagline: 'Deals die in diligence, and it is almost never the business. It is believability.', iconKind: 'shield' as const },
+  { n: 4 as Pillar, id: 'the-exit-clock', title: 'The exit clock', prong: 'sell',
+    tagline: 'Timing, triggers, and the cost of waiting for numbers you would be willing to show.', iconKind: 'clock' as const },
+].map((p) => {
+  const all = postsForPillar(p.n);
+  const hub = all.find((post) => post.data.pillarHub);
+  return { ...p, hub, rest: all.filter((post) => post !== hub), count: all.length };
+});
 
 const industries = [
   { slug: 'tech', name: 'Technology', href: '/tech' },
@@ -81,23 +45,13 @@ const industries = [
   { slug: 'manufacturing', name: 'Manufacturing', href: '/manufacturing' },
   { slug: 'trades', name: 'Trades', href: '/trades' },
   { slug: 'wealth-management', name: 'Wealth management', href: '/wealth-management' },
-].map((ind) => ({
-  ...ind,
-  count: posts.filter((p) => p.data.pillar === 5 && p.data.industry === ind.slug).length,
-}));
+];
 
-const industryPosts = posts.filter((p) => p.data.pillar === 5);
-const totalPosts = posts.length;
-
-function fmtDate(d: Date) {
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
-}
-
-const SPOKE_CAP = 5;
+const totalPosts = pillars.reduce((n, p) => n + p.count, 0);
 
 const title = 'Perspectives | Decisive Finance';
 const description =
-  'Field notes on the numbers behind what your company is worth. Sellable numbers, worth more, surviving diligence, the exit clock, and how it reads in your industry.';
+  'Field notes on the numbers behind what your company is worth. Where the profit went, sellable numbers, worth more, surviving diligence, and the exit clock.';
 ---
 
 <BaseLayout title={title} description={description}>
@@ -109,7 +63,7 @@ const description =
         A sale price is a multiple times earnings. These pieces work both numbers: growing what the company earns, and making the numbers a buyer can believe. Written from inside the engagements.
       </p>
       <div class="perspectives-hero-meta">
-        <span><strong>Four questions</strong> every owner faces</span>
+        <span><strong>Five questions</strong> every owner faces</span>
         <span class="dot">&middot;</span>
         <span><strong>{totalPosts}</strong> {totalPosts === 1 ? 'piece' : 'pieces'} live</span>
         <span class="dot">&middot;</span>
@@ -118,64 +72,60 @@ const description =
     </div>
   </header>
 
-  <section class="pillars-grid-section">
+  <section class="sections-wrap" data-tabs>
     <div class="container">
-      <div class="pillars-grid">
-        {pillars.map((p) => {
-          const hub = p.posts.find((post) => post.data.pillarHub);
-          const spokes = p.posts.filter((post) => !post.data.pillarHub).slice(0, SPOKE_CAP);
-          return (
-            <div class={`pillar-col pillar-col-${p.accent}`}>
-              <div class="pillar-col-header">
-                <div class="pillar-col-icon-row">
-                  <span class="pillar-col-icon"><PillarIcon kind={p.iconKind} size={28} /></span>
-                  <span class="pillar-col-eyebrow">{p.eyebrow}</span>
-                </div>
-                <h2 class="pillar-col-title">{p.title}</h2>
-                <p class="pillar-col-tagline">{p.tagline}</p>
-              </div>
-              {hub && (
-                <a class="hub-card" href={`/perspectives/${hub.slug}/`}>
-                  <span class="hub-card-pill">Start here</span>
-                  <h3 class="hub-card-title">{hub.data.title}</h3>
-                  <p class="hub-card-desc">{hub.data.description}</p>
-                  <div class="hub-card-meta">
-                    <span>{fmtDate(hub.data.pubDate)}</span>
-                    {hub.data.readingTime && (
-                      <>
-                        <span class="dot">&middot;</span>
-                        <span>{hub.data.readingTime} min read</span>
-                      </>
-                    )}
-                  </div>
-                </a>
-              )}
-              {spokes.length > 0 && (
-                <ul class="spoke-list">
-                  {spokes.map((s) => (
-                    <li>
-                      <a class="spoke" href={`/perspectives/${s.slug}/`}>
-                        <h4>{s.data.title}</h4>
-                        <div class="spoke-meta">
-                          <span>{fmtDate(s.data.pubDate)}</span>
-                          {s.data.readingTime && (
-                            <>
-                              <span class="dot">&middot;</span>
-                              <span>{s.data.readingTime} min</span>
-                            </>
-                          )}
-                        </div>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          );
-        })}
+      <div class="tab-row" role="tablist" aria-label="Perspectives sections">
+        {pillars.map((p, i) => (
+          <a
+            href={`#${p.id}`}
+            id={`tab-${p.id}`}
+            class={`tab tab-${p.prong}`}
+            role="tab"
+            aria-controls={p.id}
+            aria-selected={i === 0 ? 'true' : 'false'}
+            data-tab={p.id}
+          >
+            <span class="tab-icon"><PillarIcon kind={p.iconKind} size={26} /></span>
+            <span class="tab-name">{p.title}</span>
+          </a>
+        ))}
       </div>
+
+      {pillars.map((p) => (
+        <div class={`panel panel-${p.prong}`} id={p.id} role="tabpanel" aria-labelledby={`tab-${p.id}`} data-panel={p.id}>
+          <div class="panel-head">
+            <span class="panel-icon"><PillarIcon kind={p.iconKind} size={32} /></span>
+            <div>
+              <h2 class="panel-title">{p.title}</h2>
+              <p class="panel-tagline">{p.tagline}</p>
+            </div>
+          </div>
+          {p.hub && (
+            <a class="hub-card" href={`/perspectives/${p.hub.slug}/`}>
+              <span class="hub-card-pill">Start here</span>
+              <h3 class="hub-card-title">{p.hub.data.title}</h3>
+              <p class="hub-card-desc">{p.hub.data.description}</p>
+              {p.hub.data.readingTime && <span class="hub-card-meta">{p.hub.data.readingTime} min read</span>}
+            </a>
+          )}
+          {p.rest.length > 0 && (
+            <ul class="spoke-list">
+              {p.rest.map((s) => (
+                <li>
+                  <a class="spoke" href={`/perspectives/${s.slug}/`}>
+                    <h3>{s.data.title}</h3>
+                    {s.data.readingTime && <span class="spoke-meta">{s.data.readingTime} min read</span>}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
     </div>
   </section>
+
+  <FieldNotesSignup />
 
   <section class="industry-section">
     <div class="container">
@@ -191,28 +141,9 @@ const description =
           <a class="industry-card" href={ind.href}>
             <span class="industry-card-icon"><PillarIcon kind="industry" size={24} /></span>
             <h3>{ind.name}</h3>
-            <span class="industry-card-meta">
-              {ind.count > 0 ? `${ind.count} field notes` : 'Landing page live'}
-            </span>
           </a>
         ))}
       </div>
-      {industryPosts.length > 0 && (
-        <ul class="industry-post-list">
-          {industryPosts.slice(0, 6).map((s) => (
-            <li>
-              <a class="spoke" href={`/perspectives/${s.slug}/`}>
-                <h4>{s.data.title}</h4>
-                <div class="spoke-meta">
-                  <span>Technology</span>
-                  <span class="dot">&middot;</span>
-                  <span>{fmtDate(s.data.pubDate)}</span>
-                </div>
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
     </div>
   </section>
 
@@ -233,314 +164,113 @@ const description =
   </section>
 </BaseLayout>
 
+<script>
+  // Progressive enhancement: without JS every section shows, stacked, and the tabs jump to them.
+  const root = document.querySelector('[data-tabs]');
+  if (root) {
+    const tabs = Array.from(root.querySelectorAll<HTMLAnchorElement>('[data-tab]'));
+    const panels = Array.from(root.querySelectorAll<HTMLElement>('[data-panel]'));
+    root.classList.add('is-tabbed');
+    const select = (id: string, focus = false, push = false) => {
+      if (!tabs.some((t) => t.dataset.tab === id)) id = tabs[0].dataset.tab!;
+      tabs.forEach((t) => {
+        const on = t.dataset.tab === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        if (on && focus) t.focus();
+      });
+      panels.forEach((p) => { p.hidden = p.dataset.panel !== id; });
+      if (push) history.replaceState(null, '', `#${id}`);
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', (e) => { e.preventDefault(); select(t.dataset.tab!, false, true); });
+      t.addEventListener('keydown', (e) => {
+        let j = -1;
+        if (e.key === 'ArrowRight') j = (i + 1) % tabs.length;
+        if (e.key === 'ArrowLeft') j = (i - 1 + tabs.length) % tabs.length;
+        if (e.key === 'Home') j = 0;
+        if (e.key === 'End') j = tabs.length - 1;
+        if (j >= 0) { e.preventDefault(); select(tabs[j].dataset.tab!, true, true); }
+      });
+    });
+    select(location.hash.slice(1));
+    window.addEventListener('hashchange', () => select(location.hash.slice(1)));
+  }
+</script>
+
 <style>
   /* Hero */
-  .perspectives-hero {
-    background: var(--ink);
-    color: var(--white);
-    padding: 96px 32px 72px;
-    position: relative;
-    overflow: hidden;
-  }
-  .perspectives-hero::before {
-    content: '';
-    position: absolute;
-    top: -200px;
-    right: -200px;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(227, 99, 43, 0.18) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .perspectives-hero-inner {
-    max-width: 920px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-  }
-  .perspectives-hero h1 {
-    font-size: clamp(36px, 5vw, 56px);
-    color: var(--white);
-    font-weight: 800;
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-    margin: 16px 0 22px;
-    max-width: 920px;
-  }
-  .perspectives-hero-sub {
-    font-family: Inter, sans-serif;
-    font-size: clamp(18px, 1.8vw, 22px);
-    color: rgba(255, 255, 255, 0.82);
-    line-height: 1.5;
-    margin: 0 0 22px;
-    max-width: 760px;
-  }
-  .perspectives-hero-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    align-items: center;
-    font-family: Inter, sans-serif;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  .perspectives-hero-meta strong {
-    color: var(--white);
-    font-weight: 600;
-  }
+  .perspectives-hero { background: var(--ink); color: var(--white); padding: 96px 32px 72px; position: relative; overflow: hidden; }
+  .perspectives-hero::before { content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(227, 99, 43, 0.18) 0%, transparent 70%); pointer-events: none; }
+  .perspectives-hero-inner { max-width: 920px; margin: 0 auto; position: relative; z-index: 2; }
+  .perspectives-hero h1 { font-size: clamp(36px, 5vw, 56px); color: var(--white); font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; margin: 16px 0 22px; max-width: 920px; }
+  .perspectives-hero-sub { font-family: Inter, sans-serif; font-size: clamp(18px, 1.8vw, 22px); color: rgba(255, 255, 255, 0.82); line-height: 1.5; margin: 0 0 22px; max-width: 760px; }
+  .perspectives-hero-meta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; font-family: Inter, sans-serif; font-size: 14px; color: rgba(255, 255, 255, 0.7); }
+  .perspectives-hero-meta strong { color: var(--white); font-weight: 600; }
   .perspectives-hero-meta .dot { opacity: 0.4; }
 
-  /* 2x2 pillars grid */
-  .pillars-grid-section {
-    padding: 80px 32px 72px;
-    background: var(--white);
-  }
-  .pillars-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-  }
-  .pillar-col {
-    --accent: var(--ink);
-    background: var(--paper);
-    border: 1px solid var(--hairline);
-    border-radius: 16px;
-    padding: 28px 26px 22px;
-    display: flex;
-    flex-direction: column;
-    border-top: 4px solid var(--accent);
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-  }
-  .pillar-col-orange { --accent: var(--orange); }
-  .pillar-col-green  { --accent: var(--green); }
-  .pillar-col-ink    { --accent: var(--ink); }
-  .pillar-col-orange-ink { --accent: var(--orange-ink); }
+  /* Prong colors: running it green, selling it orange. Fills use orange-ink for white-text contrast. */
+  .tab-run, .panel-run { --accent: var(--green); --accent-fill: var(--green); }
+  .tab-sell, .panel-sell { --accent: var(--orange); --accent-fill: var(--orange-ink); }
 
-  .pillar-col-header {
-    margin-bottom: 22px;
-  }
-  .pillar-col-icon-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 10px;
-  }
-  .pillar-col-icon {
-    color: var(--accent);
-    display: inline-flex;
-  }
-  .pillar-col-eyebrow {
-    font-family: Inter, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--accent);
-  }
-  .pillar-col-title {
-    font-family: Inter, sans-serif;
-    font-size: 26px;
-    font-weight: 800;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    color: var(--ink);
-    margin: 0 0 10px;
-  }
-  .pillar-col-tagline {
-    font-size: 15px;
-    line-height: 1.5;
-    color: var(--muted);
-    margin: 0;
-  }
+  /* Tab row: five across, icon then name */
+  .sections-wrap { padding: 56px 32px 72px; background: var(--white); }
+  .tab-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 36px; }
+  .tab { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border: 1px solid var(--hairline); border-bottom: 3px solid var(--hairline); border-radius: 12px; background: var(--paper); color: var(--ink); text-decoration: none; font-family: Inter, sans-serif; font-size: 15px; font-weight: 600; line-height: 1.2; transition: border-color 0.15s ease, background 0.15s ease; }
+  .tab:hover { opacity: 1; border-bottom-color: var(--accent); }
+  .tab:focus-visible { outline: 3px solid var(--orange-ink); outline-offset: 2px; }
+  .tab-icon { color: var(--accent); display: inline-flex; flex-shrink: 0; }
+  .is-tabbed .tab[aria-selected='true'] { background: var(--white); border-color: var(--accent); border-bottom-color: var(--accent); box-shadow: 0 6px 18px rgba(24, 34, 40, 0.06); }
 
-  /* Hub piece card (large, distinguished) */
-  .hub-card {
-    display: flex;
-    flex-direction: column;
-    background: var(--white);
-    border: 1px solid var(--hairline);
-    border-radius: 12px;
-    padding: 22px 22px 20px;
-    text-decoration: none;
-    color: inherit;
-    margin-bottom: 22px;
-    position: relative;
-    transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
-  }
-  .hub-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 24px rgba(24, 34, 40, 0.08);
-    opacity: 1;
-  }
-  .hub-card-pill {
-    align-self: flex-start;
-    background: var(--accent);
-    color: var(--white);
-    font-family: Inter, sans-serif;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    padding: 4px 10px;
-    border-radius: 999px;
-    margin-bottom: 14px;
-  }
-  .pillar-col-ink .hub-card-pill { background: var(--ink); }
-  .hub-card-title {
-    font-family: Inter, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: -0.015em;
-    color: var(--ink);
-    margin: 0 0 10px;
-  }
-  .hub-card-desc {
-    font-size: 14px;
-    line-height: 1.5;
-    color: var(--muted);
-    margin: 0 0 14px;
-  }
-  .hub-card-meta {
-    font-family: Inter, sans-serif;
-    font-size: 12px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    display: flex;
-    gap: 8px;
-    margin-top: auto;
-  }
-  .hub-card-meta .dot { opacity: 0.5; }
+  /* Panels: stacked without JS, one at a time with JS */
+  .panel { border-top: 4px solid var(--accent); background: var(--paper); border-radius: 16px; padding: 32px 32px 24px; margin-bottom: 28px; scroll-margin-top: 96px; }
+  .is-tabbed .panel { margin-bottom: 0; }
+  .panel-head { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 24px; }
+  .panel-icon { color: var(--accent); display: inline-flex; padding-top: 4px; }
+  .panel-title { font-family: Inter, sans-serif; font-size: 30px; font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 8px; }
+  .panel-tagline { font-size: 16px; line-height: 1.5; color: var(--muted); margin: 0; max-width: 720px; }
 
-  /* Spoke list (compact) */
-  .spoke-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid var(--hairline);
-    flex-grow: 1;
-  }
-  .spoke-list li {
-    border-bottom: 1px solid var(--hairline);
-  }
-  .spoke {
-    display: block;
-    padding: 14px 0;
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.15s ease;
-  }
+  .hub-card { display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--hairline); border-radius: 12px; padding: 24px; text-decoration: none; color: inherit; margin-bottom: 24px; transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease; }
+  .hub-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 10px 24px rgba(24, 34, 40, 0.08); opacity: 1; }
+  .hub-card-pill { align-self: flex-start; background: var(--accent-fill); color: var(--white); font-family: Inter, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; margin-bottom: 14px; }
+  .hub-card-title { font-family: Inter, sans-serif; font-size: 21px; font-weight: 700; line-height: 1.25; letter-spacing: -0.015em; color: var(--ink); margin: 0 0 10px; }
+  .hub-card-desc { font-size: 15px; line-height: 1.5; color: var(--muted); margin: 0 0 12px; max-width: 760px; }
+  .hub-card-meta, .spoke-meta { font-family: Inter, sans-serif; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+  .spoke-list { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 40px; }
+  .spoke-list li { border-top: 1px solid var(--hairline); break-inside: avoid; }
+  .spoke { display: block; padding: 14px 0; color: inherit; text-decoration: none; }
   .spoke:hover { opacity: 1; }
-  .spoke:hover h4 { color: var(--accent); }
-  .spoke h4 {
-    font-family: Inter, sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.35;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-    margin: 0 0 4px;
-    transition: color 0.15s ease;
-  }
-  .spoke-meta {
-    font-family: Inter, sans-serif;
-    font-size: 11px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    display: flex;
-    gap: 6px;
-  }
-  .spoke-meta .dot { opacity: 0.5; }
+  .spoke h3 { font-family: Inter, sans-serif; font-size: 16px; font-weight: 600; line-height: 1.35; letter-spacing: -0.01em; color: var(--ink); margin: 0 0 4px; transition: color 0.15s ease; }
+  .spoke:hover h3 { color: var(--accent); text-decoration: underline; }
 
   /* Industry band */
-  .industry-section {
-    padding: 24px 32px 96px;
-    background: var(--white);
-  }
+  .industry-section { padding: 72px 32px 96px; background: var(--white); }
   .industry-header { max-width: 760px; margin-bottom: 32px; }
-  .industry-h2 {
-    font-size: clamp(28px, 3.4vw, 40px);
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    color: var(--ink);
-    margin: 0 0 14px;
-  }
-  .industry-sub {
-    font-size: 17px;
-    line-height: 1.55;
-    color: var(--muted);
-    margin: 0;
-  }
-  .industry-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
-    margin-bottom: 28px;
-  }
-  .industry-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: var(--paper);
-    border: 1px solid var(--hairline);
-    border-radius: 12px;
-    padding: 22px 20px;
-    text-decoration: none;
-    color: inherit;
-    transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
-  }
-  .industry-card:hover {
-    border-color: var(--green);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 24px rgba(24, 34, 40, 0.08);
-    opacity: 1;
-  }
+  .industry-h2 { font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; letter-spacing: -0.03em; color: var(--ink); margin: 0 0 14px; }
+  .industry-sub { font-size: 17px; line-height: 1.55; color: var(--muted); margin: 0; }
+  .industry-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  .industry-card { display: flex; flex-direction: column; gap: 10px; background: var(--paper); border: 1px solid var(--hairline); border-radius: 12px; padding: 22px 20px; text-decoration: none; color: inherit; transition: border-color 0.18s ease, transform 0.18s ease; }
+  .industry-card:hover { border-color: var(--green); transform: translateY(-2px); opacity: 1; }
   .industry-card-icon { color: var(--green); display: inline-flex; }
-  .industry-card h3 {
-    font-family: Inter, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    letter-spacing: -0.015em;
-    color: var(--ink);
-    margin: 0;
-    line-height: 1.2;
-  }
-  .industry-card-meta {
-    font-family: Inter, sans-serif;
-    font-size: 12px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-top: auto;
-  }
-  .industry-post-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    columns: 2;
-    column-gap: 48px;
-    border-top: 1px solid var(--hairline);
-  }
-  .industry-post-list li {
-    border-bottom: 1px solid var(--hairline);
-    break-inside: avoid;
-  }
-  .industry-post-list .spoke:hover h4 { color: var(--green); }
+  .industry-card h3 { font-family: Inter, sans-serif; font-size: 17px; font-weight: 700; color: var(--ink); margin: 0; line-height: 1.2; }
 
   @media (max-width: 1100px) {
-    .pillars-grid { grid-template-columns: 1fr; gap: 22px; }
-    .pillars-grid-section { padding: 56px 24px 48px; }
+    .tab-row { grid-template-columns: repeat(3, 1fr); }
     .industry-grid { grid-template-columns: repeat(2, 1fr); }
-    .industry-post-list { columns: 1; }
   }
   @media (max-width: 720px) {
-    .perspectives-hero { padding: 64px 24px 48px; }
-    .pillar-col { padding: 24px 22px 18px; }
-    .industry-section { padding: 16px 24px 64px; }
+    .perspectives-hero { padding: 64px 16px 48px; }
+    .sections-wrap { padding: 32px 16px 48px; }
+    .tab-row { grid-template-columns: 1fr 1fr; }
+    .tab { font-size: 14px; padding: 12px; }
+    .panel { padding: 24px 16px 16px; }
+    .spoke-list { columns: 1; }
+    .industry-section { padding: 48px 16px 64px; }
     .industry-grid { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hub-card, .industry-card, .tab { transition: none; }
+    .hub-card:hover, .industry-card:hover { transform: none; }
   }
 </style>

@@ -1,10 +1,20 @@
 ---
 interface Props {
-  kind: 'stalled' | 'method' | 'field-guide' | 'ledger' | 'scale' | 'shield' | 'clock' | 'industry';
+  kind: 'profit' | 'stalled' | 'method' | 'field-guide' | 'ledger' | 'scale' | 'shield' | 'clock' | 'industry';
   size?: number;
 }
 const { kind, size = 24 } = Astro.props;
 ---
+
+{kind === 'profit' && (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M3 14 L21 14" />
+    <rect x="4" y="5" width="3" height="9" />
+    <rect x="9" y="8" width="3" height="6" />
+    <rect x="14" y="11" width="3" height="3" />
+    <rect x="18.5" y="14" width="2.5" height="5" />
+  </svg>
+)}
 
 {kind === 'ledger' && (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

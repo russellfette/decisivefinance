@@ -8,6 +8,7 @@ author: "Russell Fette"
 postType: "field-note"
 topicCluster: "worth-more"
 pillar: 6
+pillarHub: true
 ctaVariant: "worth-more"
 dominantClaim: "more-valuable-company-and-numbers-to-prove-it"
 ogImage: "/og/which-customer-makes-money.png"
