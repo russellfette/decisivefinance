@@ -1,5 +1,5 @@
 ---
-title: "A sale price is a multiple times earnings. Work both numbers"
+title: "Two numbers set your price. Most owners work neither."
 slug: two-numbers-behind-the-price
 description: "Owners chase revenue and hope for a good multiple. A sale price is two numbers, earnings and the multiple, with three levers each. Here is how to work both."
 pubDate: 2026-06-09

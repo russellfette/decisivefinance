@@ -1,5 +1,5 @@
 ---
-title: "Deals die in diligence. Believable numbers are the fix."
+title: "Deals don't die on price. They die on one number nobody can explain."
 slug: surviving-diligence
 description: "Most broken deals don't break on price. They break when a buyer stops trusting the numbers. Here are the five findings that re-trade a deal, and how to clear them first."
 pubDate: 2026-05-19

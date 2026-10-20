@@ -10,7 +10,7 @@ export async function GET(context) {
   return rss({
     title: 'Decisive Finance: Perspectives',
     description:
-      'Field notes on the numbers behind what your company is worth: sellable numbers, worth more, surviving diligence, and the exit clock.',
+      'The numbers you run on are the numbers you sell on. Field notes on where the profit went, sellable numbers, worth more, surviving diligence, and the exit clock.',
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,

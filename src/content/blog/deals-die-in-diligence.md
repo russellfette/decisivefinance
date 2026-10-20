@@ -1,5 +1,5 @@
 ---
-title: "Deals die in diligence, and it is almost never the business"
+title: "The re-trade: how a deal dies without anyone walking away"
 slug: deals-die-in-diligence
 description: "Most deals that collapse do not fail on the business. They fail on believability, when a buyer stops trusting the numbers. Here is what actually kills them."
 pubDate: 2026-06-09

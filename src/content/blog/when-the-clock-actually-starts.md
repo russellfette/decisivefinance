@@ -1,5 +1,5 @@
 ---
-title: "The trailing-twelve clock does not start until the numbers are true"
+title: "Fix the books in March, sell next March"
 slug: when-the-clock-actually-starts
 description: "A buyer wants twelve believable months behind you. So the clock on your sale does not start when you decide to sell. It starts when your numbers are true."
 pubDate: 2026-06-02
