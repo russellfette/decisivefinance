@@ -19,7 +19,6 @@ readingTime: 7
 
 - Value doesn't get trapped in a company by accident. It gets trapped by six specific decision patterns, and each one leaves a mark a buyer reads as risk.
 - The Six Trap Diagnostic™ scores each pattern against your actual financials. The point is not self-knowledge; it's finding the dollars a buyer would otherwise find first and price against you.
-- One $25M manufacturer's sunk-cost and mispricing traps alone hid a pricing swing worth roughly $1.8M to $2.1M a year. Named early, it became value. Left alone, it was a discount.
 
 Every business getting ready to sell has value trapped inside decisions it made on numbers that were never built to decide from. The Six Trap Diagnostic™ names where, and it names it before a buyer does. This piece walks the six traps as a buyer sees them, because a buyer is scoring the same six whether he says so or not.
 
@@ -44,7 +43,7 @@ Read them together and a pattern emerges: every trap is a place where a decision
 
 ## How does naming a trap turn into money?
 
-Because the trap is what's holding the value in place. Take the $25M manufacturer. His status-quo and certainty-illusion traps were both live on pricing: a core input had been priced the same way for years against a cost that had quietly drifted, and everyone was confident in a margin that wasn't real. Naming it, with the number attached, surfaced a pricing swing worth roughly $1.8M to $2.1M a year. That is not a new product or a growth push. It's value that was already his, trapped inside a decision the numbers no longer supported.
+Because the trap is what's holding the value in place. Status quo and certainty illusion often sit together on pricing: a core input priced the same way for years against a cost that has quietly drifted, and everyone confident in a margin that isn't real. Naming it, with the number attached, turns the trap into value. That is not a new product or a growth push. It's value that was already the owner's, trapped inside a decision the numbers no longer support.
 
 Do that across six traps and the picture of what the company is worth changes, on the same revenue, because you've freed value that was sitting inside old calls. A buyer would eventually find some of it and keep the upside for himself. Finding it first is the whole point.
 

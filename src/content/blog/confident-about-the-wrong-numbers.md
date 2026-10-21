@@ -18,8 +18,7 @@ readingTime: 5
 ## At a glance
 
 - Owners are usually most confident about revenue, the number a buyer discounts, and vaguest about margin by line, the number a buyer rewards. The confidence is pointed at the wrong figures.
-- At one $25M consumer products manufacturer, the owner knew his top line cold but could not say which products or customers actually made money, and a revenue-recognition issue meant he could not fully trust even the sales number he was proudest of.
-- Redirecting that confidence pays: for the same company, believable numbers roughly doubled the modeled exit value.
+- Redirecting that confidence pays. One example: a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate; the work roughly doubled the modeled exit value.
 
 Owners are confident about the numbers a buyer discounts and vague about the ones a buyer rewards, and that mismatch quietly caps the sale price. This piece is about which numbers earn a buyer's trust, which ones he marks down, and why most owners have it backwards.
 
@@ -33,7 +32,7 @@ Most owners have the opposite emphasis. They can recite revenue and growth from 
 
 Because revenue is what the business celebrates and what the books were built to total. Margin by line requires loading full cost and rebuilding profit where decisions get made, work most companies under $50M have never done. So the number that is easy to produce becomes the number the owner trusts, and the number that decides the price stays unexamined.
 
-At the $25M manufacturer, the owner knew his top line cold. He could not say which products or customers made money, because nobody had ever built that view. Worse, a revenue-recognition issue left him unable to fully trust even the sales number he was proudest of, something that used to not be a problem. Confidence and reliability had drifted apart, and he did not know it until we looked.
+Most owners know their top line cold. Far fewer can say which products or customers make money, because nobody ever built that view. And the top line can drift too: when revenue is recognized inconsistently, even the sales number an owner is proudest of stops being fully trustworthy. Confidence and reliability drift apart, and nobody notices until someone looks.
 
 ## How do you point the confidence at the right numbers?
 
@@ -49,7 +48,7 @@ The goal is simple. Be most confident about the numbers a buyer rewards, not the
 
 ## Why this is worth doing now
 
-Because the numbers a buyer rewards take time to build and prove, and confidence built on a verified figure survives diligence while confidence built on a total does not. At the $25M manufacturer, moving trust onto believable earnings is what roughly doubled the modeled exit value, against a banker's estimate on numbers he did not trust. We do not audit the past. We make the company worth believing.
+Because the numbers a buyer rewards take time to build and prove, and confidence built on a verified figure survives diligence while confidence built on a total does not. One example: a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate; the work roughly doubled the modeled exit value. We do not audit the past. We make the company worth believing.
 
 ## Where this leads
 

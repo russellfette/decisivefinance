@@ -20,7 +20,6 @@ readingTime: 7
 
 - A buyer pays for a trailing twelve months he can believe. That clock does not start when you decide to sell. It starts when your numbers are true. Every month you wait moves the sale date a month.
 - Most owners think they're waiting for the right market. They're not. They're waiting for numbers they'd be willing to show. That is a fixable problem, and a different one than the one they think they have.
-- One $25M owner put his sale off for over a year for exactly this reason. The market was fine. His numbers weren't, and he knew it.
 
 There is a clock running on your exit whether you've started it or not, and almost every owner reads it wrong. This piece is about when the clock actually starts, what starts it early, and why the triggers that push owners to sell are the same moments that expose whether the numbers were ever ready.
 
@@ -32,7 +31,7 @@ Fix the books in March and your first believable trailing twelve is next March. 
 
 ## Why do owners think they're waiting for the market?
 
-Because "the market isn't right" is a more comfortable story than "I couldn't show anyone my numbers." We worked with a $25M owner who lived this. He had put his sale off for more than a year, and he described it as timing. When we got into it, the truth was simpler and more human: he didn't feel he had a good story to tell or numbers he'd be willing to hand a stranger. Most owners aren't waiting for the right market. They're waiting for numbers they'd be willing to show.
+Because "the market isn't right" is a more comfortable story than "I couldn't show anyone my numbers." Owners who put a sale off usually describe it as timing. Underneath, the truth is often simpler and more human: no good story to tell, or numbers they wouldn't hand a stranger. Most owners aren't waiting for the right market. They're waiting for numbers they'd be willing to show.
 
 That reframe matters because it turns a vague, external excuse into a concrete, solvable problem. You cannot control the market. You can absolutely control whether your numbers are believable, and doing so is the thing that actually frees the timing you've been telling yourself is out of your hands.
 
@@ -49,7 +48,7 @@ Every one of these is a trigger, not a plan. The owners who come through them we
 
 ## What is it even worth right now?
 
-This is the question underneath all of it, and it's the honest place to start. Not a polished valuation you commission to feel good, but a clear read of what a buyer would actually pay today, given the numbers as they really are, and where that number could go once the numbers can be believed. For the $25M owner, that honest read was the difference between the bankers' estimate on numbers he didn't trust and a modeled exit value the work roughly doubled once he could stand behind them.
+This is the question underneath all of it, and it's the honest place to start. Not a polished valuation you commission to feel good, but a clear read of what a buyer would actually pay today, given the numbers as they really are, and where that number could go once the numbers can be believed. One example: a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate; the work roughly doubled the modeled exit value.
 
 You don't need a live deal to ask the question. In fact, the best time to ask it is when there's no deal at all, because then the answer is information you can act on instead of an advantage someone else holds.
 

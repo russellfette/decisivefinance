@@ -19,7 +19,6 @@ readingTime: 5
 
 - A buyer wants a trailing twelve months he can believe. So the clock on your sale does not start when you decide to sell. It starts when your numbers become true.
 - Fix the books in March and your first believable trailing twelve is next March. Every month you wait moves the sale date a month.
-- At one $25M consumer products manufacturer, the owner deferred for over a year, not for the market, but for numbers he would be willing to show. That is the clock, and it is fixable.
 
 The trailing-twelve clock doesn't start until the numbers are true, and almost nobody tells owners this until it is too late to help. Owners think the timeline to a sale starts when they decide to sell. It does not. It starts when they have twelve believable months in the rear-view. This piece is about the clock most owners are running without knowing it.
 
@@ -37,7 +36,7 @@ This is why "I'll clean it up when I'm ready to sell" is the most expensive sent
 
 ## What does the clock look like in practice?
 
-At the $25M consumer products manufacturer, the owner had wanted to sell for over a year and kept deferring. Not because the market was wrong. Because he did not feel he had a good story to tell or numbers he would be willing to show. Most owners aren't waiting for the right market. They're waiting for numbers they'd be willing to show. That is a fixable problem, and it is a different problem than the one they think they have.
+Owners who want to sell often keep deferring, and not because the market is wrong. They don't feel they have a good story to tell or numbers they'd be willing to show. Most owners aren't waiting for the right market. They're waiting for numbers they'd be willing to show. That is a fixable problem, and it is a different problem than the one they think they have.
 
 Once the numbers were true, the clock could finally start, and a credible trailing twelve became a matter of months, not a vague someday.
 

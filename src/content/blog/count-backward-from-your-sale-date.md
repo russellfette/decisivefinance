@@ -19,7 +19,6 @@ readingTime: 5
 
 - Work the timeline backward. Pick your sale year, subtract the twelve believable months a buyer needs, then subtract the time it takes to make the numbers true.
 - For most owners the arithmetic lands on the same answer: the honest start date is now, not the year they planned to begin.
-- At one $25M consumer products manufacturer, exit intent predated the work by months and the numbers still were not ready. Counting backward turns a vague someday into a real schedule.
 
 Count backward from your sale date, then start now, because the timeline almost never runs the way owners assume. They plan to begin preparing a year or two before selling. The correct method is to work backward from the sale, and it usually reveals the start date is already behind you. This piece walks the arithmetic.
 
@@ -42,7 +41,7 @@ Add those up and the start date lands, for most owners, on now. Not next year. N
 
 ## What happens when owners skip the backward count?
 
-They discover the gap at the worst time. At the $25M consumer products manufacturer, the intent to exit predated the engagement by months, and the numbers still could not have survived a buyer's read. The owner had a target in mind and no timeline behind it, so the preparation had not started, and the clock he needed had not begun. Counting backward would have shown him, early, that the work had to start immediately to hit the year he wanted.
+They discover the gap at the worst time. An owner has a target year in mind and no timeline behind it, so the preparation hasn't started, and the clock he needs hasn't begun. Counting backward shows him, early, that the work has to start now to hit the year he wants.
 
 ## What to do with the answer
 

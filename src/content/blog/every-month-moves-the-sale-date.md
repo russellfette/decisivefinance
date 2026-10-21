@@ -19,7 +19,6 @@ readingTime: 5
 
 - Waiting to make the numbers true does not pause the clock. Every month you wait moves the sale date a month, because the believable trailing twelve a buyer needs starts only once the numbers are true.
 - Delay costs twice: it pushes the earliest credible sale out, and it lets fixable problems keep dragging on the value in the meantime.
-- At one $25M consumer products manufacturer, over a year of deferral was pure delay against a fixable problem. Believable numbers later helped roughly double the modeled exit value.
 
 Every month you wait moves the sale date a month, and that is the cost of delay almost no owner prices correctly. Waiting feels free, like a decision postponed. It is not. The clock on a believable sale is running whether you engage it or not, and each month of delay is a month added to the earliest date you can credibly sell. This piece is about the true cost of waiting.
 
@@ -40,7 +39,7 @@ The owner who waits does not preserve his options. He spends them, one month at 
 
 ## Why does the delay feel free when it is not?
 
-Because nothing visibly breaks. The business runs, the books close eventually, the top line may even grow. The cost is invisible because it is an opportunity cost, the sale you could have had sooner and the value you could have built. At the $25M consumer products manufacturer, the owner deferred for over a year, not for the market, but for numbers he would be willing to show. That year was pure delay against a fixable problem, and it bought nothing.
+Because nothing visibly breaks. The business runs, the books close eventually, the top line may even grow. The cost is invisible because it is an opportunity cost, the sale you could have had sooner and the value you could have built. An owner who waits a year for numbers he'd be willing to show, when the problem was fixable, has spent that year on pure delay, and it bought him nothing.
 
 Once the numbers were made true, believable earnings helped roughly double the modeled exit value. Every month before that was a month that value sat unbuilt.
 

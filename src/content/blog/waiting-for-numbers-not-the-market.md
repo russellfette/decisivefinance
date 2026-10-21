@@ -27,7 +27,7 @@ There's a story a lot of owners tell themselves about why they haven't sold yet,
 
 Because it's the explanation that asks nothing of them. If the reason you haven't sold is that the market isn't right, then there's nothing to do but wait, and waiting feels responsible. It's external, it's out of your hands, and it doesn't require you to look at anything uncomfortable.
 
-We worked with a $25M owner who'd put his sale off for more than a year and described it exactly that way, as timing. When we got into it, the truth was simpler and more human: he didn't feel he had a good story to tell or numbers he'd be willing to show. The market was never the thing holding him back. His own distrust of his books was.
+Owners who put a sale off usually describe it exactly that way, as timing. Underneath, the truth is often simpler and more human: no good story to tell, or numbers they'd be unwilling to show. The market is rarely the thing holding them back. Their own distrust of their books is.
 
 ## Why is that actually good news?
 

@@ -18,7 +18,6 @@ readingTime: 5
 ## At a glance
 
 - Every sale can be real and the top line still untrustworthy. When revenue is recognized inconsistently month to month, a buyer discounts it even though the money came in.
-- At one $25M consumer products manufacturer, a revenue-recognition issue left the owner unable to trust his own sales number, something that used to not be a problem, and roughly $200,000 of unapplied cash piled up in a single month from a discount-integration issue.
 - Fixing how revenue is recognized is part of what let the work roughly double the modeled exit value.
 
 The revenue was real, and the owner still could not trust his own sales number. That is not a contradiction. It is what happens when money is real but the way it lands on the books is inconsistent, and it is one of the fastest ways to lose price in diligence. This piece is about how a true top line becomes an untrustworthy one, and what it takes to fix.
@@ -27,11 +26,11 @@ The revenue was real, and the owner still could not trust his own sales number. 
 
 Because a buyer does not just ask whether the sale happened. He asks whether it was recognized the same way every month. Book revenue one way in the first quarter and another way in the third, and the trend line stops meaning anything, even when every individual sale was earned. The pattern is what he is buying, and an inconsistent pattern reads as risk.
 
-At the $25M manufacturer, a revenue-recognition issue left the owner without confidence in his own sales numbers, something he said used to not be a problem. Nothing was invented. The money was real. But the way it hit the books had drifted, and once an owner cannot trust his top line, he cannot make a clean decision from anything built on top of it.
+Here is how it happens. Revenue recognition drifts, and the owner loses confidence in his own sales numbers. Nothing is invented. The money is real. But the way it hits the books has drifted, and once an owner can't trust his top line, he can't make a clean decision from anything built on top of it.
 
 ## Where does the drift usually come from?
 
-From plumbing, not fraud. Systems that do not talk to each other, discounts and credits applied out of sequence, timing that shifts as the business grows. At the same company, unapplied cash grew by about $200,000 in a single month from a discount-integration issue. That is cash the business had, sitting unassigned, invisible on the reports until someone went looking. Real money, real customers, and still a number nobody could stand behind.
+From plumbing, not fraud. Systems that do not talk to each other, discounts and credits applied out of sequence, timing that shifts as the business grows. The result can be cash the business has, sitting unassigned, invisible on the reports until someone goes looking. Real money, real customers, and still a number nobody could stand behind.
 
 The reason it persists is familiar. The books were built to record what came in, not to prove the pattern was consistent. Nobody in the chain was paid to reconcile the story, so the drift compounded quietly.
 
@@ -49,7 +48,7 @@ None of that changes how much you actually sold. It changes whether anyone, incl
 
 ## Why this protects the multiple
 
-Because a buyer pays for a trend he can believe, and revenue he cannot verify comes off the price even when it is entirely real. Making recognition consistent is quiet, unglamorous work, and it is part of what roughly doubled the modeled exit value at that $25M manufacturer. We do not audit the past. We make the company worth believing.
+Because a buyer pays for a trend he can believe, and revenue he cannot verify comes off the price even when it is entirely real. Making recognition consistent is quiet, unglamorous work, and it is the kind of work a buyer pays for. We do not audit the past. We make the company worth believing.
 
 ## Where this leads
 

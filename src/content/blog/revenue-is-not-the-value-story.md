@@ -18,8 +18,7 @@ readingTime: 5
 ## At a glance
 
 - Revenue is the story owners tell and the number a buyer discounts. Believable earnings is the story a buyer pays for, and the two often point in different directions.
-- At one $25M consumer products manufacturer, the owner knew his top line cold and could not fully trust it, because a revenue-recognition issue meant even real sales did not land consistently.
-- Changing the story from revenue to believable earnings is what grows value: for the same company, it helped roughly double the modeled exit value.
+- Changing the story from revenue to believable earnings is what grows value. One example: a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate; the work roughly doubled the modeled exit value.
 
 Revenue is not the value story. Earnings a buyer believes is the value story, and confusing the two is one of the most expensive mistakes an owner can make before a sale. This piece is about why the top line feels like the headline and why a buyer reads a different number entirely.
 
@@ -33,7 +32,7 @@ But revenue is a claim, not a value. It tells a buyer how much money moved, not 
 
 Earnings he can believe. He wants to know what the company truly makes after real cost, whether the margin holds up line by line, and whether the trend survives him pulling the thread. That is the story that moves the multiple, and it is often quieter than the revenue story and pointed somewhere different.
 
-At the $25M manufacturer, the owner could recite his top line from memory and still could not fully trust it, because a revenue-recognition issue meant even real sales did not land consistently. The revenue story was strong. The value story, believable earnings, had not been built yet. Until it was, the top line could not do the work the owner expected of it.
+An owner can recite his top line from memory and still not fully trust it, when revenue is recognized inconsistently and even real sales don't land the same way each month. The revenue story is strong. The value story, believable earnings, hasn't been built yet. Until it is, the top line can't do the work the owner expects of it.
 
 ## How do you change the story?
 
@@ -49,7 +48,7 @@ The shift is from "look how much we sold" to "look how much we actually make, an
 
 ## Why this grows what the company is worth
 
-Because a buyer multiplies believable earnings, not revenue, and a company that leads with provable earnings gets both a bigger multiplied number and more trust in it. At the $25M manufacturer, moving the story onto believable earnings is part of what roughly doubled the modeled exit value. A more valuable company and the numbers to prove it starts with telling the right story.
+Because a buyer multiplies believable earnings, not revenue, and a company that leads with provable earnings gets both a bigger multiplied number and more trust in it. One example: a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate; the work roughly doubled the modeled exit value. A more valuable company and the numbers to prove it starts with telling the right story.
 
 ## Where this leads
 

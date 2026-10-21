@@ -18,7 +18,6 @@ readingTime: 6
 ## At a glance
 
 - Pricing is the single fastest lever on value, because a dollar of price drops almost straight to the bottom line, and at a multiple, straight into what the company is worth.
-- One $25M manufacturer had a core input priced against a cost that had quietly drifted. Correcting it alone was worth a swing of roughly $1.8M to $2.1M a year in margin.
 - Owners underuse pricing because they can't see it. A line priced below its real cost hides behind a healthy company-wide average until someone breaks the average apart.
 
 If you want to move what a company is worth in the least time, you start with price, and almost nobody does, because the opportunity is invisible in the reports owners actually read. This piece is about where pricing value hides, why it drifts, and what one corrected line can be worth.
@@ -38,11 +37,11 @@ Quietly, over time, while everyone's attention is elsewhere. The usual path:
 3. **The average hides the bleed.** As long as other lines are strong, the company-wide margin still looks fine, so no alarm sounds.
 4. **Volume makes it worse.** If the mispriced line is one you're proud of and pushing, growth scales the loss instead of the profit.
 
-The $25M manufacturer lived exactly this. A core input had been priced the same way for years against a cost that had drifted, and everyone was confident in a margin that was no longer real. The line looked like a workhorse. It was a slow leak, and the confidence in it was the certainty illusion doing its work.
+Picture a core input priced the same way for years against a cost that has drifted, with everyone confident in a margin that is no longer real. The line looks like a workhorse. It is a slow leak, and the confidence in it is the certainty illusion doing its work.
 
 ## What was it worth to fix?
 
-Correcting that single pricing problem was worth a swing of roughly $1.8M to $2.1M a year in margin. On a business valued at a multiple of earnings, that one correction moves the sale price by a multiple of that number, every year it holds. No new product, no new customer, no growth push. Just a price brought back in line with a cost that had moved.
+Correcting a single pricing problem like that drops straight to margin. On a business valued at a multiple of earnings, that one correction moves the sale price by a multiple of the margin it recovers, every year it holds. No new product, no new customer, no growth push. Just a price brought back in line with a cost that had moved.
 
 That is the quiet math of pricing. The work is unglamorous, the change is a few numbers, and the value it releases is often larger than anything you could earn by growing, because you're not adding revenue, you're keeping margin that was already yours and had been leaking out unpriced.
 

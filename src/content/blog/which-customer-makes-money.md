@@ -19,7 +19,7 @@ readingTime: 6
 ## At a glance
 
 - A blended, company-wide margin is an average, and averages hide the losers. Until you can see profit by product, job, and customer, you're guessing about where your money actually comes from.
-- One $15M manufacturer we worked with found its largest customer was its least profitable. Seeing it clearly, then acting, moved margins from 15% to 22% inside 90 days.
+- One $15M manufacturer we worked with found its largest customer was its least profitable. Seeing it clearly, then acting, moved margins from 15% to 22%.
 - You can't grow what the company is worth while you're feeding the wrong lines. Knowing which ones make money is the first move, and a buyer pays for the company that already knows.
 
 The most common reason an owner can't grow the value of a business is that the business can't tell him where its profit comes from. This piece is about why the number you trust most, the overall margin, is often the one hiding the problem, and what changes when you can finally see the truth underneath it.
@@ -45,7 +45,7 @@ None of these is visible in the blended number. All of them change what you'd do
 
 ## What does acting on it look like?
 
-Consider the $15M manufacturer. Its largest customer, the one everyone was proud of, turned out to be its least profitable once full cost was loaded on. That's a hard thing to see and a harder thing to act on, because the instinct is to protect the biggest name. But seeing it clearly changed the decision: re-price the work, shift the mix toward the lines that actually paid, and stop starving the quiet winners. Margins moved from 15% to 22% inside 90 days, on roughly the same revenue.
+Consider the $15M manufacturer. Its largest customer, the one everyone was proud of, turned out to be its least profitable once full cost was loaded on. That's a hard thing to see and a harder thing to act on, because the instinct is to protect the biggest name. But seeing it clearly changed the decision: re-price the work, shift the mix toward the lines that actually paid, and stop starving the quiet winners. Margins moved from 15% to 22%, on roughly the same revenue.
 
 Notice what did the work. Not a growth push, not a new market. Just the ability to see profit where decisions are made, and the willingness to act on what the truth showed. That is value creation in its plainest form, and it's available to almost every owner who has been flying on the average.
 

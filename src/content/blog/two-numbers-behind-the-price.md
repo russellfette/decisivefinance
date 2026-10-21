@@ -37,7 +37,7 @@ Three levers, all offense, all about growing what the multiple multiplies:
 2. **Mix.** Which products, jobs, and customers actually make money. Shift effort toward the lines that pay and stop feeding the ones that do not.
 3. **Margin truth.** Costs allocated to reality, so you can see profit where decisions get made instead of hiding it in a company-wide average.
 
-At a $15M manufacturer, the largest, proudest customer turned out to be the least profitable once full cost was loaded on. Re-pricing and shifting mix moved margins from 15% to 22% inside 90 days, on roughly the same revenue. That is the earnings number moving.
+At a $15M manufacturer, the largest, proudest customer turned out to be the least profitable once full cost was loaded on. Re-pricing and shifting mix moved margins from 15% to 22%, on roughly the same revenue. That is the earnings number moving.
 
 ## How do you earn the multiple number?
 

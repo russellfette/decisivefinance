@@ -19,8 +19,7 @@ readingTime: 8
 ## At a glance
 
 - A sale price is a multiple times earnings. Most owners spend the last year before a sale polishing the pitch and touch neither number. The value was made in the two years before that, or it was left on the table.
-- The $25M consumer products manufacturer we worked with was carrying a beef line priced below its real cost and a set of discounts that were never really discounts. Fixing the pricing alone was worth a swing of roughly $1.8M to $2.1M a year in margin.
-- Same company, better decisions: the work roughly doubled the modeled exit value. That is the offense. A more valuable company, and the numbers to prove it.
+- One example: a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate; the work roughly doubled the modeled exit value. That is the offense. A more valuable company, and the numbers to prove it.
 
 Getting the number you want at exit is not a negotiating skill you turn on at the end. It is an operating result you build over the two to three years before you go to market. This piece is about the five places that value actually lives, and why each one moves both halves of the sale-price equation at once.
 
@@ -34,9 +33,9 @@ That is the reframe worth sitting with. A sale price is a multiple times earning
 
 Across the operating companies we work with, the money that moves a valuation sits in five specific places. None of them is exotic. All of them get ignored while growth is covering for them.
 
-1. **Pricing.** The single fastest lever, and the one owners underuse most. A line priced below its true cost bleeds margin on every unit, and it usually hides behind a healthy-looking company-wide average. The $25M manufacturer had exactly this: a core input priced against a cost that had drifted, worth a swing of roughly $1.8M to $2.1M a year once corrected.
+1. **Pricing.** The single fastest lever, and the one owners underuse most. A line priced below its true cost bleeds margin on every unit, and it usually hides behind a healthy-looking company-wide average. Correcting one drops straight to margin, every year it holds.
 2. **Mix.** Which products and which customers you grow changes the shape of the whole P&L. Chasing revenue through your lowest-margin lines can raise the top line and lower what the company is worth. A buyer pays for the mix, not the total.
-3. **Margin.** Not the average, the truth underneath it. When you can see margin by job, product, and customer, you find the losers that the blended number was hiding. One $15M manufacturer we worked with learned its largest customer was its least profitable. Moving that relationship took margins from 15% to 22% inside 90 days.
+3. **Margin.** Not the average, the truth underneath it. When you can see margin by job, product, and customer, you find the losers that the blended number was hiding. One $15M manufacturer we worked with learned its largest customer was its least profitable. Acting on it moved margins from 15% to 22%.
 4. **Customer concentration.** The number that quietly halves a multiple. A buyer looks at a business where one customer is 40% of revenue and sees risk he has to price in. Reducing concentration before a sale is worth more than the revenue it costs to do it.
 5. **Owner independence.** If every real decision runs through you, a buyer is not buying a company, he is buying a job with your name on it, and he pays job money. Building a business that decides well without you in the room is one of the largest and slowest value levers there is.
 
@@ -50,9 +49,9 @@ The owners who capture the value do the opposite of waiting. They use the good y
 
 ## What "worth more" looked like in dollars
 
-For the $25M manufacturer, the offense was concrete. We found the mispriced input and corrected it. We separated the real discounts from the phantom ones. We rebuilt margin reporting so he could finally see which products and customers actually carried the company, and which ones were quietly subsidized. We rebuilt the close so the numbers behind every one of those decisions came in current and could be trusted.
+In practice, the offense is concrete. Find the mispriced input and correct it. Separate the real discounts from the phantom ones. Rebuild margin reporting so the owner can see which products and customers actually carry the company, and which are quietly subsidized. Rebuild the close so the numbers behind every one of those decisions come in current and can be trusted.
 
-None of it was a growth hack. It was the ordinary work of running the company from numbers built to decide from instead of numbers built to record. And with those numbers in hand, the picture changed from the bankers' estimate, on figures the owner didn't trust, to a modeled exit value the work roughly doubled. Same company. Better decisions, believably documented.
+None of it was a growth hack. It was the ordinary work of running the company from numbers built to decide from instead of numbers built to record. One example: a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate; the work roughly doubled the modeled exit value.
 
 ## Where to start
 

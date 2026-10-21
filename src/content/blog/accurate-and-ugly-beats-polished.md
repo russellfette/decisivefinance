@@ -44,7 +44,7 @@ We don't audit the past and we don't dress it up. We make the numbers true, then
 
 ## What this looks like in practice
 
-The $25M consumer products manufacturer we worked with had every incentive to present his best-looking month, the one near 90% gross margin. It was also fake, the product of a single wrong cost entry. Presenting it would have been polish on a mirage, and a buyer's analyst would have found the entry and discounted everything around it. The work that actually raised his number was the opposite: correcting the entry, telling the true and uglier margin, and documenting it so it could be trusted. Truth, made legible, was worth more than the flattering lie.
+Picture an owner with every incentive to present his best-looking month, a record gross margin that turns out to be the product of a single wrong cost entry. Presenting it is polish on a mirage, and a buyer's analyst will find the entry and discount everything around it. The work that actually raises the number is the opposite: correct the entry, tell the true and uglier margin, and document it so it can be trusted. Truth, made legible, is worth more than the flattering lie.
 
 ## Where this leads
 

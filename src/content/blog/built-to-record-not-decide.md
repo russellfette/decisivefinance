@@ -18,7 +18,6 @@ readingTime: 6
 ## At a glance
 
 - Your books were built to record what happened: close the month, file the taxes, keep the bank current. Proving your earnings to a buyer is a different job, and nobody in the chain was ever paid to do it.
-- One $25M consumer products manufacturer posted a near 90% gross-margin month that was actually a $44,000 loss, because a single $364,000 cost entry was wrong. Recording caught nothing. Deciding would have.
 - The fix isn't better bookkeeping. It's a second layer built to decide from, and it's the layer a buyer pays for.
 
 The single most useful thing an owner can understand before a sale is that recording the past and deciding the future are two different jobs, done by two different skill sets, and almost every company only ever bought the first one. This piece is about why that gap exists, why it stays invisible for years, and why a buyer finds it in an afternoon.
@@ -39,7 +38,7 @@ Then one of two things happens. Growth softens and the forgiving stops, or the o
 
 ## How fast does a buyer see it?
 
-Fast, because he is trained to. Consider the $25M manufacturer again. He had a month where gross margin came in near 90%, the best the company had ever printed. It wasn't real. One input cost was entered wrong, about $364,000 of it, and that single entry turned a month that actually lost around $44,000 into a fake blowout. His recording system did its job perfectly and told him a lie, because catching that error was a decision-layer job and there was no decision layer.
+Fast, because he is trained to. Picture a month where gross margin prints the best number the company has ever posted, and it isn't real: one input cost was entered wrong, and that single entry turned a losing month into a fake record. A recording system can do its job perfectly and still tell the owner a lie, because catching that error is a decision-layer job, and most companies have no decision layer.
 
 Now put a buyer's analyst on the same data. He finds the entry, corrects the month, and then does the thing that actually costs you: he stops trusting everything else. If one headline number was a mirage, which others are. From that point every figure gets read with suspicion, and suspicion is priced into the offer. The gap you never saw becomes the discount you can't argue with.
 

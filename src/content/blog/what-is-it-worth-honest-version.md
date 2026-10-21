@@ -33,7 +33,7 @@ The honest version starts from the buyer's seat. It reads your numbers the way h
 
 Because a single number hides the most important part: the gap between what the business is worth today and what it could be worth once the numbers are true and the value is built. That gap is the whole opportunity.
 
-Consider the $25M owner. The single number he had was the bankers' estimate, resting on books he didn't trust. The honest pair was different: a clear-eyed read of where he stood, and a modeled exit value the work roughly doubled once the numbers could be believed and the trapped value was freed. The single number would have sent him to market underprepared. The pair showed him what the work was worth before he committed to it.
+Take a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate. The single number he had was that estimate. The honest pair was a clear read of where he stood, and a modeled exit value the work roughly doubled once the numbers could be believed.
 
 That's what makes the pair actionable:
 

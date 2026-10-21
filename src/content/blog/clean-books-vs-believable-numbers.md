@@ -18,7 +18,6 @@ readingTime: 6
 ## At a glance
 
 - Clean books close on time and tie to the bank. Believable numbers survive a stranger checking them before he wires you millions. They are different jobs, and most companies under $50M in revenue only pay for the first.
-- At one $25M consumer products manufacturer, the prior firm adjusted the budget to match actuals so variance would disappear, and the controller was told not to overwhelm the owner with detail. The books were clean. Nobody was making them believable.
 - Closing the gap is worth real money: with numbers he could stand behind, the work roughly doubled the modeled exit value.
 
 Clean books are not the same as believable numbers, and the difference is exactly what a buyer pays for. This piece is about why a set of books can be tidy, timely, and still get re-priced in diligence, and what "believable" actually requires.
@@ -31,7 +30,7 @@ It is also a completely different job from proving to a stranger that your earni
 
 ## Where does clean fall short of believable?
 
-Believable numbers answer the questions a buyer's analyst actually asks. Clean books often cannot. Consider what "clean" hid at that $25M manufacturer: the prior firm quietly adjusted the budget to match actuals, so every variance vanished and the forecast meant nothing. The part-time controller resisted adding detail to the chart of accounts to avoid overwhelming the owner, so the very detail that decides a sale price was never captured. The books closed. The numbers were not believable.
+Believable numbers answer the questions a buyer's analyst actually asks. Clean books often cannot. Here is how that happens. The budget gets adjusted to match actuals, so every variance vanishes and the forecast means nothing. The chart of accounts stays thin so nobody is overwhelmed, so the very detail that decides a sale price is never captured. The books close. The numbers are not believable.
 
 Here is the tell. A buyer does not care that the month closed. He cares whether the budget resembles the actuals, whether revenue is recognized the same way every month, whether you can show which product and customer make money, and whether the last twelve months would survive him checking. Clean is silent on all of that.
 
@@ -49,7 +48,7 @@ That is the move from clean to believable, and it is the whole difference betwee
 
 ## Why a buyer pays for believable, not clean
 
-Because he is not buying tidy records. He is buying earnings he can trust and a management team that sees clearly. Clean gets you to the table. Believable protects the price once you are there. At that $25M manufacturer, making the numbers believable is what roughly doubled the modeled exit value, against a banker's estimate built on numbers the owner did not trust. Same company. We do not audit the past. We make the company worth believing.
+Because he is not buying tidy records. He is buying earnings he can trust and a management team that sees clearly. Clean gets you to the table. Believable protects the price once you are there. One example: a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate; the work roughly doubled the modeled exit value. We do not audit the past. We make the company worth believing.
 
 ## Where this leads
 

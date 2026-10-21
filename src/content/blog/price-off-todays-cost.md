@@ -18,7 +18,6 @@ readingTime: 5
 ## At a glance
 
 - A price set on last year's cost is a decision you are still making without knowing it. When input costs climb and the price holds, a former winner turns into a loser quietly.
-- At one $25M consumer products manufacturer, a wrong input cost distorted a whole month by roughly $364,000. When real cost is invisible, so is the price you should be charging.
 - Repricing to current cost is fast, high-return work: it drops straight to earnings, and earnings is the number a buyer multiplies. A more valuable company and the numbers to prove it.
 
 Price off today's cost, not last year's, because the line still priced on old cost is bleeding and nobody decided to let it happen. It is one of the most common and most fixable ways value leaks out of a business. This piece is about how the drift happens and how to catch it before a buyer, or your own margin, does.
@@ -31,7 +30,7 @@ The reason nobody catches it is that the books were built to record what was cha
 
 ## Why is stale pricing so dangerous?
 
-Because it hides inside a healthy-looking average and because it can be masked by a bad number. At the $25M manufacturer, a single wrong input cost distorted a month by roughly $364,000, briefly making a losing month look like a record. If your cost data is wrong or stale, your pricing decisions are built on fiction. You cannot price to a cost you cannot see.
+Because it hides inside a healthy-looking average and because it can be masked by a bad number. A single wrong input cost can make a losing month look like a record. If your cost data is wrong or stale, your pricing decisions are built on fiction. You cannot price to a cost you cannot see.
 
 And stale pricing is self-reinforcing. The line looks fine on the blended margin, so it never gets attention, so the price never gets revisited, so the bleed continues. It takes someone deliberately comparing price to current cost to break the loop.
 

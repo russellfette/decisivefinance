@@ -19,7 +19,6 @@ readingTime: 6
 
 - Every question a buyer has to ask is a chance to lose trust. A data room that answers first turns diligence from an interrogation into a confirmation.
 - The goal is not more documents. It is numbers that are already true and already explained: consistent revenue, margin by line, a defensible add-back schedule, a fast close.
-- At one $25M consumer products manufacturer, the difference between a P&L that could not survive a review and one a buyer could believe was worth more than any single operational change.
 
 Build a data room that answers questions before they are asked, because in diligence every unanswered question is an opening for doubt. A room that makes a buyer dig invites him to wonder what you are not showing. A room that answers first tells him you have nothing to hide and everything in order. This piece is about assembling the numbers so diligence confirms your value instead of chipping at it.
 
@@ -46,7 +45,7 @@ Each item pre-answers a question he was going to ask. Together they change the t
 
 You run the buyer's read on yourself first. That means rebuilding the numbers to the standard a quality-of-earnings review would apply, not the standard that closes the month. It is the difference between books that are clean and numbers that are believable, and it takes time, which is why it starts well before a buyer is at the table.
 
-At the $25M consumer products manufacturer, the early verdict was that the financials could not have survived a quality-of-earnings review. The work of making them true and legible, consistent recognition, margin by line, a rebuilt close, a defensible schedule, is exactly what a prepared data room is made of. We do not audit the past. We make the company worth believing.
+The work of making the numbers true and legible, consistent recognition, margin by line, a rebuilt close, a defensible schedule, is exactly what a prepared data room is made of. We do not audit the past. We make the company worth believing.
 
 ## Why this protects the price
 

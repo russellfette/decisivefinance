@@ -19,7 +19,6 @@ readingTime: 6
 
 - Deals die in diligence, and it is almost never the business. It is believability: a buyer finds a number he cannot trust and starts discounting everything around it.
 - The damage does not arrive as a walk-away. It arrives as a re-trade, a lower price or shifted risk, at the moment the owner has the least room to push back.
-- At one $25M consumer products manufacturer, the financials could not have survived a quality-of-earnings review. Fixing that before a buyer looked is what protected the price.
 
 Deals die in diligence, and it is almost never the business that kills them. It is believability. A buyer who wanted the company finds one number he cannot trust, and the doubt spreads until the deal either re-trades hard or falls apart. This piece is about what actually goes wrong in the room, and why it is a problem you solve before you are in it.
 
@@ -50,7 +49,7 @@ Every one of those is answerable in advance. None of them is answerable well for
 
 ## What protecting the deal looks like
 
-At the $25M consumer products manufacturer, the honest early verdict was that the financials lacked the integrity to survive a quality-of-earnings review, and the exit intent predated the engagement by months. The work was not dressing the numbers up. It was making them true and legible, so the questions a buyer would ask had answers before he asked them. We do not audit the past. We make the company worth believing.
+The work is not dressing the numbers up. It is making them true and legible, so the questions a buyer will ask have answers before he asks them. We do not audit the past. We make the company worth believing.
 
 ## Where this leads
 

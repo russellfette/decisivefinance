@@ -19,8 +19,7 @@ readingTime: 9
 ## At a glance
 
 - A buyer who can't trust your numbers doesn't walk away. He discounts. Every figure he can't verify becomes a reason to lower the price, and it surfaces in diligence, when your negotiating room is already gone.
-- One $25M consumer products manufacturer had a month that looked like his best ever, near 90% gross margin. A single wrong cost entry, about $364,000 of it, had turned a roughly $44,000 loss into a fake blowout. He almost made decisions off it.
-- With numbers he could finally stand behind, the work roughly doubled the modeled exit value. Same company. The difference was believability.
+- One example: a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate; the work roughly doubled the modeled exit value. The difference was believability.
 
 Most owners find out their numbers can't survive a sale at the worst possible time: in diligence, with the price already on the table and a buyer's analyst pulling the thread. This piece is about why that happens, what it costs in real dollars, and how to fix it while you still have the time to do it calmly.
 
@@ -32,7 +31,7 @@ It is also a completely different job from proving to a stranger, who is about t
 
 So the gap sits there, invisible, for years. Growth covers it. When sales are climbing, nobody feels the accounting problems, because the top line forgives a lot. Then growth softens, or an owner decides it's time to sell, and the same numbers that felt fine suddenly can't answer basic questions. The mess isn't negligence. Growth covered it.
 
-We worked with the owner of a $25M consumer products manufacturer who lived this exactly. For years, he had a controller and a couple of accountants, and things ran okay. The books closed. But nobody was getting to the questions that actually decide a sale price, because nobody's job was to ask them.
+Plenty of owners live this. For years there's a controller and a couple of accountants, and things run okay. The books close. But nobody gets to the questions that actually decide a sale price, because nobody's job is to ask them.
 
 ## What does a buyer actually do with numbers he can't trust?
 
@@ -40,9 +39,9 @@ Here is the misconception worth killing first. Owners assume that messy numbers 
 
 Every question you can't answer cleanly becomes a reason to knock the price down or shift risk onto you through an earnout or a holdback. And because it surfaces in diligence, it surfaces at the moment you have the least room to push back: the deal has momentum, you've told your spouse and your team, and the buyer knows it.
 
-Consider what that same $25M owner showed us early on. He had a month where gross margin came in near 90%. On paper, the best month the company had ever posted. It wasn't real. One input cost had been entered wrong, and that single bad entry, roughly $364,000 of it, had turned a month that actually lost about $44,000 into a fake blowout.
+Picture a month where gross margin comes in as the best the company has ever posted. On paper, a record. It isn't real. One input cost was entered wrong, and that single bad entry turned a losing month into a fake blowout.
 
-Sit with the danger there. He almost built a quarter's worth of pricing and spending decisions on a month that was quietly a loss. Now imagine a buyer's analyst finding that same entry in the data room. He doesn't just correct the month. He starts wondering what else in the numbers is a mirage, and he prices that doubt into every line.
+Sit with the danger there. An owner could build a quarter's worth of pricing and spending decisions on a month that was quietly a loss. Now imagine a buyer's analyst finding that same entry in the data room. He doesn't just correct the month. He starts wondering what else in the numbers is a mirage, and he prices that doubt into every line.
 
 That is the real cost of untrustworthy numbers. Not one correction. A discount applied to everything, because a buyer can only pay for earnings he can believe.
 
@@ -74,7 +73,7 @@ Here is the part almost nobody tells owners. Buyers want a trailing twelve month
 
 Fix the books in March, and your first believable trailing twelve is next March. The trailing-twelve clock doesn't start until the numbers are true. Every month you wait moves the sale date a month.
 
-The $25M owner we worked with felt this directly. He'd been putting his sale off for over a year, and it wasn't the market holding him back. It was that he didn't feel he had a good story to tell or numbers he'd be willing to show. Most owners aren't waiting for the right market. They're waiting for numbers they'd be willing to show. That is a fixable problem, and it's a different problem than the one they think they have.
+Owners feel this directly. They put the sale off and call it the market, when what holds them back is not having a story to tell or numbers they'd be willing to show. Most owners aren't waiting for the right market. They're waiting for numbers they'd be willing to show. That is a fixable problem, and it's a different problem than the one they think they have.
 
 Which is why the owners who get the number they want start early, on purpose, with no deal on the table and no pressure. The ones who get re-priced start the day a buyer asks a question they can't answer.
 
@@ -82,9 +81,7 @@ Which is why the owners who get the number they want start early, on purpose, wi
 
 For that owner, the work was unglamorous, and that's the point. We fixed the costing so gross margin told the truth instead of swinging on a bad entry. We rebuilt the close so the numbers came in current instead of a month stale. We tracked down cash that had come in and never been matched to what it was for. We found product that was mispriced against its real cost, and discounts that were never really discounts.
 
-None of that is clever. It's the boring work of making each number mean what it says. And with numbers he could finally stand behind, the work roughly doubled the modeled exit value, against the bankers' estimate on numbers he didn't trust.
-
-Same company. The difference was believability, and believability turned out to be worth more than any single operational change we could have made.
+None of that is clever. It's the boring work of making each number mean what it says. One example: a $25M consumer products manufacturer whose owner didn't trust the P&L behind the bankers' estimate; the work roughly doubled the modeled exit value. The difference was believability.
 
 ## Where to start
 

@@ -31,7 +31,7 @@ At close, the actual working capital in the business is measured and trued up ag
 
 ## Why does the peg cut the check?
 
-Because the trailing-twelve-month average is built from the same books that were never built to decide from. Consider a $25M consumer products manufacturer. Over the prior year, receivables ran high because collections drifted to 50 days, inventory carried dead stock nobody wrote off, and payables were paid early out of habit. The trailing average of net working capital came in around $3.6M, so the buyer pegged the target there.
+Because the trailing-twelve-month average is built from the same books that were never built to decide from. Consider a hypothetical $25M manufacturer. Over the prior year, receivables ran high because collections drifted to 50 days, inventory carried dead stock nobody wrote off, and payables were paid early out of habit. The trailing average of net working capital came in around $3.6M, so the buyer pegged the target there.
 
 Then the owner did what felt smart before a sale. He pushed collections, thinned the warehouse, and stretched vendor terms, running actual working capital down to about $3.15M at close. Leaner operations, and a $450,000 hole against the peg. The buyer trued up and took $450,000 off the price. The owner had improved the business and paid for it at the closing table, because the target was set on a bloated year and delivered on a lean day.
 

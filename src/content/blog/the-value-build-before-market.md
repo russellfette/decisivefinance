@@ -42,7 +42,7 @@ Run together over 12 to 24 months, these turn a company that is worth what it's 
 
 ## What did it look like in dollars?
 
-For the $25M manufacturer, the build was concrete and unglamorous. We corrected the pricing that had drifted, worth a swing of roughly $1.8M to $2.1M a year. We rebuilt margin reporting so the winners and losers were visible and the mix could be steered. We fixed the costing and the close so the numbers came in current and true. And we modeled the path forward, quarter by quarter, against a baseline.
+The build is concrete and unglamorous. Correct the pricing that has drifted. Rebuild margin reporting so the winners and losers are visible and the mix can be steered. Fix the costing and the close so the numbers come in current and true. And model the path forward, quarter by quarter, against a baseline.
 
 The result was a different picture of what the company was worth: not the bankers' estimate on numbers the owner couldn't stand behind, but a modeled exit value the work roughly doubled on numbers he could. Same company. The difference was earnings grown and made believable, over time, on purpose.
 
