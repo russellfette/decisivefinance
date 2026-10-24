@@ -3,6 +3,25 @@
 Read by the scheduled task `W-1 weekly blog and LinkedIn prep`, Mondays 07:00 PT.
 Lives in the repo so it versions with the corpus it describes.
 
+Since 2026-10-23 (W-1 v2) the run lives in the cloud: it clones
+`russellfette/decisivefinance` from GitHub and never reads Russ's Mac. If the
+clone fails, the run emails the failure in one line and stops.
+
+## Step 0: Buffer runway, first step of every run
+
+Before `next-slot.mjs`, count the LinkedIn channel's Buffer posts (drafts plus
+scheduled) with a due date in the future.
+
+| Ahead | Do | Email subject |
+|---|---|---|
+| 10 or more (over 3 weeks at Monday, Wednesday, Friday) | Carry on with the modes below | `W-1: <mode>, Buffer runway N posts` |
+| 1 to 9 | Draft the missing weeks first, to the step 3a pattern, then the modes below | `W-1: Buffer runway N posts, M drafted` |
+| 0 | Same as above | `W-1 ALERT: Buffer empty` |
+
+A missing week is any Monday, Wednesday or Friday from the coming Monday to
+three weeks out with no draft or scheduled post. Never fill a day that already
+has one.
+
 ## What the run does is decided, not assumed
 
 Run this, from the repo root, and take the answer:
@@ -55,17 +74,24 @@ from repo state` or `content-queue.md`.
 3. Draft `src/content/linkedin/<slug>.md`, first person, on the post's own prong
    (pillar 6 running it; pillars 1 to 4 selling it), the new post in `draft`
    mode, the named backlog posts in `repurpose` mode. Load `russ-voice`.
-3a. LinkedIn week (added 2026-10-11). Draft three LinkedIn posts for the
-   coming Monday, Wednesday and Friday at 08:00 PT: one running it, one selling
-   it, one referrer (alternate chairs and implementers with deal
-   professionals). Use repurposes from step 3 where they fit. Proof only from
-   the approved set in Phrase Book v3.6 section 8a or a cleared Proof Library
-   pattern. Referrer posts lead with the problem, name or contrast no other
-   profession, carry no guarantee sentence; deal professionals get the stance
-   line, never the independence line.
-3b. Card per post, 1200 by 1200, ink ground, hero words white then orange,
-   Inter, wordmark top left, "Russell Fette" and "decisive.finance" in the
-   footer, into `public/social/YYYY-MM/li-YYYY-MM-DD-<slug>.png`.
+3a. LinkedIn week (added 2026-10-11, pattern revised 2026-10-23). Three
+   posts a week at 08:00 PT. Monday: running the company (pillar 6, the
+   operating prong). Wednesday: the repurpose of that week's Tuesday blog post;
+   its first comment links the article at decisive.finance/perspectives/<slug>.
+   Friday: a referrer post, rotating chairs and implementers, then bankers,
+   then deal professionals. Referrer posts lead with the problem, name or
+   contrast no other profession, carry no guarantee sentence, and carry the fee
+   line in first person: "I take no piece of any transaction, so your mandate
+   and your relationship stay yours." The stance line and the independence line
+   are retired (2026-10-17) and never appear. Proof only from the three lines in
+   Phrase Book v3.8 section 8a, verbatim; every other number is labeled as an
+   illustration. No client story is invented.
+3b. Card per post: the live OG image of the article the post draws on,
+   https://decisive.finance/og/<slug>.png, checked for HTTP 200 before the
+   Buffer draft is created. Only when no article fits, render a 1200 by 1200
+   card (ink ground, hero words white then orange, Inter, wordmark top left,
+   "Russell Fette" and "decisive.finance" in the footer) into
+   `public/social/YYYY-MM/li-YYYY-MM-DD-<slug>.png`.
 3c. Commit and push only `public/social/` and `src/content/linkedin/`. Those
    paths publish nothing a reader sees on the site. Blog posts stay for Russ
    to ship.
@@ -81,6 +107,13 @@ from repo state` or `content-queue.md`.
    full, and a copy-paste git block.
 
 Never push blog posts, never post. Step 3c is the only push. Russ ships the blog and voices every external word.
+
+## Balance and open slots (2026-10-23)
+
+The blog queue has no running-the-company posts (pillar 6) between 2026-10-27
+and 2026-12-15. In `draft` mode, weight pillar 6 until the two prongs even out.
+Open Tuesdays: 2026-11-10 (the walkthrough post is archived pending consent),
+2026-12-22 and 2026-12-29.
 
 ## Gates that bind on every draft
 
