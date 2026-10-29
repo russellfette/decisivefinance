@@ -28,7 +28,7 @@ When you see `✓ Authentication complete` you're done.
 Copy-paste this whole block into Terminal:
 
 ```
-cd ~/Projects/decisivefinance
+cd ~/Repos/decisivefinance
 git push -u origin main
 ```
 
@@ -91,7 +91,7 @@ Open each of these in an incognito window:
 ## What's in this repo
 
 ```
-~/Projects/decisivefinance/
+~/Repos/decisivefinance/
 ├── astro.config.mjs           Astro config (sitemap, MDX)
 ├── package.json               deps: astro, @astrojs/mdx, sitemap, rss
 ├── src/
@@ -154,7 +154,7 @@ Open each of these in an incognito window:
 ## Preview locally any time
 
 ```
-cd ~/Projects/decisivefinance
+cd ~/Repos/decisivefinance
 npm run dev
 ```
 
