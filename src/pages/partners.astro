@@ -1,12 +1,46 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SituationGrid from '../components/SituationGrid.astro';
+import ReadoutSample from '../components/ReadoutSample.astro';
 
 const title = 'For referral partners | Decisive Finance';
 const description =
-  'Most owners of growing companies can’t say which jobs or customers actually make money. One page to forward, a free 48-hour read for the owner, and an outcome note back to you.';
+  'Most owners of growing companies can’t say which jobs or customers actually make money. What to listen for, the 48-hour read, fees by revenue band, and two intros you can send as is.';
 
-const introOwner = 'mailto:russell@decisive.finance?subject=' + encodeURIComponent('Intro: [owner name], [company]') + '&body=' + encodeURIComponent('Russell, meet [owner name], who runs [company]. [One line on what is going on.] I’ve copied them here.');
+const mail = (subject: string, body: string) =>
+  'mailto:russell@decisive.finance?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+const introOwner = mail('Intro: [owner name], [company]', 'Russell, meet [owner name], who runs [company]. [One line on what is going on.] I’ve copied them here.');
+const askLink = mail('My private link for the 48-hour read', 'Russell, please send me my private link for the 48-hour read. [Your name, firm]');
+const bringToGroup = mail('Workshop for my group', 'Russell, I’d like you in front of my group. [Group, size, rough dates.]');
+
+const listenFor = [
+  'We had a record year and I don’t know where the money went.',
+  'We’re growing and I’m always short on cash.',
+  'I’m about to make a big hire, or buy a building, and I’m going on gut.',
+  'My biggest customer is killing us, but I can’t lose them.',
+  'A PE firm called.',
+  'I want out in two or three years.',
+  'My partner wants to sell his half.',
+];
+
+const introExplore = {
+  subject: 'Where your profit is going',
+  body: `[Owner], I’d like you to meet Russell Fette at Decisive Finance. He works with owners of growing companies who can’t say which customers or jobs actually make money.
+
+The easy version: you send him three reports, and in 48 hours he’s found the two or three biggest places money is leaking. Then he spends an hour with you putting a dollar figure on each one. Nothing to schedule to start. Here’s the link: [your private link]
+
+Russell, over to you.`,
+};
+
+const introDirect = {
+  subject: 'Russell Fette, Decisive Finance',
+  body: `[Owner], meet Russell Fette. [One line on why you trust him.]
+
+He’s the CFO I’d call if I were growing and not keeping the profit, or thinking about selling in the next few years. His firm guarantees at least 3x the fee in owner-accepted value in 14 days, or the client pays nothing.
+
+I’ve told him a bit about what you’re facing. Grab 30 minutes here: calendly.com/russell-decisive/30min`,
+};
 
 const proofOperating = [
   'A $15M manufacturer whose largest customer was its least profitable; margins moved from 15% to 22%.',
@@ -17,15 +51,23 @@ const proofOperating = [
 const faqs = [
   {
     q: 'What does the owner have to send?',
-    a: 'Three reports: monthly P&L and balance sheet for the last 24 months, plus whichever sales or margin report they actually read. In 48 hours they get one page back: what’s trapped, in dollars, and what it would take to confirm it. No charge, no meeting required.',
+    a: 'Three reports: monthly P&L and balance sheet for the last 24 months, plus whichever sales or margin report they actually read. They upload them through your private link. There’s no charge for the read.',
   },
   {
-    q: 'What happens after the read?',
-    a: 'If the read shows money on the table, the owner can start the 14-day Decision Diagnostic, or the Sellable-Numbers Scan if they are selling. From $10,000, fixed. At least 3x the fee in owner-accepted value, in 14 days, or the client pays nothing.',
+    q: 'What happens to their files?',
+    a: 'They go to private storage that only we can open, and they’re deleted 30 days after upload. Nothing the owner sends is used to train any model. Russell reviews and signs every read before it goes out.',
+  },
+  {
+    q: 'Why the hour after the read?',
+    a: 'It’s how we decide who we work with, and how the owner decides whether to work with us. We take the findings one at a time and the owner tells us whether each number holds up. If we can’t find real money, we tell them that too.',
+  },
+  {
+    q: 'What does it cost after that?',
+    a: 'The 14-day Decision Diagnostic, or the Sellable-Numbers Scan if they are selling, is $10,000, $15,000 or $20,000 by revenue band. At least 3x the fee in owner-accepted value, in 14 days, or the client pays nothing. Fees are fixed before we begin.',
   },
   {
     q: 'Will I hear how it went?',
-    a: 'Yes. Same-day acknowledgment when you make an intro. The read goes to the owner in 48 hours, and you hear the outcome within the week, with the owner’s OK.',
+    a: 'Yes. Same-day acknowledgment when you make an intro, and the outcome within the week, with the owner’s OK.',
   },
   {
     q: 'Do you pay referral fees?',
@@ -33,7 +75,7 @@ const faqs = [
   },
   {
     q: 'What don’t you do?',
-    a: 'We don’t sell companies, find buyers, or promise a price or a multiple. Fees are fixed before we begin.',
+    a: 'We don’t sell companies, find buyers, or promise a price or a multiple.',
   },
 ];
 
@@ -42,7 +84,6 @@ const faqJsonLd = {
   '@type': 'FAQPage',
   mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
 };
-import ReadoutSample from '../components/ReadoutSample.astro';
 ---
 
 <BaseLayout title={title} description={description}>
@@ -59,7 +100,7 @@ import ReadoutSample from '../components/ReadoutSample.astro';
       </p>
       <div class="hero-cta-row">
         <a class="btn btn-primary" href={introOwner}>Make an intro</a>
-        <a class="btn btn-secondary" href="/partners/decisive-one-pager-operating-companies.pdf">Download the one-pager</a>
+        <a class="btn btn-secondary" href="#what-to-say">Copy an intro email</a>
       </div>
       <p class="hero-microcopy">Email russell@decisive.finance with the owner copied. We reply the same day.</p>
     </div>
@@ -68,21 +109,12 @@ import ReadoutSample from '../components/ReadoutSample.astro';
   <section>
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow">What to forward</span>
-        <h2>Two pages, one for each kind of owner you know.</h2>
-        <p class="lede">Each one stands on its own. Forward it as is, or attach it to your intro.</p>
-      </div>
-      <div class="fit-grid">
-        <div class="fit-col">
-          <h3>Running the company</h3>
-          <p>For chairs, implementers, CPAs and bankers. You know the owner: revenue&rsquo;s up, profit isn&rsquo;t, and the cash is tighter than it should be.</p>
-          <a class="btn btn-secondary" href="/partners/decisive-one-pager-operating-companies.pdf">Operating-company one-pager (PDF)</a>
-        </div>
-        <div class="fit-col">
-          <h3>Selling the company</h3>
-          <p>For M&amp;A advisors, brokers and transaction attorneys. Fix the financials before the mandate, not after the QoE.</p>
-          <a class="btn btn-secondary" href="/partners/decisive-one-pager-deal-professionals.pdf">Deal-professional one-pager (PDF)</a>
-        </div>
+        <span class="section-eyebrow">What to listen for</span>
+        <h2>You need to meet Russell when an owner says&hellip;</h2>
+        <ul class="pillars listen">
+          {listenFor.map((l) => <li>&ldquo;{l}&rdquo;</li>)}
+        </ul>
+        <p class="muted-note">Most owners call after the fire. These lines are the six months before it.</p>
       </div>
     </div>
   </section>
@@ -93,18 +125,70 @@ import ReadoutSample from '../components/ReadoutSample.astro';
     </div>
   </section>
 
+  <section id="the-read">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">The 48-hour read</span>
+        <h2>Three reports in. Two days later, the leaks in dollars.</h2>
+        <ol class="engine-list">
+          <li class="engine-item"><div><p><strong>The owner uploads three reports through your link.</strong> Monthly P&amp;L and balance sheet for 24 months, plus the sales or margin report they actually read. Nothing to schedule to start.</p></div></li>
+          <li class="engine-item"><div><p><strong>In 48 hours, we&rsquo;ve found the two or three biggest places money is leaking.</strong> Russell reviews and signs every read. Files stay private and are deleted after 30 days.</p></div></li>
+          <li class="engine-item"><div><p><strong>Then an hour with the owner, putting a dollar figure on each one.</strong> It&rsquo;s how we decide who we work with, and how the owner decides whether to work with us.</p></div></li>
+          <li class="engine-item"><div><p><strong>If there&rsquo;s money on the table, 14 days.</strong> The Decision Diagnostic, or the Sellable-Numbers Scan if the owner is selling. At least 3x the fee in owner-accepted value, in 14 days, or the client pays nothing. Then the 90-Day Decision Resolution puts the Financial Rhythm System&trade; in place.</p></div></li>
+        </ol>
+        <p><a class="btn btn-secondary" href={askLink}>Get your private link</a></p>
+        <p class="muted-note">Each partner gets their own link, so every read that comes from you is credited to you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">What it costs</span>
+        <h2>Fixed fees, set by revenue band.</h2>
+        <div class="fee-wrap" tabindex="0" role="region" aria-label="Fees by revenue band">
+          <table class="fee-table">
+            <thead>
+              <tr><th scope="col">Owner&rsquo;s revenue</th><th scope="col">14 days</th><th scope="col">90 days</th><th scope="col">Ongoing</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">$5M to $8M</th><td>$10,000</td><td>$30,000</td><td>$7,500 a month</td></tr>
+              <tr><th scope="row">$8M to $25M</th><td>$15,000</td><td>$45,000</td><td>$10,000 a month</td></tr>
+              <tr><th scope="row">$25M to $50M</th><td>$20,000</td><td>$60,000</td><td>$12,500 a month</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted-note">The 48-hour read has no charge. Ongoing work adds 5% of realized value, validated quarterly. A 90-day engagement signed within 7 days of the Day 14 readout credits the 14-day fee in full.</p>
+        <h3>What your client sees on Day 14.</h3>
+        <ReadoutSample />
+      </div>
+    </div>
+  </section>
+
   <section>
     <div class="container">
       <div class="container-narrow">
-        <span class="section-eyebrow">What the owner gets</span>
-        <h2>The 48-hour read, free through you.</h2>
-        <ol class="engine-list">
-          <li class="engine-item"><div><p><strong>The read.</strong> The owner sends three reports. In 48 hours they get one page: what&rsquo;s trapped, in dollars, and what it would take to confirm it. No charge, no meeting required.</p></div></li>
-          <li class="engine-item"><div><p><strong>If the read shows money on the table, 14 days.</strong> The Decision Diagnostic shows which products, customers and jobs make money, where the recoverable cash and margin sit, and what to decide first. If the owner is selling, the Sellable-Numbers Scan runs the same 14 days through a buyer&rsquo;s eyes. From $10,000, fixed. At least 3x the fee in owner-accepted value, in 14 days, or the client pays nothing.</p></div></li>
-          <li class="engine-item"><div><p><strong>Then the rhythm.</strong> The 90-Day Decision Resolution puts the Financial Rhythm System&trade; in place.</p></div></li>
-        </ol>
-        <h3>What your client sees on Day 14.</h3>
-        <ReadoutSample />
+        <span class="section-eyebrow">Who&rsquo;s a fit</span>
+        <h2>Who to send, and who not to.</h2>
+      </div>
+      <div class="fit-grid">
+        <div class="fit-col yes">
+          <h3>Send them</h3>
+          <ul>
+            <li>Owner-led operating company, $5M to $50M revenue</li>
+            <li>Growing with flat profit, a cash squeeze, or a big call coming</li>
+            <li>A sale, PE approach, succession or partner exit in the next three years</li>
+          </ul>
+        </div>
+        <div class="fit-col no">
+          <h3>Not a fit</h3>
+          <ul>
+            <li>Under $5M revenue</li>
+            <li>Wants bookkeeping on its own</li>
+            <li>Wants someone to sell the company or promise a price</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -118,6 +202,40 @@ import ReadoutSample from '../components/ReadoutSample.astro';
           {proofOperating.map((p) => <li>{p}</li>)}
         </ul>
         <p class="muted-note">Client results anonymized.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-to-say">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">What to say</span>
+        <h2>Two intros. Send either as is.</h2>
+        <p class="lede">Put the owner on the To line and russell@decisive.finance on cc. Fill the brackets.</p>
+        {[{ label: 'When the owner is curious', e: introExplore }, { label: 'When you know they need help', e: introDirect }].map(({ label, e }) => (
+          <div class="intro-card">
+            <h3>{label}</h3>
+            <p class="intro-subject"><b>Subject:</b> {e.subject}</p>
+            <pre class="intro-body">{e.body}</pre>
+            <div class="intro-actions">
+              <button type="button" class="btn btn-secondary copy-btn" data-copy={`Subject: ${e.subject}\n\n${e.body}`}>Copy the email</button>
+              <a class="btn btn-ghost" href={mail(e.subject, e.body)}>Open in my email</a>
+            </div>
+          </div>
+        ))}
+        <h3>Or send the one-pager.</h3>
+        <p><a href="/partners/decisive-one-pager-operating-companies.pdf">Running the company (PDF)</a>, for chairs, implementers, CPAs and bankers. <a href="/partners/decisive-one-pager-deal-professionals.pdf">Selling the company (PDF)</a>, for M&amp;A advisors, brokers and transaction attorneys: fix the financials before the mandate, not after the QoE.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">For your group</span>
+        <h2>Bring Russell to your group.</h2>
+        <p class="lede">60 to 90 minutes for a Vistage group, an EOS session or a webinar. Each owner brings three reports. Russell finds where the money&rsquo;s leaking and puts a dollar estimate on plugging each leak. Each owner&rsquo;s numbers stay private.</p>
+        <a class="btn btn-secondary" href={bringToGroup}>Ask about a date</a>
       </div>
     </div>
   </section>
@@ -151,14 +269,34 @@ import ReadoutSample from '../components/ReadoutSample.astro';
   </section>
 </BaseLayout>
 
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.copy-btn').forEach((b) => {
+    b.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(b.dataset.copy || ''); b.textContent = 'Copied'; }
+      catch { b.textContent = 'Select the text above to copy'; }
+      setTimeout(() => { b.textContent = 'Copy the email'; }, 2500);
+    });
+  });
+</script>
+
 <style>
   .hero-microcopy { color: rgba(255,255,255,0.7); font-size: 15px; }
-  .fit-col p { color: var(--muted); font-size: 16px; margin-bottom: 24px; }
   .fit-col h3 { margin-top: 0; }
   .pillars { list-style: none; padding: 0; margin: 28px 0 16px; }
   .pillars li { padding: 16px 0; border-top: 1px solid var(--hairline); font-size: 17px; }
   .pillars li:last-child { border-bottom: 1px solid var(--hairline); }
+  .listen li { font-size: 20px; font-weight: 500; }
   .lede, .hero-microcopy { overflow-wrap: anywhere; }
   .muted-note { color: var(--muted); font-size: 14px; }
   .close-tagline { color: rgba(255,255,255,0.6); font-size: 15px; margin-top: 24px; font-style: italic; }
+  .fee-wrap { overflow-x: auto; margin: 8px 0 12px; }
+  .fee-table { width: 100%; border-collapse: collapse; font-size: 16px; min-width: 480px; }
+  .fee-table th, .fee-table td { text-align: left; padding: 14px 12px; border-bottom: 1px solid var(--hairline); }
+  .fee-table thead th { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .fee-table tbody th { font-weight: 600; }
+  .intro-card { background: var(--paper); border: 1px solid var(--hairline); border-radius: 14px; padding: 28px; margin: 24px 0; }
+  .intro-card h3 { margin-top: 0; font-size: 22px; }
+  .intro-subject { font-size: 16px; }
+  .intro-body { white-space: pre-wrap; font-family: inherit; font-size: 16px; line-height: 1.6; background: var(--white); border: 1px solid var(--hairline); border-radius: 10px; padding: 18px 20px; margin: 0 0 18px; }
+  .intro-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 </style>

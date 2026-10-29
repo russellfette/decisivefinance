@@ -6,9 +6,9 @@ import Icon from './Icon.astro';
 const revenue = 14_000_000;
 const profitBefore = 360_000;
 const finds = [
-  { icon: 'trap-mental-accounting', trap: 'Mental Accounting', opp: 'Three accounts priced below their cost to serve', amt: 54_000, effort: 'Low', move: 'Reprice two at renewal; release the third' },
-  { icon: 'trap-status-quo', trap: 'Status Quo', opp: 'Freight absorbed on small orders for three years', amt: 41_000, effort: 'Low', move: 'A minimum order size or a freight line' },
-  { icon: 'trap-certainty-illusion', trap: 'Certainty Illusion', opp: 'On-time delivery bought with unpriced overtime', amt: 23_000, effort: 'Medium', move: 'A rush fee; overtime approval above 4 hours' },
+  { icon: 'trap-mental-accounting', trap: 'Mental Accounting', short: 'Underpriced accounts', opp: 'Three accounts priced below their cost to serve', amt: 54_000, effort: 'Low', move: 'Reprice two at renewal; release the third' },
+  { icon: 'trap-status-quo', trap: 'Status Quo', short: 'Small-order freight', opp: 'Freight absorbed on small orders for three years', amt: 41_000, effort: 'Low', move: 'A minimum order size or a freight line' },
+  { icon: 'trap-certainty-illusion', trap: 'Certainty Illusion', short: 'Unpriced overtime', opp: 'On-time delivery bought with unpriced overtime', amt: 23_000, effort: 'Medium', move: 'A rush fee; overtime approval above 4 hours' },
 ];
 const lift = finds.reduce((s, f) => s + f.amt, 0);
 const profitAfter = profitBefore + lift;
@@ -69,14 +69,14 @@ const years = [1, 2, 3, 4, 5].map((y) => ({ y, v: lift * y }));
       <div class="rs-stats">
         <div class="rs-stat rs-accent"><span class="rs-sv">+{pct}%</span><span class="rs-sl">net profit, {mBefore}% to {mAfter}% of revenue</span></div>
         <div class="rs-stat"><span class="rs-sv">{usd(lift)}</span><span class="rs-sl">a year in owner-accepted value</span></div>
-        <div class="rs-stat"><span class="rs-sv">{multiple}x</span><span class="rs-sl">the {usd(fee)} fee</span></div>
+        <div class="rs-stat"><span class="rs-sv">{multiple}x</span><span class="rs-sl">the {usd(fee)} fee for the $8M to $25M band</span></div>
         <div class="rs-stat"><span class="rs-sv">{k(lift * 5)}</span><span class="rs-sl">over five years, before any growth</span></div>
       </div>
 
       <figure class="rs-fig">
         <figcaption class="rs-figcap">Where the profit comes from</figcaption>
         <svg viewBox={`0 0 ${W} ${H + 10}`} role="img" aria-labelledby="rs-wf-t">
-          <title id="rs-wf-t">{`Net profit: ${usd(profitBefore)} today; after the fixes ${usd(profitAfter)}, made up of ${finds.map((f) => `${usd(f.amt)} from ${f.trap}`).join(', ')}.`}</title>
+          <title id="rs-wf-t">{`Net profit: ${usd(profitBefore)} today; after the fixes ${usd(profitAfter)}, made up of ${finds.map((f) => `${usd(f.amt)} from ${f.short.toLowerCase()}`).join(', ')}.`}</title>
           <line x1="0" x2={W} y1={base} y2={base} class="rs-axis" />
           <rect x={x1} y={yBefore} width={bw} height={profitBefore * scale} rx="3" class="rs-base" />
           <rect x={x2} y={yBefore} width={bw} height={profitBefore * scale} rx="3" class="rs-base" />
@@ -86,7 +86,7 @@ const years = [1, 2, 3, 4, 5].map((y) => ({ y, v: lift * y }));
           <text x={x2 + bw / 2} y={yAfter - 10} text-anchor="middle" class="rs-val">{k(profitAfter)} &middot; +{pct}%</text>
           <text x={x1 + bw / 2} y={base + 22} text-anchor="middle" class="rs-lab">Net profit today</text>
           <text x={x2 + bw / 2} y={base + 22} text-anchor="middle" class="rs-lab">After the three fixes</text>
-          {segs.map((g, i) => <text x={x2 + bw + 14} y={labelY[i]} class="rs-lab"><tspan class="rs-val">+{k(g.amt)}</tspan> {g.trap}</text>)}
+          {segs.map((g, i) => <text x={x2 + bw + 14} y={labelY[i]} class="rs-lab"><tspan class="rs-val">+{k(g.amt)}</tspan> {g.short}</text>)}
         </svg>
       </figure>
 
