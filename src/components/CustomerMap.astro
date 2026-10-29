@@ -33,7 +33,7 @@ const quads = [
   )}
   <figure class="cmap-figure" data-reveal>
     <div class="cmap-yaxis" aria-hidden="true">Margin after cost to serve &uarr;</div>
-    <div class="cmap-plot" role="img" aria-label="Customers plotted by revenue and by margin after the cost to serve. The big customers that lose money sit in the bottom right.">
+    <div class="cmap-plot" role="img" aria-label="Each dot is one customer, plotted by revenue and by margin after the cost to serve. The big customers that lose money sit in the bottom right.">
       <svg viewBox="0 0 900 800" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
         <rect x="450" y="400" width="450" height="400" style="fill:var(--orange-brand)" opacity="0.09" />
         <rect x="0.75" y="0.75" width="898.5" height="798.5" fill="none" style="stroke:var(--rule)" stroke-width="1.5" />
@@ -54,7 +54,7 @@ const quads = [
     <dl class="cmap-legend">
       {quads.map((q) => (<div><dt class={`cmap-legend-${q.k}`}>{q.name}</dt><dd>{q.body}</dd></div>))}
     </dl>
-    <figcaption class="cmap-caption"><span>Bubble size: revenue.</span><span>Illustrative. Not client data.</span></figcaption>
+    <figcaption class="cmap-caption"><span>Each dot is one customer. Size is revenue.</span><span>Illustrative. Not client data.</span></figcaption>
   </figure>
 </div>
 <style>
