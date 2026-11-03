@@ -1,10 +1,16 @@
 ---
 // Hero visual: profit by customer, ranked. Illustrative figures only, no client data.
 const vals = [38, 31, 26, 22, 18, 15, 12, 9, 6, 3, -4, -9, -15, -24];
-const W = 480, zero = 230, scale = 5.2, gap = 8;
+const W = 480, zero = 252, scale = 5.2, gap = 8;
 const n = vals.length;
 const bw = (W - gap * (n - 1)) / n;
 const firstNeg = vals.findIndex((v) => v < 0);
+// The whale curve's punchline, computed from the same illustrative bars.
+const earned = vals.filter((v) => v > 0).reduce((a, v) => a + v, 0);
+const givenBack = -vals.filter((v) => v < 0).reduce((a, v) => a + v, 0);
+const kept = earned - givenBack;
+const earnedPct = Math.round((earned / kept) * 100);
+const givenPct = Math.round((givenBack / kept) * 100);
 const bars = vals.map((v, i) => {
   const h = Math.abs(v) * scale;
   const neg = v < 0;
@@ -12,14 +18,16 @@ const bars = vals.map((v, i) => {
 });
 ---
 <figure class="hero-bars">
-  <svg viewBox="0 0 480 360" role="img" aria-labelledby="hb-title">
-    <title id="hb-title">Illustrative chart: profit by customer, ranked. Most customers are above zero; the last four fall below zero.</title>
+  <svg viewBox="0 0 480 400" role="img" aria-labelledby="hb-title">
+    <title id="hb-title">Illustrative chart: profit by customer, ranked. Most customers are above zero; the last four fall below zero. The customers who pay you earn {earnedPct}% of the profit you keep; the ones who cost you give {givenPct}% back.</title>
     <text x="0" y="12" class="hb-label">Pay you</text>
+    <text x="0" y="32" class="hb-note">These earn {earnedPct}% of the profit you keep.</text>
     <line x1="0" x2={W} y1={zero} y2={zero} class="hb-axis" />
     {bars.map((b) => (
       <rect x={b.x} y={b.y} width={bw.toFixed(2)} height={b.h} rx="3" class={b.neg ? 'hb-bar hb-neg' : 'hb-bar'} style={`animation-delay:${b.delay}s`} />
     ))}
     <text x={firstNeg * (bw + gap) - 10} y={zero + 20} text-anchor="end" class="hb-label hb-label-neg">Cost you</text>
+    <text x={firstNeg * (bw + gap) - 10} y={zero + 40} text-anchor="end" class="hb-note hb-note-neg">These give {givenPct}% back.</text>
   </svg>
   <figcaption>Profit by customer, ranked. Illustrative.</figcaption>
 </figure>
@@ -32,6 +40,8 @@ const bars = vals.map((v, i) => {
   .hb-neg { fill: var(--orange-on-dark); transform-origin: top; }
   .hb-label { font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; fill: rgba(255, 255, 255, 0.7); }
   .hb-label-neg { fill: var(--orange-on-dark); }
+  .hb-note { font-family: Inter, sans-serif; font-size: 15px; font-weight: 500; fill: rgba(255, 255, 255, 0.92); }
+  .hb-note-neg { fill: var(--orange-on-dark); }
   .hero-bars figcaption { font-family: Inter, sans-serif; font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 6px; }
   @keyframes hb-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
   @media (prefers-reduced-motion: reduce) { .hb-bar { animation: none; } }
