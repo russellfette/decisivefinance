@@ -26,11 +26,17 @@ const listenFor = [
   'Our biggest vendor just raised prices.',
 ];
 
-const introExplore = {
-  subject: 'Where your profit is going',
-  body: `[Owner], I’d like you to meet Russell Fette at Decisive Finance. He works with owners of growing companies who can’t say which customers or jobs actually make money.
+const sayIt = [
+  { who: 'To any owner', line: 'Russell can show you where your profit is leaking, in dollars. You know it’s there. You just haven’t had time to find it. He finds it fast.' },
+  { who: 'From a chair, coach or CPA', line: 'If you know there’s more profit to be had, revenue growing and profit not keeping up, send Russell three reports.' },
+  { who: 'Add to either', line: 'It isn’t a review of last year. He uses your own history to show you what to fix next.' },
+];
 
-The easy version: you send him three reports, and in 48 hours he’s found the two or three biggest places money is leaking. Then he spends an hour with you putting a dollar figure on each one. Nothing to schedule to start. Here’s the link: [your private link]
+const introExplore = {
+  subject: 'Where your profit is leaking',
+  body: `[Owner], I’d like you to meet Russell Fette at Decisive Finance. He can show you where your profit is leaking, with a dollar figure on each leak. You know it’s there; you just haven’t had time to find it.
+
+He finds it fast. Send him three reports, and in 48 hours he’s found the two or three biggest leaks. Then he spends an hour with you confirming what each one is worth to fix. It looks forward, built on your own numbers. Here’s the link: [your private link]
 
 Russell, over to you.`,
 };
@@ -39,7 +45,7 @@ const introDirect = {
   subject: 'Russell Fette, Decisive Finance',
   body: `[Owner], meet Russell Fette. [One line on why you trust him.]
 
-He’s the CFO I’d call if I were growing and not keeping the profit, or thinking about selling in the next few years. His firm guarantees at least 3x the fee in owner-accepted value in 14 days, or the client pays nothing.
+He finds where a growing company’s profit is leaking and puts a dollar figure on each leak. He’s the CFO I’d call if I were growing and not keeping the profit, or thinking about selling in the next few years. His firm guarantees at least 3x the fee in owner-accepted value in 14 days, or the client pays nothing.
 
 I’ve told him a bit about what you’re facing. Grab 30 minutes here: calendly.com/russell-decisive/30min`,
 };
@@ -61,7 +67,7 @@ const faqs = [
   },
   {
     q: 'Why the hour after the read?',
-    a: 'It’s how we decide who we work with, and how the owner decides whether to work with us. We take the findings one at a time and the owner tells us whether each number holds up. If we can’t find real money, we tell them that too.',
+    a: 'So every dollar figure is one the owner agrees with. We take the findings one at a time, and we don’t move on until the owner says the number holds up. It’s also how we decide who we work with, and how the owner decides whether to work with us. If we can’t find real money, we tell them that too.',
   },
   {
     q: 'What does it cost after that?',
@@ -98,7 +104,7 @@ const faqJsonLd = {
         <span class="h1-line">Most owners of growing companies can&rsquo;t say which jobs or customers actually make money.</span>
       </h1>
       <p class="hero-subhead">
-        Every owner can tell you revenue. <span class="dollar">Few can tell you which jobs make the profit.</span> We find it, in dollars, before the next big call is made on a guess. We take no piece of any transaction, so your mandate and your relationship stay yours.
+        Every owner can tell you revenue. <span class="dollar">Few can tell you which jobs make the profit.</span> We show the owner where the profit is leaking, with a dollar figure on each leak. They know it&rsquo;s there; they haven&rsquo;t had time to find it. We take no piece of any transaction, so your mandate and your relationship stay yours.
       </p>
       <div class="hero-cta-row">
         <a class="btn btn-primary" href={introOwner}>Make an intro</a>
@@ -107,6 +113,18 @@ const faqJsonLd = {
       <p class="hero-microcopy">Email russell@decisive.finance with the owner copied. We reply the same day.</p>
     </div>
   </header>
+
+  <section class="alt">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">In one line</span>
+        <h2>Say the result. The steps only back it up.</h2>
+        <ul class="pillars say">
+          {sayIt.map((s) => <li><span class="say-who">{s.who}</span>&ldquo;{s.line}&rdquo;</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <section>
     <div class="container">
@@ -131,11 +149,12 @@ const faqJsonLd = {
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">The 48-hour read</span>
-        <h2>Three reports in. Two days later, the leaks in dollars.</h2>
+        <h2>The leaks, in dollars, in 48 hours.</h2>
+        <p class="lede">What the owner gets: the two or three biggest places money is leaking, each with a dollar figure, looking forward from their own history. Here&rsquo;s how we back it up.</p>
         <ol class="engine-list">
           <li class="engine-item"><div><p><strong>The owner uploads three reports through your link.</strong> Monthly P&amp;L and balance sheet for 24 months, plus the sales or margin report they actually read. Nothing to schedule to start.</p></div></li>
           <li class="engine-item"><div><p><strong>In 48 hours, we&rsquo;ve found the two or three biggest places money is leaking.</strong> Russell reviews and signs every read. Files stay private and are deleted after 30 days.</p></div></li>
-          <li class="engine-item"><div><p><strong>Then an hour with the owner, putting a dollar figure on each one.</strong> It&rsquo;s how we decide who we work with, and how the owner decides whether to work with us.</p></div></li>
+          <li class="engine-item"><div><p><strong>Then an hour with the owner, confirming each dollar figure before we move on.</strong> It&rsquo;s how we decide who we work with, and how the owner decides whether to work with us.</p></div></li>
           <li class="engine-item"><div><p><strong>If there&rsquo;s money on the table, 14 days.</strong> The Decision Diagnostic, or the Sellable-Numbers Scan if the owner is selling. At least 3x the fee in owner-accepted value, in 14 days, or the client pays nothing. Then the 90-Day Decision Resolution puts the Financial Rhythm System&trade; in place.</p></div></li>
         </ol>
         <p><a class="btn btn-secondary" href={askLink}>Get your private link</a></p>
@@ -236,7 +255,8 @@ const faqJsonLd = {
       <div class="container-narrow">
         <span class="section-eyebrow">For your group</span>
         <h2>Bring Russell to your group.</h2>
-        <p class="lede">60 to 90 minutes for a Vistage group, an EOS session or a webinar. Each owner brings three reports. Russell finds where the money&rsquo;s leaking and puts a dollar estimate on plugging each leak. Each owner&rsquo;s numbers stay private.</p>
+        <p class="lede">Every owner in the room leaves with a dollar estimate on their biggest leak. 60 to 90 minutes for a Vistage group, an EOS session or a webinar. Each owner brings three reports, and each owner&rsquo;s numbers stay private.</p>
+        <p class="muted-note">For EOS implementers: The Scorecard tells you the boat is moving. We tell you if it&rsquo;s pointed at the money.</p>
         <a class="btn btn-secondary" href={bringToGroup}>Ask about a date</a>
       </div>
     </div>
@@ -288,6 +308,8 @@ const faqJsonLd = {
   .pillars li { padding: 16px 0; border-top: 1px solid var(--hairline); font-size: 17px; }
   .pillars li:last-child { border-bottom: 1px solid var(--hairline); }
   .listen li { font-size: 20px; font-weight: 500; }
+  .say li { font-size: 19px; font-weight: 500; }
+  .say-who { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; margin-bottom: 6px; }
   .lede, .hero-microcopy { overflow-wrap: anywhere; }
   .muted-note { color: var(--muted); font-size: 14px; }
   .close-tagline { color: rgba(255,255,255,0.6); font-size: 15px; margin-top: 24px; font-style: italic; }
