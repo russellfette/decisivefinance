@@ -1,5 +1,6 @@
 ---
 // Where Are You? Source: site-visuals-handoff-2026-10-17/charts/situation-2x2.svg, rebuilt as HTML so every word is real text.
+// Y axis matches the Vistage TA1567 host deck, slide 6 (2026-10-29): vertical question, Yes at top, No at bottom.
 interface Props { audience?: 'owner' | 'advisor'; headingLevel?: 'h2' | 'h3' }
 const { audience = 'owner' } = Astro.props;
 const quads = [
@@ -21,7 +22,11 @@ const ask = audience === 'advisor'
     <p class="sgrid-ask">{ask.q}</p>
   </div>
   <figure class="sgrid-figure">
-    <div class="sgrid-yaxis">Can you decide from your numbers? <span aria-hidden="true">&uarr;</span></div>
+    <div class="sgrid-yaxis">
+      <span class="sgrid-y-end">Yes</span>
+      <span class="sgrid-y-label">Can you decide from your numbers? <span aria-hidden="true">&rarr;</span></span>
+      <span class="sgrid-y-end">No</span>
+    </div>
     <div class="sgrid-board">
       {quads.map((q) => (
         <a class={`sgrid-q sgrid-q-${q.k}`} href={q.href}>
@@ -41,10 +46,11 @@ const ask = audience === 'advisor'
   .sgrid-lede { font-size: 21px; line-height: 1.45; color: var(--ink); max-width: 480px; margin-bottom: 28px; }
   .sgrid-ask-label { font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
   .sgrid-ask { font-size: 19px; font-weight: 600; color: var(--ink); }
-  .sgrid-figure { margin: 0; }
+  .sgrid-figure { margin: 0; display: grid; grid-template-columns: auto 1fr; column-gap: 12px; }
   .sgrid-yaxis, .sgrid-xaxis { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); }
-  .sgrid-yaxis { margin-bottom: 10px; }
-  .sgrid-xaxis { display: flex; justify-content: space-between; gap: 10px; margin-top: 12px; }
+  .sgrid-yaxis { display: flex; flex-direction: column; justify-content: space-between; align-items: center; gap: 12px; padding: 4px 0; }
+  .sgrid-y-label { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; }
+  .sgrid-xaxis { grid-column: 2; display: flex; justify-content: space-between; gap: 10px; margin-top: 12px; }
   .sgrid-xaxis span:nth-child(2) { text-align: center; }
   .sgrid-board { display: grid; grid-template-columns: 1fr 1fr; border: 1.5px solid var(--rule); background: var(--white); }
   .sgrid-q { display: flex; flex-direction: column; gap: 10px; padding: 26px 24px; min-height: 230px; color: var(--ink); text-decoration: none; transition: background .15s ease; }
@@ -64,6 +70,7 @@ const ask = audience === 'advisor'
     .sgrid-q-name { font-size: 12px; letter-spacing: 0.06em; }
     .sgrid-q-body { font-size: 13.5px; }
     .sgrid-q-start { font-size: 13px; }
-    .sgrid-xaxis { font-size: 10.5px; }
+    .sgrid-xaxis, .sgrid-yaxis { font-size: 10.5px; }
+    .sgrid-figure { column-gap: 8px; }
   }
 </style>
