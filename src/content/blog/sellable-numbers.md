@@ -91,6 +91,6 @@ That's the whole idea behind what we call sellable numbers: the numbers a buyer 
 
 That's exactly what the Sellable-Numbers Scan is built to show. In 14 days, in dollars, we show an owner what a buyer would re-price in their numbers and what the company is worth once those numbers can be believed. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch. If the shape fits, we'll talk about the Scan. If it doesn't, you'll know inside the first call.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense. If the shape fits, we'll talk about the Scan. If it doesn't, you'll know inside the first call.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

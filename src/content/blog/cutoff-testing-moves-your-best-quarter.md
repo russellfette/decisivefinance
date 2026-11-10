@@ -67,7 +67,7 @@ Cutoff is not an accounting curiosity. It is the mechanism that decides whether 
 
 The Sellable-Numbers Scan runs the buyer's read on your side first, re-cuts the trailing twelve on the basis he will use, and puts a dollar figure on what a cutoff adjustment would cost before anyone else is holding the pen. In 14 days, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If you own the company, [book a fit call](https://calendly.com/russell-decisive/30min). If you are advising on a specific deal and want this cleared before diligence opens, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch either way.
+If you own the company, [book a fit call](https://calendly.com/russell-decisive/30min). If you are advising on a specific deal and want this cleared before diligence opens, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes either way. You leave with at least one named action, and we both know whether working together makes sense.
 
 Decide from the numbers. Prove it in the cash.
 

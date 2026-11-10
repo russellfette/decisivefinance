@@ -60,6 +60,6 @@ Whether you're an owner circling a sale or an advisor about to run one, the firs
 
 The Sellable-Numbers Scan is built to surface exactly this. In 14 days, in dollars, we show what a buyer would re-price and where the value is trapped, plus the first three moves. For owners, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals and want to talk about protecting a specific one, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch either way.
+If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals and want to talk about protecting a specific one, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes either way. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

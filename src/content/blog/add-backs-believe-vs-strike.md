@@ -61,6 +61,6 @@ The add-back schedule is one specific place the larger question shows up: are yo
 
 The Sellable-Numbers Scan builds the defensible version and dollarizes the gap between it and what you're currently carrying. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

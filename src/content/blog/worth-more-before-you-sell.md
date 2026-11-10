@@ -61,6 +61,6 @@ That connects directly to the other three questions every owner faces: [whether 
 
 That is what the Sellable-Numbers Scan is built to find. In 14 days, in dollars, we show an owner where the value is trapped and what the company is worth once the numbers can be believed, plus the first three moves. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch. A more valuable company and the numbers to prove it is the whole job.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense. A more valuable company and the numbers to prove it is the whole job.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

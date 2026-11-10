@@ -53,6 +53,6 @@ The honest valuation is the entry point to the rest of the picture: [growing wha
 
 The Worth X-Ray is built to answer exactly this, fast. Send us three reports, and inside 48 hours we send back a one-page, dollarized read: what a buyer would pay today, what a buyer would re-price, and the first three fixes that move the number.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

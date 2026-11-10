@@ -54,6 +54,6 @@ The signals map to the fixes: [the five findings that re-trade a deal](/perspect
 
 The Sellable-Numbers Scan is a fast, independent read you can point a client to: in 14 days, in dollars, what a buyer would re-price and what the company is worth once the numbers can be believed. We take no piece of any transaction, so your mandate and your relationship stay yours.
 
-If you run deals and want to protect one, [book a fit call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch.
+If you run deals and want to protect one, [book a fit call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

@@ -53,6 +53,6 @@ Each finding has its own fix: [add-backs a buyer will believe versus strike](/pe
 
 The Sellable-Numbers Scan runs the buyer's read on your side first, in dollars, and clears the findings while there's still time. For owners, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals and want to protect a specific one, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch either way.
+If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals and want to protect a specific one, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes either way. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

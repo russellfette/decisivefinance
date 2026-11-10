@@ -66,6 +66,6 @@ The filing calendar is one of several clocks running on your numbers without you
 
 The Sellable-Numbers Scan builds the accrual view and the tax-to-accrual bridge, and dollarizes the gap between the number you have been running on and the number a buyer would underwrite. In 14 days, guaranteed: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If your most recent finished number is a return, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If your most recent finished number is a return, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

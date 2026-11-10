@@ -52,6 +52,6 @@ Succession is one of the ownership triggers alongside [an unsolicited buyer](/pe
 
 The Worth X-Ray gives you a fast, neutral read to ground the conversation. Send us three reports, and inside 48 hours we send back a one-page, dollarized view of what the company is worth on numbers that can be believed, and the first three fixes.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

@@ -73,7 +73,7 @@ The trailing twelve is the single number your company is priced on, and it chang
 
 The Sellable-Numbers Scan builds the roll-off schedule on a consistent basis, names the launch months worth having and the ones that cost you, and puts a dollar figure on the difference. Fourteen days, one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If you own the company and a sale is anywhere in the next three years, [book a fit call](https://calendly.com/russell-decisive/30min). If you advise owners and want to see what the schedule looks like on a real set of books, [book the same call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch either way.
+If you own the company and a sale is anywhere in the next three years, [book a fit call](https://calendly.com/russell-decisive/30min). If you advise owners and want to see what the schedule looks like on a real set of books, [book the same call](https://calendly.com/russell-decisive/30min). Thirty minutes either way. You leave with at least one named action, and we both know whether working together makes sense.
 
 Decide from the numbers. Prove it in the cash.
 

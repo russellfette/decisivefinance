@@ -54,6 +54,6 @@ The margin squeeze is the current-events entry to the value work: [which custome
 
 The Worth X-Ray finds the squeeze fast. Send us three reports, and inside 48 hours we send back a one-page, dollarized read of where the margin is going and the first three fixes.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

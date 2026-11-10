@@ -52,6 +52,6 @@ Independence is why the diligence work holds up: [the five findings that re-trad
 
 The Sellable-Numbers Scan is independent by design: we find and dollarize what a buyer would re-price, with nothing riding on whether you ever sell. For owners, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes, no pitch.
+If you're an owner, [book a fit call](https://calendly.com/russell-decisive/30min). If you run deals, [book the same call](https://calendly.com/russell-decisive/30min) and tell us the deal. Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

@@ -119,7 +119,7 @@ We built a self-assessment for that. Twelve questions. Takes six minutes. You ge
 
 **[Take the Stalled Portco Self-Assessment](/assessment/walking-dead)**
 
-If the self-assessment comes back in the high range, the follow-up is a 30-minute diagnostic call with Russ. No deck, no pitch. A read of the pattern and a map of what the first 30 days would look like.
+If the self-assessment comes back in the high range, the follow-up is a 30-minute diagnostic call with Russ. No deck. A read of the pattern and a map of what the first 30 days would look like.
 
 **[Book a 30-minute call](https://calendly.com/russell-decisive/30min)**
 

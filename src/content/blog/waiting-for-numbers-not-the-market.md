@@ -52,6 +52,6 @@ This is the honest front door to the whole timing question: [when the clock actu
 
 The Worth X-Ray is the fastest way to replace the story with the facts. Send us three reports, and inside 48 hours we send back a one-page, dollarized read: what a buyer would re-price today and the first three fixes. It tells you whether the thing you've been calling "the market" is really your numbers.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

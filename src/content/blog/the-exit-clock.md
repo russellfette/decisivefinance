@@ -58,6 +58,6 @@ If any of the triggers above are on your horizon, or you just want the honest an
 
 That fast read is what the Worth X-Ray is for. Send us three reports, and inside 48 hours we send back a one-page, dollarized read: what a buyer would re-price today and the first three fixes. It's the honest starting point, and it tells you whether the clock is worth starting now.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch. Because every month you wait moves the sale date a month, and the owners who get their number are the ones who started early.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense. Because every month you wait moves the sale date a month, and the owners who get their number are the ones who started early.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

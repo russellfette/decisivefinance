@@ -56,6 +56,6 @@ An untrustworthy top line is the revenue-side version of the pattern behind the 
 
 The Sellable-Numbers Scan tests whether your top line would survive a buyer's read and dollarizes what it would cost if it does not. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*
