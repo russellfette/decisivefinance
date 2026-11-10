@@ -36,7 +36,7 @@ const introExplore = {
   subject: 'Where your profit is leaking',
   body: `[Owner], I’d like you to meet Russell Fette at Decisive Finance. He can show you where your profit is leaking, with a dollar figure on each leak. You know it’s there; you just haven’t had time to find it.
 
-He finds it fast. Send him three reports, and in 48 hours he’s found the two or three biggest leaks. Then he spends an hour with you confirming what each one is worth to fix. It looks forward, built on your own numbers. Here’s the link: [your private link]
+He finds it fast. Send him three reports you already have (P&L by month, balance sheet, the sales or margin report you actually look at) and in 48 hours he’s found the two or three biggest leaks. Then he spends an hour with you putting a dollar figure on each one and what to decide first. It’s how you both figure out whether working together makes sense. Here’s the link: [your private link]
 
 Russell, over to you.`,
 };
@@ -59,7 +59,7 @@ const proofOperating = [
 const faqs = [
   {
     q: 'What does the owner have to send?',
-    a: 'Three reports: monthly P&L and balance sheet for the last 24 months, plus whichever sales or margin report they actually read. They upload them through your private link. There’s no charge for the read.',
+    a: 'Three reports: monthly P&L and balance sheet for the last 24 months, plus whichever sales or margin report they actually read. They upload them through your private link.',
   },
   {
     q: 'What happens to their files?',
@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: 'Why the hour after the read?',
-    a: 'So every dollar figure is one the owner agrees with. We take the findings one at a time, and we don’t move on until the owner says the number holds up. It’s also how we decide who we work with, and how the owner decides whether to work with us. If we can’t find real money, we tell them that too.',
+    a: 'So every dollar figure is one the owner agrees with. We take the findings one at a time, and we don’t move on until the owner says the number holds up. It’s how we figure out mutual fit. If we can’t find real money, we tell them that too.',
   },
   {
     q: 'What does it cost after that?',
@@ -152,9 +152,9 @@ const faqJsonLd = {
         <h2>The leaks, in dollars, in 48 hours.</h2>
         <p class="lede">What the owner gets: the two or three biggest places money is leaking, each with a dollar figure, looking forward from their own history. Here&rsquo;s how we back it up.</p>
         <ol class="engine-list">
-          <li class="engine-item"><div><p><strong>The owner uploads three reports through your link.</strong> Monthly P&amp;L and balance sheet for 24 months, plus the sales or margin report they actually read. Nothing to schedule to start.</p></div></li>
+          <li class="engine-item"><div><p><strong>The owner uploads three reports through your link.</strong> Monthly P&amp;L and balance sheet for 24 months, plus the sales or margin report they actually read.</p></div></li>
           <li class="engine-item"><div><p><strong>In 48 hours, we&rsquo;ve found the two or three biggest places money is leaking.</strong> Russell reviews and signs every read. Files stay private and are deleted after 30 days.</p></div></li>
-          <li class="engine-item"><div><p><strong>Then an hour with the owner, confirming each dollar figure before we move on.</strong> It&rsquo;s how we decide who we work with, and how the owner decides whether to work with us.</p></div></li>
+          <li class="engine-item"><div><p><strong>Then Russell spends an hour with the owner putting a dollar figure on each one.</strong> It&rsquo;s how we figure out mutual fit.</p></div></li>
           <li class="engine-item"><div><p><strong>If there&rsquo;s money on the table, 14 days.</strong> The Decision Diagnostic, or the Sellable-Numbers Scan if the owner is selling. At least 3x the fee in owner-accepted value, in 14 days, or the client pays nothing. Then the 90-Day Decision Resolution puts the Financial Rhythm System&trade; in place.</p></div></li>
         </ol>
         <p><a class="btn btn-secondary" href={askLink}>Get your private link</a></p>
@@ -180,7 +180,7 @@ const faqJsonLd = {
             </tbody>
           </table>
         </div>
-        <p class="muted-note">The 48-hour read has no charge. Ongoing work adds 5% of realized value, validated quarterly. A 90-day engagement signed within 7 days of the Day 14 readout credits the 14-day fee in full.</p>
+        <p class="muted-note">Ongoing work adds 5% of realized value, validated quarterly. A 90-day engagement signed within 7 days of the Day 14 readout credits the 14-day fee in full.</p>
         <h3>What your client sees on Day 14.</h3>
         <ReadoutSample />
       </div>
