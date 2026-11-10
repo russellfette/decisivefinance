@@ -55,6 +55,6 @@ The working capital peg is one more place a deal is priced on numbers the owner 
 
 The Sellable-Numbers Scan rebuilds the working capital number a buyer will peg you on and dollarizes the true-up before you sign, in 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that is the term in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that is the term in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

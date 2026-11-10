@@ -53,6 +53,6 @@ A QoE is the concentrated version of the whole exit question: are your numbers b
 
 The Sellable-Numbers Scan runs the buyer's exam on your side, in dollars, before the buyer does. In 14 days, we show what a QoE would re-price and what the company is worth once the numbers can be believed, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

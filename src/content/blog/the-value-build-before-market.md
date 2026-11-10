@@ -52,6 +52,6 @@ The value build is the sum of the individual levers, run as a program: [which cu
 
 The Sellable-Numbers Scan is where the build starts: it finds the value and dollarizes it before you commit a year to the work. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing. A more valuable company and the numbers to prove it is the whole job.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

@@ -65,6 +65,6 @@ Every one of these lines is going to get read. The only open question is whether
 
 The Sellable-Numbers Scan runs that read on your side, in dollars, before a buyer runs it on his. In 14 days, we show what the related-party lines would cost in diligence, which corrections are supportable in your favor, and what the company is worth once a stranger can believe the numbers. One guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

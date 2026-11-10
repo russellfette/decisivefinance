@@ -53,6 +53,6 @@ The Six Trap Diagnostic™ is the first instrument we run, and it sets the prior
 
 That scoring runs inside the Sellable-Numbers Scan. In 14 days, in dollars, we show an owner where value is trapped and what the company is worth once the numbers can be believed, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

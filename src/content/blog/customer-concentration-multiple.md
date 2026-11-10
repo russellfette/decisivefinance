@@ -54,6 +54,6 @@ Concentration is one of the value levers you can only manage once you can see pr
 
 The Sellable-Numbers Scan measures your concentration the way a buyer will and dollarizes what reducing it is worth to your price. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

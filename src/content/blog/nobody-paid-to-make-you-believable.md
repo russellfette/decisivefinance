@@ -54,6 +54,6 @@ This is the villain behind the whole cluster: it is why [clean books are not bel
 
 The Sellable-Numbers Scan does the job that falls in the gap. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

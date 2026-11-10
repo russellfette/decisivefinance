@@ -53,6 +53,6 @@ Owner-independence is both a diligence risk to clear and a value lever to pull, 
 
 The Sellable-Numbers Scan flags owner-dependence and dollarizes the discount it's costing you, while there's still time to move the trend. The guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

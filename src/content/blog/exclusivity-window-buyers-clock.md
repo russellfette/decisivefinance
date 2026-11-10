@@ -71,7 +71,7 @@ Exclusivity is not a formality and it is not a countdown to closing. It is a per
 
 The Sellable-Numbers Scan runs the buyer's read on your side of the table first. We re-cut the trailing twelve on the basis a diligence team will use, build the answer file the first two request waves will ask for, and put a dollar figure on what a slow answer would cost you. In 14 days, with one guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If you own the company and an LOI is anywhere on the horizon, [book a fit call](https://calendly.com/russell-decisive/30min). If you are advising a seller who is about to sign one, [book the same call](https://calendly.com/russell-decisive/30min) and tell us where the deal stands. Thirty minutes, no pitch either way.
+If you own the company and an LOI is anywhere on the horizon, [book a fit call](https://calendly.com/russell-decisive/30min). If you are advising a seller who is about to sign one, [book the same call](https://calendly.com/russell-decisive/30min) and tell us where the deal stands. Thirty minutes either way. You leave with at least one named action, and we both know whether working together makes sense.
 
 Decide from the numbers. Prove it in the cash.
 

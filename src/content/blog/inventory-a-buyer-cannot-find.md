@@ -58,6 +58,6 @@ Phantom value on the balance sheet is the asset-side version of a broader proble
 
 The Sellable-Numbers Scan checks the balance sheet a buyer will check and dollarizes what will not survive him counting, in 14 days, with a simple guarantee: at least 3x the Scan fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that is the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

@@ -53,6 +53,6 @@ An unsolicited approach is one trigger among several: [succession and the partne
 
 The Worth X-Ray is the fast read to run the day the call comes. Send us three reports, and inside 48 hours we send back a one-page, dollarized view of what a buyer would re-price and the first three fixes, so you enter the conversation knowing what he'll find.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

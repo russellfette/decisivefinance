@@ -56,6 +56,6 @@ Discount creep is a pricing problem, a margin problem, and a believability probl
 
 The Sellable-Numbers Scan rebuilds realized price along with the rest of the buyer's-eyes read, and dollarizes what the leak is worth through a realistic multiple. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If you suspect the gap is there, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If you suspect the gap is there, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*

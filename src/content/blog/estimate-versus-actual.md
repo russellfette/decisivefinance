@@ -76,7 +76,7 @@ It matters in dollars. A $15M manufacturer whose largest customer was its least 
 
 The Decision Diagnostic builds this view from your own books, job by job and customer by customer, and points it at the decision in front of you. At least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If margin is the question on your desk, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If margin is the question on your desk, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 Decide from the numbers. Prove it in the cash.
 

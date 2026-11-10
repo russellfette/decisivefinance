@@ -52,6 +52,6 @@ The clean trailing twelve is the product of the same work as the rest of the dil
 
 The Sellable-Numbers Scan tells you, in 14 days, how clean your trailing twelve is today and what it would take to get it there. For owners, the guarantee: at least 3x the fee in owner-accepted value, in 14 days, or you pay nothing.
 
-If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes, no pitch.
+If that's the question in front of you, [book a fit call](https://calendly.com/russell-decisive/30min). Thirty minutes. You leave with at least one named action, and we both know whether working together makes sense.
 
 *Russell Fette · Decisive Finance · Creator of the Financial Rhythm System™*
