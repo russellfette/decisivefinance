@@ -104,7 +104,7 @@ from repo state` or `content-queue.md`.
    `src/content/linkedin/` changed, and say so in the email.
 5. Email Russ at russ@decisive.finance through Superhuman on the work
    account: the mode and why, the summary, the LinkedIn draft or drafts in
-   full, and a copy-paste git block.
+   full, and the one-line ship block per the W-1 prompt.
 
 Never push blog posts, never post. Step 3c is the only push. Russ ships the blog and voices every external word.
 
