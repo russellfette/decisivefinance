@@ -141,7 +141,7 @@ Variants:
 - Manifesto byline: "By Russell Fette. Former VC-backed tech operator. Now installing decision systems for stalled funded tech, on guarantee."
 - Two-Pager / homepage signature: "Russell Fette · Decisive Finance · Former VC-backed tech operator · Now installing forward decision systems for stalled funded tech, on guarantee."
 - LinkedIn headline: "Decision-First Finance for stalled funded tech. Former VC-backed tech operator. Decisive Finance."
-- Cold outreach signature: "Russell Fette, Decisive Finance | Former operator inside funded tech, now installing the discipline to defend every next call | russell@decisive.finance"
+- Cold outreach signature: "Russell Fette, Decisive Finance | Former operator inside funded tech, now installing the discipline to defend every next call | russ@decisive.finance"
 
 If a derivative is signed by Russell and does not carry the bio claim in some version of the canonical line, the derivative is out of compliance.
 
@@ -307,7 +307,7 @@ Production domain `decisive.finance` is already live on Cloudflare Pages project
 
 **Footer**
 - No "Email and domain transitioning" copy.
-- Email addresses read `russell@decisive.finance`. Do not list `@decisivefinance.com` anywhere.
+- Email addresses read `russ@decisive.finance`. Do not list `@decisivefinance.com` anywhere.
 - Founder bio renders in italic above the contact line on every signed surface (homepage, manifesto, two-pager, about).
 
 **404 and 500**

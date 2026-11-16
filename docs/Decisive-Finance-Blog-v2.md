@@ -190,7 +190,7 @@ grep -rin "game-changer\|synergy\|best-in-class\|cutting-edge\|world-class" src/
 grep -rn "decisivefinance.com" src/content/blog/
 grep -rn "transitioning to" src/content/blog/
 grep -rn "contact@financialrhythms" src/content/blog/
-grep -rn "contact@decisive.finance" src/content/blog/    # canonical is russell@decisive.finance
+grep -rn "contact@decisive.finance" src/content/blog/    # canonical is russ@decisive.finance
 ```
 
 ### Judgment-level read

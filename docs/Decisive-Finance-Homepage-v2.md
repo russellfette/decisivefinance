@@ -272,7 +272,7 @@ Secondary: `[See the three tiers]` (outlined white) → `/tiers/`
 
 *Former VC-backed tech operator. Now installing decision systems for stalled funded tech, on guarantee.*
 
-russell@decisive.finance · decisive.finance · linkedin.com/in/russellfette
+russ@decisive.finance · decisive.finance · linkedin.com/in/russellfette
 
 Book: calendly.com/russell-decisive/30min
 
@@ -297,7 +297,7 @@ Most Diagnostics surface $22,500 to $30,000 of trapped value in 14 days. Guarant
 - name: "Decisive Finance"
 - url: "https://decisive.finance"
 - description: "Decision-First Finance for venture-backed companies stalled between rounds. Most Diagnostics surface $22,500 to $30,000 of trapped value in 14 days. Guaranteed."
-- email: "russell@decisive.finance"
+- email: "russ@decisive.finance"
 - founder: { @type: Person, name: "Russell Fette", jobTitle: "Founder" }
 - sameAs: ["https://linkedin.com/in/russellfette"]
 - areaServed: "US"

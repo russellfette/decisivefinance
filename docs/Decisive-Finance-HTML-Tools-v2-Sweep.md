@@ -70,7 +70,7 @@ Verify on both tools:
 - OG image renders correctly in LinkedIn post inspector.
 - Canonical URL set (assessment lives at `/walking-dead/`; checklist lives at `/checklist/` or wherever deploy targets).
 - "Decisive Service Architecture Blueprint" version reference is **v1.9** (not v1.8 or earlier).
-- Footer carries `russell@decisive.finance` (not `contact@*`).
+- Footer carries `russ@decisive.finance` (not `contact@*`).
 - No `decisivefinance.com` references anywhere in the tool.
 - No "Email and domain transitioning" copy.
 

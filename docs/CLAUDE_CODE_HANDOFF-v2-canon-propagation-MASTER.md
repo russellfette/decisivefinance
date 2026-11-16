@@ -200,8 +200,8 @@ Run these greps, fix every match outside `src/content/blog/_archive/`. The repla
 |---|---|
 | `decisivefinance\.com` | `decisive.finance` |
 | `transitioning to` (in footer / about / contact) | (delete the line entirely) |
-| `contact@financialrhythms` | `russell@decisive.finance` |
-| `contact@decisive.finance` | `russell@decisive.finance` |
+| `contact@financialrhythms` | `russ@decisive.finance` |
+| `contact@decisive.finance` | `russ@decisive.finance` |
 
 ### Em dashes (zero tolerance)
 
@@ -235,7 +235,7 @@ Update the `Organization` / `ProfessionalService` schema (likely emitted from a 
   "name": "Decisive Finance",
   "url": "https://decisive.finance",
   "description": "Decision-First Finance for venture-backed companies stalled between rounds. Most Diagnostics surface $22,500 to $30,000 of trapped value in 14 days. Guaranteed.",
-  "email": "russell@decisive.finance",
+  "email": "russ@decisive.finance",
   "founder": {
     "@type": "Person",
     "name": "Russell Fette",
@@ -250,7 +250,7 @@ Update the `Organization` / `ProfessionalService` schema (likely emitted from a 
 
 Sweep:
 - Any `description` field referencing `$22,500 to $50,000`, `trapped capital`, `forward-reallocation potential` → fix per the claim/noun replacements in §4.
-- Any `email` field referencing `contact@*` → `russell@decisive.finance`.
+- Any `email` field referencing `contact@*` → `russ@decisive.finance`.
 - Any `founder` block missing the bio description → add per §9a.
 
 The `Article` schema on each blog post should use the post's `dominantClaim` and `awarenessStage` frontmatter. If the schema component does not yet read those fields, add the mapping.
@@ -297,7 +297,7 @@ The `HowTo` schema on `/how-it-works/` (if still live) needs the v2.4 step langu
 
 ### Outbound links
 - [ ] Calendly URL `https://calendly.com/russell-decisive/30min` opens to a 30-minute slot.
-- [ ] Mailto `russell@decisive.finance` opens correctly.
+- [ ] Mailto `russ@decisive.finance` opens correctly.
 - [ ] All in-page anchor links resolve (`#stuck`, `#traps`, `#tiers`, `#artifacts`, `#proof`, `#cohort`, `#book` on home).
 - [ ] HTML lead-magnet routes resolve (Walking Dead assessment, Recovery Checklist).
 

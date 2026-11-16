@@ -35,7 +35,7 @@ If `Decisive-Finance-Homepage-v1.md` is referenced anywhere, it is stale. v2 sup
 - **Tier 3 pricing:** $7,500 per month + 5% success fee on Realized Value.
 - **Founder bio (signature block):** *"Former VC-backed tech operator. Now installing decision systems for stalled funded tech, on guarantee."* Per Phrase Book §9a. Mandatory on every signed long-form public surface.
 - **Closing frame (allowed on home):** *"The category belongs to the market."*
-- **Domain and contact:** `decisive.finance`, `russell@decisive.finance`, `calendly.com/russell-decisive/30min`.
+- **Domain and contact:** `decisive.finance`, `russ@decisive.finance`, `calendly.com/russell-decisive/30min`.
 - **Footer:** No "Email and domain transitioning to decisivefinance.com" line. Removed entirely. If you find it on this page or anywhere else, kill it.
 
 ---
@@ -132,7 +132,7 @@ Match the Homepage v2 spec section for section. Each section has a width token a
 - Sitewide footer component, but ensure homepage-specific signature block renders above:
   - **Russell Fette · Decisive Finance**
   - *Former VC-backed tech operator. Now installing decision systems for stalled funded tech, on guarantee.* (founder bio per §9a, NEW)
-  - russell@decisive.finance · decisive.finance · linkedin.com/in/russellfette
+  - russ@decisive.finance · decisive.finance · linkedin.com/in/russellfette
   - Book: calendly.com/russell-decisive/30min
 - No "Email and domain transitioning" line. If found, remove.
 
@@ -163,7 +163,7 @@ The current home page emits an `Organization` / `ProfessionalService` schema. Sw
 
 - `description` field: replace any `"$22,500 to $50,000"` with `"$22,500 to $30,000"`.
 - Replace any `"trapped capital"` or `"forward-reallocation potential"` with `"trapped value"`.
-- `email` field: ensure `russell@decisive.finance`. Remove any `contact@financialrhythms.com` or `contact@decisive.finance` variants.
+- `email` field: ensure `russ@decisive.finance`. Remove any `contact@financialrhythms.com` or `contact@decisive.finance` variants.
 - `founder` block: ensure `name: "Russell Fette"` and add `description: "Former VC-backed tech operator who built financial decision systems inside funded companies before installing them, on guarantee, for the next three."` (founder bio per §9a).
 
 ---
@@ -231,7 +231,7 @@ grep -r "UNLOCK" src/                 # exception: "trapped capital" → "trappe
 grep -r "decisivefinance.com" src/
 grep -r "transitioning to" src/
 grep -r "contact@financialrhythms" src/
-grep -r "contact@decisive.finance" src/    # canonical is russell@decisive.finance per v2.2
+grep -r "contact@decisive.finance" src/    # canonical is russ@decisive.finance per v2.2
 
 # Em dashes (zero tolerance)
 grep -r "—" src/
@@ -269,7 +269,7 @@ For ambiguous cases (e.g., "underwrite" in a partner-facing PDF that's allowed):
 - LCP < 2.5s, CLS < 0.1.
 - Meta title (55 to 60 chars), meta description (140 to 155 chars), canonical, OG image, OG title, OG description, Twitter card all present and accurate.
 - All in-page anchor links resolve. `#traps`, `#tiers`, `#artifacts`, `#proof`, `#cohort`, `#book` all jump correctly.
-- Calendly URL opens to a 30-minute slot. Mailto link opens with `russell@decisive.finance`.
+- Calendly URL opens to a 30-minute slot. Mailto link opens with `russ@decisive.finance`.
 - LinkedIn post inspector renders the OG correctly.
 
 ---

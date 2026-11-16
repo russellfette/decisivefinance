@@ -8,7 +8,7 @@ const description =
   'Most owners of growing companies can’t say which customers actually make money. What to listen for, the 48-hour read, fees by revenue band, and two intros you can send as is.';
 
 const mail = (subject: string, body: string) =>
-  'mailto:russell@decisive.finance?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  'mailto:russ@decisive.finance?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 
 const introOwner = mail('Intro: [owner name], [company]', 'Russell, meet [owner name], who runs [company]. [One line on what is going on.] I’ve copied them here.');
 const askLink = mail('My private link for the 48-hour read', 'Russell, please send me my private link for the 48-hour read. [Your name, firm]');
@@ -110,7 +110,7 @@ const faqJsonLd = {
         <a class="btn btn-primary" href={introOwner}>Make an intro</a>
         <a class="btn btn-secondary" href="#what-to-say">Copy an intro email</a>
       </div>
-      <p class="hero-microcopy">Email russell@decisive.finance with the owner copied. We reply the same day.</p>
+      <p class="hero-microcopy">Email russ@decisive.finance with the owner copied. We reply the same day.</p>
     </div>
   </header>
 
@@ -232,7 +232,7 @@ const faqJsonLd = {
       <div class="container-narrow">
         <span class="section-eyebrow">What to say</span>
         <h2>Two intros. Send either as is.</h2>
-        <p class="lede">Put the owner on the To line and russell@decisive.finance on cc. Fill the brackets.</p>
+        <p class="lede">Put the owner on the To line and russ@decisive.finance on cc. Fill the brackets.</p>
         {[{ label: 'When the owner is curious', e: introExplore }, { label: 'When you know they need help', e: introDirect }].map(({ label, e }) => (
           <div class="intro-card">
             <h3>{label}</h3>
@@ -283,7 +283,7 @@ const faqJsonLd = {
     <div class="container">
       <div class="container-narrow">
         <h2>Make an intro.</h2>
-        <p class="lede">Email russell@decisive.finance with the owner copied. We reply the same day.</p>
+        <p class="lede">Email russ@decisive.finance with the owner copied. We reply the same day.</p>
         <a href={introOwner} class="btn btn-primary">Make an intro</a>
         <p class="close-tagline">Decide from the numbers. Prove it in the cash.</p>
       </div>

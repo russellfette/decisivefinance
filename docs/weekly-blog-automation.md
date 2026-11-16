@@ -102,7 +102,7 @@ from repo state` or `content-queue.md`.
 4. Build-check via the /tmp trick, since rollup fails on mounted node_modules.
    Skip the build in `repurpose` mode when only files under
    `src/content/linkedin/` changed, and say so in the email.
-5. Email Russ at russell@decisive.finance through Superhuman on the work
+5. Email Russ at russ@decisive.finance through Superhuman on the work
    account: the mode and why, the summary, the LinkedIn draft or drafts in
    full, and a copy-paste git block.
 

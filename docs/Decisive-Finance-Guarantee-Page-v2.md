@@ -153,7 +153,7 @@ The Diagnostic is the way in. 14 days. Three hours of CEO time. Five named artif
 
 *Former VC-backed tech operator. Now installing decision systems for stalled funded tech, on guarantee.*
 
-russell@decisive.finance · decisive.finance · linkedin.com/in/russellfette
+russ@decisive.finance · decisive.finance · linkedin.com/in/russellfette
 
 ---
 
