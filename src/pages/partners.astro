@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SituationGrid from '../components/SituationGrid.astro';
 import ReadoutSample from '../components/ReadoutSample.astro';
+import NamedProof from '../components/NamedProof.astro';
 
 const title = 'For referral partners | Decisive Finance';
 const description =
@@ -149,12 +150,12 @@ const faqJsonLd = {
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">The 48-hour read</span>
-        <h2>The leaks, in dollars, in 48 hours.</h2>
-        <p class="lede">What the owner gets: the two or three biggest places money is leaking, each with a dollar figure, looking forward from their own history. Here&rsquo;s how we back it up.</p>
+        <h2>Where the money is leaking, in dollars, in 48 hours.</h2>
+        <p class="lede">For a member whose revenue is growing and profit isn&rsquo;t keeping up.</p>
         <ol class="engine-list">
-          <li class="engine-item"><div><p><strong>The owner uploads three reports through your link.</strong> Monthly P&amp;L and balance sheet for 24 months, plus the sales or margin report they actually read.</p></div></li>
-          <li class="engine-item"><div><p><strong>In 48 hours, we&rsquo;ve found the two or three biggest places money is leaking.</strong> Russell reviews and signs every read. Files stay private and are deleted after 30 days.</p></div></li>
-          <li class="engine-item"><div><p><strong>Then Russell spends an hour with the owner putting a dollar figure on each one.</strong> It&rsquo;s how we figure out mutual fit.</p></div></li>
+          <li class="engine-item"><div><p><strong>They send three reports (P&amp;L by month, balance sheet, whichever sales or margin report they actually read).</strong></p></div></li>
+          <li class="engine-item"><div><p><strong>In 48 hours we&rsquo;ve found the two or three biggest leaks.</strong></p></div></li>
+          <li class="engine-item"><div><p><strong>Then Russell spends an hour with them putting a dollar figure on each one.</strong> It&rsquo;s how we figure out mutual fit.</p></div></li>
           <li class="engine-item"><div><p><strong>If there&rsquo;s money on the table, 14 days.</strong> The Decision Diagnostic, or the Sellable-Numbers Scan if the owner is selling. At least 3x the fee in owner-accepted value, in 14 days, or the client pays nothing. Then the 90-Day Decision Resolution puts the Financial Rhythm System&trade; in place.</p></div></li>
         </ol>
         <p><a class="btn btn-secondary" href={askLink}>Get your private link</a></p>
@@ -227,7 +228,21 @@ const faqJsonLd = {
     </div>
   </section>
 
-  <section id="what-to-say">
+  <section id="deal-professionals">
+    <div class="container">
+      <div class="container-narrow">
+        <span class="section-eyebrow">For M&amp;A advisors, brokers and transaction attorneys</span>
+        <h2>Fix the financials before the mandate, not after the QoE.</h2>
+        <p class="lede">Deals get re-traded when the seller&rsquo;s numbers can&rsquo;t hold up to a buyer&rsquo;s diligence. We find what diligence will re-price while there&rsquo;s still time to fix it. We take no piece of any transaction, so your mandate and your relationship stay yours.</p>
+        <h3>Where a buyer will push, in dollars, in 48 hours.</h3>
+        <p>Your client sends three reports: the monthly P&amp;L and balance sheet for the last 24 months, and whichever sales or margin report they actually read. In 48 hours we&rsquo;ve found where a buyer&rsquo;s diligence is likely to push. Then Russell spends an hour with them putting a dollar figure on each one and what it would take to confirm it. It&rsquo;s how we figure out mutual fit.</p>
+        <NamedProof />
+        <p><a href="/partners/decisive-one-pager-deal-professionals.pdf">Selling the company (PDF)</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-to-say" class="alt">
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">What to say</span>
@@ -250,7 +265,7 @@ const faqJsonLd = {
     </div>
   </section>
 
-  <section class="alt">
+  <section>
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">For your group</span>
@@ -262,7 +277,7 @@ const faqJsonLd = {
     </div>
   </section>
 
-  <section>
+  <section class="alt">
     <div class="container">
       <div class="container-narrow">
         <span class="section-eyebrow">Questions partners ask</span>
@@ -318,7 +333,7 @@ const faqJsonLd = {
   .fee-table th, .fee-table td { text-align: left; padding: 14px 12px; border-bottom: 1px solid var(--hairline); }
   .fee-table thead th { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
   .fee-table tbody th { font-weight: 600; }
-  .intro-card { background: var(--paper); border: 1px solid var(--hairline); border-radius: 14px; padding: 28px; margin: 24px 0; }
+  .intro-card { background: var(--white); border: 1px solid var(--hairline); border-radius: 14px; padding: 28px; margin: 24px 0; }
   .intro-card h3 { margin-top: 0; font-size: 22px; }
   .intro-subject { font-size: 16px; }
   .intro-body { white-space: pre-wrap; font-family: inherit; font-size: 16px; line-height: 1.6; background: var(--white); border: 1px solid var(--hairline); border-radius: 10px; padding: 18px 20px; margin: 0 0 18px; }
