@@ -1,0 +1,12 @@
+---
+// Disclaimer, every screen, above the result and on the print view.
+// Approved dec_mwtsnrrx_96cc17eb (2026-11-23). Tool 2 ends "to your CPA and your banker."
+interface Props { variant?: 'deal' | 'operating' }
+const { variant = 'deal' } = Astro.props;
+const close = variant === 'operating'
+  ? 'Before you act, take the printout to your CPA and your banker.'
+  : 'Before you act, take the printout to your CPA, your attorney and the advisor on your deal.';
+---
+<aside class="mt-disclaimer" aria-label="Disclaimer">
+  <p><strong>An illustration, not advice.</strong> It shows how the numbers you type move. It does not value your company, suggest a sale price, or calculate your taxes, and it is not tax, legal or investment advice. Every figure is yours or a labeled example. Nothing you type is sent or stored; closing the page erases it. {close}</p>
+</aside>

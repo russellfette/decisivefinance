@@ -7,6 +7,7 @@ import '../styles/global.css';
 
 interface Props {
   title: string;
+  ogTitle?: string;
   description: string;
   canonical?: string;
   ogImage?: string;
@@ -16,6 +17,7 @@ interface Props {
 
 const {
   title,
+  ogTitle,
   description,
   canonical,
   ogImage = '/og/default.png',
@@ -81,13 +83,13 @@ const orgJsonLd = {
 
     <meta property="og:site_name" content="Decisive Finance" />
     <meta property="og:type" content={ogType} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={ogTitle || title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImageUrl} />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={ogTitle || title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageUrl} />
 

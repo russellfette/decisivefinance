@@ -1,0 +1,251 @@
+---
+// Tool 3: The working capital target. Build brief OA/build-brief-owner-money-tools-2026-11-23.md, section 6.
+// Copy: Approved dec_mwtsnrrx_96cc17eb unless marked Canon. Structure: dec_mwtsk9cv_7eb5dbf5.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Disclaimer from '../components/money-tools/Disclaimer.astro';
+import ToolCTA from '../components/money-tools/ToolCTA.astro';
+import PrintHead from '../components/money-tools/PrintHead.astro';
+import PrintFoot from '../components/money-tools/PrintFoot.astro';
+import core from '../scripts/money-tools-core.js?raw';
+import '../styles/money-tools.css';
+
+const title = 'The working capital target | Decisive Finance';
+const ogTitle = 'The working capital target, and what it does to your price';
+const description = 'Most deals adjust the price at close for working capital. Type your months and balances to see the adjustment. Runs in your browser; nothing is stored.';
+const H1 = 'What the working capital target means for your check.';
+const months = Array.from({ length: 12 }, (_, i) => i + 1);
+const deliver = [
+  { id: 'w-ar', label: 'Receivables', help: 'Owed to you by customers at close.' },
+  { id: 'w-inv', label: 'Inventory' },
+  { id: 'w-pre', label: 'Prepaid expenses' },
+  { id: 'w-ap', label: 'Payables', help: 'What you owe vendors.' },
+  { id: 'w-acc', label: 'Accrued expenses', help: 'Wages, bonuses, taxes and bills owed but not yet paid.' },
+];
+---
+
+<BaseLayout title={title} ogTitle={ogTitle} description={description}>
+  <header class="hero mt-hero">
+    <div class="hero-inner">
+      <span class="eyebrow">The working capital target</span>
+      <h1><span class="h1-line">{H1}</span></h1>
+      <p class="hero-subhead">Deliver less working capital than the target, and the price usually comes down by the difference. Deliver more, and it usually goes up.</p>
+      <p class="mt-subnote">Most deals set the target from an average of recent months, so a slow month, a quick collection push or a delayed bill can move what you receive.</p>
+    </div>
+  </header>
+
+  <section class="mt-section mt-facts-wrap" style="padding-bottom:0">
+    <div class="mt-wrap">
+      <ul class="mt-facts">
+        <li><strong>Most private deals have one.</strong> More than 90% include a working capital adjustment. <span class="mt-source">SRS Acquiom, 2025 Deal Terms Study page (deals closed 2019 to 2024), read 2026-11-23.</span></li>
+        <li><strong>The target is usually a trailing twelve-month average.</strong> <span class="mt-source">BDO, &ldquo;Net Working Capital in M&amp;A,&rdquo; February 15, 2019; Richard De Rose, Business Law Today, October 2022.</span></li>
+        <li><strong>It is settled after closing.</strong> The price at close uses an estimate; the buyer usually sends a closing statement in 60 to 90 days and you then have 30 to 60 days to object. <span class="mt-source">De Rose, Business Law Today, October 2022.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mt-section">
+    <div class="mt-wrap">
+      <div class="mt-tool mt-two" data-tool>
+        <form class="mt-inputs" id="wc-form" autocomplete="off" novalidate>
+          <div class="mt-actions">
+            <button type="button" class="mt-linkbtn" data-example>Show an example</button>
+            <button type="button" class="btn btn-ghost" data-clear>Clear</button>
+            <button type="button" class="btn btn-secondary" data-show-walk>Show the walk</button>
+          </div>
+          <p class="mt-banner" data-example-banner hidden>Example figures. Not a valuation of any company and not anyone&rsquo;s numbers.</p>
+
+          <fieldset>
+            <legend>The target</legend>
+            <div class="mt-field">
+              <label for="w-a1">Target in your letter of intent</label>
+              <p class="mt-help" id="w-a1-help">If the deal names one, type it.</p>
+              <input id="w-a1" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money-any" aria-describedby="w-a1-help" />
+            </div>
+            <div class="mt-field" role="group" aria-labelledby="w-months-label" aria-describedby="w-months-help">
+              <p class="mt-label" id="w-months-label">Or: your working capital at each month end (up to 12)</p>
+              <p class="mt-help" id="w-months-help">Receivables plus inventory plus prepaid, less payables and accrued expenses. Leave cash and loans out. We average the months you fill.</p>
+              <div class="mt-months">
+                {months.map((m) => (
+                  <div>
+                    <label for={`w-m${m}`}>Month {m}</label>
+                    <input id={`w-m${m}`} type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money-any" data-month={m} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>What you deliver</legend>
+            {deliver.map((f) => (
+              <div class="mt-field">
+                <label for={f.id}>{f.label}</label>
+                {f.help && <p class="mt-help" id={`${f.id}-help`}>{f.help}</p>}
+                <input id={f.id} type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" aria-describedby={f.help ? `${f.id}-help` : undefined} />
+              </div>
+            ))}
+            <div class="mt-field">
+              <label for="w-b6">Or type your closing working capital</label>
+              <p class="mt-help" id="w-b6-help">Overrides B1 to B5.</p>
+              <input id="w-b6" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money-any" aria-describedby="w-b6-help" />
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="mt-out">
+          <PrintHead head={H1} />
+          <dl class="mt-print-inputs mt-print-only" data-print-inputs></dl>
+          <Disclaimer variant="deal" />
+          <div class="mt-result" id="wc-result" data-result tabindex="-1" role="region" aria-label="Price adjustment at close">
+            <div aria-live="polite">
+              <p class="mt-empty" data-empty>Type a target or your month-end balances.</p>
+            </div>
+            <div class="mt-result-body" data-body hidden>
+              <div aria-live="polite">
+                <p class="mt-lead" data-lead></p>
+                <p class="mt-interp" data-interp></p>
+              </div>
+              <div data-notes></div>
+              <table class="mt-walk">
+                <caption class="sr-only">Price adjustment at close</caption>
+                <tbody data-walk></tbody>
+              </table>
+              <div data-months-view hidden>
+                <div class="mt-chart mt-chart-print" data-chart aria-hidden="true"></div>
+                <p class="mt-sentence" data-caption></p>
+              </div>
+              <p class="mt-next"><a href="/price-to-wire">Carry this into the full walk</a></p>
+            </div>
+          </div>
+          <PrintFoot />
+        </div>
+
+        <button type="button" class="mt-summary" data-summary aria-expanded="false" aria-controls="wc-result" hidden><span data-summary-text></span></button>
+      </div>
+
+      <div class="mt-noprint">
+        <ToolCTA variant="deal" />
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-close"><p>Decide from the numbers. Prove it in the cash.</p></section>
+</BaseLayout>
+
+<script is:inline set:html={core}></script>
+<script is:inline>
+(function () {
+  var MT = window.MT;
+  var tool = document.querySelector('[data-tool]');
+  var form = document.getElementById('wc-form');
+  var $ = function (id) { return document.getElementById(id); };
+  var q = function (sel) { return tool.querySelector(sel); };
+
+  function row(tb, key, label, value, opts) {
+    opts = opts || {};
+    var tr = MT.el('tr', opts.cls || '');
+    tr.setAttribute('data-row', key);
+    var th = MT.el('th', null, label); th.scope = 'row'; tr.appendChild(th);
+    var td = MT.el('td', null, opts.signed ? MT.signed(value) : MT.money(value));
+    td.setAttribute('data-value', String(MT.round(value)));
+    tr.appendChild(td);
+    tb.appendChild(tr);
+  }
+
+  function recompute() {
+    MT.printInputs(form, q('[data-print-inputs]'));
+    var A1 = MT.parseMoney($('w-a1'), true);
+    var filled = [];
+    for (var m = 1; m <= 12; m++) {
+      var p = MT.parseMoney($('w-m' + m), true);
+      if (p.entered) filled.push({ m: m, v: p.value });
+    }
+    var empty = q('[data-empty]'), body = q('[data-body]');
+    if (!A1.entered && filled.length === 0) { empty.hidden = false; body.hidden = true; MT.setSummary(tool, ''); return; }
+    empty.hidden = true; body.hidden = false;
+
+    var Wt = A1.entered ? A1.value : filled.reduce(function (s, x) { return s + x.v; }, 0) / filled.length;
+    var B6 = MT.parseMoney($('w-b6'), true);
+    var Wc = B6.entered ? B6.value
+      : MT.parseMoney($('w-ar'), false).value + MT.parseMoney($('w-inv'), false).value + MT.parseMoney($('w-pre'), false).value
+        - MT.parseMoney($('w-ap'), false).value - MT.parseMoney($('w-acc'), false).value;
+    var adj = Wc - Wt;
+
+    var lead = q('[data-lead]');
+    lead.innerHTML = '';
+    lead.appendChild(document.createTextNode('Price adjustment at close: '));
+    lead.appendChild(MT.el('span', 'mt-num', MT.signed(adj)));
+    lead.setAttribute('data-adj', String(MT.round(adj)));
+    lead.setAttribute('data-wt', String(MT.round(Wt)));
+    lead.setAttribute('data-wc', String(MT.round(Wc)));
+    MT.setSummary(tool, 'Price adjustment at close: ' + MT.signed(adj));
+    var r = MT.round(adj);
+    q('[data-interp]').textContent = r < 0
+      ? 'You’d deliver ' + MT.abs(adj) + ' less than the target, so the price drops by about ' + MT.abs(adj) + '.'
+      : r > 0 ? 'You’d deliver ' + MT.abs(adj) + ' more than the target, so the price rises by about ' + MT.abs(adj) + '.'
+      : 'You’d deliver the target. No adjustment.';
+
+    var notes = q('[data-notes]');
+    notes.innerHTML = '';
+    var say = function (t, k) { var p = MT.el('p', 'mt-tnote', t); p.setAttribute('data-note', k); notes.appendChild(p); };
+    if (A1.entered) say('Using the target you typed.', 'typed');
+    else say('Averaged over ' + filled.length + ' months.', 'avg');
+    if (Wt < 0 || Wc < 0) say('Your working capital is negative; the same rule applies.', 'negative');
+
+    var tb = q('[data-walk]');
+    tb.innerHTML = '';
+    row(tb, 'wt', 'Working capital target in the deal', Wt);
+    row(tb, 'wc', 'Working capital you expect to deliver at close', Wc);
+    row(tb, 'adj', 'Price adjustment at close', adj, { signed: true, cls: 'mt-total' });
+
+    var view = q('[data-months-view]');
+    if (filled.length === 12) {
+      var best = filled.reduce(function (a, b) { return b.v > a.v ? b : a; });
+      var worst = filled.reduce(function (a, b) { return b.v < a.v ? b : a; });
+      var Y = best.v - Wt, Z = worst.v - Wt;
+      var verb = function (x) { return MT.round(x) < 0 ? 'would cost ' + MT.abs(x) : 'would add ' + MT.abs(x); };
+      var cap = q('[data-caption]');
+      cap.textContent = 'Closing in month ' + best.m + ' ' + verb(Y) + '; closing in month ' + worst.m + ' ' + verb(Z) + '.';
+      cap.setAttribute('data-best', best.m + ':' + MT.round(Y));
+      cap.setAttribute('data-worst', worst.m + ':' + MT.round(Z));
+      chart(filled, Wt);
+      view.hidden = false;
+    } else view.hidden = true;
+  }
+
+  function chart(pts, Wt) {
+    var NS = 'http://www.w3.org/2000/svg';
+    var mk = function (t, a, txt) { var e = document.createElementNS(NS, t); Object.keys(a).forEach(function (k) { e.setAttribute(k, a[k]); }); if (txt != null) e.textContent = txt; return e; };
+    var W = 660, H = 300, L = 96, R = 16, T = 24, B = 260;
+    var vals = pts.map(function (p) { return p.v; }).concat([Wt, 0]);
+    var hi = Math.max.apply(null, vals), lo = Math.min.apply(null, vals);
+    if (hi === lo) hi = lo + 1;
+    var y = function (v) { return B - (B - T) * (v - lo) / (hi - lo); };
+    var svg = mk('svg', { viewBox: '0 0 ' + W + ' ' + H, focusable: 'false' });
+    var bw = (W - L - R) / 12;
+    svg.appendChild(mk('line', { x1: L, x2: W - R, y1: y(0), y2: y(0), stroke: '#8c9aa0', 'stroke-width': 1 }));
+    pts.forEach(function (p, i) {
+      var x = L + i * bw + bw * 0.15;
+      var y0 = y(0), y1 = y(p.v);
+      svg.appendChild(mk('rect', { x: x, y: Math.min(y0, y1), width: bw * 0.7, height: Math.max(1, Math.abs(y1 - y0)), fill: p.v >= Wt ? '#34444c' : '#8c9aa0' }));
+      svg.appendChild(mk('text', { x: x + bw * 0.35, y: H - 18, 'text-anchor': 'middle', 'font-size': 12, fill: '#182228' }, String(p.m)));
+    });
+    svg.appendChild(mk('line', { x1: L - 6, x2: W - R, y1: y(Wt), y2: y(Wt), stroke: '#a8431a', 'stroke-width': 2.5 }));
+    svg.appendChild(mk('text', { x: L - 10, y: y(Wt) + 4, 'text-anchor': 'end', 'font-size': 11.5, 'font-weight': 700, fill: '#a8431a' }, MT.money(Wt)));
+    box().innerHTML = '';
+    box().appendChild(svg);
+  }
+  function box() { return q('[data-chart]'); }
+
+  MT.wire({
+    tool: tool,
+    form: form,
+    recompute: recompute,
+    example: {
+      'w-m1': '$1,650,000', 'w-m2': '$1,700,000', 'w-m3': '$1,750,000', 'w-m4': '$1,850,000', 'w-m5': '$1,950,000', 'w-m6': '$2,050,000',
+      'w-m7': '$2,000,000', 'w-m8': '$1,900,000', 'w-m9': '$1,800,000', 'w-m10': '$1,700,000', 'w-m11': '$1,650,000', 'w-m12': '$1,600,000',
+      'w-ar': '$1,400,000', 'w-inv': '$900,000', 'w-pre': '$50,000', 'w-ap': '$520,000', 'w-acc': '$180,000'
+    }
+  });
+})();
+</script>

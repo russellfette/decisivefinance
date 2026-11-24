@@ -1,0 +1,10 @@
+---
+// Print-only header and footer. Hidden on screen. Decisive Finance mark only (DEC-1 item 3: no co-brand).
+interface Props { head: string }
+const { head } = Astro.props;
+---
+<div class="mt-print-head mt-print-only">
+  <img src="/brand/wordmark-light.svg" alt="Decisive Finance" width="160" height="32" />
+  <p class="mt-print-title">{head}</p>
+  <p class="mt-print-date" data-print-date></p>
+</div>
