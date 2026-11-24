@@ -1,0 +1,16 @@
+Example Co
+Balance Sheet Comparison
+As of December 31, 2025
+
+,"As of Dec 31, 2025","As of Dec 31, 2024 (PY)"
+ASSETS,,
+Accounts Receivable (A/R),"1,800,000.00","1,500,000.00"
+Total Accounts Receivable,"$1,800,000.00","$1,500,000.00"
+Inventory Asset,"900,000.00","800,000.00"
+Total Current Assets,"2,700,000.00","2,300,000.00"
+Total Assets,"$4,000,000.00","$3,600,000.00"
+LIABILITIES AND EQUITY,,
+Accounts Payable (A/P),"500,000.00","450,000.00"
+Total Accounts Payable,"$500,000.00","$450,000.00"
+Bank Loan Payable,"1,600,000.00","2,000,000.00"
+Total Liabilities,"2,100,000.00","2,450,000.00"

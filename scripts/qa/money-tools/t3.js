@@ -4,6 +4,13 @@ const MONTHS = [1650000, 1700000, 1750000, 1850000, 1950000, 2050000, 2000000, 1
 (async () => {
   const { browser, page, errors } = await open('/working-capital-target/');
   const R = [];
+  const ql = await page.evaluate(() => ({ lead: document.querySelector('[data-q-lead]').textContent, adj: document.querySelector('[data-q-lead]').getAttribute('data-adj'), interp: document.querySelector('[data-q-interp]').textContent }));
+  check(R, 'V3-1', 'Explainer opens with the slider example: $12,000,000 revenue, collected 10 days faster', ql.adj === '-328767', `lead "${ql.lead}"; interp "${ql.interp}"`);
+  await page.fill('#q-rev', '7300000');
+  await page.$eval('#q-days', (el) => { el.value = '5'; el.dispatchEvent(new Event('input', { bubbles: true })); });
+  const q2 = await page.evaluate(() => document.querySelector('[data-q-lead]').getAttribute('data-adj'));
+  check(R, 'V3-2', 'Revenue $7,300,000, 5 days slower: +$100,000', q2 === '100000', `adjustment ${q2}`);
+  await page.click('.mt-advanced > summary');
   const read = () => page.evaluate(() => {
     const lead = document.querySelector('[data-lead]');
     const cap = document.querySelector('[data-caption]');

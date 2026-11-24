@@ -1,35 +1,24 @@
 ---
-// Tool 1: Price to wire. Build brief OA/build-brief-owner-money-tools-2026-11-23.md, section 4.
-// Copy: Approved dec_mwtsnrrx_96cc17eb unless marked Canon. Structure: dec_mwtsk9cv_7eb5dbf5.
+// Tool 1: Price to wire, v2. Canon master 10-canon/Decisive-Owner-Money-Tools-v1.md, changed by OA inbox entry 58
+// (Russ: "Approved as recommended.", 2026-11-24). Defaults: SRS Acquiom 2026 studies, cited on the page.
+// Wording new in v2 is pending Russ's copy-set approval (entry 58); everything else is canon.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Disclaimer from '../components/money-tools/Disclaimer.astro';
 import ToolCTA from '../components/money-tools/ToolCTA.astro';
 import PrintHead from '../components/money-tools/PrintHead.astro';
 import PrintFoot from '../components/money-tools/PrintFoot.astro';
 import core from '../scripts/money-tools-core.js?raw';
+import sankey from '../scripts/money-tools-sankey.js?raw';
 import '../styles/money-tools.css';
 
 const title = 'Price to wire | Decisive Finance';
 const ogTitle = 'Price to wire: what a sale price leaves you with at close';
 const description = 'Type a price. See debt, deal costs, working capital, escrow and earnout come out, line by line. Runs in your browser; nothing is stored.';
 const H1 = 'Before you react to a number, walk it to the wire.';
-
-type F = { id: string; label: string; help?: string; kind: 'money' | 'money-any' | 'rate' | 'months'; max?: number };
-const fields: F[] = [
-  { id: 'p-price', kind: 'money', label: 'Price on the table', help: 'The number you&rsquo;re weighing, from an offer, an approach or your own head. This walk assumes the deal is cash-free and debt-free; check your letter of intent.' },
-  { id: 'p-debt', kind: 'money', label: 'Debt paid off at close', help: 'Bank loans, the line of credit, equipment loans and anything else the buyer requires paid at closing.' },
-  { id: 'p-cash', kind: 'money', label: 'Cash in the business you keep', help: 'In a cash-free, debt-free deal the cash on hand is usually yours. Leave blank if your deal says otherwise.' },
-  { id: 'p-wct', kind: 'money-any', label: 'Working capital target in the deal', help: 'The level of receivables plus inventory, less payables, the buyer expects at close. See <a href="/working-capital-target">The working capital target</a> for how it&rsquo;s set.<span class="mt-source">More than 90% of private deals include this adjustment. (SRS Acquiom, &ldquo;M&amp;A Deals: Key Trends from the 2025 Deal Terms Study,&rdquo; deals closed 2019 to 2024, read 2026-11-23.)</span>' },
-  { id: 'p-wcd', kind: 'money-any', label: 'Working capital you expect to deliver at close', help: 'Same measure, as of your expected closing day.' },
-  { id: 'p-fee', kind: 'money', label: 'Deal advisor or broker fee, in dollars', help: 'From your engagement letter. Enter dollars.' },
-  { id: 'p-legal', kind: 'money', label: 'Legal and accounting, in dollars', help: 'Your attorney, your CPA, any quality of earnings report you pay for.' },
-  { id: 'p-other', kind: 'money', label: 'Other closing costs, in dollars', help: 'Insurance tail, payoff fees, anything else you pay at close.' },
-  { id: 'p-escrow', kind: 'money', label: 'Escrow or holdback', help: 'Part of the price the buyer holds back to cover claims, released later if none come.<span class="mt-source">In 2025 private deals without R&amp;W insurance, the median escrow was 10% of deal value; with insurance, 0.5%. (SRS Acquiom 2026 Deal Terms Study, 2,300+ deals closed 2020 to 2025, as summarized by Fasken, May 2026, read 2026-11-23.)</span>' },
-  { id: 'p-escrow-mo', kind: 'months', max: 60, label: 'Months until the escrow is released', help: 'From your letter of intent.' },
-  { id: 'p-earn', kind: 'money', label: 'Earnout, if every dollar of it pays', help: 'Money that depends on results after you sell. Shown apart from the cash at close because it may never come.<span class="mt-source">About one deal in four carried an earnout in 2025; the median was 34% of the closing payment. (Fasken summary of the SRS Acquiom 2026 Deal Terms Study, May 2026.) Across deals with earnouts, buyers have paid about 21 cents per dollar of earnout potential. (SRS Acquiom 2025 Deal Terms Study page, citing its 2024 Claims Insights Report, read 2026-11-23.)</span>' },
-  { id: 'p-earn-mo', kind: 'months', max: 120, label: 'Months the earnout runs' },
-  { id: 'p-rate', kind: 'rate', max: 60, label: 'Tax set-aside rate (optional)', help: 'A rate your CPA gives you. We apply it to the cash you receive, as a set-aside. Your real tax depends on how the deal is structured, your basis and how the price is allocated. Leave blank to see everything before tax.' },
-];
+const LMM = 'SRS Acquiom, 2026 Deal Terms Study, Lower Middle-Market Deals (2025 deals with closing payments of $50M or less), read 2026-11-24';
+const DTS = 'SRS Acquiom, 2026 M&amp;A Deal Terms Study (2,300+ deals closed 2020 to 2025), read 2026-11-24';
+const PPA = 'SRS Acquiom, 2026 Working Capital Purchase Price Adjustment Study (1,570+ deals closed 2020 to Q3 2025), read 2026-11-24';
+const seg = (name: string, opts: { v: string; t: string; checked?: boolean }[]) => ({ name, opts });
 ---
 
 <BaseLayout title={title} ogTitle={ogTitle} description={description}>
@@ -54,24 +43,163 @@ const fields: F[] = [
             <button type="button" class="btn btn-secondary" data-show-walk>Show the walk</button>
           </div>
           <p class="mt-banner" data-example-banner hidden>Example figures. Not a valuation of any company and not anyone&rsquo;s numbers.</p>
-          {fields.map((f) => (
-            <div class="mt-field">
-              <label for={f.id}>{f.label}</label>
-              {f.help && <p class="mt-help" id={`${f.id}-help`} set:html={f.help} />}
-              <input
-                id={f.id}
-                name={f.id}
-                type="text"
-                inputmode="decimal"
-                autocomplete="off"
-                spellcheck="false"
-                data-kind={f.kind}
-                data-max={f.max}
-                aria-describedby={[f.help ? `${f.id}-help` : '', `${f.id}-note`].filter(Boolean).join(' ')}
-              />
-              <p class="mt-fnote" id={`${f.id}-note`} hidden></p>
+
+          <div class="mt-field mt-field-lead">
+            <label for="p-price">Price on the table</label>
+            <p class="mt-help" id="p-price-help">The number you&rsquo;re weighing, from an offer, an approach or your own head. This walk assumes the deal is cash-free and debt-free; check your letter of intent.</p>
+            <input id="p-price" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" aria-describedby="p-price-help" />
+          </div>
+          <p class="mt-defaults-note">Everything below starts at what deals of $50M or less typically carry. Change any line to yours.</p>
+
+          <fieldset class="mt-choice" data-line="ins">
+            <legend>Deal insurance (R&amp;W)</legend>
+            <p class="mt-help">Insurance that covers the buyer for problems found after closing. With it, buyers usually hold back far less.</p>
+            <div class="mt-seg">
+              <input type="radio" name="ins" id="ins-unsure" value="unsure" checked /><label for="ins-unsure">Not sure</label>
+              <input type="radio" name="ins" id="ins-no" value="no" /><label for="ins-no">No</label>
+              <input type="radio" name="ins" id="ins-yes" value="yes" /><label for="ins-yes">Yes</label>
             </div>
-          ))}
+            <p class="mt-source">In 2025, 21% of deals of $25M or less and 40% of deals of $25M to $50M carried it. <cite set:html={LMM} />.</p>
+          </fieldset>
+
+          <fieldset class="mt-choice" data-line="escrow">
+            <legend>Escrow or holdback</legend>
+            <p class="mt-help">Part of the price the buyer holds back to cover claims, released later if none come.</p>
+            <div class="mt-seg" data-seg="escrow">
+              <input type="radio" name="escrow" id="escrow-low" value="low" /><label for="escrow-low">Low <span data-show="escrow-low"></span></label>
+              <input type="radio" name="escrow" id="escrow-typ" value="typ" checked /><label for="escrow-typ">Typical <span data-show="escrow-typ"></span></label>
+              <input type="radio" name="escrow" id="escrow-high" value="high" /><label for="escrow-high">High <span data-show="escrow-high"></span></label>
+              <input type="radio" name="escrow" id="escrow-yours" value="yours" /><label for="escrow-yours">Yours</label>
+            </div>
+            <div class="mt-yours" data-yours="escrow" hidden>
+              <label for="p-escrow">Escrow or holdback, in dollars</label>
+              <input id="p-escrow" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" />
+            </div>
+            <p class="mt-source" data-escrow-source></p>
+          </fieldset>
+
+          <fieldset class="mt-choice" data-line="escrowmo">
+            <legend>Months until the escrow is released</legend>
+            <div class="mt-seg">
+              <input type="radio" name="escrowmo" id="escrowmo-low" value="12" /><label for="escrowmo-low">Low <span>12</span></label>
+              <input type="radio" name="escrowmo" id="escrowmo-typ" value="15" checked /><label for="escrowmo-typ">Typical <span>15</span></label>
+              <input type="radio" name="escrowmo" id="escrowmo-high" value="24" /><label for="escrowmo-high">High <span>24</span></label>
+              <input type="radio" name="escrowmo" id="escrowmo-yours" value="yours" /><label for="escrowmo-yours">Yours</label>
+            </div>
+            <div class="mt-yours" data-yours="escrowmo" hidden>
+              <label for="p-escrow-mo">Months until the escrow is released</label>
+              <input id="p-escrow-mo" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="months" data-max="60" aria-describedby="p-escrow-mo-note" />
+              <p class="mt-fnote" id="p-escrow-mo-note" hidden></p>
+            </div>
+            <p class="mt-source">Median 15 months that a seller&rsquo;s general promises stay open in 2025 deals of $50M or less; 9% ran 24. Used here as the release date. <cite set:html={LMM} />.</p>
+          </fieldset>
+
+          <fieldset class="mt-choice" data-line="earn">
+            <legend>Earnout</legend>
+            <p class="mt-help">Money that depends on results after you sell. Shown apart from the cash at close because it may never come.</p>
+            <div class="mt-seg">
+              <input type="radio" name="earn" id="earn-off" value="off" checked /><label for="earn-off">None</label>
+              <input type="radio" name="earn" id="earn-typ" value="typ" /><label for="earn-typ">Typical <span data-show="earn-typ"></span></label>
+              <input type="radio" name="earn" id="earn-yours" value="yours" /><label for="earn-yours">Yours</label>
+            </div>
+            <div class="mt-yours" data-yours="earn" hidden>
+              <label for="p-earn">Earnout, if every dollar of it pays</label>
+              <input id="p-earn" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" />
+            </div>
+            <div class="mt-sub" data-earnmo hidden>
+              <p class="mt-label" id="earnmo-label">Months the earnout runs</p>
+              <div class="mt-seg" role="radiogroup" aria-labelledby="earnmo-label">
+                <input type="radio" name="earnmo" id="earnmo-low" value="12" /><label for="earnmo-low">Low <span>12</span></label>
+                <input type="radio" name="earnmo" id="earnmo-typ" value="21" checked /><label for="earnmo-typ">Typical <span>21</span></label>
+                <input type="radio" name="earnmo" id="earnmo-high" value="36" /><label for="earnmo-high">High <span>36</span></label>
+                <input type="radio" name="earnmo" id="earnmo-yours" value="yours" /><label for="earnmo-yours">Yours</label>
+              </div>
+              <div class="mt-yours" data-yours="earnmo" hidden>
+                <label for="p-earn-mo">Months the earnout runs</label>
+                <input id="p-earn-mo" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="months" data-max="120" aria-describedby="p-earn-mo-note" />
+                <p class="mt-fnote" id="p-earn-mo-note" hidden></p>
+              </div>
+            </div>
+            <p class="mt-source">About one 2025 deal in four had an earnout, so it starts at none. When there is one, the median in deals of $50M or less was 57% of the closing payment, over a median 21 months. <cite set:html={LMM} />; <cite set:html={DTS} />.</p>
+          </fieldset>
+
+          <fieldset class="mt-choice" data-line="wc">
+            <legend>Working capital adjustment</legend>
+            <p class="mt-help">Most deals adjust the price at close for the receivables plus inventory, less payables, you leave in the business. Deliver less than the target and the price comes down.</p>
+            <div class="mt-seg" data-seg="wc">
+              <input type="radio" name="wc" id="wc-low" value="low" /><label for="wc-low">Low <span data-show="wc-low"></span></label>
+              <input type="radio" name="wc" id="wc-typ" value="typ" checked /><label for="wc-typ">Typical <span data-show="wc-typ"></span></label>
+              <input type="radio" name="wc" id="wc-high" value="high" /><label for="wc-high">High <span data-show="wc-high"></span></label>
+              <input type="radio" name="wc" id="wc-yours" value="yours" /><label for="wc-yours">Yours</label>
+            </div>
+            <div class="mt-yours" data-yours="wc" hidden>
+              <label for="p-wct">Working capital target in the deal</label>
+              <input id="p-wct" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money-any" />
+              <label for="p-wcd">Working capital you expect to deliver at close</label>
+              <input id="p-wcd" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money-any" aria-describedby="p-wcd-note" />
+              <p class="mt-fnote" id="p-wcd-note" hidden></p>
+            </div>
+            <details class="mt-moves">
+              <summary>What moves this line?</summary>
+              <p class="mt-help">Collect faster before closing and receivables fall, so this line drops. In a cash-free deal the cash you collect is usually yours, so the two roughly offset. Collect slower and the reverse happens.</p>
+              <label for="p-rev">Annual revenue</label>
+              <input id="p-rev" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" />
+              <label for="p-days">Customers pay faster or slower in the month you close, in days: <output id="p-days-out" for="p-days">0</output></label>
+              <input id="p-days" type="range" min="-30" max="30" step="1" value="0" />
+              <p class="mt-tnote" data-days-effect></p>
+            </details>
+            <p class="mt-source">Buyers won the final adjustment in 51% of deals and sellers in 38%; the median buyer claim was 0.27% of the price, the median seller surplus 0.17%, and about one deal in ten saw a buyer claim of 1% or more. <cite set:html={PPA} />. More in <a href="/working-capital-target">The working capital target</a>.</p>
+          </fieldset>
+
+          <fieldset class="mt-choice" data-line="fund">
+            <legend>Seller expense fund</legend>
+            <p class="mt-help">Money set aside at close to pay the sellers&rsquo; representative after the deal. What isn&rsquo;t spent comes back.</p>
+            <div class="mt-seg">
+              <input type="radio" name="fund" id="fund-typ" value="typ" checked /><label for="fund-typ">Typical <span data-show="fund-typ"></span></label>
+              <input type="radio" name="fund" id="fund-yours" value="yours" /><label for="fund-yours">Yours</label>
+            </div>
+            <div class="mt-yours" data-yours="fund" hidden>
+              <label for="p-fund">Seller expense fund, in dollars</label>
+              <input id="p-fund" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" />
+            </div>
+            <p class="mt-source">2025 medians: $75,000 in deals of $25M or less, $100,000 in deals of $25M to $50M. Above $50M, enter yours. <cite set:html={LMM} />.</p>
+          </fieldset>
+
+          <fieldset class="mt-choice mt-yours-only">
+            <legend>Yours only</legend>
+            <p class="mt-help">No published figure fits these. Until you enter them, the walk leaves them out and says so.</p>
+            <div class="mt-field">
+              <label for="p-debt">Debt paid off at close</label>
+              <p class="mt-help" id="p-debt-help">Bank loans, the line of credit, equipment loans and anything else the buyer requires paid at closing.</p>
+              <input id="p-debt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" aria-describedby="p-debt-help" />
+            </div>
+            <div class="mt-field">
+              <label for="p-cash">Cash in the business you keep</label>
+              <p class="mt-help" id="p-cash-help">In a cash-free, debt-free deal the cash on hand is usually yours. Leave blank if your deal says otherwise.</p>
+              <input id="p-cash" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" aria-describedby="p-cash-help" />
+            </div>
+            <div class="mt-field">
+              <label for="p-fee">Deal advisor or broker fee, in dollars</label>
+              <p class="mt-help" id="p-fee-help">From your engagement letter. Enter dollars.</p>
+              <input id="p-fee" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" aria-describedby="p-fee-help" />
+            </div>
+            <div class="mt-field">
+              <label for="p-legal">Legal and accounting, in dollars</label>
+              <p class="mt-help" id="p-legal-help">Your attorney, your CPA, any quality of earnings report you pay for.</p>
+              <input id="p-legal" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" aria-describedby="p-legal-help" />
+            </div>
+            <div class="mt-field">
+              <label for="p-other">Other closing costs, in dollars</label>
+              <p class="mt-help" id="p-other-help">Insurance tail, payoff fees, anything else you pay at close.</p>
+              <input id="p-other" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="money" aria-describedby="p-other-help" />
+            </div>
+            <div class="mt-field">
+              <label for="p-rate">Tax set-aside rate (optional)</label>
+              <p class="mt-help" id="p-rate-help">A rate your CPA gives you. We apply it to the cash you receive, as a set-aside. Your real tax depends on how the deal is structured, your basis and how the price is allocated. Leave blank to see everything before tax.</p>
+              <input id="p-rate" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-kind="rate" aria-describedby="p-rate-help p-rate-note" />
+              <p class="mt-fnote" id="p-rate-note" hidden></p>
+            </div>
+          </fieldset>
         </form>
 
         <div class="mt-out">
@@ -86,7 +214,9 @@ const fields: F[] = [
               <div aria-live="polite">
                 <p class="mt-lead" data-lead></p>
                 <p class="mt-interp" data-interp></p>
+                <p class="mt-warn" data-missing hidden></p>
               </div>
+              <div class="mt-chart mt-sankey" data-sankey aria-hidden="true"></div>
               <table class="mt-walk">
                 <caption class="sr-only">Price to wire, line by line</caption>
                 <thead><tr><th scope="col">Line</th><th scope="col" class="num">Amount</th></tr></thead>
@@ -111,6 +241,7 @@ const fields: F[] = [
 </BaseLayout>
 
 <script is:inline set:html={core}></script>
+<script is:inline set:html={sankey}></script>
 <script is:inline>
 (function () {
   var MT = window.MT;
@@ -118,79 +249,107 @@ const fields: F[] = [
   var form = document.getElementById('ptw-form');
   var $ = function (id) { return document.getElementById(id); };
   var q = function (sel) { return tool.querySelector(sel); };
+  var pick = function (name) { var r = form.querySelector('input[name="' + name + '"]:checked'); return r ? r.value : null; };
   var openNotes = {};
+  var C = { ink: '#182228', debt: '#5a6a72', cost: '#8c9aa0', escrow: '#c7cfd3', tax: '#34444c', you: '#a8431a', wcNeg: '#aab5ba', inflow: '#214c52', bring: '#bf4d1a' };
+
+  // Published defaults (sources on the page).
+  var ESCROW = { unsure: { low: 0.05, typ: 0.10, high: 0.15 }, no: { low: 0.05, typ: 0.111, high: 0.15 }, yes: { low: 0.005, typ: 0.028, high: 0.05 } };
+  var WC = { low: -0.01, typ: -0.0027, high: 0.0017 };
+  var EARN_TYP = 0.57;
+  function fundTyp(p) { return p <= 25e6 ? 75000 : p <= 50e6 ? 100000 : 0; }
+  function pct(x) { var v = Math.round(Math.abs(x) * 10000) / 100; return (x < 0 ? '\u2212' : '') + String(v) + '%'; }
+
+  // Show/hide "Yours" inputs and the earnout months block.
+  function syncChoices() {
+    ['escrow', 'escrowmo', 'earn', 'earnmo', 'wc', 'fund'].forEach(function (n) {
+      var box = q('[data-yours="' + n + '"]');
+      if (box) box.hidden = pick(n) !== 'yours';
+    });
+    q('[data-earnmo]').hidden = pick('earn') === 'off';
+  }
 
   function row(tbody, label, amount, opts) {
     opts = opts || {};
     var tr = MT.el('tr', opts.cls || '');
-    var th = MT.el('th');
-    th.scope = 'row';
+    var th = MT.el('th'); th.scope = 'row';
+    if (opts.swatch) { var sw = MT.el('span', 'mt-swatch'); sw.style.background = opts.swatch; sw.setAttribute('aria-hidden', 'true'); th.appendChild(sw); }
     if (opts.note) {
       var key = opts.noteKey;
-      var b = MT.el('button', 'mt-rowbtn', label);
-      b.type = 'button';
+      var b = MT.el('button', 'mt-rowbtn', label); b.type = 'button';
       b.setAttribute('aria-expanded', openNotes[key] ? 'true' : 'false');
       var n = MT.el('span', 'mt-rownote' + (openNotes[key] ? ' is-open' : ''), opts.note);
-      n.id = 'note-' + key;
-      b.setAttribute('aria-controls', n.id);
-      b.addEventListener('click', function () {
-        openNotes[key] = !openNotes[key];
-        n.classList.toggle('is-open', openNotes[key]);
-        b.setAttribute('aria-expanded', openNotes[key] ? 'true' : 'false');
-      });
-      th.appendChild(b);
-      th.appendChild(n);
-    } else {
-      th.textContent = label;
-    }
-    var td = MT.el('td', null, amount);
+      n.id = 'note-' + key; b.setAttribute('aria-controls', n.id);
+      b.addEventListener('click', function () { openNotes[key] = !openNotes[key]; n.classList.toggle('is-open', openNotes[key]); b.setAttribute('aria-expanded', openNotes[key] ? 'true' : 'false'); });
+      th.appendChild(b); th.appendChild(n);
+    } else th.appendChild(document.createTextNode(label));
+    var td = MT.el('td', opts.tdcls || null, amount);
     if (opts.value != null) td.setAttribute('data-value', String(MT.round(opts.value)));
     if (opts.key) tr.setAttribute('data-row', opts.key);
-    tr.appendChild(th);
-    tr.appendChild(td);
-    tbody.appendChild(tr);
+    tr.appendChild(th); tr.appendChild(td); tbody.appendChild(tr);
   }
 
   function recompute() {
+    syncChoices();
     var P = MT.parseMoney($('p-price'), false);
-    var D = MT.parseMoney($('p-debt'), false).value;
-    var C = MT.parseMoney($('p-cash'), false).value;
-    var Wt = MT.parseMoney($('p-wct'), true);
-    var Wc = MT.parseMoney($('p-wcd'), true);
-    var T = MT.parseMoney($('p-fee'), false).value + MT.parseMoney($('p-legal'), false).value + MT.parseMoney($('p-other'), false).value;
-    var E = MT.parseMoney($('p-escrow'), false).value;
-    var Em = MT.parseRange($('p-escrow-mo'), 60);
-    var X = MT.parseMoney($('p-earn'), false).value;
-    var Xm = MT.parseRange($('p-earn-mo'), 120);
+    var p = P.entered ? P.value : 0;
+    var ins = pick('ins');
+
+    // Option labels carry the dollar figure for the typed price.
+    var esc = ESCROW[ins];
+    ['low', 'typ', 'high'].forEach(function (k) {
+      q('[data-show="escrow-' + k + '"]').textContent = pct(esc[k]) + (p ? ' · ' + MT.money(p * esc[k]) : '');
+      q('[data-show="wc-' + k + '"]').textContent = (WC[k] > 0 ? '+' : '') + pct(WC[k]) + (p ? ' · ' + MT.signed(p * WC[k]) : '');
+    });
+    q('[data-show="earn-typ"]').textContent = '57%' + (p ? ' · ' + MT.money(p * EARN_TYP) : '');
+    q('[data-show="fund-typ"]').textContent = p > 50e6 ? 'n/a' : MT.money(fundTyp(p || 1));
+    q('[data-escrow-source]').innerHTML = ins === 'yes'
+      ? 'With insurance, the 2025 median for deals of $50M or less was 2.8% of the price; across all deal sizes, 95% of insured deals held back 5% or less. <cite>SRS Acquiom, 2026 Deal Terms Study, Lower Middle-Market Deals, and 2026 M&amp;A Deal Terms Study, read 2026-11-24</cite>.'
+      : 'The 2025 median for deals of $50M or less was 10% of the price (11.1% without insurance). Across all deal sizes, 76% of uninsured deals held back between 5% and 15%. <cite>SRS Acquiom, 2026 Deal Terms Study, Lower Middle-Market Deals, and 2026 M&amp;A Deal Terms Study, read 2026-11-24</cite>.';
+
+    var D = MT.parseMoney($('p-debt'), false), Cc = MT.parseMoney($('p-cash'), false);
+    var fee = MT.parseMoney($('p-fee'), false), legal = MT.parseMoney($('p-legal'), false), other = MT.parseMoney($('p-other'), false);
     var R = MT.parseRange($('p-rate'), 60);
-
     MT.note('p-rate-note', R.clamped ? 'Use 0 to 60.' : '');
-    MT.note('p-escrow-mo-note', Em.clamped ? 'Use 0 to 60.' : '');
-    MT.note('p-earn-mo-note', Xm.clamped ? 'Use 0 to 120.' : '');
-    var oneWc = Wt.entered !== Wc.entered;
-    MT.note('p-wcd-note', oneWc ? 'Enter both the target and what you’d deliver to see the adjustment.' : '');
 
-    MT.printInputs(form, q('[data-print-inputs]'));
+    var E = pick('escrow') === 'yours' ? MT.parseMoney($('p-escrow'), false).value : p * esc[pick('escrow')];
+    var EmY = MT.parseRange($('p-escrow-mo'), 60);
+    MT.note('p-escrow-mo-note', EmY.clamped ? 'Use 0 to 60.' : '');
+    var Em = pick('escrowmo') === 'yours' ? (EmY.entered ? EmY.value : null) : Number(pick('escrowmo'));
+    var earnMode = pick('earn');
+    var X = earnMode === 'off' ? 0 : earnMode === 'typ' ? p * EARN_TYP : MT.parseMoney($('p-earn'), false).value;
+    var XmY = MT.parseRange($('p-earn-mo'), 120);
+    MT.note('p-earn-mo-note', XmY.clamped ? 'Use 0 to 120.' : '');
+    var Xm = pick('earnmo') === 'yours' ? (XmY.entered ? XmY.value : null) : Number(pick('earnmo'));
+
+    var A = 0, wcMode = pick('wc');
+    if (wcMode === 'yours') {
+      var Wt = MT.parseMoney($('p-wct'), true), Wc = MT.parseMoney($('p-wcd'), true);
+      MT.note('p-wcd-note', Wt.entered !== Wc.entered ? 'Enter both the target and what you’d deliver to see the adjustment.' : '');
+      A = (Wt.entered && Wc.entered) ? Wc.value - Wt.value : 0;
+    } else { MT.note('p-wcd-note', ''); A = p * WC[wcMode]; }
+    var rev = MT.parseMoney($('p-rev'), false).value;
+    var days = Number($('p-days').value) || 0;
+    $('p-days-out').textContent = (days > 0 ? '+' : '') + days;
+    var timing = rev && days ? rev / 365 * days : 0;
+    q('[data-days-effect]').textContent = rev && days
+      ? (days < 0 ? 'Collecting ' + (-days) + ' days faster: ' : 'Collecting ' + days + ' days slower: ') + 'this line moves ' + MT.signed(timing) + '; the cash you keep moves ' + MT.signed(-timing) + '.'
+      : '';
+    var fundMode = pick('fund');
+    var F = fundMode === 'yours' ? MT.parseMoney($('p-fund'), false).value : fundTyp(p);
+
+    printList(p, ins, E, Em, X, Xm, A, F);
 
     var empty = q('[data-empty]'), body = q('[data-body]');
-    if (!P.entered || P.value <= 0) {
-      empty.hidden = false; body.hidden = true;
-      MT.setSummary(tool, '');
-      return;
-    }
+    if (!P.entered || p <= 0) { empty.hidden = false; body.hidden = true; MT.setSummary(tool, ''); return; }
     empty.hidden = true; body.hidden = false;
 
-    var p = P.value;
-    var hasRate = R.entered;
-    var r = hasRate ? R.value / 100 : 0;
-    var A = (Wt.entered && Wc.entered) ? Wc.value - Wt.value : 0;
-    var K = p - D + C + A - T - E;
-    var S0 = r * Math.max(K, 0);
-    var N = K - S0;
-    var Enet = E * (1 - r);
-    var Xnet = X * (1 - r);
-    var total = N + Enet + Xnet;
-    var share = N / p * 100;
+    var hasRate = R.entered, r = hasRate ? R.value / 100 : 0;
+    var T = fee.value + legal.value + other.value + F;
+    var Atot = A + timing;
+    var K = p - D.value + Cc.value + Atot - T - E;
+    var S0 = r * Math.max(K, 0), N = K - S0;
+    var Enet = E * (1 - r), Xnet = X * (1 - r), total = N + Enet + Xnet, share = N / p * 100;
 
     var lead = q('[data-lead]'), interp = q('[data-interp]');
     lead.innerHTML = '';
@@ -206,54 +365,76 @@ const fields: F[] = [
       interp.textContent = 'Of a ' + MT.money(p) + ' price, ' + MT.money(N) + ' reaches your account at close. That’s ' + share.toFixed(1) + '% of the number on the table.';
       MT.setSummary(tool, 'Cash at close, before tax: ' + MT.money(K));
     }
-    lead.setAttribute('data-k', String(MT.round(K)));
-    lead.setAttribute('data-n', String(MT.round(N)));
-    lead.setAttribute('data-s0', String(MT.round(S0)));
-    lead.setAttribute('data-total', String(MT.round(total)));
+    ['k', 'n', 's0', 'total'].forEach(function (key, i) { lead.setAttribute('data-' + key, String(MT.round([K, N, S0, total][i]))); });
     lead.setAttribute('data-share', share.toFixed(1));
 
-    var tb = q('[data-walk]');
-    tb.innerHTML = '';
+    var missing = [];
+    if (!D.entered) missing.push('debt');
+    if (!fee.entered && !legal.entered) missing.push('advisor and legal fees');
+    var warn = q('[data-missing]');
+    warn.textContent = missing.length ? 'Not included yet: ' + (missing.length === 2 ? 'debt, advisor fees and legal fees' : missing[0]) + '. Enter yours to see the full walk.' : '';
+    warn.hidden = !missing.length;
+
+    var NI = 'Not included';
+    var tb = q('[data-walk]'); tb.innerHTML = '';
     var bt = hasRate ? '' : ', before tax';
-    row(tb, 'Price on the table', MT.money(p), { value: p, key: 'price' });
-    row(tb, 'Less debt paid off at close', D ? MT.money(-D) : '$0', { value: -D, key: 'debt' });
-    row(tb, 'Plus cash in the business you keep', C ? MT.signed(C) : '$0', { value: C, key: 'cash' });
+    row(tb, 'Price on the table', MT.money(p), { value: p, key: 'price', swatch: C.ink });
+    row(tb, 'Less debt paid off at close', D.entered ? (D.value ? MT.money(-D.value) : '$0') : NI, { value: -D.value, key: 'debt', swatch: C.debt, tdcls: D.entered ? null : 'mt-ni' });
+    row(tb, 'Plus cash in the business you keep', Cc.value ? MT.signed(Cc.value) : '$0', { value: Cc.value, key: 'cash', swatch: C.inflow });
     var wcNote = A < 0 ? 'You’d deliver less working capital than the target, so the price drops by the difference.'
       : A > 0 ? 'You’d deliver more than the target, so the price rises by the difference.' : '';
-    row(tb, 'Working capital adjustment', A ? MT.signed(A) : '$0', { value: A, key: 'wc', note: wcNote || null, noteKey: 'wc' });
-    row(tb, 'Less deal costs', T ? MT.money(-T) : '$0', { value: -T, key: 'costs' });
-    if (E > 0) row(tb, 'Less escrow held back', MT.money(-E), { value: -E, key: 'escrow' });
+    row(tb, 'Working capital adjustment', A ? MT.signed(A) : '$0', { value: A, key: 'wc', note: wcNote || null, noteKey: 'wc', swatch: C.wcNeg });
+    if (timing) row(tb, 'Collections timing', MT.signed(timing), { value: timing, key: 'timing', swatch: C.wcNeg });
+    var feesIn = fee.entered || legal.entered;
+    row(tb, 'Less advisor, legal and accounting', feesIn ? MT.money(-(fee.value + legal.value)) : NI, { value: -(fee.value + legal.value), key: 'fees', swatch: C.cost, tdcls: feesIn ? null : 'mt-ni' });
+    if (other.value) row(tb, 'Less other closing costs', MT.money(-other.value), { value: -other.value, key: 'other', swatch: C.cost });
+    row(tb, 'Less seller expense fund', F ? MT.money(-F) : '$0', { value: -F, key: 'fund', swatch: C.cost });
+    if (E > 0) row(tb, 'Less escrow held back', MT.money(-E), { value: -E, key: 'escrow', swatch: C.escrow });
     row(tb, 'Cash at close, before tax', MT.money(K), { value: K, key: 'k', cls: 'mt-total' });
     if (hasRate) {
-      row(tb, 'Less tax set-aside at your rate', S0 ? MT.money(-S0) : '$0', { value: -S0, key: 's0' });
+      row(tb, 'Less tax set-aside at your rate', S0 ? MT.money(-S0) : '$0', { value: -S0, key: 's0', swatch: C.tax });
       row(tb, 'Net at close', MT.money(N), { value: N, key: 'n', cls: 'mt-total' });
     }
-    if (E > 0) {
-      var eLabel = 'Later, if released: escrow, ' + (hasRate ? 'after set-aside' : 'before tax') + (Em.entered ? ', about ' + Em.value + ' months out' : '');
-      row(tb, eLabel, MT.money(Enet), { value: Enet, key: 'escrow-later', cls: 'mt-contingent' });
-    }
-    if (X > 0) {
-      var xLabel = 'Later, if every dollar pays: earnout, ' + (hasRate ? 'after set-aside' : 'before tax') + (Xm.entered ? ', over ' + Xm.value + ' months' : '');
-      row(tb, xLabel, MT.money(Xnet), { value: Xnet, key: 'earn-later', cls: 'mt-contingent', note: 'Depends on results after you sell. Plan on the cash at close; treat this as upside.', noteKey: 'earn' });
-    }
+    if (E > 0) row(tb, 'Later, if released: escrow, ' + (hasRate ? 'after set-aside' : 'before tax') + (Em != null ? ', about ' + Em + ' months out' : ''), MT.money(Enet), { value: Enet, key: 'escrow-later', cls: 'mt-contingent' });
+    if (X > 0) row(tb, 'Later, if every dollar pays: earnout, ' + (hasRate ? 'after set-aside' : 'before tax') + (Xm != null ? ', over ' + Xm + ' months' : ''), MT.money(Xnet), { value: Xnet, key: 'earn-later', cls: 'mt-contingent', note: 'Depends on results after you sell. Plan on the cash at close; treat this as upside.', noteKey: 'earn' });
     row(tb, 'Total if every contingency pays' + bt, MT.money(total), { value: total, key: 'total', cls: 'mt-total' });
-
     var tnote = q('[data-tnote]');
-    if (X <= 0) { tnote.textContent = 'No earnout entered.'; tnote.hidden = false; }
-    else { tnote.textContent = ''; tnote.hidden = true; }
+    tnote.textContent = X <= 0 ? 'No earnout entered.' : ''; tnote.hidden = X > 0;
+
+    // Sankey: what flows in, through the price, to where it goes.
+    var leftN = [{ label: 'Price on the table', value: p, fill: C.ink }];
+    if (Cc.value) leftN.push({ label: 'Cash you keep', value: Cc.value, fill: C.inflow });
+    if (Atot > 0) leftN.push({ label: 'Working capital', value: Atot, fill: C.inflow });
+    if (K < 0) leftN.push({ label: 'You bring to closing', value: -K, fill: C.bring, strong: true });
+    var rightN = [];
+    if (D.value) rightN.push({ label: 'Debt paid off', value: D.value, fill: C.debt });
+    if (T) rightN.push({ label: 'Deal costs', value: T, fill: C.cost });
+    if (Atot < 0) rightN.push({ label: 'Working capital', value: -Atot, fill: C.wcNeg });
+    if (E) rightN.push({ label: 'Escrow, held for later', value: E, fill: C.escrow });
+    if (S0) rightN.push({ label: 'Tax set-aside', value: S0, fill: C.tax });
+    if (N > 0) rightN.push({ label: 'Your account at close', value: N, fill: C.you, strong: true });
+    window.MTSankey(q('[data-sankey]'), { left: leftN, right: rightN, fmt: MT.money, pct: function (v) { return (v / p * 100).toFixed(1) + '%'; }, midLabel: '' });
   }
 
-  MT.wire({
-    tool: tool,
-    form: form,
-    recompute: recompute,
-    example: {
-      'p-price': '$12,000,000', 'p-debt': '$2,400,000', 'p-cash': '$300,000',
-      'p-wct': '$1,800,000', 'p-wcd': '$1,650,000',
-      'p-fee': '$450,000', 'p-legal': '$180,000', 'p-other': '$45,000',
-      'p-escrow': '$1,200,000', 'p-escrow-mo': '12',
-      'p-earn': '$1,500,000', 'p-earn-mo': '24', 'p-rate': '25'
-    }
-  });
+  function printList(p, ins, E, Em, X, Xm, A, F) {
+    var dl = q('[data-print-inputs]'); dl.innerHTML = '';
+    var add = function (k, v) { dl.appendChild(MT.el('dt', null, k)); dl.appendChild(MT.el('dd', null, v)); };
+    var lab = { low: 'Low', typ: 'Typical', high: 'High', yours: 'Yours', off: 'None', unsure: 'Not sure', no: 'No', yes: 'Yes' };
+    if (p) add('Price on the table', MT.money(p));
+    add('Deal insurance (R&W)', lab[pick('ins')]);
+    add('Escrow or holdback', lab[pick('escrow')] + ', ' + MT.money(E));
+    add('Months until the escrow is released', (pick('escrowmo') === 'yours' ? 'Yours, ' : '') + (Em == null ? 'not entered' : Em));
+    add('Earnout', lab[pick('earn')] + (X ? ', ' + MT.money(X) + (Xm != null ? ', ' + Xm + ' months' : '') : ''));
+    add('Working capital adjustment', lab[pick('wc')] + ', ' + MT.signed(A));
+    add('Seller expense fund', lab[pick('fund')] + ', ' + MT.money(F));
+    ['p-debt', 'p-cash', 'p-fee', 'p-legal', 'p-other', 'p-rev'].forEach(function (id) {
+      var i = $(id); if (!i.value.trim()) return;
+      add(form.querySelector('label[for="' + id + '"]').textContent.trim(), MT.money(MT.parseMoney(i, false).value));
+    });
+    if (Number($('p-days').value)) add('Collections timing, days', $('p-days').value);
+    var rt = MT.parseRange($('p-rate'), 60); if (rt.entered) add('Tax set-aside rate (optional)', rt.value + '%');
+  }
+
+  MT.wire({ tool: tool, form: form, recompute: recompute, example: { 'p-price': '$12,000,000' }, exampleOnLoad: true });
 })();
 </script>

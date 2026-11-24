@@ -16,10 +16,11 @@ const PAGES = [
     const r = { slug };
     // --- privacy: type a sentinel, watch every request, storage, cookies, URL
     let { browser, page, net, ctx } = await open(path);
+    const det = await page.$('.mt-advanced > summary'); if (det) await det.click();
     const before = net.length;
     const sentinel = '987654321';
-    const inputs = await page.$$('form input[type="text"]');
-    for (const i of inputs) { await i.fill(sentinel); }
+    const inputs = await page.$$('input[type="text"]');
+    for (const i of inputs) { if (await i.isVisible()) await i.fill(sentinel); }
     await page.click('[data-example]');
     await page.click('[data-show-walk]');
     await page.waitForTimeout(800);
@@ -33,7 +34,9 @@ const PAGES = [
     r.privacy = { requestsAfterTyping: after.map((n) => n.method + ' ' + n.url), sentinelInAnyRequest: leaks.length, localStorage: storage.local, sessionStorage: storage.session, cookies: cookies.length, url: storage.url, formAction: forms, apiTokensInPageSource: srcHits };
     // reload clears fields
     await page.reload({ waitUntil: 'networkidle' });
-    r.privacy.filledAfterReload = await page.$$eval('form input[type="text"]', (is) => is.filter((i) => i.value !== '').length);
+    r.privacy.afterReload = await page.$$eval('input[type="text"]', (is) => is.filter((i) => i.value !== '').map((i) => i.id + '=' + i.value));
+    r.privacy.sentinelAfterReload = r.privacy.afterReload.some((x) => x.includes('987654321'));
+    const det2 = await page.$('.mt-advanced > summary'); if (det2) await det2.click();
 
     // --- axe, empty state and with example, desktop
     const runAxe = async () => {
@@ -56,6 +59,7 @@ const PAGES = [
 
     // --- phone at 390 x 844: collapsed summary, then expanded
     ({ browser, page } = await open(path, { ctx: { viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true } }));
+    const det3 = await page.$('.mt-advanced > summary'); if (det3) await det3.click();
     await page.click('[data-example]');
     await page.waitForTimeout(150);
     r.phone = await page.evaluate(() => ({ scrollW: document.documentElement.scrollWidth, clientW: document.documentElement.clientWidth, summary: (document.querySelector('[data-summary]') || {}).textContent, summaryVisible: getComputedStyle(document.querySelector('[data-summary]')).display !== 'none' && !document.querySelector('[data-summary]').hidden }));

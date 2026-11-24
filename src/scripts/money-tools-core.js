@@ -102,9 +102,7 @@ window.MT = (function () {
     form.addEventListener('change', run);
     form.addEventListener('submit', function (e) { e.preventDefault(); });
 
-    var ex = tool.querySelector('[data-example]');
-    if (ex) ex.addEventListener('click', function (e) {
-      e.preventDefault();
+    function fillExample() {
       filling = true;
       form.reset();
       Object.keys(opts.example).forEach(function (id) {
@@ -116,7 +114,9 @@ window.MT = (function () {
       filling = false;
       if (banner) banner.hidden = false;
       run();
-    });
+    }
+    var ex = tool.querySelector('[data-example]');
+    if (ex) ex.addEventListener('click', function (e) { e.preventDefault(); fillExample(); });
 
     var clr = tool.querySelector('[data-clear]');
     if (clr) clr.addEventListener('click', function () {
@@ -142,10 +142,13 @@ window.MT = (function () {
     });
 
     // Closing or reloading clears every field (some browsers restore form state).
-    window.addEventListener('pageshow', function () { form.reset(); if (banner) banner.hidden = true; run(); });
+    window.addEventListener('pageshow', function () {
+      if (opts.exampleOnLoad) { fillExample(); return; }
+      form.reset(); if (banner) banner.hidden = true; run();
+    });
     window.addEventListener('beforeprint', function () { setDate(); run(); });
     setDate();
-    run();
+    if (opts.exampleOnLoad) fillExample(); else run();
   }
 
   function setSummary(tool, text) {

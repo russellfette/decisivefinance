@@ -7,6 +7,8 @@ import ToolCTA from '../components/money-tools/ToolCTA.astro';
 import PrintHead from '../components/money-tools/PrintHead.astro';
 import PrintFoot from '../components/money-tools/PrintFoot.astro';
 import core from '../scripts/money-tools-core.js?raw';
+import sankey from '../scripts/money-tools-sankey.js?raw';
+import reader from '../scripts/money-tools-reader.js?raw';
 import '../styles/money-tools.css';
 
 const title = 'Where the revenue went | Decisive Finance';
@@ -14,17 +16,17 @@ const ogTitle = 'Where the revenue went: follow the cash to what’s left';
 const description = 'Revenue grew and your cash didn’t? Type two years from your P&L and see where every extra dollar went. Runs in your browser; nothing is stored.';
 const H1 = 'Where did this year’s extra revenue go?';
 
-type Row = { key: string; label: string; help: string; any?: boolean };
+type Row = { key: string; label: string; help: string; any?: boolean; full?: boolean };
 const rowsTop: Row[] = [
   { key: 'rev', label: 'Revenue', help: 'Total sales for the year (or month).' },
   { key: 'cogs', label: 'Cost of goods sold', help: 'Materials, direct labor, freight, subcontractors: what it took to deliver.' },
   { key: 'opex', label: 'Operating expenses', help: 'Everything else to run the business, excluding interest, depreciation and owner draws.' },
-  { key: 'int', label: 'Interest paid', help: 'Interest on loans and the line of credit.' },
+  { key: 'int', label: 'Interest paid', help: 'Interest on loans and the line of credit.', full: true },
 ];
 const rowsBottom: Row[] = [
   { key: 'prin', label: 'Loan principal repaid', help: 'The part of loan payments that pays down the balance. It never shows on the P&amp;L, but it leaves the bank.' },
-  { key: 'grow', label: 'Cash tied up in growth', help: 'How much receivables plus inventory grew, less how much payables grew. Negative if they shrank.', any: true },
-  { key: 'inv', label: 'Equipment and other investments', help: 'Trucks, machines, software builds, buildouts.' },
+  { key: 'grow', label: 'Cash tied up in growth', help: 'How much receivables plus inventory grew, less how much payables grew. Negative if they shrank.', any: true, full: true },
+  { key: 'inv', label: 'Equipment and other investments', help: 'Trucks, machines, software builds, buildouts.', full: true },
   { key: 'took', label: 'What you took out (optional)', help: 'Draws, distributions and owner pay above a market salary.' },
 ];
 const cols = [
@@ -51,6 +53,16 @@ const cols = [
             <input type="radio" name="rw-mode" id="rw-mode-a" value="annual" checked /><label for="rw-mode-a">Annual</label>
             <input type="radio" name="rw-mode" id="rw-mode-m" value="monthly" /><label for="rw-mode-m">Monthly</label>
           </div>
+          <div class="mt-toggle" role="radiogroup" aria-label="Quick or full">
+            <input type="radio" name="rw-detail" id="rw-detail-quick" value="quick" checked /><label for="rw-detail-quick">Quick: five numbers</label>
+            <input type="radio" name="rw-detail" id="rw-detail-full" value="full" /><label for="rw-detail-full">Full</label>
+          </div>
+          <div class="mt-upload">
+            <label class="mt-label" for="rw-file">Or read it from your QuickBooks or Xero export</label>
+            <p class="mt-help" id="rw-file-help">Export a Profit and Loss comparison (this year and last) as Excel or CSV. Add a comparison balance sheet to fill the two balance-sheet lines. The file is read in your browser and never leaves it.</p>
+            <input id="rw-file" type="file" accept=".csv,.xlsx,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" multiple aria-describedby="rw-file-help rw-file-out" />
+            <p class="mt-upload-out" id="rw-file-out" aria-live="polite" hidden></p>
+          </div>
           <div class="mt-actions">
             <button type="button" class="mt-linkbtn" data-example>Show an example</button>
             <button type="button" class="btn btn-ghost" data-clear>Clear</button>
@@ -67,9 +79,9 @@ const cols = [
             </thead>
             <tbody>
               {rowsTop.map((r) => (
-                <tr>
+                <tr data-full={r.full ? 'true' : undefined}>
                   <th scope="row">
-                    <span class="mt-label" id={`rw-row-${r.key}`}>{r.label}</span>
+                    <span class="mt-label" id={`rw-row-${r.key}`} data-label-full={r.label}>{r.label}</span>
                     <p class="mt-help" id={`rw-help-${r.key}`} set:html={r.help} />
                   </th>
                   {cols.map((c) => (
@@ -94,9 +106,9 @@ const cols = [
                 </td>
               </tr>
               {rowsBottom.map((r) => (
-                <tr>
+                <tr data-full={r.full ? 'true' : undefined}>
                   <th scope="row">
-                    <span class="mt-label" id={`rw-row-${r.key}`}>{r.label}</span>
+                    <span class="mt-label" id={`rw-row-${r.key}`} data-label-full={r.label}>{r.label}</span>
                     <p class="mt-help" id={`rw-help-${r.key}`} set:html={r.help} />
                   </th>
                   {cols.map((c) => (
@@ -128,6 +140,11 @@ const cols = [
                 <p class="mt-lead-sub" data-lead-sub hidden></p>
                 <p class="mt-interp" data-interp hidden></p>
               </div>
+              <div class="mt-yearbtns" data-yearbtns hidden>
+                <button type="button" class="btn btn-ghost" data-year="1" aria-pressed="false"></button>
+                <button type="button" class="btn btn-ghost" data-year="2" aria-pressed="true"></button>
+              </div>
+              <div class="mt-chart mt-sankey" data-sankey aria-hidden="true"></div>
               <table class="mt-walk mt-stack" data-years-table>
                 <caption class="sr-only" data-years-caption></caption>
                 <thead data-years-head></thead>
@@ -138,7 +155,6 @@ const cols = [
                 <caption data-bridge-caption></caption>
                 <tbody data-bridge></tbody>
               </table>
-              <div class="mt-chart" data-chart aria-hidden="true"></div>
               <p class="mt-next">Most of the gap between revenue and cash sits in which customers and products actually make money. <a href="/margin-check">Check your top 10 customers</a></p>
             </div>
           </div>
@@ -158,6 +174,8 @@ const cols = [
 </BaseLayout>
 
 <script is:inline set:html={core}></script>
+<script is:inline set:html={sankey}></script>
+<script is:inline set:html={reader}></script>
 <script is:inline>
 (function () {
   var MT = window.MT;
@@ -194,7 +212,8 @@ const cols = [
     var m = function (k, any) { return MT.parseMoney($('rw-' + k + '-' + n), !!any); };
     var R = m('rev');
     if (!R.entered || R.value <= 0) return null;
-    var c = { R: R.value, cogs: m('cogs').value, opex: m('opex').value, int: m('int').value, prin: m('prin').value, grow: m('grow', true).value, inv: m('inv').value };
+    var quick = isQuick();
+    var c = { R: R.value, cogs: m('cogs').value, opex: m('opex').value, int: quick ? 0 : m('int').value, prin: m('prin').value, grow: quick ? 0 : m('grow', true).value, inv: quick ? 0 : m('inv').value };
     var took = m('took');
     c.GP = c.R - c.cogs;
     c.OP = c.GP - c.opex;
@@ -210,7 +229,7 @@ const cols = [
   }
 
   function c1(v) { var t = v.toFixed(1); return t.charAt(0) === '-' ? '\u2212' + t.slice(1) : t; }
-  function cents(x, R) { return c1(100 * x / R) + '\u00a2'; }
+  function cents(x, R) { return c1(100 * x / R) + '%'; }
 
   function cell(tr, value, R, opts) {
     opts = opts || {};
@@ -225,6 +244,7 @@ const cols = [
 
   var LABELS = {};
   function recompute() {
+    applyDetail();
     var n = names();
     LABELS = { '1': n.col[0], '2': n.col[1], 'd': 'Change' };
     applyNames(n);
@@ -352,72 +372,87 @@ const cols = [
       }
     }
 
-    chart(both ? [[n.col[0], c1], [n.col[1], c2]] : [[n.col[1], c2]]);
+    lastCols = both ? [[n.col[0], c1], [n.col[1], c2]] : [[n.col[1], c2]];
+    var yb = q('[data-yearbtns]');
+    yb.hidden = !both;
+    if (!both) chartYear = 2;
+    yb.querySelectorAll('[data-year]').forEach(function (b) {
+      var yr = Number(b.getAttribute('data-year'));
+      b.textContent = n.col[yr - 1];
+      b.setAttribute('aria-pressed', yr === chartYear ? 'true' : 'false');
+      b.classList.toggle('btn-secondary', yr === chartYear);
+      b.classList.toggle('btn-ghost', yr !== chartYear);
+    });
+    drawSankey(chartYear === 1 && both ? c1 : c2);
   }
 
-  function chart(cols) {
-    var box = q('[data-chart]');
-    var W = 680, H = 380, top = 24, bot = 332, colW = 96;
-    var NS = 'http://www.w3.org/2000/svg';
-    var mk = function (t, a, txt) { var e = document.createElementNS(NS, t); Object.keys(a).forEach(function (k) { e.setAttribute(k, a[k]); }); if (txt != null) e.textContent = txt; return e; };
-    var data = cols.map(function (cc) {
-      var c = cc[1];
-      var pos = [], neg = [];
-      SEG.forEach(function (s) {
-        var v = 100 * c[s.k] / c.R;
-        if (Math.abs(v) < 0.05) return;
-        (v > 0 ? pos : neg).push({ s: s, v: v });
-      });
-      var T = pos.reduce(function (a, p) { return a + p.v; }, 0);
-      return { name: cc[0], pos: pos, neg: neg, T: T };
+  var chartYear = 2, lastCols = null;
+  function drawSankey(c) {
+    var L = [{ label: 'Revenue', value: c.R, fill: '#182228' }];
+    if (c.grow < 0) L.push({ label: 'Cash released from receivables and inventory', short: 'Cash released', value: -c.grow, fill: '#214c52' });
+    if (c.L < 0) L.push({ label: 'From the bank or borrowing', value: -c.L, fill: '#bf4d1a', strong: true });
+    var Rn = [];
+    SEG.forEach(function (sg) {
+      var v = c[sg.k];
+      if (sg.k === 'grow' && v < 0) return;
+      if (sg.k === 'L' && v <= 0) return;
+      if (v > 0) Rn.push({ label: sg.k === 'prin' && isQuick() ? 'Loan payments' : sg.label, value: v, fill: sg.fill, strong: sg.k === 'L' });
     });
-    var maxT = Math.max(100, Math.max.apply(null, data.map(function (d) { return d.T; })));
-    var y = function (v) { return bot - (bot - top) * v / maxT; };
-    var svg = mk('svg', { viewBox: '0 0 ' + W + ' ' + H, focusable: 'false' });
-    data.forEach(function (d, i) {
-      var x = 40 + i * (W / data.length);
-      var acc = 0, labels = [];
-      d.pos.forEach(function (p) {
-        var y0 = y(acc), y1 = y(acc + p.v);
-        svg.appendChild(mk('rect', { x: x, y: y1, width: colW, height: Math.max(0.5, y0 - y1), fill: p.s.fill }));
-        labels.push({ yc: (y0 + y1) / 2, text: p.s.label + '  ' + c1(p.v) + '\u00a2', orange: p.s.k === 'L' });
-        acc += p.v;
-      });
-      var acc2 = 100;
-      d.neg.forEach(function (p) {
-        var y0 = y(acc2), y1 = y(acc2 - p.v);
-        svg.appendChild(mk('rect', { x: x + 3, y: y1 + 1.5, width: colW - 6, height: Math.max(0.5, y0 - y1 - 3), fill: 'none', stroke: p.s.k === 'L' ? '#a8431a' : '#5a6a72', 'stroke-width': 3, 'stroke-dasharray': '6 4' }));
-        var lbl = p.s.k === 'grow' ? 'Cash released from receivables and inventory' : p.s.label;
-        labels.push({ yc: (y0 + y1) / 2, text: lbl + '  ' + c1(p.v) + '\u00a2', orange: p.s.k === 'L' });
-        acc2 -= p.v;
-      });
-      if (d.T > 100.05) {
-        svg.appendChild(mk('line', { x1: x - 8, x2: x + colW + 8, y1: y(100), y2: y(100), stroke: '#182228', 'stroke-width': 2 }));
-        svg.appendChild(mk('text', { x: x - 10, y: y(100) + 4, 'text-anchor': 'end', 'font-size': 12, fill: '#182228' }, '100¢'));
+    window.MTSankey(q('[data-sankey]'), { left: L, right: Rn, fmt: MT.money, pct: function (v) { return c1(100 * v / c.R) + '%'; } });
+  }
+  function isQuick() { return $('rw-detail-quick').checked; }
+  function applyDetail() {
+    form.setAttribute('data-detail', isQuick() ? 'quick' : 'full');
+    var lab = $('rw-row-prin');
+    lab.textContent = isQuick() ? 'Loan payments' : lab.getAttribute('data-label-full');
+    form.querySelectorAll('input[id^="rw-prin-"]').forEach(function (i) { i.setAttribute('data-rowlabel', lab.textContent); });
+  }
+  tool.querySelectorAll('[data-year]').forEach(function (b) {
+    b.addEventListener('click', function () { chartYear = Number(b.getAttribute('data-year')); recompute(); });
+  });
+
+  // Upload: read the export in the browser and fill the fields.
+  var fileIn = $('rw-file'), fileOut = $('rw-file-out');
+  function say(t, err) { fileOut.textContent = t; fileOut.hidden = !t; fileOut.classList.toggle('is-error', !!err); }
+  function put(id, v) { var i = $(id); if (i && v != null) i.value = MT.money(v); }
+  fileIn.addEventListener('change', async function () {
+    var files = Array.prototype.slice.call(fileIn.files || []);
+    if (!files.length) return;
+    var got = [];
+    try {
+      for (var f = 0; f < files.length; f++) {
+        var rows = await window.MTReader.readFile(files[f]);
+        if (window.MTReader.kind(rows) === 'bs') {
+          var bs = window.MTReader.readBS(rows);
+          if (bs) { $('rw-detail-full').checked = true; put('rw-grow-2', bs.growth); put('rw-prin-2', bs.principal); got.push('balance sheet'); }
+        } else {
+          var pl = window.MTReader.readPL(rows);
+          if (pl) {
+            $('rw-detail-full').checked = true;
+            put('rw-rev-2', pl.cur.rev); put('rw-cogs-2', pl.cur.cogs); put('rw-opex-2', pl.cur.opex); put('rw-int-2', pl.cur.int);
+            if (pl.prior) { put('rw-rev-1', pl.prior.rev); put('rw-cogs-1', pl.prior.cogs); put('rw-opex-1', pl.prior.opex); put('rw-int-1', pl.prior.int); }
+            got.push(pl.prior ? 'profit and loss, two periods' : 'profit and loss, one period');
+          }
+        }
       }
-      labels.sort(function (a, b) { return a.yc - b.yc; });
-      var gap = 15, prev = -Infinity;
-      labels.forEach(function (l) { l.y = Math.max(l.yc, prev + gap); prev = l.y; });
-      var over = labels.length ? labels[labels.length - 1].y - (bot + 2) : 0;
-      if (over > 0) labels.forEach(function (l) { l.y -= over; });
-      labels.forEach(function (l) {
-        var lx = x + colW + 10;
-        svg.appendChild(mk('line', { x1: x + colW, x2: lx - 2, y1: l.yc, y2: l.y - 4, stroke: '#8c9aa0', 'stroke-width': 1 }));
-        svg.appendChild(mk('text', { x: lx, y: l.y, 'font-size': 12.5, fill: l.orange ? '#a8431a' : '#182228', 'font-weight': l.orange ? 700 : 400 }, l.text));
-      });
-      svg.appendChild(mk('text', { x: x + colW / 2, y: H - 22, 'text-anchor': 'middle', 'font-size': 14, 'font-weight': 700, fill: '#182228' }, d.name));
-    });
-    box.innerHTML = '';
-    box.appendChild(svg);
-  }
+      if (got.length) say('Read from your file: ' + got.join('; ') + '. Check each number before you rely on it.');
+      else say('We couldn’t find the totals in that file. Type the numbers instead.', true);
+    } catch (e) {
+      say('We couldn’t read that file. Export as Excel or CSV, or type the numbers instead.', true);
+    }
+    var banner = tool.querySelector('[data-example-banner]'); if (banner) banner.hidden = true;
+    fileIn.value = '';
+    recompute();
+  });
 
-  form.addEventListener('change', function (e) { if (e.target && e.target.name === 'rw-mode') recompute(); });
+  form.addEventListener('change', function (e) { if (e.target && (e.target.name === 'rw-mode' || e.target.name === 'rw-detail')) recompute(); });
   MT.wire({
     tool: tool,
     form: form,
     recompute: recompute,
+    exampleOnLoad: true,
     example: {
-      'rw-mode-a': true,
+      'rw-mode-a': true, 'rw-detail-full': true,
       'rw-rev-1': '$10,000,000', 'rw-rev-2': '$12,000,000',
       'rw-cogs-1': '$6,200,000', 'rw-cogs-2': '$7,680,000',
       'rw-opex-1': '$2,700,000', 'rw-opex-2': '$3,050,000',

@@ -36,15 +36,28 @@ const deliver = [
   <section class="mt-section mt-facts-wrap" style="padding-bottom:0">
     <div class="mt-wrap">
       <ul class="mt-facts">
-        <li><strong>Most private deals have one.</strong> More than 90% include a working capital adjustment. <span class="mt-source">SRS Acquiom, 2025 Deal Terms Study page (deals closed 2019 to 2024), read 2026-11-23.</span></li>
-        <li><strong>The target is usually a trailing twelve-month average.</strong> <span class="mt-source">BDO, &ldquo;Net Working Capital in M&amp;A,&rdquo; February 15, 2019; Richard De Rose, Business Law Today, October 2022.</span></li>
+        <li><strong>Nine in ten small deals have one.</strong> About nine of ten deals of $50M or less adjust the price for working capital. <span class="mt-source">SRS Acquiom, 2026 Deal Terms Study, Lower Middle-Market Deals (2025 deals), read 2026-11-24.</span></li>
+        <li><strong>Buyers win it about half the time.</strong> The final adjustment went to the buyer in 51% of deals and to the seller in 38%; 11% had none. <span class="mt-source">SRS Acquiom, 2026 Working Capital Purchase Price Adjustment Study (1,570+ deals closed 2020 to Q3 2025), read 2026-11-24.</span></li>
+        <li><strong>Usually small, sometimes not.</strong> The median buyer claim was about a quarter of a percent of the price. About one deal in ten saw a buyer claim of 1% or more. <span class="mt-source">Same study, read 2026-11-24.</span></li>
         <li><strong>It is settled after closing.</strong> The price at close uses an estimate; the buyer usually sends a closing statement in 60 to 90 days and you then have 30 to 60 days to object. <span class="mt-source">De Rose, Business Law Today, October 2022.</span></li>
       </ul>
+      <div class="mt-quick mt-inputs" data-quick>
+        <h2 class="mt-section-head">What a few days of collections do to your check</h2>
+        <label class="mt-label" for="q-rev">Annual revenue</label>
+        <input id="q-rev" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="$12,000,000" />
+        <label class="mt-label" for="q-days">Customers pay faster or slower in the month you close, in days: <output id="q-days-out" for="q-days">&minus;10</output></label>
+        <input id="q-days" type="range" min="-30" max="30" step="1" value="-10" />
+        <p class="mt-lead" aria-live="polite" data-q-lead></p>
+        <p class="mt-interp" data-q-interp></p>
+        <p class="mt-next"><a href="/price-to-wire">Carry this into the full walk</a></p>
+      </div>
     </div>
   </section>
 
   <section class="mt-section">
     <div class="mt-wrap">
+      <details class="mt-advanced">
+        <summary>I have month-end balances</summary>
       <div class="mt-tool mt-two" data-tool>
         <form class="mt-inputs" id="wc-form" autocomplete="off" novalidate>
           <div class="mt-actions">
@@ -122,6 +135,7 @@ const deliver = [
 
         <button type="button" class="mt-summary" data-summary aria-expanded="false" aria-controls="wc-result" hidden><span data-summary-text></span></button>
       </div>
+      </details>
 
       <div class="mt-noprint">
         <ToolCTA variant="deal" />
@@ -133,6 +147,28 @@ const deliver = [
 </BaseLayout>
 
 <script is:inline set:html={core}></script>
+<script is:inline>
+(function () {
+  var MT = window.MT, rev = document.getElementById('q-rev'), days = document.getElementById('q-days');
+  var out = document.getElementById('q-days-out'), lead = document.querySelector('[data-q-lead]'), interp = document.querySelector('[data-q-interp]');
+  function run() {
+    var R = MT.parseMoney(rev, false).value, d = Number(days.value) || 0;
+    out.textContent = (d > 0 ? '+' : d < 0 ? '\u2212' : '') + Math.abs(d);
+    var adj = R / 365 * d;
+    lead.textContent = '';
+    lead.appendChild(document.createTextNode('Price adjustment at close: '));
+    lead.appendChild(MT.el('span', 'mt-num', MT.signed(adj)));
+    lead.setAttribute('data-adj', String(MT.round(adj)));
+    interp.textContent = !R || !d ? 'Move the slider to see the effect.'
+      : (d < 0 ? 'Collect ' + (-d) + ' days faster and receivables fall by about ' + MT.abs(adj) + ', so the price at close drops by about that much. In a cash-free deal the cash you collected is usually yours, so the two roughly offset.'
+               : 'Collect ' + d + ' days slower and receivables rise by about ' + MT.abs(adj) + ', so the price at close rises by about that much, and you keep less cash.');
+  }
+  rev.addEventListener('input', run); days.addEventListener('input', run);
+  rev.addEventListener('blur', function () { var p = MT.parseMoney(rev, false); if (p.entered) rev.value = MT.money(p.value); });
+  window.addEventListener('pageshow', function () { rev.value = '$12,000,000'; days.value = '-10'; run(); });
+  run();
+})();
+</script>
 <script is:inline>
 (function () {
   var MT = window.MT;
